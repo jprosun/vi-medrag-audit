@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and this evaluation artifact."
+title: "Retrievable, Citable, Rarely Responsive: Auditing Attribution Coverage in a Vietnamese Medical RAG System"
+authors:
+  - family-names: Nguyen
+    given-names: Duc Son
+repository-code: "https://github.com/jprosun/vi-medrag-audit"
+type: software
+version: "1.0.0"
+date-released: "2026-09-15"

@@ -1,0 +1,500 @@
+{
+  "what_this_is": "The author's 30-item entailment sheet, scored against the model labels on the same items. Two strata with weights 179/185 and 6/185, so the naive 27/30 is not the estimate.",
+  "provenance": {
+    "sheet": "benchmark/rivf/entailment_human_labels_v1.txt",
+    "blank_sheet_sha256": "2f1f81bd9aaf67d96a65d5799e3b310d8a55a1a0abb2b535ec3736e186d5ebd0",
+    "filled_sheet_sha256": "c5eb758f1ce8c7c109658d39576a010e57d2cb812247e3b045335081a20cf86e",
+    "what_the_two_hashes_are": "blank = the sheet as issued, which proves the items were frozen before any label existed; filled = the bytes actually scored, which identifies THIS grading. Recording only the blank hash, as an earlier version did, leaves two different sets of labels indistinguishable in the provenance.",
+    "frozen_before_grading": true,
+    "graded_by": "the author, blind to the model labels and to the strata",
+    "model_labels": "benchmark/rivf/entailment_report_v1.json",
+    "design": {
+      "A_model_failure": {
+        "kind": "census",
+        "items": 6,
+        "population": 6,
+        "weight": 0.032432,
+        "why": "all 6 of them; a sample could not confirm or overturn six events"
+      },
+      "B_model_supported": {
+        "kind": "sample, allocated across question type in proportion to the population",
+        "items": 24,
+        "population": 179,
+        "weight": 0.967568,
+        "allocation": {
+          "clinical_explainer": 8,
+          "patient_faq": 1,
+          "guideline_comparison": 9,
+          "study_result_numeric": 4,
+          "differential_or_workup": 2
+        },
+        "population_by_type": {
+          "clinical_explainer": 62,
+          "patient_faq": 9,
+          "guideline_comparison": 63,
+          "study_result_numeric": 32,
+          "differential_or_workup": 13
+        },
+        "why": "estimates the precision of the model's `supported` label, and is the only stratum where an `overstated` claim can be discovered"
+      }
+    },
+    "interval_method": "census exact + Clopper-Pearson on the sampled stratum; see survey_ci.py"
+  },
+  "cross_sheet": {
+    "judgements": 70,
+    "distinct_claims": 61,
+    "shared_by_both_sheets": [
+      "ent_0013",
+      "ent_0026",
+      "ent_0042",
+      "ent_0103",
+      "ent_0124",
+      "ent_0201",
+      "ent_0205",
+      "ent_0215",
+      "ent_0222"
+    ],
+    "why_it_matters": "70 judgements is not 70 claims. Quoting the judgement count as a claim count overstates how much of the 185 was read by a person."
+  },
+  "agreement": {
+    "items": 30,
+    "exact_four_way": 0.9,
+    "cohens_kappa": 0.6266,
+    "human_distribution": {
+      "supported": 27,
+      "not_supported": 1,
+      "unintelligible": 2
+    },
+    "model_distribution_on_these_30": {
+      "supported": 24,
+      "unintelligible": 5,
+      "not_supported": 1
+    },
+    "confusion_human_by_model": {
+      "not_supported|not_supported": 1,
+      "supported|supported": 24,
+      "supported|unintelligible": 3,
+      "unintelligible|unintelligible": 2
+    }
+  },
+  "stratum_A_model_failures": {
+    "items": 6,
+    "kind": "census of all 6",
+    "human_labels": {
+      "supported": 3,
+      "not_supported": 1,
+      "unintelligible": 2
+    },
+    "confirmed_as_a_failure": 3,
+    "overturned_to_supported": 3,
+    "detail": [
+      {
+        "item": "ent_h_06",
+        "model": "unintelligible",
+        "human": "supported"
+      },
+      {
+        "item": "ent_h_12",
+        "model": "unintelligible",
+        "human": "supported"
+      },
+      {
+        "item": "ent_h_19",
+        "model": "not_supported",
+        "human": "not_supported"
+      },
+      {
+        "item": "ent_h_20",
+        "model": "unintelligible",
+        "human": "supported"
+      },
+      {
+        "item": "ent_h_24",
+        "model": "unintelligible",
+        "human": "unintelligible"
+      },
+      {
+        "item": "ent_h_25",
+        "model": "unintelligible",
+        "human": "unintelligible"
+      }
+    ]
+  },
+  "stratum_B_model_supported": {
+    "items": 24,
+    "kind": "sample of 24 of 179, allocated by question type",
+    "human_labels": {
+      "supported": 24
+    },
+    "precision_of_the_model_supported_label": 1.0,
+    "precision_ci_clopper_pearson": [
+      0.8575,
+      1.0
+    ],
+    "precision_note": "Measured on the 24 sampled claims, not on all 179. With 24 of 24 the exact lower bound is 0.86, so the sample is consistent with as many as 14 % of the 179 being claims a reader would not call supported.",
+    "downgraded_by_the_author": []
+  },
+  "overstated": {
+    "found_by_the_author": 0,
+    "found_by_the_model_over_all_185": 0,
+    "why_it_matters": "An over-strong claim wearing a real quotation is the failure mode this paper predicts. Neither judge found one at the claim layer, which is consistent with the extractor copying passage sentences rather than authoring claims."
+  },
+  "human_supported_rate": {
+    "naive_on_the_sheet": 0.9,
+    "post_stratified_to_the_185": [
+      0.9838,
+      0.8459,
+      0.9838
+    ],
+    "method": "census stratum contributes exactly; sampled stratum by exact Clopper-Pearson, conservative because the draw is without replacement from a finite population",
+    "sampled_stratum_proportion_and_ci": [
+      1.0,
+      0.8575,
+      1.0
+    ],
+    "census_stratum_proportion": 0.5,
+    "feasible_bounds_of_the_design": [
+      0.0162,
+      0.9838
+    ],
+    "why_post_stratified": "Stratum A is 6 of 185 claims but 6 of 30 sheet items, so it is over-represented about thirtyfold by design; read naively the sheet understates the rate.",
+    "why_not_a_bootstrap": "An earlier version bootstrapped both strata and reported [0.973, 0.995]. Stratum A is a census, so resampling it invents states that cannot occur, and the upper bound exceeded 0.9838, the maximum the design can express.",
+    "model_rate_on_the_same_185": [
+      0.9676,
+      0.9408,
+      0.9894
+    ]
+  },
+  "per_item": [
+    {
+      "item_id": "ent_h_01",
+      "entailment_item": "ent_0194",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_091",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_02",
+      "entailment_item": "ent_0164",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_031",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_03",
+      "entailment_item": "ent_0045",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_057",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_04",
+      "entailment_item": "ent_0124",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_104",
+      "question_type": "study_result_numeric",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_05",
+      "entailment_item": "ent_0213",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_042",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_06",
+      "entailment_item": "ent_0090",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_086",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "unintelligible",
+      "agree": false
+    },
+    {
+      "item_id": "ent_h_07",
+      "entailment_item": "ent_0063",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_086",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_08",
+      "entailment_item": "ent_0096",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_002",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_09",
+      "entailment_item": "ent_0203",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_107",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_10",
+      "entailment_item": "ent_0201",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_11",
+      "entailment_item": "ent_0103",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_12",
+      "entailment_item": "ent_0205",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_021",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "unintelligible",
+      "agree": false
+    },
+    {
+      "item_id": "ent_h_13",
+      "entailment_item": "ent_0046",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_002",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_14",
+      "entailment_item": "ent_0119",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_045",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_15",
+      "entailment_item": "ent_0026",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_025",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_16",
+      "entailment_item": "ent_0106",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_090",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_17",
+      "entailment_item": "ent_0177",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_031",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_18",
+      "entailment_item": "ent_0013",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_019",
+      "question_type": "study_result_numeric",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_19",
+      "entailment_item": "ent_0222",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_118",
+      "question_type": "differential_or_workup",
+      "span_equals_claim": false,
+      "human": "not_supported",
+      "model": "not_supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_20",
+      "entailment_item": "ent_0012",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_123",
+      "question_type": "study_result_numeric",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "unintelligible",
+      "agree": false
+    },
+    {
+      "item_id": "ent_h_21",
+      "entailment_item": "ent_0190",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_121",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_22",
+      "entailment_item": "ent_0167",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_063",
+      "question_type": "study_result_numeric",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_23",
+      "entailment_item": "ent_0072",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_129",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_24",
+      "entailment_item": "ent_0163",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_057",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "unintelligible",
+      "model": "unintelligible",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_25",
+      "entailment_item": "ent_0059",
+      "stratum": "A_model_failure",
+      "query_id": "rivf_107",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "unintelligible",
+      "model": "unintelligible",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_26",
+      "entailment_item": "ent_0034",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_091",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_27",
+      "entailment_item": "ent_0139",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_019",
+      "question_type": "study_result_numeric",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_28",
+      "entailment_item": "ent_0042",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_29",
+      "entailment_item": "ent_0215",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_061",
+      "question_type": "patient_faq",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "ent_h_30",
+      "entailment_item": "ent_0062",
+      "stratum": "B_model_supported",
+      "query_id": "rivf_042",
+      "question_type": "clinical_explainer",
+      "span_equals_claim": true,
+      "human": "supported",
+      "model": "supported",
+      "agree": true
+    }
+  ]
+}

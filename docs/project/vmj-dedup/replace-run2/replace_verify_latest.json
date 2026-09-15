@@ -1,0 +1,61 @@
+{
+  "phase": "verify",
+  "at_utc": "2026-08-24T17:48:08Z",
+  "collection": "medqa_release_v4_all_bge_m3",
+  "exact_total": 595663,
+  "exact_source_points": 132225,
+  "exact_non_source_points": 463438,
+  "sampled_points": 32,
+  "sampling": "random",
+  "checks": [
+    {
+      "check": "source_point_count_matches_export",
+      "state": "PASS",
+      "detail": "132225 vmj_ojs points, export has 132225 rows. A shortfall is not automatically wrong: 589 unrepairable articles were moved out of tier A (rag-data/sources/vmj_ojs/excluded_no_raw_pdf_manifest.json), so this number legitimately differs from the pre-replace count."
+    },
+    {
+      "check": "non_source_points_unchanged",
+      "state": "PASS",
+      "detail": "before=463438 after=463438 (delta 0)"
+    },
+    {
+      "check": "total_is_non_source_plus_source",
+      "state": "PASS",
+      "detail": "total=595663, expected 595663; before the replace it was 615713 with 152275 vmj_ojs"
+    },
+    {
+      "check": "point_id_reproduces_from_human_id",
+      "state": "PASS",
+      "detail": "uuid5(NAMESPACE_URL, human_id) == point.id for 32/32 sampled points (sampling=random)"
+    },
+    {
+      "check": "sampled_payloads_complete",
+      "state": "PASS",
+      "detail": "every sampled payload carries all 18 retriever allowlist keys"
+    },
+    {
+      "check": "sampled_source_id_correct",
+      "state": "PASS",
+      "detail": "0 of 32 sampled points have a different source_id"
+    },
+    {
+      "check": "sampled_text_is_clean",
+      "state": "FAIL",
+      "detail": "1 sampled chunks still look interleaved: [{'id': '54ee5890-dc57-5877-8fa7-4642ab7068ed', 'rate': 17.81, 'examples': ['ThumbNailName', 'FullScreenName']}]"
+    },
+    {
+      "check": "sampled_text_matches_export",
+      "state": "PASS",
+      "detail": "32 sampled human_ids: 0 absent from the export (leftover points from before the replace), 0 whose stored text differs from the repaired export text. absent=[] mismatched=[]"
+    },
+    {
+      "check": "retired_old_points_are_gone",
+      "state": "PASS",
+      "detail": "{\"state\": \"PASS\", \"artifact\": \"D:\\\\CODE\\\\DATN\\\\LLM-MedQA-Assistant\\\\rag-data\\\\embeddings\\\\staging\\\\medqa_release_v4_all_bge_m3\\\\multilingual\\\\chunk_ids.json\", \"old_ids_total\": 155809, \"old_ids_retired_by_this_replace\": 155223, \"sampled\": 32, \"still_present\": 0, \"examples_still_present\": []}"
+    }
+  ],
+  "failed": [
+    "sampled_text_is_clean"
+  ],
+  "ok": false
+}

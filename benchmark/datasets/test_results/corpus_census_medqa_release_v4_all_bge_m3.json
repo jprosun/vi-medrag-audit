@@ -1,0 +1,627 @@
+{
+  "schema": "rivf_corpus_census.v1",
+  "generated_at_utc": "2026-09-04T04:42:12Z",
+  "git_sha": "13dc51ff02bcc9d31c03f56186a2ccd94f0f126b",
+  "collection": "medqa_release_v4_all_bge_m3",
+  "qdrant": "http://localhost:6333",
+  "points_count_declared": 595663,
+  "points_scrolled": 595663,
+  "totals": {
+    "chunks": 595663,
+    "distinct_article_ids": 128422,
+    "chunks_with_no_source_url": 256415,
+    "share_with_no_source_url": 0.4305,
+    "chunks_with_issue_level_url_only": 79678,
+    "share_with_issue_level_url_only": 0.1338,
+    "chunks_with_a_publication_date": 636,
+    "share_with_a_publication_date": 0.0011
+  },
+  "strata": {
+    "hf_vi_mtue29_medical": {
+      "chunks": 256415,
+      "share_of_collection": 0.4305,
+      "distinct_article_ids": 109816,
+      "source_url": {
+        "any": 0.0,
+        "article_or_page": 0,
+        "issue_level_only": 0,
+        "none": 256415
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 256415
+      },
+      "doc_type": {
+        "patient_education": 256415
+      },
+      "language": {
+        "vi": 256415
+      },
+      "source_name": {
+        "Hugging Face mtue29/vietnamese-medical-dataset": 256415
+      }
+    },
+    "vmj_ojs": {
+      "chunks": 132225,
+      "share_of_collection": 0.222,
+      "distinct_article_ids": 6444,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 132225,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 1.0,
+      "trust_tier": {
+        "2": 132225
+      },
+      "doc_type": {
+        "research_article": 127291,
+        "case_report": 3613,
+        "review": 879,
+        "guideline": 343,
+        "meta_analysis": 99
+      },
+      "language": {
+        "vi": 129039,
+        "en": 3186
+      },
+      "source_name": {
+        "Vietnam Medical Journal": 132225
+      }
+    },
+    "cantho_med_journal": {
+      "chunks": 45804,
+      "share_of_collection": 0.0769,
+      "distinct_article_ids": 1873,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 0,
+        "issue_level_only": 45804,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 45804
+      },
+      "doc_type": {
+        "review": 45621,
+        "guideline": 183
+      },
+      "language": {
+        "vi": 42235,
+        "en": 3553,
+        "mixed": 16
+      },
+      "source_name": {
+        "cantho_med_journal": 45804
+      }
+    },
+    "nci_pdq": {
+      "chunks": 35763,
+      "share_of_collection": 0.06,
+      "distinct_article_ids": 631,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 35763,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 35763
+      },
+      "doc_type": {
+        "reference": 35763
+      },
+      "language": {
+        "en": 22016,
+        "es": 13747
+      },
+      "source_name": {
+        "NCI PDQ": 35763
+      }
+    },
+    "hf_medquad": {
+      "chunks": 34400,
+      "share_of_collection": 0.0578,
+      "distinct_article_ids": 3488,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 34400,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 34400
+      },
+      "doc_type": {
+        "patient_education": 34400
+      },
+      "language": {
+        "en": 34400
+      },
+      "source_name": {
+        "MedQuAD / GARD": 11300,
+        "MedQuAD / GHR": 8749,
+        "MedQuAD / CancerGov": 3748
+      }
+    },
+    "mil_med_pharm_journal": {
+      "chunks": 19810,
+      "share_of_collection": 0.0333,
+      "distinct_article_ids": 713,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 0,
+        "issue_level_only": 19810,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 19810
+      },
+      "doc_type": {
+        "review": 19794,
+        "guideline": 16
+      },
+      "language": {
+        "vi": 16951,
+        "en": 2114,
+        "mixed": 745
+      },
+      "source_name": {
+        "mil_med_pharm_journal": 19810
+      }
+    },
+    "who_vietnam": {
+      "chunks": 19617,
+      "share_of_collection": 0.0329,
+      "distinct_article_ids": 675,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 19617,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 19617
+      },
+      "doc_type": {
+        "reference": 19617
+      },
+      "language": {
+        "en": 19508,
+        "mixed": 73,
+        "vi": 36
+      },
+      "source_name": {
+        "who_vietnam": 19617
+      }
+    },
+    "hue_jmp_ojs": {
+      "chunks": 9132,
+      "share_of_collection": 0.0153,
+      "distinct_article_ids": 362,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 0,
+        "issue_level_only": 9132,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 9132
+      },
+      "doc_type": {
+        "review": 9132
+      },
+      "language": {
+        "vi": 7439,
+        "en": 1693
+      },
+      "source_name": {
+        "hue_jmp_ojs": 9132
+      }
+    },
+    "kcb_moh": {
+      "chunks": 8043,
+      "share_of_collection": 0.0135,
+      "distinct_article_ids": 518,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 8043,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 8043
+      },
+      "doc_type": {
+        "guideline": 8043
+      },
+      "language": {
+        "vi": 8040,
+        "en": 3
+      },
+      "source_name": {
+        "kcb_moh": 8043
+      }
+    },
+    "dav_gov": {
+      "chunks": 7520,
+      "share_of_collection": 0.0126,
+      "distinct_article_ids": 610,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 7520,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 7520
+      },
+      "doc_type": {
+        "reference": 7520
+      },
+      "language": {
+        "vi": 5460,
+        "en": 2060
+      },
+      "source_name": {
+        "dav_gov": 7520
+      }
+    },
+    "trad_med_pharm_journal": {
+      "chunks": 4932,
+      "share_of_collection": 0.0083,
+      "distinct_article_ids": 222,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 0,
+        "issue_level_only": 4932,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 4932
+      },
+      "doc_type": {
+        "review": 4932
+      },
+      "language": {
+        "vi": 4705,
+        "en": 155,
+        "mixed": 72
+      },
+      "source_name": {
+        "trad_med_pharm_journal": 4932
+      }
+    },
+    "ncbi_bookshelf": {
+      "chunks": 3449,
+      "share_of_collection": 0.0058,
+      "distinct_article_ids": 83,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 3449,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 3449
+      },
+      "doc_type": {
+        "textbook": 3449
+      },
+      "language": {
+        "en": 3449
+      },
+      "source_name": {
+        "NCBI Bookshelf": 3449
+      }
+    },
+    "msd_manual_professional": {
+      "chunks": 3366,
+      "share_of_collection": 0.0057,
+      "distinct_article_ids": 456,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 3366,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 3366
+      },
+      "doc_type": {
+        "reference": 3366
+      },
+      "language": {
+        "en": 3366
+      },
+      "source_name": {
+        "MSD Manual Professional": 3366
+      }
+    },
+    "msd_manual_consumer": {
+      "chunks": 3061,
+      "share_of_collection": 0.0051,
+      "distinct_article_ids": 454,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 3061,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 3061
+      },
+      "doc_type": {
+        "patient_education": 3061
+      },
+      "language": {
+        "en": 3061
+      },
+      "source_name": {
+        "MSD Manual Consumer": 3061
+      }
+    },
+    "nhs_health_a_z": {
+      "chunks": 2958,
+      "share_of_collection": 0.005,
+      "distinct_article_ids": 472,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 2958,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 2958
+      },
+      "doc_type": {
+        "patient_education": 2958
+      },
+      "language": {
+        "en": 2958
+      },
+      "source_name": {
+        "NHS Health A-Z": 2958
+      }
+    },
+    "vien_dinh_duong": {
+      "chunks": 2545,
+      "share_of_collection": 0.0043,
+      "distinct_article_ids": 381,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 2545,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "2": 2545
+      },
+      "doc_type": {
+        "reference": 2545
+      },
+      "language": {
+        "en": 1640,
+        "vi": 905
+      },
+      "source_name": {
+        "vien_dinh_duong": 2545
+      }
+    },
+    "mayo_diseases_conditions": {
+      "chunks": 2376,
+      "share_of_collection": 0.004,
+      "distinct_article_ids": 470,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 2376,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 2376
+      },
+      "doc_type": {
+        "patient_education": 2376
+      },
+      "language": {
+        "en": 2376
+      },
+      "source_name": {
+        "Mayo Clinic Diseases and Conditions": 2376
+      }
+    },
+    "nccih_health": {
+      "chunks": 2028,
+      "share_of_collection": 0.0034,
+      "distinct_article_ids": 315,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 2028,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 2028
+      },
+      "doc_type": {
+        "patient_education": 2028
+      },
+      "language": {
+        "en": 1766,
+        "es": 262
+      },
+      "source_name": {
+        "NCCIH Health Topics": 2028
+      }
+    },
+    "uspstf_recommendations": {
+      "chunks": 776,
+      "share_of_collection": 0.0013,
+      "distinct_article_ids": 182,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 776,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 776
+      },
+      "doc_type": {
+        "guideline": 776
+      },
+      "language": {
+        "en": 776
+      },
+      "source_name": {
+        "USPSTF Recommendations": 776
+      }
+    },
+    "who": {
+      "chunks": 766,
+      "share_of_collection": 0.0013,
+      "distinct_article_ids": 50,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 766,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 766
+      },
+      "doc_type": {
+        "guideline": 766
+      },
+      "language": {
+        "en": 766
+      },
+      "source_name": {
+        "WHO": 766
+      }
+    },
+    "medlineplus": {
+      "chunks": 636,
+      "share_of_collection": 0.0011,
+      "distinct_article_ids": 200,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 636,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 1.0,
+      "updated_at_coverage": 1.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "3": 636
+      },
+      "doc_type": {
+        "patient_education": 636
+      },
+      "language": {
+        "en": 352,
+        "es": 284
+      },
+      "source_name": {
+        "MedlinePlus": 636
+      }
+    },
+    "cdc_health_topics": {
+      "chunks": 41,
+      "share_of_collection": 0.0001,
+      "distinct_article_ids": 7,
+      "source_url": {
+        "any": 1.0,
+        "article_or_page": 41,
+        "issue_level_only": 0,
+        "none": 0
+      },
+      "published_at_coverage": 0.0,
+      "updated_at_coverage": 0.0,
+      "institution_coverage": 0.0,
+      "trust_tier": {
+        "1": 41
+      },
+      "doc_type": {
+        "patient_education": 41
+      },
+      "language": {
+        "en": 41
+      },
+      "source_name": {
+        "CDC Health Topics": 41
+      }
+    }
+  },
+  "definitions": {
+    "citable": "the gate's test is a non-empty source_url; this census splits that into article-or-page level and issue level, because a citation resolving to a journal issue index does not let a reader find the cited sentence",
+    "url_granularity": "issue = matches /issue/view|archive/; article = matches /article/view|download/, /pmc/, /books/ or doi.org; article_or_page = any other non-empty URL, i.e. a single landing page",
+    "distinct_article_ids": "the only article count with a derivation. README's 128,674 has none and the deduplication record calls it inflated"
+  },
+  "limits": [
+    "payload only: no chunk text is read, so nothing here says whether a chunk is USEFUL, only whether it could be cited",
+    "counts points in the live collection, which is the object the served system retrieves from -- not the export files on disk",
+    "url_granularity is a syntactic classification of the URL, not a fetch: it does not prove the URL resolves today"
+  ]
+}

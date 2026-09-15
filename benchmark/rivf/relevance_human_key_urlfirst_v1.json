@@ -1,0 +1,322 @@
+{
+  "what_this_is": "Key for the URL-first arm's 40-item human relevance sheet. NOT for the grader: it carries the model's label, which is what the sheet exists to check.",
+  "arm": "URL-first (uncitable records excluded at retrieval)",
+  "codebook": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+  "sheet": "benchmark/rivf/relevance_human_labels_urlfirst_v1.txt",
+  "blank_sheet_sha256": "b5eba062ae47c96ffec6315c947b277dd3956b2b6295af68dc9042c711e9f4b7",
+  "what_that_hash_is": "the sheet AS ISSUED, before any label. The scorer records filled_sheet_sha256.",
+  "seed": 20260910,
+  "per_type": 8,
+  "design": {
+    "clinical_explainer": {
+      "population": 101,
+      "weight": 0.2775,
+      "sampled": 8
+    },
+    "differential_or_workup": {
+      "population": 16,
+      "weight": 0.044,
+      "sampled": 8
+    },
+    "guideline_comparison": {
+      "population": 96,
+      "weight": 0.2637,
+      "sampled": 8
+    },
+    "patient_faq": {
+      "population": 67,
+      "weight": 0.1841,
+      "sampled": 8
+    },
+    "study_result_numeric": {
+      "population": 84,
+      "weight": 0.2308,
+      "sampled": 8
+    }
+  },
+  "population_total": 364,
+  "why_post_stratify": "8 per type against a population of clinical_explainer 101, differential_or_workup 16, guideline_comparison 96, patient_faq 67, study_result_numeric 84 -- reading 40 items as one urn would weight the small types far too heavily.",
+  "what_it_will_not_support": "A rate. The model found 10 relevant in 364, so this sheet will hold very few positive cases and no interval from it will be informative -- the same situation as the shipped arm's sheet, which had two. It calibrates the judge.",
+  "key": {
+    "relu_01": {
+      "relevance_item": "rq_urlfirst_0350",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_02": {
+      "relevance_item": "rq_urlfirst_0200",
+      "query_id": "rivf_076",
+      "question_type": "clinical_explainer",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_03": {
+      "relevance_item": "rq_urlfirst_0163",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_04": {
+      "relevance_item": "rq_urlfirst_0400",
+      "query_id": "rivf_100",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_05": {
+      "relevance_item": "rq_urlfirst_0389",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_06": {
+      "relevance_item": "rq_urlfirst_0158",
+      "query_id": "rivf_011",
+      "question_type": "clinical_explainer",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_07": {
+      "relevance_item": "rq_urlfirst_0137",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_08": {
+      "relevance_item": "rq_urlfirst_0379",
+      "query_id": "rivf_010",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_09": {
+      "relevance_item": "rq_urlfirst_0100",
+      "query_id": "rivf_082",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_10": {
+      "relevance_item": "rq_urlfirst_0121",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_11": {
+      "relevance_item": "rq_urlfirst_0275",
+      "query_id": "rivf_057",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_12": {
+      "relevance_item": "rq_urlfirst_0386",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_13": {
+      "relevance_item": "rq_urlfirst_0135",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_14": {
+      "relevance_item": "rq_urlfirst_0091",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_15": {
+      "relevance_item": "rq_urlfirst_0342",
+      "query_id": "rivf_097",
+      "question_type": "clinical_explainer",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_16": {
+      "relevance_item": "rq_urlfirst_0294",
+      "query_id": "rivf_020",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_17": {
+      "relevance_item": "rq_urlfirst_0354",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_18": {
+      "relevance_item": "rq_urlfirst_0249",
+      "query_id": "rivf_026",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_19": {
+      "relevance_item": "rq_urlfirst_0029",
+      "query_id": "rivf_120",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_20": {
+      "relevance_item": "rq_urlfirst_0274",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_21": {
+      "relevance_item": "rq_urlfirst_0173",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_22": {
+      "relevance_item": "rq_urlfirst_0252",
+      "query_id": "rivf_114",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_23": {
+      "relevance_item": "rq_urlfirst_0292",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_24": {
+      "relevance_item": "rq_urlfirst_0293",
+      "query_id": "rivf_095",
+      "question_type": "study_result_numeric",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_25": {
+      "relevance_item": "rq_urlfirst_0197",
+      "query_id": "rivf_055",
+      "question_type": "clinical_explainer",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_26": {
+      "relevance_item": "rq_urlfirst_0086",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_27": {
+      "relevance_item": "rq_urlfirst_0188",
+      "query_id": "rivf_112",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_28": {
+      "relevance_item": "rq_urlfirst_0341",
+      "query_id": "rivf_009",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_29": {
+      "relevance_item": "rq_urlfirst_0055",
+      "query_id": "rivf_066",
+      "question_type": "clinical_explainer",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_30": {
+      "relevance_item": "rq_urlfirst_0359",
+      "query_id": "rivf_128",
+      "question_type": "differential_or_workup",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_31": {
+      "relevance_item": "rq_urlfirst_0320",
+      "query_id": "rivf_106",
+      "question_type": "clinical_explainer",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_32": {
+      "relevance_item": "rq_urlfirst_0363",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_33": {
+      "relevance_item": "rq_urlfirst_0093",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_34": {
+      "relevance_item": "rq_urlfirst_0374",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_35": {
+      "relevance_item": "rq_urlfirst_0180",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_36": {
+      "relevance_item": "rq_urlfirst_0114",
+      "query_id": "rivf_041",
+      "question_type": "clinical_explainer",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_37": {
+      "relevance_item": "rq_urlfirst_0081",
+      "query_id": "rivf_067",
+      "question_type": "clinical_explainer",
+      "model_label": "not_relevant",
+      "entailment_label": "supported"
+    },
+    "relu_38": {
+      "relevance_item": "rq_urlfirst_0260",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_39": {
+      "relevance_item": "rq_urlfirst_0344",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "model_label": "partial",
+      "entailment_label": "supported"
+    },
+    "relu_40": {
+      "relevance_item": "rq_urlfirst_0088",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "model_label": "partial",
+      "entailment_label": "not_supported"
+    }
+  }
+}

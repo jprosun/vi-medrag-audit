@@ -1,0 +1,245 @@
+# PHIẾU CHẤM ENTAILMENT — 30 item, điền một chữ sau mỗi dấu "=>"
+#
+# CÂU HỎI BẠN ĐANG TRẢ LỜI: ĐOẠN VĂN ĐƯỢC TRÍCH có đỡ cho claim không.
+# KHÔNG phải "claim có trả lời câu hỏi không" — cái đó bạn đã chấm ở phiếu trước.
+# Câu hỏi chỉ hiển thị để bạn hiểu ngữ cảnh; nó KHÔNG tham gia vào phán quyết.
+#
+#   S  supported      — đoạn văn nói đúng điều claim nói, hoặc claim là diễn giải trung
+#                       thực / dịch / hệ quả trực tiếp của điều đoạn văn nói
+#   O  overstated     — đoạn văn chỉ đỡ một phiên bản YẾU HƠN: claim mở rộng ra ngoài
+#                       quần thể của đoạn văn, biến một dè dặt thành sự thật, bỏ mất một
+#                       điều kiện (liều, đối tượng, mốc thời gian), hoặc biến liên quan
+#                       thành nhân quả. Trích dẫn thật, nhưng claim to hơn nó.
+#   N  not_supported  — đoạn văn không đỡ claim: có thể cùng chủ đề, cùng thực thể, cùng
+#                       con số, mà vẫn không khẳng định điều gì xác lập được claim; hoặc
+#                       nó nói ngược lại
+#   U  unintelligible — đoạn văn hỏng tới mức không chấm được: hai cột trộn vào nhau, câu
+#                       bị ghép, chữ bị cắt giữa từ tới mức mất nghĩa. CHỈ dùng khi sự hỏng
+#                       thật sự ngăn việc phán quyết; đoạn bắt đầu từ giữa một chữ nhưng
+#                       vẫn đọc được thì vẫn chấm được.
+#
+# BỐN QUY TẮC
+#   1. Chỉ dùng chữ trong item. ĐỪNG dùng kiến thức y khoa ngoài để bù chỗ đoạn văn thiếu.
+#      Câu hỏi là "ĐOẠN VĂN NÀY có đỡ claim không", không phải "claim có đúng không".
+#   2. Claim đúng về y khoa nhưng đoạn văn không xác lập nó thì là N.
+#   3. Con số phải khớp. Đoạn văn ghi 96,18% thì không đỡ claim "96%" trừ khi claim nói rõ
+#      là xấp xỉ; dùng O nếu claim làm tròn hoặc tổng quát hoá, N nếu con số khác hẳn.
+#   4. Vài đoạn có tóm tắt song ngữ — chấm được qua cả hai thứ tiếng: claim tiếng Việt được
+#      nửa tiếng Anh của cùng tóm tắt đỡ thì vẫn là S.
+#
+# CHỖ Ý KIẾN CỦA BẠN CÓ GIÁ TRỊ NHẤT: nhãn **O**. Mô hình chưa từng gán O lần nào trên cả
+# 185 claim, và đó chính là kiểu hỏng mà bài báo dự đoán ("claim nói quá đeo một trích dẫn
+# có thật"). Nếu bạn thấy một O, nó là phát hiện.
+#
+# Không sửa dòng "## ent_h_NN". Xong thì bảo tôi; tôi đọc đúng file này.
+
+## ent_h_01
+Câu hỏi (chỉ để hiểu ngữ cảnh): Với bệnh nhân suy thận giai đoạn cuối vẫn còn chức năng thận tồn dư, nên ưu tiên lọc màng bụng hay chạy thận nhân tạo?
+CLAIM: KẾT LUẬN Tỷ lệ tử vong sau theo dõi một năm ở bệnh nhân mắc suy thận giai đoạn cuối đang lọc máu chu kỳ bằng thận nhân tạo là 31,3%.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:694d9ecf50ae7452 chars:694]
+=> S
+
+## ent_h_02
+Câu hỏi (chỉ để hiểu ngữ cảnh): Cơ chế nào khiến bilirubin gián tiếp tăng cao ở trẻ sơ sinh có thể gây tổn thương hệ thần kinh trung ương, và những yếu tố nào làm tăng nguy cơ đó ở trẻ non tháng?
+CLAIM: Triệu chứng khởi phát chủ yếu là tiêu hóa (54,2-100%), trong đó fluoroacetate và glufosinate còn có triệu chứng thần kinh sớm (30,6-40%).
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b7530eb9074cccbd chars:1136]
+=> S
+
+## ent_h_03
+Câu hỏi (chỉ để hiểu ngữ cảnh): Khuyến cáo điều trị tăng huyết áp mới nhất tính đến năm 2025 khác gì so với bản trước đó?
+CLAIM: Kết quả: Tổng số người cao tuổi đến khám năm 2022 là 4713 người, trong đó có 3506 người (74,4%) mắc một bệnh hay đồng mắc Tăng huyết áp, Đái tháo đường týp 2, Bệnh tim thiếu máu cục bộ.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:a328950cac973e34 chars:947]
+=> S
+
+## ent_h_04
+Câu hỏi (chỉ để hiểu ngữ cảnh): Tỷ lệ nhiễm Helicobacter pylori ở người trưởng thành Việt Nam ước tính khoảng bao nhiêu?
+CLAIM: Kết luận: Nghiên cứu đã mô tả chi tiết đặc điểm hình thái cuống cung ngực ở người trưởng thành Việt Nam và chỉ ra sự khác biệt rõ rệt so với các quần thể châu Âu, đồng thời tương đồng với một số quốc gia châu Á.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:80a6841264affb12 chars:1062]
+=> S
+
+## ent_h_05
+Câu hỏi (chỉ để hiểu ngữ cảnh): Giải thích giúp mình cơ chế corticoid dùng kéo dài làm giảm mật độ xương và làm tăng nguy cơ gãy xương.
+CLAIM: Tỉ lệ nguy cơ gãy xương cao ở người cao tuổi có sử dụng thuốc ức chế bơm proton là 53,2%, trong đó nữ giới và nam có tỉ lệ là 52,1% và 61,5% (p = 0,363).
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:d0e73e02794afd1f chars:852]
+=> S
+
+## ent_h_06
+Câu hỏi (chỉ để hiểu ngữ cảnh): Ngoài tác dụng hạ đường huyết, cơ chế nào giúp thuốc ức chế SGLT2 làm chậm tiến triển bệnh thận mạn?
+CLAIM: 1Bệnh viện Thống Nhất 2Đại học Y Dược TP Hồ Chí Minh Chịu trách nhiệm chính: Lê Đình Triều Giang Email: [e-mail withheld] Ngày nhận bài: 4.3.2024 Ngày phản biện khoa học: 17.4.2024 Ngày duyệt bài: 10.5.2024 tim, nồng độ hemoglobin, NT-proBNP và tỷ lệ sử dụng thuốc ARBi, ARNI có sự khác biệt giữa nhóm có và nhóm không dùng
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:bb44daad059bb89c chars:1067]
+=> S
+
+## ent_h_07
+Câu hỏi (chỉ để hiểu ngữ cảnh): Ngoài tác dụng hạ đường huyết, cơ chế nào giúp thuốc ức chế SGLT2 làm chậm tiến triển bệnh thận mạn?
+CLAIM: Tỷ lệ sử dụng tứ trụ điều trị suy tim ở nhóm PSTM giảm 41,3%, PSTM giảm nhẹ 14,3%, PSTM bảo tồn 9,8% (p=0,02).
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:bb44daad059bb89c chars:1067]
+=> S
+
+## ent_h_08
+Câu hỏi (chỉ để hiểu ngữ cảnh): Tại sao thoái hoá khớp gối lại gây đau nhiều trong khi bản thân sụn khớp không có thần kinh cảm giác? Đau thực sự xuất phát từ cấu trúc nào?
+CLAIM: Đối tượng và phương pháp: Nghiên cứu được tiến hành trên 34 bệnh nhân thoái hóa khớp gối (THKG) nguyên phát giai đoạn II và III, được phân loại theo tiêu chuẩn của Hiệp hội Thấp khớp học Hoa Kỳ và Kellgren-Lawrence.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:e8fefaf444344bf3 chars:1191]
+=> S
+
+## ent_h_09
+Câu hỏi (chỉ để hiểu ngữ cảnh): Vì sao nhóm ức chế SGLT2 lại cải thiện được tiên lượng ở bệnh nhân suy tim phân suất tống máu giảm, cơ chế tác động lên cơ tim và huyết động ở đây là gì?
+CLAIM: Tỷ lệ sử dụng tứ trụ điều trị suy tim ở nhóm PSTM giảm 41,3%, PSTM giảm nhẹ 14,3%, PSTM bảo tồn 9,8% (p=0,02).
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:bb44daad059bb89c chars:1067]
+=> S
+
+## ent_h_10
+Câu hỏi (chỉ để hiểu ngữ cảnh): Một người tê bì và yếu dần hai chân trong vài ngày, đi lại khó khăn. Cần khám và chỉ định gì để phân biệt hội chứng Guillain-Barré với tổn thương chèn ép tủy sống?
+CLAIM: Các biến chứng do tổn thương khớp trong VKVN gây ra không chỉ dẫn đến suy giảm chức năng khớp, tăng tỷ lệ tử vong mà còn gây tàn phế và ảnh hưởng đến sinh hoạt của bệnh nhân.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:4ca822f000bb08c2 chars:1134]
+=> S
+
+## ent_h_11
+Câu hỏi (chỉ để hiểu ngữ cảnh): Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+CLAIM: Trong suốt những thập kỷ qua, nhiều nghiên cứu lâm sàng đã cho thấy điều trị THA hiệu quả đã làm giảm nguy cơ mắc bệnh tim mạch và tử vong [8].
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:74ecc90d9467b291 chars:1249]
+=> S
+
+## ent_h_12
+Câu hỏi (chỉ để hiểu ngữ cảnh): Trong đông máu nội mạch rải rác, cơ chế nào khiến bệnh nhân vừa có huyết khối vi mạch lại vừa chảy máu khó cầm?
+CLAIM: 1Trường Đại học Y Hà Nội 2Viện Huyết học - Truyền máu Trung Ương Chịu trách nhiệm chính: Nguyễn Khánh Hà Email: [e-mail withheld] Ngày nhận bài: 22.10.2024 Ngày phản biện khoa học: 21.11.2024 Ngày duyệt bài: 27.12.2024 máu nội mạch rải rác cần được thực hiện thường quy, song song và sớm nhất có thể cho tất cả bệnh nhân ung thư dạ dày, thực quản để lựa chọn phương pháp điều trị phù hợp nhất cho bệnh
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:00a510c0e1205a0d chars:1280]
+=> S
+
+## ent_h_13
+Câu hỏi (chỉ để hiểu ngữ cảnh): Tại sao thoái hoá khớp gối lại gây đau nhiều trong khi bản thân sụn khớp không có thần kinh cảm giác? Đau thực sự xuất phát từ cấu trúc nào?
+CLAIM: Tiêm huyết tương giàu tiểu cầu tự thân (PRP) đã chứng tỏ hiệu quả trong giảm đau và tái tạo sụn khớp đặc biệt giai đoạn II, III của thoái hóa khớp gối.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:f0da758da1c09b2e chars:1184]
+=> S
+
+## ent_h_14
+Câu hỏi (chỉ để hiểu ngữ cảnh): Bệnh nhân đái tháo đường type 2 có bệnh thận mạn kèm theo thì sau metformin nên ưu tiên thêm nhóm thuốc nào, và vì sao chọn nhóm đó hơn các nhóm còn lại?
+CLAIM: Dựa theo KDIGO 2024, bệnh thận mạn được chia thành 5 giai đoạn (G1–G5) dựa trên eGFR - mức lọc lọc cầu thận ước tính và n
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:f42179ed660ea537 chars:1137]
+=> S
+
+## ent_h_15
+Câu hỏi (chỉ để hiểu ngữ cảnh): Huyết khối tĩnh mạch sâu chi dưới không có yếu tố khởi phát rõ thì nên ngừng chống đông sau 3-6 tháng hay duy trì kéo dài, và quyết định dựa trên những yếu tố nào?
+CLAIM: Phân tích các yếu tố liên quan đến huyết khối tĩnh mạch sâu chi dưới
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:32b6d13a4d9a0e40 chars:1402]
+=> S
+
+## ent_h_16
+Câu hỏi (chỉ để hiểu ngữ cảnh): Sỏi niệu quản đoạn dưới khoảng 8mm thì chọn tán sỏi ngoài cơ thể hay nội soi tán sỏi ngược dòng?
+CLAIM: Thời gian phẫu thuật tán sỏi nội soi ngược dòng được tính từ lúc đặt dụng cụ nội soi niệu quản qua lỗ niệu đạo đến khi đặt ống thông tiểu kết thúc.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:274879741bef0a08 chars:1225]
+=> S
+
+## ent_h_17
+Câu hỏi (chỉ để hiểu ngữ cảnh): Cơ chế nào khiến bilirubin gián tiếp tăng cao ở trẻ sơ sinh có thể gây tổn thương hệ thần kinh trung ương, và những yếu tố nào làm tăng nguy cơ đó ở trẻ non tháng?
+CLAIM: Glufosinate gây rối loạn ý thức (66,7% Glasgow ≤14), fluoroacetate thường gây co giật và tăng trương lực cơ, còn diquat đa số hôn mê xuất hiện muộn hơn và tỷ lệ tử vong cao (72,3%).
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b7530eb9074cccbd chars:1136]
+=> S
+
+## ent_h_18
+Câu hỏi (chỉ để hiểu ngữ cảnh): Viêm phổi cộng đồng phải nhập viện thì tỷ lệ tử vong trong vòng 30 ngày khoảng bao nhiêu phần trăm?
+CLAIM: ĐẶT VẤN ĐỀ Viêm phổi mắc phải cộng đồng (Community Acquired Pneumonia – CAP) là một bệnh nhiễm trùng thường gặp, là gánh nặng cho hệ thống chăm sóc sức khỏe toàn cầu với khoảng 3 triệu ca tử vong hàng năm và là căn nguyên gây tử vong đứng hàng thứ 4 sau nhồi máu cơ tim, đột quỵ bệnh phổi tắc nghẽn mạn tính.1 Tại Việt Nam, CAP là một bệnh lý nhiễm khuẩn thường gặp nhất trong các bệnh nhiễm khuẩn trên thực hành lâm sàng, chiếm 12% các bệnh phổi.2 CAP có thể tiến triển nặng gây nhiều biến chứng tại chỗ và toàn thân, thậm chí tử vong.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:acbd8f40f416fd34 chars:1227]
+=> S
+
+## ent_h_19
+Câu hỏi (chỉ để hiểu ngữ cảnh): Bệnh nhân sốt cao kèm đau đầu, cứng gáy và rối loạn ý thức. Cần khám và chỉ định những xét nghiệm gì để phân biệt viêm màng não mủ với viêm màng não do virus và lao màng não?
+CLAIM: Tình trạng bất cân xứng tương đối quan trọng cùng với khớp thái dương hàm tạo nên cấu trúc khuôn mặt.
+SPAN hệ thống trỏ tới: p tương đối quan trọng cùng với khớp thái dương hàm tạo nên cấu trúc khuôn mặt.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:f621680c9ee6b3f0 chars:1146]
+=> N
+
+## ent_h_20
+Câu hỏi (chỉ để hiểu ngữ cảnh): Trong nhiễm khuẩn tiết niệu mắc phải ở cộng đồng, khoảng bao nhiêu phần trăm chủng E. coli phân lập được sinh ESBL?
+CLAIM: Kiến thức về phòng ngừa nhiễm khuẩn tiết niệu Nội dung Kiến thức Tổng Đúng n (%) Chưa đúng n (%)
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b548c537b1c06159 chars:1363]
+=> S
+
+## ent_h_21
+Câu hỏi (chỉ để hiểu ngữ cảnh): Với viêm phổi cộng đồng nặng phải nhập viện, nên khởi trị beta-lactam phối hợp macrolid hay dùng fluoroquinolon hô hấp đơn trị, và căn cứ vào đâu để chọn?
+CLAIM: Các bệnh nhân viêm phổi cộng đồng nặng trong nghiên cứu chúng tôi phần lớn là người lớn tuổi kèm theo đó là các bệnh lý nền tạo điều kiện vi nấm phát triển và gây bệnh.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:111ff4ff9a9ffb87 chars:1146]
+=> S
+
+## ent_h_22
+Câu hỏi (chỉ để hiểu ngữ cảnh): Trong các thử nghiệm ngẫu nhiên có đối chứng, thuốc ức chế PCSK9 làm giảm tuyệt đối bao nhiêu phần trăm biến cố tim mạch chính sau ba năm theo dõi?
+CLAIM: Đối tượng nghiên cứu: Bệnh nhân được chẩn đoán suy tim phân suất tống máu giảm (EF < 40%) và đang sử dụng thuốc
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:644c311c525026e3 chars:1187]
+=> S
+
+## ent_h_23
+Câu hỏi (chỉ để hiểu ngữ cảnh): Bệnh nhân ung thư vú giai đoạn sớm, thụ thể nội tiết dương tính, đã mãn kinh thì nên chọn tamoxifen hay thuốc ức chế aromatase để điều trị nội tiết bổ trợ?
+CLAIM: Thuốc ức chế CDK4/6 kết hợp nội tiết đã khẳng định vai trò về hiệu quả điều trị, lợi ích lâm sàng, sống thêm trên bệnh nhân ung thư vú tái phát di căn.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:c1c7c07d9e456869 chars:1181]
+=> S
+
+## ent_h_24
+Câu hỏi (chỉ để hiểu ngữ cảnh): Khuyến cáo điều trị tăng huyết áp mới nhất tính đến năm 2025 khác gì so với bản trước đó?
+CLAIM: 2,47 Biến chứng tăng huyết áp (n=3286) Đột quỵ não
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:8109c4d7a8a5f778 chars:1331]
+=> U
+
+## ent_h_25
+Câu hỏi (chỉ để hiểu ngữ cảnh): Vì sao nhóm ức chế SGLT2 lại cải thiện được tiên lượng ở bệnh nhân suy tim phân suất tống máu giảm, cơ chế tác động lên cơ tim và huyết động ở đây là gì?
+CLAIM: Nhóm tuổi trên và dưới 60 tuổi, giới tính, tần số
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:bb44daad059bb89c chars:1067]
+=> U
+
+## ent_h_26
+Câu hỏi (chỉ để hiểu ngữ cảnh): Với bệnh nhân suy thận giai đoạn cuối vẫn còn chức năng thận tồn dư, nên ưu tiên lọc màng bụng hay chạy thận nhân tạo?
+CLAIM: Từ khóa: Suy thận giai đoạn cuối (STGĐC), lọc máu chu kỳ (LMCK), vitamin B12, thiếu máu, tử vong.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b83e6d67e05b8fe9 chars:912]
+=> S
+
+## ent_h_27
+Câu hỏi (chỉ để hiểu ngữ cảnh): Viêm phổi cộng đồng phải nhập viện thì tỷ lệ tử vong trong vòng 30 ngày khoảng bao nhiêu phần trăm?
+CLAIM: Cả 3 thang điểm đều có khả năng tiên lượng tốt (AUC > 0,8) kết cục tử vong trong 30 ngày của bệnh nhân viêm phổi mắc phải cộng đồng và kết
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:185b8a9c2cede671 chars:1191]
+=> S
+
+## ent_h_28
+Câu hỏi (chỉ để hiểu ngữ cảnh): Trẻ 18 tháng tiêu chảy cấp mất nước nhẹ thì nên bù bằng ORS nồng độ thẩm thấu thấp hay nước cháo muối tự nấu ở nhà, và có nên bổ sung kẽm kèm theo không?
+CLAIM: Nhận xét: Sau 1 ngày điều trị, số trẻ tiêu chảy cấp có mất nước điều trị theo phác đồ B giảm từ 31,2% xuống 4,0%.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:fc7581da232ec683 chars:1221]
+=> S
+
+## ent_h_29
+Câu hỏi (chỉ để hiểu ngữ cảnh): Tăng huyết áp chỉ gặp ở người trên 60 tuổi, vậy người 40 tuổi có cần đo huyết áp định kỳ không?
+CLAIM: Trong số những người cao tuổi, các bệnh không lây thường gặp là tăng huyết áp (40,4%), tiểu đường (31,2%), viêm khớp (22,1%), suy gi
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:d6c01ef2f00b6786 chars:1107]
+=> S
+
+## ent_h_30
+Câu hỏi (chỉ để hiểu ngữ cảnh): Giải thích giúp mình cơ chế corticoid dùng kéo dài làm giảm mật độ xương và làm tăng nguy cơ gãy xương.
+CLAIM: Mục tiêu: khảo sát tỉ lệ loãng xương, nguy cơ gãy xương ở người cao tuổi có sử dụng thuốc ức chế bơm proton tại phòng khám Lão khoa và phòng khám Cơ Xương Khớp của Bệnh viện Đại học Y Dược thành phố Hồ Chí Minh.
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:c83d301c057603fc chars:1119]
+=> S

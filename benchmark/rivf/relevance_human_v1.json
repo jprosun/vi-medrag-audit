@@ -1,0 +1,595 @@
+{
+  "what_this_is": "The author's 40-item relevance sheet, scored against the model labels on the same items. The sheet is stratified 8 per question type, so the human rate is post-stratified to the 185-claim population; the naive rate is given beside it.",
+  "provenance": {
+    "sheet": "benchmark/rivf/relevance_human_labels_v1.txt",
+    "filled_sheet_sha256": "adce7ec3c4d6c08e671182e718d33c613041eac1badd62b80a85723e20fca9e2",
+    "what_that_hash_is": "the bytes actually scored, which identifies THIS grading. items_sha256 below proves the items were frozen before any label existed; the two answer different questions and an earlier version recorded only the second.",
+    "items": "benchmark/rivf/relevance_items_v1.jsonl",
+    "items_sha256": "cf0b76d9bf5dfef7c7a72a182a980f3e2730cff3fa25c5744713a5d8089f96e9",
+    "frozen_before_grading": true,
+    "graded_by": "the author, blind to the model labels and to the system's verdicts",
+    "model_labels": "benchmark/rivf/relevance_report_v1.json",
+    "interval_method": "none quoted: three of five strata observed zero relevant items, so no interval from this sheet is informative. See conservative_envelope and survey_ci.py."
+  },
+  "agreement": {
+    "items": 40,
+    "exact_three_way": 0.85,
+    "cohens_kappa": 0.7216,
+    "relevant_vs_other": 0.975,
+    "relevant_vs_other_kappa": 0.6552,
+    "confusion_human_by_model": {
+      "not_relevant|not_relevant": 16,
+      "not_relevant|partial": 4,
+      "partial|not_relevant": 1,
+      "partial|partial": 17,
+      "relevant|partial": 1,
+      "relevant|relevant": 1
+    },
+    "human_distribution": {
+      "not_relevant": 20,
+      "relevant": 2,
+      "partial": 18
+    },
+    "model_distribution_on_these_40": {
+      "partial": 22,
+      "not_relevant": 17,
+      "relevant": 1
+    }
+  },
+  "human_relevant_rate": {
+    "naive_on_the_sheet": 0.05,
+    "post_stratified_to_the_185": 0.0284,
+    "no_interval_quoted": "Three of five strata observed 0 of 8. An earlier version reported [0.000, 0.075] from a bootstrap that could only return 0 in those strata.",
+    "conservative_envelope": [
+      0.0007,
+      0.4051
+    ],
+    "conservative_envelope_per_stratum": {
+      "clinical_explainer": {
+        "x": 0,
+        "n": 8,
+        "weight": 0.3514,
+        "ci": [
+          0.0,
+          0.3694
+        ]
+      },
+      "differential_or_workup": {
+        "x": 0,
+        "n": 8,
+        "weight": 0.0757,
+        "ci": [
+          0.0,
+          0.3694
+        ]
+      },
+      "guideline_comparison": {
+        "x": 0,
+        "n": 8,
+        "weight": 0.3459,
+        "ci": [
+          0.0,
+          0.3694
+        ]
+      },
+      "patient_faq": {
+        "x": 1,
+        "n": 8,
+        "weight": 0.0486,
+        "ci": [
+          0.0032,
+          0.5265
+        ]
+      },
+      "study_result_numeric": {
+        "x": 1,
+        "n": 8,
+        "weight": 0.1784,
+        "ci": [
+          0.0032,
+          0.5265
+        ]
+      }
+    },
+    "why_post_stratified": "8 items were drawn per question type, but the population is 65/64/33/14/9 across the five types; scoring the sheet naively would weight patient-FAQ claims about seven times too heavily.",
+    "model_rate_on_the_same_185": [
+      0.0216,
+      0.0052,
+      0.0447
+    ],
+    "model_relevant_on_these_40": 1
+  },
+  "by_question_type": {
+    "clinical_explainer": {
+      "items": 8,
+      "human_relevant": 0,
+      "model_relevant": 0,
+      "agree": 7,
+      "human_relevant_rate": 0.0,
+      "population_claims": 65,
+      "population_weight": 0.3514
+    },
+    "differential_or_workup": {
+      "items": 8,
+      "human_relevant": 0,
+      "model_relevant": 0,
+      "agree": 6,
+      "human_relevant_rate": 0.0,
+      "population_claims": 14,
+      "population_weight": 0.0757
+    },
+    "guideline_comparison": {
+      "items": 8,
+      "human_relevant": 0,
+      "model_relevant": 0,
+      "agree": 7,
+      "human_relevant_rate": 0.0,
+      "population_claims": 64,
+      "population_weight": 0.3459
+    },
+    "patient_faq": {
+      "items": 8,
+      "human_relevant": 1,
+      "model_relevant": 0,
+      "agree": 7,
+      "human_relevant_rate": 0.125,
+      "population_claims": 9,
+      "population_weight": 0.0486
+    },
+    "study_result_numeric": {
+      "items": 8,
+      "human_relevant": 1,
+      "model_relevant": 1,
+      "agree": 7,
+      "human_relevant_rate": 0.125,
+      "population_claims": 33,
+      "population_weight": 0.1784
+    }
+  },
+  "support_column": {
+    "filled": 0,
+    "note": "Optional column; left blank means the author did not open the passage for that item."
+  },
+  "per_item": [
+    {
+      "item_id": "rel_01",
+      "entailment_item": "ent_0105",
+      "query_id": "rivf_041",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": false
+    },
+    {
+      "item_id": "rel_02",
+      "entailment_item": "ent_0209",
+      "query_id": "rivf_095",
+      "question_type": "study_result_numeric",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_03",
+      "entailment_item": "ent_0050",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric",
+      "human": "relevant",
+      "human_support": "",
+      "model": "relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_04",
+      "entailment_item": "ent_0152",
+      "query_id": "rivf_061",
+      "question_type": "patient_faq",
+      "human": "relevant",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": false
+    },
+    {
+      "item_id": "rel_05",
+      "entailment_item": "ent_0042",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_06",
+      "entailment_item": "ent_0145",
+      "query_id": "rivf_045",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_07",
+      "entailment_item": "ent_0026",
+      "query_id": "rivf_025",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_08",
+      "entailment_item": "ent_0222",
+      "query_id": "rivf_118",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_09",
+      "entailment_item": "ent_0027",
+      "query_id": "rivf_076",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_10",
+      "entailment_item": "ent_0218",
+      "query_id": "rivf_101",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_11",
+      "entailment_item": "ent_0211",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_12",
+      "entailment_item": "ent_0115",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_13",
+      "entailment_item": "ent_0198",
+      "query_id": "rivf_025",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_14",
+      "entailment_item": "ent_0159",
+      "query_id": "rivf_123",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": false
+    },
+    {
+      "item_id": "rel_15",
+      "entailment_item": "ent_0183",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_16",
+      "entailment_item": "ent_0002",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_17",
+      "entailment_item": "ent_0013",
+      "query_id": "rivf_019",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_18",
+      "entailment_item": "ent_0205",
+      "query_id": "rivf_021",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_19",
+      "entailment_item": "ent_0011",
+      "query_id": "rivf_097",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_20",
+      "entailment_item": "ent_0201",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_21",
+      "entailment_item": "ent_0080",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_22",
+      "entailment_item": "ent_0035",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_23",
+      "entailment_item": "ent_0132",
+      "query_id": "rivf_051",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_24",
+      "entailment_item": "ent_0135",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_25",
+      "entailment_item": "ent_0150",
+      "query_id": "rivf_114",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_26",
+      "entailment_item": "ent_0202",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "adjudicated",
+      "agree": false
+    },
+    {
+      "item_id": "rel_27",
+      "entailment_item": "ent_0055",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_28",
+      "entailment_item": "ent_0215",
+      "query_id": "rivf_061",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_29",
+      "entailment_item": "ent_0212",
+      "query_id": "rivf_093",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_30",
+      "entailment_item": "ent_0121",
+      "query_id": "rivf_049",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_31",
+      "entailment_item": "ent_0033",
+      "query_id": "rivf_058",
+      "question_type": "guideline_comparison",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_32",
+      "entailment_item": "ent_0160",
+      "query_id": "rivf_125",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_33",
+      "entailment_item": "ent_0098",
+      "query_id": "rivf_051",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_34",
+      "entailment_item": "ent_0128",
+      "query_id": "rivf_055",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_35",
+      "entailment_item": "ent_0103",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_36",
+      "entailment_item": "ent_0124",
+      "query_id": "rivf_104",
+      "question_type": "study_result_numeric",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_37",
+      "entailment_item": "ent_0127",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": false
+    },
+    {
+      "item_id": "rel_38",
+      "entailment_item": "ent_0016",
+      "query_id": "rivf_110",
+      "question_type": "guideline_comparison",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": false
+    },
+    {
+      "item_id": "rel_39",
+      "entailment_item": "ent_0039",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "",
+      "model": "not_relevant",
+      "model_source": "both_passes",
+      "agree": true
+    },
+    {
+      "item_id": "rel_40",
+      "entailment_item": "ent_0032",
+      "query_id": "rivf_093",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "",
+      "model": "partial",
+      "model_source": "both_passes",
+      "agree": true
+    }
+  ]
+}

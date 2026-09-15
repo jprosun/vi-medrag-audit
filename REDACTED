@@ -1,0 +1,4 @@
+Public evaluation artifact. Source passages and third-party contact addresses are withheld.
+MANIFEST.json records published-byte and original source-byte SHA-256 hashes separately.
+No hash check is disabled: artifact_provenance.py verifies public bytes before returning
+a recorded source fingerprint. Text-dependent checks require the original corpus.

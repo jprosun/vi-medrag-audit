@@ -1,0 +1,2710 @@
+{
+  "counts": {
+    "items": 222,
+    "judged_pass_a": 222,
+    "judged_pass_b": 222,
+    "raw_agreement": 217,
+    "disagreements": 5,
+    "adjudicated": 5
+  },
+  "pass_a": [
+    {
+      "item_id": "rq_0048",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks daily vs event-driven PrEP and priority groups; claim lists DKA risk factors in newly diagnosed type 1 diabetes. No overlap in disease or intervention."
+    },
+    {
+      "item_id": "rq_0029",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks pathogenesis of hepatic encephalopathy (ammonia, portosystemic shunts); claim is about a gap in evidence on SIMV/PSV ventilation under anesthesia."
+    },
+    {
+      "item_id": "rq_0069",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (HR+ breast cancer, endocrine therapy) but claim concerns CDK4/6i in recurrent/metastatic setting, not tamoxifen vs aromatase inhibitor for adjuvant early-stage."
+    },
+    {
+      "item_id": "rq_0065",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks criteria for including PKU/congenital hypothyroidism in newborn screening; claim describes a medical school curriculum structure."
+    },
+    {
+      "item_id": "rq_0188",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks TB epidemiology in Arctic indigenous communities vs tropics; claim is about HIV risk behaviours in MSM. Different disease and population."
+    },
+    {
+      "item_id": "rq_0026",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about lifelong dietary restriction of beef/seafood in gout; claim describes data-collection methods in an acute MI echo study."
+    },
+    {
+      "item_id": "rq_0101",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks mechanism of bilirubin neurotoxicity in neonates and preterm risk factors; claim describes clinical features of glufosinate/fluoroacetate/diquat poisoning."
+    },
+    {
+      "item_id": "rq_0208",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Claim is only a keyword list (ESRD, hemodialysis, B12, anemia, mortality); shares the ESRD/HD population but says nothing about PD vs HD or residual renal function."
+    },
+    {
+      "item_id": "rq_0002",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same population (ESRD on hemodialysis) but claim is about AV fistula failure lesion sites; does not address dialysis frequency, fluid or salt restriction asked."
+    },
+    {
+      "item_id": "rq_0169",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Gives 1-year mortality of ESRD patients on hemodialysis; same disease but no comparison with peritoneal dialysis and nothing on residual renal function."
+    },
+    {
+      "item_id": "rq_0071",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Study objective on vitamin D, BMD and risk factors in postmenopausal osteoporosis; same disease but does not address oral vs IV bisphosphonate choice."
+    },
+    {
+      "item_id": "rq_0197",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks pathogenesis of diabetic peripheral polyneuropathy; claim is a study objective on DVT in ischaemic stroke patients. Different disease."
+    },
+    {
+      "item_id": "rq_0022",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "General definition of diabetes mellitus mentioning nerve and foot complications; background only, no mechanism for symmetric distal-onset neuropathy."
+    },
+    {
+      "item_id": "rq_0181",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Study objective on left atrial strain echo in post-PCI MI patients; same population but nothing on ticagrelor vs clopidogrel with aspirin."
+    },
+    {
+      "item_id": "rq_0213",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Reports hypertension prevalence among elderly (40.4%); same disease but does not address whether 40-year-olds need BP screening or onset below 60."
+    },
+    {
+      "item_id": "rq_0133",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks success rate of 6-month regimen for drug-susceptible TB; claim describes HFrEF beta-blocker study population. Different disease."
+    },
+    {
+      "item_id": "rq_0136",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (HR+ breast cancer) but claim is about CDK4/6i plus endocrine therapy in recurrent/metastatic disease, not adjuvant tamoxifen vs AI in early stage."
+    },
+    {
+      "item_id": "rq_0043",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Describes cohort characteristics (alcohol, obesity, DM, symptoms) of HTG-induced pancreatitis; same disease but gives no mechanism for why HTG causes pancreatitis."
+    },
+    {
+      "item_id": "rq_0127",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Clinic census of elderly with HTN/DM/IHD in 2022; touches hypertension but says nothing about guideline changes up to 2025 the question asks about."
+    },
+    {
+      "item_id": "rq_0093",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks hepatic encephalopathy pathogenesis (ammonia, shunts); claim describes benefits of assisted ventilation modes under anesthesia."
+    },
+    {
+      "item_id": "rq_0053",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Definition/pathogenesis of diabetic kidney disease; same disease context but does not address which drug class to add after metformin or why."
+    },
+    {
+      "item_id": "rq_0049",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Definition of knee OA naming cartilage, subchondral bone and periarticular structures leading to pain; does not explain which structure generates pain or why."
+    },
+    {
+      "item_id": "rq_0079",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Study objective on PRP efficacy in knee OA; same disease but does not address the source or mechanism of pain asked."
+    },
+    {
+      "item_id": "rq_0143",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "KDIGO 2024 CKD staging by eGFR; background on the question's population but nothing on drug choice after metformin in T2DM with CKD."
+    },
+    {
+      "item_id": "rq_0212",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Study method for regorafenib in advanced CRC; same disease but different stage and intervention, no data on adjuvant chemo and 5-year survival in stage II."
+    },
+    {
+      "item_id": "rq_0142",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Describes a metastatic HR+ breast cancer study sample (first-line CDK4/6i); same disease but not adjuvant tamoxifen vs AI in early postmenopausal disease."
+    },
+    {
+      "item_id": "rq_0055",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Author affiliations plus osteoporosis definition and study objective on vitamin D/BMD; same disease but nothing on oral vs IV bisphosphonate regimen."
+    },
+    {
+      "item_id": "rq_0019",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Utilisation rates of SGLT2i across HF phenotypes; same drug and disease but no mechanism of benefit on myocardium or hemodynamics in HFrEF."
+    },
+    {
+      "item_id": "rq_0211",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Child-Pugh/SAAG/FIB-4 higher in cirrhotics with varices; same disease but concerns predicting varices, not NSBB vs band ligation for primary prophylaxis."
+    },
+    {
+      "item_id": "rq_0078",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same population (young children, acute diarrhea) but reports rehydration outcome after 2 days; says nothing about low-osmolarity ORS vs rice water or zinc."
+    },
+    {
+      "item_id": "rq_0087",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Question asks how DOAC and warfarin differ; claim states a key difference (VKA needs INR monitoring, DOAC does not). Part of a direct answer."
+    },
+    {
+      "item_id": "rq_0118",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same population (T2DM with hypertension) but about factors predicting drug-drug interactions, not ACEi vs CCB choice or combination strategy."
+    },
+    {
+      "item_id": "rq_0068",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Background epidemiology of CAP (global deaths, 12% of lung disease in VN); does not give the 30-day mortality rate of hospitalized CAP."
+    },
+    {
+      "item_id": "rq_0073",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about osteoporosis in postmenopausal women; question is about coronary plaque rupture vs stable stenosis. Different disease entirely."
+    },
+    {
+      "item_id": "rq_0076",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same intervention (PCI) but reports single-center distal radial access success rates; does not address national annual PCI volume."
+    },
+    {
+      "item_id": "rq_0185",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim describes HFrEF beta-blocker study subjects; question asks about PCSK9 inhibitor MACE reduction in RCTs. Different drug and population."
+    },
+    {
+      "item_id": "rq_0001",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (cirrhosis with esophageal varices) but about predicting varices with SAAG/FIB-4, not NSBB vs band ligation for primary prophylaxis."
+    },
+    {
+      "item_id": "rq_0067",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Study objective on initial antibiotic choice in pediatric CAP; related topic and population but no finding on beta-lactam+macrolide vs FQ."
+    },
+    {
+      "item_id": "rq_0098",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Lists knee OA treatment options including viscosupplement injection; background only, does not compare corticosteroid vs HA or say when to choose."
+    },
+    {
+      "item_id": "rq_0052",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim about CAP mortality prediction scores; question about dietary restriction in a child with diarrhea. Unrelated disease."
+    },
+    {
+      "item_id": "rq_0165",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim defines dementia; question asks how to differentiate bacterial, viral and TB meningitis. Different disease."
+    },
+    {
+      "item_id": "rq_0046",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is a PRP knee osteoarthritis study objective; question is about Alzheimer's vs vascular dementia workup. Unrelated."
+    },
+    {
+      "item_id": "rq_0196",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (knee OA) and intra-articular injection theme, but a study objective about PRP; does not address corticosteroid vs hyaluronic acid."
+    },
+    {
+      "item_id": "rq_0008",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (COPD), mentions smoking as risk factor, but gives no annual FEV1 decline figure for continuing smokers."
+    },
+    {
+      "item_id": "rq_0009",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (PCOS) but a background statement on heterogeneous presentation; does not explain how insulin resistance disrupts ovulation."
+    },
+    {
+      "item_id": "rq_0182",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Study objective on osteoporosis in elderly PPI users; question asks the mechanism of corticosteroid-induced bone loss. Different drug, no mechanism."
+    },
+    {
+      "item_id": "rq_0135",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (severe CAP) but about respiratory viruses and vaccination programs; does not address empiric antibiotic regimen choice."
+    },
+    {
+      "item_id": "rq_0117",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same population (T2DM) but generic statement on choosing glucose-lowering drug combinations; not about ACEi vs CCB for hypertension with albuminuria."
+    },
+    {
+      "item_id": "rq_0159",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same population (T2DM with CKD) but a study method/sample description for sTNFR1 research; no finding on which drug class to add after metformin."
+    },
+    {
+      "item_id": "rq_0164",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (lower-limb DVT) but a table heading on risk factors for DVT occurrence; nothing on anticoagulation duration or decision factors."
+    },
+    {
+      "item_id": "rq_0147",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is a dementia intervention study objective; question is about growth effects of inhaled asthma preventer in a child. Unrelated."
+    },
+    {
+      "item_id": "rq_0012",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (severe CAP) but describes study patients as elderly with comorbidities favoring fungi; does not address beta-lactam+macrolide vs FQ."
+    },
+    {
+      "item_id": "rq_0024",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim describes HFrEF beta-blocker study subjects; question asks PCSK9 inhibitor absolute MACE reduction. Different drug and population."
+    },
+    {
+      "item_id": "rq_0130",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same condition (DIC) but reports its prevalence in a GI cancer cohort; does not explain the thrombosis-plus-bleeding mechanism asked."
+    },
+    {
+      "item_id": "rq_0013",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "About retrograde ureteroscopic lithotripsy for ureteral stones and choice by size/location, but does not compare with ESWL or answer for an 8 mm distal stone."
+    },
+    {
+      "item_id": "rq_0219",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same condition (paediatric acute diarrhoea, dehydration) but reports plan-B dehydration progression; says nothing on low-osmolarity ORS vs homemade rice water or zinc."
+    },
+    {
+      "item_id": "rq_0163",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "About arrhythmias/extrasystoles being benign, but in pregnant women; does not name any investigation to separate SVT, extrasystoles and anxiety as asked."
+    },
+    {
+      "item_id": "rq_0189",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same population (acute MI post-PCI) but a method sentence on echo/LA-strain timing; nothing on aspirin+ticagrelor vs clopidogrel choice."
+    },
+    {
+      "item_id": "rq_0070",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Definition of diabetes mellitus; question is about anticoagulation duration for unprovoked DVT."
+    },
+    {
+      "item_id": "rq_0203",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Rates of complex coronary interventions via distal radial access; question is about differentiating bacterial, viral and TB meningitis."
+    },
+    {
+      "item_id": "rq_0066",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (hypertension) and argues for screening, but only in the elderly; does not address the 40-year-old or the premise that HTN occurs only after 60."
+    },
+    {
+      "item_id": "rq_0191",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Fracture-risk rate in elderly PPI users; question asks the mechanism of corticosteroid-induced bone loss. Different drug, and a rate rather than a mechanism."
+    },
+    {
+      "item_id": "rq_0166",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Sample description of catheter-associated UTI in ICU cancer patients; question asks recurrence rate after uncomplicated cystitis in women. Different population, no recurrence data."
+    },
+    {
+      "item_id": "rq_0072",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (pregnancy after prior CS) but only a distribution of inter-delivery intervals from another study; no guidance on TOLAC vs elective repeat CS."
+    },
+    {
+      "item_id": "rq_0054",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "About DKA in T1DM, but explains delayed diagnosis when no family history; not the pathophysiological reason T1DM is more DKA-prone than T2DM."
+    },
+    {
+      "item_id": "rq_0107",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (focal epilepsy) but a sample-size/prevalence statement in children; nothing on levetiracetam vs carbamazepine."
+    },
+    {
+      "item_id": "rq_0105",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Global diabetes prevalence figures (ADA); background on the disease only, nothing on neuropathy pathogenesis or symmetric distal onset."
+    },
+    {
+      "item_id": "rq_0060",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Objective of a B12/anaemia mortality study in haemodialysis patients; question is seizure recurrence risk after a first unprovoked seizure."
+    },
+    {
+      "item_id": "rq_0106",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Keyword line on regorafenib in late-stage colorectal cancer; same disease but different stage and treatment, no survival data for adjuvant chemo in stage II."
+    },
+    {
+      "item_id": "rq_0122",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Study-design sentence on hospitalised ADHF patients; same population but gives no 30-day readmission rate."
+    },
+    {
+      "item_id": "rq_0020",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Reports arrhythmia types (extrasystoles) and timing in pregnancy; does not address which investigations distinguish SVT, benign extrasystoles and anxiety."
+    },
+    {
+      "item_id": "rq_0132",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Directly on TOLAC vs repeat CS after prior CS, but describes local practice pattern (repeat CS mostly chosen), not a recommendation for the term cephalic case asked."
+    },
+    {
+      "item_id": "rq_0152",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Truncated call to screen cancer patients for haematologic malignancy/marrow metastasis/coagulation status; touches DIC but not its dual thrombosis-bleeding mechanism."
+    },
+    {
+      "item_id": "rq_0190",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Method sentence of a regorafenib colorectal-cancer study; question is weight-loss threshold for T2DM remission."
+    },
+    {
+      "item_id": "rq_0192",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Risk factors for DKA at T1DM diagnosis (age <2, misdiagnosis, delay, SES); same disease but not the mechanism of T1 vs T2 DKA susceptibility."
+    },
+    {
+      "item_id": "rq_0178",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Study objective on T2DM drug-use patterns and comorbidities; related population but no answer on ACEi vs CCB or combination for HTN with albuminuria."
+    },
+    {
+      "item_id": "rq_0031",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "States MOH 2020 criteria: typical contrast CT/MRI + AFP or histology suffices for HCC diagnosis, i.e. the basis for imaging-only diagnosis; does not spell out the 'why'."
+    },
+    {
+      "item_id": "rq_0057",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Objective of a TyG-index study in gestational diabetes; question asks SVR rate after DAA therapy for chronic HCV."
+    },
+    {
+      "item_id": "rq_0162",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Truncated fragment about time from stroke detection to thrombolysis; same disease and time-window theme but no penumbra mechanism or explanation."
+    },
+    {
+      "item_id": "rq_0062",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Keyword line (T2DM, outpatient, drug interactions); related population but nothing on ACEi vs CCB choice or combination for HTN with albuminuria."
+    },
+    {
+      "item_id": "rq_0015",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Method sentence: cirrhotic patients assessed by endoscopy and labs; same population but nothing on NSBB vs band ligation for primary prophylaxis."
+    },
+    {
+      "item_id": "rq_0167",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Sample description of a thoracic pedicle CT anatomy study; question asks H. pylori prevalence in Vietnamese adults."
+    },
+    {
+      "item_id": "rq_0157",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "INR monitoring for VKA vs DOAC; question asks mechanism of acquired EGFR-TKI resistance in NSCLC."
+    },
+    {
+      "item_id": "rq_0161",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease and outcome (30-day mortality in CAP) but reports prognostic-score AUC performance, not the mortality percentage asked."
+    },
+    {
+      "item_id": "rq_0209",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks national annual PCI volume; claim gives rates of complex-lesion PCI subtypes in one distal-radial cohort. Same procedure, no volume figure."
+    },
+    {
+      "item_id": "rq_0200",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks UTI recurrence rate in women after acute cystitis; claim is about catheter-associated UTI in cancer ICU patients not progressing to sepsis. Only 'UTI' shared."
+    },
+    {
+      "item_id": "rq_0168",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks mechanism of DKA susceptibility in T1DM vs T2DM; claim is background on T1DM genetics and equal sex incidence, no DKA mechanism."
+    },
+    {
+      "item_id": "rq_0034",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks TOLAC vs elective repeat CS recommendation; claim only notes some successful vaginal trials occurred at one hospital, no recommendation or risk comparison."
+    },
+    {
+      "item_id": "rq_0140",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is neonatal bilirubin neurotoxicity; claim is onset symptoms of fluoroacetate/glufosinate pesticide poisoning. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0004",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks ticagrelor vs clopidogrel after MI with stent; claim is a keyword list about LA strain and diastolic dysfunction. Shares AMI setting only, nothing on antiplatelets."
+    },
+    {
+      "item_id": "rq_0091",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks about HbA1c diagnostic threshold updates; claim is a study objective on TyG index for gestational diabetes. Different condition, different test."
+    },
+    {
+      "item_id": "rq_0206",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks H. pylori prevalence in Vietnamese adults; claim is the objective of a thoracic pedicle CT morphology study."
+    },
+    {
+      "item_id": "rq_0170",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is rectal bleeding/colon cancer risk and colonoscopy at 32; claim is fracture risk in elderly PPI users."
+    },
+    {
+      "item_id": "rq_0080",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks tamoxifen vs AI adjuvant in early HR+ breast cancer; claim is a method statement about CDK4/6 therapy in metastatic HR+ disease. Same disease, wrong setting."
+    },
+    {
+      "item_id": "rq_0097",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks oral weekly vs IV yearly bisphosphonate; claim is background that postmenopausal women are prone to osteoporosis and fractures. No treatment comparison."
+    },
+    {
+      "item_id": "rq_0028",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks penumbra mechanism and why it sets the reperfusion window; claim reports mean time-to-thrombolysis in one cohort. Same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0003",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks mechanism of acquired EGFR-TKI resistance; claim is a method/sample statement of a chemo study in TKI-resistant EGFR NSCLC. Same topic, no mechanism."
+    },
+    {
+      "item_id": "rq_0129",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks PCSK9 inhibitor absolute MACE reduction in RCTs; claim is about hyponatremia and adverse events in decompensated HFrEF."
+    },
+    {
+      "item_id": "rq_0086",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks NSBB vs EVL for primary variceal bleeding prophylaxis; claim gives SAAG cutoff accuracy for predicting large varices. Same disease, different aspect."
+    },
+    {
+      "item_id": "rq_0103",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is ischemic penumbra mechanism in stroke; claim is APRI change after DAA therapy in HCV cirrhosis."
+    },
+    {
+      "item_id": "rq_0011",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why HIV viral load rebounds weeks after stopping ARV; claim is background that ARV is the only life-prolonging treatment. Same topic, no mechanism."
+    },
+    {
+      "item_id": "rq_0179",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks DIC mechanism of simultaneous thrombosis and bleeding; claim (with affiliation noise) recommends routine DIC screening in GI cancer. Same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0021",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to distinguish GBS from cord compression; claim describes psoriatic arthritis features and diagnostic difficulty."
+    },
+    {
+      "item_id": "rq_0120",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks what changed in the 2025 hypertension guideline; claim is a method statement of an elderly HTN/DM/IHD clinic study. Shares hypertension only, nothing on guidelines."
+    },
+    {
+      "item_id": "rq_0198",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is intra-articular corticosteroid vs hyaluronic acid in knee OA; claim is regorafenib indication in advanced colorectal cancer."
+    },
+    {
+      "item_id": "rq_0149",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is dietary restriction for a child with diarrhea; claim is four-pillar heart failure therapy usage rates by EF group."
+    },
+    {
+      "item_id": "rq_0139",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks mechanism of corticosteroid-induced bone loss; claim is about long-term PPI use raising osteoporosis/fracture risk. Different drug, no corticosteroid mechanism."
+    },
+    {
+      "item_id": "rq_0218",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is long-term harm of frequent analgesic use for migraine; claim is the evaluation protocol of a cirrhosis varices study."
+    },
+    {
+      "item_id": "rq_0058",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks about HbA1c diagnostic threshold updates; claim lists exclusion criteria of a gestational diabetes TyG study. Different condition, method text."
+    },
+    {
+      "item_id": "rq_0018",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks pathogenesis of diabetic polyneuropathy and its symmetric distal onset; claim is a diabetes mortality projection for 2030. Same disease, no neuropathy content."
+    },
+    {
+      "item_id": "rq_0150",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks levetiracetam vs carbamazepine for new focal epilepsy; claim is a method statement of a pediatric epilepsy classification study. Same disease, no drug choice."
+    },
+    {
+      "item_id": "rq_0102",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks renal-protective mechanism of SGLT2i beyond glycemia; claim gives day-1 SGLT2i prescribing rates in hospitalized HF. Same drug, different aspect, no mechanism."
+    },
+    {
+      "item_id": "rq_0059",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks adjuvant chemo effect on 5-year survival in stage II CRC; claim is the sample description of a catheter-associated UTI study in ICU cancer patients."
+    },
+    {
+      "item_id": "rq_0153",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (ARV, lifelong adherence, resistance) but does not explain why viral load falls fast or rebounds within weeks after stopping."
+    },
+    {
+      "item_id": "rq_0187",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about arrhythmias in pregnant women; question asks tachypnea thresholds in infants by age."
+    },
+    {
+      "item_id": "rq_0089",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is a nurses' knowledge table on catheter care; question asks % ESBL-producing E. coli in community UTI. Shares only 'urinary'."
+    },
+    {
+      "item_id": "rq_0006",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is study methods on elderly HTN/DM/IHD at a family clinic; question asks diet restrictions and bleeding signs on oral anticoagulants for AF."
+    },
+    {
+      "item_id": "rq_0007",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same condition (DIC) but the claim is a study objective on marrow metastasis vs DIC; no mechanism of concurrent thrombosis and bleeding."
+    },
+    {
+      "item_id": "rq_0044",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim concerns T2DM drug combination choices; question asks why nephrotic syndrome raises venous/renal vein thrombosis risk."
+    },
+    {
+      "item_id": "rq_0111",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about catheter UTI not causing sepsis; question asks tests to distinguish iron deficiency from thalassemia trait."
+    },
+    {
+      "item_id": "rq_0156",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (knee OA) but claim is sample size/outcome measures of a PRP study; says nothing about corticoid vs hyaluronic acid choice."
+    },
+    {
+      "item_id": "rq_0207",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (T2DM, weight loss via diet) but reports 2-week anthropometric change, not the % weight loss needed for remission."
+    },
+    {
+      "item_id": "rq_0210",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (epilepsy) but claim is the sample description of a pediatric classification study; no levetiracetam vs carbamazepine guidance."
+    },
+    {
+      "item_id": "rq_0180",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about psoriatic arthritis diagnosis; question asks how to differentiate GBS from spinal cord compression."
+    },
+    {
+      "item_id": "rq_0114",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim states a medical school's training objectives; question asks criteria for including PKU/congenital hypothyroidism in newborn screening."
+    },
+    {
+      "item_id": "rq_0045",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about age of onset of type 1 diabetes; question asks workup of isolated thrombocytopenia with skin bleeding in a young woman."
+    },
+    {
+      "item_id": "rq_0201",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (colorectal cancer) but claim is regorafenib indication in refractory advanced disease, not adjuvant chemo effect on 5-year survival in stage II."
+    },
+    {
+      "item_id": "rq_0160",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Claim is only a sample count from a stroke thrombolysis study; on the topic of acute stroke reperfusion but says nothing about penumbra or time window."
+    },
+    {
+      "item_id": "rq_0183",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is baseline characteristics of HCV patients; question asks inheritance risk when both parents carry thalassemia genes."
+    },
+    {
+      "item_id": "rq_0215",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is a table of HTN/DM/IHD prevalence in the elderly; question asks workup of painless gross hematuria in a 55-year-old man."
+    },
+    {
+      "item_id": "rq_0217",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about TMJ/occlusion and facial structure; question asks tests to distinguish bacterial, viral and TB meningitis."
+    },
+    {
+      "item_id": "rq_0063",
+      "label": "not_relevant",
+      "confidence": "low",
+      "rationale": "Claim is mostly author metadata plus a fragment on HF inpatient cohort differences; does not address SGLT2i renal-protective mechanism in CKD."
+    },
+    {
+      "item_id": "rq_0081",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Claim gives SVR after DAA therapy (184/184, 100%), directly answering the asked SVR percentage."
+    },
+    {
+      "item_id": "rq_0017",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Claim gives share of hospital infections that are respiratory vs urinary; question asks ESBL rate among E. coli in community UTI. Different measure and setting."
+    },
+    {
+      "item_id": "rq_0027",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is a drug-registration stability-study commitment; question asks bedaquiline mechanism and why it replaced injectables in MDR-TB."
+    },
+    {
+      "item_id": "rq_0037",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (lower-limb DVT) but claim is a study objective on DVT prevalence in stroke patients; no guidance on anticoagulation duration for unprovoked DVT."
+    },
+    {
+      "item_id": "rq_0032",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim states T2DM is ~90% of diabetes; question asks mechanism of neonatal bilirubin neurotoxicity and preterm risk factors."
+    },
+    {
+      "item_id": "rq_0108",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (ureteral stones, URS laser) but claim is study design/sample only; does not compare ESWL vs URS for an 8 mm distal stone."
+    },
+    {
+      "item_id": "rq_0094",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same population (acute MI after PCI) but claim is data-collection method of an echo/NT-proBNP study; nothing on ticagrelor vs clopidogrel."
+    },
+    {
+      "item_id": "rq_0039",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (HCV treated with DAA) but reports APRI fibrosis change in cirrhotics, not the SVR percentage asked."
+    },
+    {
+      "item_id": "rq_0099",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks % CV event reduction per 1 mmol/L LDL-C drop with statin; claim lists alcohol/obesity/diabetes rates and symptoms in acute pancreatitis patients. Different subject."
+    },
+    {
+      "item_id": "rq_0084",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is ticagrelor vs clopidogrel after stenting; claim is HIV viral load suppression rate. Unrelated disease and intervention."
+    },
+    {
+      "item_id": "rq_0123",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Claim reports arrhythmia types (PACs/PVCs) in pregnant women, not the workup to separate SVT from benign ectopy/anxiety in a young patient. Same topic, different population and aspect."
+    },
+    {
+      "item_id": "rq_0095",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Claim states the PRP study's sample (34 knee OA patients, K-L II-III); it does not address the source of pain in knee OA. Same disease, method statement only."
+    },
+    {
+      "item_id": "rq_0146",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about inhaled asthma controller effects on a child's growth; claim is that no drug cures dementia. Different disease and population."
+    },
+    {
+      "item_id": "rq_0042",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the 30-day mortality rate of hospitalized CAP; claim says ATS/IDSA, CURB-65 and PSI predict 30-day mortality well but gives no rate. Same disease/outcome, different aspect."
+    },
+    {
+      "item_id": "rq_0202",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Claim is a study objective (measure CD4, viral load and link to adherence); it does not explain why viral load falls on ARV and rebounds after stopping. Same topic, objective only."
+    },
+    {
+      "item_id": "rq_0038",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is how to confirm PPROM at 32 weeks vs discharge/urine leak; claim is that treating hypertension lowers CV risk. Different subject."
+    },
+    {
+      "item_id": "rq_0085",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is the mechanism of bone erosion and synovial pannus in RA; claim is that ARV is the only life-prolonging HIV treatment. Unrelated."
+    },
+    {
+      "item_id": "rq_0056",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the non-glycemic renoprotective mechanism of SGLT2 inhibitors; claim is a global diabetes death count for 2016. No mention of SGLT2, kidney or mechanism."
+    },
+    {
+      "item_id": "rq_0113",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks H. pylori prevalence in Vietnamese adults; claim is about thoracic pedicle morphology in Vietnamese adults. Shared population only, different subject."
+    },
+    {
+      "item_id": "rq_0134",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is TB epidemiology in Arctic indigenous vs tropical settings; claim is the objective of a study on MSM HIV patients with opportunistic infections. Different subject."
+    },
+    {
+      "item_id": "rq_0116",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks oral weekly vs yearly IV bisphosphonate for postmenopausal osteoporosis; claim gives a risk factor (>10 yrs since menopause, OR 3.1). Same disease, not treatment."
+    },
+    {
+      "item_id": "rq_0222",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Claim is a fragment of a study sample (children 1 mo-5 y newly diagnosed with epilepsy at Nhi Dong 2); it says nothing about levetiracetam vs carbamazepine. Same disease, method only."
+    },
+    {
+      "item_id": "rq_0061",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question compares intra-articular corticoid vs hyaluronic acid in moderate knee OA; claim reports PRP outcomes in grade 2-3 knee OA. Same disease and stage, different injectable, no comparison."
+    },
+    {
+      "item_id": "rq_0151",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Claim only states where/when the HBV-cirrhosis-HCC study patients were diagnosed; it does not explain why imaging suffices for HCC on cirrhosis. Study setting from the same disease area."
+    },
+    {
+      "item_id": "rq_0126",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks how insulin resistance disrupts ovulation in PCOS; claim is background that PCOS has heterogeneous signs making definition hard. Same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0074",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the myocardial/hemodynamic mechanism of SGLT2i benefit in HFrEF; claim gives usage rates of quadruple HF therapy by EF phenotype. Same disease, utilization not mechanism."
+    },
+    {
+      "item_id": "rq_0174",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Claim is only a keyword line (T2DM, outpatient, drug interactions); it carries nothing on SGLT2 inhibitors, kidney protection or mechanism."
+    },
+    {
+      "item_id": "rq_0110",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why severe hypertriglyceridemia causes acute pancreatitis; claim reports SOFA/BISAP/Ranson improvement after plasma exchange in HTG pancreatitis. Same disease, treatment not pathogenesis."
+    },
+    {
+      "item_id": "rq_0141",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is confirming PPROM at 32 weeks; claim defines Morisky adherence cut-offs for hypertension medication. Different subject."
+    },
+    {
+      "item_id": "rq_0047",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the renal-protective mechanism of SGLT2i in CKD; claim gives quadruple-therapy usage rates in heart failure phenotypes. Different disease, no mechanism, SGLT2i not named."
+    },
+    {
+      "item_id": "rq_0205",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is next-step DMARD strategy in RA after methotrexate failure; claim is fracture-risk prevalence in elderly PPI users. Different disease and subject."
+    },
+    {
+      "item_id": "rq_0193",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is TB in Arctic indigenous communities; claim is MSM HIV patients' awareness of transmission risk. Unrelated."
+    },
+    {
+      "item_id": "rq_0145",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why PKU and congenital hypothyroidism are in newborn screening and the inclusion criteria; claim is medical students' class-preparation rates. Unrelated."
+    },
+    {
+      "item_id": "rq_0112",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about growth effects of daily preventer inhaler in a 7-year-old asthmatic; claim is that dementia drugs have side effects and cost. Different disease and population."
+    },
+    {
+      "item_id": "rq_0025",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is neonatal bilirubin neurotoxicity mechanism and preterm risk factors; claim lists lab and MRI variables in a pesticide-poisoning study. Different subject."
+    },
+    {
+      "item_id": "rq_0083",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks national annual PCI volume; claim gives single-center counts for primary PCI via distal radial access (42 successes, 2 failures, 5 conversions). Same procedure, not national volume."
+    },
+    {
+      "item_id": "rq_0220",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks why T1DM patients are more prone to DKA than T2DM; claim gives T1DM age-of-onset distribution. Same disease, epidemiology not mechanism."
+    },
+    {
+      "item_id": "rq_0195",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about TB epidemiology in Arctic indigenous vs tropical communities; claim is the objective of an HIV/MSM opportunistic-infection study. Different disease and population."
+    },
+    {
+      "item_id": "rq_0014",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks WHY severe hypertriglyceridemia causes acute pancreatitis (mechanism); claim reports severity scores falling after plasma exchange. Same disease, treatment outcome, no mechanism."
+    },
+    {
+      "item_id": "rq_0158",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks PD vs HD for ESRD with residual function; claim says anemia is common in CKD/ESRD and raises mortality. Same population, unrelated aspect; no dialysis-modality content."
+    },
+    {
+      "item_id": "rq_0082",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks the cardiac/hemodynamic mechanism of SGLT2i benefit in HFrEF; claim is a truncated fragment listing sample variables (age, sex, rate) from an SGLT2i-in-HF study. No mechanism."
+    },
+    {
+      "item_id": "rq_0155",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks annual FEV1 decline (mL) in COPD patients who keep smoking; claim gives COPD mortality epidemiology (LMIC deaths, 2060 projection). Same disease, no FEV1 data."
+    },
+    {
+      "item_id": "rq_0194",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the mechanism by which long-term corticosteroids lower bone density; claim reports fracture-risk prevalence in elderly PPI users. Different drug, no mechanism."
+    },
+    {
+      "item_id": "rq_0119",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Question: 8mm distal ureteral stone, ESWL vs URS? Claim states URS is safe/effective especially for stones <=10mm; bears directly on choosing URS, though it stresses mid-ureter and omits ESWL comparison."
+    },
+    {
+      "item_id": "rq_0125",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks whether a 40-year-old needs periodic BP checks given HTN 'only' in >60; claim gives NCD prevalence (HTN 40.4%) among elderly. Same disease, does not address younger adults or screening."
+    },
+    {
+      "item_id": "rq_0131",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether milk/calcium suffices for a 65-year-old with osteoporosis or drugs are needed; claim is about primary PCI via distal radial access. Different disease entirely."
+    },
+    {
+      "item_id": "rq_0204",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks anticoagulation duration for unprovoked DVT and deciding factors; claim is a study objective (DVT rate/factors in stroke patients). Same disease, study aim only, provoked setting."
+    },
+    {
+      "item_id": "rq_0121",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks ESWL vs URS for an 8mm distal stone; claim only defines how URS operative time was measured. Same procedure, methodological detail, no help choosing."
+    },
+    {
+      "item_id": "rq_0216",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why PKU/congenital hypothyroidism are in newborn screening and inclusion criteria; claim describes a medical-education survey method on students. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0050",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the renal-protective mechanism of SGLT2i in CKD; claim gives time-to-initiation of SGLT2i in hospitalized HF by EF phenotype. Same drug, different disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0040",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks low-osmolarity ORS vs homemade rice-salt water and zinc for an 18-month-old; claim reports dehydration falling at 24/48h in treated children. Same disease, does not address ORS type or zinc."
+    },
+    {
+      "item_id": "rq_0184",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks why nephrotic syndrome raises VTE/renal vein thrombosis risk; claim is a truncated generic definition of venous thrombosis. Background definition only, no nephrotic mechanism."
+    },
+    {
+      "item_id": "rq_0171",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which structure generates knee OA pain given aneural cartilage; claim states PRP relieves pain and regenerates cartilage in stage II-III OA. Same disease, treatment not pain source."
+    },
+    {
+      "item_id": "rq_0221",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks which investigations distinguish paroxysmal SVT from benign ectopics/anxiety; claim reports PAC/PVC prevalence by trimester in pregnant women. Related arrhythmia topic, different population, no workup."
+    },
+    {
+      "item_id": "rq_0115",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the workup for painless gross hematuria in a 55-year-old man; claim gives HTN/DM/IHD prevalence at an elderly family-medicine clinic. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0064",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks PD vs HD for ESRD with residual function; claim is a study objective on anemia/B12 treatment and mortality in HD patients. Same population, study aim, no modality comparison."
+    },
+    {
+      "item_id": "rq_0137",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks HD frequency per week and home fluid/salt restriction; claim says the outflow vein is the main AVF-failure lesion site (53.1%). Same HD setting, unrelated access-failure aspect."
+    },
+    {
+      "item_id": "rq_0214",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which drug class to add after metformin in T2DM with CKD and why; claim gives 20-50% CKD risk in T2DM. Same disease, epidemiologic background, no drug choice."
+    },
+    {
+      "item_id": "rq_0175",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the myocardial/hemodynamic mechanism of SGLT2i in HFrEF; claim is affiliation noise plus baseline differences (HR, Hb, NT-proBNP, ARNI use) between users/non-users. No mechanism."
+    },
+    {
+      "item_id": "rq_0075",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why viral load falls fast on ARV yet rebounds within weeks off therapy; claim reports 97.9% undetectable viral load in a cohort. Same disease, outcome figure, no reservoir mechanism."
+    },
+    {
+      "item_id": "rq_0148",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks how the ischemic penumbra forms and why it sets the reperfusion window; claim describes study inclusion criteria for alteplase in unknown-onset stroke >4.5h. Sample description only."
+    },
+    {
+      "item_id": "rq_0016",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to distinguish Crohn's from ulcerative colitis and which tests; claim gives ADA global diabetes prevalence statistics. Different disease."
+    },
+    {
+      "item_id": "rq_0023",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks anticoagulation duration for unprovoked DVT and deciding factors; claim is only a section heading 'rate and factors related to lower-limb DVT'. Same disease, no content on duration."
+    },
+    {
+      "item_id": "rq_0138",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why insulin resistance in PCOS disrupts ovulation; claim says PCOS is multifactorial (genetic, metabolic, endocrine, environmental). Same disease, background etiology, no IR-anovulation mechanism."
+    },
+    {
+      "item_id": "rq_0124",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (severe CAP) but claim is about fungal etiology being overlooked; says nothing about beta-lactam+macrolide vs fluoroquinolone choice or its basis."
+    },
+    {
+      "item_id": "rq_0100",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Global diabetes mortality figure; question asks pathogenesis of diabetic polyneuropathy and distal symmetric onset. Parent disease only, no neuropathy content."
+    },
+    {
+      "item_id": "rq_0104",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "On VBAC topic: says vaginal birth after prior CS can succeed, but gives no recommendation or criteria for TOLAC vs elective repeat CS in this scenario."
+    },
+    {
+      "item_id": "rq_0005",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about psoriatic arthritis joint complications; question is GBS vs spinal cord compression workup for progressive leg weakness."
+    },
+    {
+      "item_id": "rq_0041",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Claim on rising NCD burden in elderly Vietnamese; does not mention hypertension or any guideline change asked about."
+    },
+    {
+      "item_id": "rq_0033",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim on Child-Pugh/SAAG/FIB-4 in cirrhotic esophageal varices; question is adjuvant chemo and 5-year survival in stage II colorectal cancer."
+    },
+    {
+      "item_id": "rq_0173",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Study-method sentence on elderly HTN/DM/IHD at a family clinic; nothing on workup of painless gross hematuria."
+    },
+    {
+      "item_id": "rq_0172",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Claim gives non-invasive cirrhosis criteria (Fibroscan F4 + APRI>2); question asks why HCC on cirrhosis is diagnosed by imaging without biopsy. Related substrate, not HCC."
+    },
+    {
+      "item_id": "rq_0030",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same topic (readmission after acute HF) but gives 90-day readmission/1-yr mortality 10-30%, not the 30-day readmission rate asked."
+    },
+    {
+      "item_id": "rq_0036",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Dementia definition; question is growth effects of long-term inhaled preventer in a 7-year-old asthmatic."
+    },
+    {
+      "item_id": "rq_0051",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Study-objective sentence on hypertension medication adherence; question is confirming PROM at 32 weeks vs discharge/urine."
+    },
+    {
+      "item_id": "rq_0177",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Addresses the first month post-discharge as the high-risk window for HF readmission/death, but gives no percentage as the question asks."
+    },
+    {
+      "item_id": "rq_0092",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "PCOS background/definition noting anovulatory infertility; does not explain how insulin resistance causes ovulatory dysfunction."
+    },
+    {
+      "item_id": "rq_0154",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Anesthesia study procedure sentence (anesthesiologist explains risks); question is hepatic encephalopathy pathogenesis, ammonia, portosystemic shunts."
+    },
+    {
+      "item_id": "rq_0186",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Generic methods line (patients diagnosed at Hospitals 103/108) from an HBV lab-index study; no content on imaging-based HCC diagnosis."
+    },
+    {
+      "item_id": "rq_0090",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Study objective on TyG index for gestational diabetes; question asks about HbA1c threshold changes for diagnosing diabetes."
+    },
+    {
+      "item_id": "rq_0176",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "MRI findings in fluoroacetate/glufosinate/diquat poisoning; question is neonatal unconjugated bilirubin neurotoxicity and preterm risk factors."
+    },
+    {
+      "item_id": "rq_0088",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (COPD) and mentions faster lung function decline, but tied to frequent exacerbations, not smoking; no annual FEV1 mL figure."
+    },
+    {
+      "item_id": "rq_0077",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Background stat that T2DM is ~90% of diabetes; does not address weight-loss percentage needed for remission in obese T2DM."
+    },
+    {
+      "item_id": "rq_0128",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Study-objective sentence on nutrition and T2DM treatment effectiveness; same disease/diet domain but no weight-loss or remission figure."
+    },
+    {
+      "item_id": "rq_0096",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Table fragment on hypertension complications (stroke) in an elderly cohort; same disease but nothing about 2025 guideline changes vs prior version."
+    },
+    {
+      "item_id": "rq_0144",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Truncated fragment about time from stroke detection in a thrombolysis study; question is ESWL vs ureteroscopy for 8mm distal ureteral stone."
+    },
+    {
+      "item_id": "rq_0035",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Keywords line for catheter-associated UTI in ICU cancer patients; question asks 6-month recurrence rate after acute cystitis in women."
+    },
+    {
+      "item_id": "rq_0199",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Table header on staff knowledge of UTI prevention; question asks percentage of ESBL-producing E. coli in community-acquired UTI."
+    },
+    {
+      "item_id": "rq_0109",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Baseline sample characteristics (n=184, age, sex, cirrhosis) of the HCV DAA study; the SVR rate asked about is not in the claim."
+    },
+    {
+      "item_id": "rq_0010",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (pediatric acute diarrhea rehydration) but about IV fluid use and oral rehydration failure in a cohort; no ORS type vs rice porridge or zinc."
+    }
+  ],
+  "pass_b": [
+    {
+      "item_id": "rq_0045",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is workup of isolated thrombocytopenia with purpura in a young woman; claim is about age of onset of type 1 diabetes. Nothing in common."
+    },
+    {
+      "item_id": "rq_0163",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks which investigations separate SVT from benign ectopics/anxiety; claim only says arrhythmias in pregnant women with normal hearts are usually benign ectopics. Related population, no workup."
+    },
+    {
+      "item_id": "rq_0014",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism by which hypertriglyceridemia causes pancreatitis; claim reports severity-score changes after plasma exchange. Same disease, treatment outcome, not mechanism."
+    },
+    {
+      "item_id": "rq_0214",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which drug class to add after metformin in T2DM with CKD and why; claim gives CKD risk prevalence in T2DM. Same condition, epidemiology rather than treatment choice."
+    },
+    {
+      "item_id": "rq_0196",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question compares intra-articular corticosteroid vs hyaluronic acid in knee OA; claim is the objective of a PRP study in knee OA. Same disease, different injection therapy, study aim only."
+    },
+    {
+      "item_id": "rq_0154",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is hepatic encephalopathy pathogenesis (ammonia, shunts); claim is that anesthesia patients were examined and counseled before a ventilation study. Unrelated."
+    },
+    {
+      "item_id": "rq_0182",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks mechanism of corticosteroid-induced bone loss; claim is a study objective on osteoporosis prevalence in elderly PPI users. Different drug, no mechanism, study aim only."
+    },
+    {
+      "item_id": "rq_0059",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is adjuvant chemotherapy and 5-year survival in stage II colorectal cancer; claim describes the sample of a catheter-associated UTI study in an oncology ICU."
+    },
+    {
+      "item_id": "rq_0083",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the national annual number of PCI procedures; claim gives one center's primary-PCI subgroup counts in a distal radial access study. Same procedure, study sample, not the national figure."
+    },
+    {
+      "item_id": "rq_0066",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks whether a 40-year-old needs periodic BP checks; claim reports undiagnosed/untreated HTN rates in the elderly and urges screening there. Same topic, wrong age group, premise unaddressed."
+    },
+    {
+      "item_id": "rq_0152",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks the DIC mechanism producing both thrombosis and bleeding; truncated claim recommends routine screening for marrow metastasis and coagulation status in GI cancer. DIC context, no mechanism."
+    },
+    {
+      "item_id": "rq_0172",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks why HCC on cirrhosis can be diagnosed by imaging without biopsy; claim gives non-invasive criteria for diagnosing cirrhosis (Fibroscan F4 + APRI). Background, not the HCC imaging rationale."
+    },
+    {
+      "item_id": "rq_0112",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is whether daily preventive asthma inhaler stunts a child's growth; claim concerns side effects/cost of drug therapy for dementia motivating non-drug interventions."
+    },
+    {
+      "item_id": "rq_0200",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks 6-month UTI recurrence rate in women after acute cystitis; claim says no ICU catheter-associated UTI progressed to sepsis. Same infection family, different population and outcome."
+    },
+    {
+      "item_id": "rq_0009",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks how insulin resistance causes anovulation in PCOS; claim only notes PCOS has heterogeneous signs making definition hard. Same disease, background, no mechanism."
+    },
+    {
+      "item_id": "rq_0010",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks low-osmolarity ORS vs homemade rice water and zinc for an 18-month-old; claim explains a study's high IV-fluid rate (vomiting limits oral rehydration). Same disease, does not answer."
+    },
+    {
+      "item_id": "rq_0044",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why nephrotic syndrome raises venous/renal vein thrombosis risk; claim is about choosing among T2DM drug classes and drug interactions. Unrelated."
+    },
+    {
+      "item_id": "rq_0192",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism making T1DM more DKA-prone than T2DM; claim lists epidemiologic risk factors for DKA at T1DM diagnosis (age <2, misdiagnosis, delay). Same disease, not the mechanism."
+    },
+    {
+      "item_id": "rq_0047",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the renal-protective mechanism of SGLT2 inhibitors; claim reports uptake rates of quadruple heart-failure therapy by EF group. Different disease and subject, no mechanism."
+    },
+    {
+      "item_id": "rq_0218",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about long-term harm of frequent analgesic use for migraine; claim describes endoscopy and ascitic fluid workup in cirrhotic patients. Unrelated."
+    },
+    {
+      "item_id": "rq_0127",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks what changed in the 2025 hypertension guideline; claim gives one clinic's 2022 prevalence of HTN/T2DM/IHD in the elderly. Same disease, epidemiology, nothing on guidelines."
+    },
+    {
+      "item_id": "rq_0148",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks how the ischemic penumbra forms and why it sets the reperfusion window; claim describes a study population of unknown-onset stroke patients given alteplase >4.5 h. Sample description only."
+    },
+    {
+      "item_id": "rq_0077",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks what percent weight loss gives obese T2DM patients a chance of remission; claim states T2DM is ~90% of diabetes. Same disease, background epidemiology, no answer."
+    },
+    {
+      "item_id": "rq_0107",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks levetiracetam vs carbamazepine for new focal epilepsy; claim is a sample-size justification citing 47.5% focal seizures in under-5s. Same disease, methods statement, no drug choice."
+    },
+    {
+      "item_id": "rq_0195",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is TB epidemiology in Arctic indigenous vs tropical populations; claim is the objective of a study on MSM with HIV and opportunistic infections in Vietnam. Different disease and population."
+    },
+    {
+      "item_id": "rq_0198",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question compares intra-articular corticosteroid vs hyaluronic acid for knee OA; claim is the indication for regorafenib in advanced colorectal cancer. Unrelated."
+    },
+    {
+      "item_id": "rq_0153",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why viral load falls fast on ARV yet rebounds weeks after stopping; claim only says ARV needs strict lifelong adherence to succeed and avoid resistance. Same topic, no mechanism."
+    },
+    {
+      "item_id": "rq_0051",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to confirm PPROM vs discharge/urine at 32 weeks; claim is the objective of a hypertension medication-adherence study. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0142",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks adjuvant tamoxifen vs aromatase inhibitor in early HR+ breast cancer; claim describes a CDK4/6 study's first-line metastatic sample. Same disease, different setting, sample only."
+    },
+    {
+      "item_id": "rq_0213",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks whether a 40-year-old needs BP checks given HTN 'only' in >60; claim gives HTN prevalence among the elderly, saying nothing about younger adults or screening."
+    },
+    {
+      "item_id": "rq_0180",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to distinguish Guillain-Barre from cord compression; claim is about early dermatologist detection of psoriatic arthritis. Different disease and subject."
+    },
+    {
+      "item_id": "rq_0143",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which drug class to add after metformin in T2DM with CKD and why; claim only states KDIGO CKD staging by eGFR. Background, no drug choice."
+    },
+    {
+      "item_id": "rq_0168",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the mechanism of DKA propensity in T1DM vs T2DM; claim states T1DM is polygenic with equal sex ratio. Same disease, epidemiology not mechanism."
+    },
+    {
+      "item_id": "rq_0042",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the approximate 30-day mortality rate of hospitalized CAP; claim says three severity scores predict 30-day mortality well but gives no mortality rate."
+    },
+    {
+      "item_id": "rq_0062",
+      "label": "not_relevant",
+      "confidence": "low",
+      "rationale": "Question asks ACEi vs CCB and combination in HTN+T2DM with albuminuria; claim is a bare keywords line (T2DM, outpatient, drug interactions), no mention of HTN or drug choice."
+    },
+    {
+      "item_id": "rq_0178",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks ACEi vs CCB in HTN+T2DM with albuminuria; claim is a study objective to survey T2DM drug regimens and comorbidities. Related population, objective only, no answer."
+    },
+    {
+      "item_id": "rq_0034",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks whether to recommend TOLAC or repeat CS after one prior CS; claim notes some successful VBAC cases at one hospital but gives no recommendation or criteria."
+    },
+    {
+      "item_id": "rq_0092",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism by which insulin resistance causes anovulation in PCOS; claim is a definition of PCOS as the leading cause of anovulatory infertility. Background only."
+    },
+    {
+      "item_id": "rq_0055",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks weekly oral vs yearly IV bisphosphonate for postmenopausal osteoporosis; claim is affiliations plus osteoporosis etiology and a vitamin D study objective. No treatment route."
+    },
+    {
+      "item_id": "rq_0037",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks anticoagulation duration for unprovoked DVT and deciding factors; claim is the objective of a DVT prevalence study in stroke patients. Same disease, different population/aspect."
+    },
+    {
+      "item_id": "rq_0056",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the non-glycemic renal mechanism of SGLT2 inhibitors; claim is a global diabetes mortality statistic for 2016. Does not address SGLT2i or CKD progression."
+    },
+    {
+      "item_id": "rq_0171",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which structure generates pain in knee OA given avascular cartilage; claim says PRP reduces pain and regenerates cartilage. Same disease, treatment not pain source."
+    },
+    {
+      "item_id": "rq_0220",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the mechanism of DKA propensity in T1DM vs T2DM; claim gives T1DM age-of-onset distribution. Same disease, epidemiology rather than mechanism."
+    },
+    {
+      "item_id": "rq_0076",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks national annual PCI volume; claim is a single-center table of distal radial access success rates in 290 procedures. Same procedure, not volume."
+    },
+    {
+      "item_id": "rq_0116",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks oral weekly vs IV yearly bisphosphonate for postmenopausal osteoporosis; claim gives osteoporosis risk by years since menopause. Same disease, risk factor not treatment."
+    },
+    {
+      "item_id": "rq_0191",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the mechanism of corticosteroid-induced bone loss and fracture; claim reports fracture-risk prevalence in elderly PPI users. Different drug, no corticosteroid content."
+    },
+    {
+      "item_id": "rq_0209",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks national annual PCI volume; claim gives rates of complex-lesion PCI in one study via distal radial access. Same procedure, not national volume."
+    },
+    {
+      "item_id": "rq_0161",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the approximate 30-day mortality rate in hospitalized CAP; claim says the three scores have AUC>0.8 for predicting it. On topic but no rate given."
+    },
+    {
+      "item_id": "rq_0140",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism of neonatal bilirubin neurotoxicity and preterm risk factors; claim describes onset symptoms of pesticide poisoning. Entirely different subject."
+    },
+    {
+      "item_id": "rq_0169",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks PD vs HD for ESRD with residual renal function; claim gives 1-year mortality of HD patients in a B12 study. Same population, no PD comparison or residual-function guidance."
+    },
+    {
+      "item_id": "rq_0026",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether gout requires lifelong avoidance of beef and seafood; claim describes data collection methods in an acute MI echocardiography study. Unrelated."
+    },
+    {
+      "item_id": "rq_0019",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the myocardial/hemodynamic mechanism of SGLT2i benefit in HFrEF; claim gives the EF distribution of patients prescribed SGLT2i. Same topic, usage data not mechanism."
+    },
+    {
+      "item_id": "rq_0207",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the % weight loss needed for T2DM remission in obese patients; claim reports weight and body-fat decreased after a 2-week diet intervention. No remission threshold."
+    },
+    {
+      "item_id": "rq_0038",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to confirm PPROM at 32 weeks; claim states effective hypertension treatment lowers cardiovascular risk and mortality. Different subject."
+    },
+    {
+      "item_id": "rq_0031",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Question asks why HCC on cirrhosis can be diagnosed by imaging without biopsy; claim gives MOH 2020 criteria allowing typical CT/MRI + AFP or histology. Criteria are core to the answer."
+    },
+    {
+      "item_id": "rq_0131",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether calcium/milk suffices for a 65-year-old with osteoporosis or drugs are needed; claim reports primary PCI success via distal radial access. Unrelated."
+    },
+    {
+      "item_id": "rq_0064",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks PD vs HD in ESRD with residual function; claim is a study objective on B12/anemia treatment and mortality in HD patients — same disease, different aspect, no modality comparison."
+    },
+    {
+      "item_id": "rq_0053",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks which drug class to add after metformin in T2DM with CKD; claim only defines diabetic kidney disease and its mechanisms — background, no drug choice."
+    },
+    {
+      "item_id": "rq_0032",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks neonatal bilirubin neurotoxicity mechanism and preterm risk factors; claim states T2DM share of diabetes — unrelated subject."
+    },
+    {
+      "item_id": "rq_0166",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Asks UTI recurrence rate in women after acute cystitis; claim is a sample description of catheter-associated UTI in cancer ICU patients — different population/entity, no recurrence data."
+    },
+    {
+      "item_id": "rq_0071",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks weekly oral vs yearly IV bisphosphonate in postmenopausal osteoporosis; claim is a study objective on vitamin D and BMD — same disease, no treatment comparison."
+    },
+    {
+      "item_id": "rq_0151",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Asks why imaging alone can diagnose HCC on cirrhosis; claim only states study hospitals and period for HBV/cirrhosis/HCC patients — method sentence, no diagnostic rationale."
+    },
+    {
+      "item_id": "rq_0124",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks BL+macrolide vs FQ for severe CAP and basis; claim says fungi are an overlooked cause of severe CAP — same disease, etiology aspect, no antibiotic regimen guidance."
+    },
+    {
+      "item_id": "rq_0193",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks about TB epidemiology in Arctic indigenous communities; claim is about HIV risk awareness among MSM — different disease and population."
+    },
+    {
+      "item_id": "rq_0091",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Asks about updates to the HbA1c diagnostic threshold for diabetes; claim announces a study of TyG index for gestational diabetes — different test and entity, no HbA1c content."
+    },
+    {
+      "item_id": "rq_0170",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks whether rectal bleeding at 32 signals colon cancer and needs colonoscopy; claim is fracture risk in elderly PPI users — unrelated subject."
+    },
+    {
+      "item_id": "rq_0210",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks levetiracetam vs carbamazepine for new focal epilepsy; claim describes a pediatric epilepsy study sample (137 children, 49.6% male) — same disease, no drug choice."
+    },
+    {
+      "item_id": "rq_0179",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks DIC mechanism for simultaneous thrombosis and bleeding; claim (with author metadata) recommends routine DIC screening in gastric/esophageal cancer — same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0205",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks add csDMARD vs switch to biologic in active RA on methotrexate; claim is fracture risk in elderly PPI users — different disease and intervention."
+    },
+    {
+      "item_id": "rq_0023",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks anticoagulation duration for unprovoked DVT and deciding factors; claim is a heading on DVT rate/risk factors in stroke patients — same disease, different aspect."
+    },
+    {
+      "item_id": "rq_0013",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks ESWL vs URS for 8mm distal ureteral stone; claim affirms URS role and choosing by stone size/location but gives no comparison or size-specific finding — on topic, not an answer."
+    },
+    {
+      "item_id": "rq_0098",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks intra-articular corticoid vs hyaluronic acid in moderate knee OA; claim lists general knee OA treatments incl. viscosupplementation — background, no comparison or indication."
+    },
+    {
+      "item_id": "rq_0104",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks TOLAC vs elective repeat CS after one low transverse CS; claim notes some successful VBAC cases exist — same decision topic but no recommendation or success rate."
+    },
+    {
+      "item_id": "rq_0097",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks weekly oral vs yearly IV bisphosphonate; claim is background on postmenopausal osteoporosis burden and fracture risk — same disease, no treatment content."
+    },
+    {
+      "item_id": "rq_0110",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks why severe hypertriglyceridemia causes acute pancreatitis; claim reports severity-score improvement after plasma exchange — same disease, treatment outcomes not mechanism."
+    },
+    {
+      "item_id": "rq_0123",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Asks which tests distinguish SVT from benign ectopy or anxiety in palpitations; claim reports PACs/PVCs common in first-trimester pregnancy — arrhythmia topic, other population, no workup."
+    },
+    {
+      "item_id": "rq_0035",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Asks UTI recurrence rate in women after acute cystitis; claim is a keyword line for catheter-associated UTI in cancer patients — different entity/population, no recurrence data."
+    },
+    {
+      "item_id": "rq_0113",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks H. pylori prevalence in Vietnamese adults; claim is about thoracic pedicle morphology in Vietnamese adults — unrelated subject, shares only the population phrase."
+    },
+    {
+      "item_id": "rq_0216",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks why PKU and congenital hypothyroidism are universally screened and inclusion criteria; claim describes methods of a medical-education survey — unrelated subject."
+    },
+    {
+      "item_id": "rq_0069",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks tamoxifen vs aromatase inhibitor as adjuvant for early HR+ breast cancer; claim is CDK4/6i + endocrine benefit in metastatic disease — same disease, different setting and drugs."
+    },
+    {
+      "item_id": "rq_0150",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks levetiracetam vs carbamazepine for new focal epilepsy; claim is the method statement of a pediatric epilepsy classification study — same disease, no treatment content."
+    },
+    {
+      "item_id": "rq_0134",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks TB epidemiology in Arctic indigenous communities; claim is the objective of an HIV/MSM descriptive study — different disease and population."
+    },
+    {
+      "item_id": "rq_0184",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Truncated generic definition of venous thrombosis; says nothing about nephrotic syndrome, hypercoagulability or renal vein thrombosis. Background only."
+    },
+    {
+      "item_id": "rq_0018",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Diabetes mortality projection to 2030; same disease but no bearing on neuropathy pathogenesis or symmetric distal onset. Borderline not_relevant."
+    },
+    {
+      "item_id": "rq_0128",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Statement of a study's purpose (nutrition vs treatment efficacy in T2DM); does not give any weight-loss percentage or remission threshold."
+    },
+    {
+      "item_id": "rq_0115",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Counts of elderly with HTN/DM/IHD at a family clinic; nothing about painless gross hematuria or its diagnostic workup."
+    },
+    {
+      "item_id": "rq_0137",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "About AV fistula failure lesion site in hemodialysis patients; same treatment setting but does not address dialysis frequency, fluid or salt restriction."
+    },
+    {
+      "item_id": "rq_0176",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "MRI lesion patterns in pesticide poisoning; nothing about neonatal bilirubin neurotoxicity or prematurity risk factors."
+    },
+    {
+      "item_id": "rq_0048",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Risk factors for DKA in newly diagnosed T1DM children; unrelated to daily vs event-driven PrEP for HIV."
+    },
+    {
+      "item_id": "rq_0021",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Clinical features and diagnostic difficulty of psoriatic arthritis; unrelated to distinguishing Guillain-Barre from spinal cord compression."
+    },
+    {
+      "item_id": "rq_0212",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Methods sentence on regorafenib in advanced CRC; same disease but different stage and drug, no data on adjuvant chemo or 5-year survival in stage II."
+    },
+    {
+      "item_id": "rq_0135",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "About viral role in severe CAP and vaccination programs; same disease but does not address beta-lactam+macrolide vs fluoroquinolone choice."
+    },
+    {
+      "item_id": "rq_0094",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Data-collection methods (NT-proBNP, echo) in acute MI PCI patients; same population but nothing on ticagrelor vs clopidogrel with aspirin."
+    },
+    {
+      "item_id": "rq_0158",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Anemia prevalence and mortality in ESRD; same disease but no comparison of peritoneal dialysis vs hemodialysis or residual renal function."
+    },
+    {
+      "item_id": "rq_0022",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "General definition of diabetes listing nerve damage among complications; background, does not explain neuropathy mechanism or distal symmetric onset."
+    },
+    {
+      "item_id": "rq_0003",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Sample description of EGFR-mutant NSCLC with acquired TKI resistance; same population, but a method statement with no resistance mechanism."
+    },
+    {
+      "item_id": "rq_0167",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Sample size/demographics of a thoracic pedicle CT anatomy study; nothing about H. pylori prevalence in Vietnamese adults."
+    },
+    {
+      "item_id": "rq_0087",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "States a key difference between VKA and DOAC (INR monitoring), which directly answers part of 'how do the two options differ' for AF anticoagulation."
+    },
+    {
+      "item_id": "rq_0138",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "PCOS described as multifactorial (genetic, metabolic, endocrine); background on etiology, does not explain how insulin resistance disrupts ovulation."
+    },
+    {
+      "item_id": "rq_0120",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Methods sentence on a cross-sectional clinic study of elderly with HTN/DM/IHD; touches hypertension management but nothing on 2025 guideline changes."
+    },
+    {
+      "item_id": "rq_0095",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Sample description (34 knee OA patients, ACR/K-L criteria); same disease but says nothing about the source of pain in aneural cartilage."
+    },
+    {
+      "item_id": "rq_0036",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Definition of dementia in the elderly; unrelated to inhaled corticosteroid effects on growth in a child with asthma."
+    },
+    {
+      "item_id": "rq_0105",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "ADA global diabetes prevalence statistics; same disease but no link to peripheral neuropathy pathogenesis or symptom distribution. Borderline not_relevant."
+    },
+    {
+      "item_id": "rq_0102",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Timing of SGLT2i prescription in hospitalized heart failure by EF class; same drug but different disease and nothing on renal protection mechanism."
+    },
+    {
+      "item_id": "rq_0188",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Epidemiology/risk behavior of MSM with HIV; nothing about tuberculosis in Arctic indigenous vs tropical populations."
+    },
+    {
+      "item_id": "rq_0159",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Methods sentence describing T2DM patients grouped by CKD stage for an sTNFR1 study; same population but no drug-class recommendation after metformin."
+    },
+    {
+      "item_id": "rq_0084",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "HIV viral suppression rate under ART; unrelated to antiplatelet choice after MI with stent."
+    },
+    {
+      "item_id": "rq_0201",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Regorafenib indication in advanced CRC after two failed lines; same disease but different stage/intent, no data on adjuvant chemo in stage II or 5-year survival."
+    },
+    {
+      "item_id": "rq_0060",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Objective of a B12/anemia mortality study in hemodialysis patients; nothing about seizure recurrence risk after a first unprovoked seizure."
+    },
+    {
+      "item_id": "rq_0194",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Fracture-risk prevalence in elderly PPI users; different drug and no mechanism, does not address corticosteroid-induced bone loss."
+    },
+    {
+      "item_id": "rq_0093",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about SIMV/PSV ventilation modes under anaesthesia; question asks hepatic encephalopathy pathogenesis, ammonia and portosystemic shunts. No overlap."
+    },
+    {
+      "item_id": "rq_0016",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is ADA global diabetes prevalence; question asks how to differentiate Crohn's disease from ulcerative colitis. Different disease entirely."
+    },
+    {
+      "item_id": "rq_0025",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim lists lab/MRI variables in a pesticide-poisoning study; question asks neonatal bilirubin neurotoxicity mechanism and preterm risk factors."
+    },
+    {
+      "item_id": "rq_0072",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same population (prior caesarean) but claim only reports inter-delivery interval distribution in one study; does not address TOLAC vs elective repeat CS."
+    },
+    {
+      "item_id": "rq_0108",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Study design/sample of a ureteroscopic laser lithotripsy series; on-topic (ureteral stone treatment) but no comparison with ESWL or guidance for an 8 mm lower stone."
+    },
+    {
+      "item_id": "rq_0181",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same population (acute MI post-PCI) but claim is an echo LA-strain study objective; says nothing about aspirin+ticagrelor vs clopidogrel choice."
+    },
+    {
+      "item_id": "rq_0145",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim reports medical-student class preparation rates; question asks why PKU/congenital hypothyroidism are in newborn screening and the selection criteria."
+    },
+    {
+      "item_id": "rq_0206",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is the aim of a thoracic pedicle CT morphology study; question asks H. pylori prevalence in Vietnamese adults."
+    },
+    {
+      "item_id": "rq_0217",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about facial asymmetry and the temporomandibular joint; question asks workup to differentiate bacterial, viral and TB meningitis."
+    },
+    {
+      "item_id": "rq_0046",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is the objective of a PRP knee-osteoarthritis study; question asks how to distinguish Alzheimer's from vascular dementia."
+    },
+    {
+      "item_id": "rq_0165",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim defines dementia as a chronic progressive syndrome; question asks meningitis differential workup. Different disease."
+    },
+    {
+      "item_id": "rq_0061",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (knee OA) and intra-articular injection theme, but claim reports PRP outcomes; does not compare corticosteroid vs hyaluronic acid or say when to choose which."
+    },
+    {
+      "item_id": "rq_0017",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Claim gives site distribution of hospital-acquired infections (respiratory 68.1%, urinary 8.3%); question asks ESBL rate among community-acquired UTI E. coli. Shares only the term UTI."
+    },
+    {
+      "item_id": "rq_0085",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim states ARV is the only life-prolonging HIV treatment; question asks mechanism of bone erosion and synovial pannus in rheumatoid arthritis."
+    },
+    {
+      "item_id": "rq_0197",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is the objective of a DVT-in-stroke study; question asks pathogenesis of diabetic polyneuropathy and its distal symmetric onset."
+    },
+    {
+      "item_id": "rq_0040",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same condition (paediatric acute diarrhoea) but claim reports dehydration resolution rates under hospital treatment; does not address low-osmolarity ORS vs homemade fluid or zinc."
+    },
+    {
+      "item_id": "rq_0073",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is about postmenopausal osteoporosis and fracture risk; question asks why non-stenosing atherosclerotic plaques rupture to cause acute MI."
+    },
+    {
+      "item_id": "rq_0007",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same condition (DIC) but claim is a study objective on DIC vs bone-marrow metastasis in GI cancer; does not explain concurrent microthrombosis and bleeding."
+    },
+    {
+      "item_id": "rq_0162",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Truncated fragment ('mean time from stroke detection') from a thrombolysis study; on stroke/reperfusion timing but carries no content on penumbra mechanism or window."
+    },
+    {
+      "item_id": "rq_0002",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same setting (haemodialysis) but claim is about AVF failure lesion sites and thrombosis rates; does not address sessions per week, fluid or salt restriction."
+    },
+    {
+      "item_id": "rq_0050",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same drug (SGLT2i) but claim reports time-to-initiation in heart-failure inpatients; no information on renal-protective mechanism or CKD."
+    },
+    {
+      "item_id": "rq_0164",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (lower-limb DVT) but claim is a table heading on risk factors for DVT in stroke patients; does not address anticoagulation duration or decision factors."
+    },
+    {
+      "item_id": "rq_0109",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Baseline characteristics table (n=184, age, sex, cirrhosis) of a DAA cohort; on-topic but the claim itself gives no SVR rate (rule 3: sample description)."
+    },
+    {
+      "item_id": "rq_0100",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Parent disease (diabetes) only: claim is a 2016 global mortality figure; nothing on neuropathy pathogenesis or distal symmetric onset."
+    },
+    {
+      "item_id": "rq_0146",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is that no drug cures dementia; question asks growth effects of long-term inhaled preventer in a 7-year-old asthmatic."
+    },
+    {
+      "item_id": "rq_0106",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Same disease (colorectal cancer) but claim is a keywords line about regorafenib in advanced disease; nothing on adjuvant chemo or 5-year survival in stage II."
+    },
+    {
+      "item_id": "rq_0136",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same disease (HR+ breast cancer) but claim is about CDK4/6i + endocrine therapy in metastatic disease; does not compare tamoxifen vs aromatase inhibitor in early adjuvant setting."
+    },
+    {
+      "item_id": "rq_0012",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same disease (severe CAP) but claim describes patient age/comorbidities favouring fungal infection; does not address beta-lactam+macrolide vs fluoroquinolone choice."
+    },
+    {
+      "item_id": "rq_0190",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Claim is study design of a regorafenib colorectal-cancer trial; question asks percent weight loss needed for T2DM remission in obesity."
+    },
+    {
+      "item_id": "rq_0075",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic (HIV viral load on ARV) but claim is a cohort suppression rate (97.9% undetectable); does not explain rapid decline or rebound mechanism after stopping."
+    },
+    {
+      "item_id": "rq_0043",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism by which severe hypertriglyceridemia causes pancreatitis; claim gives risk-factor/symptom frequencies of HTG-AP patients, same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0029",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is hepatic encephalopathy pathogenesis (ammonia, portosystemic shunts); claim is about SIMV/PSV ventilation modes under anesthesia with laryngeal mask."
+    },
+    {
+      "item_id": "rq_0090",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks whether the HbA1c diagnostic threshold for diabetes changed; claim is the objective of a TyG-index study in gestational diabetes, different condition and index."
+    },
+    {
+      "item_id": "rq_0126",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why insulin resistance in PCOS disrupts ovulation; claim is background on PCOS symptom heterogeneity and definition difficulty, no mechanism."
+    },
+    {
+      "item_id": "rq_0103",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is the ischemic penumbra in acute stroke; claim is APRI fibrosis-score change after DAA therapy in HCV cirrhosis."
+    },
+    {
+      "item_id": "rq_0187",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks tachypnea thresholds in young children by age; claim is about arrhythmia types in pregnant women on Holter."
+    },
+    {
+      "item_id": "rq_0177",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the 30-day readmission percentage after HF hospitalization; claim says events cluster in the first month post-discharge but gives no readmission rate."
+    },
+    {
+      "item_id": "rq_0078",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks low-osmolarity ORS vs homemade rice-salt porridge and zinc for a toddler; claim is a rehydration outcome (99.5% no dehydration by day 2), addresses neither choice."
+    },
+    {
+      "item_id": "rq_0004",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks ticagrelor vs clopidogrel with aspirin after MI stenting; claim is a keyword list of an echo LA-strain study in acute MI post-PCI, same population, nothing on antiplatelets."
+    },
+    {
+      "item_id": "rq_0130",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism of simultaneous microthrombosis and bleeding in DIC; claim is the DIC prevalence (45.2%) in a GI-cancer cohort, same condition, no mechanism."
+    },
+    {
+      "item_id": "rq_0157",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is EGFR-TKI acquired resistance in NSCLC; claim is INR monitoring for VKA vs DOAC in anticoagulated ICH patients."
+    },
+    {
+      "item_id": "rq_0199",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the ESBL rate among community E. coli in UTI; claim is a table header on nurses' knowledge of UTI prevention, different population and subject."
+    },
+    {
+      "item_id": "rq_0011",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why viral load falls on ARV and rebounds weeks after stopping; claim is background that ARV is the only life-prolonging HIV treatment, no viral-dynamics explanation."
+    },
+    {
+      "item_id": "rq_0058",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks about HbA1c diagnostic threshold updates for diabetes; claim lists exclusion criteria of a TyG study in pregnant women, different condition and no HbA1c."
+    },
+    {
+      "item_id": "rq_0088",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the annual FEV1 decline in mL for COPD patients who keep smoking; claim says frequent exacerbators decline faster but gives no rate and does not address smoking."
+    },
+    {
+      "item_id": "rq_0122",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the 30-day readmission rate after HF hospitalization; claim is only the study design and setting of an ADHF-HFrEF cohort, same population, no rate."
+    },
+    {
+      "item_id": "rq_0024",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks absolute risk reduction of PCSK9 inhibitors in RCTs; claim describes HFrEF patients on beta-blockers as study subjects, different drug and disease."
+    },
+    {
+      "item_id": "rq_0175",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the myocardial/hemodynamic mechanism of SGLT2i benefit in HFrEF; claim (largely affiliation text) notes baseline differences between SGLT2i and non-SGLT2i groups, no mechanism."
+    },
+    {
+      "item_id": "rq_0118",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks ACEi vs CCB initiation and combination in HTN+T2DM+albuminuria; claim gives drug-interaction risk factors in T2DM+HTN prescriptions, same population, no antihypertensive choice."
+    },
+    {
+      "item_id": "rq_0189",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks ticagrelor vs clopidogrel after MI stenting; claim is the timing of echo measurements in acute MI post-PCI patients, same population, method only, nothing on antiplatelets."
+    },
+    {
+      "item_id": "rq_0041",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks what changed in the 2025 hypertension guideline; claim is generic background on rising NCD burden in the elderly, mentions neither hypertension nor guidelines."
+    },
+    {
+      "item_id": "rq_0149",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is dietary restriction (milk, fish) for a child with 3-day diarrhea; claim is four-pillar heart-failure therapy rates by ejection fraction."
+    },
+    {
+      "item_id": "rq_0117",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks antihypertensive choice in HTN+T2DM+albuminuria; claim is background on selecting/combining glucose-lowering drug classes in T2DM, same population, different drug class."
+    },
+    {
+      "item_id": "rq_0006",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks diet precautions and bleeding signs on oral anticoagulants for AF; claim is study methods on elderly HTN/DM/IHD patients at a family clinic."
+    },
+    {
+      "item_id": "rq_0208",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks PD vs HD for ESRD with residual renal function; claim is a keyword list (ESRD, hemodialysis, B12, anemia, mortality), same disease, nothing on modality choice."
+    },
+    {
+      "item_id": "rq_0089",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the ESBL rate among community E. coli in UTI; claim is a table of nurses' knowledge scores on urinary catheter care, different population and subject."
+    },
+    {
+      "item_id": "rq_0174",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the non-glycemic renal mechanism of SGLT2 inhibitors; claim is a keyword list (T2DM, outpatient, drug interaction), shares only the diabetes word."
+    },
+    {
+      "item_id": "rq_0144",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks ESWL vs URS for an 8mm lower ureteral stone; claim is a truncated fragment about time from stroke detection in a thrombolysis study. Different disease entirely."
+    },
+    {
+      "item_id": "rq_0132",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Same topic (delivery after prior CS) but the claim reports a hospital's practice pattern (repeat CS chosen more often), not a recommendation on TOLAC vs elective repeat CS."
+    },
+    {
+      "item_id": "rq_0081",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Question asks the SVR rate after DAA therapy for chronic HCV; claim gives SVR 184/184 (100%) in DAA-treated patients. Directly answers."
+    },
+    {
+      "item_id": "rq_0185",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks absolute MACE reduction with PCSK9 inhibitors in RCTs; claim describes the study population of a beta-blocker titration study in HFrEF. Different drug and subject."
+    },
+    {
+      "item_id": "rq_0096",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks what changed in the 2025 hypertension guideline; claim is a table fragment on stroke complication rate in hypertensive elderly. Same disease, nothing on guidelines."
+    },
+    {
+      "item_id": "rq_0074",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the myocardial/hemodynamic mechanism of SGLT2i benefit in HFrEF; claim reports utilization rates of quadruple therapy by EF group. Same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0203",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to differentiate bacterial, viral and TB meningitis; claim gives rates of complex coronary lesion PCI via distal radial access. Unrelated."
+    },
+    {
+      "item_id": "rq_0049",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks which structure generates pain in knee OA given cartilage is aneural; claim is a background definition of OA (cartilage, subchondral bone, periarticular damage), not an explanation of pain source."
+    },
+    {
+      "item_id": "rq_0008",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the annual FEV1 decline (mL) in COPD patients who keep smoking; claim lists smoking, dust and prior TB as risk factors for COPD/exacerbations. Same disease, no FEV1 figure."
+    },
+    {
+      "item_id": "rq_0070",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks duration of anticoagulation for unprovoked DVT; claim is a definition of diabetes mellitus. Different disease."
+    },
+    {
+      "item_id": "rq_0020",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks which tests distinguish SVT, benign ectopy and anxiety in a young patient with palpitations; claim reports Holter findings (PAC/PVC) in pregnant women. Related topic, different population, no workup."
+    },
+    {
+      "item_id": "rq_0183",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks inheritance risk when both parents carry a thalassemia gene; claim is a baseline characteristics table of HCV patients before DAA. Unrelated."
+    },
+    {
+      "item_id": "rq_0121",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks ESWL vs URS for an 8mm lower ureteral stone; claim only defines how operative time for URS was measured in the study. Same procedure, method statement, no comparison."
+    },
+    {
+      "item_id": "rq_0065",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why PKU and congenital hypothyroidism are in newborn screening and the inclusion criteria; claim is about medical school curriculum structure. Unrelated."
+    },
+    {
+      "item_id": "rq_0125",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks whether a 40-year-old needs routine BP checks; claim gives hypertension prevalence (40.4%) among the elderly. Same disease, does not address younger adults or screening."
+    },
+    {
+      "item_id": "rq_0057",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks SVR rate after DAA for HCV; claim states the objective of a TyG-index study for gestational diabetes. Different disease."
+    },
+    {
+      "item_id": "rq_0033",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks effect of adjuvant chemo on 5-year survival in high-risk stage II colorectal cancer; claim is about Child-Pugh/SAAG/FIB-4 and esophageal varices in cirrhosis. Different disease."
+    },
+    {
+      "item_id": "rq_0063",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the renal mechanism by which SGLT2i slow CKD; claim is author metadata plus a fragment on HR, Hb, NT-proBNP differences in hospitalized HF patients. Different disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0155",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks annual FEV1 decline in smoking COPD patients; claim gives global COPD mortality epidemiology (90% deaths in LMICs, 5.4M by 2060). Same disease, background only."
+    },
+    {
+      "item_id": "rq_0141",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to confirm PPROM at 32 weeks vs discharge or urine leakage; claim describes Morisky adherence scoring for hypertension medication. Unrelated."
+    },
+    {
+      "item_id": "rq_0054",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks the pathophysiological mechanism making T1DM more DKA-prone than T2DM; claim explains delayed diagnosis when no family history. Same topic (DKA in T1DM), different aspect."
+    },
+    {
+      "item_id": "rq_0129",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks absolute MACE reduction with PCSK9 inhibitors; claim links hyponatremia to short-term adverse events in acute decompensated HFrEF. Different drug and subject."
+    },
+    {
+      "item_id": "rq_0186",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks why HCC on cirrhosis can be diagnosed by imaging without biopsy; claim only states patients were examined and diagnosed at two hospitals. Same population, content-free method statement."
+    },
+    {
+      "item_id": "rq_0139",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks the mechanism of corticosteroid-induced bone loss and fracture; claim concerns long-term PPI use raising osteoporosis/fracture risk in elderly. Different intervention, no mechanism."
+    },
+    {
+      "item_id": "rq_0080",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks tamoxifen vs aromatase inhibitor for adjuvant therapy in early HR+ postmenopausal breast cancer; claim is the method of a CDK4/6i study in metastatic disease. Same disease, different setting."
+    },
+    {
+      "item_id": "rq_0028",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks how the ischemic penumbra forms and why it sets the reperfusion window; claim reports mean time from last known well to thrombolysis (7.75 h) in a study. Same disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0101",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the mechanism of neonatal bilirubin neurotoxicity and risk factors in preterms; claim describes clinical features of fluoroacetate/glufosinate/diquat poisoning. Unrelated."
+    },
+    {
+      "item_id": "rq_0039",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the SVR rate after DAA for HCV; claim reports APRI decline in cirrhotic patients 6 months after treatment. Same disease and therapy, different outcome (fibrosis index, not SVR)."
+    },
+    {
+      "item_id": "rq_0111",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks lab tests to separate iron deficiency from thalassemia trait; claim is about catheter-associated UTI not causing sepsis. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0086",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks NSBB vs EVL for primary prophylaxis of variceal bleeding; claim is SAAG cutoff performance for predicting large varices. Same condition, screening not prophylaxis."
+    },
+    {
+      "item_id": "rq_0221",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks which investigations distinguish SVT from benign ectopy/anxiety in a young patient; claim reports arrhythmia distribution in pregnant women. Different population, no workup."
+    },
+    {
+      "item_id": "rq_0099",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks MACE reduction per 1 mmol/L LDL-C lowering with statins; claim describes risk factors and symptoms in hypertriglyceridemic pancreatitis patients."
+    },
+    {
+      "item_id": "rq_0079",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks the anatomical source of pain in knee OA; claim is a study objective about PRP efficacy in knee OA. Same disease, objective statement, no pain mechanism."
+    },
+    {
+      "item_id": "rq_0211",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks NSBB vs EVL for primary prophylaxis; claim says Child-Pugh/SAAG/FIB-4 are higher in patients with varices. Same disease, prediction of varices, not prophylaxis."
+    },
+    {
+      "item_id": "rq_0215",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks workup for painless gross hematuria in a 55-year-old man; claim is a prevalence table of HTN/DM/IHD in elderly clinic patients. Unrelated."
+    },
+    {
+      "item_id": "rq_0156",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks corticosteroid vs hyaluronic acid injection for moderate knee OA; claim lists sample size and outcome measures of a PRP study. Same disease, method only."
+    },
+    {
+      "item_id": "rq_0222",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks levetiracetam vs carbamazepine for new focal epilepsy; claim is a fragment describing a pediatric epilepsy study population. Same disease, sample only, no drug info."
+    },
+    {
+      "item_id": "rq_0133",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks TB 6-month regimen success rate; claim describes HFrEF patients on beta-blockers as a study population. Unrelated disease."
+    },
+    {
+      "item_id": "rq_0082",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Question asks mechanism of SGLT2i benefit in HFrEF; claim is a truncated fragment listing age/sex/heart-rate variables from an SGLT2i-in-HF study. Same topic, no mechanism, near-meaningless."
+    },
+    {
+      "item_id": "rq_0015",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks NSBB vs EVL for primary prophylaxis; claim describes study methods (EGD, ascitic fluid, biochemistry) in cirrhotics with varices. Same disease, method only."
+    },
+    {
+      "item_id": "rq_0173",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks hematuria workup; claim is the population/method of a family-medicine study on elderly HTN/DM/IHD. Unrelated subject."
+    },
+    {
+      "item_id": "rq_0114",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks criteria for including PKU/congenital hypothyroidism in newborn screening; claim is a medical school training objective. Unrelated."
+    },
+    {
+      "item_id": "rq_0160",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks penumbra mechanism and why it sets the reperfusion window; claim only states 40 patients met criteria in a thrombolysis study. Same disease area, sample count only."
+    },
+    {
+      "item_id": "rq_0119",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Question asks ESWL vs URS for an 8 mm distal ureteral stone; claim states URS laser is safe and effective, especially for stones <=10 mm. Supports one arm; no ESWL comparison, emphasizes mid-ureter."
+    },
+    {
+      "item_id": "rq_0068",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks 30-day mortality % of hospitalized CAP; claim gives CAP burden background (3M deaths/yr, 4th cause of death, 12% of lung disease) without a 30-day mortality figure."
+    },
+    {
+      "item_id": "rq_0001",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks NSBB vs EVL for primary prophylaxis of variceal bleeding; claim concludes SAAG/FIB-4 predict large varices. Same disease, prediction not prophylaxis choice."
+    },
+    {
+      "item_id": "rq_0219",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks low-osmolarity ORS vs homemade rice-salt water and zinc for a toddler; claim reports plan-B dehydration falling 31.2%->4.0% after 1 day. Same disease, no ORS type or zinc."
+    },
+    {
+      "item_id": "rq_0027",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks bedaquiline mechanism and why it replaced injectables in MDR-TB; claim is a regulatory stability-study commitment for drug registration changes. Unrelated."
+    },
+    {
+      "item_id": "rq_0202",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks why HIV viral load falls fast on ART and rebounds after stopping; claim is a study objective on CD4/viral load vs adherence. Same disease, objective, no mechanism."
+    },
+    {
+      "item_id": "rq_0147",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether daily preventive inhaler affects a child's growth in asthma; claim is a study objective on non-drug intervention in dementia. Unrelated."
+    },
+    {
+      "item_id": "rq_0005",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to differentiate GBS from spinal cord compression; claim describes complications of joint damage in psoriatic arthritis. Unrelated disease."
+    },
+    {
+      "item_id": "rq_0030",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks 30-day HF readmission %; claim gives 90-day readmission and 1-year mortality (10-30%) after acute decompensation. Same topic, different time window, not the asked figure."
+    },
+    {
+      "item_id": "rq_0204",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks anticoagulation duration for unprovoked DVT and deciding factors; claim is a study objective on DVT prevalence/risk factors in stroke patients. Same disease, different aspect."
+    },
+    {
+      "item_id": "rq_0067",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks beta-lactam+macrolide vs respiratory FQ for severe adult CAP; claim is a study objective on initial antibiotic choice in pediatric outpatient CAP. Same disease, objective, different setting."
+    },
+    {
+      "item_id": "rq_0052",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether a child with diarrhea should avoid milk/fish; claim is about CAP severity scores predicting 30-day mortality. Unrelated."
+    }
+  ],
+  "adjudication": [
+    {
+      "item_id": "rq_0004",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Keyword line of an echo (LA strain, diastolic function, NT-proBNP) study in the same population the question asks about (AMI post-PCI); nothing on aspirin+ticagrelor vs clopidogrel."
+    },
+    {
+      "item_id": "rq_0050",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Claim gives days-to-initiation of SGLT2i in heart-failure inpatients by EF phenotype; question asks the renal-protective mechanism in CKD. Only the drug name is shared; different disease, no mechanism."
+    },
+    {
+      "item_id": "rq_0062",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Bare keyword line (T2DM, outpatient, drug interactions): same patient group (T2DM outpatients) and pharmacotherapy theme, but no mention of HTN, albuminuria, ACEi vs CCB or combination."
+    },
+    {
+      "item_id": "rq_0186",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Method sentence (study's HCC/cirrhosis/CHB patients were examined and diagnosed at two hospitals): same disease, but says nothing about why imaging suffices for HCC diagnosis without biopsy."
+    },
+    {
+      "item_id": "rq_0221",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Claim reports PAC/PVC prevalence by trimester in pregnant women; ectopics are one of the question's differentials, but population differs and no investigation to separate SVT from ectopy/anxiety."
+    }
+  ]
+}

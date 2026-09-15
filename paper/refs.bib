@@ -1,0 +1,318 @@
+% VERIFICATION STATE, 2026-09-06.
+% Every entry below has been read off a primary page -- arXiv abstract, ACL Anthology, or
+% the publisher's DOI page -- and the identifier was opened and its title checked rather
+% than trusted. No entry in this file is unverified, and no `verify:` placeholder remains.
+%
+% What the check found, recorded because it is the kind of thing that does not show up in a
+% diff: nothing was invented, but nine of fifteen cited entries were MISDESCRIBED. Most
+% carried a placeholder author list that would have printed as "verify: authors" in the
+% proceedings. saxena2025coverage had the wrong title AND the wrong venue: the real work is
+% "Generation-Time vs. Post-hoc Citation", a non-archival NeurIPS 2025 workshop poster.
+% Two sources did not support the sentence citing them, and Section II was rewritten rather
+% than the citation swapped: weller2024according is inference-time PROMPTING, not alignment,
+% and sentguard2026 is a June 2026 preprint that cannot establish "standard practice".
+%
+% Eight entries that nothing cited were deleted. BibTeX never emits an uncited entry, so
+% their placeholders were invisible in the PDF and were the easiest thing here to ship by
+% accident.
+%
+% TRADED 2026-09-10, and this is the second reference this file has spent on page fit.
+% OUT: maheshwari2025citefix (CiteFix, post-hoc citation repair, ACL 2025 Industry Track).
+% IN:  xie2025subquestion (sub-question coverage, NAACL 2025).
+% Why this one: CiteFix was one of eight items establishing that verifiable-by-construction
+% attribution is an established class -- seven still establish it -- and it is the only
+% mechanism in that list our system does not resemble, since we verify before release rather
+% than repair afterwards. xie2025subquestion is the only related work on the quantity the
+% paper now reports at the answer level, so the swap raises evidential density.
+% The body ends on page 6 and only the bibliography spilled; 356 characters of prose were
+% freed first, and the remaining candidates were printed DOIs or review-restored caveats,
+% both worse than this. The removed entry, verbatim, so the trade is reversible:
+%   % maheshwari2025citefix -- verification record, NOT for print:
+%   %   verified 2026-09-06 from aclanthology.org/2025.acl-industry.23 and its official BibTeX. WAS
+%   %   WRONG: the author list read "verify: Maheshwari and others"; the three authors are as
+%   %   printed there.
+%   [at]inproceedings{maheshwari2025citefix,
+%     author    = {Harsh Maheshwari and Srikanth Tenneti and Alwarappan Nakkiran},
+%
+% Every entry carries a "verification record" comment naming the page that was opened and
+% what was wrong with it. Four entries lacked one until 2026-09-07 -- not unverified, but
+% unrecorded, which for a paper about unfollowable claims is not a distinction worth
+% keeping.
+%
+% The worst single defect was not a placeholder. longpre2024provenance carried DOI
+% 10.1038/s42256-024-00884-w, which resolves -- to a DIFFERENT article: Vincent's two-page
+% News & Views commentary about the audit, in the same volume and issue. A reader following
+% it would have landed on someone else's paper under Longpre's name. The audit's own DOI is
+% 10.1038/s42256-024-00878-8, its journal version is retitled, and all 17 authors are now
+% listed. A citation that resolves to the wrong thing is the exact failure this paper is
+% about, and we had one.
+
+% ---- (i) citation quality is a promise, not a property ------------------------------------
+% liu2023verifiability -- verification record, NOT for print:
+%   ACL Anthology 2023.findings-emnlp.467, pp.\ 7001--7025; doi 
+%   10.18653/v1/2023.findings-emnlp.467; arXiv:2304.09848
+@inproceedings{liu2023verifiability,
+  author    = {Nelson F. Liu and Tianyi Zhang and Percy Liang},
+  title     = {Evaluating Verifiability in Generative Search Engines},
+  booktitle = {Findings Assoc. Comput. Linguistics: EMNLP 2023},
+  year      = {2023},
+  note      = {doi:10.18653/v1/2023.findings-emnlp.467; pp.\ 7001--7025}
+}
+% gao2023alce -- verification record, NOT for print:
+%   ACL Anthology 2023.emnlp-main.398; doi:10.18653/v1/2023.emnlp-main.398; arXiv:2305.14627
+%   ALCE;
+@inproceedings{gao2023alce,
+  author    = {Tianyu Gao and Howard Yen and Jiatong Yu and Danqi Chen},
+  title     = {Enabling Large Language Models to Generate Text with Citations},
+  booktitle = {Proc. Conf. Empirical Methods Natural Lang. Process.},
+  pages     = {6465--6488},
+  year      = {2023},
+  note      = {doi:10.18653/v1/2023.emnlp-main.398}
+}
+% yue2023attrscore -- verification record, NOT for print:
+%   ACL Anthology 2023.findings-emnlp.307, pages 4615--4635;
+%   doi:10.18653/v1/2023.findings-emnlp.307; arXiv:2305.06311 AttrScore;
+@inproceedings{yue2023attrscore,
+  author    = {Xiang Yue and Boshi Wang and Ziru Chen and Kai Zhang and Yu Su and Huan Sun},
+  title     = {Automatic Evaluation of Attribution by Large Language Models},
+  booktitle = {Findings Assoc. Comput. Linguistics: EMNLP 2023},
+  year      = {2023},
+  note      = {doi:10.18653/v1/2023.findings-emnlp.307; pp.\ 4615--4635}
+}
+
+% ---- (ii) verifiable-by-construction attribution -----------------------------------------
+% menick2022gophercite -- verification record, NOT for print:
+%   GopherCite. Author list verified 2026-09-05 from the arXiv abstract page.
+@article{menick2022gophercite,
+  author    = {Jacob Menick and Maja Trebacz and Vladimir Mikulik and John Aslanides and Francis Song and Martin Chadwick and others},
+  title     = {Teaching Language Models to Support Answers with Verified Quotes},
+  journal   = {arXiv preprint arXiv:2203.11147},
+  year      = {2022}
+}
+% xie2025subquestion -- verification record, NOT for print:
+%   verified 2026-09-10 from aclanthology.org/2025.naacl-long.301/ : title, all five authors in
+%   this order, NAACL 2025 Long Papers, pp. 5836--5849. Added because a review pointed out the
+%   paper's answer-level coverage result had no related work beside it, which was right. Note
+%   what it does NOT license: it decomposes a QUERY into sub-questions and scores an answer's
+%   coverage of them. Ours is the narrower question -- one claim against the whole question --
+%   aggregated to the answer afterwards. Do not cite it as if we had used sub-question
+%   decomposition, and do not compare our 0.09 to its coverage scores.
+@inproceedings{xie2025subquestion,
+  author    = {Kaige Xie and Philippe Laban and Prafulla Kumar Choubey and Caiming Xiong and Chien-Sheng Wu},
+  title     = {Do {RAG} Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage},
+  booktitle = {Proc. Conf. Nations Amer. Chapter Assoc. Comput. Linguistics},
+  year      = {2025},
+  pages     = {5836--5849}
+}
+% weller2024according -- verification record, NOT for print:
+%   EACL 2024, pages 2288--2301; ACL Anthology 2024.eacl-long.140; DOI 
+%   10.18653/v1/2024.eacl-long.140; arXiv:2305.13252
+@inproceedings{weller2024according,
+  author    = {Orion Weller and Marc Marone and Nathaniel Weir and Dawn Lawrie and Daniel Khashabi and Benjamin Van Durme},
+  title     = {``According to \ldots'': Prompting Language Models Improves Quoting from Pre-Training Data},
+  booktitle = {Proc. Conf. Eur. Chapter Assoc. Comput. Linguistics},
+  year      = {2024},
+  note      = {doi:10.18653/v1/2024.eacl-long.140; pp.\ 2288--2301}
+}
+% zhang2024quotetuning -- verification record, NOT for print:
+%   ACL Anthology 2025.naacl-long.191; doi:10.18653/v1/2025.naacl-long.191; arXiv:2404.03862
+%   Quote-Tuning;
+@inproceedings{zhang2024quotetuning,
+  author    = {Jingyu Zhang and Marc Marone and Tianjian Li and Benjamin Van Durme and Daniel Khashabi},
+  title     = {Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data},
+  booktitle = {Proc. Conf. Nations Amer. Chapter Assoc. Comput. Linguistics},
+  year      = {2025},
+  pages     = {3748--3768},
+  note      = {doi:10.18653/v1/2025.naacl-long.191}
+}
+% yeginbergen2026fullcite -- verification record, NOT for print:
+%   FullCite; submitted 5 June 2026. Verified 2026-09-05 from the arXiv abstract page
+@article{yeginbergen2026fullcite,
+  author    = {Anar Yeginbergen and Amelie W{\"u}hrl and Anna Rogers and Rodrigo Agerri},
+  title     = {Explicit Evidence Grounding via Structured Inline Citation Generation},
+  journal   = {arXiv preprint arXiv:2606.07130},
+  year      = {2026}
+}
+% qian2025vericite -- verification record, NOT for print:
+%   verified 2026-09-06 from arxiv.org/abs/2510.11394; the id opens to this exact title, and the
+%   SIGIR-AP 2025 venue and DOI 10.1145/3767695.3769505 were confirmed on the ACM page. WAS
+%   WRONG: the author list read "verify: Qian and others".
+@inproceedings{qian2025vericite,
+  author    = {Haosheng Qian and Yixing Fan and Jiafeng Guo and Ruqing Zhang and Qi Chen and Dawei Yin and others},
+  title     = {{VeriCite}: Towards Reliable Citations in Retrieval-Augmented Generation via Rigorous Verification},
+  booktitle = {Proc. SIGIR-AP 2025},
+  year      = {2025},
+  pages     = {47--54},
+  doi       = {10.1145/3767695.3769505},
+  note      = {arXiv:2510.11394}
+}
+% kan2026claimselective -- verification record, NOT for print:
+%   Submitted 21 May 2026. Verified 2026-09-05 from the arXiv abstract page.
+@article{kan2026claimselective,
+  author    = {Shao Kan},
+  title     = {Claim-Selective Certification for High-Risk Medical Retrieval-Augmented Generation},
+  journal   = {arXiv preprint arXiv:2605.21949},
+  year      = {2026}
+}
+% ---- (iii) the price of guarantees and fail-closed delivery -------------------------------
+% mohri2024conformal -- verification record, NOT for print:
+%   PMLR v235/mohri24a; arXiv:2402.10978
+@inproceedings{mohri2024conformal,
+  author    = {Christopher Mohri and Tatsunori Hashimoto},
+  title     = {Language Models with Conformal Factuality Guarantees},
+  booktitle = {Proc. 41st Int. Conf. Machine Learning (ICML)},
+  series    = {Proc. Machine Learning Research},
+  volume    = {235},
+  pages     = {36029--36047},
+  publisher = {PMLR},
+  year      = {2024},
+  note      = {arXiv:2402.10978}
+}
+% saxena2025coverage -- verification record, NOT for print:
+%   Non-archival workshop poster (neurips.cc/virtual/2025/122374); arXiv:2509.21557
+@inproceedings{saxena2025coverage,
+  author    = {Yash Saxena and Raviteja Bommireddy and Ankur Padia and Manas Gaur},
+  title     = {Generation-Time vs. Post-hoc Citation: A Holistic Evaluation of {LLM} Attribution},
+  booktitle = {Proc. NeurIPS Workshop Eval. Evolving LLM Lifecycle},
+  year      = {2025},
+  note      = {arXiv:2509.21557}
+}
+% sentguard2026 -- verification record, NOT for print:
+%   arXiv:2606.02041v1 [cs.CL], submitted 1 June 2026; sentence-level waiting buffer for
+%   streaming guardrails. Preprint only --- ``submitted to ARR'', no published venue as of
+%   2026-09-06
+@article{sentguard2026,
+  author    = {Jiaqi Yu and Xin Wang and Yixu Wang and Jie Li and Yan Teng and Xingjun Ma and others},
+  title     = {{SentGuard}: Sentence-Level Streaming Guardrails for Large Language Models},
+  journal   = {arXiv preprint arXiv:2606.02041},
+  year      = {2026},
+  note      = {arXiv:2606.02041v1}
+}
+
+% ---- (iv) medical and Vietnamese -----------------------------------------------------------
+% xiong2024mirage -- verification record, NOT for print:
+%   ACL Anthology 2024.findings-acl.372; doi:10.18653/v1/2024.findings-acl.372;
+%   arXiv:2402.13178. MIRAGE / MedRAG toolkit; Never cite as bare ``MedRAG'' (name collision
+%   with Zhao et al., WWW 2025)
+@inproceedings{xiong2024mirage,
+  author    = {Guangzhi Xiong and Qiao Jin and Zhiyong Lu and Aidong Zhang},
+  title     = {Benchmarking Retrieval-Augmented Generation for Medicine},
+  booktitle = {Findings Assoc. Comput. Linguistics: ACL 2024},
+  year      = {2024},
+  note      = {doi:10.18653/v1/2024.findings-acl.372}
+}
+% tran2024vimedaqa -- verification record, NOT for print:
+%   verified 2026-09-06 from aclanthology.org/2024.acl-srw.31 and its official BibTeX. WAS
+%   WRONG: the author list read "verify: Tran and others". No arXiv version located.
+@inproceedings{tran2024vimedaqa,
+  author    = {Minh-Nam Tran and Phu-Vinh Nguyen and Long Nguyen and Dien Dinh},
+  title     = {{ViMedAQA}: A Vietnamese Medical Abstractive Question-Answering Dataset and Findings of Large Language Model},
+  booktitle = {Proc. Annu. Meeting Assoc. Comput. Linguistics, Student Res. Workshop},
+  year      = {2024},
+  note      = {doi:10.18653/v1/2024.acl-srw.31; pp.\ 252--260}
+}
+% vm14k2025 -- verification record, NOT for print:
+%   arXiv:2506.01305; doi:10.48550/arXiv.2506.01305. Preprint only: no journal reference on the
+%   arXiv record as of 2026-09-06
+@article{vm14k2025,
+  author    = {Thong Nguyen and Duc Nguyen and Minh Dang and Thai Dao and Long Nguyen and Quan H. Nguyen and others},
+  title     = {{VM14K}: First Vietnamese Medical Benchmark},
+  journal   = {arXiv preprint arXiv:2506.01305},
+  year      = {2025},
+  note      = {doi:10.48550/arXiv.2506.01305}
+}
+% vihermes2026 -- verification record, NOT for print:
+%   verified 2026-09-06 from arxiv.org/abs/2602.07361 plus the Springer page for
+%   10.1007/978-981-92-0071-9_22, consistent on all six authors. WAS WRONG: the author list read
+%   "verify: authors". Venue is ACIIDS 2026 (LNCS 16530), NOT EMNLP 2025 Findings.
+%
+%   RE-VERIFIED 2026-09-10 against the Crossref API for that DOI, after a review reported it
+%   could not find the chapter on the Springer VOLUME page. The chapter DOI resolves and every
+%   field matches: title verbatim, all six authors in this order, container "Lecture Notes in
+%   Computer Science; Intelligent Information and Database Systems", year 2026, publisher
+%   Springer Nature Singapore. Crossref also supplied the page range this entry was missing,
+%   321--336, now added. Springer's own chapter page 303-redirects to an IdP and cannot be
+%   read unauthenticated, which is the likely reason the review came up empty -- so the check
+%   that settles this reference is the DOI, not the volume listing.
+@inproceedings{vihermes2026,
+  author    = {Long S. T. Nguyen and Quan M. Bui and Tin T. Ngo and Quynh T. N. Vo and Dung N. H. Le and Tho T. Quan},
+  title     = {{ViHERMES}: A Graph-Grounded Multihop Question Answering Benchmark and System for Vietnamese Healthcare Regulations},
+  booktitle = {Proc. Intell. Inf. Database Syst. (ACIIDS)},
+  series    = {Lecture Notes Comput. Sci.},
+  volume    = {16530},
+  pages     = {321--336},
+  year      = {2026},
+  doi       = {10.1007/978-981-92-0071-9_22},
+  note      = {arXiv:2602.07361}
+}
+
+% ---- Section VI ----------------------------------------------------------------------------
+% ocrhinders2025 -- verification record, NOT for print:
+%   arXiv:2412.02592. Verified 2026-09-06 from the CVF open-access page. Defines reading-order
+%   restoration, including multi-column and truncated paragraph merging, as one of three
+%   document-extraction tasks, and reports that reading-order evidence degrades most in the
+%   generation stage. Its corpus is document images and its unit of harm is benchmark QA
+%   accuracy, not citation integrity --- do not cite it as if it had tested a born-digital
+%   text-layer extractor or measured attribution
+@inproceedings{ocrhinders2025,
+  author    = {Junyuan Zhang and Qintong Zhang and Bin Wang and Linke Ouyang and Zichen Wen and Ying Li and others},
+  title     = {{OCR} Hinders {RAG}: Evaluating the Cascading Impact of {OCR} on Retrieval-Augmented Generation},
+  booktitle = {Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)},
+  year      = {2025},
+  pages     = {17443--17453},
+  note      = {arXiv:2412.02592}
+}
+% lee2022dedup -- verification record, NOT for print:
+%   ACL Anthology 2022.acl-long.577; doi:10.18653/v1/2022.acl-long.577; arXiv:2107.06499.
+%   Verified 2026-09-06 from the ACL Anthology page
+@inproceedings{lee2022dedup,
+  author    = {Katherine Lee and Daphne Ippolito and Andrew Nystrom and Chiyuan Zhang and Douglas Eck and Chris Callison-Burch and others},
+  title     = {Deduplicating Training Data Makes Language Models Better},
+  booktitle = {Proc. 60th Annu. Meeting Assoc. Comput. Linguistics},
+  year      = {2022},
+  pages     = {8424--8445},
+  note      = {doi:10.18653/v1/2022.acl-long.577}
+}
+
+
+% ---- added 2026-09-05, each verified from its source page ----------------------------
+
+% THE TITLE COLLISION. "Cited but Not Verified" is four months old and sits in the same
+% area as this paper's working title; it must be cited whatever title we settle on, and it
+% is also the cleanest evidence for the paper's opening premise: their deep-research agents
+% keep link validity above 94% while factual accuracy sits between 39% and 77%, i.e. a
+% citation that resolves is not a citation that supports.
+% onweller2026citednotverified -- verification record, NOT for print:
+%   Submitted 7 May 2026. Verified 2026-09-05 from the arXiv abstract page
+@article{onweller2026citednotverified,
+  author    = {Hailey Onweller and Elias Lumer and Austin Huber and Pia Ramchandani and
+               Vamse Kumar Subbiah and Corey Feld},
+  title     = {Cited but Not Verified: Parsing and Evaluating Source Attribution in {LLM}
+               Deep Research Agents},
+  journal   = {arXiv preprint arXiv:2605.06635},
+  year      = {2026}
+}
+
+% Legitimises "re-packaging destroys provenance" as a documented property of the public
+% dataset ecosystem rather than a quirk of our corpus: 1,800+ text datasets audited,
+% licence omission above 70% and error rates above 50% on popular hosting platforms. A
+% journal version exists at doi 10.1038/s42256-024-00884-w (the DOI resolves) but sits
+% behind authentication, so this cites the version whose title and authors were read
+% directly.
+% longpre2024provenance -- verification record, NOT for print:
+%   doi:10.1038/s42256-024-00878-8. Verified 2026-09-06 against the Nature article page,
+%   Crossref and OpenAlex; all 17 authors read off the publisher page. Preprint:
+%   arXiv:2310.16787, titled ``The Data Provenance Initiative: A Large Scale Audit of Dataset
+%   Licensing \& Attribution in {AI}'' --- the journal version is retitled. NOTE: doi
+%   10.1038/s42256-024-00884-w, which an earlier version of this entry carried, is a DIFFERENT
+%   article --- Vincent's News \& Views commentary about this audit, same volume and issue
+@article{longpre2024provenance,
+  author  = {Shayne Longpre and Robert Mahari and Anthony Chen and Naana Obeng-Marnu and Damien Sileo and William Brannon and others},
+  title   = {A large-scale audit of dataset licensing and attribution in {AI}},
+  journal = {Nature Mach. Intell.},
+  volume  = {6},
+  number  = {8},
+  pages   = {975--987},
+  year    = {2024},
+  note      = {doi:10.1038/s42256-024-00878-8}
+}

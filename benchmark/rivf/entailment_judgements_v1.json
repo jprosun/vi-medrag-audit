@@ -1,0 +1,3138 @@
+{
+  "counts": {
+    "items": 222,
+    "judged_pass_a": 222,
+    "judged_pass_b": 222,
+    "raw_agreement": 220,
+    "disagreements": 2,
+    "adjudicated": 2
+  },
+  "pass_a": [
+    {
+      "item_id": "ent_0177",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim: glufosinate 66,7% Glasgow ≤14, fluoroacetate co giật/tăng trương lực cơ, diquat hôn mê muộn, tử vong 72,3%. Question mismatch is irrelevant to the pair."
+    },
+    {
+      "item_id": "ent_0166",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's ĐẶT VẤN ĐỀ contains the identical sentence 'Bệnh nhân PCOS có thể có nhiều dấu hiệu và triệu chứng khác nhau...'; truncation mid-word does not obscure meaning."
+    },
+    {
+      "item_id": "ent_0143",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about RSV signs in newborns (ngừng thở, Synagis); it says nothing about type-2 diabetes drug regimens or Buôn Hồ hospital. Unrelated pairing."
+    },
+    {
+      "item_id": "ent_0082",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that HCBTĐN is the most commonly diagnosed endocrine disorder in women and main cause of anovulatory infertility [1]."
+    },
+    {
+      "item_id": "ent_0112",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's ĐẶT VẤN ĐỀ opens with the identical fragment 'Huyết khối tĩnh mạch là tình trạng huyết khối làm tắc một phần'."
+    },
+    {
+      "item_id": "ent_0033",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Mục tiêu sentence lists exactly độ nhạy, độ đặc hiệu, PPV, NPV, AUC of TyG for ĐTĐTK; identical wording."
+    },
+    {
+      "item_id": "ent_0129",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Kết luận states verbatim the 36-patient PRP result with statistically significant VAS/KOOS reduction after injection."
+    },
+    {
+      "item_id": "ent_0126",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Kết luận ends with the identical sentence about successful vaginal births after a prior caesarean; 4% sinh thường corroborates it."
+    },
+    {
+      "item_id": "ent_0020",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The keyword line 'Từ khoá: Đái tháo đường típ 2, ngoại trú, tương tác thuốc' appears verbatim at the end of the passage; degenerate but literally present."
+    },
+    {
+      "item_id": "ent_0212",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's closing paragraph states verbatim the mature-AVF outflow-vein predominance and 41,1% thrombosis rate in immature fistulas."
+    },
+    {
+      "item_id": "ent_0107",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả nghiên cứu states verbatim '45,2% tổng số bệnh nhân nghiên cứu có tình trạng đông máu nội mạch rải rác (DIC)'."
+    },
+    {
+      "item_id": "ent_0219",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Kết quả states verbatim that group 1 anthropometric indices fell after 2 weeks with weight and body-fat % significant at p<0,05."
+    },
+    {
+      "item_id": "ent_0027",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim 'Theo ước tính thì đái tháo đường sẽ là nguyên nhân gây tử vong hàng đầu tính đến năm 2030'."
+    },
+    {
+      "item_id": "ent_0137",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the ADA figures: 387 triệu in 2014 rising to 592 triệu by 2035; numbers match exactly."
+    },
+    {
+      "item_id": "ent_0194",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "KẾT LUẬN states verbatim the one-year mortality of 31,3% in ESRD patients on maintenance haemodialysis."
+    },
+    {
+      "item_id": "ent_0175",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's methods state verbatim that patients were examined and confirmed at BV Quân y 103 and BV TWQĐ 108 from 01/2021 to 2/2025."
+    },
+    {
+      "item_id": "ent_0031",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Phương pháp section states verbatim the retrospective design in HR+/HER2- recurrent-metastatic breast cancer, endocrine-naive, at bệnh viện K."
+    },
+    {
+      "item_id": "ent_0174",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about morning diarrhoea, dehydration and IBS/IBD; it contains nothing about MSM (NTDĐG), HIV risk behaviour or epidemiology."
+    },
+    {
+      "item_id": "ent_0055",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Đặt vấn đề states verbatim that drug intervention has many side effects and high cost, so non-drug measures for SSTT become more urgent."
+    },
+    {
+      "item_id": "ent_0028",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's I. ĐẶT VẤN ĐỀ contains the identical definition of ĐTĐ, its metabolic disturbances and multi-organ damage, truncated at the same point."
+    },
+    {
+      "item_id": "ent_0066",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes sampling/SPSS methods and ethics for a coronary-stent adherence study; no paediatric diarrhoea data or the 31,2%/4,0%/0,5% figures."
+    },
+    {
+      "item_id": "ent_0128",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả states verbatim 70,3% preparing lessons, 74,9% joining group discussion, 51,3% answering case-discussion questions."
+    },
+    {
+      "item_id": "ent_0084",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Kết luận states verbatim that prolonged PPI use in the elderly raises osteoporosis risk, lowers BMD and increases fractures."
+    },
+    {
+      "item_id": "ent_0017",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the study rationale and objective sentence naming the Buôn Hồ 2023 survey of type-2 diabetes drug use and comorbidities."
+    },
+    {
+      "item_id": "ent_0168",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "BÀN LUẬN states verbatim that their first-line cohort had not benefited from endocrine therapy for metastatic disease, similar to Hortobagyi and Finn."
+    },
+    {
+      "item_id": "ent_0024",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a short readable fragment on dyscalculia schooling and psychotherapy; nothing about HIV, sexual behaviour or Bệnh viện Bệnh Nhiệt đới."
+    },
+    {
+      "item_id": "ent_0162",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage reports CDK4/6 toxicity (giảm bạch cầu 92,5%) and age data in breast cancer; no heart-failure quadruple therapy or PSTM subgroup rates."
+    },
+    {
+      "item_id": "ent_0222",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "The sentence's subject is cut off ('p tương đối quan trọng'); the passage discusses khớp cắn/TMJ, never asserting that 'tình trạng bất cân xứng' shapes the face."
+    },
+    {
+      "item_id": "ent_0061",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about post-op tongue-cancer wound care and giving the patient a notebook; it says nothing about screening for haematologic malignancy or coagulation."
+    },
+    {
+      "item_id": "ent_0207",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Claim is a verbatim sentence of the passage ('việc thăm khám kỹ... rất khó phân biệt') on psoriatic arthritis; the passage states exactly this."
+    },
+    {
+      "item_id": "ent_0199",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage explains dyspnoea in late pregnancy (progesterone, uterine pressure on diaphragm); it never mentions heart failure or EF < 40% study subjects."
+    },
+    {
+      "item_id": "ent_0065",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists foods to avoid in knee osteoarthritis; PCOS and its definitional heterogeneity are absent entirely."
+    },
+    {
+      "item_id": "ent_0089",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Table 3 in the passage carries the identical SOFA/BISAP/Ranson values, p<0,001 and the remark that scores fell significantly after plasma exchange."
+    },
+    {
+      "item_id": "ent_0098",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The 'Mục tiêu' sentence of the abstract states the three described aims for MSM inpatients at Bệnh viện Bệnh Nhiệt đới verbatim."
+    },
+    {
+      "item_id": "ent_0176",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's 'Kết luận' sentence states exactly that ATS/IDSA minor criteria, CURB-65 and PSI prognosticate 30-day mortality well in CAP."
+    },
+    {
+      "item_id": "ent_0047",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods sentence states blood tests and echo at two time points: within first 24h of admission and 7 days after PCI — identical to the claim."
+    },
+    {
+      "item_id": "ent_0096",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "'Đối tượng và phương pháp' states 34 primary knee-OA patients stage II-III classified by ACR and Kellgren-Lawrence, word for word."
+    },
+    {
+      "item_id": "ent_0085",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage covers iron/nutrition advice for anaemia in pregnancy; no knee osteoarthritis, no 36 patients, no PRP, no VAS/KOOS results."
+    },
+    {
+      "item_id": "ent_0038",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage states verbatim 'Năm 2016, bệnh đái tháo đường là nguyên nhân trực tiếp của 1,6 triệu ca tử vong.'"
+    },
+    {
+      "item_id": "ent_0006",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage gives diet and exercise advice for prediabetes; deep vein thrombosis of the lower limbs and its rate/risk factors are never mentioned."
+    },
+    {
+      "item_id": "ent_0003",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Claim reproduces the passage's header block and 'Mục tiêu' sentence on vitamin D, BMD and osteoporosis risk in postmenopausal women verbatim."
+    },
+    {
+      "item_id": "ent_0015",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about preventing thalassaemia via premarital genetic screening; it contains no age-group/sex/frequency variables as the fragment claims."
+    },
+    {
+      "item_id": "ent_0161",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes X-ray/CT lesion distribution in new pulmonary TB; it says nothing about arrhythmias, atrial/ventricular ectopy or first-trimester timing."
+    },
+    {
+      "item_id": "ent_0172",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Claim is a verbatim slice of the passage's Table 2 (275/290 94,8%; 266/290 91,7%; 150/160 93,7%; 116/130 89,2%) with its caption."
+    },
+    {
+      "item_id": "ent_0171",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results sentence states dehydration in children fell from 31,2% to 4,0% and 0,5% after 24h and 48h — identical figures."
+    },
+    {
+      "item_id": "ent_0019",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that nearly 90% of COPD deaths under 70 occur in low/middle-income countries and 5,4 million deaths/year predicted by 2060."
+    },
+    {
+      "item_id": "ent_0001",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results sentence gives the same MRI findings and percentages (corpus callosum 95,8%, centrum semiovale 59,7%, glufosinate 86,7%, pons 63,6%, medulla 36,4%)."
+    },
+    {
+      "item_id": "ent_0145",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods sentence states the cross-sectional study of 80 type-2 diabetics at Bệnh viện Thận Hà Nội with the same four groups and n values."
+    },
+    {
+      "item_id": "ent_0192",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage gives home management advice for prolonged diarrhoea (ORS, bland food, avoid dairy); no paediatric pneumonia study, aetiology or antibiotic choice."
+    },
+    {
+      "item_id": "ent_0076",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim that high fracture risk in elderly PPI users was 53,2%, with the sentence continuing into sex breakdown."
+    },
+    {
+      "item_id": "ent_0119",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that per KDIGO 2024 CKD is divided into 5 stages (G1-G5) based on eGFR."
+    },
+    {
+      "item_id": "ent_0136",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Diagnostic-criteria section states verbatim that without both syndromes cirrhosis is diagnosed by Fibroscan F4 plus APRI > 2."
+    },
+    {
+      "item_id": "ent_0217",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage gives lay advice for palpitations (coughing, cold water); it contains no adherence scoring (6-8 points) or 1/3/6-month follow-up scheme."
+    },
+    {
+      "item_id": "ent_0037",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Fragment is the opening of the passage's own sentence 'Thời gian trung bình từ khi phát hiện đột quỵ tới khi được dùng thuốc... là 3,1 giờ'; asserts nothing beyond it."
+    },
+    {
+      "item_id": "ent_0122",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim that atrial and ventricular ectopy were the common arrhythmias (>50%), mostly in the first trimester (47,6%)."
+    },
+    {
+      "item_id": "ent_0120",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Claim is the passage's own keyword line, present verbatim; it lists topics rather than asserting more than the passage does."
+    },
+    {
+      "item_id": "ent_0056",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a Bộ Y tế circular on vaccine/drug marketing-authorisation renewal procedures; it says nothing about HCC diagnostic criteria, imaging or AFP."
+    },
+    {
+      "item_id": "ent_0182",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage carries Bảng 1 verbatim: n=184, tuổi 57 ± 13, Nam 71 (38,6%), Nữ 113 (61,4%), Mức độ xơ gan — identical to the claim."
+    },
+    {
+      "item_id": "ent_0114",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient-facing text on gestational diabetes resolving after birth; it contains nothing about manufacturer stability-study commitments."
+    },
+    {
+      "item_id": "ent_0021",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1 states verbatim the HFrEF (EF<40%) beta-blocker outpatients at Bệnh viện Tim mạch An Giang, 04–09/2024."
+    },
+    {
+      "item_id": "ent_0100",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage (Section THEO DÕI) reads 'chặt chẽ INR ở nhóm dùng VKA trong khi nhóm DOAC không cần'; starts mid-sentence but the VKA/DOAC contrast is intact."
+    },
+    {
+      "item_id": "ent_0095",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "ĐẶT VẤN ĐỀ states verbatim the rise of non-communicable chronic disease in the elderly and its burden on patient, family and society."
+    },
+    {
+      "item_id": "ent_0044",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes dengue haemorrhagic signs (petechiae, mucosal bleeding); it never mentions venous access lesions or the figure 53,1%."
+    },
+    {
+      "item_id": "ent_0184",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim first-day SGLT2i use 22,9% / 14,3% / 18,2% across the three EF groups with p<0,001."
+    },
+    {
+      "item_id": "ent_0188",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Sample-size paragraph states verbatim the Hoàng Châu Bảo Đính figure 47,5% and the choice P = 0,475."
+    },
+    {
+      "item_id": "ent_0127",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Kết luận states verbatim that atrial/ventricular premature beats predominate, mainly in the first trimester; claim truncates exactly where the passage does."
+    },
+    {
+      "item_id": "ent_0043",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion states verbatim that fungal infection can be an important but under-recognised, easily missed cause in severe community-acquired pneumonia."
+    },
+    {
+      "item_id": "ent_0125",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "KẾT QUẢ/discussion states verbatim the affirmation of retrograde laser lithotripsy's role and its reference value for choice by stone site and size."
+    },
+    {
+      "item_id": "ent_0039",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim the study title on antihypertensive medication adherence at Cần Thơ General Hospital 2020 and objective (1)."
+    },
+    {
+      "item_id": "ent_0050",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim RVR 159/184 (86,4%) and SVR 184/184 (100%)."
+    },
+    {
+      "item_id": "ent_0058",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim that 100% of hospital-acquired CAUTI patients had no bacteraemia or septic shock."
+    },
+    {
+      "item_id": "ent_0156",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods section states verbatim history, exam, blood tests including NT-proBNP, echo within first 24h and 7 days post-PCI."
+    },
+    {
+      "item_id": "ent_0187",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that postmenopausal women are especially prone to osteoporosis with markedly raised fracture risk, disability, cost and death."
+    },
+    {
+      "item_id": "ent_0108",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the study aim: survey the link between vitamin D level, bone density and osteoporosis risk factors in postmenopausal women."
+    },
+    {
+      "item_id": "ent_0005",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that ARV is currently the only treatment prolonging life and improving quality of life in people with HIV/AIDS."
+    },
+    {
+      "item_id": "ent_0018",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage covers COVID-19 vaccination and breastfeeding safety; no prognostic scores, no AUC, no 30-day pneumonia mortality."
+    },
+    {
+      "item_id": "ent_0142",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient first-aid guidance for stroke; it says nothing about the Thái Nguyên medical-training programme or its objectives."
+    },
+    {
+      "item_id": "ent_0164",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim that onset symptoms were mainly gastrointestinal (54,2-100%) with early neurological signs (30,6-40%) for fluoroacetate and glufosinate."
+    },
+    {
+      "item_id": "ent_0008",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Nhận xét after Bảng 6 states verbatim the 3,1-fold osteoporosis risk for menopause duration over 10 years; surrounding table is garbled but this line is clear."
+    },
+    {
+      "item_id": "ent_0004",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists cancer-screening package prices at Đà Nẵng Oncology Hospital; nothing about paediatric diarrhoea, plan B or the 31,2%→4,0% change."
+    },
+    {
+      "item_id": "ent_0102",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the cross-sectional design covering all elderly attendees at the Lê Văn Thịnh family-doctor clinic in 2022 with HTN, T2DM or IHD."
+    },
+    {
+      "item_id": "ent_0078",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion cites Robinson et al. verbatim: anaemia is common in CKD, especially end-stage, and is linked to raised cardiovascular and all-cause mortality."
+    },
+    {
+      "item_id": "ent_0132",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Mở đầu states verbatim that MSM differ from sex workers or injecting drug users in epidemiology, risk behaviour and HIV self-awareness."
+    },
+    {
+      "item_id": "ent_0200",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on diuretics for hypertension (gout, side effects, adherence); no breast-cancer cohort, no Hortobagyi or Finn reference."
+    },
+    {
+      "item_id": "ent_0029",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage body contains this exact methods sentence ('Mô tả cắt ngang... 6 module hệ cơ quan'); claim is a verbatim restatement of it."
+    },
+    {
+      "item_id": "ent_0191",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states the complex-lesion rates 0,9%, 2,6%, 1,7% for thân chung/chia đôi/tắc mạn exactly as claimed."
+    },
+    {
+      "item_id": "ent_0140",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Heading '3.2. Tỉ lệ và các yếu tố liên quan đến HKTMSCD' appears verbatim, and the passage then gives 24,2% plus the OR table."
+    },
+    {
+      "item_id": "ent_0068",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The 'Mục tiêu' sentence about vitamin B12 / anemia response and mortality in ESRD hemodialysis patients is stated verbatim in the abstract."
+    },
+    {
+      "item_id": "ent_0046",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states PRP 'đã chứng tỏ hiệu quả trong giảm đau và tái tạo sụn khớp đặc biệt giai đoạn II, III' word for word."
+    },
+    {
+      "item_id": "ent_0007",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists ICU admission indications; it says nothing about dementia or non-pharmacological multi-component intervention."
+    },
+    {
+      "item_id": "ent_0135",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Nhận xét under Bảng 3 states 13 children discharged and 99,5% no longer dehydrated on regimen A after 2 days, exactly as claimed."
+    },
+    {
+      "item_id": "ent_0064",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The sentence about respiratory viruses aiding vaccination programme planning appears verbatim in the discussion text."
+    },
+    {
+      "item_id": "ent_0148",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the 6-year curriculum with basic-science subjects as prerequisites in the first 3 years, identical wording."
+    },
+    {
+      "item_id": "ent_0150",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Intro states poor prognosis with 90-day readmission and 1-year mortality up to 10-30% [2]; claim reproduces it without change."
+    },
+    {
+      "item_id": "ent_0079",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The keyword line 'Từ khóa: Ung thư đại trực tràng giai đoạn muộn, phác đồ Regorafenib' closes the abstract verbatim."
+    },
+    {
+      "item_id": "ent_0157",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's rationale sentence about providing thoracic pedicle morphology data in Vietnamese adults for screw sizing matches the claim exactly."
+    },
+    {
+      "item_id": "ent_0170",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Variable list 'Đặc điểm cận lâm sàng: ... T2W, T1W, Flai' is present verbatim; claim truncates at the same mid-word point but stays readable."
+    },
+    {
+      "item_id": "ent_0083",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract gives mean days to drug use 2,7±1,8 / 3,1±1,5 / 4,9±3,9 by EF group, identical to the claim."
+    },
+    {
+      "item_id": "ent_0205",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Cited region is the ingestion splice: author/affiliation and review-date block dropped into the middle of the conclusion sentence, which then starts mid-word at 'máu nội mạch'."
+    },
+    {
+      "item_id": "ent_0193",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Same splice defect: hospital/email/date metadata interleaved into a sentence that resumes mid-phrase at 'tim, nồng độ hemoglobin'; no judgeable proposition."
+    },
+    {
+      "item_id": "ent_0086",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion states Regorafenib is indicated after failure of 2 prior lines with worse performance status, word for word."
+    },
+    {
+      "item_id": "ent_0195",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about avoiding crowds and mask use; it contains no diabetes or CKD figures at all, let alone 20-50%."
+    },
+    {
+      "item_id": "ent_0155",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's methods sentence (cross-sectional, elderly at Lê Văn Thịnh family clinic 2022 with HTN/T2DM/IHD) is reproduced verbatim."
+    },
+    {
+      "item_id": "ent_0105",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage gives exactly this explanation - families with no affected relative do not think of diabetes, delaying diagnosis and treatment."
+    },
+    {
+      "item_id": "ent_0060",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1.2 lists these exclusion criteria (pre-gestational diabetes, refusal, fewer than 3 samples, glucose-metabolism disease) identically."
+    },
+    {
+      "item_id": "ent_0154",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states T1DM is polygenic, not sex-chromosome linked, so incidence is equal in both sexes - the claim verbatim."
+    },
+    {
+      "item_id": "ent_0160",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's 'Đối tượng và phương pháp' names the 46 EGFR-mutant NSCLC patients with secondary TKI resistance on Pemetrexed-Carboplatin, as claimed."
+    },
+    {
+      "item_id": "ent_0153",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion 4.1 gives alcohol 73,4%, obesity/dyslipidemia 66,7%, diabetes 54,5%, 100% epigastric pain, nausea 91,7%, vomiting 65,4% - all matching."
+    },
+    {
+      "item_id": "ent_0115",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Body states the MMAS-8 two-level cut-off (6-8 adherent, <6 poor) across 3 follow-ups at 1, 3, 6 months, exactly as claimed."
+    },
+    {
+      "item_id": "ent_0206",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods section lists sample size 36 and the study contents (demographics, VAS/KOOS, Kellgren-Lawrence X-ray grade) in the same wording."
+    },
+    {
+      "item_id": "ent_0220",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract gives SAAG cut-off 1,9 with sensitivity 88,37%, specificity 75,87%, AUC 0,902 for large esophageal varices - numbers match exactly."
+    },
+    {
+      "item_id": "ent_0092",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about diet/pathophysiology of esophageal varices; it says nothing about SOFA, BISAP or Ranson scores or any treatment outcome."
+    },
+    {
+      "item_id": "ent_0202",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage states verbatim: arrhythmias commonly atrial/ventricular premature beats (>50%) mostly in first trimester (47,6%). Leading '(100%)' is a stray table cell."
+    },
+    {
+      "item_id": "ent_0209",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's methods sentence states verbatim 274 cancer patients in ICU at Benh vien K with catheter, 03/2022-11/2022."
+    },
+    {
+      "item_id": "ent_0180",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The training-programme objective sentence appears verbatim in the passage body."
+    },
+    {
+      "item_id": "ent_0210",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the two interaction factors with the same OR/P values (33,071; 36,838; 12,669) verbatim."
+    },
+    {
+      "item_id": "ent_0216",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's background sentence states verbatim that no study has assessed safety of combined SIMV+PSV vs full controlled ventilation."
+    },
+    {
+      "item_id": "ent_0036",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's introduction states verbatim: 'Khoang 20-50% benh nhan dai thao duong type 2 co nguy co phat trien CKD [2]'."
+    },
+    {
+      "item_id": "ent_0053",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage discusses COPD with TB sequelae (cough 93,3%, mMRC); it makes no statement about severe community pneumonia patients or fungal infection."
+    },
+    {
+      "item_id": "ent_0181",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that T1DM can start at any age, 45% before age 10, with peaks at 5-7 years and early puberty."
+    },
+    {
+      "item_id": "ent_0141",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Phuong phap sentence matches exactly: retrospective descriptive design, 50 ureteral stone patients, 03/2023-31/5/2023."
+    },
+    {
+      "item_id": "ent_0124",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Ket luan sentence about thoracic pedicle morphology in Vietnamese adults vs European/Asian populations is verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0139",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage states all three scores predict 30-day mortality well (AUC > 0,8); claim is that sentence, merely cut off at 'va ket'."
+    },
+    {
+      "item_id": "ent_0169",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that ARV regimens require strict lifelong adherence to succeed and prevent resistance [2]."
+    },
+    {
+      "item_id": "ent_0221",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Sentence is verbatim in the passage and backed by its own figures (clinical benefit 96,3%, partial response 74,1%)."
+    },
+    {
+      "item_id": "ent_0165",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's methods state verbatim that all patients had endoscopy, ascitic fluid testing and routine biochemistry/haematology."
+    },
+    {
+      "item_id": "ent_0013",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The whole DAT VAN DE block (3 million deaths, 4th cause, 12% of lung disease in Vietnam) appears verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0080",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim: in cirrhotic patients APRI fell significantly at 6 months post-treatment (1,13; 0,41; p < 0,001)."
+    },
+    {
+      "item_id": "ent_0099",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Ket qua states verbatim 4713 elderly attendees in 2022, 3506 (74,4%) with one or more of HTN/T2DM/IHD."
+    },
+    {
+      "item_id": "ent_0074",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Item 7 of the passage's document list is exactly this commitment on post-change stability studies and reporting out-of-spec results."
+    },
+    {
+      "item_id": "ent_0072",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that CDK4/6 inhibitors plus endocrine therapy have confirmed efficacy, clinical benefit and survival in recurrent/metastatic breast cancer."
+    },
+    {
+      "item_id": "ent_0133",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The keyword line is present verbatim at the end of the abstract; content is degenerate (a keyword list) but the passage does state it."
+    },
+    {
+      "item_id": "ent_0062",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Muc tieu sentence about osteoporosis/fracture risk in elderly PPI users at the two UMC clinics is verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0041",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's aim sentence about describing clinical features, microbiology and initial antibiotic choice at the 24-hour clinic is verbatim."
+    },
+    {
+      "item_id": "ent_0025",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the study title sentence on the TyG index in diagnosing gestational diabetes."
+    },
+    {
+      "item_id": "ent_0048",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's methods state verbatim: cross-sectional with longitudinal follow-up of 46 advanced colorectal cancer patients on Regorafenib, 1/2021-11/2023."
+    },
+    {
+      "item_id": "ent_0144",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that mean Child-Pugh, SAAG and FIB-4 were higher in the varices group than the non-varices group; surrounding tables are garbled but this sentence is intact."
+    },
+    {
+      "item_id": "ent_0179",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about antibiotic-use auditing at a district health centre (beta-lactam 60,13%, gentamicin 29,55%); it never mentions Regorafenib or colorectal cancer."
+    },
+    {
+      "item_id": "ent_0030",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the inclusion criteria: patients >=18, alteplase IV at Bach Mai, last-known-well to thrombolysis >4.5 h."
+    },
+    {
+      "item_id": "ent_0067",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Objective 2 of the abstract states verbatim: determine CD4 level, HIV viral load and their relation to treatment adherence."
+    },
+    {
+      "item_id": "ent_0093",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that PsA presents with joint swelling/stiffness/enthesitis and that diagnosis remains a challenge for dermatologists and rheumatologists."
+    },
+    {
+      "item_id": "ent_0123",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract results state verbatim 30/93 (32,3%) aware that same-sex intercourse carries higher HIV risk."
+    },
+    {
+      "item_id": "ent_0026",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Claim is the Bang 2 caption present verbatim; the passage indeed presents that factor analysis (OR, CI, p) for lower-limb DVT."
+    },
+    {
+      "item_id": "ent_0077",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on milk for 1-year-olds; it says nothing about 34 knee-osteoarthritis patients or ACR/Kellgren-Lawrence staging."
+    },
+    {
+      "item_id": "ent_0189",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that in pregnant women with normal cardiac structure arrhythmias are usually benign, mostly atrial or ventricular ectopy [4,5]."
+    },
+    {
+      "item_id": "ent_0106",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion 4.1 defines operative time exactly as stated, from ureteroscope insertion through urethra to placement of the urinary catheter."
+    },
+    {
+      "item_id": "ent_0110",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the 2024 study finding smoking history, dust exposure and prior TB as risk factors for COPD and for exacerbations [5]."
+    },
+    {
+      "item_id": "ent_0012",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Title is a splice of reference-list entries and the body is an interleaved table; the cited text is bare column headers with no proposition to judge."
+    },
+    {
+      "item_id": "ent_0034",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The keyword line appears verbatim at the end of the abstract; nothing beyond the listing is asserted."
+    },
+    {
+      "item_id": "ent_0203",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the four-pillar therapy rates 41,3% / 14,3% / 9,8% (p=0,02) across HFrEF, HFmrEF, HFpEF."
+    },
+    {
+      "item_id": "ent_0146",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the study aim to describe socio-demographics, sexual behaviour and HIV self-awareness in MSM inpatients at BV BND."
+    },
+    {
+      "item_id": "ent_0185",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim 97,9% of patients had viral load below the detection threshold."
+    },
+    {
+      "item_id": "ent_0088",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage covers vertigo and corticosteroids for vestibular neuritis; it gives no figures on hypertension diagnosis or treatment in the elderly."
+    },
+    {
+      "item_id": "ent_0091",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that the disease features progressive degeneration of cartilage, subchondral bone and surrounding structures causing pain and disability."
+    },
+    {
+      "item_id": "ent_0023",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim that from 5/2019 to 5/2021, 40 patients met the study criteria."
+    },
+    {
+      "item_id": "ent_0121",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that type 2 diabetes accounts for about 90% [2]."
+    },
+    {
+      "item_id": "ent_0075",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract opening states verbatim that support modes preserve spontaneous breathing, correct tidal-volume deficit and are more physiologic than full control."
+    },
+    {
+      "item_id": "ent_0211",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Table 1 and the following sentence appear verbatim: THA 2252/1034 (69,7%, p=0,416), mean age 69,2 +/- 7,5, oldest 103; table layout is loose but readable."
+    },
+    {
+      "item_id": "ent_0118",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion concludes verbatim that retrograde ureteroscopic lithotripsy is safe and effective, especially for stones <=10 mm in the middle third."
+    },
+    {
+      "item_id": "ent_0051",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract conclusion states verbatim that repeat caesarean is mostly chosen over a trial of vaginal birth after prior caesarean."
+    },
+    {
+      "item_id": "ent_0214",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods state verbatim that the anaesthetist examined the patient and explained the procedure and possible adverse events."
+    },
+    {
+      "item_id": "ent_0167",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Section 2.1 states verbatim the study population: HFrEF patients (EF < 40%) on medication; the claim is cut mid-sentence but still readable."
+    },
+    {
+      "item_id": "ent_0163",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Cited text splices a stray value 2,47 with the next table heading and the label Dot quy nao; columns are interleaved so no number can be tied to a label."
+    },
+    {
+      "item_id": "ent_0213",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim high fracture-risk rate 53,2% in PPI users, women 52,1% and men 61,5% (p=0,363)."
+    },
+    {
+      "item_id": "ent_0116",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim that primary PCI made up 16,9%, with 42 successful, 2 puncture failures and 5 access conversions due to radial spasm."
+    },
+    {
+      "item_id": "ent_0097",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article listing autoimmune diseases; it says nothing about community-acquired pneumonia, its 3 million deaths or the 12% figure."
+    },
+    {
+      "item_id": "ent_0011",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 4.3 states verbatim the SOFA 7+/-1,6 to 2,29+/-0,8, BISAP 3,15 to 1,8 and Ranson 3,15 to 1,3 reductions and the Phan Thai Son comparison."
+    },
+    {
+      "item_id": "ent_0052",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists vitamin-C foods to prevent postpartum haemorrhage (ổi, kiwi, bông cải xanh); it says nothing about MRI, fluoroacetate, glufosinate or diquat."
+    },
+    {
+      "item_id": "ent_0045",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim: 4713 người cao tuổi khám năm 2022, 3506 người (74,4%) mắc một bệnh hay đồng mắc THA/ĐTĐ týp 2/BTTMCB."
+    },
+    {
+      "item_id": "ent_0009",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about vô kinh nguyên phát and chances of pregnancy; it contains no coronary intervention data or the figures 0,9%/2,6%/1,7%."
+    },
+    {
+      "item_id": "ent_0101",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states \"Thời gian trung bình từ lần cuối còn bình thường tới khi được dùng thuốc tiêu huyết khối là 7.75 giờ\" verbatim."
+    },
+    {
+      "item_id": "ent_0218",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's Kết luận says exactly that SAAG và FIB-4 có giá trị tiên lượng tốt ở bệnh nhân xơ gan cổ chướng giãn lớn TMTQ."
+    },
+    {
+      "item_id": "ent_0090",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim reproduces the passage's spliced footer block: affiliations, email and submission dates run into a headless fragment \"tim, nồng độ hemoglobin...\"; no assertion recoverable."
+    },
+    {
+      "item_id": "ent_0117",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả section states measurement on 155 người trưởng thành, nam:nữ = 2:1, tuổi trung bình 31,26 ± 5,96 verbatim."
+    },
+    {
+      "item_id": "ent_0071",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage opening states PCOS patients have many varied signs/symptoms making a precise consensus definition difficult — identical wording."
+    },
+    {
+      "item_id": "ent_0159",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains verbatim the Bùi Hồng Giang 2013 figures: nhiễm khuẩn hô hấp 68,1%, nhiễm khuẩn tiết niệu 8,3% [4]."
+    },
+    {
+      "item_id": "ent_0173",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Intro lists exactly those knee-OA treatments (vật lý trị liệu, nội khoa, tiêm chất nhờn, ngoại khoa, PRP) with citation [1]."
+    },
+    {
+      "item_id": "ent_0057",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage concerns TIRADS ultrasound and FNA of thyroid nodules; it never mentions HIV/AIDS or ARV therapy."
+    },
+    {
+      "item_id": "ent_0130",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1 states the cross-sectional, longitudinal, convenience-sample design at BVĐK TW Cần Thơ 03/2024–03/2025 verbatim."
+    },
+    {
+      "item_id": "ent_0215",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states tăng huyết áp (40,4%), tiểu đường (31,2%), viêm khớp (22,1%) among the elderly; claim ends mid-word but its assertion matches."
+    },
+    {
+      "item_id": "ent_0149",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết luận states there were still successful trials of vaginal birth after previous caesarean at this hospital — same sentence."
+    },
+    {
+      "item_id": "ent_0134",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage's Đối tượng section states children (1 month) to 5 tuổi newly diagnosed with epilepsy at Nhi Đồng 2 from 01/01/2024–31/07/2024; claim starts mid-sentence but readable."
+    },
+    {
+      "item_id": "ent_0032",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states \"Tĩnh mạch đường về là vị trí tổn thương chủ yếu, 53,1%\" verbatim in the results narrative."
+    },
+    {
+      "item_id": "ent_0087",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu nghiên cứu sentence is reproduced exactly, including the Long An hospital setting."
+    },
+    {
+      "item_id": "ent_0014",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states for SGLT2i users: PSTM giảm 49,3%, giảm nhẹ 19,7%, bảo tồn 31% — identical figures."
+    },
+    {
+      "item_id": "ent_0196",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Claim is the passage's own knowledge table rows verbatim; the Nhận xét line (98,9% dụng cụ, 96,7% giáo dục) confirms the reading despite flattened columns."
+    },
+    {
+      "item_id": "ent_0059",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Claim is the headless fragment \"Nhóm tuổi trên và dưới 60 tuổi, giới tính, tần số\", cut by the affiliation splice; it asserts nothing judgeable."
+    },
+    {
+      "item_id": "ent_0022",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim is a noun phrase severed mid-sentence at \"tình trạng đông\" by the inserted affiliation block; no predicate survives to judge."
+    },
+    {
+      "item_id": "ent_0152",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion states 45,6% previously diagnosed and 39,2% under treatment among hypertensive elderly, with the same conclusion about screening — verbatim."
+    },
+    {
+      "item_id": "ent_0010",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu sentence on left atrial strain and atrioventricular coupling after PCI in acute MI is reproduced exactly."
+    },
+    {
+      "item_id": "ent_0208",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Phương pháp sentence in the TÓM TẮT states the cross-sectional study on children 1 month–5 years at Nhi đồng 2, 01/01–31/07/2024, verbatim."
+    },
+    {
+      "item_id": "ent_0178",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states COPD patients with frequent exacerbations have faster lung-function decline, worse QoL, more airway inflammation, higher mortality [4]."
+    },
+    {
+      "item_id": "ent_0204",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's study-aim sentence on evaluating intra-articular autologous PRP at BV ĐH Võ Trường Toản is reproduced word for word."
+    },
+    {
+      "item_id": "ent_0151",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states >90% of admissions are from fluid-overload signs and the first month post-discharge is the high-event window, citation [2] — verbatim."
+    },
+    {
+      "item_id": "ent_0049",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes thấp khớp / viêm khớp dạng thấp symptoms; it contains nothing about HIV transmission awareness or the figure 30/93 (32,3%)."
+    },
+    {
+      "item_id": "ent_0104",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Muc tieu section contains the claim verbatim as study objective (2), including institution and 2020-2022 period."
+    },
+    {
+      "item_id": "ent_0069",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the elderly non-communicable disease list with identical figures (40,4%, 31,2%, 22,1%, 10,1%, 7,8%, 7,0%) and ref [3]."
+    },
+    {
+      "item_id": "ent_0042",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Nhan xet under Bang 3 states verbatim that phac do B fell from 31,2% to 4,0% after one day of treatment."
+    },
+    {
+      "item_id": "ent_0147",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage's methods sentence is identical, including the same mid-word cut at 'Benh vien Trung uo'; still readable and states exactly the claim."
+    },
+    {
+      "item_id": "ent_0186",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that PCOS cause is not fully understood and it is a multifactorial disorder with genetic, metabolic, endocrine, environmental abnormalities [6]."
+    },
+    {
+      "item_id": "ent_0111",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a Drug Administration circular on DPT-HepB-Hib vaccine supply; nothing about a Buon Ho type-2 diabetes prescribing survey."
+    },
+    {
+      "item_id": "ent_0197",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage reports regorafenib response rates in metastatic colorectal cancer; it never mentions dementia (SSTT) or non-drug interventions."
+    },
+    {
+      "item_id": "ent_0040",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage cites Nguyen Van Dao (2019) with exactly 72% (>24 months) and 28% (<=24 months) birth-interval figures."
+    },
+    {
+      "item_id": "ent_0073",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes drug classes for peptic ulcer disease; nothing about an epilepsy cross-sectional study at Nhi dong 2 in 2024."
+    },
+    {
+      "item_id": "ent_0183",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's DAT VAN DE opens with the identical sentence defining dementia as a chronic progressive syndrome affecting daily autonomy [1]."
+    },
+    {
+      "item_id": "ent_0198",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the study title and objective verbatim, including Rivaroxaban, the Long An hospital and 2023-2024."
+    },
+    {
+      "item_id": "ent_0201",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The DAT VAN DE paragraph states verbatim that joint-damage complications in psoriatic arthritis cause functional decline, higher mortality and disability."
+    },
+    {
+      "item_id": "ent_0109",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion states verbatim the authors' explanation for their high infusion rate (differing causes, dehydration severity, vomiting/anorexia limiting oral rehydration)."
+    },
+    {
+      "item_id": "ent_0094",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains the identical sentence announcing the study on diet and treatment outcomes in type 2 diabetes at Benh vien 199."
+    },
+    {
+      "item_id": "ent_0063",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the quadruple-therapy rates 41,3% / 14,3% / 9,8% with p=0,02 across the three ejection-fraction groups."
+    },
+    {
+      "item_id": "ent_0035",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Dat van de states verbatim that no drug cures dementia, only slows progression and reduces some symptoms."
+    },
+    {
+      "item_id": "ent_0070",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's 'Chan doan xac dinh' lists the same HCC criteria: typical contrast CT/MRI plus AFP >= 20 ng/mL, or histological/cytological evidence."
+    },
+    {
+      "item_id": "ent_0054",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Passage is a fragmented M-CHAT-R autism screening table (ages, OR, prevalence); despite corruption it plainly contains nothing on respiratory viruses, pneumonia or vaccination."
+    },
+    {
+      "item_id": "ent_0103",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's DAT VAN DE states verbatim that decades of clinical studies show effective hypertension treatment reduces cardiovascular risk and mortality [8]."
+    },
+    {
+      "item_id": "ent_0081",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The closing discussion sentence on hyponatremia and short-term adverse events in decompensated HFrEF appears verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0002",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Muc tieu line states verbatim the aim of evaluating multifactorial non-pharmacological intervention in dementia patients."
+    },
+    {
+      "item_id": "ent_0113",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage cites Usher-Smith 2011 with the identical DKA risk-factor list: age <2, misdiagnosis, treatment delay, ethnic minority, poor socioeconomic conditions."
+    },
+    {
+      "item_id": "ent_0016",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage's DAT VAN DE contains the sentence verbatim, including the same mid-word cut at 'co so luo'; meaning remains clear."
+    },
+    {
+      "item_id": "ent_0190",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Body states verbatim that its severe CAP patients were mostly elderly with comorbidities favouring fungal growth, just before the 51% Candida figures."
+    },
+    {
+      "item_id": "ent_0138",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "DAT VAN DE defines diabetic kidney disease verbatim as a chronic complication of type 1 and 2 diabetes from hyperglycaemia, hypertension, oxidative stress, inflammation."
+    },
+    {
+      "item_id": "ent_0158",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results section states verbatim 137 children aged 1 month to 5 years newly diagnosed with epilepsy at Nhi dong 2, with 49,6% boys."
+    },
+    {
+      "item_id": "ent_0131",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Muc tieu states verbatim the aim of clarifying autologous PRP efficacy on quality of life, pain and knee function."
+    }
+  ],
+  "pass_b": [
+    {
+      "item_id": "ent_0197",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about regorafenib response rates in late-stage colorectal cancer; it says nothing about dementia (SSTT) or non-pharmacological therapy."
+    },
+    {
+      "item_id": "ent_0180",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The sentence about the Thai Nguyen medical training programme's objective appears verbatim in the passage body."
+    },
+    {
+      "item_id": "ent_0178",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that COPD patients with frequent exacerbations have faster lung-function decline, lower quality of life and higher mortality [4]."
+    },
+    {
+      "item_id": "ent_0067",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Objective 2 in the abstract states exactly this: determining TCD4, HIV viral load and their relation to treatment adherence."
+    },
+    {
+      "item_id": "ent_0084",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's 'Kết luận' sentence on prolonged PPI use in the elderly raising osteoporosis/fracture risk is present word for word."
+    },
+    {
+      "item_id": "ent_0188",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Sample-size paragraph states verbatim the 47,5% focal-seizure rate from Hoang Chau Bao Dinh and the choice of P = 0,475."
+    },
+    {
+      "item_id": "ent_0123",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract results state verbatim 30/93 (32,3%) aware that same-sex intercourse carries higher HIV risk."
+    },
+    {
+      "item_id": "ent_0204",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The study-aim sentence on evaluating intra-articular autologous PRP at Vo Truong Toan University Hospital appears verbatim."
+    },
+    {
+      "item_id": "ent_0012",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Title is spliced bibliography fragments and the body is a column-interleaved table dump; the 'claim' is only spliced column headers, so no proposition can be judged."
+    },
+    {
+      "item_id": "ent_0050",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim RVR 159/184 (86,4%) and SVR 184/184 (100%)."
+    },
+    {
+      "item_id": "ent_0097",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article listing common autoimmune diseases; it contains nothing about community-acquired pneumonia or its mortality burden."
+    },
+    {
+      "item_id": "ent_0008",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The 'Nhận xét' line states verbatim that osteoporosis risk is 3,1 times higher with menopause duration over 10 years."
+    },
+    {
+      "item_id": "ent_0116",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the 16,9% primary PCI group with 42 successes, 2 puncture failures and 5 access conversions."
+    },
+    {
+      "item_id": "ent_0082",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The introduction states verbatim that PCOS is the most commonly diagnosed endocrine disorder in women and the main cause of anovulatory infertility [1]."
+    },
+    {
+      "item_id": "ent_0183",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that dementia is a chronic progressive syndrome impairing cognition and daily autonomy [1]."
+    },
+    {
+      "item_id": "ent_0033",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's 'Mục tiêu' sentence on sensitivity, specificity, PPV, NPV and AUC of the TyG index for GDM is present verbatim."
+    },
+    {
+      "item_id": "ent_0045",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract results state verbatim 4713 elderly attendees in 2022 with 3506 (74,4%) having one or more of the three chronic conditions."
+    },
+    {
+      "item_id": "ent_0174",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article on morning diarrhoea; it never mentions men who have sex with men, sex workers, drug injection or HIV risk behaviour."
+    },
+    {
+      "item_id": "ent_0222",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "The cited sentence starts mid-word ('p tương đối quan trọng'); its subject is lost, and nothing in the readable passage attributes facial structure to asymmetry ('bất cân xứng')."
+    },
+    {
+      "item_id": "ent_0040",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Discussion states verbatim Nguyen Van Dao (2019) with 72% birth interval >24 months and 28% ≤24 months [1]."
+    },
+    {
+      "item_id": "ent_0018",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage discusses COVID vaccination and breastfeeding safety; no prognostic scores, no AUC, no 30-day pneumonia mortality."
+    },
+    {
+      "item_id": "ent_0102",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's methods sentence describing the 2022 cross-sectional study of elderly patients at the Le Van Thinh family-practice clinic is verbatim."
+    },
+    {
+      "item_id": "ent_0121",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that type 2 diabetes accounts for about 90% [2]."
+    },
+    {
+      "item_id": "ent_0140",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "low",
+      "rationale": "Claim is only section heading 3.2, present verbatim, and the passage does report the DVT rate (24,2%) and associated-factor table; heading carries no assertion to overstate."
+    },
+    {
+      "item_id": "ent_0057",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage compares thyroid-nodule ultrasound/TIRADS with FNA cytology; it says nothing about HIV/AIDS or ARV therapy."
+    },
+    {
+      "item_id": "ent_0085",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article on iron nutrition in pregnancy anaemia; no knee osteoarthritis, PRP, VAS or KOOS data."
+    },
+    {
+      "item_id": "ent_0009",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article on primary amenorrhoea and fertility; it contains nothing on coronary intervention or complex-lesion percentages."
+    },
+    {
+      "item_id": "ent_0156",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The methods paragraph states verbatim that all patients had history, exam, blood tests including NT-proBNP and echocardiography within 24h and 7 days post-PCI."
+    },
+    {
+      "item_id": "ent_0047",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's Phương pháp nghiên cứu sentence states verbatim that patients had blood tests and echo at 2 timepoints: within 24h of admission and 7 days post-PCI."
+    },
+    {
+      "item_id": "ent_0150",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage contains the sentence verbatim, including 90-day readmission and 1-year mortality up to 10-30% with reference [2]."
+    },
+    {
+      "item_id": "ent_0143",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about RSV infection signs in newborns (apnea, Synagis); it says nothing about type 2 diabetes drug classes or Buôn Hồ hospital."
+    },
+    {
+      "item_id": "ent_0148",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage states verbatim that in the 6-year MD curriculum the basic-science subjects come first in the initial 3 years before clinical subjects."
+    },
+    {
+      "item_id": "ent_0179",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage reports antibiotic use (beta-lactam, gentamicin) at Giá Rai health centre; regorafenib and colorectal cancer are absent entirely."
+    },
+    {
+      "item_id": "ent_0092",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes oesophageal varices and portal hypertension diet; it contains no SOFA/BISAP/Ranson scores or pancreatitis treatment results."
+    },
+    {
+      "item_id": "ent_0076",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả section states verbatim that high fracture-risk rate in elderly PPI users is 53,2%; the claim's trailing clause is cut at the same point as the passage."
+    },
+    {
+      "item_id": "ent_0198",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's objective sentence naming the Long An DVT/rivaroxaban study 2023-2024 appears verbatim in the body."
+    },
+    {
+      "item_id": "ent_0066",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage covers sampling/SPSS methods of a coronary-stent adherence survey; no paediatric diarrhoea or 31,2%/4,0%/0,5% dehydration figures."
+    },
+    {
+      "item_id": "ent_0096",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Đối tượng và phương pháp sentence in the passage states verbatim the 34 primary knee-OA patients, stage II-III, ACR and Kellgren-Lawrence classification."
+    },
+    {
+      "item_id": "ent_0087",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu nghiên cứu sentence about DVT rate and related factors in stroke patients at Long An hospital is present verbatim."
+    },
+    {
+      "item_id": "ent_0054",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Passage is a garbled M-CHAT-R autism-screening results table (age groups, OR); despite corruption it is clearly readable as containing nothing about respiratory viruses or pneumonia."
+    },
+    {
+      "item_id": "ent_0080",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that in cirrhotic patients APRI fell significantly at 6 months post-treatment (1,13; 0,41; p < 0,001)."
+    },
+    {
+      "item_id": "ent_0208",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Phương pháp sentence describing the cross-sectional study of children 1 month-5 years at Nhi đồng 2, 01/01/2024-31/07/2024 is verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0203",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the four-pillar therapy rates 41,3% / 14,3% / 9,8% with p=0,02 across HFrEF, HFmrEF and HFpEF."
+    },
+    {
+      "item_id": "ent_0025",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The sentence introducing the TyG-index study for gestational diabetes diagnosis appears verbatim at the end of the passage's introduction."
+    },
+    {
+      "item_id": "ent_0160",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Đối tượng và phương pháp states verbatim the 46 advanced NSCLC patients with EGFR mutation, TKI-resistant, unknown/absent T790M, on pemetrexed-carboplatin."
+    },
+    {
+      "item_id": "ent_0157",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's closing rationale sentence about providing thoracic pedicle morphology data in Vietnamese adults for screw sizing is present verbatim."
+    },
+    {
+      "item_id": "ent_0088",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a two-sentence note on corticosteroids for acute vestibular neuritis; it contains no hypertension prevalence, 45,6% or 39,2% figures."
+    },
+    {
+      "item_id": "ent_0177",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả states verbatim glufosinate consciousness disturbance 66,7% GCS≤14, fluoroacetate seizures/hypertonia, diquat late coma and 72,3% mortality."
+    },
+    {
+      "item_id": "ent_0106",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 4.1 of the passage defines operative time for retrograde ureteroscopic lithotripsy exactly as the claim states."
+    },
+    {
+      "item_id": "ent_0051",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Kết luận sentence states verbatim that repeat caesarean is mostly chosen over trial of vaginal birth after prior scar."
+    },
+    {
+      "item_id": "ent_0044",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes dengue bleeding signs and thrombocytopenia; it says nothing about venous access sites or a 53,1% lesion rate."
+    },
+    {
+      "item_id": "ent_0128",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết quả states verbatim 70,3% preparing lessons, 74,9% group discussion participation, 51,3% answering clinical-case questions."
+    },
+    {
+      "item_id": "ent_0005",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage states verbatim that ARV therapy is currently the only treatment to prolong life and improve quality of life in HIV/AIDS, with citation [1]."
+    },
+    {
+      "item_id": "ent_0217",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage gives lay advice on palpitations (coughing, cold water); it contains no adherence scoring (6-8 points) or 1/3/6-month follow-up scheme."
+    },
+    {
+      "item_id": "ent_0019",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage body contains this sentence verbatim: 'Gần 90% trường hợp tử vong do COPD ở người dưới 70 tuổi... 5,4 triệu người chết mỗi năm do COPD [3].'"
+    },
+    {
+      "item_id": "ent_0063",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim 'Tỷ lệ sử dụng tứ trụ điều trị suy tim ở nhóm PSTM giảm 41,3%, PSTM giảm nhẹ 14,3%, PSTM bảo tồn 9,8% (p=0,02)'; numbers match exactly."
+    },
+    {
+      "item_id": "ent_0099",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states 'Tổng số người cao tuổi đến khám năm 2022 là 4713 người, trong đó có 3506 người (74,4%)...' identical to the claim."
+    },
+    {
+      "item_id": "ent_0144",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that mean Child-Pugh, SAAG and FIB-4 were higher in the group with esophageal varices than without on endoscopy."
+    },
+    {
+      "item_id": "ent_0055",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's introduction contains this exact sentence about drug therapy for dementia having side effects and cost, hence non-drug measures."
+    },
+    {
+      "item_id": "ent_0093",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Both sentences (clinical features of psoriatic arthritis; diagnosis still a challenge for dermatologists/family doctors/rheumatologists) appear verbatim."
+    },
+    {
+      "item_id": "ent_0065",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about foods to avoid in knee osteoarthritis; it never mentions PCOS, its signs, symptoms or definition."
+    },
+    {
+      "item_id": "ent_0119",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage ends with 'Dựa theo KDIGO 2024, bệnh thận mạn được chia thành 5 giai đoạn (G1–G5) dựa trên eGFR'; claim is that text, truncated but intact."
+    },
+    {
+      "item_id": "ent_0196",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The knowledge table rows (98,9 / 96,7 / 87,0 / 64,1 / 79,4 / 51,1 / 58,7, n=92) appear verbatim in the passage table."
+    },
+    {
+      "item_id": "ent_0124",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Conclusion sentence about thoracic pedicle morphology in Vietnamese adults differing from Europeans and resembling some Asian populations is verbatim."
+    },
+    {
+      "item_id": "ent_0175",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods state patients were examined and diagnosed at Military Hospital 103 and Central Military Hospital 108 from 01/2021 to 2/2025, verbatim."
+    },
+    {
+      "item_id": "ent_0001",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the MRI findings for fluoroacetate (thể trai 95,8%, 59,7%), glufosinate (86,7%) and diquat (63,6%, 36,4%)."
+    },
+    {
+      "item_id": "ent_0206",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods section lists 'Cỡ mẫu: 36 bệnh nhân' and the study contents (age/sex/job, VAS and KOOS, Kellgren-Lawrence X-ray) verbatim."
+    },
+    {
+      "item_id": "ent_0171",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states 'Sau 24h và 48h điều trị, số trẻ tiêu chảy cấp có mất nước giảm từ 31,2% xuống 4,0% và 0,5%' identically."
+    },
+    {
+      "item_id": "ent_0094",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's closing rationale sentence naming the study title at Bệnh viện 199 matches the claim word for word."
+    },
+    {
+      "item_id": "ent_0185",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract results state 'Về tải lượng virus, có 97,9% bệnh nhân có tải lượng virus dưới ngưỡng phát hiện', identical to the claim."
+    },
+    {
+      "item_id": "ent_0013",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The ĐẶT VẤN ĐỀ paragraph contains all of it: ~3 million annual deaths, 4th leading cause, and CAP at 12% of lung diseases in Vietnam."
+    },
+    {
+      "item_id": "ent_0103",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage introduction states verbatim that effective hypertension treatment reduced cardiovascular risk and mortality [8]."
+    },
+    {
+      "item_id": "ent_0120",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The keyword line 'Từ khoá: Nhồi máu cơ tim cấp; Sức căng nhĩ trái; ... NT-proBNP' appears verbatim at the end of the abstract."
+    },
+    {
+      "item_id": "ent_0039",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains the same sentence introducing the Can Tho 2020 hypertension adherence study and its first objective."
+    },
+    {
+      "item_id": "ent_0193",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The affiliation/correspondence block plus the spliced results clause (hemoglobin, NT-proBNP, ARBi/ARNI differ between groups) appear verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0135",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Nhận xét under Bảng 3 states verbatim: after 2 days 13 children discharged and 99,5% no longer dehydrated, treated per regimen A."
+    },
+    {
+      "item_id": "ent_0115",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods state the MMAS-8 cutoff (adherent 6-8 points, poor <6) across 3 follow-ups at 1, 3 and 6 months, verbatim."
+    },
+    {
+      "item_id": "ent_0022",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Conclusion contains the clause verbatim (screening for haematologic malignancy, marrow metastasis and coagulation status); claim is cut off mid-sentence but present."
+    },
+    {
+      "item_id": "ent_0107",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state '45,2% tổng số bệnh nhân nghiên cứu có tình trạng đông máu nội mạch rải rác (DIC)', identical figure."
+    },
+    {
+      "item_id": "ent_0154",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that type 1 DM is polygenic, not sex-chromosome linked, so incidence is equal in both sexes."
+    },
+    {
+      "item_id": "ent_0011",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 4.3 gives the same SOFA 7±1,6→2,29±0,8, BISAP 3,15±0,98→1,8±0,6, Ranson 3,15±0,74→1,3±0,47 and Phan Thái Sơn comparison."
+    },
+    {
+      "item_id": "ent_0073",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes four drug classes for peptic ulcer disease; it says nothing about a cross-sectional epilepsy study at Nhi đồng 2."
+    },
+    {
+      "item_id": "ent_0118",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's own summary states verbatim that retrograde URS is safe/effective, especially for stones ≤10 mm and in the middle third of the ureter."
+    },
+    {
+      "item_id": "ent_0016",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Claim is a verbatim stretch of the ĐẶT VẤN ĐỀ paragraph about many T2DM drug classes and combination choice; only trailing word 'số lượ' is cut, meaning intact."
+    },
+    {
+      "item_id": "ent_0104",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu (2) states exactly this objective about DIC and bone-marrow metastasis at Viện Huyết học 2020–2022."
+    },
+    {
+      "item_id": "ent_0028",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The ĐẶT VẤN ĐỀ paragraph states verbatim the definition of diabetes and its multi-organ damage; only final word 'ngà' truncated, still readable."
+    },
+    {
+      "item_id": "ent_0137",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the ADA figures: 387 million in 2014 and an estimated 592 million by 2035."
+    },
+    {
+      "item_id": "ent_0060",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1.2 lists exactly these exclusion criteria (pre-pregnancy diabetes, non-consent, fewer than 3 blood samples, glucose-metabolism disease)."
+    },
+    {
+      "item_id": "ent_0205",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim is the ingestion splice itself: affiliation/email/review-date block inserted mid-sentence, leaving 'máu nội mạch rải rác cần được thực hiện...' with no subject and cut at 'cho bệnh'."
+    },
+    {
+      "item_id": "ent_0059",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim is a bare fragment 'Nhóm tuổi trên và dưới 60 tuổi, giới tính, tần số' whose predicate is severed by the inserted affiliation block; no proposition to judge."
+    },
+    {
+      "item_id": "ent_0061",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on tongue-cancer wound care (notebook and pen for communication); it says nothing about screening for haematologic malignancy or coagulation."
+    },
+    {
+      "item_id": "ent_0155",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The TÓM TẮT states verbatim the cross-sectional design covering elderly patients at the Lê Văn Thịnh family-medicine clinic in 2022 with HTN/T2DM/IHD."
+    },
+    {
+      "item_id": "ent_0021",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1 states verbatim the study population: HFrEF (EF<40%) on beta-blockers at An Giang Cardiology Hospital, April–September 2024."
+    },
+    {
+      "item_id": "ent_0200",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient guidance on diuretics for hypertension; it contains nothing about first-line endocrine therapy populations or the Hortobagyi/Finn trials."
+    },
+    {
+      "item_id": "ent_0098",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu lists exactly the three described characteristics in MSM patients with opportunistic infections at Bệnh viện Bệnh Nhiệt đới."
+    },
+    {
+      "item_id": "ent_0029",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Đối tượng và phương pháp sentence states verbatim the cross-sectional mixed quantitative/qualitative design on 2nd-year students after 6 organ-system modules."
+    },
+    {
+      "item_id": "ent_0134",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Đối tượng nghiên cứu states children (1 month) to 5 years newly diagnosed with epilepsy at Nhi Đồng 2, 01/01/2024–31/07/2024; claim merely starts mid-sentence."
+    },
+    {
+      "item_id": "ent_0149",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The KẾT LUẬN states verbatim that some trials of vaginal birth after prior caesarean succeeded at this hospital."
+    },
+    {
+      "item_id": "ent_0010",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Mục tiêu sentence states verbatim the aim of assessing left atrial strain and atrio-ventricular coupling by echo in acute MI patients after PCI."
+    },
+    {
+      "item_id": "ent_0003",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Despite the prepended affiliation/date block, the substantive sentences (osteoporosis linked to estrogen deficiency, age, vitamin D; the study Mục tiêu) appear verbatim and are intact."
+    },
+    {
+      "item_id": "ent_0006",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage covers diet and exercise advice for prediabetes; it never mentions deep vein thrombosis rates or associated factors."
+    },
+    {
+      "item_id": "ent_0110",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that a 2024 study identified smoking history, dust/smoke exposure and prior TB as risk factors for COPD and exacerbations [5]."
+    },
+    {
+      "item_id": "ent_0068",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's Mục tiêu states verbatim the aim of assessing anaemia-treatment response and B12 supplementation on mortality risk in ESRD haemodialysis patients."
+    },
+    {
+      "item_id": "ent_0151",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that >90% of these admissions are due to congestion signs and that the first month post-discharge is the usual window for events [2]."
+    },
+    {
+      "item_id": "ent_0132",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Mở đầu states verbatim that MSM differ from sex workers or injecting drug users in epidemiology, risk behaviour and HIV self-awareness."
+    },
+    {
+      "item_id": "ent_0145",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The Phương pháp sentence states verbatim the 80-patient cross-sectional design and the four group sizes (22/20/22/16) at Bệnh viện Thận Hà Nội."
+    },
+    {
+      "item_id": "ent_0052",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists vitamin-C foods to prevent postpartum haemorrhage; it contains no MRI findings, no fluoroacetate/glufosinate/diquat, and none of the cited percentages."
+    },
+    {
+      "item_id": "ent_0090",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim is pure ingestion wreckage: affiliation/email/date block followed by a subjectless fragment starting 'tim, nồng độ hemoglobin...' and cut at 'nhóm không dùng'."
+    },
+    {
+      "item_id": "ent_0101",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state verbatim that mean time from last-known-well to thrombolysis was 7.75 hours."
+    },
+    {
+      "item_id": "ent_0089",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Bảng 3 with its Nhận xét states verbatim that SOFA, BISAP and Ranson fell significantly after plasma exchange; the table columns are linearised but header order keeps it readable."
+    },
+    {
+      "item_id": "ent_0162",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage reports CDK4/6-inhibitor toxicity and age data in metastatic breast cancer; it contains no heart-failure quadruple-therapy rates or the 41.3/14.3/9.8% figures."
+    },
+    {
+      "item_id": "ent_0166",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "ĐẶT VẤN ĐỀ states verbatim that PCOS patients show varied signs and symptoms, making an agreed precise definition difficult; only 'trở n[ên]' is cut."
+    },
+    {
+      "item_id": "ent_0213",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage abstract states verbatim: nguy cơ gãy xương cao 53,2%, nữ 52,1% nam 61,5% (p=0,363). Numbers and hedging match exactly."
+    },
+    {
+      "item_id": "ent_0117",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "KẾT QUẢ section states verbatim: đo trên 155 người trưởng thành, nam:nữ = 2:1, tuổi trung bình 31,26 ± 5,96."
+    },
+    {
+      "item_id": "ent_0046",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that PRP đã chứng tỏ hiệu quả trong giảm đau và tái tạo sụn khớp, đặc biệt giai đoạn II, III."
+    },
+    {
+      "item_id": "ent_0215",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage lists tăng huyết áp (40,4%), tiểu đường (31,2%), viêm khớp (22,1%) among elderly NCDs; claim ends mid-word but the asserted figures match."
+    },
+    {
+      "item_id": "ent_0168",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "KẾT QUẢ text states verbatim that their first-line patients had not yet benefited from endocrine therapy for relapsed/metastatic disease, like Hortobagyi/Finn cohorts."
+    },
+    {
+      "item_id": "ent_0186",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that PCOS cause is not fully understood and it is considered a multifactorial disorder (di truyền, chuyển hóa, nội tiết, môi trường) [6]."
+    },
+    {
+      "item_id": "ent_0184",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract gives first-day dosing rates 22,9% / 14,3% / 18,2% (p<0,001) for PSTM giảm, giảm nhẹ, bảo tồn — identical to the claim."
+    },
+    {
+      "item_id": "ent_0136",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Diagnostic criteria section states verbatim: when the two syndromes are insufficient, cirrhosis is diagnosed by Fibroscan F4 combined with APRI > 2."
+    },
+    {
+      "item_id": "ent_0129",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết luận states verbatim: 36 bệnh nhân THKG treated with autologous PRP had statistically significant VAS and KOOS reductions post-injection."
+    },
+    {
+      "item_id": "ent_0191",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim the complex-lesion intervention rates 0,9%, 2,6%, 1,7% for left main, bifurcation and chronic total occlusion."
+    },
+    {
+      "item_id": "ent_0202",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Body states the sentence verbatim (ngoại tâm thu nhĩ/thất trên 50%, 3 tháng đầu 47,6%); the leading '(100%)' is orphaned table debris, not an added assertion."
+    },
+    {
+      "item_id": "ent_0041",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states the study aim verbatim, including describing clinical features, microbiology and initial antibiotic choice at khoa Khám và Điều trị 24 giờ."
+    },
+    {
+      "item_id": "ent_0126",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết luận states verbatim that successful vaginal birth after a previous caesarean still occurs in some cases."
+    },
+    {
+      "item_id": "ent_0049",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a patient article on thấp khớp/viêm khớp dạng thấp; it says nothing about HIV transmission risk or same-sex intercourse awareness (30/93, 32,3%)."
+    },
+    {
+      "item_id": "ent_0122",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "TÓM TẮT states verbatim: common arrhythmias are atrial and ventricular ectopy (trên 50%), mainly in the first trimester (47,6%)."
+    },
+    {
+      "item_id": "ent_0209",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Đối tượng và phương pháp states verbatim: 274 cancer patients admitted to ICU at Bệnh viện K with urinary catheters, 03/2022–11/2022."
+    },
+    {
+      "item_id": "ent_0015",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a readable patient article on preventing thalassemia (genetic screening, premarital testing); nothing about age groups over/under 60, sex, or heart rate."
+    },
+    {
+      "item_id": "ent_0075",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Mở đầu states verbatim that SIMV/PSV support modes preserve spontaneous breathing, correct tidal-volume deficit, and are more physiologic than full control."
+    },
+    {
+      "item_id": "ent_0004",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists cancer-screening package prices at Bệnh viện Ung bướu Đà Nẵng; it contains nothing about paediatric diarrhoea, plan B rehydration, or 31,2%→4,0%."
+    },
+    {
+      "item_id": "ent_0211",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Bảng 1 in the passage carries the identical figures (THA 2252/1034/69,7; ĐTĐ 975/404/29,3; BTTMCB 1405/641/43,4) and mean age 69,2 ± 7,5, max 103."
+    },
+    {
+      "item_id": "ent_0036",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "ĐẶT VẤN ĐỀ states verbatim: khoảng 20–50% bệnh nhân đái tháo đường type 2 có nguy cơ phát triển CKD [2]."
+    },
+    {
+      "item_id": "ent_0182",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Bảng 1 of the passage carries the same baseline row values (n=184, tuổi 57 ± 13, nam 71/38,6%, nữ 113/61,4%, xơ gan strata) as the claim."
+    },
+    {
+      "item_id": "ent_0072",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "KẾT QUẢ/discussion states verbatim that CDK4/6 inhibitors plus endocrine therapy have confirmed efficacy, clinical benefit and survival in relapsed/metastatic breast cancer."
+    },
+    {
+      "item_id": "ent_0176",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết luận states verbatim that ATS/IDSA minor criteria, CURB-65 and PSI all predict 30-day mortality well in community-acquired pneumonia."
+    },
+    {
+      "item_id": "ent_0187",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states verbatim that postmenopausal women are especially prone to osteoporosis, markedly raising fracture risk with disability, economic burden and death."
+    },
+    {
+      "item_id": "ent_0058",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim: 100% bệnh nhân NKTN bệnh viện không gây nhiễm khuẩn huyết, sốc nhiễm khuẩn."
+    },
+    {
+      "item_id": "ent_0220",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "TÓM TẮT gives the identical SAAG figures at cutoff 1,9: sensitivity 88,37%, specificity 75,87%, AUC 0,902."
+    },
+    {
+      "item_id": "ent_0020",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The passage's closing line is exactly this keyword list (Đái tháo đường típ 2, ngoại trú, tương tác thuốc); trivial content, but stated by the passage."
+    },
+    {
+      "item_id": "ent_0078",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains the sentence verbatim: 'Theo Robinson và cộng sự, thiếu máu là một biến chứng phổ biến... tăng nguy cơ tử vong do tim mạch...'"
+    },
+    {
+      "item_id": "ent_0147",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Methods sentence appears verbatim ('...chẩn đoán xác định tại Bệnh viện Quân y 103 và Bệnh viện Trung ươ'); truncated tail but meaning intact."
+    },
+    {
+      "item_id": "ent_0125",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The discussion sentence 'Những kết quả này khẳng định vai trò quan trọng của tán sỏi nội soi ngược dòng...' is present verbatim."
+    },
+    {
+      "item_id": "ent_0153",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim: uống rượu 73,4%, béo phì rối loạn lipid máu 66,7%, ĐTĐ 54,5%, đau bụng trên rốn 100%, buồn nôn 91,7%, nôn 65,4%."
+    },
+    {
+      "item_id": "ent_0071",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that PCOS patients have varied signs/symptoms making a precise consensus definition difficult."
+    },
+    {
+      "item_id": "ent_0138",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Intro states verbatim that diabetic kidney disease is a chronic complication of type 1 and 2 diabetes from hyperglycaemia, hypertension, oxidative stress, inflammation."
+    },
+    {
+      "item_id": "ent_0100",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Fragment 'chặt chẽ INR ở nhóm dùng VKA trong khi nhóm DOAC không cần' is readable; the elided head ('cần theo dõi') is fixed by the trailing 'không cần'."
+    },
+    {
+      "item_id": "ent_0164",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim: onset symptoms mainly gastrointestinal (54,2-100%), with early neurological symptoms for fluoroacetate and glufosinate (30,6-40%)."
+    },
+    {
+      "item_id": "ent_0207",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains the sentence verbatim about early dermatology assessment and difficulty distinguishing psoriatic arthritis from RA/ankylosing spondylitis."
+    },
+    {
+      "item_id": "ent_0113",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage lists Usher-Smith 2011 risk factors verbatim: age <2, misdiagnosis, treatment delay, ethnic minority, poor socioeconomic conditions."
+    },
+    {
+      "item_id": "ent_0038",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim: 'Năm 2016, bệnh đái tháo đường là nguyên nhân trực tiếp của 1,6 triệu ca tử vong.'"
+    },
+    {
+      "item_id": "ent_0170",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Variables list appears verbatim in the methods ('Đặc điểm cận lâm sàng: Xét nghiệm sinh hoá, huyết học, khí máu động mạch... T2W, T1W, Flai'); truncated but legible."
+    },
+    {
+      "item_id": "ent_0043",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that in severe CAP fungal agents may be an important but under-reported and easily missed cause."
+    },
+    {
+      "item_id": "ent_0212",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Despite the garbled table above it, the sentence on mature fistulas favouring outflow-vein lesions and 41,1% thrombosis in immature ones is intact and verbatim."
+    },
+    {
+      "item_id": "ent_0017",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the study aim verbatim, naming the Buôn Hồ 2023 survey of type 2 diabetes drug use and regimens."
+    },
+    {
+      "item_id": "ent_0030",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods state verbatim: patients >=18, unknown-onset acute ischaemic stroke, IV alteplase at Bạch Mai, last-known-well to thrombolysis over 4,5 hours."
+    },
+    {
+      "item_id": "ent_0189",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that in pregnant women with structurally normal hearts arrhythmias are usually benign, mostly atrial/ventricular premature beats [4,5]."
+    },
+    {
+      "item_id": "ent_0163",
+      "label": "unintelligible",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Claim is a splice of corrupted table cells ('2,47' tail of one row + next block header + a row label) with detached values; asserts no judgeable proposition."
+    },
+    {
+      "item_id": "ent_0181",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim: T1DM can start at any age, 45% before age 10, with peaks at 5-7 years and early puberty."
+    },
+    {
+      "item_id": "ent_0042",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Comment under Bảng 3 states verbatim that after 1 day plan-B dehydration fell from 31,2% to 4,0%."
+    },
+    {
+      "item_id": "ent_0095",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Intro states verbatim the shift in disease pattern toward non-communicable chronic disease in the elderly and its burden on patients, families and society."
+    },
+    {
+      "item_id": "ent_0079",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The keyword line 'Từ khóa: Ung thư đại trực tràng giai đoạn muộn, phác đồ Regorafenib.' closes the passage verbatim."
+    },
+    {
+      "item_id": "ent_0077",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on milk for 1-year-olds; it says nothing about 34 knee-osteoarthritis patients or ACR/Kellgren-Lawrence grading."
+    },
+    {
+      "item_id": "ent_0173",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Intro lists verbatim the knee-OA treatments: physiotherapy, medical therapy, viscosupplementation, surgery and PRP injection [1]."
+    },
+    {
+      "item_id": "ent_0108",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the study aim verbatim: survey the relation between vitamin D level, bone density and osteoporosis risk factors in postmenopausal women."
+    },
+    {
+      "item_id": "ent_0167",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Methods state verbatim 'Bệnh nhân được chẩn đoán suy tim phân suất tống máu giảm (EF < 40%) và đang sử dụng thuốc'; cut off at the end but legible."
+    },
+    {
+      "item_id": "ent_0131",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Mục tiêu sentence on autologous PRP improving quality of life, pain and knee function appears verbatim."
+    },
+    {
+      "item_id": "ent_0141",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods state verbatim: retrospective descriptive design, 50 ureteral stone patients, retrograde laser lithotripsy at Hậu Giang, 03/2023-31/5/2023."
+    },
+    {
+      "item_id": "ent_0194",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's V. KẾT LUẬN states verbatim: tỷ lệ tử vong sau một năm ở bệnh nhân STGĐC lọc máu chu kỳ là 31,3%."
+    },
+    {
+      "item_id": "ent_0014",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim 'Ở nhóm BN được dùng thuốc SGLT2i: PSTM giảm 49,3%, PSTM giảm nhẹ 19,7%, PSTM bảo tồn 31%'; numbers match."
+    },
+    {
+      "item_id": "ent_0062",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's 'Mục tiêu' sentence in the passage is identical to the claim, including the two clinic settings named."
+    },
+    {
+      "item_id": "ent_0111",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is a Cục Quản lý Dược circular on DPT-HepB-Hib vaccine supply; it says nothing about a type-2 diabetes drug-use study at Buôn Hồ."
+    },
+    {
+      "item_id": "ent_0127",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's 'Kết luận' says arrhythmias are mainly ngoại tâm thu nhĩ/thất occurring in the first trimester — same truncated text as the claim."
+    },
+    {
+      "item_id": "ent_0070",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage's 'Chẩn đoán xác định - UTBMTBG theo hướng dẫn Bộ Y tế 2020' lists the imaging + AFP ≥ 20 ng/mL or histology criteria verbatim."
+    },
+    {
+      "item_id": "ent_0086",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "BÀN LUẬN states verbatim that Regorafenib is indicated for advanced CRC after failure of 2 treatment lines, with poorer performance status."
+    },
+    {
+      "item_id": "ent_0199",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient-facing text on breathlessness in late pregnancy (progesterone, uterine pressure); it never defines an HFrEF EF<40% study population."
+    },
+    {
+      "item_id": "ent_0221",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states the sentence verbatim and backs it with lợi ích lâm sàng 96,3% and 74,1% partial response."
+    },
+    {
+      "item_id": "ent_0007",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage lists ICU admission indications; it contains nothing about a non-pharmacological multi-component intervention in dementia."
+    },
+    {
+      "item_id": "ent_0172",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Bảng 2 in the passage gives exactly these figures (đâm kim 275/290 94,8%, thủ thuật 266/290 91,7%, chụp 150/160, can thiệp 116/130); table layout is fragmented but readable."
+    },
+    {
+      "item_id": "ent_0216",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The abstract's 'Tuy vậy, chưa có nghiên cứu nào...' sentence about combining SIMV and PSV appears verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0032",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim 'Tĩnh mạch đường về là vị trí tổn thương chủ yếu, 53,1%', matching the table row 26 (53,1)."
+    },
+    {
+      "item_id": "ent_0152",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage contains the whole sentence verbatim, including 45,6% previously diagnosed and 39,2% under treatment."
+    },
+    {
+      "item_id": "ent_0214",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods paragraph states verbatim that the anaesthetist examined the patient and explained the procedure and possible adverse events."
+    },
+    {
+      "item_id": "ent_0048",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's 'Phương pháp nghiên cứu' sentence matches verbatim: 46 advanced CRC patients on Regorafenib at Bệnh viện K, 1/2021–11/2023."
+    },
+    {
+      "item_id": "ent_0192",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on managing prolonged diarrhoea (ORS, diet); it says nothing about a paediatric community-acquired pneumonia study or antibiotic choice."
+    },
+    {
+      "item_id": "ent_0053",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage reports cough/dyspnoea rates and pathogenesis in COPD with TB sequelae; it never describes severe CAP patients or fungal infection."
+    },
+    {
+      "item_id": "ent_0169",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that the ARV regimen requires strict lifelong adherence to achieve treatment success and prevent resistance [2]."
+    },
+    {
+      "item_id": "ent_0026",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage carries 'Bảng 2. Phân tích các yếu tố liên quan đến huyết khối tĩnh mạch sâu chi dưới' verbatim; the claim is only that heading, which the table does present."
+    },
+    {
+      "item_id": "ent_0037",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "The fragment 'Thời gian trung bình từ khi phát hiện đột quỵ' occurs in the abstract (…tới khi dùng thuốc tiêu huyết khối là 3,1 giờ); it asserts nothing beyond the passage."
+    },
+    {
+      "item_id": "ent_0109",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The authors' explanation of their high infusion rate (differing aetiology, vomiting/anorexia limiting oral rehydration) appears verbatim in the passage."
+    },
+    {
+      "item_id": "ent_0105",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim that with no affected relative, families do not think of diabetes, delaying diagnosis and treatment."
+    },
+    {
+      "item_id": "ent_0139",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states verbatim that all 3 scores predict 30-day mortality well (AUC > 0,8) with p < 0,05."
+    },
+    {
+      "item_id": "ent_0114",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient guidance on gestational diabetes resolving after birth; it contains no manufacturer commitment on post-change stability studies."
+    },
+    {
+      "item_id": "ent_0023",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's 'Kết quả' states verbatim: from 5/2019 to 5/2021, 40 patients met the study criteria."
+    },
+    {
+      "item_id": "ent_0146",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states verbatim the study aims: mô tả (1) dân số - xã hội học, (2) hành vi QHTD, (3) hiểu biết/tự nhận thức HIV ở BN NTDĐG tại BV BNĐ."
+    },
+    {
+      "item_id": "ent_0024",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is about dyscalculia (hội chứng khó học toán) and learning environments; it says nothing about HIV, MSM patients, or any study objective."
+    },
+    {
+      "item_id": "ent_0130",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Section 2.1 states verbatim the cross-sectional, longitudinal, convenience-sampling design at BVĐK TƯ Cần Thơ, 03/2024–03/2025."
+    },
+    {
+      "item_id": "ent_0034",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The passage's closing line lists exactly those keywords: STGĐC, LMCK, vitamin B12, thiếu máu, tử vong."
+    },
+    {
+      "item_id": "ent_0165",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods sentence states all patients had endoscopy, ascitic fluid testing and routine biochemistry/haematology — identical to the claim."
+    },
+    {
+      "item_id": "ent_0219",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results sentence states group 1 anthropometric indices fell after 2 weeks with weight and body-fat % significant (p<0,05), as claimed."
+    },
+    {
+      "item_id": "ent_0081",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "The discussion's closing sentence states verbatim that the evidence partly explains the hyponatraemia–short-term adverse event link in HFrEF decompensation."
+    },
+    {
+      "item_id": "ent_0201",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states joint damage in VKVN causes functional impairment, higher mortality, disability and effects on daily living — verbatim."
+    },
+    {
+      "item_id": "ent_0161",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage describes X-ray/CT lesion distribution in new pulmonary TB; it makes no statement about atrial/ventricular premature beats or arrhythmia timing."
+    },
+    {
+      "item_id": "ent_0056",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "medium",
+      "rationale": "Diacritic-stripped but readable circular on vaccine marketing-authorisation procedures; nothing on HCC diagnostic criteria, imaging or AFP ≥ 20 ng/mL."
+    },
+    {
+      "item_id": "ent_0158",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Results state 137 children aged 1 month–5 years newly diagnosed with epilepsy at Nhi đồng 2, male 49,6% — matches exactly."
+    },
+    {
+      "item_id": "ent_0091",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Introduction states the disease is characterised by progressive degeneration of cartilage, subchondral bone and surrounding structures causing pain and reduced quality of life."
+    },
+    {
+      "item_id": "ent_0069",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage lists the same NCD prevalences in the elderly: hypertension 40,4%, diabetes 31,2%, arthritis 22,1%, sensory 10,1%, CVD 7,8%, lipid 7,0% [3]."
+    },
+    {
+      "item_id": "ent_0210",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract states the two factors with identical ORs (33,071; 36,838) and ≥4 active ingredients (OR 12,669) affecting drug–drug interactions."
+    },
+    {
+      "item_id": "ent_0064",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Opening sentence of the passage states understanding respiratory viruses' role in severe CAP helps managers deploy better vaccination programmes."
+    },
+    {
+      "item_id": "ent_0195",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is patient advice on avoiding crowds/infected people re masks; it contains no figure on diabetes or CKD risk."
+    },
+    {
+      "item_id": "ent_0031",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Methods sentence states the retrospective study of HR+/HER2- recurrent metastatic breast cancer, endocrine-naive for metastatic stage, at Bệnh viện K."
+    },
+    {
+      "item_id": "ent_0035",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Background states verbatim that no drug can cure dementia, only slow progression and reduce some symptoms."
+    },
+    {
+      "item_id": "ent_0083",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract gives the same mean days to drug use: HFrEF 2,7±1,8; HFmrEF 3,1±1,5; HFpEF 4,9±3,9."
+    },
+    {
+      "item_id": "ent_0142",
+      "label": "not_supported",
+      "span_is_right_locus": "n_a",
+      "confidence": "high",
+      "rationale": "Passage is stroke first-aid guidance for laypeople; it says nothing about a medical-doctor training programme at Thái Nguyên University."
+    },
+    {
+      "item_id": "ent_0159",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage cites Bùi Hồng Giang 2013 with respiratory infection 68,1% and urinary infection 8,3% [4], exactly as claimed."
+    },
+    {
+      "item_id": "ent_0133",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Final line of the abstract lists exactly those keywords: catheter-associated urinary tract infection, cancer."
+    },
+    {
+      "item_id": "ent_0190",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Passage states its severe CAP patients were mostly elderly with underlying conditions favouring fungal growth — identical wording."
+    },
+    {
+      "item_id": "ent_0112",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Passage's ĐẶT VẤN ĐỀ opens with the same truncated sentence defining venous thrombosis as partially occluding; claim asserts nothing beyond it."
+    },
+    {
+      "item_id": "ent_0218",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Kết luận states SAAG and FIB-4 have good predictive value for large oesophageal varices in cirrhotic ascites patients."
+    },
+    {
+      "item_id": "ent_0027",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Background states verbatim that diabetes is estimated to become the leading cause of death by 2030."
+    },
+    {
+      "item_id": "ent_0074",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Item 7 of the passage's list is the same commitment on completing post-change stability studies and reporting out-of-specification results."
+    },
+    {
+      "item_id": "ent_0002",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "high",
+      "rationale": "Abstract's Mục tiêu line states evaluating the multi-component non-pharmacological intervention in dementia patients, verbatim."
+    }
+  ],
+  "adjudication": [
+    {
+      "item_id": "ent_0022",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Kết luận states screening for haematologic malignancy, marrow metastasis and DIC status should be routine; affiliation block splices 'tình trạng đông'/'máu nội mạch rải rác' but meaning is recoverable."
+    },
+    {
+      "item_id": "ent_0193",
+      "label": "supported",
+      "span_is_right_locus": "yes",
+      "confidence": "medium",
+      "rationale": "Span is verbatim in the passage; rejoining 'tần số'+'tim' yields heart rate, hemoglobin, NT-proBNP and ARBi/ARNI differing between users and non-users. Spliced by metadata but readable."
+    }
+  ]
+}

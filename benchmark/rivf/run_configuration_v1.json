@@ -1,0 +1,185 @@
+{
+  "what_this_is": "The retrieval and extraction configuration of the two captured runs, read from each response's own metadata.pipeline. Not inferred from any config file.",
+  "arms": {
+    "shipped": {
+      "capture": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "by_profile": {
+        "standard": {
+          "questions": 67,
+          "claims_total": 208,
+          "claims_displayed": 107,
+          "retrieved_chunks_sum": 1802,
+          "retrieved_chunks_median": 25,
+          "retrieved_chunks_range": [
+            22,
+            54
+          ]
+        },
+        "deep": {
+          "questions": 67,
+          "claims_total": 143,
+          "claims_displayed": 78,
+          "retrieved_chunks_sum": 2222,
+          "retrieved_chunks_median": 29,
+          "retrieved_chunks_range": [
+            22,
+            57
+          ]
+        }
+      },
+      "claims_from_the_no_extractor_half": {
+        "claims": 208,
+        "of_all_claims": 351,
+        "share": 0.5926,
+        "note": "the standard profile does not use the LLM extractor and produced the MAJORITY of claims, not half; half the QUESTIONS is not half the claims"
+      },
+      "retrieved_chunks": {
+        "total": 4024,
+        "median_per_question": 26.0,
+        "range_per_question": [
+          22,
+          57
+        ],
+        "why_it_exceeds_top_k": "`retrieval_top_k` is a base; the served candidate pool is base x a retrieval_mode multiplier (3 for topic_summary, which covers most questions here, 4 for mechanistic_synthesis, else 2), and the response records what survives deduplication. So 67x12 + 67x20 is not the expected total.",
+        "served_pool_multipliers": {
+          "mechanistic_synthesis": 4,
+          "topic_summary": 3
+        },
+        "served_pool_multiplier_default": 2
+      },
+      "capture_sha256": "502a8c040f44287b1e19fbb9c6dfa76ec91082233e95d4ead890d74ad37e644c",
+      "responses": 134,
+      "settings": {
+        "retrieval_profile": {
+          "standard": 67,
+          "deep": 67
+        },
+        "retrieval_top_k": {
+          "12": 67,
+          "20": 67
+        },
+        "llm_extractor_enabled": {
+          "True": 134
+        },
+        "llm_extractor_used": {
+          "False": 67,
+          "True": 67
+        },
+        "router_needs_extractor": {
+          "False": 67,
+          "True": 67
+        }
+      },
+      "outcomes_expected_to_differ": {
+        "coverage_mode": {
+          "open_knowledge": 32,
+          "title_anchored": 81,
+          "evidence_strong": 21
+        },
+        "retrieval_mode": {
+          "topic_summary": 119,
+          "article_centric": 15
+        }
+      },
+      "generator_model_id": null,
+      "verifier_model_id": null
+    },
+    "url_first": {
+      "capture": "benchmark/datasets/test_results/pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+      "by_profile": {
+        "standard": {
+          "questions": 67,
+          "claims_total": 219,
+          "claims_displayed": 219,
+          "retrieved_chunks_sum": 1797,
+          "retrieved_chunks_median": 27,
+          "retrieved_chunks_range": [
+            21,
+            53
+          ]
+        },
+        "deep": {
+          "questions": 67,
+          "claims_total": 160,
+          "claims_displayed": 145,
+          "retrieved_chunks_sum": 2150,
+          "retrieved_chunks_median": 28,
+          "retrieved_chunks_range": [
+            20,
+            54
+          ]
+        }
+      },
+      "claims_from_the_no_extractor_half": {
+        "claims": 219,
+        "of_all_claims": 379,
+        "share": 0.5778,
+        "note": "the standard profile does not use the LLM extractor and produced the MAJORITY of claims, not half; half the QUESTIONS is not half the claims"
+      },
+      "retrieved_chunks": {
+        "total": 3947,
+        "median_per_question": 28.0,
+        "range_per_question": [
+          20,
+          54
+        ],
+        "why_it_exceeds_top_k": "`retrieval_top_k` is a base; the served candidate pool is base x a retrieval_mode multiplier (3 for topic_summary, which covers most questions here, 4 for mechanistic_synthesis, else 2), and the response records what survives deduplication. So 67x12 + 67x20 is not the expected total.",
+        "served_pool_multipliers": {
+          "mechanistic_synthesis": 4,
+          "topic_summary": 3
+        },
+        "served_pool_multiplier_default": 2
+      },
+      "capture_sha256": "d31fb6e7ab33baf3bd7eb80785eac68413c9e4d5559c63aa1ba86ce60eb075d3",
+      "responses": 134,
+      "settings": {
+        "retrieval_profile": {
+          "standard": 67,
+          "deep": 67
+        },
+        "retrieval_top_k": {
+          "12": 67,
+          "20": 67
+        },
+        "llm_extractor_enabled": {
+          "True": 134
+        },
+        "llm_extractor_used": {
+          "False": 67,
+          "True": 67
+        },
+        "router_needs_extractor": {
+          "False": 67,
+          "True": 67
+        }
+      },
+      "outcomes_expected_to_differ": {
+        "coverage_mode": {
+          "evidence_strong": 28,
+          "title_anchored": 78,
+          "open_knowledge": 28
+        },
+        "retrieval_mode": {
+          "topic_summary": 119,
+          "article_centric": 15
+        }
+      },
+      "generator_model_id": null,
+      "verifier_model_id": null
+    }
+  },
+  "cross_arm": {
+    "questions_in_both": 134,
+    "identical_setting_per_question": 134,
+    "differing": [],
+    "reading": "the mixed configuration is chosen per question and matched across arms, so it is a Methods fact rather than a between-arm confound"
+  },
+  "not_recorded_by_the_capture": {
+    "fields": [
+      "generator model id",
+      "verifier model id",
+      "decoding parameters"
+    ],
+    "why_not_filled_in": "the capture has no model field, and the current default config is evidence about today's checkout, not about a run captured on 2026-09-05"
+  }
+}

@@ -1,0 +1,1011 @@
+{
+  "what_this_is": "What a reader following a stored source URL actually gets. Three quantities kept apart because collapsing them is the error this paper is about.",
+  "READ_THIS_FIRST": "The composite 'share of the corpus reachable to a document page' has been WITHDRAWN from the paper's abstract and contributions. It rests on quantity 3a, which proves only that the final URL did not match a known issue-index pattern -- a homepage, a search page or a soft 404 all pass it -- and on an adaptively topped-up sample. The result that stands without any of that machinery is the ISSUE CENSUS below.",
+  "provenance": {
+    "population": "benchmark/rivf/url_population_v4.json",
+    "population_sha256": "06af0f7009ac43ed0c2f4c2047345a944c61e1a1684ad6b021fb84f5755c94f5",
+    "sample": "benchmark/rivf/url_audit_sample_v1.json",
+    "sample_sha256": "fad01b6ab0c40d1c5eaf234000f15a9be4fb95317013e6dd8fb728bb8617df10",
+    "probe_log": "benchmark/rivf/url_audit_probed_v1.jsonl",
+    "primary_sample": {
+      "n": 289,
+      "frozen_before_any_request": true,
+      "design": "143 issue URLs censused + 146 article-level allocated per SOURCE"
+    },
+    "adaptive_topup": {
+      "n": 78,
+      "frozen_before_any_request": false,
+      "why": "Added AFTER observing that failures clustered by host, to bring every host to 8 probes. This is an adaptive design chosen in response to outcomes, so it is EXPLORATORY. Every quantity is reported on the primary frozen sample and on all probes, separately, and the two must be read as confirmatory and exploratory respectively."
+    },
+    "politeness": {
+      "robots_txt": "honoured per host; a disallowed URL is skipped, never fetched",
+      "min_seconds_between_requests_to_one_host": 2.0,
+      "order": "round-robin across hosts",
+      "timeout_s": 25,
+      "retries": 0
+    },
+    "what_3a_does_and_does_not_prove": "granularity() recognises /issue/(view|archive)/ and a few article patterns. Every other 2xx URL -- including a homepage, a search page, or a soft 404 served with status 200 -- falls through to 'article_or_page' and counts as NOT an issue index. So 3a proves only: the final URL did not match a known issue-index pattern. It does NOT establish that the page is a document page, and it certainly does not establish WHICH document. Page type has not been labelled by a person."
+  },
+  "1_stored_locator_availability": {
+    "chunks_by_granularity": {
+      "article": 135674,
+      "article_or_page": 123896,
+      "issue": 79678,
+      "none": 256415
+    },
+    "distinct_urls_by_granularity": {
+      "article": 6512,
+      "article_or_page": 9823,
+      "issue": 143
+    }
+  },
+  "THE_RESULT_THAT_NEEDS_NO_ESTIMATOR": {
+    "what": "The issue-level stratum is a CENSUS: all 143 of its distinct URLs were probed, so there is no sampling, no weighting and no inference here.",
+    "distinct_issue_urls": 143,
+    "chunks_behind_them": 79678,
+    "chunks_per_url": 557.2,
+    "answered_2xx": 143,
+    "landed_on_an_issue_index": 142,
+    "statement_the_census_supports": "142 of the 143 distinct issue-level URLs answer and land on an issue index, which does not uniquely identify the cited article. Note the careful wording: an issue index lists many articles, one of which may well be the cited one, so 'names a different article' would be wrong."
+  },
+  "2_http_reachability_by_chunks": {
+    "primary_frozen_sample": {
+      "point": 0.955,
+      "point_hajek_bounded": 0.955,
+      "point_horvitz_thompson": 1.0047,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.7789,
+        0.9688
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.6935,
+        0.9744
+      ],
+      "bonferroni_note": "alpha/21 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 21,
+      "hosts_with_nothing_askable": [
+        "www.mayoclinic.org",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 313138.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.9486,
+      "point_hajek_bounded": 0.9486,
+      "point_horvitz_thompson": 0.9365,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.8106,
+        0.961
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.7236,
+        0.9687
+      ],
+      "bonferroni_note": "alpha/25 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 25,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 315039.0
+    }
+  },
+  "2_http_reachability_by_distinct_url": {
+    "primary_frozen_sample": {
+      "point": 0.812,
+      "point_hajek_bounded": 0.812,
+      "point_horvitz_thompson": 0.812,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.5939,
+        0.8517
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.4883,
+        0.8747
+      ],
+      "bonferroni_note": "alpha/21 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 21,
+      "hosts_with_nothing_askable": [
+        "www.mayoclinic.org",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 15065.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.8089,
+      "point_hajek_bounded": 0.8089,
+      "point_horvitz_thompson": 0.8089,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.6354,
+        0.8456
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.5279,
+        0.8711
+      ],
+      "bonferroni_note": "alpha/25 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 25,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 15117.0
+    }
+  },
+  "3a_final_url_is_not_a_known_issue_index_by_chunks": {
+    "primary_frozen_sample": {
+      "point": 0.7468,
+      "point_hajek_bounded": 0.7468,
+      "point_horvitz_thompson": 0.7859,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.5513,
+        0.7354
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.4642,
+        0.7354
+      ],
+      "bonferroni_note": "alpha/19 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 19,
+      "hosts_with_nothing_askable": [
+        "rarediseases.info.nih.gov",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 298962.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.7301,
+      "point_hajek_bounded": 0.7301,
+      "point_horvitz_thompson": 0.7207,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.5898,
+        0.7354
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.5012,
+        0.7354
+      ],
+      "bonferroni_note": "alpha/22 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 22,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "nihseniorhealth.gov",
+        "rarediseases.info.nih.gov",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 298994.0
+    }
+  },
+  "3a_final_url_is_not_a_known_issue_index_by_distinct_url": {
+    "primary_frozen_sample": {
+      "point": 0.9884,
+      "point_hajek_bounded": 0.9884,
+      "point_horvitz_thompson": 0.9884,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.7198,
+        0.9884
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.5933,
+        0.9884
+      ],
+      "bonferroni_note": "alpha/19 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 19,
+      "hosts_with_nothing_askable": [
+        "rarediseases.info.nih.gov",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 12233.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.9884,
+      "point_hajek_bounded": 0.9884,
+      "point_horvitz_thompson": 0.9884,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.7739,
+        0.9884
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.6456,
+        0.9884
+      ],
+      "bonferroni_note": "alpha/22 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 22,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "nihseniorhealth.gov",
+        "rarediseases.info.nih.gov",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 12237.0
+    }
+  },
+  "3b_page_title_matches_the_stored_title_by_chunks": {
+    "primary_frozen_sample": {
+      "point": 0.6825,
+      "point_hajek_bounded": 0.6825,
+      "point_horvitz_thompson": 0.7466,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.5036,
+        0.7246
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.4319,
+        0.7308
+      ],
+      "bonferroni_note": "alpha/19 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 19,
+      "hosts_with_nothing_askable": [
+        "rarediseases.info.nih.gov",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 298962.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.6496,
+      "point_hajek_bounded": 0.6496,
+      "point_horvitz_thompson": 0.6735,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.5043,
+        0.7187
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.4334,
+        0.7266
+      ],
+      "bonferroni_note": "alpha/22 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "chunks",
+      "hosts": 22,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "nihseniorhealth.gov",
+        "rarediseases.info.nih.gov",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 298994.0
+    }
+  },
+  "3b_page_title_matches_the_stored_title_by_distinct_url": {
+    "primary_frozen_sample": {
+      "point": 0.8822,
+      "point_hajek_bounded": 0.8822,
+      "point_horvitz_thompson": 0.8822,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.6452,
+        0.9753
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.5421,
+        0.9849
+      ],
+      "bonferroni_note": "alpha/19 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 19,
+      "hosts_with_nothing_askable": [
+        "rarediseases.info.nih.gov",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 12233.0
+    },
+    "all_probes_including_adaptive_topup": {
+      "point": 0.8942,
+      "point_hajek_bounded": 0.8942,
+      "point_horvitz_thompson": 0.8942,
+      "the_two_estimators_disagree_and_that_matters": "Hajek divides by the ESTIMATED denominator and is bounded in [0,1]; HT divides by the known population total, is unbiased for the total, and is NOT bounded -- on chunk-weighted reachability it returned 1.0047, a probability above one. That is not a bug: it is what an HT ratio does when the sampled units' weights over-represent their stratum, and it is direct evidence that this sample is too small and too unbalanced to carry a chunk-weighted estimate. The headline is Hajek; HT is shown so the instability is visible.",
+      "estimator": "Horvitz-Thompson ratio of totals; pi_i = n_h/N_h inside each host, census hosts pi=1 and contribute exactly. Replaces an earlier estimator that used each host's UNWEIGHTED sampled rate under chunk weights, which is unbiased only if chunk count and outcome are independent inside a host -- they are not, and the error was ~1.3 points in the optimistic direction.",
+      "marginal_projection": [
+        0.6778,
+        0.9738
+      ],
+      "marginal_projection_carries_no_joint_coverage": "Per-host Clopper-Pearson bounds combined under population weights. A projection of marginal intervals, NOT a simultaneous interval, and NOT a confidence interval for the weighted total. An earlier version called this 'valid but conservative'; the two descriptions are incompatible.",
+      "bonferroni_joint": [
+        0.5687,
+        0.9826
+      ],
+      "bonferroni_note": "alpha/22 per host: conservative, and does carry >=95 % joint coverage",
+      "not_covered_by_either": "Both hold the weight-outcome relationship inside a host fixed, and neither reflects the adaptive top-up. A design-based variance for a ratio estimator under this design is not attempted.",
+      "weight": "urls",
+      "hosts": 22,
+      "hosts_with_nothing_askable": [
+        "cdn.who.int",
+        "nihseniorhealth.gov",
+        "rarediseases.info.nih.gov",
+        "www.emro.who.int",
+        "www.mayoclinic.org",
+        "www.niddk.nih.gov",
+        "www.ninds.nih.gov",
+        "www.who.int"
+      ],
+      "population_covered": 12237.0
+    }
+  },
+  "0_stored_title_quality": {
+    "urls_whose_stored_title_cannot_identify_a_document": 594,
+    "of_distinct_urls": 16478,
+    "share": 0.036,
+    "rule": "empty, percent-encoded, or shared by >=2 distinct URLs on the same host",
+    "MEASURED_RECALL_OF_THIS_RULE": "0.20. The author's 40-item page-type sheet found 5 pages whose stored title cannot identify the document; this rule flags 1 of them, and flags 2 pages the author could read fine. It misses bare dates ('(March 2009)'), OCR-mangled headers, diacritic-stripped filenames, and breadcrumbs unique per URL. So the share above is a FLOOR: the sheet's own rate among document pages is 5 of 29, about 17 %. The rule was deliberately NOT widened to fit the five that defeated it -- tuning it on the items that beat it would make its next number meaningless.",
+    "why_separate": "A page reached correctly whose stored title is a breadcrumb is an INGESTION defect, not a traceability failure. 3b is therefore a LOWER BOUND, and the rule was not widened to fit the hosts that failed."
+  },
+  "unmeasurable_by_robots_txt": {
+    "distinct_urls": 1361,
+    "chunks": 24209,
+    "note": "Excluded from every denominator; not counted as reachable or as broken."
+  },
+  "by_host": [
+    {
+      "host": "cdn.who.int",
+      "population_urls": 2,
+      "population_chunks": 20,
+      "selected": 2,
+      "robots_blocked_unmeasurable": 2,
+      "measurable": 0,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": null,
+      "chunks_behind_sampled_urls": 0
+    },
+    {
+      "host": "data.wpro.who.int",
+      "population_urls": 1,
+      "population_chunks": 12,
+      "selected": 1,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 1,
+      "reached_2xx": 1,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 1
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 1,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 12
+    },
+    {
+      "host": "dav.gov.vn",
+      "population_urls": 188,
+      "population_chunks": 7520,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 1,
+      "stored_title_unusable": 7,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 341
+    },
+    {
+      "host": "ghr.nlm.nih.gov",
+      "population_urls": 1086,
+      "population_chunks": 8749,
+      "selected": 9,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 9,
+      "reached_2xx": 9,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 9
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 9,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 69
+    },
+    {
+      "host": "huejmp.vn",
+      "population_urls": 16,
+      "population_chunks": 9132,
+      "selected": 16,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 16,
+      "reached_2xx": 16,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 16
+      },
+      "landed_issue_index": 15,
+      "stored_title_usable": 16,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 9132
+    },
+    {
+      "host": "jmpm.vn",
+      "population_urls": 41,
+      "population_chunks": 19810,
+      "selected": 41,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 41,
+      "reached_2xx": 41,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 41
+      },
+      "landed_issue_index": 41,
+      "stored_title_usable": 41,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 19810
+    },
+    {
+      "host": "kcb.vn",
+      "population_urls": 17,
+      "population_chunks": 8043,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 1540
+    },
+    {
+      "host": "medlineplus.gov",
+      "population_urls": 200,
+      "population_chunks": 636,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 21
+    },
+    {
+      "host": "nccih.nih.gov",
+      "population_urls": 1,
+      "population_chunks": 1,
+      "selected": 1,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 1,
+      "reached_2xx": 1,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 1
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 1,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 1
+    },
+    {
+      "host": "nihseniorhealth.gov",
+      "population_urls": 48,
+      "population_chunks": 1869,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 8,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 0.0,
+      "chunks_behind_sampled_urls": 281
+    },
+    {
+      "host": "rarediseases.info.nih.gov",
+      "population_urls": 2684,
+      "population_chunks": 11300,
+      "selected": 19,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 19,
+      "reached_2xx": 0,
+      "http_error": 19,
+      "unreachable": 0,
+      "status_codes": {
+        "404": 19
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 0.0,
+      "chunks_behind_sampled_urls": 84
+    },
+    {
+      "host": "tapchi.ctump.edu.vn",
+      "population_urls": 67,
+      "population_chunks": 45804,
+      "selected": 67,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 67,
+      "reached_2xx": 67,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 67
+      },
+      "landed_issue_index": 67,
+      "stored_title_usable": 67,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 45804
+    },
+    {
+      "host": "tapchiyhocvietnam.vn",
+      "population_urls": 6429,
+      "population_chunks": 132225,
+      "selected": 40,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 40,
+      "reached_2xx": 40,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 40
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 40,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 809
+    },
+    {
+      "host": "uspreventiveservicestaskforce.org",
+      "population_urls": 2,
+      "population_chunks": 19,
+      "selected": 2,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 2,
+      "reached_2xx": 2,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 2
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 2,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 19
+    },
+    {
+      "host": "viendinhduong.vn",
+      "population_urls": 380,
+      "population_chunks": 2545,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 4,
+      "stored_title_unusable": 4,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 34
+    },
+    {
+      "host": "vjmap.vn",
+      "population_urls": 19,
+      "population_chunks": 4932,
+      "selected": 19,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 19,
+      "reached_2xx": 19,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 19
+      },
+      "landed_issue_index": 19,
+      "stored_title_usable": 14,
+      "stored_title_unusable": 5,
+      "is_census": true,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 4932
+    },
+    {
+      "host": "www.cancer.gov",
+      "population_urls": 696,
+      "population_chunks": 39511,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 7,
+      "stored_title_unusable": 1,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 538
+    },
+    {
+      "host": "www.cdc.gov",
+      "population_urls": 66,
+      "population_chunks": 646,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 7,
+      "http_error": 1,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 7,
+        "404": 1
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 6,
+      "stored_title_unusable": 1,
+      "is_census": false,
+      "reachability": 0.875,
+      "chunks_behind_sampled_urls": 85
+    },
+    {
+      "host": "www.emro.who.int",
+      "population_urls": 4,
+      "population_chunks": 105,
+      "selected": 4,
+      "robots_blocked_unmeasurable": 4,
+      "measurable": 0,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": true,
+      "reachability": null,
+      "chunks_behind_sampled_urls": 0
+    },
+    {
+      "host": "www.mayoclinic.org",
+      "population_urls": 470,
+      "population_chunks": 2376,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 8,
+      "measurable": 0,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": null,
+      "chunks_behind_sampled_urls": 0
+    },
+    {
+      "host": "www.msdmanuals.com",
+      "population_urls": 910,
+      "population_chunks": 6427,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 35
+    },
+    {
+      "host": "www.ncbi.nlm.nih.gov",
+      "population_urls": 83,
+      "population_chunks": 3449,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 257
+    },
+    {
+      "host": "www.nccih.nih.gov",
+      "population_urls": 314,
+      "population_chunks": 2027,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 46
+    },
+    {
+      "host": "www.nhlbi.nih.gov",
+      "population_urls": 88,
+      "population_chunks": 2278,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 214
+    },
+    {
+      "host": "www.nhs.uk",
+      "population_urls": 472,
+      "population_chunks": 2958,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 54
+    },
+    {
+      "host": "www.niddk.nih.gov",
+      "population_urls": 148,
+      "population_chunks": 2876,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 0,
+      "http_error": 8,
+      "unreachable": 0,
+      "status_codes": {
+        "404": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 0.0,
+      "chunks_behind_sampled_urls": 130
+    },
+    {
+      "host": "www.ninds.nih.gov",
+      "population_urls": 273,
+      "population_chunks": 1462,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 8,
+      "measurable": 0,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": null,
+      "chunks_behind_sampled_urls": 0
+    },
+    {
+      "host": "www.nlm.nih.gov",
+      "population_urls": 981,
+      "population_chunks": 1513,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 8,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 13
+    },
+    {
+      "host": "www.uspreventiveservicestaskforce.org",
+      "population_urls": 180,
+      "population_chunks": 757,
+      "selected": 8,
+      "robots_blocked_unmeasurable": 0,
+      "measurable": 8,
+      "reached_2xx": 8,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {
+        "200": 8
+      },
+      "landed_issue_index": 0,
+      "stored_title_usable": 5,
+      "stored_title_unusable": 3,
+      "is_census": false,
+      "reachability": 1.0,
+      "chunks_behind_sampled_urls": 22
+    },
+    {
+      "host": "www.who.int",
+      "population_urls": 612,
+      "population_chunks": 20246,
+      "selected": 10,
+      "robots_blocked_unmeasurable": 10,
+      "measurable": 0,
+      "reached_2xx": 0,
+      "http_error": 0,
+      "unreachable": 0,
+      "status_codes": {},
+      "landed_issue_index": 0,
+      "stored_title_usable": 0,
+      "stored_title_unusable": 0,
+      "is_census": false,
+      "reachability": null,
+      "chunks_behind_sampled_urls": 0
+    }
+  ]
+}

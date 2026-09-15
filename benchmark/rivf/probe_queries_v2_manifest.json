@@ -1,0 +1,420 @@
+{
+  "schema": "rivf_probe_set.v2",
+  "generated_at_utc": "2026-09-04T04:07:33Z",
+  "file": "benchmark/datasets/probe_queries_v2.jsonl",
+  "n": 134,
+  "query_set_sha256": "7f6b97e512d31a77aab6f22b1eeb6d84700f66e08a4068a5bdab357d5c3fddc9",
+  "file_sha256": "c1b76a3a984f1a2aeb741fe400758400723b88577d943239ae17dac7df9da740",
+  "by_specialty": {
+    "co_xuong_khop": 10,
+    "ho_hap": 10,
+    "huyet_hoc_mien_dich": 10,
+    "nhi": 10,
+    "noi_tiet": 10,
+    "out_of_corpus_control": 15,
+    "san_phu_khoa": 10,
+    "than_kinh": 10,
+    "than_tiet_nieu": 10,
+    "tieu_hoa": 10,
+    "tim_mach": 10,
+    "truyen_nhiem": 9,
+    "ung_buou": 10
+  },
+  "by_question_type": {
+    "clinical_explainer": 29,
+    "differential_or_workup": 25,
+    "guideline_comparison": 26,
+    "patient_faq": 26,
+    "study_result_numeric": 28
+  },
+  "authoring": "12 specialty agents + 1 out-of-corpus control agent, each instructed to author blind: no repository access, no web search, no tool use",
+  "audits": [
+    {
+      "auditor": "leakage",
+      "verdict": "problems_found",
+      "problems": 17
+    },
+    {
+      "auditor": "language",
+      "verdict": "problems_found",
+      "problems": 17
+    },
+    {
+      "auditor": "grid",
+      "verdict": "problems_found",
+      "problems": 30
+    }
+  ],
+  "dropped": [
+    {
+      "question": "Em bị viêm gan B, sắp sinh em bé. Cho con bú có làm lây cho bé không?",
+      "question_type": "patient_faq",
+      "specialty": "truyen_nhiem",
+      "rationale": "short consumer-register transmission question in chronic viral hepatitis",
+      "dropped_because": "grid: Near-verbatim duplicate of Q40 (tieu_hoa/patient_faq): \"Em mới sinh bé được 2 tuần, em bị viêm gan B từ trước. Cho con bú thì bé có bị lây không ạ? Bé đã tiêm mũi lúc mới sinh rồi.\" Same disease, same clinical question (HBV mother, breastfeeding transmission), same question_type, same expected answer (breastfeeding is safe once the birth-dose vaccine + HBIG are given; cracked/bleeding nipples are the only caveat). Q40 is strictly richer because it states the birth-dose vaccine has been given. Q91 adds nothing and burns one of only 27 patient_faq slots on an answer already covered."
+    }
+  ],
+  "edits_applied": [
+    {
+      "query_id": "rivf_004",
+      "because": "language: \"cần khám cùng làm gì thêm\" is not idiomatic Vietnamese — it reads like a machine-translation artifact of \"examine and investigate\". Every other workup question in the set uses the natural pattern \"cần khám và làm thêm những gì\" (see Q79, Q88), so this one stands out as generated text."
+    },
+    {
+      "query_id": "rivf_025",
+      "because": "grid: Paraphrase of Q56 (than_kinh/guideline_comparison): \"Bệnh nhân rung nhĩ đã từng bị nhồi máu não thì nên dùng thuốc chống đông đường uống thế hệ mới hay warfarin? Hai lựa chọn này khác nhau ở những điểm nào khi dự phòng tái phát?\" Both are DOAC-vs-warfarin comparisons phrased almost identically (\"hai lựa chọn này khác nhau ở những điểm nào\"), and the answers overlap almost completely: no INR monitoring, fewer food/drug interactions, lower intracranial bleeding, renal dosing, reversal agents. Only the indication differs, and the indication is not what the question asks about."
+    },
+    {
+      "query_id": "rivf_040",
+      "because": "leakage: The three age bands (<2 months, 2-11 months, 12-59 months) are the WHO/IMCI stratification copied verbatim from the fast-breathing threshold table. This is the clearest lexical leak in the set: the banding string matches one particular document almost exactly, so a lexical retriever is handed the source, and the question already supplies the structure of the answer (three bands) leaving only three numbers. Ask for the concept, not the table's row labels."
+    },
+    {
+      "query_id": "rivf_047",
+      "because": "grid: Same white-rice-in-diabetes question as Q71 (san_phu_khoa/patient_faq): \"Bác sĩ ơi, em bị tiểu đường thai kỳ, mọi người xung quanh bảo phải bỏ hẳn cơm trắng thì mới an toàn cho em bé. Có đúng là phải kiêng cơm hoàn toàn không hay chỉ cần ăn ít lại thôi ạ?\" Both are patient_faq, both resolve to the same counselling (rice need not be eliminated; portion size, glycaemic load, pairing with protein/fibre, post-meal glucose). Q71 is the stronger item because it corrects an explicit lay myth. Replacing Q20 also relieves the diabetes over-concentration in noi_tiet (see separate note)."
+    },
+    {
+      "query_id": "rivf_052",
+      "because": "grid: Mislabelled as clinical_explainer. It contains no \"why/how\" component at all - it asks for a publication year, i.e. a provenance/date lookup. Graded against an explainer rubric (mechanism, causal chain), a correct answer would score badly and a wrong one could not be distinguished from an off-type answer. If the intent is an unanswerable-recency control, it needs a fact/date category, not clinical_explainer."
+    },
+    {
+      "query_id": "rivf_053",
+      "because": "grid: Mislabelled as clinical_explainer: the actual request is a weight-based starting dose (a number, e.g. IU/kg), which is a dosing/numeric question. The embedded false premise (basal insulin as first-line in newly diagnosed T2D) is a legitimate trap design, but the type label makes the expected output shape incoherent - an explainer rubric cannot score \"model should refuse the premise and not give a dose\". Either relabel, or keep the trap in genuine explainer form."
+    },
+    {
+      "query_id": "rivf_054",
+      "because": "grid: Mislabelled as clinical_explainer. The question asks for two numbers (a starting age and a screening interval) and explains nothing; it is a policy-fact / numeric lookup. As written it belongs to study_result_numeric or a policy-fact type. It is also compound (age + interval), which makes partial credit ambiguous."
+    },
+    {
+      "query_id": "rivf_055",
+      "because": "grid: Mislabelled as clinical_explainer. It is a list-retrieval question (\"những bệnh nào\") with no mechanism, no causal reasoning, and no explanatory demand. Under an explainer rubric an enumerated list is the correct answer but the wrong shape, so scoring is unreliable."
+    },
+    {
+      "query_id": "rivf_064",
+      "because": "leakage: \"theo số liệu đăng ký toàn quốc\" names a dataset. It tells the system which source to answer from before any retrieval happens, and it names no country, so the answer cannot be verified against the question as asked. Even as an out-of-corpus control the dataset clause is unnecessary — the question is already out of scope without it."
+    },
+    {
+      "query_id": "rivf_065",
+      "because": "leakage: \"các nhóm theo dõi dài hạn ở châu Âu\" names a specific body of cohort data — the strongest dataset pre-selection in the control block. The question can only be answered by one particular cohort publication, which means a correct abstention and a lucky retrieval hit are indistinguishable when scoring. Keep the European scoping (that is what makes it out-of-corpus) and drop the cohort reference."
+    },
+    {
+      "query_id": "rivf_067",
+      "because": "language: Terminology: the condition is \"hội chứng buồng trứng đa nang\" (PCOS). Dropping \"hội chứng\" makes it read as \"a patient of polycystic ovaries\" — an anatomical finding, not the syndrome. Acceptable in speech, wrong in a written clinical question."
+    },
+    {
+      "query_id": "rivf_074",
+      "because": "grid: Compound question mixing two different kinds of number: the first half is a definitional threshold (500 mL after vaginal delivery) taken from a definition, not a study result; the second half is a genuine epidemiological rate. One study_result_numeric grade cannot cover both, and a model that gets the definition right but the incidence wrong (or vice versa) scores unpredictably."
+    },
+    {
+      "query_id": "rivf_107",
+      "because": "grid: The renal half of this question is fully covered by Q62 (than_tiet_nieu/clinical_explainer): \"Ngoài tác dụng hạ đường huyết, cơ chế nào giúp thuốc ức chế SGLT2 làm chậm tiến triển bệnh thận mạn?\" Both are clinical_explainer, both require the same tubuloglomerular-feedback / natriuresis / intraglomerular pressure mechanism. The overlap is avoidable with a one-clause edit that keeps Q2 on cardiac mechanism only."
+    },
+    {
+      "query_id": "rivf_116",
+      "because": "grid: The coagulation half duplicates Q113 (huyet_hoc_mien_dich/clinical_explainer): \"Trong đông máu nội mạch rải rác, cơ chế nào khiến bệnh nhân vừa có huyết khối vi mạch lại vừa chảy máu khó cầm?\" Sepsis-induced coagulopathy is DIC; the tissue-factor / consumption-of-factors / fibrinolysis explanation is the entire answer to Q113 and half the answer to Q93. Both are clinical_explainer, so a grader sees the same content twice."
+    },
+    {
+      "query_id": "rivf_118",
+      "because": "grid: Duplicate of Q38 (ho_hap/differential_or_workup): \"Bệnh nhân nam 45 tuổi, sốt nhẹ về chiều, ho khạc đờm hơn 3 tuần, X-quang thấy thâm nhiễm thùy trên. Cần làm những gì để phân biệt viêm phổi thông thường với lao phổi?\" Both are pulmonary-TB workups triggered by cough >3 weeks plus constitutional symptoms, both are differential_or_workup, and both resolve to the same answer set (sputum AFB/Xpert MTB-RIF, culture, chest X-ray, HIV testing, contact history). Q38 is the more specific version; Q99 is its generic restatement."
+    },
+    {
+      "query_id": "rivf_121",
+      "because": "grid: Collides with Q46 (tieu_hoa/guideline_comparison): \"Bệnh nhân viêm gan B mạn cần dùng thuốc kháng virus lâu dài thì nên chọn tenofovir hay entecavir? Hai thuốc này khác nhau thế nào về hiệu quả và tác dụng phụ khi dùng kéo dài?\" Same drug pair, same disease, same question_type. Renal toxicity is precisely the \"tác dụng phụ khi dùng kéo dài\" that Q46 already asks about, so the two share nearly their whole answer (TDF renal/bone risk, TAF alternative, entecavir dose adjustment, prior lamivudine resistance). Chronic HBV drug choice also belongs more naturally to tieu_hoa, which already owns it."
+    },
+    {
+      "query_id": "rivf_127",
+      "because": "language: Grammar: missing passive marker \"được\". As written, \"bệnh nhân ... đang chăm sóc giảm nhẹ\" says the patient is the one delivering palliative care. A Vietnamese clinician would always write \"đang được chăm sóc giảm nhẹ\"."
+    },
+    {
+      "query_id": "rivf_134",
+      "because": "leakage: \"làm tăng ... thêm được\" embeds the direction of the answer, and the direction is the contested part — the absolute benefit of adjuvant chemotherapy in high-risk stage II disease is small and debated. The question leaves only the magnitude open, so a system that asserts a benefit is being rewarded for a premise the question supplied rather than for retrieving evidence."
+    }
+  ],
+  "edits_superseded_same_question_flagged_twice": [
+    {
+      "auditor": "grid",
+      "question": "Ở ung thư đại trực tràng giai đoạn II có yếu tố nguy cơ cao, hoá trị bổ trợ làm tăng tỉ lệ sống còn sau 5 năm thêm được khoảng bao nhiêu?",
+      "problem": "The quantity is not specified as absolute or relative: \"tăng ... thêm được khoảng bao nhiêu\" can be answered as ~3-5 percentage points absolute or as a ~20-25% relative risk reduction, and both are defensible. A study_result_numeric item whose unit is ambiguous cannot be graded against a single reference value.",
+      "severity": "must_edit",
+      "suggested_replacement": "Ở ung thư đại trực tràng giai đoạn II có yếu tố nguy cơ cao, hoá trị bổ trợ làm tăng tỉ lệ sống còn sau 5 năm thêm khoảng bao nhiêu điểm phần trăm so với phẫu thuật đơn thuần?"
+    }
+  ],
+  "notes_not_acted_on": [
+    {
+      "auditor": "leakage",
+      "question": "Giảm được 1 mmol/L LDL-C bằng statin thì nguy cơ biến cố tim mạch chính giảm khoảng bao nhiêu phần trăm?",
+      "problem": "The \"per 1 mmol/L LDL-C reduction\" framing is the Cholesterol Treatment Trialists meta-analysis's own formulation, not a neutral clinical phrasing. It points at one source. Tolerable only because that formulation has since been reproduced in most dyslipidaemia guidelines — but the graded answer should not be checked against a single document.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Tỷ lệ tổn thương CIN 2 tự thoái triển ở phụ nữ dưới 25 tuổi trong vòng khoảng 2 năm là bao nhiêu phần trăm?",
+      "problem": "The triple constraint (CIN 2 + under 25 + roughly 2 years) reproduces the exact stratification of one particular meta-analysis. Any one of the three constraints alone would be a fair clinical question; together they select a single paper.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Trong các thử nghiệm ngẫu nhiên có đối chứng, thuốc ức chế PCSK9 làm giảm tuyệt đối bao nhiêu phần trăm biến cố tim mạch chính sau ba năm theo dõi?",
+      "problem": "\"trong các thử nghiệm ngẫu nhiên có đối chứng\" plus a three-year horizon plus \"giảm tuyệt đối\" narrows to essentially one outcome trial without naming it. Separately, no major PCSK9 outcome trial ran a three-year median follow-up, so the time window is a quiet false premise — harmless if the expected label is abstain, misleading if this is ever scored as answerable.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Chương trình sàng lọc sơ sinh quốc gia của Đức hiện xét nghiệm những bệnh rối loạn chuyển hóa bẩm sinh nào?",
+      "problem": "Names a specific national programme and asks for the enumerated panel, which exists in exactly one document. Acceptable only if the expected behaviour is abstention; if the corpus ever acquires that document, the question becomes a free retrieval hit rather than a test.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Ở Nhật Bản, chương trình tầm soát ung thư dạ dày quốc gia bắt đầu nội soi từ tuổi nào và bao lâu lặp lại một lần?",
+      "problem": "Same pattern as the German screening item: a named national programme, answerable only from that programme's own document. Fine as a geographic out-of-scope control, but it is source-naming, not topic-scoping.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Mỗi năm cả nước thực hiện bao nhiêu ca can thiệp động mạch vành qua da?",
+      "problem": "\"cả nước\" implies a national procedure registry as the only possible source, and no country is named. The question is simultaneously source-pinned and under-specified.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Phác đồ điều trị lao kháng đa thuốc đang áp dụng hiện nay được ban hành từ năm nào?",
+      "problem": "This asks for a document's publication metadata rather than clinical content, with no issuing body named. It can only be answered by one particular guideline, and 'which guideline' is left to the system to guess. Keep it only if the expected label is abstain.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Em nghe nói tuổi bắt đầu tầm soát ung thư đại trực tràng vừa được hạ xuống, thay đổi này áp dụng từ lúc nào ạ?",
+      "problem": "Embeds the premise that the screening age was lowered and presents it as settled fact. That change is a US recommendation, not a Vietnamese one, so the question smuggles a foreign guideline in as given and supplies the direction of the answer. Good false-premise probe if graded as one; leaky if graded as a date-lookup.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Vì insulin nền là thuốc đầu tay cho bệnh nhân đái tháo đường típ 2 mới chẩn đoán, liều khởi đầu tính theo cân nặng nên là bao nhiêu?",
+      "problem": "States a false clinical claim as a given premise (basal insulin is not first-line in newly diagnosed T2DM). Questions 131, 133 and 134 do the same thing. These read as a deliberate false-premise arm — confirm that is the intent and that the rubric rewards refusing the premise rather than answering the question as posed, otherwise a system that complies scores well for the wrong reason.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Bệnh nhân viêm gan B mạn kèm suy giảm chức năng thận thì nên chọn tenofovir hay entecavir, và cân nhắc dựa trên những yếu tố nào?",
+      "problem": "Near-duplicate of question 46 (tenofovir vs entecavir), and question 116 is a near-duplicate of 56 (DOAC vs warfarin). Each pair is answered by the same underlying document, so the pairs do not add independent retrieval coverage — they inflate apparent breadth and double-count whatever the corpus happens to hold on those two topics.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp còi ở Việt Nam hiện nay khoảng bao nhiêu phần trăm?",
+      "problem": "Answerable only from one national nutrition survey, and \"hiện nay\" makes the correct answer move with time. Questions 14 and 45 have the same shape. Not source-naming, so lower risk than the flagged items — but the reference answer needs a fixed survey year recorded in the key, or grading will be arbitrary.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Với người lớn bị hen mức độ nhẹ, hiện nay nên dùng ICS-formoterol khi cần hay vẫn cắt cơn bằng salbutamol đơn thuần?",
+      "problem": "\"vẫn ... đơn thuần\" frames one arm as the legacy option before the system answers, tilting a supposedly neutral guideline comparison. Minor, but it is the only comparison item in the set that pre-labels an arm.",
+      "severity": "note"
+    },
+    {
+      "auditor": "leakage",
+      "question": "Ở bệnh nhân gút mạn có hạt tophi, cần duy trì acid uric máu dưới ngưỡng bao nhiêu mg/dL để tophi tan dần?",
+      "problem": "The unit mg/dL pre-selects a non-Vietnamese source; Vietnamese labs and local guidance report urate in µmol/L. Small lexical nudge toward one document family. Drop the unit and let the answer supply it.",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Vì sao bệnh nhân COPD lại bị bẫy khí và căng phồng phổi động khi gắng sức, và cơ chế này giải thích thế nào cho triệu chứng khó thở của họ?",
+      "problem": "Terminology: \"căng phồng phổi động\" is a literal word-by-word rendering of \"dynamic hyperinflation\". Vietnamese respiratory texts use \"căng giãn phổi động\" (or \"ứ khí phổi động\"). \"Căng phồng\" describes a balloon, not lung hyperinflation.",
+      "severity": "note",
+      "suggested_replacement": "Vì sao bệnh nhân COPD lại bị bẫy khí và căng giãn phổi động khi gắng sức, và cơ chế này giải thích thế nào cho triệu chứng khó thở của họ?"
+    },
+    {
+      "auditor": "language",
+      "question": "Bệnh nhân suy tim mạn sau đợt nhập viện vì đợt cấp thì tỷ lệ tái nhập viện trong vòng 30 ngày khoảng bao nhiêu phần trăm?",
+      "problem": "Clumsy repetition \"đợt nhập viện vì đợt cấp\". A Vietnamese cardiologist would say \"sau một đợt nhập viện vì suy tim cấp mất bù\". Understandable but reads generated.",
+      "severity": "note",
+      "suggested_replacement": "Bệnh nhân suy tim mạn sau một đợt nhập viện vì suy tim cấp mất bù thì tỷ lệ tái nhập viện trong vòng 30 ngày khoảng bao nhiêu phần trăm?"
+    },
+    {
+      "auditor": "language",
+      "question": "Cơ chế nào giải thích việc bệnh nhân đái tháo đường type 1 dễ vào nhiễm toan ceton hơn so với bệnh nhân type 2?",
+      "problem": "Set-wide inconsistency in the English loan: Q6 uses the Bộ Y tế standard \"đái tháo đường típ 2\", while Q20, Q22, Q24, Q26 and Q28 leave the English word \"type\". In patient-voice items (Q20, Q21) \"type 2\" is acceptable everyday usage, but in clinician-facing items (Q22, Q26, Q28) it should be \"típ 1 / típ 2\" to match the national guideline wording and the rest of the set.",
+      "severity": "note",
+      "suggested_replacement": "Cơ chế nào giải thích việc bệnh nhân đái tháo đường típ 1 dễ vào nhiễm toan ceton hơn so với bệnh nhân típ 2?"
+    },
+    {
+      "auditor": "language",
+      "question": "Trẻ sơ sinh 5 ngày tuổi bú kém, li bì, thân nhiệt 36 độ - cần đánh giá và làm những xét nghiệm gì?",
+      "problem": "Medically weak vignette: 36 độ C is low-normal, not hypothermia (WHO danger sign is <35.5 độ C, or ≥37.5). As written the temperature adds nothing and a reader may argue the child is afebrile-normal. Also uses a hyphen where Vietnamese would use a full stop or comma.",
+      "severity": "note",
+      "suggested_replacement": "Trẻ sơ sinh 5 ngày tuổi bú kém, li bì, thân nhiệt 35,5 độ. Cần đánh giá và làm những xét nghiệm gì?"
+    },
+    {
+      "auditor": "language",
+      "question": "Ở bệnh nhân gút mạn có hạt tophi, cần duy trì acid uric máu dưới ngưỡng bao nhiêu mg/dL để tophi tan dần?",
+      "problem": "Unit mismatch with Vietnamese practice: labs in Vietnam report acid uric in µmol/L, not mg/dL. A Vietnamese rheumatologist would ask in µmol/L (or give both). As written it presupposes a US lab report.",
+      "severity": "note",
+      "suggested_replacement": "Ở bệnh nhân gút mạn có hạt tophi, cần duy trì acid uric máu dưới ngưỡng bao nhiêu (µmol/L hoặc mg/dL) để tophi tan dần?"
+    },
+    {
+      "auditor": "language",
+      "question": "Trẻ mắc hội chứng Prader-Willi trong các nhóm theo dõi dài hạn ở châu Âu thường được bắt đầu điều trị hormone tăng trưởng vào lúc mấy tháng tuổi?",
+      "problem": "\"các nhóm theo dõi dài hạn\" is a literal calque of \"long-term follow-up cohorts\". Vietnamese medical writing says \"các nghiên cứu thuần tập theo dõi dài hạn\". The sentence also has a heavy left-branching structure typical of machine translation.",
+      "severity": "note",
+      "suggested_replacement": "Theo các nghiên cứu thuần tập theo dõi dài hạn ở châu Âu, trẻ mắc hội chứng Prader-Willi thường được bắt đầu điều trị hormone tăng trưởng vào lúc mấy tháng tuổi?"
+    },
+    {
+      "auditor": "language",
+      "question": "Bệnh lao ở các cộng đồng bản địa vùng Bắc Cực có đặc điểm dịch tễ và diễn tiến khác gì so với vùng nhiệt đới?",
+      "problem": "Register/plausibility: no Vietnamese clinician or patient would type this. It reads as an English textbook prompt translated into Vietnamese. Q127 (\"Chương trình sàng lọc sơ sinh quốc gia của Đức...\") has the same problem. If these are deliberate out-of-corpus abstention probes, keep them but be aware they are also off-distribution linguistically, so an abstention may be triggered by the odd phrasing rather than by genuine absence of evidence.",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Em bị viêm gan B, sắp sinh em bé. Cho con bú có làm lây cho bé không?",
+      "problem": "Near-duplicate of Q40 (\"Em mới sinh bé được 2 tuần, em bị viêm gan B từ trước. Cho con bú thì bé có bị lây không ạ?...\"), only re-filed under truyen_nhiem instead of tieu_hoa. Two items testing the same fact inflate per-domain scores. Also the internal logic is slightly off: \"sắp sinh\" (about to give birth) with a breastfeeding question is premature — Q40's postpartum framing is the natural one.",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Bệnh nhân viêm gan B mạn kèm suy giảm chức năng thận thì nên chọn tenofovir hay entecavir, và cân nhắc dựa trên những yếu tố nào?",
+      "problem": "Substantially overlaps Q46 (same drug comparison, tenofovir vs entecavir in chronic HBV). The renal-impairment twist makes it defensible, but the two items will retrieve the same sources and should not both count as independent evidence of coverage.",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Bị cúm mùa thì nên uống kháng sinh nhóm nào cho nhanh khỏi?",
+      "problem": "False-premise question (antibiotics do not treat influenza) filed under out_of_corpus_control. The expected behaviour here is premise correction, not abstention for lack of corpus evidence — a model that answers \"tôi không có dữ liệu\" would be wrong in a different way than for Q120-Q130. Same issue for Q132, Q133, Q134. Recommend a separate label (e.g. false_premise) so scoring does not conflate the two control types. The Vietnamese itself is natural.",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Vì insulin nền là thuốc đầu tay cho bệnh nhân đái tháo đường típ 2 mới chẩn đoán, liều khởi đầu tính theo cân nặng nên là bao nhiêu?",
+      "problem": "False premise (metformin, not basal insulin, is first-line in newly diagnosed T2DM) — deliberate, but mislabeled as out_of_corpus_control (see note on Q131). Minor style point: opening with \"Vì...\" is stilted; a real user would write \"Nghe nói insulin nền là thuốc đầu tay...\" or \"Insulin nền là thuốc đầu tay cho ĐTĐ típ 2 mới chẩn đoán, vậy liều khởi đầu...\".",
+      "severity": "note",
+      "suggested_replacement": "Insulin nền là thuốc đầu tay cho bệnh nhân đái tháo đường típ 2 mới chẩn đoán, vậy liều khởi đầu tính theo cân nặng nên là bao nhiêu?"
+    },
+    {
+      "auditor": "language",
+      "question": "Bệnh nhân nam 45 tuổi đau ngực khi gắng sức nhưng điện tâm đồ lúc nghỉ bình thường nên đã loại trừ được bệnh mạch vành, vậy nên khảo sát tiếp cơ quan nào để tìm nguyên nhân?",
+      "problem": "False premise (a normal resting ECG does not rule out CAD) — deliberate and well written, but mislabeled as out_of_corpus_control rather than a premise-correction control (see note on Q131).",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Tăng huyết áp chỉ gặp ở người trên 60 tuổi, vậy người 40 tuổi có cần đo huyết áp định kỳ không?",
+      "problem": "False premise (hypertension is common well before 60) — deliberate, natural Vietnamese, but again mislabeled as out_of_corpus_control (see note on Q131).",
+      "severity": "note"
+    },
+    {
+      "auditor": "language",
+      "question": "Người ngáy to, ngưng thở lúc ngủ và buồn ngủ nhiều ban ngày thì cần đánh giá thêm những gì, và có nhất thiết phải đo đa ký giấc ngủ không?",
+      "problem": "Mild circularity plus a term slip: the standard Vietnamese term is \"cơn ngừng thở khi ngủ\" (\"ngưng thở lúc ngủ\" is colloquial), and stating the patient already has apnea and then asking whether polysomnography is needed presupposes the diagnosis the test would establish. Better framed as witnessed apnea reported by family.",
+      "severity": "note",
+      "suggested_replacement": "Người ngáy to, người nhà chứng kiến có cơn ngừng thở khi ngủ, kèm buồn ngủ nhiều ban ngày thì cần đánh giá thêm những gì, và có nhất thiết phải đo đa ký giấc ngủ không?"
+    },
+    {
+      "auditor": "grid",
+      "question": "Ngưỡng nhịp thở bao nhiêu lần/phút được tính là thở nhanh ở trẻ dưới 2 tháng, 2-11 tháng và 12-59 tháng?",
+      "problem": "Labelled study_result_numeric but the answer is a set of definitional cut-points from an IMCI-style guideline table (60/50/40 breaths per minute), not an empirical study finding with a confidence interval. If the numeric rubric expects a study citation, a correct guideline answer will be penalised. It is also a three-part answer packed into one item.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Ở bệnh nhân gút mạn có hạt tophi, cần duy trì acid uric máu dưới ngưỡng bao nhiêu mg/dL để tophi tan dần?",
+      "problem": "Same issue as Q84: labelled study_result_numeric but the answer is a treat-to-target guideline threshold (<6 mg/dL generally, <5 mg/dL with tophi), i.e. a recommendation rather than a measured study result. This sits under a different evidence type than the other numeric items (mortality rates, prevalence, survival), so the bucket is not internally consistent.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Trong các thử nghiệm ngẫu nhiên có đối chứng, thuốc ức chế PCSK9 làm giảm tuyệt đối bao nhiêu phần trăm biến cố tim mạch chính sau ba năm theo dõi?",
+      "problem": "Weak as an out_of_corpus_control: the absolute MACE reduction with PCSK9 inhibitors over ~3 years is a widely published trial result, so a model can answer it correctly from parametric knowledge. A correct answer here is not a hallucination, but the control bucket will score it as a failure to abstain. It also echoes Q5 (tim_mach/study_result_numeric, \"Giảm được 1 mmol/L LDL-C bằng statin thì nguy cơ biến cố tim mạch chính giảm khoảng bao nhiêu phần trăm?\") in both structure and outcome measure. More broadly, the 15 control items mix at least three probe designs with different expected behaviours - recency/provenance unanswerable (120-123), geographic out-of-scope (124-128), and false-premise traps (131-134) - which should not share one label if abstention and premise-correction are scored separately.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Bệnh lao ở các cộng đồng bản địa vùng Bắc Cực có đặc điểm dịch tễ và diễn tiến khác gì so với vùng nhiệt đới?",
+      "problem": "Type fit is loose: the question is a comparative epidemiology request (\"khác gì so với\"), not a mechanistic explanation, so clinical_explainer is a stretch. Expected behaviour also differs from its neighbours in the same bucket: this one should be abstained on for scope reasons, whereas 131-134 should be answered by correcting a false premise. Grading both under out_of_corpus_control conflates two distinct failure modes.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Mỗi năm cả nước thực hiện bao nhiêu ca can thiệp động mạch vành qua da?",
+      "problem": "Underspecified even for a control item: \"cả nước\" names no country (Vietnam is only implied) and no reference year is given, so there is no single reference value a grader could check an answer against. An abstention here is indistinguishable from an abstention caused by the question being unanswerable as written.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Trẻ 18 tháng tiêu chảy cấp mất nước nhẹ thì nên bù bằng ORS nồng độ thẩm thấu thấp hay nước cháo muối tự nấu ở nhà, và có nên bổ sung kẽm kèm theo không?",
+      "problem": "Compound: the first clause is a genuine guideline_comparison (low-osmolarity ORS vs home-made salted rice water), the appended zinc clause is a standalone yes/no recommendation that is not a comparison at all. Half the item is off-type, so a model that answers the comparison well but omits zinc loses points for a reason unrelated to the labelled skill.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Bị tiểu đường type 2 thì buổi tối ăn cơm trắng có sao không ạ? Em ăn xong hay thấy mệt và buồn ngủ.",
+      "problem": "Template monotony in the patient_faq lane: 8 of the 24 body patient_faq items are \"what must I avoid eating/drinking\" questions - Q1 (kiêng ăn gì khi dùng chống đông), Q20 (cơm trắng), Q60 (\"Bị sỏi thận có phải kiêng uống sữa không?\"), Q61 (hạn chế nước, ăn nhạt), Q71 (cơm trắng khi tiểu đường thai kỳ), Q81 (\"có phải kiêng sữa với đồ tanh không?\"), Q100 (\"Bị gút thì có phải kiêng hẳn thịt bò với hải sản cả đời không?\"), Q111 (kiêng trà với sữa). One third of the lay-question lane tests a single answer shape (dietary myth correction). Recommend converting 3-4 of them to other real patient concerns: when to go to hospital, cost/adherence, exercise and work, driving, pregnancy planning, vaccination.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Huyết áp 150/90 có phải uống thuốc suốt đời không?",
+      "problem": "Second patient_faq template cluster: 5 of 24 body patient_faq items ask \"is long-term medication harmful / lifelong\" - Q0, Q21 (\"Uống lâu dài có hại gan thận không, và có phải uống suốt đời không bác sĩ?\", which repeats the \"uống suốt đời\" phrasing almost word for word), Q30 (inhaled steroid and growth), Q41 (long-term NSAID and ulcer), Q51 (frequent analgesic use). Combined with the dietary-restriction template, 13 of 24 lay questions run on just two frames.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Người béo phì mắc đái tháo đường type 2 cần giảm khoảng bao nhiêu phần trăm cân nặng thì mới có cơ hội lui bệnh?",
+      "problem": "Disease clustering in noi_tiet: 5 of 10 items are diabetes (Q20 rice, Q22 DKA mechanism, Q24 remission, Q26 CKD drug sequencing, Q28 type 1 vs type 2), with the remaining 5 split between thyroid (Q21, Q25, Q29) and bone (Q23, Q27). The specialty therefore covers only three diseases, and there is no adrenal, pituitary, obesity-as-such, or dyslipidaemia coverage. Set-wide the concentration is heavier still: diabetes also drives Q6, Q53, Q71, Q122 and Q132.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Tỷ lệ đáp ứng virus bền vững sau điều trị viêm gan C mạn bằng thuốc kháng virus tác động trực tiếp là khoảng bao nhiêu phần trăm?",
+      "problem": "Organ clustering in tieu_hoa: 6 of 10 items are hepatology (Q40 HBV breastfeeding, Q42 hepatic encephalopathy, Q44 HCV SVR, Q46 HBV drug choice, Q47 variceal prophylaxis, Q49 obstructive jaundice), leaving only Q41, Q45 and Q48 for luminal GI and Q43 for pancreas. Adding Q12 (HCC), Q91 and Q96, hepatology takes 9 slots across the set while common luminal problems - GERD, IBS, peptic ulcer bleeding, colorectal polyp follow-up - get none. Viral hepatitis B alone owns 4 questions (Q40, Q46, Q91, Q96).",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Điều trị lao tiềm ẩn nên chọn phác đồ isoniazid kéo dài hay phác đồ ngắn ngày có rifampicin? Hai hướng này khác nhau ra sao về hiệu quả, thời gian và nguy cơ độc gan?",
+      "problem": "Tuberculosis is the most over-represented topic in the set: 7 of 135 questions (Q33 combination therapy rationale, Q37 latent TB, Q38 TB vs pneumonia, Q94 6-month regimen success rate, Q99 chronic cough workup, Q121 MDR-TB regimen year, Q126 Arctic TB epidemiology), and 3 of the 10 ho_hap slots (Q33, Q37, Q38) are TB. That crowds out common respiratory presentations - pleural effusion, bronchiectasis, pulmonary embolism, interstitial lung disease, chronic cough of non-infectious cause - none of which appear anywhere.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Bệnh nhân thiếu máu hồng cầu nhỏ nhược sắc thì cần làm những xét nghiệm nào để phân biệt thiếu sắt với người mang gen thalassemia?",
+      "problem": "Clustering in huyet_hoc_mien_dich: 4 of 10 items are anaemia (Q110 thalassaemia carrier counselling, Q111 iron tablets, Q117 B12 route, Q118 iron deficiency vs thalassaemia trait), and Q110/Q118 both turn on thalassaemia trait while Q111/Q118 both turn on iron deficiency. With only two immunology items (Q112 lupus, Q113 DIC), the specialty is effectively an anaemia set; no coagulation-factor disorder, no transfusion medicine, no myeloma or lymphoma, no primary immunodeficiency or allergy.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Ở trẻ bị xuất huyết giảm tiểu cầu miễn dịch, khoảng bao nhiêu phần trăm trường hợp tự hồi phục trong vòng 6 tháng mà không cần điều trị đặc hiệu?",
+      "problem": "Overlaps Q119 (\"Một phụ nữ 25 tuổi vào viện vì xuất huyết dưới da, công thức máu thấy tiểu cầu giảm nhiều còn hồng cầu và bạch cầu bình thường, cần khai thác thêm những gì và chỉ định xét nghiệm nào?\"), whose isolated-thrombocytopenia workup lands squarely on ITP. Different question_type and population, so not a duplicate, but two of ten hematology slots converge on the same disease.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Loãng xương sau mãn kinh nên dùng bisphosphonat đường uống hàng tuần hay truyền tĩnh mạch mỗi năm một lần?",
+      "problem": "Osteoporosis is split across two specialties and takes 4 slots: Q23 (steroid-induced bone loss) and Q27 sit in noi_tiet, while Q101 (\"...uống sữa với canxi mỗi ngày như vậy đã đủ để phòng gãy xương chưa hay còn phải uống thêm thuốc gì nữa ạ?\") and Q104 (hip fracture mortality) sit in co_xuong_khop. Q27 and Q101 also share answer content - both require the \"calcium/vitamin D alone is not enough, an antiresorptive is indicated\" line. Consolidating osteoporosis in one specialty would free two noi_tiet slots for the missing endocrine areas.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Bị gút thì có phải kiêng hẳn thịt bò với hải sản cả đời không?",
+      "problem": "Clustering in co_xuong_khop: gout takes 3 of 10 slots (Q100 diet, Q105 urate target, Q108 acute gout vs septic arthritis), on top of 2 osteoarthritis (Q103, Q106), 2 rheumatoid arthritis (Q102, Q107) and 2 bone (Q101, Q104). Only Q109 reaches outside those four diseases; no lupus/connective-tissue arthritis, no soft-tissue rheumatism, no osteoarthritis of hand or hip, no polymyalgia rheumatica.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Bệnh nhân nam 45 tuổi đau ngực khi gắng sức nhưng điện tâm đồ lúc nghỉ bình thường nên đã loại trừ được bệnh mạch vành, vậy nên khảo sát tiếp cơ quan nào để tìm nguyên nhân?",
+      "problem": "Shares its distinguishing stem with Q8 (tim_mach/differential_or_workup): \"Bệnh nhân trẻ đi khám vì hồi hộp trống ngực thành cơn, điện tim lúc nghỉ hoàn toàn bình thường...\". Both hinge on a normal resting ECG in a symptomatic patient. Because Q8 already establishes in-set that a normal resting ECG does not exclude anything, the false-premise trap in Q133 is partly telegraphed by the rest of the list.",
+      "severity": "note"
+    },
+    {
+      "auditor": "grid",
+      "question": "Đi ngoài ra máu mấy tháng nay có phải ung thư đại tràng không? Em mới 32 tuổi thì có cần đi nội soi luôn không?",
+      "problem": "Shares its presenting complaint with Q48 (tieu_hoa/differential_or_workup): \"Bệnh nhân trẻ đi ngoài phân nhầy máu kéo dài nhiều tháng, sụt cân...\". Both are months of bloody stool in a young adult; the correct answers overlap on the colonoscopy indication and the red-flag reasoning, differing mainly in whether the endpoint framed is CRC or IBD. Not a duplicate, but the stem should be varied so the two are not answered from the same retrieved passage.",
+      "severity": "note"
+    }
+  ],
+  "rules_enforced": [
+    "disjoint from medqa_topic_gold_v2 and determinism_queries_v1, exact and normalised",
+    "no internal near-duplicate pair above jaccard 0.72",
+    "unique query_id, non-empty question, no surrounding whitespace"
+  ],
+  "lock": "This file is FROZEN. It must not be edited after any condition has been run against it; re-run with --verify to confirm the hash still matches what a result artifact recorded."
+}

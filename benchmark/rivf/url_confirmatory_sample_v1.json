@@ -1,0 +1,2708 @@
+{
+  "what_this_is": "A CONFIRMATORY sample: host-stratified, chunk-PPS, drawn only from URLs never probed, frozen before any request. It exists because the first pass blended a frozen 289 with an adaptive 78 chosen after seeing outcomes, and because equal-probability sampling made the chunk-weighted estimator unstable.",
+  "provenance": {
+    "population": "benchmark/rivf/url_population_v4.json",
+    "population_sha256": "06af0f7009ac43ed0c2f4c2047345a944c61e1a1684ad6b021fb84f5755c94f5",
+    "excluded_because_already_probed": 367,
+    "seed": 20260908,
+    "target": 250,
+    "per_host_min_max": [
+      5,
+      25
+    ],
+    "frozen_before_any_request": true,
+    "design": "Stratified by host; allocation proportional to host chunk mass with a floor and a cap; within host, systematic PPS by chunk count with a random start, certainty units removed first. Every inclusion probability is recorded per URL, so the estimator need not assume the design.",
+    "why_pps": "The estimand is chunk-weighted. Under equal-probability sampling the HT estimator returned 1.0047 on the exploratory data -- a probability above one -- because weight and inclusion probability were unrelated. With pi_i proportional to c_i the ratio c_i/pi_i is constant, removing that instability at the design stage rather than patching it in the formula."
+  },
+  "n": 174,
+  "hosts": 21,
+  "allocation": {
+    "nihseniorhealth.gov": 5,
+    "viendinhduong.vn": 5,
+    "www.cdc.gov": 5,
+    "www.nhlbi.nih.gov": 5,
+    "www.niddk.nih.gov": 5,
+    "www.ninds.nih.gov": 5,
+    "dav.gov.vn": 7,
+    "ghr.nlm.nih.gov": 9,
+    "kcb.vn": 6,
+    "medlineplus.gov": 5,
+    "rarediseases.info.nih.gov": 11,
+    "tapchiyhocvietnam.vn": 25,
+    "www.cancer.gov": 25,
+    "www.mayoclinic.org": 5,
+    "www.msdmanuals.com": 6,
+    "www.ncbi.nlm.nih.gov": 5,
+    "www.nccih.nih.gov": 5,
+    "www.nhs.uk": 5,
+    "www.nlm.nih.gov": 5,
+    "www.uspreventiveservicestaskforce.org": 5,
+    "www.who.int": 20
+  },
+  "urls": [
+    {
+      "url": "http://nihseniorhealth.gov/breastcancer/toc.html",
+      "host": "nihseniorhealth.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 85,
+      "titles": [
+        "Breast Cancer"
+      ],
+      "inclusion_probability": 0.26763224,
+      "host_population_urls": 40,
+      "host_population_chunks": 1588,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://nihseniorhealth.gov/copd/toc.html",
+      "host": "nihseniorhealth.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 27,
+      "titles": [
+        "COPD"
+      ],
+      "inclusion_probability": 0.08501259,
+      "host_population_urls": 40,
+      "host_population_chunks": 1588,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://nihseniorhealth.gov/lungcancer/toc.html",
+      "host": "nihseniorhealth.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 52,
+      "titles": [
+        "Lung Cancer"
+      ],
+      "inclusion_probability": 0.16372796,
+      "host_population_urls": 40,
+      "host_population_chunks": 1588,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://nihseniorhealth.gov/osteoarthritis/toc.html",
+      "host": "nihseniorhealth.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 47,
+      "titles": [
+        "Osteoarthritis"
+      ],
+      "inclusion_probability": 0.14798489,
+      "host_population_urls": 40,
+      "host_population_chunks": 1588,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://nihseniorhealth.gov/urinaryincontinence/toc.html",
+      "host": "nihseniorhealth.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 28,
+      "titles": [
+        "Urinary Incontinence"
+      ],
+      "inclusion_probability": 0.08816121,
+      "host_population_urls": 40,
+      "host_population_chunks": 1588,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://viendinhduong.vn/storage/app/uploads/public/2025/11/01/y2024_m11_d30_luat_30_qh_luat_du_lieu.pdf",
+      "host": "viendinhduong.vn",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "chunks": 67,
+      "titles": [
+        "Người ký: CỔNG THÔNG TIN ĐIỆN TỬ CHÍNH PHỦ Email: [e-mail withheld] Cơ quan: VĂN PHÒNG CHÍNH PHỦ Thời gian ký: 07.01.2025 16:34:12 +07:00"
+      ],
+      "inclusion_probability": 0.13341298,
+      "host_population_urls": 372,
+      "host_population_chunks": 2511,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://viendinhduong.vn/vi/article/tin-tuc/vien-dinh-duong-va-quy-cham-yeu-thuong-ky-ket-bien-ban-ghi-nho-hop-tac-huong-toi-tang-cuong-ho-tro-dinh-duong-cho-tre-em-vung-kho-khan-692b0fcc06a47b2ed60b1305",
+      "host": "viendinhduong.vn",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "chunks": 8,
+      "titles": [
+        "Gii thiu chung Chc nng nhim v"
+      ],
+      "inclusion_probability": 0.01592991,
+      "host_population_urls": 372,
+      "host_population_chunks": 2511,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.cdc.gov/cfs",
+      "host": "www.cdc.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 21,
+      "titles": [
+        "Chronic Fatigue Syndrome (CFS)"
+      ],
+      "inclusion_probability": 0.18716578,
+      "host_population_urls": 58,
+      "host_population_chunks": 561,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.cdc.gov/parasites/angiostrongylus/",
+      "host": "www.cdc.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 11,
+      "titles": [
+        "Parasites - Angiostrongyliasis (also known as Angiostrongylus Infection)"
+      ],
+      "inclusion_probability": 0.09803922,
+      "host_population_urls": 58,
+      "host_population_chunks": 561,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.cdc.gov/parasites/leishmaniasis/index.html",
+      "host": "www.cdc.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 10,
+      "titles": [
+        "Parasites - Leishmaniasis"
+      ],
+      "inclusion_probability": 0.08912656,
+      "host_population_urls": 58,
+      "host_population_chunks": 561,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.cdc.gov/tb",
+      "host": "www.cdc.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 23,
+      "titles": [
+        "Tuberculosis (TB)"
+      ],
+      "inclusion_probability": 0.20499109,
+      "host_population_urls": 58,
+      "host_population_chunks": 561,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/aplastic",
+      "host": "www.nhlbi.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 24,
+      "titles": [
+        "Aplastic Anemia"
+      ],
+      "inclusion_probability": 0.05813953,
+      "host_population_urls": 80,
+      "host_population_chunks": 2064,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/ha",
+      "host": "www.nhlbi.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 29,
+      "titles": [
+        "Hemolytic Anemia"
+      ],
+      "inclusion_probability": 0.07025194,
+      "host_population_urls": 80,
+      "host_population_chunks": 2064,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/heartattack",
+      "host": "www.nhlbi.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 40,
+      "titles": [
+        "Heart Attack"
+      ],
+      "inclusion_probability": 0.09689922,
+      "host_population_urls": 80,
+      "host_population_chunks": 2064,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/nar",
+      "host": "www.nhlbi.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 22,
+      "titles": [
+        "Narcolepsy"
+      ],
+      "inclusion_probability": 0.05329457,
+      "host_population_urls": 80,
+      "host_population_chunks": 2064,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/thalassemia",
+      "host": "www.nhlbi.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 26,
+      "titles": [
+        "Thalassemias"
+      ],
+      "inclusion_probability": 0.0629845,
+      "host_population_urls": 80,
+      "host_population_chunks": 2064,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/Diabetes/diabetes-heart-disease-stroke/Pages/index.aspx",
+      "host": "www.niddk.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 25,
+      "titles": [
+        "Diabetes, Heart Disease, and Stroke"
+      ],
+      "inclusion_probability": 0.04552076,
+      "host_population_urls": 140,
+      "host_population_chunks": 2746,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/digestive-diseases/gas/Pages/ez.aspx",
+      "host": "www.niddk.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 13,
+      "titles": [
+        "What I need to know about Gas"
+      ],
+      "inclusion_probability": 0.02367079,
+      "host_population_urls": 140,
+      "host_population_chunks": 2746,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/digestive-diseases/wilson-disease/Pages/facts.aspx",
+      "host": "www.niddk.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 30,
+      "titles": [
+        "Wilson Disease"
+      ],
+      "inclusion_probability": 0.05462491,
+      "host_population_urls": 140,
+      "host_population_chunks": 2746,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/kidney-disease/polycystic-kidney-disease-pkd/Pages/facts.aspx",
+      "host": "www.niddk.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 25,
+      "titles": [
+        "Polycystic Kidney Disease"
+      ],
+      "inclusion_probability": 0.04552076,
+      "host_population_urls": 140,
+      "host_population_chunks": 2746,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/urologic-disease/urinary-incontinence-in-men/Pages/facts.aspx",
+      "host": "www.niddk.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 45,
+      "titles": [
+        "Urinary Incontinence in Men"
+      ],
+      "inclusion_probability": 0.08193736,
+      "host_population_urls": 140,
+      "host_population_chunks": 2746,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/behcet/behcet.htm",
+      "host": "www.ninds.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 5,
+      "titles": [
+        "Behcet's Disease"
+      ],
+      "inclusion_probability": 0.01760563,
+      "host_population_urls": 265,
+      "host_population_chunks": 1420,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/dementiawithlewybodies/dementiawithlewybodies.htm",
+      "host": "www.ninds.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 5,
+      "titles": [
+        "Dementia With Lewy Bodies"
+      ],
+      "inclusion_probability": 0.01760563,
+      "host_population_urls": 265,
+      "host_population_chunks": 1420,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/kearns_sayre/kearns_sayre.htm",
+      "host": "www.ninds.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 5,
+      "titles": [
+        "Kearns-Sayre Syndrome"
+      ],
+      "inclusion_probability": 0.01760563,
+      "host_population_urls": 265,
+      "host_population_chunks": 1420,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/pelizaeus_merzbacher/pelizaeus_merzbacher.htm",
+      "host": "www.ninds.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 6,
+      "titles": [
+        "Pelizaeus-Merzbacher Disease"
+      ],
+      "inclusion_probability": 0.02112676,
+      "host_population_urls": 265,
+      "host_population_chunks": 1420,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/tarlov_cysts/tarlov_cysts.htm",
+      "host": "www.ninds.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 6,
+      "titles": [
+        "Tarlov Cysts"
+      ],
+      "inclusion_probability": 0.02112676,
+      "host_population_urls": 265,
+      "host_population_chunks": 1420,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/cac-phu-luc-cua-hiep-dinh-my-pham-asean-ve-cac-chat-su-dung-trong-my-pham-cap-nhat-ngay-06122024-annex-n4790.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 564,
+      "titles": [
+        "Annex%20ii%20release 6 dec 2024",
+        "Annex%20iii release 6 dec 2024",
+        "Annex%20iv%20part%201%20release 15 dec 2023"
+      ],
+      "inclusion_probability": 0.54993732,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/cong-van-so-1938qld-mp-ve-viec-cap-nhat-quy-dinh-ve-cac-chat-su-dung-trong-my-pham-sau-ky-hop-acc-41-amp;-acsb-41-n4933.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 540,
+      "titles": [
+        "Annex%20ii%20release 2nd%20july%202025%20clean",
+        "Annex%20iii release 2nd%20july%202025%20clean",
+        "Qld mp signed"
+      ],
+      "inclusion_probability": 0.52653573,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/cong-van-so-684qld-cl-ve-viec-cong-bo-ket-qua-danh-gia-dap-ung-gmp-cua-co-so-san-xuat-nuoc-ngoai-dot-50-n5225.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 128,
+      "titles": [
+        "C%c3%b4ng%20b%e1%bb%91%20gmp%20nn%20%c4%90%e1%bb%a3t%2050%20 %20danh%20s%c3%a1ch%20%c4%90%e1%ba%a1t signed",
+        "C%c3%b4ng%20b%e1%bb%91%20gmp%20nn%20%c4%90%e1%bb%a3t%2050%20 %20danh%20s%c3%a1ch%20%c4%90i%e1%bb%81u%20ch%e1%bb%89nh signed",
+        "C%c3%b4ng%20b%e1%bb%91%20gmp%20nn%20%c4%90%e1%bb%a3t%2050%20 %20danh%20s%c3%a1ch%20gi%e1%ba%a3i%20tr%c3%acnh signed"
+      ],
+      "inclusion_probability": 0.12480847,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/info-document-256.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 290,
+      "titles": [
+        "MẪU HỒ SƠ MỜI THẦU MUA THUỐC ÁP DỤNG PHƯƠNG THỨC MỘT GIAI ĐOẠN HAI TÚI HỒ SƠ - Chỉ áp dụng nội dung này đối với trường hợp đấu thầu hạn chế.",
+        "MẪU HỒ SƠ MỜI THẦU MUA THUỐC ÁP DỤNG PHƯƠNG THỨC MỘT GIAI ĐOẠN HAI TÚI HỒ SƠ - Quy định này không áp dụng đối với gói thầu thuốc biệt dược gốc hoặc tương đương điều trị.",
+        "MẪU HỒ SƠ MỜI THẦU MUA THUỐC ÁP DỤNG PHƯƠNG THỨC MỘT GIAI ĐOẠN HAI TÚI HỒ SƠ - Trường hợp áp dụng phương pháp này thì xóa bỏ Khoản 5.1. Phương pháp giá thấp nhất và Khoản 5.2 Phương pháp giá đánh giá."
+      ],
+      "inclusion_probability": 0.28276919,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/info-document-302.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 338,
+      "titles": [
+        "Bao cao danh gia tắc dong 09 1 2025",
+        "Bao cao tổng ket thi hanh 09 01 2025 - Điều này.",
+        "Du thao to trinh chinh phụ 08125 dang tại - - Khoản 2 Điều 1 Luật số 44/2024/QH15: Quy định trách nhiệm của các Bộ, cơ quan ngang Bộ thực hiện quản"
+      ],
+      "inclusion_probability": 0.32957236,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/info-document-304.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 540,
+      "titles": [
+        "Acid ursodeoxycholic sau ntcs",
+        "Baclofen sau ntcs - ml dung dịch acid percloric 0,1 N (CĐ) tương đương với 21,37 mg C10H12ClNO2.",
+        "Bot pha tiem piperacilin va tazobactam sau ntcs"
+      ],
+      "inclusion_probability": 0.52653573,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://dav.gov.vn/quyet-dinh-so-2278qd-byt-vv-cong-bo-tthc-moi-ban-hanhbi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-byt-quy-dinh-tai-nghi-dinh-so-1632025nd-cp-ngay-2962025-cua-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-duoc-n4934.html",
+      "host": "dav.gov.vn",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "chunks": 516,
+      "titles": [
+        "Qd byt signed - Phụ lục I của Nghị định số 163/2025/NĐ-CP;",
+        "Qd byt signed - dưới đây.",
+        "Qd byt signed - hoặc"
+      ],
+      "inclusion_probability": 0.50313414,
+      "host_population_urls": 180,
+      "host_population_chunks": 7179,
+      "host_allocation": 7,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/autoimmune-lymphoproliferative-syndrome",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 12,
+      "titles": [
+        "autoimmune lymphoproliferative syndrome"
+      ],
+      "inclusion_probability": 0.0124424,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/congenital-adrenal-hyperplasia-due-to-11-beta-hydroxylase-deficiency",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 9,
+      "titles": [
+        "congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency"
+      ],
+      "inclusion_probability": 0.0093318,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/cytochrome-p450-oxidoreductase-deficiency",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 10,
+      "titles": [
+        "cytochrome P450 oxidoreductase deficiency"
+      ],
+      "inclusion_probability": 0.01036866,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/hajdu-cheney-syndrome",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 11,
+      "titles": [
+        "Hajdu-Cheney syndrome"
+      ],
+      "inclusion_probability": 0.01140553,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/kuskokwim-syndrome",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 7,
+      "titles": [
+        "Kuskokwim syndrome"
+      ],
+      "inclusion_probability": 0.00725806,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/lymphedema-distichiasis-syndrome",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 6,
+      "titles": [
+        "lymphedema-distichiasis syndrome"
+      ],
+      "inclusion_probability": 0.0062212,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/phosphoglycerate-dehydrogenase-deficiency",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 9,
+      "titles": [
+        "phosphoglycerate dehydrogenase deficiency"
+      ],
+      "inclusion_probability": 0.0093318,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/sickle-cell-disease",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 9,
+      "titles": [
+        "sickle cell disease"
+      ],
+      "inclusion_probability": 0.0093318,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/thiopurine-s-methyltransferase-deficiency",
+      "host": "ghr.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 8,
+      "titles": [
+        "thiopurine S-methyltransferase deficiency"
+      ],
+      "inclusion_probability": 0.00829493,
+      "host_population_urls": 1077,
+      "host_population_chunks": 8680,
+      "host_allocation": 9,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/cong-van/trien-khai-mau-benh-an-mau-giay-phieu-y-theo-thong-tu-so-32-2023-tt-byt-va-tiep-tuc-nghien-cuu-thu-nghiem-thi-diem-mot-s.html?categoryId=101795266",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 183,
+      "titles": [
+        "Cơ quan chủ quản.........................",
+        "KHÁM, CHỮA BỆNH Độc lập – Tự do – Hạnh phúc",
+        "Mã người bệnh .....................…………."
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/du-thao/xin-y-kien-du-thao-nghi-dinh-sua-doi-bo-sung-nghi-dinh-so-96-2023-nd-cp-va-thong-tu-quy-dinh-pham-vi-hanh-nghe-sua-doi-b.html?categoryId=101795266",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 3,
+      "titles": [
+        "Số: /BYT-KCB Hà Nội, ngày tháng năm 2025 V/v xin ý kiến dự thảo Nghị định"
+      ],
+      "inclusion_probability": 0.11111111,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/huong-dan-quy-trinh-ky-thuat-ho-hap-tap-1.1.html?categoryId=101819466",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 1271,
+      "titles": [
+        "1. CHỌC DÒ DỊCH MÀNG PHỔI",
+        "10. CHỌC HÚT MỦ MÀNG PHỔI, Ổ ÁP XE PHỔI",
+        "11. BƠM THUỐC CHỐNG DÍNH VÀO KHOANG MÀNG PHỔI"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/huong-dan-quy-trinh-ky-thuat-ve-vi-sinh-tap-1.html?categoryId=101819466",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 4599,
+      "titles": [
+        "1. Vi khuẩn nhuộm soi",
+        "10. Plasmodium (Ký sinh trùng sốt rét) nhuộm soi định tính",
+        "100. Chlamydia trachomatis IgM miễn dịch bán tự động"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/huong-dan-quy-trinh-ky-thuat-ve-vi-sinh-tap-2.html?categoryId=101819466",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 298,
+      "titles": [
+        "1. Chính phủ, Nghị định số 103/2016/NĐ-CP ngày 01/7/2016 quy định về bảo đảm",
+        "1. Vi khuẩn kị khí kháng thuốc định lượng MIC",
+        "10. NTM (Nontuberculous mycobacteria) định danh Real-time PCR"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/tai-lieu-tap-huan-ghi-nhan-phieu-chan-doan-nguyen-nhan-tu-vong-va-thong-ke-tu-vong-tai-cac-co-so-kcb.html?categoryId=101795265,101819452,101795271,101795273,101797445,101819456,101819457,101819458,101796492,101819460,101819461,101819462,101819463,101819464,101819465,101795267,101795286,101795511,101795512,101795513,101795514,101795287,101795272,101819467,101819469,101819470",
+      "host": "kcb.vn",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "chunks": 125,
+      "titles": [
+        "CỤC QUẢN LÝ KHÁM, CHỮA BỆNH",
+        "Giấy chứng nhận Y tếvềNNTV",
+        "PHẦN MỀM GHI NHẬN PHIẾU CHẨN"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 9,
+      "host_population_chunks": 6503,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://medlineplus.gov/analcancer.html",
+      "host": "medlineplus.gov",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "chunks": 5,
+      "titles": [
+        "Anal Cancer"
+      ],
+      "inclusion_probability": 0.04065041,
+      "host_population_urls": 192,
+      "host_population_chunks": 615,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://medlineplus.gov/backpain.html",
+      "host": "medlineplus.gov",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "chunks": 2,
+      "titles": [
+        "Back Pain"
+      ],
+      "inclusion_probability": 0.01626016,
+      "host_population_urls": 192,
+      "host_population_chunks": 615,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://medlineplus.gov/benigntumors.html",
+      "host": "medlineplus.gov",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "chunks": 1,
+      "titles": [
+        "Benign Tumors"
+      ],
+      "inclusion_probability": 0.00813008,
+      "host_population_urls": 192,
+      "host_population_chunks": 615,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://medlineplus.gov/spanish/aphasia.html",
+      "host": "medlineplus.gov",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "chunks": 7,
+      "titles": [
+        "Afasia"
+      ],
+      "inclusion_probability": 0.05691057,
+      "host_population_urls": 192,
+      "host_population_chunks": 615,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://medlineplus.gov/spanish/foodallergy.html",
+      "host": "medlineplus.gov",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "chunks": 6,
+      "titles": [
+        "Alergia a los alimentos"
+      ],
+      "inclusion_probability": 0.04878049,
+      "host_population_urls": 192,
+      "host_population_chunks": 615,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/1049/cadasil",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 10,
+      "titles": [
+        "CADASIL"
+      ],
+      "inclusion_probability": 0.00980742,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10766/factor-xiii-deficiency",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 9,
+      "titles": [
+        "Factor XIII deficiency"
+      ],
+      "inclusion_probability": 0.00882668,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/182/best-vitelliform-macular-dystrophy",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 10,
+      "titles": [
+        "Best vitelliform macular dystrophy"
+      ],
+      "inclusion_probability": 0.00980742,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/246/schisis-association",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 3,
+      "titles": [
+        "Schisis association"
+      ],
+      "inclusion_probability": 0.00294223,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/4439/punctate-palmoplantar-keratoderma-type-2",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Punctate palmoplantar keratoderma type 2"
+      ],
+      "inclusion_probability": 0.00196148,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/5168/coccygodynia",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 5,
+      "titles": [
+        "Coccygodynia"
+      ],
+      "inclusion_probability": 0.00490371,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/5893/bartter-syndrome",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 15,
+      "titles": [
+        "Bartter syndrome"
+      ],
+      "inclusion_probability": 0.01471113,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/6500/giant-axonal-neuropathy",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 5,
+      "titles": [
+        "Giant axonal neuropathy"
+      ],
+      "inclusion_probability": 0.00490371,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/7720/synovial-chondromatosis-familial-with-dwarfism",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Synovial chondromatosis, familial with dwarfism"
+      ],
+      "inclusion_probability": 0.00196148,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/8394/hypolipoproteinemia",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 6,
+      "titles": [
+        "Hypolipoproteinemia"
+      ],
+      "inclusion_probability": 0.00588445,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/932/book-syndrome",
+      "host": "rarediseases.info.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 8,
+      "titles": [
+        "Book syndrome"
+      ],
+      "inclusion_probability": 0.00784593,
+      "host_population_urls": 2665,
+      "host_population_chunks": 11216,
+      "host_allocation": 11,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10072",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 25,
+      "titles": [
+        "THỰC TRẠNG KHÁNG KHÁNG SINH CỦA CÁC CHỦNG VI KHUẨN AEROMONAS SPP. PHÂN LẬP TẠI BỆNH VIỆN QUÂN Y 103"
+      ],
+      "inclusion_probability": 0.00475589,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/1063",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 20,
+      "titles": [
+        "THỜI GIAN SỐNG THÊM SAU MỔ CẮT KHỐI TÁ TỤY VÀ CÁC YẾU TỐ LIÊN QUAN"
+      ],
+      "inclusion_probability": 0.00380471,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11111",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 15,
+      "titles": [
+        "CAN THIỆP ĐẶT STENT GRAFT CHO PHÌNH ĐỘNG MẠCH CHỦ BỤNG DƯỚI THẬN CÓ GIẢI PHẪU CỔ KHÓ"
+      ],
+      "inclusion_probability": 0.00285353,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11444",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 22,
+      "titles": [
+        "PHƯƠNG PHÁP ĐIỀU TRỊ NGỪNG THỞ DO TẮC NGHẼN Ở TRẺ EM: TỔNG QUAN LUẬN ĐIỂM"
+      ],
+      "inclusion_probability": 0.00418518,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11871",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 12,
+      "titles": [
+        "ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ VIÊM MẠN TÍNH CỦA NANG LÔNG TUYẾN BÃ THÔNG THƯỜNG MỨC ĐỘ TRUNG BÌNH, NẶNG TẠI BỆNH VIỆN DA LIỄU CẦN THƠ NĂM 2023-2024"
+      ],
+      "inclusion_probability": 0.00228283,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12386",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 15,
+      "titles": [
+        "NHẬN XÉT MỘT SỐ NGUYÊN NHÂN GÂY PHÙ THAI VÀ PHÙ THAI RAU TẠI BỆNH VIỆN PHỤ SẢN TRUNG ƯƠNG"
+      ],
+      "inclusion_probability": 0.00285353,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12534",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 32,
+      "titles": [
+        "THỰC TRẠNG KHÁNG KHÁNG SINH CỦA VI KHUẨN GRAM ÂM GÂY NHIỄM KHUẨN HUYẾT TẠI BỆNH VIỆN UNG BƯỚU NGHỆ AN GIAI ĐOẠN 2020-2024"
+      ],
+      "inclusion_probability": 0.00608754,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13014",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 21,
+      "titles": [
+        "NHẬN XÉT MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG NHỮNG BỆNH NHÂN ĐƯỢC PHẪU THUẬT TRƯỢT THÂN ĐỐT SỐNG HAI TẦNG LIỀN KỀ VÙNG THẮT LƯNG TẠI BỆNH VIỆN QUÂN Y 175"
+      ],
+      "inclusion_probability": 0.00399495,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14039",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 17,
+      "titles": [
+        "KẾT QUẢ ĐIỀU TRỊ GÃY KÍN ĐẦU NGOÀI XƯƠNG ĐÒN BẰNG KẾT HỢP XƯƠNG NẸP VÍT KHÓA ĐA HƯỚNG TẠI BỆNH VIỆN QUÂN Y 175"
+      ],
+      "inclusion_probability": 0.003234,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14597",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 29,
+      "titles": [
+        "THỜI GIAN SỐNG THÊM Ở BỆNH NHÂN U LYMPHO TẾ BÀO ÁO ĐIỀU TRỊ TẠI VIỆN HUYẾT HỌC – TRUYỀN MÁU TRUNG ƯƠNG GIAI ĐOẠN 2021–2024"
+      ],
+      "inclusion_probability": 0.00551683,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14863",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 24,
+      "titles": [
+        "NHIỄM TOAN NẶNG VÀ MỐI LIÊN QUAN VỚI TỬ VONG Ở BỆNH NHÂN SỐC NHIỄM KHUẨN"
+      ],
+      "inclusion_probability": 0.00456565,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15210",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 31,
+      "titles": [
+        "HIỆU QUẢ ĐIỀU TRỊ CỦA XẠ TRỊ ĐƠN THUẦN VÀ HÓA XẠ ĐỒNG THỜI TRÊN NGƯỜI BỆNH UNG THƯ VÒM MŨI HỌNG"
+      ],
+      "inclusion_probability": 0.0058973,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15596",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 27,
+      "titles": [
+        "NGHIÊN CỨU GIÁ TRỊ TIÊN LƯỢNG ĐIỀU TRỊ CỦA CHỈ SỐ NLR, PLR TRONG UNG THƯ BIỂU MÔ TẾ BÀO GAN TẠI BỆNH VIỆN QUÂN Y 103"
+      ],
+      "inclusion_probability": 0.00513636,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15929",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 20,
+      "titles": [
+        "KHẢO SÁT HÌNH THÁI VÀ CHỨC NĂNG NHĨ TRÁI BẰNG SIÊU ÂM TIM Ở BỆNH NHÂN BỆNH THẬN MẠN TÍNH GIAI ĐOẠN CUỐI TRƯỚC VÀ SAU GHÉP THẬN"
+      ],
+      "inclusion_probability": 0.00380471,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16112",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 24,
+      "titles": [
+        "KẾT QUẢ PHẪU THUẬT NỘI SOI ĐIỀU TRỊ U BUỒNG TRỨNG TẠI BỆNH VIỆN SẢN NHI HƯNG YÊN"
+      ],
+      "inclusion_probability": 0.00456565,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16434",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 23,
+      "titles": [
+        "BIẾN ĐỔI GIẢI PHẪU MẢNH GHÉP GAN PHẢI TỪ NGƯỜI HIẾN SỐNG TẠI BỆNH VIỆN TRUNG ƯƠNG QUÂN ĐỘI 108"
+      ],
+      "inclusion_probability": 0.00437542,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17281",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 27,
+      "titles": [
+        "KIẾN THỨC, THÁI ĐỘ, HÀNH VI CHĂM SÓC SỨC KHOẺ RĂNG MIỆNG CỦA SINH VIÊN NĂM NHẤT VÀ NĂM HAI TRƯỜNG ĐẠI HỌC KHOA HỌC XÃ HỘI & NHÂN VĂN, HÀ NỘI NĂM 2025"
+      ],
+      "inclusion_probability": 0.00513636,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17929",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 22,
+      "titles": [
+        "MỐI LIÊN QUAN GIỮA TỶ LỆ CREATININE/CYSTATIN C VỚI TỔN THƯƠNG THẬN Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG"
+      ],
+      "inclusion_probability": 0.00418518,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/579",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 25,
+      "titles": [
+        "NGHIÊN CỨU BÀO CHẾ VIÊN NÉN ACID ALPHA LIPOIC 300 MG"
+      ],
+      "inclusion_probability": 0.00475589,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/679",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 20,
+      "titles": [
+        "NGHIÊN CỨU TÌNH TRẠNG NHIỄM MỘT SỐ VIRUS VÀ MỐI LIÊN QUAN ĐẾN ĐÁI THÁO ĐƯỜNG SAU GHÉP THẬN"
+      ],
+      "inclusion_probability": 0.00380471,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/856",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 17,
+      "titles": [
+        "KẾT QUẢ NẸP VÍT QUA CUỐNG ĐIỀU TRỊ GÃY CỘT SỐNG ĐOẠN BẢN LỀ NGỰC THẮT LƯNG MẤT VỮNG TẠI BỆNH VIỆN ĐA KHOA TỈNH NINH BÌNH"
+      ],
+      "inclusion_probability": 0.003234,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9016",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 12,
+      "titles": [
+        "ĐÁNH GIÁ SỰ CẢI THIỆN MỨC ĐỘ ĐAU Ở BỆNH NHÂN ĐAU THẮT LƯNG ĐƯỢC ĐIỀU TRỊ BẰNG ĐIỆN CHÂM, XOA BÓP BẤM HUYỆT KẾT HỢP SIÊU ÂM TRỊ LIỆU"
+      ],
+      "inclusion_probability": 0.00228283,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9245",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 16,
+      "titles": [
+        "NGHIÊN CỨU SỰ HIỂU BIẾT VỀ CÔNG TÁC XÃ HỘI VÀ CÁC YẾU TỐ LIÊN QUAN CỦA NHÂN VIÊN Y TẾ LÂM SÀNG TẠI BỆNH VIỆN PHỤ SẢN HÀ NỘI"
+      ],
+      "inclusion_probability": 0.00304377,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9482",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 20,
+      "titles": [
+        "TÁC DỤNG CỦA VIÊN NÉN “PHONG THẤP ĐAN” ĐIỀU TRỊ ĐAU THẮT LƯNG DO THOÁI HÓA CỘT SỐNG"
+      ],
+      "inclusion_probability": 0.00380471,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9757",
+      "host": "tapchiyhocvietnam.vn",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "chunks": 26,
+      "titles": [
+        "NGHIÊN CỨU ĐỘ ỔN ĐỊNH ĐỒNG THỜI CỦA GLUCOSE HUYẾT TƯƠNG VÀ HBA1C TRONG MÁU TOÀN PHẦN Ở CÁC ĐIỀU KIỆN NHIỆT ĐỘ KHÁC NHAU"
+      ],
+      "inclusion_probability": 0.00494613,
+      "host_population_urls": 6389,
+      "host_population_chunks": 131416,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://viendinhduong.vn/storage/app/uploads/public/2025/09/18/dich_vu_xet_nghiem_vi_chat_dinh_duong.pdf",
+      "host": "viendinhduong.vn",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "chunks": 2,
+      "titles": [
+        "Xét nghiệm vi chất dinh dưỡng"
+      ],
+      "inclusion_probability": 0.00398248,
+      "host_population_urls": 372,
+      "host_population_chunks": 2511,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://viendinhduong.vn/vi/article-bidding/tin-dau-thau-bao-gia/tmbg-101_20260424_thu-moi-bao-gia-ve-viec-kiem-dinh-kiem-xa-may-dxa-69ead910f6b81cecae0d2055",
+      "host": "viendinhduong.vn",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "chunks": 6,
+      "titles": [
+        "(TMBG 101_20260424)_Thư mời báo giá Về việc kiểm định, kiểm xạ máy DXA"
+      ],
+      "inclusion_probability": 0.01194743,
+      "host_population_urls": 372,
+      "host_population_chunks": 2511,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://viendinhduong.vn/vi/professional-activities/tin-tuc-su-kien-hoi-thao-khoa-hoc/ung-dung-tri-tue-nhan-tao-ai-trong-cham-soc-suc-khoe-694b55f37e48aea4af0e6694",
+      "host": "viendinhduong.vn",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "chunks": 8,
+      "titles": [
+        "Ứng dụng trí tuệ nhân tạo (AI) trong chăm sóc sức khỏe"
+      ],
+      "inclusion_probability": 0.01592991,
+      "host_population_urls": 372,
+      "host_population_chunks": 2511,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/managing-care/track-care-costs",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 28,
+      "titles": [
+        "Costs & Medical Information"
+      ],
+      "inclusion_probability": 0.01796115,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/treatment/drugs/nivolumab",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 6,
+      "titles": [
+        "nivolumab"
+      ],
+      "inclusion_probability": 0.00384882,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/mouth-throat/oral-complications-hp-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 128,
+      "titles": [
+        "Oral Complications of Cancer Therapies (PDQ®)"
+      ],
+      "inclusion_probability": 0.08210813,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/cancer/tratamiento/mca/paciente/acupuntura-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 181,
+      "titles": [
+        "Acupuntura (PDQ®)"
+      ],
+      "inclusion_probability": 0.11610602,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/ano/pro/tratamiento-ano-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 47,
+      "titles": [
+        "Tratamiento del cáncer de ano (PDQ®)"
+      ],
+      "inclusion_probability": 0.03014908,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/feocromocitoma/pro/tratamiento-feocromocitoma-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 69,
+      "titles": [
+        "Tratamiento del feocromocitoma y el paraganglioma (PDQ®)"
+      ],
+      "inclusion_probability": 0.04426141,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/leucemia/pro/tratamiento-all-adulto-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 80,
+      "titles": [
+        "Tratamiento de la leucemia linfoblástica aguda (PDQ®)"
+      ],
+      "inclusion_probability": 0.05131758,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/linfoma/pro/tratamiento-hodgkin-adultos-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 155,
+      "titles": [
+        "Tratamiento del linfoma de Hodgkin (PDQ®)"
+      ],
+      "inclusion_probability": 0.09942781,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/prostata/pro/tratamiento-prostata-pdq?redirect=true",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 369,
+      "titles": [
+        "Tratamiento del cáncer de próstata (PDQ®)"
+      ],
+      "inclusion_probability": 0.23670233,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/rinon/paciente/tratamiento-rinon-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 121,
+      "titles": [
+        "Tratamiento del cáncer de células renales (PDQ®)"
+      ],
+      "inclusion_probability": 0.07761784,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/testiculo/paciente/tratamiento-testiculo-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 134,
+      "titles": [
+        "Tratamiento del cáncer de testículo (PDQ®)"
+      ],
+      "inclusion_probability": 0.08595694,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/publications/pdq/information-summaries/genetics/risk-assessment-hp-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 177,
+      "titles": [
+        "Cancer Genetics Risk Assessment and Counseling (PDQ®) – health professional"
+      ],
+      "inclusion_probability": 0.11354014,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/brain/hp/child-astrocytoma-glioma-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 189,
+      "titles": [
+        "Childhood Astrocytomas, Other Gliomas, and Glioneuronal/Neuronal Tumors Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.12123778,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/brain/patient/adult-brain-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 69,
+      "titles": [
+        "Adult Central Nervous System Tumors"
+      ],
+      "inclusion_probability": 0.04426141,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 474,
+      "titles": [
+        "Breast Cancer Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.30405665,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/childhood-cancers/late-effects-hp-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 848,
+      "titles": [
+        "Late Effects of Treatment for Childhood Cancer (PDQ®)"
+      ],
+      "inclusion_probability": 0.54396634,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/colorectal/patient/rectal-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 230,
+      "titles": [
+        "Rectal Cancer",
+        "Rectal Cancer Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.14753804,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/kidney/patient/wilms-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 111,
+      "titles": [
+        "Wilms Tumor (PDQ®)",
+        "Wilms Tumor and Other Childhood Kidney Tumors"
+      ],
+      "inclusion_probability": 0.07120314,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/leukemia/patient/child-all-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 662,
+      "titles": [
+        "Childhood Acute Lymphoblastic Leukemia",
+        "Childhood Acute Lymphoblastic Leukemia Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.42465296,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 501,
+      "titles": [
+        "Non-Small Cell Lung Cancer Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.32137634,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/lymphoma/patient/child-hodgkin-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 298,
+      "titles": [
+        "Childhood Hodgkin Lymphoma",
+        "Childhood Hodgkin Lymphoma Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.19115798,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/ovarian/patient/ovarian-epithelial-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 278,
+      "titles": [
+        "Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer",
+        "Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.17832859,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/prostate/hp/prostate-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 329,
+      "titles": [
+        "Prostate Cancer Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.21104354,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/soft-tissue-sarcoma/patient/child-soft-tissue-treatment-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 366,
+      "titles": [
+        "Childhood Soft Tissue Sarcoma",
+        "Childhood Soft Tissue Sarcoma Treatment (PDQ®)"
+      ],
+      "inclusion_probability": 0.23477792,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/stomach/hp/stomach-prevention-pdq",
+      "host": "www.cancer.gov",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "chunks": 42,
+      "titles": [
+        "Stomach (Gastric) Cancer Prevention (PDQ®)"
+      ],
+      "inclusion_probability": 0.02694173,
+      "host_population_urls": 688,
+      "host_population_chunks": 38973,
+      "host_allocation": 25,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.cdc.gov/lead-prevention/news/outbreak-applesauce-pouches.html",
+      "host": "www.cdc.gov",
+      "granularity": "article_or_page",
+      "source_id": "cdc_health_topics",
+      "chunks": 5,
+      "titles": [
+        "Cinnamon Applesauce Pouches"
+      ],
+      "inclusion_probability": 0.04456328,
+      "host_population_urls": 58,
+      "host_population_chunks": 561,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/astrocytoma/symptoms-causes/syc-20576675",
+      "host": "www.mayoclinic.org",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "chunks": 6,
+      "titles": [
+        "Astrocytoma"
+      ],
+      "inclusion_probability": 0.0128041,
+      "host_population_urls": 462,
+      "host_population_chunks": 2343,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187",
+      "host": "www.mayoclinic.org",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "chunks": 12,
+      "titles": [
+        "Basal cell carcinoma"
+      ],
+      "inclusion_probability": 0.02560819,
+      "host_population_urls": 462,
+      "host_population_chunks": 2343,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/chiari-malformation/symptoms-causes/syc-20354010",
+      "host": "www.mayoclinic.org",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "chunks": 5,
+      "titles": [
+        "Arnold-Chiari malformation, also known as Chiari malformation"
+      ],
+      "inclusion_probability": 0.01067008,
+      "host_population_urls": 462,
+      "host_population_chunks": 2343,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118",
+      "host": "www.mayoclinic.org",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "chunks": 13,
+      "titles": [
+        "Heart disease"
+      ],
+      "inclusion_probability": 0.02774221,
+      "host_population_urls": 462,
+      "host_population_chunks": 2343,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/petit-mal-seizure/symptoms-causes/syc-20359683",
+      "host": "www.mayoclinic.org",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "chunks": 5,
+      "titles": [
+        "Absence seizure"
+      ],
+      "inclusion_probability": 0.01067008,
+      "host_population_urls": 462,
+      "host_population_chunks": 2343,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/blood-disorders/platelet-disorders/hemolytic-uremic-syndrome-hus",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "chunks": 6,
+      "titles": [
+        "Hemolytic-Uremic Syndrome (HUS)"
+      ],
+      "inclusion_probability": 0.00563204,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/diagnosis-of-brain-spinal-cord-and-nerve-disorders/medical-history-in-neurologic-disorders",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "chunks": 3,
+      "titles": [
+        "Medical History in Neurologic Disorders"
+      ],
+      "inclusion_probability": 0.00281602,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/skin-disorders/hair-disorders/alopecia-hair-loss",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "chunks": 24,
+      "titles": [
+        "Alopecia, Hair Loss"
+      ],
+      "inclusion_probability": 0.02252816,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/valvular-disorders/mitral-valve-prolapse-mvp",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "chunks": 11,
+      "titles": [
+        "Mitral Valve Prolapse (MVP)"
+      ],
+      "inclusion_probability": 0.01032541,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/critical-care-medicine/how-to-do-basic-airway-procedures/how-to-do-bag-valve-mask-bvm-ventilation",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "chunks": 20,
+      "titles": [
+        "How To Do Bag-Valve-Mask (BVM) Ventilation"
+      ],
+      "inclusion_probability": 0.01877347,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/dental-disorders/temporomandibular-disorders/temporomandibular-myofascial-pain-syndrome",
+      "host": "www.msdmanuals.com",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "chunks": 6,
+      "titles": [
+        "Temporomandibular Myofascial Pain Syndrome"
+      ],
+      "inclusion_probability": 0.00563204,
+      "host_population_urls": 902,
+      "host_population_chunks": 6392,
+      "host_allocation": 6,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/4481656/",
+      "host": "www.ncbi.nlm.nih.gov",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "chunks": 21,
+      "titles": [
+        "Deep Venous Thrombosis Ultrasound Evaluation"
+      ],
+      "inclusion_probability": 0.03289474,
+      "host_population_urls": 75,
+      "host_population_chunks": 3192,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/5042558/",
+      "host": "www.ncbi.nlm.nih.gov",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "chunks": 67,
+      "titles": [
+        "Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD)"
+      ],
+      "inclusion_probability": 0.10494987,
+      "host_population_urls": 75,
+      "host_population_chunks": 3192,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/5072320/",
+      "host": "www.ncbi.nlm.nih.gov",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "chunks": 62,
+      "titles": [
+        "Anterior Myocardial Infarction"
+      ],
+      "inclusion_probability": 0.09711779,
+      "host_population_urls": 75,
+      "host_population_chunks": 3192,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/5485806/",
+      "host": "www.ncbi.nlm.nih.gov",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "chunks": 66,
+      "titles": [
+        "Laboratory Evaluation of Sepsis"
+      ],
+      "inclusion_probability": 0.10338346,
+      "host_population_urls": 75,
+      "host_population_chunks": 3192,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/5839324/",
+      "host": "www.ncbi.nlm.nih.gov",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "chunks": 50,
+      "titles": [
+        "Meningitis"
+      ],
+      "inclusion_probability": 0.0783208,
+      "host_population_urls": 75,
+      "host_population_chunks": 3192,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/are-you-considering-a-complementary-health-approach",
+      "host": "www.nccih.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "chunks": 19,
+      "titles": [
+        "Are You Considering a Complementary Health Approach?"
+      ],
+      "inclusion_probability": 0.04795558,
+      "host_population_urls": 306,
+      "host_population_chunks": 1981,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/espanol/como-encontrar-y-evaluar-recursos-en-linea",
+      "host": "www.nccih.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "chunks": 24,
+      "titles": [
+        "Cómo encontrar y evaluar recursos en línea"
+      ],
+      "inclusion_probability": 0.06057547,
+      "host_population_urls": 306,
+      "host_population_chunks": 1981,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/in-the-news-berberine",
+      "host": "www.nccih.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "chunks": 4,
+      "titles": [
+        "In the News: Berberine"
+      ],
+      "inclusion_probability": 0.01009591,
+      "host_population_urls": 306,
+      "host_population_chunks": 1981,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/providers/digest/nutritional-approaches-for-musculoskeletal-pain-and-inflammation",
+      "host": "www.nccih.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "chunks": 4,
+      "titles": [
+        "Nutritional Approaches for Musculoskeletal Pain and Inflammation"
+      ],
+      "inclusion_probability": 0.01009591,
+      "host_population_urls": 306,
+      "host_population_chunks": 1981,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/sleep-disorders-in-depth",
+      "host": "www.nccih.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "chunks": 32,
+      "titles": [
+        "Sleep Disorders: In Depth"
+      ],
+      "inclusion_probability": 0.08076729,
+      "host_population_urls": 306,
+      "host_population_chunks": 1981,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/gallstones/",
+      "host": "www.nhs.uk",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "chunks": 6,
+      "titles": [
+        "Gallstones"
+      ],
+      "inclusion_probability": 0.01033058,
+      "host_population_urls": 464,
+      "host_population_chunks": 2904,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+      "host": "www.nhs.uk",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "chunks": 1,
+      "titles": [
+        "Osteoarthritis"
+      ],
+      "inclusion_probability": 0.00172176,
+      "host_population_urls": 464,
+      "host_population_chunks": 2904,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/aripiprazole/",
+      "host": "www.nhs.uk",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "chunks": 22,
+      "titles": [
+        "Aripiprazole"
+      ],
+      "inclusion_probability": 0.03787879,
+      "host_population_urls": 464,
+      "host_population_chunks": 2904,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nhs.uk/symptoms/double-vision/",
+      "host": "www.nhs.uk",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "chunks": 4,
+      "titles": [
+        "Double vision"
+      ],
+      "inclusion_probability": 0.00688705,
+      "host_population_urls": 464,
+      "host_population_chunks": 2904,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+      "host": "www.nhs.uk",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "chunks": 9,
+      "titles": [
+        "Gastroscopy"
+      ],
+      "inclusion_probability": 0.01549587,
+      "host_population_urls": 464,
+      "host_population_chunks": 2904,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/bellspalsy.html",
+      "host": "www.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 1,
+      "titles": [
+        "Bell's Palsy"
+      ],
+      "inclusion_probability": 0.00333333,
+      "host_population_urls": 973,
+      "host_population_chunks": 1500,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/commoncold.html",
+      "host": "www.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Common Cold"
+      ],
+      "inclusion_probability": 0.00666667,
+      "host_population_urls": 973,
+      "host_population_chunks": 1500,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/listeriainfections.html",
+      "host": "www.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Listeria Infections"
+      ],
+      "inclusion_probability": 0.00666667,
+      "host_population_urls": 973,
+      "host_population_chunks": 1500,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/respiratorysyncytialvirusinfections.html",
+      "host": "www.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Respiratory Syncytial Virus Infections"
+      ],
+      "inclusion_probability": 0.00666667,
+      "host_population_urls": 973,
+      "host_population_chunks": 1500,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/sicklecellanemia.html",
+      "host": "www.nlm.nih.gov",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "chunks": 2,
+      "titles": [
+        "Sickle Cell Anemia"
+      ],
+      "inclusion_probability": 0.00666667,
+      "host_population_urls": 973,
+      "host_population_chunks": 1500,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breastfeeding-primary-care-interventions-october-2016",
+      "host": "www.uspreventiveservicestaskforce.org",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "chunks": 17,
+      "titles": [
+        "(October 2016)"
+      ],
+      "inclusion_probability": 0.11564626,
+      "host_population_urls": 172,
+      "host_population_chunks": 735,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/depression-in-children-and-adolescents-screening-2009",
+      "host": "www.uspreventiveservicestaskforce.org",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "chunks": 3,
+      "titles": [
+        "(March 2009)"
+      ],
+      "inclusion_probability": 0.02040816,
+      "host_population_urls": 172,
+      "host_population_chunks": 735,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-children-and-adolescents-screening-june-2017",
+      "host": "www.uspreventiveservicestaskforce.org",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "chunks": 54,
+      "titles": [
+        "(June 2017)"
+      ],
+      "inclusion_probability": 0.36734694,
+      "host_population_urls": 172,
+      "host_population_chunks": 735,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/preeclampsia-screening-april-2017",
+      "host": "www.uspreventiveservicestaskforce.org",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "chunks": 2,
+      "titles": [
+        "(April 2017)"
+      ],
+      "inclusion_probability": 0.01360544,
+      "host_population_urls": 172,
+      "host_population_chunks": 735,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/syphilis-infection-in-pregnancy-screening-september-2018",
+      "host": "www.uspreventiveservicestaskforce.org",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "chunks": 2,
+      "titles": [
+        "(September 2018)"
+      ],
+      "inclusion_probability": 0.01360544,
+      "host_population_urls": 172,
+      "host_population_chunks": 735,
+      "host_allocation": 5,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/about-us/accountability/budget",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 817,
+      "titles": [
+        "SEVENTY-FIFTH WORLD HEALTH ASSEMBLY",
+        "SEVENTY-SIXTH WORLD HEALTH ASSEMBLY",
+        "SEVENTY-SIXTH WORLD HEALTH ASSEMBLY A76/4 Add.2 Provisional agenda item 11 10 May 2023 Draft resolution:"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/about-us/governance/governing-bodies-website",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 1064,
+      "titles": [
+        "BASIC DOCUMENTS Forty-ninth edition",
+        "EXECUTIVE BOARD EB151(2)",
+        "REVISED TERMS OF REFERENCE OF THE INDEPENDENT EXPERT"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/about-us/governance/member-states-portal",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 3291,
+      "titles": [
+        "2024 EVALUATION ANNUAL REPORT ANNEX TO DOCUMENT EB154/41",
+        "AUDITED FINANCIAL STATEMENTS",
+        "Departmental HQ Directors*: nationality"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/data/dashboards/triple-billion-progress",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 666,
+      "titles": [
+        "3B Forecasting Methods 19 May, 2023 Contents Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "Metadata WHO Results Framework:"
+      ],
+      "inclusion_probability": 0.87697517,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/data/data-collection/civil-registration-and-vital-statistics",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 727,
+      "titles": [
+        "Report on Monitoring of Vital Events",
+        "Revealing the Toll of",
+        "Systematic Review of"
+      ],
+      "inclusion_probability": 0.95729872,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/data/data-collection/civil-registration-and-vital-statistics",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 727,
+      "titles": [
+        "Report on Monitoring of Vital Events",
+        "Revealing the Toll of",
+        "Systematic Review of"
+      ],
+      "inclusion_probability": 0.95729872,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 935,
+      "titles": [
+        "SUMMARY OF CRISIS AND KEY FINDINGS",
+        "Summary of Crisis and Key Findings",
+        "WHO’S HEALTH EMERGENCY APPEAL 2025"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies/emergencies/cholera",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 131,
+      "titles": [
+        "INVESTING TO SUSTAINABLY CONTROL CHOLERA",
+        "PREPAREDNESS, READINESS AND"
+      ],
+      "inclusion_probability": 0.17249812,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies/emergencies/greater-horn-of-africa",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 952,
+      "titles": [
+        "9.90M 11.70M 11.64M 11.48M",
+        "GREATER HORN OF AFRICA",
+        "Greater Horn of Africa"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies/news/rapid-risk-assessment",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 331,
+      "titles": [
+        "2021 Annual global report on public",
+        "INTERNATIONAL HEALTH REGULATIONS"
+      ],
+      "inclusion_probability": 0.43585403,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies/who-in-emergencies/international-health-regulations",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 2231,
+      "titles": [
+        "A NEW CONTEXT FOR PUBLIC",
+        "GLOBAL HEALTH SECURITY IS",
+        "INTERNATIONAL HEALTH REGULATIONS (2005)"
+      ],
+      "inclusion_probability": 1.0,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/mega-menu/emergencies/who-in-emergencies/operations",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 425,
+      "titles": [
+        "As of 22 August 2025, famine has been confirmed for the first time in Gaza, with over 500,000 people facing starvation, destitution, and preventable deaths. By September, 640,000 people will be in Integrated Food Security Phase Classification Phase 5 (catastrophic), 1.14 million in Phase 4 (emergenc",
+        "Key figures on WHO’s work in emergencies as of 15 June 2025 Key figures on WHO’s work in emergencies: Highlight on the Syrian Arab Republic crisis 17 Grade-3/Protracted 3 14 Grade-2/Protracted 2 1 Grade-1/Protracted 1 73 Standby Partners deployments OpenWHO 166 458+ plays, 7559+ hours viewed, 113 to",
+        "Key figures on WHO’s work in emergencies:"
+      ],
+      "inclusion_probability": 0.5596313,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-pregnancy",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who",
+      "chunks": 16,
+      "titles": [
+        "Adolescent pregnancy"
+      ],
+      "inclusion_probability": 0.02106847,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/singapore/",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 201,
+      "titles": [
+        "NATIONAL STRATEGIC ACTION PLAN ON AMR v2 Monitoring & Evaluation Framework (2025 – 2030)",
+        "National Strategic Action Plan on"
+      ],
+      "inclusion_probability": 0.26467269,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/vietnam/news/feature-stories/item/viet-nam-strengthens-health-emergency-preparedness-with-risk-profiling-workshop-in-da-nang",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 10,
+      "titles": [
+        "16 October 2025 Viet Nam strengthens health emergency preparedness with risk profiling workshop in Da Nang"
+      ],
+      "inclusion_probability": 0.0131678,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/westernpacific/activities/strengthening-health-information-systems-for-decision-making-in-countries",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 8,
+      "titles": [
+        "Strengthening health information systems for decision-making in countries"
+      ],
+      "inclusion_probability": 0.01053424,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/westernpacific/health-topics/drowning",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 20,
+      "titles": [
+        "Drowning in the Western Pacific"
+      ],
+      "inclusion_probability": 0.02633559,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/westernpacific/menu/mega-menu/about/rcm-2025",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 344,
+      "titles": [
+        "20–24 OCTOBER 2025 • NADI, FIJI Seventy-sixth session of the",
+        "ACCREDITATION OF NON-STATE ACTORS",
+        "REGIONAL COMMITTEE FOR THE WESTERN PACIFIC"
+      ],
+      "inclusion_probability": 0.45297216,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/westernpacific/news/item/07-04-2026-invest-in-one-health-to-prevent-pandemics--safeguard-populations--strengthen-health-collaboration--who-s-call-on-world-health-day",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 12,
+      "titles": [
+        "7 April 2026 Media release Invest in One Health to prevent pandemics, safeguard populations, strengthen health collaboration: WHO’s call on World Health Day"
+      ],
+      "inclusion_probability": 0.01580135,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    },
+    {
+      "url": "https://www.who.int/westernpacific/publications/i/item",
+      "host": "www.who.int",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "chunks": 4,
+      "titles": [
+        "Global Regions"
+      ],
+      "inclusion_probability": 0.00526712,
+      "host_population_urls": 602,
+      "host_population_chunks": 19922,
+      "host_allocation": 20,
+      "is_census_of_the_unprobed_remainder": false
+    }
+  ]
+}

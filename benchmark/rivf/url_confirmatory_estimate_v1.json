@@ -1,0 +1,225 @@
+{
+  "what_this_is": "Reachability and destination on the CONFIRMATORY sample: host-stratified, chunk-PPS, frozen and hashed before any request, drawn only from URLs the exploratory pass never touched.",
+  "why_it_is_separate_from_the_exploratory_report": "The exploratory pass had three defects and each needed a different fix: the estimator (Horvitz-Thompson over real per-URL weights), the sample (this one), and the destination predicate (the 40-item page-type sheet). Keeping this apart stops a reader taking it for a continuation of the withdrawn figure.",
+  "provenance": {
+    "sample": "benchmark/rivf/url_confirmatory_sample_v1.json",
+    "sample_sha256": "4bbd9d4fa0f4f57918a6eb53c13f2bfd1d103103695e7ef4fe379f5b22beadc2",
+    "frozen_before_any_request": true,
+    "probe_log": "benchmark/rivf/url_confirmatory_probed_v1.jsonl",
+    "design": "Stratified by host; allocation proportional to host chunk mass with a floor and a cap; within host, systematic PPS by chunk count with a random start, certainty units removed first. Every inclusion probability is recorded per URL, so the estimator need not assume the design.",
+    "n_selected": 174,
+    "n_probed": 174,
+    "robots_blocked_urls": 30,
+    "robots_blocked_chunks": 12980
+  },
+  "2_http_reachability_chunk_weighted": {
+    "design_based": {
+      "point": 0.9321,
+      "ci95": [
+        0.9312,
+        0.9331
+      ],
+      "se_of_the_share": 0.0005,
+      "certainty_units": 5,
+      "sampled_units": 139,
+      "strata_with_one_sampled_unit": 1,
+      "method": "Horvitz-Thompson total over the known population denominator; variance by the with-replacement (Hansen-Hurwitz) form n/(n-1) * sum (z_i - z_bar)^2, which is CONSERVATIVE for the systematic PPS actually used. Certainty units contribute no variance. A stratum with a single sampled unit contributes none either, so its uncertainty is UNDERSTATED -- the count is reported above.",
+      "denominator": "estimated from the same sample (linearised)"
+    },
+    "exact_envelope_per_host": {
+      "point": 0.973,
+      "envelope": [
+        0.6521,
+        0.9864
+      ],
+      "no_joint_coverage_guarantee": "Per-host Clopper-Pearson bounds combined under chunk-mass weights: a projection of marginal intervals, not a simultaneous interval and not a confidence interval for the weighted total.",
+      "why_this_is_reported_beside_the_design_based_interval": "The design-based variance is a SAMPLE variance, and 17 of 18 hosts are unanimous -- all reachable or all dead -- so it reports almost no uncertainty. Observing 25 of 25 on a host of 6,429 URLs does not make its rate 1.0 exactly; the exact bound is [0.863, 1.000]. Quoting only the design-based interval would repeat the error the relevance sheet's bootstrap made.",
+      "by_host": {
+        "dav.gov.vn": {
+          "k": 7,
+          "n": 7,
+          "weight": 0.1692,
+          "exact": [
+            0.5904,
+            1.0
+          ]
+        },
+        "ghr.nlm.nih.gov": {
+          "k": 9,
+          "n": 9,
+          "weight": 0.0047,
+          "exact": [
+            0.6637,
+            1.0
+          ]
+        },
+        "kcb.vn": {
+          "k": 6,
+          "n": 6,
+          "weight": 0.376,
+          "exact": [
+            0.5407,
+            1.0
+          ]
+        },
+        "medlineplus.gov": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0012,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "nihseniorhealth.gov": {
+          "k": 0,
+          "n": 5,
+          "weight": 0.0139,
+          "exact": [
+            0.0,
+            0.5218
+          ]
+        },
+        "rarediseases.info.nih.gov": {
+          "k": 0,
+          "n": 11,
+          "weight": 0.0044,
+          "exact": [
+            0.0,
+            0.2849
+          ]
+        },
+        "tapchiyhocvietnam.vn": {
+          "k": 25,
+          "n": 25,
+          "weight": 0.0315,
+          "exact": [
+            0.8628,
+            1.0
+          ]
+        },
+        "viendinhduong.vn": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0053,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.cancer.gov": {
+          "k": 25,
+          "n": 25,
+          "weight": 0.3419,
+          "exact": [
+            0.8628,
+            1.0
+          ]
+        },
+        "www.cdc.gov": {
+          "k": 4,
+          "n": 5,
+          "weight": 0.0041,
+          "exact": [
+            0.2836,
+            0.9949
+          ]
+        },
+        "www.msdmanuals.com": {
+          "k": 6,
+          "n": 6,
+          "weight": 0.0041,
+          "exact": [
+            0.5407,
+            1.0
+          ]
+        },
+        "www.ncbi.nlm.nih.gov": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0154,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.nccih.nih.gov": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0048,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.nhlbi.nih.gov": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0082,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.nhs.uk": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0024,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.niddk.nih.gov": {
+          "k": 0,
+          "n": 5,
+          "weight": 0.008,
+          "exact": [
+            0.0,
+            0.5218
+          ]
+        },
+        "www.nlm.nih.gov": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0005,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        },
+        "www.uspreventiveservicestaskforce.org": {
+          "k": 5,
+          "n": 5,
+          "weight": 0.0045,
+          "exact": [
+            0.4782,
+            1.0
+          ]
+        }
+      }
+    },
+    "READ_THE_ENVELOPE": "The design-based interval collapses because 17 of 18 hosts are unanimous and a sample variance of identical observations is zero. The envelope beside it does not make that assumption. Quote the envelope."
+  },
+  "3a_not_an_issue_index_given_it_answered": {
+    "value": "NOT APPLICABLE on this sample, by construction",
+    "why": "This sample was drawn only from URLs the exploratory pass never touched, and that pass CENSUSED all 143 issue-level URLs. No issue URL can be in this sample, so the quantity is 1.0 by construction rather than by measurement. Reporting it would be exactly the kind of by-construction number this paper exists to flag. The issue stratum's result is the census, not an estimate.",
+    "issue_urls_in_this_sample": 0
+  },
+  "destination_predicate_validation": {
+    "source": "benchmark/rivf/page_type_v1.json",
+    "precision_of_not_an_index": 0.9667,
+    "precision_exact_ci": [
+      0.8278,
+      0.9992
+    ],
+    "recall_on_indexes": 1.0,
+    "recall_exact_ci": [
+      0.6915,
+      1.0
+    ],
+    "pages_that_were_homepage_search_or_soft404": 0.0,
+    "reading": "The destination regex was checked against a person's reading of 40 pages. It did NOT turn out to be the blunt instrument feared: no probed page was a homepage, a search page or a soft 404. But the precision interval's lower bound is 0.83, so up to about one in six pages it passes could still be something other than a document page, and any corpus figure built on it inherits that."
+  },
+  "what_this_still_does_not_license": "A single corpus-level composite. This sample covers the URLs the exploratory pass had not touched, not the whole corpus, and it excludes the robots.txt hosts entirely. Combining it with the exploratory pass would mix a frozen design with an adaptive one. The paper therefore still reports the issue CENSUS as its claim."
+}

@@ -1,0 +1,400 @@
+{
+  "result": {
+    "export_dir": "rag-data\\embeddings\\exports\\vmj_ojs\\multilingual",
+    "total_chunks": 162681,
+    "distinct_texts": 132225,
+    "dup_lines": 60906,
+    "dup_pct": 37.44,
+    "dup_groups": 30450,
+    "group_size_hist": {
+      "2": 30447,
+      "4": 3
+    },
+    "pair_classification": {
+      "url_diff=False,file_diff=False,doc_diff=False": 791,
+      "url_diff=False,file_diff=False,doc_diff=True": 2,
+      "url_diff=False,file_diff=True,doc_diff=True": 29634,
+      "url_diff=True,file_diff=True,doc_diff=True": 23
+    },
+    "articles_total": 7857,
+    "title_groups_multi": 1422,
+    "articles_in_multi_title": 2852,
+    "empty_title_articles": 0,
+    "urls_total": 6429,
+    "urls_multi_doc": 6275,
+    "simulated_dedup": {
+      "policy": "keep-1-per-title: max(#chunks) -> max(mean quality_score) -> min(article_id)",
+      "kept_articles": 6427,
+      "final_chunks": 132722,
+      "removed_chunks": 29959,
+      "removed_pct": 18.42,
+      "content_loss_texts": 366,
+      "content_loss_pct_of_export": 0.225,
+      "title_groups_with_loss": 17,
+      "residual_dup_after_dedup": 793,
+      "keeper_beats_or_ties_dropped_on_chunks": 1430
+    },
+    "suffix_N_ids": {
+      "count": 790,
+      "same_text_as_base": 790,
+      "diff_text_from_base": 0,
+      "base_not_found": 0
+    },
+    "old_namespace": {
+      "vmj_ojs_prefix_chunks": 586,
+      "found_in_new_namespace": 0
+    }
+  },
+  "content_loss_examples": [
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_05c65cac799063cc_tom_tat_chunk00",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_05c65cac799063cc_tom_tat_chunk01",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_05c65cac799063cc_tom_tat_chunk02",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk01",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk02",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk03",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk04",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk05",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk06",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk07",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk08",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk09",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk11",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk12",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk13",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk14",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk15",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk16",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk17",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk18",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk19",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_5c90e4637d861574_summary_chunk20",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_ba717c5d526eab45_ket_luan_chunk00",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_ba717c5d526eab45_ket_luan_chunk01",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_1f0a6271cf8b28d5_summary_chunk00",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "so sánh hiệu quả của laser châm kết hợp tập vận động và siêu âm điều trị kết hợp",
+      "lost_article_id": "c8b3b2994df625c9",
+      "keeper_article_id": "bf0a278d4906ed71",
+      "chunk_id": "vietnam_medical_jour_1f0a6271cf8b28d5_summary_chunk01",
+      "text_preview": "[WITHHELD sha256:2bfcad5248415c30 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_73b84b8fdfec8084_ket_luan_chunk02",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk00",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk01",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk02",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk03",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk04",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk05",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk06",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk07",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk08",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk09",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk10",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk11",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk12",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk13",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk14",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk15",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk16",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk17",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk18",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk19",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk20",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk21",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    },
+    {
+      "title": "đánh giá hiểu biết và sự hài lòng của người bệnh về việc cung cấp thông tin cần ",
+      "lost_article_id": "d591fb0db4fe0a8f",
+      "keeper_article_id": "a7d5a33b4f3ee886",
+      "chunk_id": "vietnam_medical_jour_474e0476b90d8468_summary_chunk22",
+      "text_preview": "[WITHHELD sha256:ea9794d5750c4716 chars:120]"
+    }
+  ]
+}

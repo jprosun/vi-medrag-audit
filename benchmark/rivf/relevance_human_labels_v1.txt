@@ -1,0 +1,222 @@
+# PHIẾU CHẤM RELEVANCE — 40 item, điền một chữ sau mỗi dấu "=>"
+#
+# CÂU HỎI BẠN ĐANG TRẢ LỜI: claim mà hệ thống hiển thị có trả lời câu hỏi người dùng đặt ra
+# hay không. KHÔNG phải "đoạn văn có đỡ claim không" — cái đó đã đo riêng (0,968).
+#
+#   R  claim trả lời trực tiếp câu hỏi, hoặc là một phần cần thiết của câu trả lời
+#   P  claim đúng chủ đề nhưng KHÔNG trả lời: cùng bệnh khác khía cạnh, định nghĩa,
+#      bối cảnh, hoặc mục tiêu / cỡ mẫu / phương pháp của một nghiên cứu
+#   N  claim nói về chuyện khác: khác bệnh, khác đối tượng, khác can thiệp
+#
+# BA QUY TẮC QUAN TRỌNG NHẤT
+#   1. Chấm claim SO VỚI CÂU HỎI. Đừng chấm đoạn văn so với câu hỏi.
+#   2. Đừng dùng kiến thức ngoài để cứu một claim. Claim đúng về y khoa nhưng không trả lời
+#      ĐÚNG câu hỏi này thì là P hoặc N.
+#   3. Claim chỉ nêu mục tiêu / cỡ mẫu / phương pháp của một nghiên cứu thì TỐI ĐA là P,
+#      trừ khi câu hỏi hỏi về chính nghiên cứu đó. Đây là chỗ mô hình chấm nghiêm nhất và
+#      là chỗ ý kiến của bạn có giá trị nhất.
+#
+# TUỲ CHỌN: nếu muốn chấm cả phần hỗ trợ, thêm Y hoặc N sau nhãn, ví dụ "=> R Y".
+# Chỉ điền khi bạn đã mở đoạn văn trong relevance_sheet_v1.md và thấy chắc.
+#
+# Không sửa dòng "## rel_NN". Xong thì bảo tôi; tôi đọc đúng file này.
+
+## rel_01
+Q: Cơ chế nào giải thích việc bệnh nhân đái tháo đường type 1 dễ vào nhiễm toan ceton hơn so với bệnh nhân type 2?
+C: Có thể giải thích được vấn đề này là do khi không có ai bị bệnh, gia đình bệnh nhân ít nghĩ tới ĐTĐ do đó gây chậm trễ trong công tác chẩn đoán và điều trị.
+=> N
+
+## rel_02
+Q: Tỷ lệ tái phát nhiễm khuẩn tiết niệu ở phụ nữ trong vòng 6 tháng sau một đợt viêm bàng quang cấp là khoảng bao nhiêu phần trăm?
+C: Đối tượng và phương pháp nghiên cứu: 274 bệnh nhân ung thư nhập khoa Hồi sức cấp cứu – Bệnh viện K, được đặt OTBQ, từ tháng 03/2022 đến tháng 11/2022.
+=> N
+
+## rel_03
+Q: Tỷ lệ đáp ứng virus bền vững sau điều trị viêm gan C mạn bằng thuốc kháng virus tác động trực tiếp là khoảng bao nhiêu phần trăm?
+C: Mặc dù đáp ứng vi rút nhanh (RVR) chiếm 159/184 (86,4%), nhưng đáp ứng vi rút bền vững (SVR) có tỷ lệ cao với 184/184 (100%).
+=> R
+
+## rel_04
+Q: Tăng huyết áp chỉ gặp ở người trên 60 tuổi, vậy người 40 tuổi có cần đo huyết áp định kỳ không?
+C: Nghiên cứu của chúng tôi cũng chỉ ra rằng, trong số những người cao tuổi mắc tăng huyết áp, có 45,6% đã được chẩn đoán tăng huyết áp trước đó và 39,2% đang điều trị tăng huyết áp, cho thấy tỉ lệ người cao tuối tăng huyết áp chưa được chẩn đoán và chưa được điều trị khá cao, do vậy việc tuyên truyển và khám sức khoẻ ở người cao tuổi rất quan trọng để kịp thời phát hiện và kiểm soát tình trạng tăng huyết áp.
+=> R
+
+## rel_05
+Q: Trẻ 18 tháng tiêu chảy cấp mất nước nhẹ thì nên bù bằng ORS nồng độ thẩm thấu thấp hay nước cháo muối tự nấu ở nhà, và có nên bổ sung kẽm kèm theo không?
+C: Nhận xét: Sau 1 ngày điều trị, số trẻ tiêu chảy cấp có mất nước điều trị theo phác đồ B giảm từ 31,2% xuống 4,0%.
+=> P
+
+## rel_06
+Q: Bệnh nhân đái tháo đường type 2 có bệnh thận mạn kèm theo thì sau metformin nên ưu tiên thêm nhóm thuốc nào, và vì sao chọn nhóm đó hơn các nhóm còn lại?
+C: Phương pháp: Nghiên cứu cắt ngang trên 80 bệnh nhân ĐTĐ type 2 khám ngoại trú tại Bệnh viện Thận Hà Nội từ tháng 7/2024 đến 5/2025, được chia thành 4 nhóm: Nhóm 0 (chưa có BTM, n=22), Nhóm 1 (giai đoạn 1-2, n=20), Nhóm 2 (giai đoạn 3, n=22), Nhóm 3 (giai đoạn 4, n=16).
+=> P
+
+## rel_07
+Q: Huyết khối tĩnh mạch sâu chi dưới không có yếu tố khởi phát rõ thì nên ngừng chống đông sau 3-6 tháng hay duy trì kéo dài, và quyết định dựa trên những yếu tố nào?
+C: Phân tích các yếu tố liên quan đến huyết khối tĩnh mạch sâu chi dưới
+=> P
+
+## rel_08
+Q: Bệnh nhân sốt cao kèm đau đầu, cứng gáy và rối loạn ý thức. Cần khám và chỉ định những xét nghiệm gì để phân biệt viêm màng não mủ với viêm màng não do virus và lao màng não?
+C: Tình trạng bất cân xứng tương đối quan trọng cùng với khớp thái dương hàm tạo nên cấu trúc khuôn mặt.
+=> N
+
+## rel_09
+Q: Giải thích cơ chế bệnh sinh của bệnh đa dây thần kinh ngoại biên ở người đái tháo đường, tại sao triệu chứng thường khởi phát đối xứng ở bàn chân rồi mới lan lên trên?
+C: Theo ước tính thì đái tháo đường sẽ là nguyên nhân gây tử vong hàng đầu tính đến năm 2030.
+=> P
+
+## rel_10
+Q: Dự phòng tiên phát xuất huyết do vỡ giãn tĩnh mạch thực quản ở bệnh nhân xơ gan nên dùng thuốc chẹn beta không chọn lọc hay thắt vòng cao su qua nội soi?
+C: Kết luận: SAAG và FIB-4 là các chỉ số có giá trị tiên lượng tốt cho những bệnh nhân xơ gan cổ chướng có giãn lớn tĩnh mạch thực quản.
+=> P
+
+## rel_11
+Q: Nam 55 tuổi, tiểu máu đại thể không đau, không sốt. Cần khám và làm những thăm dò gì để tìm nguyên nhân?
+C: Bảng 1: Ba bệnh mạn tính không lây thường gặp ở người cao tuổi theo giới Bệnh mạn tính không lây Nữ Nam Tổng (n=4713) Tỉ lệ (%) p* THA 2252 1034 69,7 0,416 ĐTĐ týp 2 975 404 29,3 0,084 BTTMCB 1405 641 43,4 0,771 *Chi-square Tuổi trung bình là 69,2 ± 7,5 tuổi, người cao tuổi nhất: 103 tuổi.
+=> N
+
+## rel_12
+Q: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+C: Đánh giá chia làm 2 mức: tuân thủ (từ 6-8 điểm) và kém tuân thủ (dưới 6 điểm) dựa trên kết quả qua 3 lần tái khám (sau 1 tháng, 3 tháng, 6 tháng so với lần bắt đầu nghiên cứu).
+=> N
+
+## rel_13
+Q: Huyết khối tĩnh mạch sâu chi dưới không có yếu tố khởi phát rõ thì nên ngừng chống đông sau 3-6 tháng hay duy trì kéo dài, và quyết định dựa trên những yếu tố nào?
+C: Do đó, nghiên cứu: “Nghiên cứu tình hình, một số yếu tố liên quan và kết quả điều trị huyết khối tĩnh mạch sâu chi dưới bằng Rivaroxaban ở bệnh nhân nhồi máu não tại Bệnh viện Đa khoa tỉnh Long An năm 2023-2024” được thực hiện với mục tiêu: Khảo sát tỉ lệ, một số yếu tố liên quan huyết khối tĩnh mạch sâu chi dưới ở bệnh nhân nhồi máu não tại Bệnh Viện Đa khoa tỉnh Long An năm 2023-2024.
+=> P
+
+## rel_14
+Q: Trong nhiễm khuẩn tiết niệu mắc phải ở cộng đồng, khoảng bao nhiêu phần trăm chủng E. coli phân lập được sinh ESBL?
+C: Theo nghiên cứu của Bùi Hồng Giang năm 2013 cho thấy: nhiễm khuẩn hô hấp là 68,1%, nhiễm khuẩn tiết niệu là 8,3% [4].
+=> P
+
+## rel_15
+Q: Con tôi 7 tuổi bị hen, bác sĩ cho xịt thuốc dự phòng hằng ngày. Dùng kéo dài như vậy có làm cháu chậm lớn hay ảnh hưởng chiều cao không ạ?
+C: ĐẶT VẤN ĐỀ Sa sút trí tuệ (SSTT) là một hội chứng tiến triển mạn tính, suy giảm các lĩnh vực nhận thức và ảnh hưởng đến khả năng tự chủ trong sinh hoạt hàng ngày[1].
+=> N
+
+## rel_16
+Q: Con tôi 7 tuổi bị hen, bác sĩ cho xịt thuốc dự phòng hằng ngày. Dùng kéo dài như vậy có làm cháu chậm lớn hay ảnh hưởng chiều cao không ạ?
+C: Mục tiêu: Đánh giá hiệu quả can thiệp đa yếu tố không dùng thuốc trên bệnh nhân sa sút trí tuệ.
+=> N
+
+## rel_17
+Q: Viêm phổi cộng đồng phải nhập viện thì tỷ lệ tử vong trong vòng 30 ngày khoảng bao nhiêu phần trăm?
+C: ĐẶT VẤN ĐỀ Viêm phổi mắc phải cộng đồng (Community Acquired Pneumonia – CAP) là một bệnh nhiễm trùng thường gặp, là gánh nặng cho hệ thống chăm sóc sức khỏe toàn cầu với khoảng 3 triệu ca tử vong hàng năm và là căn nguyên gây tử vong đứng hàng thứ 4 sau nhồi máu cơ tim, đột quỵ bệnh phổi tắc nghẽn mạn tính.1 Tại Việt Nam, CAP là một bệnh lý nhiễm khuẩn thường gặp nhất trong các bệnh nhiễm khuẩn trên thực hành lâm sàng, chiếm 12% các bệnh phổi.2 CAP có thể tiến triển nặng gây nhiều biến chứng tại chỗ và toàn thân, thậm chí tử vong.
+=> P
+
+## rel_18
+Q: Trong đông máu nội mạch rải rác, cơ chế nào khiến bệnh nhân vừa có huyết khối vi mạch lại vừa chảy máu khó cầm?
+C: 1Trường Đại học Y Hà Nội 2Viện Huyết học - Truyền máu Trung Ương Chịu trách nhiệm chính: Nguyễn Khánh Hà Email: [e-mail withheld] Ngày nhận bài: 22.10.2024 Ngày phản biện khoa học: 21.11.2024 Ngày duyệt bài: 27.12.2024 máu nội mạch rải rác cần được thực hiện thường quy, song song và sớm nhất có thể cho tất cả bệnh nhân ung thư dạ dày, thực quản để lựa chọn phương pháp điều trị phù hợp nhất cho bệnh
+=> P
+
+## rel_19
+Q: Tại sao tăng triglyceride máu nặng lại gây viêm tuỵ cấp?
+C: Kết quả điều trị Cải thiện độ nặng của bệnh bao gồm thang điểm SOFA giảm từ 7 ± 1,6 xuống còn 2,29 ± 0,8 (p <0,00), điểm BISAP từ 3,15± 0,98 xuống còn 1,8 ± 0,6 (p <0,00); thang điểm Ranson cũng giảm từ 3,15 ± 0,74 xuống còn 1,3 ± 0,47 (p <0,00), tương đương tác giả Phan Thái Sơn, điểm SOFA giảm từ 8,3 ± 3,93 xuống còn 3,0 ± 2,69 có ý nghĩa thống kê với p < 0,05 [4].
+=> P
+
+## rel_20
+Q: Một người tê bì và yếu dần hai chân trong vài ngày, đi lại khó khăn. Cần khám và chỉ định gì để phân biệt hội chứng Guillain-Barré với tổn thương chèn ép tủy sống?
+C: Các biến chứng do tổn thương khớp trong VKVN gây ra không chỉ dẫn đến suy giảm chức năng khớp, tăng tỷ lệ tử vong mà còn gây tàn phế và ảnh hưởng đến sinh hoạt của bệnh nhân.
+=> N
+
+## rel_21
+Q: Tỷ lệ đáp ứng virus bền vững sau điều trị viêm gan C mạn bằng thuốc kháng virus tác động trực tiếp là khoảng bao nhiêu phần trăm?
+C: Trên nhóm BN xơ gan, APRI giảm có ý nghĩa thống kê ở tất cả các khoảng giá trị ở thời điểm 6 tháng sau khi kết thúc điều trị so với giá trị ban đầu (1,13; 0,41; p < 0,001).
+=> P
+
+## rel_22
+Q: Con tôi 7 tuổi bị hen, bác sĩ cho xịt thuốc dự phòng hằng ngày. Dùng kéo dài như vậy có làm cháu chậm lớn hay ảnh hưởng chiều cao không ạ?
+C: Cho tới thời điểm hiện tại, vẫn chưa có loại thuốc nào có thể chữa khỏi SSTT mà chỉ có thể giúp làm chậm tiến triển của bệnh và giảm một số triệu chứng.
+=> N
+
+## rel_23
+Q: Bệnh lao ở các cộng đồng bản địa vùng Bắc Cực có đặc điểm dịch tễ và diễn tiến khác gì so với vùng nhiệt đới?
+C: Khác với những đối tượng khác như: mại dâm hay tiêm chích ma túy, nhóm nam NTDĐG có nhiều điểm khác biệt về các yếu tố dịch tễ và hành vi nguy cơ cũng như tự nhận thức, hiểu biết về nhiễm HIV.
+=> N
+
+## rel_24
+Q: Trẻ 18 tháng tiêu chảy cấp mất nước nhẹ thì nên bù bằng ORS nồng độ thẩm thấu thấp hay nước cháo muối tự nấu ở nhà, và có nên bổ sung kẽm kèm theo không?
+C: Sau 2 ngày điều trị, có 13 trẻ đã được ra viện, 99,5% trẻ bị tiêu chảy cấp không còn mất nước và được điều trị theo phác đồ A.
+=> P
+
+## rel_25
+Q: Bệnh nhân suy tim mạn sau đợt nhập viện vì đợt cấp thì tỷ lệ tái nhập viện trong vòng 30 ngày khoảng bao nhiêu phần trăm?
+C: Ngược lại với những cải thiện đáng kể trong điều trị suy tim mạn, khi xuất hiện đợt cấp, bệnh nhân vẫn có tiên lượng xấu, với tỷ lệ tái nhập viện sau 90 ngày và tỷ lệ tử vong sau 1 năm lên tới 10 - 30% [2].
+=> P
+
+## rel_26
+Q: Bệnh nhân trẻ đi khám vì hồi hộp trống ngực thành cơn, điện tim lúc nghỉ hoàn toàn bình thường. Cần làm những thăm dò gì để phân biệt cơn nhịp nhanh trên thất với ngoại tâm thu lành tính hay rối loạn lo âu?
+C: (100%) Rối loạn nhịp tim thường gặp là ngoại tâm thu nhĩ và ngoại tâm thu thất (trên 50%) và chủ yếu xảy ra ở giai đoạn 3 tháng đầu của thai kỳ (47,6%).
+=> N
+
+## rel_27
+Q: Con tôi 7 tuổi bị hen, bác sĩ cho xịt thuốc dự phòng hằng ngày. Dùng kéo dài như vậy có làm cháu chậm lớn hay ảnh hưởng chiều cao không ạ?
+C: Bên cạnh đó, can thiệp bằng thuốc lại có nhiều tác dụng phụ và chi phí tốn kém, vì vậy, các biện pháp điều trị không dùng thuốc đối với SSTT trở nên cấp thiết hơn.
+=> N
+
+## rel_28
+Q: Tăng huyết áp chỉ gặp ở người trên 60 tuổi, vậy người 40 tuổi có cần đo huyết áp định kỳ không?
+C: Trong số những người cao tuổi, các bệnh không lây thường gặp là tăng huyết áp (40,4%), tiểu đường (31,2%), viêm khớp (22,1%), suy gi
+=> P
+
+## rel_29
+Q: Bố em bị suy thận giai đoạn cuối, bác sĩ bảo phải chạy thận. Mỗi tuần chạy mấy lần và ở nhà có cần hạn chế uống nước với ăn nhạt không ạ?
+C: Nhóm cầu nối đã trưởng thành có xu hướng tổn thương ưu thế ở tĩnh mạch về, trong khi ở nhóm cầu nối chưa trưởng thành, tỉ lệ suy kèm huyết khối là 41,1%.
+=> P
+
+## rel_30
+Q: Người béo phì mắc đái tháo đường type 2 cần giảm khoảng bao nhiêu phần trăm cân nặng thì mới có cơ hội lui bệnh?
+C: Trong đó chủ yếu là đái tháo đường type 2 chiếm khoảng 90% [2].
+=> P
+
+## rel_31
+Q: Ngưỡng HbA1c dùng để chẩn đoán đái tháo đường có thay đổi gì trong lần cập nhật gần đây nhất không?
+C: Mục tiêu: Xác định độ nhạy, độ đặc hiệu, giá trị tiên đoán dương, giá trị tiên đoán âm, diện tích dưới đường cong ROC của chỉ số TyG trong chẩn đoán đái tháo đường thai kỳ (ĐTĐTK).
+=> N
+
+## rel_32
+Q: Cơ chế nào khiến bệnh nhân ung thư phổi không tế bào nhỏ có đột biến EGFR ban đầu đáp ứng tốt với thuốc ức chế tyrosine kinase nhưng sau đó lại tiến triển?
+C: Đối tượng và phương pháp: 46 bệnh nhân ung thư phổi không tế bào nhỏ giai đoạn tiến xa có đột biến EGFR, kháng thứ phát với TKIs, không có hoặc không biết đột biến T790M, điều trị hoá chất phác đồ Pemetrexed – Carboplatin.
+=> P
+
+## rel_33
+Q: Bệnh lao ở các cộng đồng bản địa vùng Bắc Cực có đặc điểm dịch tễ và diễn tiến khác gì so với vùng nhiệt đới?
+C: Mục tiêu: Mô tả các đặc điểm (1) dân số - xã hội học, (2) hành vi quan hệ tình dục (QHTD) và (3) hiểu biết, tự nhận thức về tình trạng nhiễm HIV ở những bệnh nhân NTDĐG có nhiễm trùng cơ hội nhập viện tại Bệnh viện Bệnh Nhiệt đới.
+=> N
+
+## rel_34
+Q: Vì sao phenylketon niệu và suy giáp bẩm sinh gần như luôn nằm trong danh mục sàng lọc sơ sinh của mọi quốc gia - những tiêu chí nào quyết định một bệnh được đưa vào chương trình sàng lọc?
+C: Tỷ lệ sinh viên chủ động chuẩn bị bài trước mỗi buổi học theo đúng hướng dẫn học tập chiếm 70,3%; sinh viên tham gia thảo luận nhóm chiếm 74,9%; tỉ lệ sinh viên trả lời được các câu hỏi trong giờ thảo luận ca lâm sàng là 51,3%.
+=> N
+
+## rel_35
+Q: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+C: Trong suốt những thập kỷ qua, nhiều nghiên cứu lâm sàng đã cho thấy điều trị THA hiệu quả đã làm giảm nguy cơ mắc bệnh tim mạch và tử vong [8].
+=> N
+
+## rel_36
+Q: Tỷ lệ nhiễm Helicobacter pylori ở người trưởng thành Việt Nam ước tính khoảng bao nhiêu?
+C: Kết luận: Nghiên cứu đã mô tả chi tiết đặc điểm hình thái cuống cung ngực ở người trưởng thành Việt Nam và chỉ ra sự khác biệt rõ rệt so với các quần thể châu Âu, đồng thời tương đồng với một số quốc gia châu Á.
+=> N
+
+## rel_37
+Q: Bệnh nhân trẻ đi khám vì hồi hộp trống ngực thành cơn, điện tim lúc nghỉ hoàn toàn bình thường. Cần làm những thăm dò gì để phân biệt cơn nhịp nhanh trên thất với ngoại tâm thu lành tính hay rối loạn lo âu?
+C: Kết luận: Nghiên cứu cho thấy rối loạn nhịp tim thường gặp là ngoại tâm thu nhĩ và ngoại tâm thu thất và chủ yếu xảy ra ở giai đoạn 3 tháng đầu của
+=> N
+
+## rel_38
+Q: Bệnh nhân tăng huyết áp kèm đái tháo đường típ 2 và có albumin niệu thì nên khởi trị bằng ức chế men chuyển hay chẹn kênh canxi, và phối hợp thế nào nếu huyết áp chưa đạt mục tiêu?
+C: Hiện nay, có nhiều nhóm thuốc điều trị đái tháo đường típ 2 khác nhau nên việc lựa chọn kết hợp các thuốc theo phác đồ rất quan trọng, phụ thuộc vào tình trạng của từng bệnh nhân và các vấn đề liên quan khi phối hợp nhiều loại thuốc trong điều trị như tương tác thuốc, các tác dụng không mong muốn…, Tại Bệnh viện Đa khoa thị xã Buôn Hồ có số lượ
+=> N
+
+## rel_39
+Q: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+C: Xuất phát từ thực tế đó, chúng tôi tiến hành thực hiện đề tài “Nghiên cứu sự tuân thủ trong sử dụng thuốc điều trị tăng huyết áp trên bệnh nhân tăng huyết áp điều trị ngoại trú tại Khoa Khám bệnh Bệnh viện Đa khoa Thành phố Cần Thơ năm 2020” với mục tiêu: (1) xác định
+=> N
+
+## rel_40
+Q: Bố em bị suy thận giai đoạn cuối, bác sĩ bảo phải chạy thận. Mỗi tuần chạy mấy lần và ở nhà có cần hạn chế uống nước với ăn nhạt không ạ?
+C: Tĩnh mạch đường về là vị trí tổn thương chủ yếu, 53,1%.
+=> P

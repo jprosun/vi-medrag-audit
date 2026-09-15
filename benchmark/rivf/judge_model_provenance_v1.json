@@ -1,0 +1,106 @@
+{
+  "what_this_is": "Which model produced each set of committed judge labels, recovered from the `message.model` field of the run transcripts. The original agent() calls pinned no model, so this is recovered after the fact -- a model ID, not an immutable checkpoint.",
+  "evidence_field": "message.model, on every assistant message in a subagent transcript",
+  "why_it_matters": [
+    "The entailment half of the pinned re-run compared claude-opus-5 with claude-opus-5, so it measures within-model repeatability, not cross-model stability. Only the relevance half crossed models (claude-fable-5-1 -> claude-opus-5), and only that half moved.",
+    "The between-arm SUPPORT contrast crossed two models: shipped claude-opus-5 against URL-first claude-fable-5-1. The between-arm RESPONSIVENESS contrast did not: claude-fable-5-1 on both sides."
+  ],
+  "alias_caveat": "The re-run requested the alias `opus`, which is what the workflow interface accepts; the served ID claude-opus-5 is recovered the same way as for the unpinned runs. An alias names a family, not a checkpoint, so pinning one does not by itself make a run reproducible.",
+  "runs": {
+    "entailment_shipped": {
+      "instrument": "entailment",
+      "arm": "shipped",
+      "artifact": "benchmark/rivf/entailment_judgements_v1.json",
+      "workflow_script": "entailment-judgement-rivf134-wf_2185da3c-a7a.js",
+      "run_id": "wf_2185da3c-a7a",
+      "transcript_dir": "C:/Users/justs/.claude/projects/d--CODE-DATN-LLM-MedQA-Assistant/58376349-19e8-4be4-8f5e-dca5f37aaa80/subagents/workflows/wf_2185da3c-a7a",
+      "agent_transcripts": 18,
+      "models_seen": {
+        "claude-opus-5": 118
+      },
+      "model_id": "claude-opus-5",
+      "label_crosscheck": {
+        "pairs_in_transcript": 224,
+        "pairs_also_in_artifact": 224,
+        "fraction": 1.0
+      },
+      "status": "single model, labels match the artifact"
+    },
+    "relevance_shipped": {
+      "instrument": "relevance",
+      "arm": "shipped",
+      "artifact": "benchmark/rivf/relevance_model_judgements_v1.json",
+      "workflow_script": "relevance-judgement-rivf134-wf_0280d3bb-095.js",
+      "run_id": "wf_0280d3bb-095",
+      "transcript_dir": "C:/Users/justs/.claude/projects/d--CODE-DATN-LLM-MedQA-Assistant/58376349-19e8-4be4-8f5e-dca5f37aaa80/subagents/workflows/wf_0280d3bb-095",
+      "agent_transcripts": 18,
+      "models_seen": {
+        "claude-fable-5-1": 127
+      },
+      "model_id": "claude-fable-5-1",
+      "label_crosscheck": {
+        "pairs_in_transcript": 227,
+        "pairs_also_in_artifact": 227,
+        "fraction": 1.0
+      },
+      "status": "single model, labels match the artifact"
+    },
+    "entailment_urlfirst": {
+      "instrument": "entailment",
+      "arm": "url_first",
+      "artifact": "benchmark/rivf/entailment_judgements_urlfirst_v1.json",
+      "workflow_script": "entailment-judgement-urlfirst-wf_eb9060cd-02c.js",
+      "run_id": "wf_eb9060cd-02c",
+      "transcript_dir": "C:/Users/justs/.claude/projects/d--CODE-DATN-LLM-MedQA-Assistant/58376349-19e8-4be4-8f5e-dca5f37aaa80/subagents/workflows/wf_eb9060cd-02c",
+      "agent_transcripts": 40,
+      "models_seen": {
+        "claude-fable-5-1": 172
+      },
+      "model_id": "claude-fable-5-1",
+      "label_crosscheck": {
+        "pairs_in_transcript": 405,
+        "pairs_also_in_artifact": 405,
+        "fraction": 1.0
+      },
+      "status": "single model, labels match the artifact"
+    },
+    "relevance_urlfirst": {
+      "instrument": "relevance",
+      "arm": "url_first",
+      "artifact": "benchmark/rivf/relevance_model_judgements_urlfirst_v1.json",
+      "workflow_script": "relevance-judgement-urlfirst-wf_97b546d9-f63.js",
+      "run_id": "wf_97b546d9-f63",
+      "transcript_dir": "C:/Users/justs/.claude/projects/d--CODE-DATN-LLM-MedQA-Assistant/58376349-19e8-4be4-8f5e-dca5f37aaa80/subagents/workflows/wf_97b546d9-f63",
+      "agent_transcripts": 31,
+      "models_seen": {
+        "claude-fable-5-1": 175
+      },
+      "model_id": "claude-fable-5-1",
+      "label_crosscheck": {
+        "pairs_in_transcript": 419,
+        "pairs_also_in_artifact": 419,
+        "fraction": 1.0
+      },
+      "status": "single model, labels match the artifact"
+    },
+    "pinned_rerun": {
+      "instrument": "both",
+      "arm": "shipped",
+      "artifact": "benchmark/rivf/judge_rerun_pinned_v1.json",
+      "workflow_script": "pinned-judge-rerun-wf_4012c52c-3b2.js",
+      "run_id": "wf_4012c52c-3b2",
+      "transcript_dir": "C:/Users/justs/.claude/projects/d--CODE-DATN-LLM-MedQA-Assistant/58376349-19e8-4be4-8f5e-dca5f37aaa80/subagents/workflows/wf_4012c52c-3b2",
+      "agent_transcripts": 35,
+      "models_seen": {
+        "claude-opus-5": 322
+      },
+      "model_id": "claude-opus-5",
+      "label_crosscheck": {
+        "pairs_in_transcript": 451,
+        "pairs_also_in_artifact": 451,
+        "fraction": 1.0
+      },
+      "status": "single model, labels match the artifact"
+    }
+  }
+}

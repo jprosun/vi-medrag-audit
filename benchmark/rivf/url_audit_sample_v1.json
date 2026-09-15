@@ -1,0 +1,3496 @@
+{
+  "what_this_is": "The frozen sample for the URL dereference audit. Issue-level is a CENSUS of all 143 distinct issue URLs; article-level is a stratified sample allocated across sources with a floor, so small Vietnamese strata are represented.",
+  "provenance": {
+    "population": "benchmark/rivf/url_population_v4.json",
+    "population_sha256": "06af0f7009ac43ed0c2f4c2047345a944c61e1a1684ad6b021fb84f5755c94f5",
+    "seed": 20260907,
+    "n_article_target": 160,
+    "per_source_min_max": [
+      4,
+      40
+    ],
+    "frozen_before_any_request": true
+  },
+  "issue_census": {
+    "n": 143,
+    "of_population": 143,
+    "is_census": true
+  },
+  "article_sample": {
+    "n": 146,
+    "of_population": 16335,
+    "allocation": {
+      "hf_medquad": 40,
+      "vien_dinh_duong": 4,
+      "who_vietnam": 6,
+      "dav_gov": 4,
+      "kcb_moh": 4,
+      "medlineplus": 4,
+      "nccih_health": 4,
+      "vmj_ojs": 40,
+      "uspstf_recommendations": 4,
+      "nci_pdq": 6,
+      "cdc_health_topics": 4,
+      "mayo_diseases_conditions": 5,
+      "msd_manual_consumer": 4,
+      "msd_manual_professional": 4,
+      "ncbi_bookshelf": 4,
+      "nhs_health_a_z": 5,
+      "who": 4
+    }
+  },
+  "urls": [
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/10",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 716,
+      "distinct_article_ids": 29,
+      "titles": [
+        "Bào chế và đánh giá đặc tính lý hóa của gel chiết xuất từ lá cây lô hội Aloe vera Lê Thị Thu Thảo1, Hồ Hoàng Nhân2, Lê Thị Thanh Ngọc2* (1) Khoa Y học cổ truyền, Trường Đại học Y - Dược, Đại học Huế (2) Khoa Dược, Trường Đại học Y - Dược, Đại học Huế",
+        "Chất lượng giấc ngủ và các yếu tố liên quan ở người cao tuổi dân tộc cơ tu tại huyện Nam Đông, tỉnh Thừa Thiên Huế Nguyễn Hoàng Thùy Linh1*, Võ Minh Hoàng1, Đặng Cao Khoa1, Võ Nữ Hồng Đức1, Đoàn Vương Diễm Khánh1 (1) Khoa Y tế công cộng, trường Đại học Y - Dược, Đại học Huế",
+        "Giảm tiểu cầu và mối liên quan với kết cục lâm sàng ở bệnh nhân nhiễm khuẩn nặng và sốc nhiễm khuẩn Lê Thị Ngọc Thúy1, Trương Thục Liên1, Trần Xuân Thịnh1, Nguyễn Văn Minh1, Phan Thắng1* (1) Trường Đại học Y - Dược, Đại học Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/13",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 720,
+      "distinct_article_ids": 29,
+      "titles": [
+        "Chất lượng giấc ngủ và các yếu tố liên quan theo Y học cổ truyền của sinh viên chính quy Trường Đại học Y - Dược, Đại học Huế Châu Thị Ngọc Trâm1, Nguyễn Ngọc Lê2, Nguyễn Thiện Phước2, Lê Thị Minh Thảo2* (1) Lớp YHCT17-23A, Trường Đại học Y - Dược, Đại học Huế (2) Khoa Y học cổ truyền, Trường Đại học Y - Dược, Đại học Huế",
+        "Cập nhật tính đề kháng kháng sinh của các loại vi khuẩn phân lập được",
+        "Góc cổ tử cung gần đây đã được nghiên cứu như một thông số siêu âm tiềm năng dự báo nguy cơ sinh"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/14",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 650,
+      "distinct_article_ids": 27,
+      "titles": [
+        "Biến chứng ngoại vi do tuần hoàn ngoài cơ thể trên động tĩnh mạch đùi sau phẫu thuật van hai lá ít xâm lấn Nguyễn Hoàng Định1,2, Bùi Đức An Vinh2,3, Nguyễn Ngô Gia Phúc2, Lang Minh Triết2, Hoàng Huân2, Phan Quang Thuận1* (1) Bệnh viện Đại học Y Dược thành phố Hồ Chí Minh (2) Đại học Y Dược thành phố Hồ Chí Minh (3) Bệnh viện Trung ương Huế",
+        "Cập nhật điều trị loãng xương Lê Thị Hồng Vân1* (1) Bộ môn Nội - Trường Đại học Y - Dược, Đại học Huế",
+        "Cộng hưởng từ phổ P31: nguyên lý và ứng dụng Tôn Thất Nam Anh1*, Nguyễn Thanh Thảo2 (1) Khoa Chẩn đoán hình ảnh, Bệnh viện Trường Đại học Y - Dược Huế (2) Bộ môn Chẩn đoán hình ảnh, Trường Đại học Y - Dược, Đại học Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/15",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 288,
+      "distinct_article_ids": 10,
+      "titles": [
+        "1. INTRODUCTION Acne vulgaris is a common dermatological disorder characterized by chronic or recurrent",
+        "1. INTRODUCTION Cancer is one of the major non-communicable diseases, a major challenge of the 21st century, undermining global economic development and",
+        "1. INTRODUCTION Dentophobia is a term used to describe the irrational fear of undergoing dental treatment,"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/16",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 747,
+      "distinct_article_ids": 32,
+      "titles": [
+        "Chất ức chế p97 thúc đầy tế bào ung thư đại tràng chết theo chương trình Bùi Khắc Cường1,2,3*, Đỗ Quỳnh Chi1, Nguyễn Thị Mai Ly4 (1) Trung tâm Nghiên cứu động vật thực nghiệm, Học viện Quân Y (2) Bộ môn Sinh lý bệnh, Học viện Quân Y (3) Trung tâm Nghiên cứu Y học Việt - Đức (VG-CARE) (4) Bộ môn Khoa Sinh hoá, Bệnh viện Quân Y",
+        "Khảo sát kiến thức về bệnh tăng huyết áp của bệnh nhân tăng huyết áp và các yếu tố liên quan tại một số trạm y tế tỉnh Thừa Thiên Huế",
+        "Khảo sát kết quả kết thúc chuyển dạ và một số yếu tố ảnh hưởng đến giai đoạn II chuyển dạ ở thai phụ sinh con so đủ tháng Võ Hoàng Lâm1, Nguyễn Hoàng1, Lê Lam Hương1* (1) Trường Đại học Y - Dược, Đại học Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/18",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 777,
+      "distinct_article_ids": 32,
+      "titles": [
+        "Châu Thành Duy1, Nguyễn Ngọc Nhã Thảo1*, Trần Thâm Cơ1, Võ Đức Linh1, Võ Trí Nhân1, Đỗ Kim Thành Phát1, Liêu Hoàng Phú1, Lê Trí Anh Tài1, Lư Anh Tài1, Lê Nhựt Trường1 (1) Trường Đại học Y Dược Cần Thơ",
+        "Căn nguyên virus gây tiêu chảy cấp ở trẻ em dưới 5 tuổi nhập viện tại Bệnh viện Nhi đồng Cần Thơ Trần Quang Khải1*, Nguyễn Hoàng Tuấn Hưng1, Ngô Đắc Tuấn1 (1) Trường Đại học Y Dược Cần Thơ",
+        "Hiệu quả điều trị hạng kiên thống thể phong hàn thấp bằng cấy chỉ kết hợp bài tập dưỡng sinh Nguyễn Thị Bạch Mai 1, Đoàn Văn Minh2* (1) Khoa Y học cổ truyền, Bệnh viện quận Bình Tân, thành phố Hồ Chí Minh (2) Khoa Y học cổ truyền, Trường Đại học Y - Dược, Đại học Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/19",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 786,
+      "distinct_article_ids": 29,
+      "titles": [
+        "1. INTRODUCTION Cataract is a leading cause of blindness in Vietnam as well as in numerous countries worldwide",
+        "1. INTRODUCTION Cirrhosis is a common disease and a major cause of death. Globally, mortality cases of cirrhosis increased by 47.15% [1]. The common causes of death",
+        "1. INTRODUCTION Community pharmacists are among the most accessible healthcare professionals to the public,"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/20",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 725,
+      "distinct_article_ids": 32,
+      "titles": [
+        "Bệnh trào ngược dạ dày - thực quản là một bệnh lý khá phổ biến trên thế giới và ở Việt Nam. Những thống kê gần đây nhất vào năm 2020 cho thấy tỷ lệ bệnh trào ngược dạ dày thực quản trên thế giới tăng cao với tỷ lệ lưu hành chung là khoảng 13,98% [1].",
+        "Khảo sát giá trị Peptest ở bệnh nhân trào ngược dạ dày thực quản tại Bệnh viện Nhân dân 115 Trần Kinh Thành1*, Lê Thị Tuyết Phượng1, Phạm Quang Thiên Phú1, Nguyễn Thị Hoàng Yến1 (1) Khoa Nội Tiêu hóa, Bệnh viện Nhân dân 115 Tóm tắt:",
+        "Khảo sát thực trạng mất răng và phục hình răng đã mất của người cao tuổi tại 2 phường của thành phố Huế Trần Thị Huyền Phương1*, Lê Thị Mỹ Linh1, Nguyễn Thị Mỹ Linh1, Phan Thị Thùy Chung1 (1) Khoa Răng Hàm Mặt, Trường Đại học Y - Dược, Đại học Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/21",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 502,
+      "distinct_article_ids": 16,
+      "titles": [
+        "1. INTRODUCTION According to the World Health Organization",
+        "1. INTRODUCTION As observed through conventional antimicrobial sensitivity testing, the molecular analysis of genetic",
+        "1. INTRODUCTION Colorectal cancer (CRC) remains a formidable global health challenge and ranks among the leading"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/22",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 713,
+      "distinct_article_ids": 28,
+      "titles": [
+        "Bước đầu đánh giá tình hình ghép xương đồng loại trong điều trị một số bệnh lý chấn thương chỉnh hình",
+        "Cập nhật xơ cứng bì toàn thể Lê Thị Hồng Vân*, Nguyễn Hoàng Thanh Vân Bộ môn Nội, Trường Đại học Y - Dược, Đại học Huế",
+        "Hiệu quả giảm đau của lidocain truyền tĩnh mạch liên tục sau phẫu thuật cột sống thắt lưng Nguyễn Tiến Vượng1, Nguyễn Viết Quang Hiển2, Nguyễn Văn Minh1, Nguyễn Thanh Minh1, Lê Văn Tâm1* (1) Trường Đại học Y - Dược, Đại học Huế (2) Bệnh viện Trung ương Huế"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/23",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 117,
+      "distinct_article_ids": 4,
+      "titles": [
+        "1. INTRODUCTION Allergic rhinitis (AR) is a long-term inflammatory condition of the nose that occurs when the immune",
+        "1. INTRODUCTION Periodontitis is one of the most common diseases affecting the oral cavity. It is important to",
+        "1. INTRODUCTION Teeth that are displaced from the alveolar bone account for approximately 0.5 - 16% of all dental trauma cases [1]. This severe dental injury causes"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/24",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 698,
+      "distinct_article_ids": 28,
+      "titles": [
+        "Chất lượng giáo dục sức khỏe đối với bệnh nhân đái tháo đường điều trị nội trú tại Bệnh viện Trường Đại học Y - Dược Huế Dương Thị Ngọc Lan*, Nguyễn Thị Mai Lan Trường Đại học Y - Dược, Đại học Huế",
+        "Giá trị tiên lượng của chỉ số ABIC ở bệnh nhân xơ gan do rượu Phan Trung Nam*, Trần Thị Phương Ly Trung tâm Tiêu hoá Nội soi, Bệnh viện Trường Đại học Y - Dược Huế",
+        "Hiệu quả giảm đau của gây tê ống cơ khép kết hợp Dexamethason tĩnh mạch so với Morphin khoang dưới nhện sau phẫu thuật nội soi khớp gối Vũ Đình Quân1, Trần Xuân Thịnh1, Trần Thị Thu Lành1*, Nguyễn Văn Minh1, Phan Thắng1, Hồ Khả Cảnh2, Bùi Thị Thuý Nga1 (1) Trường Đại học Y - Dược, Đại học Huế (2) Bệnh viện Đa khoa Vĩnh Đức"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/26",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 786,
+      "distinct_article_ids": 30,
+      "titles": [
+        "Bệnh viện Phụ Sản Nhi Đà Nẵng",
+        "Can thiệp nội mạch trong điều trị đột quỵ cấp tắc động mạch não giữa",
+        "Chất lượng cuộc sống và các yếu tố liên quan ở bệnh nhân võng mạc đái tháo đường tại thành phố Đà Nẵng Trần Thị Hoài Vi1, Nguyễn Quốc Đạt1,2, Nguyễn Hoàng Lan1 1Trường Đại học Y - Dược, Đại học Huế 2Bệnh viện mắt thành phố Đà Nẵng"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/30",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 836,
+      "distinct_article_ids": 33,
+      "titles": [
+        "Bacteriocin từ vi khuẩn và tụ cầu coagulase âm tính: tiềm năng ứng dụng và thách thức Nguyễn Thị Châu Anh1, Lê Văn An1, Ngô Viết Quỳnh Trâm1, Võ Đại Học3, Dương Thị Ngọc Mai1, Nguyễn Thị Tuyền1, Đinh Thị Hải1, Nguyễn Đức Huy2, Trần Đình Bình1* 1Trường Đại học Y - Dược Huế, Đại học Huế 2Viện Công nghệ sinh học, Đại học Huế 3Bệnh viện Da liễu thành phố Huế",
+        "Báo cáo ca lâm sàng: Phát hiện đồng thời hai biến thể hiếm gặp của gen ABCG5 trên bệnh nhân trẻ tuổi bị nhồi máu cơ tim cấp Nguyễn Đình Đạt1,2, Nguyễn Đỗ Anh1, Nguyễn Hoàng Hải1, Hoàng Anh Tiến2* 1Bệnh viện Nhân Dân Gia Định 2Bộ môn Nội, Trường Đại học Y - Dược, Đại học Huế",
+        "Bước đầu ứng dụng phẫu thuật phương pháp thắt đường rò gian cơ thắt (LIFT) trong điều trị áp xe cạnh hậu môn phức tạp cấp tính Đặng Như Thành*, Phạm Anh Vũ"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/online-first-english",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 49,
+      "distinct_article_ids": 2,
+      "titles": [
+        "dehydrogenase từ mẫu máu thấm khô của trẻ sơ sinh thuộc các tỉnh miền Trung và Tây Nguyên",
+        "Đối tượng và phương pháp nghiên cứu: Nghiên cứu mô tả cắt ngang trên 30 bệnh nhân tại Bệnh viện Trường Đại học Y- Dược Huế từ 02/2024 đến 03/2025. Dữ liệu từ thăm khám lâm sàng, phim Cone-beam CT và giải phẫu bệnh được thu thập, phân tích bằng SPSS 23.0. Kết quả: Nam giới chiếm 60,0%, độ tuổi dưới 49 chiếm chủ yếu (73,4%), nang chân răng thường gặp nhất"
+      ]
+    },
+    {
+      "url": "https://huejmp.vn/index.php/journal/issue/view/online-first-vietnamese",
+      "granularity": "issue",
+      "source_id": "hue_jmp_ojs",
+      "source_name": "hue_jmp_ojs",
+      "chunks": 22,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Giá trị chẩn đoán và Ɵên lượng của chỉ số bạch cầu non và một số chỉ số tế bào máu ngoại vi trong nhiễm khuẩn huyết ở trẻ em"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/10",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 155,
+      "distinct_article_ids": 6,
+      "titles": [
+        "HUYẾT TƯƠNG GIÀU TIỂU CẦU TỰ THÂN KHÔNG CẢI THIỆN TỶ LỆ CÓ THAI Ở CHU KỲ CHUYỂN PHÔI NANG ĐÔNG LẠNH",
+        "NGHIÊN CỨU XÂY DỰNG DANH MỤC TƯƠNG TÁC THUỐC TRONG ĐIỀU TRỊ NGOẠI TRÚ TẠI BỆNH VIỆN DA LIỄU CẦN THƠ",
+        "THỰC TRẠNG KIẾN THỨC VỀ AN TOÀN THỰC PHẨM CỦA NGƯỜI CHẾ BIẾN THỨC ĂN ĐƯỜNG PHỐ TẠI HUYỆN CHƯ PĂH TỈNH GIA LAI NĂM 2021 - 2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/11",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 357,
+      "distinct_article_ids": 16,
+      "titles": [
+        "EXPERIMENTAL ANIMAL MODEL",
+        "KHẢO SÁT MỘT SỐ TÁC DỤNG KHÔNG MONG MUỐN CỦA BÀI THUỐC TIÊU ĐÀM - 03 TRÊN BỆNH NHÂN RỐI LOẠN LIPID MÁU",
+        "KẾT QUẢ ĐIỀU TRỊ CHẢY MÁU MŨI BẰNG PHẪU THUẬT NỘI SOI"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/12",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 331,
+      "distinct_article_ids": 15,
+      "titles": [
+        "GIÁ TRỊ CỦA MÔ PHỎNG BẰNG CT 4D TRONG LẬP KẾ HOẠCH XẠ TRỊ UNG THƯ PHỔI KHÔNG TẾ BÀO NHỎ GIAI ĐOẠN III",
+        "MÔ TẢ TRIỆU CHỨNG LÂM SÀNG, HÌNH ẢNH CẮT LỚP VI TÍNH VÀ MÔ BỆNH HỌC CỦA VIÊM MŨI XOANG MẠN TÍNH",
+        "MÔ TẢ ĐẶC ĐIỂM LÂM SÀNG VÀ MÔ BỆNH HỌC"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/13",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 238,
+      "distinct_article_ids": 10,
+      "titles": [
+        "CELL LUNG CANCER PATIENTS",
+        "CẬP NHẬT CÁC PHƯƠNG PHÁP CHẨN ĐOÁN SỚM UNG THƯ PHỔI Đào Ngọc Bằng1, Tạ Bá Thắng",
+        "CẬP NHẬT MỘT SỐ VẤN ĐỀ VỀ SINH LÝ BỆNH VÀ CHIẾN LƯỢC XỬ TRÍ ĐA CHẤN THƯƠNG HIỆN NAY Phạm Mạnh Cường1, Hồ Hữu Phước"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/14",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 248,
+      "distinct_article_ids": 12,
+      "titles": [
+        "AT CHO RAY HOSPITAL",
+        "CÁC BIẾN CHỨNG Ở BỆNH NHÂN ĐỘT QUỴ CHẢY MÁU NÃO",
+        "Find out the relationship between EPO concentration and some characteristics of studied patients."
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/15",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 308,
+      "distinct_article_ids": 13,
+      "titles": [
+        "AMONG OLDER DEMENTIA PATIENTS",
+        "GIẢI PHÁP SINH MẢNH GHÉP CHO BN KHUYẾT SỌ SỬ DỤNG KỸ THUẬT HỌC SÂU",
+        "KHẢO SÁT ĐẶC ĐIỂM THIẾU MÁU Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TÝP 2 CÓ TỔN THƯƠNG THẬN"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/16",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 451,
+      "distinct_article_ids": 20,
+      "titles": [
+        "Bacteroides and Clostridium. * Keywords: Antimicrobial resistance; Anaerobic bacteria.",
+        "CHẤT LƯỢNG CUỘC SỐNG SAU MỔ CỦA NGƯỜI BỆNH",
+        "FOR LARGE TUMOR LUNG CANCER"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/17",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 312,
+      "distinct_article_ids": 15,
+      "titles": [
+        "DISOPROXIL FUMARATE",
+        "NGHIÊN CỨU TẠO GEL HUYẾT TƯƠNG GIÀU TIỂU CẦU TỪ MÁU ĐỘNG MẠCH DÂY RỐN NGƯỜI",
+        "NGHIÊN CỨU ĐỘC TÍNH CẤP VÀ BÁN TRƯỜNG DIỄN CỦA VIÊN DẠ DÀY 105 TRÊN ĐỘNG VẬT THỰC NGHIỆM"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/18",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 293,
+      "distinct_article_ids": 14,
+      "titles": [
+        "BÁO CÁO ĐIỀU TRỊ THÀNH CÔNG MỘT BỆNH NHÂN SAI KHỚP KHUỶU TẠI BỆNH VIỆN DÃ CHIẾN CẤP 2 SỐ 4 VIỆT NAM THAM GIA LỰC LƯỢNG GÌN GIỮ HÒA BÌNH",
+        "HIỆU QUẢ GIẢM ĐAU ĐA MÔ THỨC SAU PHẪU THUẬT NỘI SOI TRONG VÀ SAU PHÚC MẠC LẤY THẬN GHÉP Ở NGƯỜI HIẾN SỐNG",
+        "KẾT QUẢ CHUYỂN ĐƠN PHÔI ĐÔNG LẠNH NGÀY 5 SO VỚI NGÀY 6 TẠI BỆNH VIỆN ĐA KHOA TÂM ANH HÀ NỘI"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/19",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 334,
+      "distinct_article_ids": 15,
+      "titles": [
+        "2022. Results: Successfully",
+        "BÀO CHẾ VÀ ĐÁNH GIÁ HOẠT TÍNH SINH HỌC CỦA CAO KHÔ VỎ QUẢ MĂNG CỤT (GARCINIA MANGOSTANA L.) TẠI VIỆT NAM",
+        "IN MILITARY SPORTS ATHLETES"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/20",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 339,
+      "distinct_article_ids": 15,
+      "titles": [
+        "BƯỚC ĐẦU NGHIÊN CỨU ĐẶC ĐIỂM MỘT SỐ YẾU TỐ NGUY CƠ VÀ BIẾN THỂ GEN Ở NGƯỜI BỆNH HUYẾT KHỐI TĨNH MẠCH NÃO",
+        "CA LÂM SÀNG SỐT THẦN KINH SAU CHẤN THƯƠNG TUỶ SỐNG",
+        "GIÁ TRỊ TIÊN LƯỢNG TỬ VONG CỦA NỒNG ĐỘ GFAP HUYẾT THANH Ở BỆNH NHÂN CHẤN THƯƠNG SỌ NÃO NẶNG"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/21",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 854,
+      "distinct_article_ids": 2,
+      "titles": [
+        "I, ligustilide, byakangelicol, oxypeucedanin, imperatorin, isoimperatorin, and oxypeucedanin hydrate, could be considered as quality",
+        "TҤP CHÍ Y DѬӦC HӐC QUÂN SӴ - SӔ CHUYÊN Ĉӄ DѬӦC HӐC NĂM 2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/22",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 429,
+      "distinct_article_ids": 19,
+      "titles": [
+        "GÃY KÍN THÂN XƯƠNG CÁNH TAY BẰNG KẾT XƯƠNG NẸP KHÓA",
+        "IN VIETNAMESE CHILDREN",
+        "KẾT QUẢ SỐNG VÀ KHẢ NĂNG CHE PHỦ CỦA VẠT DA LIÊN CỐT SAU TRONG PHẪU THUẬT CHE PHỦ KHUYẾT HỔNG CẲNG TAY - BÀN TAY"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/23",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 328,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TҤP CHÍ Y DѬӦC HӐC QUÂN SӴ SӔ 1 - 2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/24",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 1096,
+      "distinct_article_ids": 27,
+      "titles": [
+        "BẰNG PHƯƠNG PHÁP ELISA",
+        "CHÀO MỪNG 75 NĂM NGÀY TRUYỀN THỐNG HỌC VIỆN QUÂN Y",
+        "GIÁ TRỊ CỦA THANG ĐIỂM MAP(ASH) TRONG TIÊN LƯỢNG BỆNH NHÂN CHẢY MÁU TIÊU HÓA CẤP DO VỠ GIÃN TĨNH MẠCH THỰC QUẢN"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/25",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 484,
+      "distinct_article_ids": 20,
+      "titles": [
+        "BIẾN CHỨNG THẦN KINH CƠ Ở NGƯỜI BỆNH SỐT XUẤT HUYẾT DENGUE",
+        "BÁO CÁO CA LÂM SÀNG: PHÙ PHỔI ÁP LỰC ÂM Ở BỆNH NHÂN CHẤN THƯƠNG SỌ NÃO",
+        "BÁO CÁO CA LÂM SÀNG: TỔN THƯƠNG TỦY SỐNG BÁN CẤP VÀ THẦN KINH NGOẠI VI DO LẠM DỤNG KHÍ CƯỜI"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/26",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 429,
+      "distinct_article_ids": 18,
+      "titles": [
+        "AN ANATOMIC STUDY",
+        "AT HA DONG GENERAL HOSPITAL",
+        "Based on the presence of nasal polyps, clinicians classify CRS into two types, including CRS without"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/27",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 539,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TҤP CHÍ Y DѬӦC HӐC QUÂN SӴ - SӔ ĈҺC BIӊT 5/2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/28",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 448,
+      "distinct_article_ids": 22,
+      "titles": [
+        "17\u0003 ĐẶC ĐIỂM THỰC VẬT CÂY LU LU ĐỰC (Solanum nigrum L., HỌ CÀ (Solanaceae)) THU HÁI TẠI THÀNH PHỐ ĐÀ NẴNG",
+        "BÁO CÁO CA LÂM SÀNG VÀ TỔNG QUAN Y VĂN: ĐỘT QUỴ NHỒI MÁU NÃO THỨ PHÁT DO CHẤN THƯƠNG ĐỘNG MẠCH CẢNH TRONG",
+        "DƯỚI SIÊU ÂM ĐIỀU TRỊ VIÊM TỤY CẤP"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/29",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 448,
+      "distinct_article_ids": 21,
+      "titles": [
+        "GIÁ TRỊ CỦA TỶ LỆ LYMPHO BÀO VÀ TỶ LỆ BẠCH CẦU NEUTROPHIL/LYMPHOCYTE TRONG DỰ BÁO MỨC ĐỘ NẶNG Ở BỆNH NHÂN VIÊM TỤY CẤP",
+        "KHẢO SÁT MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN LỰA CHỌN PHƯƠNG PHÁP PHẪU THUẬT U TUYẾN THƯỢNG THẬN TẠI BỆNH VIỆN QUÂN Y 103 GIAI ĐOẠN 2021 - 2",
+        "KHẢO SÁT NGUYÊN NHÂN, YẾU TỐ ẢNH HƯỞNG ĐẾN"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/30",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 579,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TҤP CHÍ Y DѬӦC HӐC QUÂN SӴ SӔ 7 - 2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/31",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 503,
+      "distinct_article_ids": 8,
+      "titles": [
+        "BÁO CÁO CA BỆNH: THẢI GHÉP CẤP QUA TRUNG GIAN TẾ BÀO SAU GHÉP TIM",
+        "CHÀO MỪNG HỘI NGHỊ KHOA HỌC GHÉP TẠNG TOÀN QUỐC LẦN THỨ IX",
+        "GHÉP THẬN TRÊN BỆNH NHÂN CÓ BẤT THƯỜNG MẠCH MÁU CỦA THẬN GHÉP, MẠCH CHẬU NGƯỜI NHẬN:"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/32",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 556,
+      "distinct_article_ids": 25,
+      "titles": [
+        "CHẤT LƯỢNG HỒI TỈNH SAU GÂY MÊ TĨNH MẠCH BẰNG PROPOFOL CHO THỦ THUẬT CHỌC HÚT NOÃN",
+        "KẾT QUẢ BƯỚC ĐẦU TÁN SỎI THẬN QUA DA BẰNG ĐƯỜNG HẦM NHỎ TẠI BỆNH VIỆN ĐA KHOA HÀ ĐÔNG",
+        "KẾT QUẢ PHÁT HIỆN MÁU ẨN TRONG PHÂN Ở NGƯỜI TỪ 40 TUỔI TRỞ LÊN BẰNG XÉT NGHIỆM HOÁ MIỄN DỊCH TẠI 5 TỈNH MIỀN BẮC VIỆT NAM NĂM 2"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/33",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 409,
+      "distinct_article_ids": 18,
+      "titles": [
+        "BÁO CÁO CA LÂM SÀNG: UNG THƯ BIỂU MÔ ĐƯỜNG NIỆU TRÊN Ở BỆNH NHÂN SỎI THẬN CÙNG BÊN",
+        "KHẢO SÁT KHÚC XẠ TRÊN MẮT MỔ ĐỤC THỂ THỦY TINH BẨM SINH CÓ ĐẶT THỂ THỦY TINH NHÂN TẠO",
+        "KHẢO SÁT MẬT ĐỘ MẠCH MÁU VÕNG MẠC VÀ HẮC MẠC VÙNG HOÀNG ĐIỂM BẰNG MÁY CHỤP MẠCH MÁU CẮT LỚP CỐ KẾT QUANG HỌC TRÊN BỆNH NHÂN CẬN THỊ NẶNG"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/37",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 361,
+      "distinct_article_ids": 17,
+      "titles": [
+        "CỦA SÁN LÁ GAN NHỎ THU THẬP TỪ NGƯỜI",
+        "KHẢO SÁT MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG Ở BỆNH NHÂN U LYMPHO ÁC TÍNH NON-HODGKIN NGUYÊN PHÁT NGOÀI HẠCH",
+        "KẾT QUẢ SỚM CỦA CẮT POLYP ĐẠI TRỰC TRÀNG KÍCH THƯỚC ≥ 1CM QUA NỘI SOI TẠI BỆNH VIỆN QUÂN Y"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/38",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 374,
+      "distinct_article_ids": 18,
+      "titles": [
+        "GIÁ TRỊ CỦA TỶ LỆ AMMONIA HUYẾT TƯƠNG/TIỂU CẦU MÁU NGOẠI VI TRONG DỰ BÁO GIÃN TĨNH MẠCH THỰC QUẢN Ở BỆNH NHÂN XƠ GAN",
+        "GIÁ TRỊ TIÊN LƯỢNG TỬ VONG CỦA ĐIỂM NEW TRAUMA VÀ MÔ HÌNH IMPACT ĐƠN GIẢN Ở BỆNH NHÂN CHẤN THƯƠNG SỌ NÃO",
+        "GÃY Ổ CỐI, SAI KHỚP HÁNG THỂ TRUNG TÂM"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/39",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 420,
+      "distinct_article_ids": 9,
+      "titles": [
+        "BÁO CÁO CA LÂM SÀNG: ĐẶC ĐIỂM LÂM SÀNG VIÊM NÃO TỰ MIỄN DO KHÁNG THỂ KHÁNG LGI",
+        "CHÀO MỪNG HỘI NGHỊ THẦN KINH - ĐỘT QUỴ NÃO 2",
+        "GIÁ TRỊ CỦA MỘT SỐ THANG ĐIỂM TRONG DỰ BÁO MỨC ĐỘ HỒI PHỤC CỦA BỆNH NHÂN ĐỘT QUỴ NHỒI MÁU NÃO"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/40",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 445,
+      "distinct_article_ids": 20,
+      "titles": [
+        "98\u0003 BÁO CÁO CA BỆNH: ĐỒNG MẮC BẠCH CẦU TỦY MẠN CHUYỂN BẠCH CẦU CẤP DÒNG TỦY VÀ U LYMPHO KHÔNG HODGKIN TẾ BÀO T",
+        "BÁO CÁO CA BỆNH: CHẨN ĐOÁN TRƯỚC SINH HỘI CHỨNG CRI-DU-CHAT Ở THAI HẾT ỐI TẠI BỆNH VIỆN PHỤ SẢN HÀ NỘI",
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA NỒNG ĐỘ cf EBV ADN HUYẾT TƯƠNG Ở BỆNH NHÂN UNG THƯ BIỂU MÔ VÒM MŨI HỌNG"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/41",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 567,
+      "distinct_article_ids": 28,
+      "titles": [
+        "6-gingerol, zingiberol,",
+        "AND BEFORE RADIOIODINE THERAPY",
+        "Anastomotic leak is a common complication after esophagectomy for EsC, with a rate of about 5 - 25% [1, 2]."
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/42",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 633,
+      "distinct_article_ids": 30,
+      "titles": [
+        "BÁO CÁO CA LÂM SÀNG: TRƯỜNG HỢP THAI NGOÀI TỬ CUNG Ở LÁCH",
+        "CHUYỂN NẠP CÁC CẤU TRÚC PLASMID VÀ MINICIRCLE SLEEPING BEAUTY VÀO TẾ BÀO LYMPHO T BẰNG CÔNG NGHỆ NUCLEOFECTOR",
+        "CHẨN ĐOÁN DI TRUYỀN TIỀN LÀM TỔ"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/43",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 752,
+      "distinct_article_ids": 31,
+      "titles": [
+        "\u0003 *,È\u000375ӎ\u00033+Æ1\u0003/2Ҥ,\u000302;$,&\u00037521*\u00037,Ç1\u0003/ѬӦ1*\u0003.ӂ7\u000348Ҧ\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 Ĉ,ӄ8\u000375ӎ\u00039ӂ7\u00037+ѬѪ1*\u00033+Ҫ1\u00030ӄ0\u0003/Ӟ1\u00039Ô1*\u0003+¬0\u00030Һ7\u0003",
+        "\u0003 +,ӊ8\u000348Ҧ\u0003&Ӫ$\u00031Ӝ,\u000362,\u0003ĈҺ7\u0003Ӕ1*\u00037+Ð1*\u0003.+Ë\u0003\u0003 Ĉ,ӄ8\u000375ӎ\u00039,Ç0\u00037$,\u0003*,Ӳ$\u0003Ӭ\u0003'ӎ&+\u0003Ӣ\u0003%ӊ1+\u00031+Æ1\u000381*\u00037+Ѭ\u0003ĈҪ8\u000f\u0003&Ә\u0003",
+        "\u0003 7+¬1+\u00033+Ҫ1\u0003+2È\u0003+Ӑ&\u00039¬\u00030Ӝ7\u00036Ӕ\u00037È&\u0003'Ө1*\u00036,1+\u0003+Ӑ&\u0003\u0003 &Ӫ$\u00037,1+\u0003'Ҫ8\u0003/È\u0003+Ҽ\u0003 Allium tuberosum"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/44",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 634,
+      "distinct_article_ids": 31,
+      "titles": [
+        "BƯỚC ĐẦU ĐÁNH GIÁ TÌNH TRẠNG ĐỘT BIẾN GENE TERT PROMOTER Ở BỆNH NHÂN UNG THƯ TUYẾN GIÁP THỂ BIỆT HÓA KHÁNG IỐT PHÓNG XẠ BẰNG PHƯƠNG PHÁP REAL-TIME PCR",
+        "BƯỚC ĐẦU ỨNG DỤNG TRÍ TUỆ NHÂN TẠO TRONG TIÊN LƯỢNG BỆNH NHÂN CHẤN THƯƠNG SỌ NÃO",
+        "BẰNG PHƯƠNG PHÁP NHŨ HÓA BỐC HƠI DUNG MÔI"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/45",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 349,
+      "distinct_article_ids": 17,
+      "titles": [
+        "CÁC YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN LỌC MÁU TẠI BỆNH VIỆN TRUNG ƯƠNG THÁI NGUYÊN",
+        "KHẢO SÁT MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG CỦA BỆNH NHÂN UNG THƯ BÀNG QUANG ĐƯỢC ĐIỀU TRỊ BẰNG PHẪU THUẬT CẮT TOÀN BỘ BÀNG QUANG, CHUYỂN LƯU NƯỚC TIỂU THEO",
+        "KHẢO SÁT SỨC CĂNG HAI THẤT BẰNG SIÊU ÂM ĐÁNH DẤU MÔ CƠ TIM Ở BỆNH NHÂN BỆNH THẬN MẠN TÍNH GIAI ĐOẠN CUỐI TRƯỚC VÀ SAU GHÉP THẬN"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/46",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 370,
+      "distinct_article_ids": 10,
+      "titles": [
+        "BIẾN CHỨNG NGOẠI KHOA BỆNH NHÂN GHÉP THẬN TỪ NGƯỜI CHO CHẾT NÃO GIAI ĐOẠN 2010 - 2024 Lê Nguyên Vũ1,2*, Đỗ Ngọc Sơn1, Phùng Duy Hồng Sơn1 Man Thị Hương1, Phạm Thị Vân Anh1, Nguyễn Quang Nghĩa",
+        "CHÀO MỪNG HỘI NGHỊ KHOA HỌC GHÉP TẠNG TOÀN QUỐC LẦN THỨ X",
+        "CÓ HỘI CHỨNG GAN THẬN: BÁO CÁO CA LÂM SÀNG Nguyễn Thị Nga1, Đỗ Thanh Hòa1, Hoàng Quốc Lợi1 Nguyễn Huy Hoàng1, Trương Quý Kiên1*"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/47",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 604,
+      "distinct_article_ids": 27,
+      "titles": [
+        "\u0003 1+Î1\u0003/Ҥ,\u0003<\u00039Ă1\u00039¬\u0003%È2\u0003&È2\u0003&$\u0003/Æ0\u00036¬1*\u0003",
+        "\u0015\u0015\u0017\u0003 1+Ұ1\u0003;e7\u00030Ӝ7\u00036Ӕ\u0003ĈҺ&\u0003Ĉ,ӆ0\u00037Ә1\u00037+ѬѪ1*\u0003Ӣ\u0003%ӊ1+\u00031+Æ1\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 9ӂ7\u00037+ѬѪ1*\u00037+Ҩ8\u00031*Ӵ&\u00037Ҥ,\u0003%ӊ1+\u00039,ӊ1\u000348Æ1\u0003<\u0003\u0014\u0013\u0016\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 *,$,\u0003Ĉ2Ҥ1\u0003\u0015\u0013\u0015\u0014\u0003\u0010\u0003\u0015\u0013\u0015\u0018\u0003",
+        "\u0015\u0017\u0015\u0003 .+Ҧ2\u00036È7\u00036Ӵ\u0003%,ӂ1\u0003ĈӘ,\u00031Ӗ1*\u0003ĈӜ\u00030,&52$/%80,1\u00031ѬӞ&\u00037,ӆ8\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003 Ӣ\u00031*ѬӠ,\u0003%ӊ1+\u0003&+ӂ7\u00031­2\u0003'2\u0003&+Ҩ1\u00037+ѬѪ1*\u00036Ӑ\u00031­2\u0003"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/48",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 1511,
+      "distinct_article_ids": 38,
+      "titles": [
+        "CHÀO MỪNG KỶ NIỆM 75 NĂM NGÀY TRUYỀN THỐNG BỆNH VIỆN QUÂN Y",
+        "CƠ CẤU BỆNH DA LIỄU CỦA NGƯỜI BỆNH ĐIỀU TRỊ NỘI TRÚ TẠI BỆNH VIỆN QUÂN Y 103 TRONG 5 NĂM (2020 - 2024)",
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA SỨC CĂNG DỌC TOÀN BỘ THẤT TRÁI VÀ SỰ BIẾN ĐỔI THEO THỜI GIAN TRONG DỰ BÁO BIẾN CỐ TIM MẠCH CHÍNH Ở BỆNH NHÂN NHỒI MÁU CƠ TIM CẤP"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/49",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 577,
+      "distinct_article_ids": 27,
+      "titles": [
+        "CÁC YẾU TỐ LIÊN QUAN ĐẾN RỐI LOẠN NHỊP TIM Ở BỆNH NHÂN UNG THƯ VÚ ĐƯỢC HÓA TRỊ BẰNG PHÁC ĐỒ CÓ ANTHRACYCLINE",
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA CHỈ SỐ DINH DƯỠNG TIÊN LƯỢNG Ở BỆNH NHÂN U LYMPHO TẾ BÀO B LỚN LAN TOẢ",
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA DẤU ẤN HÓA MÔ MIỄN DỊCH p-STAT3 VÀ p-AMPKα Ở BỆNH NHÂN UNG THƯ BIỂU MÔ DẠ DÀY ĐƯỢC PHẪU THUẬT TRIỆT CĂN"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/50",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 568,
+      "distinct_article_ids": 27,
+      "titles": [
+        "BÁO CÁO CA LÂM SÀNG: STENT NHỰA ĐƯỜNG MẬT BỊ LÃNG QUÊN DI CHUYỂN LÊN GAN TRÁI, BIẾN CHỨNG VÀ XỬ TRÍ",
+        "BÁO CÁO CA LÂM SÀNG: SUY GIÁP DO VIÊM TUYẾN GIÁP TỰ MIỄN ĐẾN SAU BỆNH GRAVES ĐÃ ĐẠT THUYÊN GIẢM",
+        "BÁO CÁO CA LÂM SÀNG: ĐỨT GÂN DUỖI DÀI NGÓN CÁI SAU GÃY ĐẦU DƯỚI XƯƠNG QUAY ÍT LỆCH"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/51",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 652,
+      "distinct_article_ids": 27,
+      "titles": [
+        "CÁC YẾU TỐ NGUY CƠ HỘI CHỨNG KHOANG CẲNG CHÂN MẠN TÍNH Ở VẬN ĐỘNG VIÊN THỂ THAO CHUYÊN NGHIỆP",
+        "DỰ ĐOÁN in silico CÁC EPITOPE TẾ BÀO B CÓ TÍNH KHÁNG NGUYÊN TRÊN PROTEIN FepA CỦA VI KHUẨN Acinetobacter baumannii",
+        "KẾT QUẢ 6 THÁNG SAU ĐIỀU TRỊ KẾT HỢP XẠ PHẪU GAMMA KNIFE VÀ TKIs Ở BỆNH NHÂN UNG THƯ PHỔI KHÔNG TẾ BÀO NHỎ DI CĂN NÃO"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/8",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 194,
+      "distinct_article_ids": 8,
+      "titles": [
+        "KIẾN THỨC VỀ SỬ DỤNG KHÁNG SINH VÀ SỰ ĐỀ KHÁNG KHÁNG SINH CỦA NGƯỜI DÂN PHƯỜNG HÒA HẢI, QUẬN NGŨ HÀNH SƠN, THÀNH PHỐ ĐÀ NẴNG",
+        "KẾT QUẢ ÁP DỤNG QUY TRÌNH XÉT NGHIỆM DI TRUYỀN TRƯỚC LÀM TỔ BỆNH HEMOPHILIA A",
+        "NGHIÊN CỨU MỐI LIÊN QUAN GIỮA BIẾN ĐỐI ĐỔI CẤU TRÚC THÙY TRÁN VÀ MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG Ở BỆNH NHÂN NGHIỆN RƯỢU MẠN TÍNH"
+      ]
+    },
+    {
+      "url": "https://jmpm.vn/index.php/jmpm/issue/view/9",
+      "granularity": "issue",
+      "source_id": "mil_med_pharm_journal",
+      "source_name": "mil_med_pharm_journal",
+      "chunks": 331,
+      "distinct_article_ids": 14,
+      "titles": [
+        "KẾT QUẢ CHĂM SÓC DẪN LƯU KEHR TRÊN BỆNH NHÂN",
+        "Meningioma is one of the most common tumors of the central nervous system, originating from arachnoid cells",
+        "MỘT SỐ YẾU TỐ ẢNH HƯỞNG ĐẾN CHẤT LƯỢNG CUỘC SỐNG CỦA NGƯỜI BỆNH ĐÁI THÁO ĐƯỜNG TYPE 2 CÓ TỔN THƯƠNG ĐA DÂY THẦN KINH"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/1",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 442,
+      "distinct_article_ids": 22,
+      "titles": [
+        "KHẢO SÁT SỰ ĐỀ KHÁNG KHÁNG SINH CỦA CÁC VI KHUẨN ĐƯỢC PHÂN LẬP TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC",
+        "KHẢO SÁT TÁC DỤNG KÍCH THÍCH MỌC LÔNG CỦA TINH DẦU TỪ VỎ QUẢ BƯỞI KẾT HỢP CAO KHÔ BỒ KẾT TRÊN MÔ HÌNH CHUỘT NHẮT TRẮNG CẠO LÔNG",
+        "NGHIÊN CỨU GIÁ TRỊ VÀ KHẢ NĂNG DỰ BÁO BIẾN CỐ SUY TIM CỦA NỒNG ĐỘ NGAL VÀ NT-proBNP HUYẾT THANH Ở BỆNH NHÂN HỘI CHỨNG VÀNH CẤP"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/10",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 782,
+      "distinct_article_ids": 36,
+      "titles": [
+        "HUYẾT KHỐI TĨNH MẠCH NÃO: ĐẶC ĐIỂM LÂM SÀNG VÀ HÌNH ẢNH NÃO Huỳnh Phú Lộc1*, Lê Văn Minh",
+        "KHẢO SÁT TỶ LỆ, MỨC ĐỘ TĂNG HUYẾT ÁP VÀ MỘT SỐ YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN BỆNH THẬN MẠN TẠI BỆNH VIỆN ĐA KHOA TỈNH KIÊN GIANG NĂM 2012-2022 Nguyễn Trường Đông1*, Đoàn Thị Tuyết Ngân2, Trương Hoàng Khải",
+        "KẾT QUẢ ĐIỀU TRỊ BỆNH NỨT HẬU MÔN MẠN TÍNH BẰNG PHƯƠNG PHÁP CẮT BÊN CƠ THẮT TRONG KIỂU KÍN TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2020-2022 Trần Minh Tiền*, Nguyễn Văn Hiên, Phạm Văn Năng"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/11",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 598,
+      "distinct_article_ids": 30,
+      "titles": [
+        "GIÁ TRỊ CỦA GLUCOSE MÁU, BẠCH CẦU MÁU TRONG TIÊN LƯỢNG BỆNH NHÂN CHẤN THƯƠNG SỌ NÃO TẠI KHOA CẤP CỨU BỆNH VIỆN ĐA KHOA TRUNG TÂM AN GIANG 2021 Tạ Hoàng Thanh Phụng*",
+        "ICD 10 tại bệnh viện Trường Đại học Y Dược Cần Thơ từ năm 2013 đến 2017”, Tạp chí Y Dược học Cần Thơ, 19 Đa khoa Khu vực Năm Căn, Cà Mau từ 2012 đến 2016”, Tạp chí Y Dược học Cần Thơ, tr. 15 Vĩnh Long trong năm năm từ 2010-2014, Đại học Y Dược Cần Thơ,",
+        "KHẢO SÁT CHIẾT XUẤT, BÀO CHẾ VÀ XÁC ĐỊNH HÀM LƯỢNG POLYOHENOL TRONG CAO KHÔ QUẢ KHỔ QUA (MOMORDICA CHARANTIA L.)"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/12",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 411,
+      "distinct_article_ids": 19,
+      "titles": [
+        "2.1. Research subjects Patient samples were cultured at the microbiological laboratory of Can Tho University of Medicine and Pharmacy Hospital.",
+        "2.2. Data collection We performed a survey to collect data via a questionnaire to analyze the completeness of knowledge, attitudes, and practices of COVID-19 prevention and access factors influencing good practices among medical students in the study sample.",
+        "2.2.2. Data collection Annual consumption data and associated expenditures on individual regimens for each year between January and December 2019 were retrieved from the center's electronic health commodities information system and manual records. Invoices were recorded for every purchase and sale transaction of the pharmacy department."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/13",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 591,
+      "distinct_article_ids": 26,
+      "titles": [
+        "1. Trường Đại học Y Dược Cần Thơ 2. Bệnh viện Lao và Bệnh phổi thành phố Cần Thơ *Email: [e-mail withheld]",
+        "GIÁ TRỊ CỦA CỘNG HƯỞNG TỪ TRONG CHẨN ĐOÁN TỔN THƯƠNG DÂY CHẰNG CHÉO KHỚP GỐI TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2020-2022 Bùi Tiến Sĩ*, Nguyễn Phước Bảo Quân, Nguyễn Thành Tấn",
+        "KHẢO SÁT HOẠT TÍNH CHỐNG OXY HÓA VÀ ĐỘC TẾ BÀO UNG THƯ GAN NGƯỜI HepG2 IN VITRO CỦA CÁC PHÂN ĐOẠN TỪ RỄ, THÂN XÁO TAM PHÂN [Paramignya trimera (Oliv.) Burkill] Trần Thị Thúy Quỳnh1, Nguyễn Hồng Hạnh2, Phan Thị Giang Thủy1, Phạm Đông Phương1, Đỗ Thị Hồng Tươi1* 1. Đại học Y Dược Thành phố Hồ Chí Minh"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/14",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 546,
+      "distinct_article_ids": 25,
+      "titles": [
+        "BÁO CÁO CA BỆNH: PHẪU THUẬT NỘI SOI ĐIỀU TRỊ VIÊM TÚI THỪA MANH TRÀNG TẠI BỆNH VIỆN NHI ĐỒNG CẦN THƠ Trần Việt Hoàng1*, Võ Quang Huy1, Tạ Vũ Quỳnh2, Võ Ngọc Lân",
+        "CÁC DẠNG MẠCH MÁU CỦA ĐẠI TRÀNG PHẢI VÀ KẾT QUẢ ĐIỀU TRỊ SỚM UNG THƯ ĐẠI TRÀNG PHẢI BẰNG PHẪU THUẬT NỘI SOI",
+        "KIẾN THỨC VÀ HÀNH VI LIÊN QUAN ĐẾN BỆNH VIÊM GAN VI RÚT C: KHẢO SÁT TRÊN NGƯỜI DÂN TẠI TỈNH TRÀ VINH Trương Quang Phong*, Huỳnh Thị Hồng Nhung, Nguyễn Thanh Bình Trường Đại học Trà Vinh"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/15",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 472,
+      "distinct_article_ids": 21,
+      "titles": [
+        "2.1 Research design: A randomized controlled clinical trial study in 108 pregnant women with singleton gestation from 14 to 28 weeks, having no uterine scar, no contraindication of misoprostol, and having indications for the necessity of induced terminations due to intrauterine fetal deaths or",
+        "2.1.2. Time and place of study The study was conducted at Can Tho University of Medicine and Pharmacy Hospital from 2020-2021.",
+        "39.21% 33.52% 17.42%"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/16",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 711,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HỘI NGHỊ KHOA HỌC QUỐC TẾ MỞ RỘNG LẦN THỨ II NĂM 2023 TRƯỜNG ĐẠI HỌC KỸ THUẬT Y – DƯỢC ĐÀ NẴNG"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/17",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 500,
+      "distinct_article_ids": 22,
+      "titles": [
+        "1. Đại học Y Dược Thành phố Hồ Chí Minh 2. Sở Y tế Lâm Đồng *Email: [e-mail withheld]",
+        "KHẢO SÁT ĐẶC ĐIỂM THỰC VẬT VÀ MÃ VẠCH ADN CỦA CÂY BỤP GIẤM (HIBISCUS SABDARIFFA L.)-HỌ MALVACEAE Lý Hồng Hương Hạ, Hồ Thị Thạch Thúy, Trần Thị Thu Hằng,",
+        "LÂM SÀNG, HÌNH ẢNH HỌC VÀ CHỨC NĂNG PHỔI Võ Phạm Minh Thư1*, Đinh Chí Thiện1, Trần Xuân Quỳnh1, Phan Việt Hưng1, Nguyễn Thị Hồng Trân1, Dương Thị Thanh Vân1, Trần Trọng Anh Tuấn2, Nguyễn Ngọc Thành Long2, Đỗ Thị Thanh Trà2, Trát Quốc Trung2 1. Trường Đại học Y Dược Cần Thơ"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/18",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 683,
+      "distinct_article_ids": 31,
+      "titles": [
+        "(Baltimore), 98(27). (Ngày nhận bài: 03/11/2021 – Ngày duyệt đăng: 20/12/2021)",
+        "KHẢO SÁT TỶ LỆ RUNG NHĨ TRÊN BỆNH NHÂN CAO TUỔI SUY TIM MẠN TẠI BỆNH VIỆN ĐA KHOA TỈNH KHÁNH HÒA TỪ THÁNG 9/2020 ĐẾN THÁNG 2/2021 Dương Thị Bích Nguyệt*, Trần Hải Yến",
+        "KHẢO SÁT TỶ LỆ TRẦM CẢM CHỦ YẾU VÀ MỐI LIÊN QUAN GIỮA CHẤT LƯỢNG CUỘC SỐNG VÀ TRẦM CẢM TRÊN BỆNH NHÂN CAO TUỔI MẮC TĂNG HUYẾT ÁP VÀ ĐÁI THÁO ĐƯỜNG NẰM VIỆN NỘI"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/20",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 751,
+      "distinct_article_ids": 38,
+      "titles": [
+        "2. Trường Đại học Y Dược Cần Thơ *Email:[e-mail withheld]",
+        "CÁC YẾU TỐ LIÊN QUAN ĐẾN KIỂM SOÁT GLUCOSE MÁU Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG ĐIỀU TRỊ NỘI TRÚ TẠI KHOA NỘI TỔNG HỢP - BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2017-2020 Võ Quang Lộc Duyên*, Huỳnh Thị Mỹ Duyên",
+        "KHẢO SÁT CHẤT LƯỢNG CUỘC SỐNG VÀ MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN CHẤT LƯỢNG CUỘC SỐNG NGƯỜI BỆNH UNG THƯ TẾ BÀO GAN NGUYÊN PHÁT TẠI BỆNH VIỆN"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/21",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 749,
+      "distinct_article_ids": 35,
+      "titles": [
+        "2. Trường Đại học Y Dược Cần Thơ * Email:[e-mail withheld]",
+        "2. Trường Đại học Y Dược Cần Thơ *Email:[e-mail withheld]",
+        "5. Tra cứu cây thuốc, Khoa Dược, Trường đại học Y Dược thành phố Hồ Chí Minh, địa chỉ: Flavonoids and Acetogenins in Graviola (Annona muricata) Leaves Confer Protection (Ngày nhận bài: 25/6/2021 – Ngày duyệt đăng: 12/8/2021)"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/22",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 587,
+      "distinct_article_ids": 28,
+      "titles": [
+        "CÁC YẾU TỐ LIÊN QUAN VÀ KẾT QUẢ CẢI THIỆN CHẤT LƯỢNG CUỘC SỐNG TRÊN BỆNH NHÂN CHẠY THẬN NHÂN TẠO ĐỊNH KỲ TẠI BỆNH VIỆN ĐA KHOA TƯ NHÂN CAO VĂN CHÍ NĂM 2019 Đào Anh Dũng",
+        "GIÁ TRỊ CỦA PHƯƠNG PHÁP TÍNH TAM SUẤT TRONG XÁC ĐỊNH CHIỀU DÀI LÀM VIỆC TRÊN PHIM X QUANG CHỤP THEO KỸ THUẬT ĐƯỜNG PHÂN GIÁC KHI TRÂM Ở NHỮNG VỊ TRÍ KHÁC NHAU",
+        "HIỆU QUẢ ĐIỀU TRỊ DỰ PHÒNG BUỒN NÔN VÀ NÔN CỦA ONDANSETRON PHỐI HỢP DEXAMETHASON SAU PHẪU THUẬT CẮT TÚI MẬT NỘI SOI"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/23",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 689,
+      "distinct_article_ids": 34,
+      "titles": [
+        "3. Nguyễn Khắc Linh, Ngô Văn Tuấn “ Bước đầu đánh giá kết quả chụp và can thiệp động mạch vành qua da tại BVĐK Quảng ninh từ tháng 2/016 – 9/016”, Tạp Chí Tim Mạch Học Việt Nam, pp. tr. 18-28. so với chụp động mạch vành cản quang”, Luận án tiến sĩ y học, Đại học Y Dược TPHCM.",
+        "BƯỚC ĐẦU XÂY DỰNG TIÊU CHUẨN CƠ SỞ CHO DƯỢC LIỆU HOA ĐẬU BIẾC (Clitoria ternatea L., Fabaceae) ĐƯỢC THU HÁI TẠI CẦN THƠ",
+        "KHẢO SÁT HÀN NHIỆT THÁC TẠP CHỨNG VÀ CÁC YẾU TỐ LIÊN QUAN TRÊN BỆNH NHÂN TOẠ CỐT PHONG TẠI BỆNH VIỆN Y HỌC CỔ TRUYỀN THÀNH PHỐ CẦN THƠ NĂM 2020-2021 Tạ Trung Nghĩa*, Dương Hoàng Nhơn, Châu Nhị Vân"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/24",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 653,
+      "distinct_article_ids": 35,
+      "titles": [
+        "AN TOÀN, HỢP LÝ TẠI TRUNG TÂM Y TẾ THỊ XÃ VĨNH CHÂU NĂM 2020 Nguyễn Quốc Hùng1*, Phan Hữu Hên2, Nguyễn Thị Hạnh3, Trần Trúc Linh4 1. Trung tâm Y tế thị xã Vĩnh Châu",
+        "KHẢO SÁT CHẤT LƯỢNG CUỘC SỐNG CỦA PHỤ NỮ SỬ DỤNG VÒNG NÂNG PESSARY CHO BỆNH SA TẠNG CHẬU TẠI BỆNH VIỆN PHỤ SẢN THÀNH PHỐ CẦN THƠ",
+        "KẾT QUẢ DỰ PHÒNG HUYẾT KHỐI TĨNH MẠCH SÂU CHI DƯỚI BẰNG ENOXAPARIN Ở BỆNH NHÂN NHỒI MÁU NÃO CẤP Nguyễn Khánh Duy¹*, Lê Duy Long2, Nguyễn Thị Diễm"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/29",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 768,
+      "distinct_article_ids": 39,
+      "titles": [
+        "BGDĐT ngày 18 tháng 09 năm 2008 của Bộ trưởng Bộ Giáo dục và Đào tạo. BYT ngày 14 tháng 05 năm 2019 của Bộ Y tế. 3. Đặng Thị Thu Hằng, Tạ Thị Như Quỳnh, Nguyễn Thị Hải Hà, Đặng Bảo Ngọc, Trần Công",
+        "Bệnh viện Tai Mũi Họng Cần Thơ năm 2015-2017, Luận văn Bác sĩ Nội trú, Trường Đại học Y Dược Cần Thơ, Cần Thơ. của viêm mũi xoang mạn tính có polyp, Luận văn Thạc sĩ Y học, Trường Đại học Y Hà",
+        "HPLC/PDA. Quy trình xử lý mẫu đơn giản với độ chọn lọc cao, giới hạn phát hiện và giới hạn định lượng thấp, đạt độ đúng và độ chính xác. Phương pháp đã thẩm định có thể ứng dụng định lượng đồng thời rutin và luteolin trong thực phẩm chức năng chứa cao hoa hòe và cao hoa cúc và các chế phẩm khác có chứa rutin, luteolin."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/33",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 613,
+      "distinct_article_ids": 30,
+      "titles": [
+        "Bệnh viện Phụ sản Cần Thơ, Luận văn Thạc sĩ Y học. misoprostol sau mifepristone tại trung tâm SKSS Thừa Thiên Huế, Báo cáo nghiên cứu khoa học, Sở Y tế Thừa Thiên Huế.",
+        "KHẢO SÁT CÔNG DỤNG ĐIỀU TRỊ TIÊU CHẢY DO KHÁNG SINH CỦA MỘT SỐ CHẾ PHẨM CHỨA PROBIOTIC TRÊN THỊ TRƯỜNG Dương Thị Trúc Ly1*, Hà Phú Cường1, Trần Mộng Tố Tâm1, Nguyễn Đinh Nga",
+        "KHẢO SÁT NẾP NHĂN DÁI TAI TRÊN BỆNH NHÂN ĐỘT QUỴ TẠI BỆNH VIỆN ĐA KHOA TRUNG ƯƠNG CẦN THƠ VÀ BỆNH VIỆN Y HỌC CỔ TRUYỀN CẦN THƠ"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/34",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 524,
+      "distinct_article_ids": 25,
+      "titles": [
+        "12. Nguyễn Thị Ái Thủy, Đinh Thanh Thế, Võ Tam. Nghiên cứu đặc điểm dịch tễ học, lâm sàng, cận lâm sàng bệnh gút tại một số bệnh viện thành phố Huế. Tạp chí Y học Thực hành. 2012, 807(2), 92-95. 15. Elsaman A.M., Muhammad E.M., Pessler F. Sonographic findings in gouty arthritis: diagnostic",
+        "7. Phạm Thị Phương. Nghiên cứu một số đặc điểm dịch tễ, lâm sàng, cận lâm sàng và bước đầu nhận xét kết quả điều trị bệnh viêm màng não mủ ở trẻ sơ sinh bệnh viện Nhi Thanh Hóa. Tạp chí nghiên cứu và thực hành nhi khoa. 2019. 1, 39-43. 9. Nguyễn Thị Quỳnh Nga. Đặc điểm lâm sàng, cận lâm sàng của viêm màng não nhiễm khuẩn ở",
+        "GIÁ TRỊ TIÊN LƯỢNG TỬ VONG CỦA CHỈ SỐ VIS Ở BỆNH NHI SỐC NHIỄM KHUẨN TẠI KHOA HỒI SỨC TÍCH CỰC-CHỐNG ĐỘC BỆNH VIỆN NHI ĐỒNG CẦN THƠ"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/35",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 519,
+      "distinct_article_ids": 26,
+      "titles": [
+        "1. Đai học Y Dược Thành phố Hồ Chí Minh 2. Trường Đại Học Quốc Tế Hồng Bàng *Email: [e-mail withheld]",
+        "CHẤT LƯỢNG CUỘC SỐNG VÀ MỘT SỐ YẾU TỐ LIÊN QUAN CỦA NGƯỜI CAO TUỔI TẠI XÃ TÂN PHÚ, HUYỆN TÂN PHÚ ĐÔNG, TỈNH TIỀN GIANG NĂM 2020 Hồ Văn Son1*, Nguyễn Duy Phong1, Bùi Hoàng Thanh Hiền1, Nguyễn Thị Như Nguyệt1, Bùi Thị Tú Quyên",
+        "CÁC VẤN ĐỀ LIÊN QUAN ĐẾN THUỐC TRONG ĐƠN THUỐC NGOẠI TRÚ CHO TRẺ EM TẠI THÀNH PHỐ CẦN THƠ Lê Trần Thanh Vy1, Nguyễn Thắng2*, Nguyễn Hương Thảo"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/36",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 483,
+      "distinct_article_ids": 22,
+      "titles": [
+        "Cần Thơ về việc tăng cường thực hiện các biện pháp phòng, chống dịch COVID-19 trong Trường Đại học Y Dược Cần Thơ; 11. Thống kê tình hình dịch bệnh COVID-19, Trang tin về dịch bệnh viêm đường hô hấp cấp 12. Công văn số 45/TANDTC-PC ngày 30 tháng 3 năm 2020 của Hội đồng Thẩm phán Tòa",
+        "HIV/AIDS người lớn và đánh giá kết quả can thiệp tại Bệnh viện Đa khoa tỉnh Sóc Trăng năm 2015”, Luận văn chuyên khoa cấp II, Đại học Y dược Cần Thơ, Cần Thơ. bệnh nhân tại phòng khám ngoại trú điều trị HIV/AIDS, Trung tâm kiểm soát bệnh tật tỉnh Bắc Giang”, Luận văn Dược sĩ chuyên khoa cấp I, Trường Đại học Dược Hà Nội, Hà Nội. “Factor associated with suboptimal adherence to antiretroviral therapy in VN: a cross- section study using audio computer – assissted self – interview ( ACASI)”, BMC Infectious Diseases, 13(154), pp 1471-2334.",
+        "KHẢO SÁT KHẢ NĂNG ĐỐI KHÁNG VI SINH VẬT GÂY BỆNH VÀ ĐỀ KHÁNG KHÁNG SINH CỦA MỘT SỐ CHỦNG PROBIOTIC Dương Thị Trúc Ly1*, Ngô Vũ Quỳnh Hương1 Trần Mộng Tố Tâm1, Trần Cát Đông"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/37",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 528,
+      "distinct_article_ids": 26,
+      "titles": [
+        "HPLC-DAD. Sản phẩm tổng hợp đủ điều kiện để thiết lập chất chuẩn đối chiếu.",
+        "KHẢO SÁT DỊCH TỄ TRONG PHÒNG, CHỐNG DỊCH BỆNH COVID-19 ĐỐI VỚI CÔNG CHỨC, VIÊN CHỨC VÀ NGƯỜI LAO ĐỘNG TẠI TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ",
+        "KHẢO SÁT MỨC ĐỘ YÊU THÍCH NGHIÊN CỨU KHOA HỌC VÀ CÁC YẾU TỐ LIÊN QUAN CỦA SINH VIÊN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2019 Lê Thị Nhân Duyên*, Huỳnh Thanh Đạt, Lê Thị Cẩm Tú,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/39",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 460,
+      "distinct_article_ids": 21,
+      "titles": [
+        "HIỆU QUẢ CỦA TƯ VẤN SỨC KHỎE VỀ XỬ TRÍ SỐT CHO THÂN NHÂN BỆNH NHI Bùi Thị Kim Tuyến1*, Huỳnh Thị Hồng Thu1, Nguyễn Thị Ngọc Ngoan1, Phạm Lê An",
+        "Huỳnh Thị Mỹ Duyên*, Lê Hoàng Vũ Trường Đại học Y Dược Cần Thơ *Email: [e-mail withheld]",
+        "KHẢO SÁT CHỈ SỐ BỌ GẬY, KIẾN THỨC, THÁI ĐỘ, THỰC HÀNH VÀ CÁC YẾU TỐ LIÊN QUAN ĐẾN PHÒNG CHỐNG SỐT XUẤT HUYẾT DENGUE CỦA NGƯỜI DÂN THỊ XÃ VĨNH CHÂU, TỈNH SÓC TRĂNG"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/4",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 501,
+      "distinct_article_ids": 22,
+      "titles": [
+        "CẬP NHẬT NHỮNG ĐIỂM MỚI VỀ LIỆU PHÁP BÙ DỊCH TRONG ĐIỀU TRỊ NHIỄM TOAN CETON DO ĐÁI THÁO ĐƯỜNG Ở TRẺ EM VÀ THANH THIẾU NIÊN",
+        "ESBL và hiệu quả của kháng sinh liệu pháp tại khoa Tiết niệu Bệnh viện Nhân dân Gia Định”, Luận văn Thạc sĩ Y học, Đại học Y Dược TP.Hồ Chí Minh. Việt Nam”. VUNA. phổ rộng tại bệnh viện Bình Dân”, Tạp chí Y học TP. Hồ Chí Minh, 16(1), tr.285-301.",
+        "KHẢO SÁT SỰ KHÁC NHAU VỀ KIẾN THỨC, THỰC HÀNH RỬA TAY VÀ ĐEO KHẨU TRANG PHÒNG COVID-19 TRÊN BỆNH NHÂN CAO TUỔI VÀ KHÔNG CAO TUỔI TẠI BỆNH VIỆN THỐNG NHẤT"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/40",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 698,
+      "distinct_article_ids": 32,
+      "titles": [
+        "12. Ngô Phạm Tuân, Phạm Thị Tâm. Nghiên cứu sự tuân thủ điều trị và các yếu tố liên quan của người tăng huyết áp tại Thị trấn Mái Dầm và Ngã Sáu, huyện Châu Thành, tỉnh Hậu Giang năm 2015. Trường Đại học Y Dược Cần Thơ. 2016.",
+        "6. Phạm Thị Yến. Nghiên cứu kết quả điều trị vết thương phần mềm chậm liền có phối hợp với trị liệu oxy cao áp tại Viện Y học biển năm 2016-2017. Trường Đại học Y Dược Hải Phòng. 2017. of diabetic ulcers: a review.",
+        "HÌNH ẢNH HỌC XUẤT HUYẾT NÃO Ở TRẺ EM"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/42",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 1360,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HỘI NGHỊ THƯỜNG NIÊN HỌC VIÊN – SINH VIÊN NGHIÊN CỨU KHOA HỌC NĂM 2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/43",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 523,
+      "distinct_article_ids": 34,
+      "titles": [
+        "1 2 nghiên cứu được tiến hành với mục tiêu: Xác định tỷ lệ sinh viên Y học cổ truyền mất ngủ bằng thang đo chất lượng giấc ngủ Pittsburgh (PSQI) và tìm hiểu một số yếu tố liên quan đến tình trạng mất ngủ.",
+        "10. Nguyễn Thị Mai Anh. Đặc điểm các chỉ số hồng cầu trong chẩn đoán thiếu máu thiếu sắt và β- Thalassemia. Tạp chí Y học Việt Nam, 2015, 434, 81-82. 11. Shirlyn McKenzie and Lynne Williams. Clinical Laboratory Hematology (Pearson Clinical",
+        "12. Nguyễn Khánh Thùy Linh, và Nguyễn Thị Ngọc Trâm. Xây dựng phương pháp định lượng flavonoid toàn phần trong dịch chiết lá vối (Cleistocalyx Operculatus) bằng quang phổ UV-VIS. Tạp chí Y Dược học quân sự. 2022. 47 (4), 5-17."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/44",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 705,
+      "distinct_article_ids": 35,
+      "titles": [
+        "1. Bệnh viện Đa khoa Đồng Tháp 2. Trường Đại học Y Dược Cần Thơ *Email: [e-mail withheld] Ngày nhận bài: 06/3/2023 Ngày phản biện: 23/9/2023 Ngày duyệt đăng: 30/9/2",
+        "11. Trần Hùng Lâm, Đoàn Vũ, Trần Ngọc Quảng Phi. Đánh giá bề dày vách xương và mô nướu mặt ngoài vùng răng trước hàm trên: nghiên cứu trên hình ảnh CBCT. Tạp chí Y học Việt Nam. 2021. 12. Nguyễn Thị Như Trang. Nghiên cứu hình thái thân, chân răng hàm lớn thứ nhất, thứ hai trên",
+        "5. Trương Xuân Hùng. Nghiên cứu tiền đái tháo đường trên đối tượng cán bộ chiến sỹ. Tạp chí nội 6. Nguyễn Hoài Lê. Thực trạng bệnh đái tháo đường ở người từ 25 tuổi trở lên trên địa bàn tỉnh 7. Tô Văn Tuấn, Đào Nguyễn Thắng, Nguyễn Thượng Lễ, Nguyễn Thượng Nghĩa. Rối loạn đường"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/45",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 792,
+      "distinct_article_ids": 35,
+      "titles": [
+        "11. Lâm Quốc Thanh. Đánh giá kết quả điều trị gãy lún nhiều mảnh xương gót bằng phương pháp kết hợp xương nẹp ốc. Trường Đại Học Y Khoa Phạm Ngọc Thạch. 2015. 81. 12. Liu G. T., Vanpelt M. D., Lalli T., Raspovic K. M., Wukich D. K. Surgical Management of",
+        "11. Nguyễn Văn Quý. Nghiên cứu tình hình đáp ứng miễn dịch ở trẻ em 8 tuổi sau khi tiêm đủ và đúng liều vaccin ngừa viêm gan B tại TP Rạch Giá tỉnh Kiên Giang năm 2010. Trường Đại học Y Dược Cần Thơ. 2011. 58 12. Van Der Meeren, O., Crasta, P., Cheuvart, B., De Ridder, M. Characterization of an age-response",
+        "12. Nguyễn Ngọc Thúy. Đánh giá kết quả cải thiện chức năng răng miệng và chất lượng cuộc sống của bệnh nhân mất răng toàn bộ được phục hình tháo lắp toàn hàm tại Trường Đại học Y Dược Cần Thơ. Trường Đại học Y Dược Cần Thơ. 2018."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/46",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 703,
+      "distinct_article_ids": 29,
+      "titles": [
+        "% Skin type Type III",
+        "2. Tra Vinh General Hospital *Corresponding author: [e-mail withheld] Received: 11/01/2023 Reviewed:07/9/2023 Accepted: 03/10/2",
+        "2.1.2. Inclusion criteria"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/47",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 728,
+      "distinct_article_ids": 35,
+      "titles": [
+        "10. Nguyễn Khoa Diệu Vân, Nguyễn Thị Thục Hiền. Nghiên cứu đặc điểm lâm sàng, nồng độ Testosterone ở bệnh nhân đái tháo đường type 2 có rối loạn cương Bệnh viện Bạch Mai. 2016. Luận văn thạc sĩ.",
+        "11. Phạm Huy Thông. Phân tích kiến thức thái độ và tuân thủ điều trị trên bệnh nhân đái tháo đường típ 2 điều trị ngoại trú tại Bệnh Viện Quân Y 354. Luận văn tốt nghiệp Thạc sĩ Dược học. Trường Đại học Dược Hà Nội. 2019. 12. Huỳnh Phi Hùng. Nghiên cứu một số yếu tố nguy cơ tim mạch và kết quả Kiểm soát được đường",
+        "2. Tôn Long Hoàng Thân, Võ Tấn Đức, Nguyễn Thị Phương Loan. Đặc điểm hình ảnh Xquang cắt lớp vi tính của thủng đường tiêu hóa do dị vật. Tạp chí Y học Thành phố Hồ Chí Minh. 2019. 23 (1), 120-125."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/48",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 596,
+      "distinct_article_ids": 25,
+      "titles": [
+        "10.2147/CPAA.S276085. 29. A Romero-Corral and S.M. Caples, Interactions Between Obesity and Obstructive Sleep Apnea Quality and Quality of Life of Patients with Obstructive Sleep Apnoea - an Explorative, Proof",
+        "3. Ngô Bửu Thiệu. Tỉ lệ huyết thanh dương tính với ấu trùng Toxocara canis và một số yếu tố liên quan ở người dân huyện Châu Thành, tỉnh Bến Tre, năm 2019. Luận văn Thạc sĩ y học. 4. Nguyễn Văn Đề, Phạm Văn Khuê. Bệnh Ký sinh trùng truyền lây giữa người và động vật Nhà",
+        "7. Nguyễn Ngọc Hoành Mỹ Tiên, Thân Hà Ngọc Thể, Nguyễn Thị An. Khảo sát tỷ lệ suy yếu và mối liên quan giữa suy yếu với kết cục lâm sàng ngắn hạn ở người bệnh cao tuổi điều trị nội trú tại Bệnh viện Bà Rịa. Tạp chí Y học Thành phố Hồ Chí Minh. 2019. 23(2), 9-14."
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/49",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 364,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Liên Chi hội Chấn thương Chỉnh hình Thành phố Hồ Chí Minh"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/5",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 671,
+      "distinct_article_ids": 30,
+      "titles": [
+        "BẠCH CẦU ÁI TOAN MÁU – DẤU ẤN SINH HỌC TIÊN LƯỢNG ĐỢT CẤP BỆNH PHỔI TẮC NGHẼN MẠN TÍNH Dương Thị Thanh Vân1*, Trương Thị Như Hảo1, Phạm Hoàng Khánh1, Trần Xuân Quỳnh1, Đỗ Thị Thanh Trà",
+        "BỆNH ĐÁI THÁO ĐƯỜNG TÝP 2 TRÊN NGƯỜI TRƯỞNG THÀNH TẠI HUYỆN PHONG ĐIỀN, THÀNH PHỐ CẦN THƠ NĂM 2021 Lê Nguyễn Trí Nhân1*, Võ Duy Nhàn1, Lê Trung Khả1, Nguyễn Thị Thu Hiền2, Phạm Hùng Lực1 1. Trường Đại học Nam Cần Thơ 2. Trường Đại học Y Dược Cần Thơ",
+        "HÀNH VI TÌNH DỤC KHÔNG AN TOÀN VÀ MỘT SỐ YẾU TỐ LIÊN QUAN CỦA NAM QUAN HỆ TÌNH DỤC ĐỒNG GIỚI TẠI THÀNH PHỐ CẦN THƠ NĂM 2021 Lý Anh Huy1*, Dương Minh Đức2, Trần Ngọc Quế3, Dáp Thanh Giang1, Bùi Ngọc Phương Oanh1, Phạm Lê Huyền Trang1, Lê Minh Thái1, Lưu Huỳnh BảoChâu"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/50",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 779,
+      "distinct_article_ids": 37,
+      "titles": [
+        "CHẤT LƯỢNG CUỘC SỐNG CỦA BỆNH NHÂN UNG THƯ ĐẠI TRỰC TRÀNG ĐIỀU TRỊ NỘI TRÚ TẠI HỆ THỐNG BỆNH VIỆN ĐA KHOA XUYÊN Á NĂM 2022-2023 Đặng Quốc Sỹ, Nguyễn Phục Hưng*",
+        "CHẤT LƯỢNG CUỘC SỐNG VÀ MỘT SỐ YẾU TỐ LIÊN QUAN Ở NGƯỜI BỆNH UNG THƯ ĐIỀU TRỊ TẠI BỆNH VIỆN ĐẠI HỌC Y DƯỢC SHING MARK",
+        "HIỆU QUẢ CÔNG TÁC TƯ VẤN GIÁO DỤC SỨC KHỎE CHO NGƯỜI BỆNH THẬN MẠN ĐIỀU TRỊ NỘI TRÚ TẠI BỆNH VIỆN HOÀN MỸ SÀI GÒN NĂM 2022 Nguyễn Văn Toàn*, Hồ Bảo Trân, Trần Thị Xuân Giao"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/51",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 861,
+      "distinct_article_ids": 37,
+      "titles": [
+        "1. Trường Đại học Y Dược Cần Thơ 2. Bệnh viện Đa khoa huyện Giồng Riềng *Email: [e-mail withheld] Ngày nhận bài: 15/9/2023 Ngày phản biện: 15/12/2023 Ngày duyệt đăng: 25/12/2",
+        "11. Nguyễn Ngọc Yến, Nguyễn Thị Thúy Lan, Đặng Lê Tuyết Anh, Dương Thị Bích, Đỗ Văn Mãi. Nghiên cứu bào chế dung dịch gel chứa tinh dầu hương thảo (Rosmarinus officinalis L.) dùng hỗ trợ điều trị bệnh viêm âm đạo do nấm Candida albicans, Tạp chí Nghiên cứu khoa học và",
+        "13. Ngô Thị Tính và cộng sự. Cơ cấu bệnh nhân đến khám và điều trị tại Trung tâm Ung bướu Thái Nguyên 5 năm, giai đoạn 2012 - 2016. Tạp chí Ung thư học Việt Nam. 2017. 4, 41-45. 14. Muthu J., Muthanandam S. Exploring the reasons behind delayed presentation of oral cancers:"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/52",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 668,
+      "distinct_article_ids": 31,
+      "titles": [
+        "(B2, B3, B6, B9) TRONG MẪU SỮA BỘT CÔNG THỨC Nguyễn Thị Ngọc Vân*, Dương Tuyết Ngân, Lâm Vĩ Trang, Nguyễn Ngọc Nguyên Trang, Phạm Tuấn Thành, Hà Phi Long, Lê Thị Nhân Duyên, Nguyễn Thị Đặng, Đỗ Trung Hiền",
+        "1. Trường Cao đẳng Y tế Cà Mau 2. Bệnh viện Sản Nhi Cà Mau *Email: [e-mail withheld] Ngày nhận bài: 09/8/2023 Ngày phản biện: 16/12/2023 Ngày duyệt đăng: 25/01/2",
+        "9. Nguyễn Ngọc Sơn. Chất lượng giấc ngủ và yếu tố liên quan ở sinh viên ngành bác sĩ răng hàm mặt đại học Y dược thành phố Hồ Chí Minh năm 2019. Khóa luận tốt nghiệp bác sĩ y học dự phòng. Trường Đại học Y dược thành phố Hồ Chí Minh. 2019. 10. Al-Kandari, S., Alsalem, A., Al-Mutairi, S., Al-Lumai, D., Dawoud, A., Moussa, M. Association"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/53",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 699,
+      "distinct_article_ids": 30,
+      "titles": [
+        "10. Hồ Sĩ Dũng, Hàn Đức Đạt, Ngô Thế Hoàng, cộng sự. Đề kháng kháng sinh của một số vi khuẩn phân lập được trong đàm ở bệnh nhân cao tuổi vào đợt cấp bệnh phổi tắt nghẽn mãn tính điều 11. Trần Huy Hoàng, cộng sự. Sự xuất hiện vi khuẩn đường ruột mang gen NDM-1 phân lập trên",
+        "11. Lâm Nguyễn Thùy An. Y học cổ truyền trong điều trị rụng tóc. Bệnh viện Đại học Y Dược 12. Đỗ Quốc Từ, Trần Thị Nhật Anh, Trần Thị Mỹ Dung, Phạm Bá Điền, Đặng Nguyễn Diệu Linh và cộng sự. Khảo sát thực trạng sử dụng thuốc Y học cổ truyền và một số yếu tố liên quan đến",
+        "6. Lê Thị Diễm Hương và cộng sự. Kiến thức và thực hành phòng, chống bệnh đậu mùa khỉ của nhân viên y tế và một số yếu tố liên quan tại tỉnh Đắk Lắk năm 2022, Tạp chí Y học Việt Nam. a cross-sectional study in Indonesia, Pathog Glob Health. 2020. 114(2), 68-75, doi:"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/54",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 676,
+      "distinct_article_ids": 31,
+      "titles": [
+        "11. Vũ Đình Quỳnh, Lê Minh Hoàng, Nguyễn Thanh Duy và cộng sự. Một số đặc điểm lâm sàng và kết quả điều trị đau dây thần kinh tọa do Thoát vị đĩa đệm cột sống thắt lưng bằng thuốc thang kết hợp 12. Nguyễn Văn Tuấn, Trần Thị Oanh. Kết quả điều trị đau dây thần kinh tọa do thoát vị đĩa đệm",
+        "CÔNG TÁC TỔ CHỨC HOẠT ĐỘNG TÌNH NGUYỆN PHÒNG CHỐNG DỊCH QUA GÓC NHÌN CỦA SINH VIÊN TRƯỜNG ĐẠI HỌC Y KHOA PHẠM NGỌC THẠCH",
+        "KHẢO SÁT CÁC YẾU TỐ LIÊN QUAN ĐẾN MỨC ĐỘ LÀM SẠCH ĐẠI TRÀNG Ở NGƯỜI BỆNH NỘI SOI TOÀN BỘ ĐẠI TRỰC TRÀNG TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/55",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 666,
+      "distinct_article_ids": 30,
+      "titles": [
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA CHỈ SỐ SỐC Ở TRẺ SỐC NHIỄM KHUẨN TẠI BỆNH VIỆN NHI ĐỒNG CẦN THƠ Nguyễn Khánh Thuận1*, Tạ Văn Trầm2, Lê Văn Khoa",
+        "KHẢO SÁT KÍCH THƯỚC MẢNH GHÉP GÂN CƠ BÁN GÂN VÀ GÂN CƠ THON CHẬP 5 DẢI Ở BỆNH NHÂN PHẪU THUẬT NỘI SOI TÁI TẠO DÂY CHẰNG KHỚP GỐI",
+        "KHẢO SÁT TÌNH HÌNH NHIỄM VÀ KHẢ NĂNG SINH ESBL Ở CÁC CHỦNG VI KHUẨN GRAM ÂM TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2022 - 2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/56",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 655,
+      "distinct_article_ids": 30,
+      "titles": [
+        "CÁC HÌNH THÁI POLYP ĐẠI TRỰC TRÀNG THEO PHÂN LOẠI PARIS VÀ ĐỐI CHIẾU KẾT QUẢ MÔ BỆNH HỌC TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2023-2024 Lê Huyền Trân1*, Huỳnh Hiếu Tâm2, Lương Thị Thúy Loan1, Trần Y Đức1, Đặng Như Lan",
+        "KHẢ NĂNG TIÊN LƯỢNG NẶNG CỦA SIÊU ÂM Ở TRẺ SỐT XUẤT HUYẾT DENGUE CÓ DẤU HIỆU CẢNH BÁO TẠI BỆNH VIỆN NHI ĐỒNG CẦN THƠ",
+        "KIẾN THỨC VỀ AN TOÀN NGƯỜI BỆNH CỦA SINH VIÊN ĐIỀU DƯỠNG, HỘ SINH TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ VÀ MỘT SỐ YẾU TỐ LIÊN QUAN"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/57",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 593,
+      "distinct_article_ids": 27,
+      "titles": [
+        "2.2. Research method",
+        "2.5. Ethics Approval The study was approved by the Ethical Review Board of Trinity University of Asia, the Philippines (Decision No. TUA.IERC.015.R02 August 12, 2022). The participants were assured of their privacy and the confidentiality of all gathered personal information.",
+        "2.5. Ethics approval"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/58",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 631,
+      "distinct_article_ids": 30,
+      "titles": [
+        "BẰNG PHÁC ĐỒ 4 THUỐC CÓ BISMUTH Ở BỆNH NHÂN VIÊM, LOÉT DẠ DÀY – TÁ TRÀNG TẠI BỆNH VIỆN QUÂN DÂN Y TỈNH BẠC LIÊU Di Văn Đua1, Huỳnh Hiếu Tâm2, Nguyễn Thị Quỳnh Mai3, Ngô Thị Yến Nhi4, Ngô Thị Mộng Tuyền2, Võ Tấn Trọng2, Võ Tấn Cường4* 1. Bệnh viện Quân dân Y tỉnh Bạc Liêu 2. Trường Đại học Y Dược Cần Thơ",
+        "ELASTOGRAPHY TRONG ĐÁNH GIÁ BẢN CHẤT KHỐI U VÚ Phạm Quách Trân Trân*, Nguyễn Vũ Đằng, Đoàn Dũng Tiến Trường Đại học Y Dược Cần Thơ",
+        "KHẢO SÁT LOẠI HÌNH ĐIỀU TRỊ VÀ MỨC ĐỘ HÀI LÒNG CỦA NGƯỜI BỆNH TẠI KHU ĐIỀU TRỊ II KHOA RĂNG HÀM MẶT BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM 2022 Quách Hưng Long*, Nguyễn Ngọc Thảo Uyên, Nguyễn Hoàng Gia Bảo,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/59",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 741,
+      "distinct_article_ids": 35,
+      "titles": [
+        "10. Nguyễn Thùy Trang, Bùi Thị Mỹ Anh, Lê Ngọc Của. Động lực làm việc của điều dưỡng viên và một số yếu tố ảnh hưởng tại bệnh viện đa khoa Hoàn Mỹ Cửu Long, Thành Phố Cần Thơ năm 2020. Tạp chí nghiên cứu khoa học. 2020. 60 (7), 191 – 197.",
+        "13. Đoàn Thị Nguyền, Phan Quan Chí Hiếu. Khảo sát những yếu tố có ảnh hưởng trên hiệu quả phục hồi vận động sau đột quỵ của phương pháp châm cứu cải tiến phối hợp tập vật lý trị liệu tại tỉnh Trà Vinh. Y học Thành phố Hồ Chí Minh. 2012. 16(1), 72-77.",
+        "8. Nguyễn Đức Minh, Nguyễn Vinh Quốc. Đặc điểm lâm sàng đau vùng cổ gáy do thoái hóa cột sống trên bệnh nhân điều trị tại bệnh viện Châm Cứu Trung Ương. Tạp chí Y học Việt Nam. 9. Nguyễn Hoàng Anh. Khảo sát một số đặc điểm của bệnh nhân hội chứng cổ vai cánh tay do thoái"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/6",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 804,
+      "distinct_article_ids": 35,
+      "titles": [
+        "GIÁ TRỊ BỀ CAO TỬ CUNG TRUNG BÌNH Ở THAI PHỤ TẠI BỆNH VIỆN Y DƯỢC THÀNH PHỐ HỒ CHÍ MINH CƠ SỞ 2 Nguyễn Thị Hoàn1*, Vũ Thị Mai1,2, Mai Nguyễn Thanh Trúc3 1. Đại học Y Dược thành phố Hồ Chí Minh",
+        "GIÁ TRỊ TIÊN LƯỢNG TỬ VONG CỦA ĐỘ THANH THẢI LACTATE MÁU Ở BỆNH NHÂN SỐC NHIỄM KHUẨN TẠI BỆNH VIỆN ĐA KHOA TỈNH KIÊN GIANG NĂM 2021-2022 Danh Minh Sung1*, Võ Minh Phương",
+        "HOẠT ĐỘNG TỰ HỌC CỦA SINH VIÊN ĐIỀU DƯỠNG TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM HỌC 2020 – 2021 Ngô Thị Dung*, Nguyễn Hồng Thiệp, Nguyễn Thị Thanh Trúc, Nguyễn Thị Kim Thơ, Nguyễn Thị Sang Sang"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/60",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 1083,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HỘI NGHỊ KHOA HỌC KỶ NIỆM 10 NĂM THÀNH LẬP TRƯỜNG ĐẠI HỌC Y DƯỢC BUÔN MA THUỘT"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/61",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 1548,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HỘI NGHỊ THƯỜNG NIÊN HỌC VIÊN – SINH VIÊN NGHIÊN CỨU KHOA HỌC LẦN THỨ IV NĂM 2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/62",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 713,
+      "distinct_article_ids": 35,
+      "titles": [
+        "BỆNH NHA CHU VÀ MỘT SỐ YẾU TỐ LIÊN QUAN Ở NGƯỜI CAO TUỔI TẠI THÀNH PHỐ BIÊN HÒA, ĐỒNG NAI Hồ Thị Hiền1*, Võ Huỳnh Trang",
+        "CẬN LÂM SÀNG CHẨN ĐOÁN, PHƯƠNG PHÁP PHẪU THUẬT",
+        "KHẢO SÁT MỐI LIÊN QUAN VÀ ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ SUY SINH DỤC NAM BẰNG TESTOSTERONE THAY THẾ TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/63",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 756,
+      "distinct_article_ids": 35,
+      "titles": [
+        "BƯỚC ĐẦU NGHIÊN CỨU ĐẶC ĐIỂM RỐI LOẠN LIPID MÁU Ở ĐỐI TƯỢNG KHÁM SỨC KHỎE ĐỊNH KỲ TẠI BỆNH VIỆN ĐA KHOA TỈNH NINH THUẬN",
+        "KHẢO SÁT TỈ LỆ, MỨC ĐỘ VÀ MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN HẠ NATRI MÁU Ở BỆNH NHÂN XƠ GAN CỔ TRƯỚNG Hoàng Ngọc Đức1*,Kha Hữu Nhân2, Huỳnh Thị Hồng Ngọc3, Nguyễn Thị Diễm",
+        "KIẾN THỨC VÀ THÁI ĐỘ VỀ PHÒNG NGỪA CHUẨN CỦA SINH VIÊN ĐIỀU DƯỠNG TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ Nguyễn Lê Khả Ái, Nguyễn Văn Tuấn*, Nguyễn Thị Kim Tường, Trần Như Ngọc,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/64",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 763,
+      "distinct_article_ids": 35,
+      "titles": [
+        "BỆNH NHÂN UNG THƯ BIỂU MÔ TẾ BÀO GAI VÙNG KHẨU HẦU Trần Thị Hương Lý1*, Nguyễn Văn Luân2, Trần Ngọc Dung2, Võ Văn Kha1, Hứa Thị Ngọc Hà3 1. Bệnh viện Ung bướu thành phố Cần Thơ",
+        "CHUẨN HÓA BỘ CÂU HỎI KHẢO SÁT PHỨC CẢM TỰ TI VÀ HỆ QUẢ CỦA PHỨC CẢM TỰ TI PHIÊN BẢN TIẾNG VIỆT Nguyễn Thị Mỹ Duyên, Nguyễn Ngọc Phương Trinh, Trà Khánh Như,",
+        "CHẤT LƯỢNG CUỘC SỐNG BỆNH NHÂN SAU PHẪU THUẬT ĐIỀU TRỊ UNG THƯ ĐẠI TRỰC TRÀNG Nguyễn Thành Phúc*, Hà Thị Thảo Ly, Nguyễn Thị Linh, Nguyễn Thị Hồng Chuyên"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/65",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 718,
+      "distinct_article_ids": 35,
+      "titles": [
+        "1. Sở Y tế Vĩnh Long 2. Trường Đại học Y Dược Cần Thơ *Email: [e-mail withheld] Ngày nhận bài: 13/10/2024 Ngày phản biện: 10/12/2024 Ngày duyệt đăng: 25/12/2",
+        "CẢI TIẾN CHẤT LƯỢNG BỆNH VIỆN HUYẾT HỌC VÀ TRUYỀN MÁU THÀNH PHỐ CẦN THƠ GIAI ĐOẠN 2024 – 2025 Nguyễn Thị Mỹ Nhiên*, Tạ Văn Trầm Trường Đại học Trà Vinh",
+        "KHẢO SÁT MÃ VẠCH ADN, ĐẶC ĐIỂM THỰC VẬT HỌC VÀ THÀNH PHẦN HÓA HỌC CỦA LÁ TRẦU KHÔNG (Piper betle L.) Nguyễn Thị Trang Đài, Lê Thị Thanh Yến, Nguyễn Hữu Nhân,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/66",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 622,
+      "distinct_article_ids": 25,
+      "titles": [
+        "1. Trường Đại học Khoa học tự nhiên, Đại học Quốc gia Hà Nội 2. Trung tâm nhiệt đới Việt –Nga",
+        "9. Phạm Thị Phương Thanh, Vũ Văn Khiêu. Đánh giá chất lượng cuộc sống ở bệnh nhân trào ngược",
+        "BÁO CÁO HÌNH ẢNH HỌC MỘT TRƯỜNG HỢP NHỒI MÁU XƯƠNG Ở BỆNH NHÂN LUPUS BAN ĐỎ HỆ THỐNG Phù Trí Nghĩa*, Phùng Thị Khánh Nguyên, Nguyễn Thị Ngọc Trâm,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/67",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 633,
+      "distinct_article_ids": 30,
+      "titles": [
+        "(PARMELIACEAE) ĐỊNH HƯỚNG ĐIỀU CHẾ KEM HỖ TRỢ ĐIỀU TRỊ MỤN TRỨNG CÁ Đoàn Hồng Thắm, Lê Thanh Hà, Quách Tố Quyên, Nguyễn Hoàng Anh Thư,",
+        "1. Đại học Công nghiệp Hà Nội, 2. Trường Đại học Dược Hà Nội 3. Trường đại học Y - Dược, Đại học Thái Nguyên",
+        "CHẤT LƯỢNG CUỘC SỐNG Ở BỆNH NHÂN XƠ GAN NHẬP VIỆN TẠI BỆNH VIỆN ĐA KHOA TRUNG ƯƠNG CẦN THƠ Nguyễn Duy Tân1*, Trần Thanh Trí3, Trần Gia Bảo2, Phan Thanh Thuý1, Trương Điền Chân4, Trần Tú Nguyệt1, Dương Hoàng Thành"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/68",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 657,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HỘI NGHỊ THƯỜNG NIÊN HỌC VIÊN – SINH VIÊN NGHIÊN CỨU KHOA HỌC LẦN THỨ V NĂM 2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/69",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 478,
+      "distinct_article_ids": 19,
+      "titles": [
+        "- Data collection tools: were reading, how useful they found them, the difficulties they encountered, and the guidance they received. The questions identifies reading resources as basic medicine textbooks, review of medical textbooks, pocket-books, online sources (online version of",
+        "- Sampling size:",
+        "1. Binh Dinh General Hospital 2. My Duc General Hospital"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/7",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 786,
+      "distinct_article_ids": 36,
+      "titles": [
+        "BÁO CÁO HÌNH ẢNH HỌC MỘT TRƯỜNG HỢP BỆNH XƠ CỨNG CỦ Phù Trí Nghĩa*, Võ Thị Thảo Vân, Nguyễn Thị Như Quỳnh Trường Đại học Y Dược Cần Thơ",
+        "GIÁ TRỊ DỰ BÁO BIẾN CỐ TIM MẠCH CHÍNH CỦA THANG ĐIỂM CHA2DS2-VASC Ở BỆNH NHÂN HỘI CHỨNG VÀNH CẤP CÓ CAN THIỆP ĐỘNG MẠCH VÀNH QUA DA",
+        "HÀNH VI TÌNH DỤC KHÔNG AN TOÀN VÀ CÁC YẾU TỐ LIÊN QUAN ĐẾN VIỆC CHẤP NHẬN SỬ DỤNG PrEP Ở NHÓM MSM TẠI THÀNH PHỐ CẦN THƠ NĂM 2020 Huỳnh Nguyễn Phương Quang1*, Huỳnh Nguyễn Phương Thảo"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/70",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 761,
+      "distinct_article_ids": 35,
+      "titles": [
+        "BƯỚC ĐẦU XÂY DỰNG CÔNG THỨC VÀ QUY TRÌNH ĐIỀU CHẾ NIOSOME CHỨA ACID ASCORBIC Phạm Minh Đủ, Nguyễn Nhựt Anh Huy, Huỳnh Hữu Lộc,",
+        "CỐ ĐỊNH NGOÀI ĐIỀU TRỊ NHIỄM TRÙNG Ổ GÃY XƯƠNG ĐÒN BÁO CÁO 2 TRƯỜNG HỢP",
+        "GIÁ TRỊ ĐỘNG HỌC ĐỘ LỌC CẦU THẬN TRONG TIÊN LƯỢNG TỔN THƯƠNG THẬN CẤP Ở BỆNH NHÂN VIÊM TỤY CẤP Nguyễn Khánh Duyên*, Nguyễn Như Nghĩa, Trịnh Thị Hồng Của"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/71",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 797,
+      "distinct_article_ids": 35,
+      "titles": [
+        "1. Bệnh viện Đa khoa thành phố Cần Thơ 2. Bệnh viện Ung bướu thành phố Cần Thơ 3. Trường Đại học Y Dược Cần Thơ",
+        "1. Công Ty TNHH Nha Khoa Thẩm Mỹ Toàn Ý, tỉnh Đồng Tháp 2. Bệnh viện Đa khoa Thành phố Cần Thơ 3. Trung tâm Y tế thành phố Rạch Giá, tỉnh Kiên Giang",
+        "BƯỚC ĐẦU THIẾT LẬP QUY TRÌNH THU NHẬN EXOSOME TỪ DỊCH NUÔI CẤY TẾ BÀO GỐC TRUNG MÔ TỪ MÔ MỠ HƯỚNG ĐẾN ỨNG DỤNG TRONG Y HỌC TÁI TẠO"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/72",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 589,
+      "distinct_article_ids": 24,
+      "titles": [
+        "- Error control methods: To minimize errors, we adhere to rigorous sampling and exclusion methods during",
+        "- Research content: Predictive characteristics of community pharmacists: This includes age, gender of the pharmacists, business type, business location, time to sell medicine. Evaluation of professional practice skills and relevant factors: We assessed the",
+        "2. Nam Can Tho University *Corresponding author: [e-mail withheld] Received: 23/4/2025 Reviewed: 14/5/2025 Accepted: 25/6/2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/73",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 899,
+      "distinct_article_ids": 45,
+      "titles": [
+        "CÁC YẾU TỐ LIÊN QUAN ĐẾN TRIỆU CHỨNG Ý TƯỞNG VÀ HÀNH VI TỰ SÁT Ở BỆNH NHÂN RỐI LOẠN TRẦM CẢM TÁI DIỄN Vũ Sơn Tùng1*, Phạm Thị Quỳnh2,3, Nguyễn Văn Tuấn1,",
+        "KHẢO SÁT TÌNH HÌNH VÀ CÁC YẾU TỐ LIÊN QUAN ĐẾN ĐAU VAI GÁY CỦA SINH VIÊN NGÀNH Y HỌC CỔ TRUYỀN TẠI TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ NĂM HỌC 2023 - 2024 Nhan Bảo Duy, Phạm Gia Linh*, Dương Khánh Lin,",
+        "KẾT QUẢ PHẪU THUẬT KẾT HỢP XƯƠNG BÊN TRONG ĐIỀU TRỊ GÃY HỞ THÂN XƯƠNG CẲNG CHÂN Hồ Ngọc Thiện1*, Hoàng Đức Thái2, Phạm Hoàng Lai3, Nguyễn Phú Toàn 4, Nguyễn Hữu Đạt1, Nguyễn Minh Luân4, Võ Hoàng Tuấn"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/74",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 1042,
+      "distinct_article_ids": 50,
+      "titles": [
+        "GÂY VIÊM PHỔI CỘNG ĐỒNG Ở NGƯỜI LỚN Nguyễn Huỳnh Kim Ngân1,2*, Dương Thị Loan1, Hoàng Thúy Oanh2, Nguyễn Thị Mỹ Nga2, Nguyễn Ngọc Quỳnh Nhi2 1. Trường Đại học Y Dược Cần Thơ",
+        "KHẢO SÁT KIẾN THỨC, THÁI ĐỘ, THỰC HÀNH VỀ PHÂN LOẠI CHẤT THẢI Y TẾ CỦA SINH VIÊN ĐANG THỰC TẬP TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ",
+        "KHẢO SÁT ĐẶC ĐIỂM LÂM SÀNG, ẢNH HƯỞNG CHẤT LƯỢNG CUỘC SỐNG VÀ KẾT QUẢ ĐIỀU TRỊ ĐAU DO ZONA BẰNG GABAPENTIN KẾT HỢP LASER HE-NE TẠI BỆNH VIỆN DA LIỄU CẦN THƠ NĂM 2024-2025 Nguyễn Thị Bích Ngọc1*, Từ Tuyết Tâm2, Võ Thị Kim Loan"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/75",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 871,
+      "distinct_article_ids": 40,
+      "titles": [
+        "CHẤT LƯỢNG CUỘC SỐNG VÀ KẾT QUẢ ĐIỀU TRỊ PHỤC HỒI CHỨC NĂNG DỰA VÀO CỘNG ĐỒNG TRÊN BỆNH NHÂN ĐAU LƯNG MẠN TÍNH ĐẾN KHÁM TẠI BỆNH VIỆN ĐA KHOA",
+        "KẾT QUẢ SỚM DẪN LƯU TÚI MẬT XUYÊN GAN QUA DA TRÊN BỆNH NHÂN VIÊM TÚI MẬT CẤP ĐỘ III THEO KHUYẾN CÁO TOKYO 2018 TẠI BỆNH VIỆN ĐA KHOA THÀNH PHỐ CẦN THƠ Lê Thành Trí¹*, Lê Thành Tín¹, Huỳnh Cẩm Hồng¹, Bạch Nguyễn Minh Hiển¹, Phan Thanh Thúy¹, Đoàn Anh Vũ¹ , La Văn Phú²",
+        "LIÊN QUAN Ở BỆNH NHÂN VIÊM PHỔI CỘNG ĐỒNG ĐIỀU TRỊ NỘI TRÚ TẠI BỆNH VIỆN ĐA KHOA VĨNH LONG NĂM 2024-2025 Phạm Văn Hoàng1*, Trần Thanh Hùng2 , Huỳnh Châu Tuấn3 1. Bệnh viện Phổi Vĩnh Long"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/76",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 784,
+      "distinct_article_ids": 35,
+      "titles": [
+        "BÁO CÁO CA LÂM SÀNG HỘI CHỨNG ĐỘNG MẠCH MẠC TREO TRÀNG TRÊN PHỐI HỢP VỚI HỘI CHỨNG KẸP HẠT DẺ Tô Anh Quân*, Nguyễn Vũ Đằng, Nguyễn Thị Ngọc Trâm,",
+        "CÁC YẾU TỐ LIÊN QUAN ĐẾN THỰC TRẠNG BÁO CÁO PHƠI NHIỄM VỚI MÁU VÀ DỊCH CƠ THỂ CỦA SINH VIÊN KHI THỰC TẬP TẠI CÁC BỆNH VIỆN THỰC HÀNH",
+        "KHẢO SÁT KIẾN THỨC PHÒNG VÀ XỬ TRÍ PHẢN ỨNG PHẢN VỆ CỦA ĐIỀU DƯỠNG, HỘ SINH TẠI BỆNH VIỆN SẢN - NHI SÓC TRĂNG NĂM 2024 Trần Thị Mộng Thắm, Hồ Thị Huỳnh Giao, Nguyễn Mai Thảo, Chung Tấn Định,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/77",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 722,
+      "distinct_article_ids": 33,
+      "titles": [
+        "BẰNG PHƯƠNG PHÁP HPLC/DAD Nguyễn Quốc Huy1, Phạm Tuấn Thành2, Nguyễn Thị Ngọc Vân2* 1. Trường Đại học Nam Cần Thơ 2. Trường Đại học Y Dược Cần Thơ",
+        "Châu Thị Kim Tươi1, Nguyễn Thị Ngọc Vân1*, Dương Tuyết Ngân1, Trần Đức Tường2, Đinh Thái Thanh Liêm1, Phạm Lê Thanh Trúc1, Lâm Ngọc Ngà1, Trần Thị Mỵ Nương1 1. Trường Đại học Y Dược Cần Thơ 2.Trường Đại học Đồng Tháp *Email: [e-mail withheld] Ngày nhận bài: 14/8/2025 Ngày phản biện: 20/9/2025 Ngày duyệt đăng: 25/10/2",
+        "CỦA SINH VIÊN ĐIỀU DƯỠNG TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ Nguyễn Thị Yến Nhi, Dương Thị Thùy Trang, Võ Thị Hồng Ánh, Nguyễn Lê Nhựt Băng, Lê Thị Mỹ Hạnh, Nguyễn Thị Mỹ Duyên, Nguyễn Thị Ngọc Hân*"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/78",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 439,
+      "distinct_article_ids": 20,
+      "titles": [
+        "Bệnh viện Hoàn Mỹ Sài Gòn *Email: [e-mail withheld] Ngày nhận bài: 04/6/2025 Ngày phản biện: 19/11/2025 Ngày duyệt đăng: 25/11/2",
+        "KHẢO SÁT HOẠT TÍNH KHÁNG KHUẨN VÀ PHÂN LẬP HỢP CHẤT TINH KHIẾT TỪ CÂY RAU MƯƠNG LUDWIGIA OCTOVALVIS Huỳnh An Bình, Tạ Kiến Tường, Phạm Ngô Thành Trung,",
+        "KHẢO SÁT MẬT ĐỘ XƯƠNG VÀ CHỨC NĂNG THẬN CHỦ CỐT TỦY Ở BỆNH NHÂN ĐAU THẮT LƯNG ĐANG ĐIỀU TRỊ NỘI TRÚ TẠI BỆNH VIỆN Y HỌC CỔ TRUYỀN CẦN THƠ NĂM 2024 - 2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/79",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 323,
+      "distinct_article_ids": 14,
+      "titles": [
+        "2.1. Participants The study included high school students in Ben Tre City, Ben Tre Province, who",
+        "3. Can Tho Oncology Hospital *Corresponding author: [e-mail withheld] Received: 14/11/2025 Reviewed: 20/12/2025 Accepted: 25/12/2",
+        "4. Kim Dental Clinic *Corresponding author: [e-mail withheld] Received: 11/7/2025 Reviewer: 21/9/2025 Accepted: 25/12/2"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/8",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 608,
+      "distinct_article_ids": 29,
+      "titles": [
+        "1. Trường Đại học Y Dược Cần Thơ 2. Bệnh viện Đa khoa thành phố Cần Thơ *Email: [e-mail withheld]",
+        "CHẤT LƯỢNG CUỘC SỐNG CỦA NGƯỜI BỆNH ĐÁI THÁO ĐƯỜNG TUÝP 2 ĐIỀU TRỊ NGOẠI TRÚ TẠI BỆNH VIỆN TRƯỜNG ĐẠI HỌC TRÀ VINH",
+        "CHẤT LƯỢNG CUỘC SỐNG VÀ CÁC YẾU TỐ LIÊN QUAN CỦA NGƯỜI BỆNH UNG THƯ SAU HÓA TRỊ Nguyễn Việt Phương*, Lê Thanh Vũ, Phạm Thị Ngọc, Phan Thị Hoàng Anh,"
+      ]
+    },
+    {
+      "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/9",
+      "granularity": "issue",
+      "source_id": "cantho_med_journal",
+      "source_name": "cantho_med_journal",
+      "chunks": 738,
+      "distinct_article_ids": 36,
+      "titles": [
+        "CÁC PHƯƠNG PHÁP PHÁT HIỆN Võ Thái Dương1*, Đỗ Hoàng Long2, Nguyễn Thị Diệu Hiền3 1. Phòng khám Đa khoa Phương Đức, Cần Thơ",
+        "GIÁ TRỊ TIÊN LƯỢNG CỦA THANG ĐIỂM AIMS65 Ở BỆNH NHÂN XUẤT HUYẾT TIÊU HÓA DO VỠ GIÃN TĨNH MẠCH THỰC QUẢN Lưu Trọng Nghĩa*, Huỳnh Hiếu Tâm",
+        "GIÁ TRỊ TẦM SOÁT UNG THƯ CỔ TỬ CUNG BẰNG PHỐI HỢP PHƯƠNG PHÁP CYPREP PAP TEST VÀ XÉT NGHIỆM HPV REALTIME PCR Ở PHỤ NỮ KHÁM PHỤ KHOA TẠI"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/10",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 247,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Hiệu quả điều trị điểm đau khu trú cơ xương khớp bằng kỹ thuật sóng xung kích tại Bệnh viện",
+        "Kết quả chăm sóc người bệnh thoái hóa",
+        "Kết quả hồi phục của người bệnh sau phẫu thuật sỏi mật và một số yếu tố liên quan"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/11",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 190,
+      "distinct_article_ids": 10,
+      "titles": [
+        "Một số yếu tố liên quan tới chất lượng cuộc sống về mặt sức khỏe ở người cao tuổi tại 3 huyện thuộc tỉnh Hưng Yên năm 2019 Ngày nhận bài: 10/2/2022 Ngày phản biện: 18/2/2022 Ngày chấp nhận đăng: 10/3/2022 SOME FACTORS RELATED TO HEALTH-RELATED QUALITY OF LIFE AMONG THE ELDERLY IN THREE DISTRICS OF HUNG YEN PROVINCE IN 2019 Đoàn Quang Huy, Lưu Minh Châu, Đinh Văn Tài",
+        "Một số yếu tố ảnh hưởng đến hiệu suất chiết và hàm lượng hoạt chất trong cao của nấm Cordyceps militaris",
+        "Thực trạng đau ba ngày đầu sau mổ và yếu tố liên quan của người bệnh phẫu thuật vá thông liên nhĩ nội soi"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/12",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 240,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Chất lượng cuộc sống của người bệnh đau lưng do thoái hóa cột sống và một số yếu tố liên quan",
+        "Hoàng Ngọc Cảnh, Phạm Việt Hoàng Học viện Y Dược học cổ truyền Việt Nam",
+        "Kiểm nghiệm một số chỉ tiêu chất lượng của viên nén Arterakine lưu hành tại một số tỉnh của Việt Nam"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/13",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 239,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Bùi Thị Hảo, Tống Mai Vân Học viện Y Dược học cổ truyền Việt Nam",
+        "Nghiên cứu áp dụng phương pháp tinh chế hệ dung môi cồn muối làm giàu saponin từ ngưu tất",
+        "Nghiên cứu độc tính bán trường diễn của Bạch phụ thang trên thực nghiệm Nguyễn Văn Bảo1, Lê Mạnh Cường2, Dương Minh Sơn2 Nguyễn Duy Thuần1, Phạm Thị Vân Anh3, Đinh Thị Thu Hằng3 1 Học viện Y Dược học cổ truyền Việt Nam 2Bệnh viện Y học cổ truyền Trung ương 3Bộ môn Dược lý, Trường Đại học Y Hà Nội"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/14",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 225,
+      "distinct_article_ids": 12,
+      "titles": [
+        "Hiệu quả điều trị thống kinh bằng bài thuốc “CTH” tại Bệnh viện Tuệ Tĩnh Ngày nhận bài: 25/3/2021 Ngày phản biện: 26/3/2021 Ngày chấp nhận đăng: 23/4/2021 Nguyễn Tôn Quyền, Nguyễn Thị Thủy, Nguyễn Khắc Điền",
+        "Khảo sát kiến thức và thực hành vệ sinh tay thường quy để phòng lây nhiễm covid của",
+        "Kết quả chăm sóc người bệnh đột quỵ não trong vòng 12 giờ tại Khoa Cấp cứu Bệnh viện Đa khoa Xanh Pôn năm 2020 RESULTS OF CARING FOR PATIENTS WITH BRAIN STROKE"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/15",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 224,
+      "distinct_article_ids": 12,
+      "titles": [
+        "Bùi Thị Hảo, Tống Mai Vân Học viện Y Dược học cổ truyền Việt Nam",
+        "Hiệu quả điều trị viêm âm đạo bằng phương pháp kết hơp y học cổ truyền và y hoc hiện đại tại Bệnh viện Tuệ Tĩnh",
+        "Kết quả điều trị thoát vị bẹn bằng phương pháp Lichtenstein trên người cao tuổi tại Bệnh viện E RESULTS OF INGUINAL HERNIA TREATMENT WITH THE LICHTENSTEIN"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/16",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 388,
+      "distinct_article_ids": 20,
+      "titles": [
+        "104 TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM SỐ ĐẶC BIỆT LẦN 2 - 20/11 Đánh giá tác dụng của viên nang cứng HCR1 trong điều trị hội chứng ruột kích thích EVALUATE THE EFFECT HCR1 HARD CAPSULES IN TREATMENT OF",
+        "114 TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM SỐ ĐẶC BIỆT LẦN 2 - 20/11 Thực trạng nguồn nhân lực y học cổ truyền tại một số trung tâm y tế huyện",
+        "134 TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM SỐ ĐẶC BIỆT LẦN 2 - 20/11 Đánh giá sự hài lòng của người bệnh tại Bệnh viện huyện Đan Phượng"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/18",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 237,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Bước đầu đánh giá tác dụng của chế phẩm ngân kiều tán gia giảm trong hỗ trợ điều trị bệnh nhân Covid-19 giai đoạn khởi",
+        "Chu Văn Đức, Vũ Ngọc Hà Học viện Y Dược học cổ truyền Việt Nam",
+        "Khảo sát sự hài lòng của người bệnh về chất lượng dịch vụ tại Khoa Khám bệnh Tân Triều, Bệnh viện K năm 2021 PATIENTS’ SATISFACTION WITH THE QUALITY OF"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/19",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 234,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Nghiên cứu tác dụng của bột cốm Kiện tỳ chỉ thống - HV trên mô hình trào ngược dạ dày thực quản trên thực nghiệm",
+        "Nghiên cứu tác dụng của viên nang Liên ngân SK đối với một số chỉ số miễn dịch chung trên thực nghiệm",
+        "Nghiên cứu tác dụng giảm ho, long đờm của viên nang Liên ngân SK trên thực nghiệm RESEARCHING THE EFFECTS OF COUGH-REDUCING, LONG-TERM PHLEGM"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/23",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 310,
+      "distinct_article_ids": 12,
+      "titles": [
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Công năng, chủ trị của một số vị thuốc Nam thường dùng tại miền Bắc Việt Nam",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Một số yếu tố ảnh hưởng đến hiệu suất chiết và hàm lượng alkaloid toàn phần trong cao chiết từ hạt cau"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/24",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 300,
+      "distinct_article_ids": 8,
+      "titles": [
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Evaluating the sub-chronic toxicity of the Boga -TN tablets in experimental animals Pham Thuy Phuong1, Nguyen Pham Thu May1 , Bui Hoang Anh1 Nguyen Pham Ngoc Mai2, Trinh Vu Lam1 1Viet Nam University of Traditional Medicine 2Hanoi University of Science and Technology",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Một số tá dược ảnh hưởng đến quá trình bào chế bột nhão đánh răng có thành phần từ cao chiết hạt"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/25",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 304,
+      "distinct_article_ids": 11,
+      "titles": [
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Mức độ tiêu thụ và một số tồn tại trong sử dụng kháng sinh nhóm quinolon tại Bệnh viện Kiến An - Thành phố Hải Phòng năm 2",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Nghiên cứu tác dụng chống say nóng của Cao khô thanh nhiệt trên thực nghiệm"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/26",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 271,
+      "distinct_article_ids": 12,
+      "titles": [
+        "Kết luận: Các đặc điểm hình thái của cây É lớn tròng đã được mô tả và minh hoạ chi tiết bằng hình ảnh; Đồng thời xác định được thành phần hóa học, thành phần tinh dầu trong cây. Đối tượng và phương pháp nghiên cứu: Phân tích, mô tả, chụp hình các đặc điểm hình thái, xác định tên",
+        "Mục tiêu: Đánh giá tác dụng điều trị và tác dụng không mong muốn của phương pháp điện châm, xoa bóp bấm huyệt và từ trường trong điều trị hội chứng thắt lưng hông do thoái hóa cột sống. Kết luận: Sử dụng kết hợp phương pháp điện châm, xoa bóp bấm huyệt và từ trường trong điều trị hội chứng thắt lưng hông do thoái hóa cột sống là an toàn, có hiệu quả tốt. Đối tượng và phương pháp nghiên cứu: Can thiệp lâm sàng mở, so sánh trước - sau, so sánh giữa 2 thể",
+        "Nghiên cứu tác dụng giảm đau của bài thuốc Sài hồ sơ can thang kết hợp Ô bối thang trên thực nghiệm"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/29",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 393,
+      "distinct_article_ids": 18,
+      "titles": [
+        "Hiệu quảñiều trịcủa phương pháp cấy chỉ luồn kim polydioxanon phối hợp viên nén",
+        "Kết quảñiều trịñau vùng cổgáy do thoái hóa cột sống bằng cao dán n kinh phương kết hợp",
+        "Mô hình bệnh tật và tình hình ñiều trịnội trú"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/3",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 256,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Chiết xuất, phân lập một số hợp chất từ cây Thài lài trắng (Commelina diffusa Burm.f.) EXTRACTION AND ISOLATION OF SEVERAL COMPOUNDS",
+        "Khảo sát sự hài lòng của người bệnh nội trú về chất lượng dịch vụ y tế tại Bệnh viện Y Dược",
+        "Khảo sát tình hình thoái hóa cột sống tại Bệnh viện y học cổ truyền Nghệ An và kết quả điều trị bệnh thoái hóa cột sống thắt lưng"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/5",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 188,
+      "distinct_article_ids": 9,
+      "titles": [
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Kết quả điều trị hội chứng cổ vai tay của TK1-HV kết hợp cảnh tam châm",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Nghiên cứu tác dụng kích ứng da và ảnh hưởng của tinh dầu húng quế (ocimum basilicum l.) Đến",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Nghiên cứu định lượng Mangostin trong vỏ quả Măng cụt (Pericarpium Garciniiae Mangostanae)"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/6",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 254,
+      "distinct_article_ids": 11,
+      "titles": [
+        "Khảo sát tình hình rối loạn chuyển hóa tại Bệnh viện Y học cổ truyền Nghệ An và tác dụng của viên \"hoàn HT’’",
+        "Nghiên cứu tác dụng chống viêm loét dạ dày và tác dụng giảm đau của bài thuốc Sài hồ sơ can thang gia vị trên thực nghiệm",
+        "Phạm Thủy Phương, Trịnh Vũ Lâm, Phạm Quốc Bình Học viện Y Dược học cổ truyền Việt Nam"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/7",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 222,
+      "distinct_article_ids": 10,
+      "titles": [
+        "Chất lượng cuộc sống trẻ suy giảm miễn dịch tiên phát Trịnh Thị Hậu1, Bùi Thị Thúy Quỳnh1, Nguyễn Thị Lan1, Hoàng Kim Khanh1, Lê Huyền Trang1, Lê Quỳnh Chi1, Nguyễn Thị Vân Anh1, Nguyễn Văn Khiêm1,2 1Bệnh viện Nhi Trung ương 2Học viện Y Dược học cổ truyền Việt Nam",
+        "MATERIALS AND METHODS Materials Fruit clusters of P. vulgaris (PV) were storage in National institute of medicinal materials (NIMM)",
+        "Mô tả một số yếu tố quản lý ảnh hưởng đến hoạt động khử khuẩn tiệt khuẩn dụng cụ y tế của Bệnh viện Tuệ Tĩnh, Bệnh viện Y học cổ"
+      ]
+    },
+    {
+      "url": "https://vjmap.vn/index.php/vjmap/issue/view/8",
+      "granularity": "issue",
+      "source_id": "trad_med_pharm_journal",
+      "source_name": "trad_med_pharm_journal",
+      "chunks": 210,
+      "distinct_article_ids": 11,
+      "titles": [
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Antimalarial drugs quality monitoring in some provinces of VietNam",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Kết quả sự hài lòng của người bệnh điều trị nội trú tại Bệnh viện Y dược cổ truyền & phục hồi chức năng tỉnh Phú Thọ năm 2",
+        "TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM Mô hình bệnh tật bệnh nhân điều trị nội trú tại Bệnh viện Y dược cổ truyền & phục hồi chức năng tỉnh Phú Thọ từ năm 2018-2"
+      ]
+    },
+    {
+      "url": "http://viendinhduong.vn/vi/documents/video-truyen-thong/phong-chong-ngo-doc-thuc-pham-do-doc-to-tu-nhien-67fc95c667bb59c596045503",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "source_name": "vien_dinh_duong",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Phòng chống ngộ độc thực phẩm do độc tố tự nhiên"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/HAI/organisms/vre/vre.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / CDC",
+      "chunks": 36,
+      "distinct_article_ids": 1,
+      "titles": [
+        "What is (are) ?",
+        "are certain people at risk of getting vancomycin-resistant enterococci?",
+        "how can patients prevent the spread of vancomycin-resistant enterococci?"
+      ]
+    },
+    {
+      "url": "http://www.nhlbi.nih.gov/health/health-topics/topics/asthma",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NHLBI",
+      "chunks": 45,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Asthma"
+      ]
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/digestive-diseases/lactose-intolerance/Pages/ez.aspx",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NIDDK",
+      "chunks": 11,
+      "distinct_article_ids": 1,
+      "titles": [
+        "What I need to know about Lactose Intolerance"
+      ]
+    },
+    {
+      "url": "http://www.niddk.nih.gov/health-information/health-topics/kidney-disease/glomerular-diseases/Pages/facts.aspx",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NIDDK",
+      "chunks": 29,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Glomerular Diseases"
+      ]
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/binswangers/binswangers.htm",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NINDS",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Binswanger's Disease"
+      ]
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/hydrocephalus/hydrocephalus.htm",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NINDS",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Hydrocephalus"
+      ]
+    },
+    {
+      "url": "http://www.ninds.nih.gov/disorders/meralgia_paresthetica/meralgia_paresthetica.htm",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / NINDS",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Meralgia Paresthetica"
+      ]
+    },
+    {
+      "url": "https://dav.gov.vn/cong-van-so-623qld-mp-ve-viec-dinh-chi-luu-hanh-thu-hoi-va-tieu-huy-my-pham-vi-pham-cong-ty-tnhh-quoc-te-thien-minh-cong-ty-tnhh-tran-duy-n5215.html",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "source_name": "dav_gov",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Qld mp signed"
+      ]
+    },
+    {
+      "url": "https://dav.gov.vn/info-document-318.html",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "source_name": "dav_gov",
+      "chunks": 100,
+      "distinct_article_ids": 14,
+      "titles": [
+        "Bang sơ sanh tthc tại văn bản cu va du thao nd",
+        "Biểu tinh chi phi tuan thu tthc mp - quy định tại Phụ lục ban hành kèm theo Nghị định số 93/2016/NĐ-CP ngày 01/7/2016 của Chính phủ quy định về",
+        "De cuong nghi dinh my phẩm 1352025 - ban hành kèm theo Nghị định này. Thành phần công thức mỹ phẩm phải đáp"
+      ]
+    },
+    {
+      "url": "https://dav.gov.vn/quyet-dinh-so-3960qd-byt-ve-viec-ban-hanh-duoc-dien-viet-nam-vi-n5154.html",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "source_name": "dav_gov",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Qd byt%202025 signed"
+      ]
+    },
+    {
+      "url": "https://dav.gov.vn/tong-hop-noi-dung-tra-loi-cac-kien-nghi-cua-doanh-nghiep-tai-hoi-nghi-doi-thoai-dn-duoc-nam-2024-truoc-va-sau-hoi-nghi-va-ket-qua-xu-li-cac-kien-nghi-nam-2023-n4711.html",
+      "granularity": "article_or_page",
+      "source_id": "dav_gov",
+      "source_name": "dav_gov",
+      "chunks": 203,
+      "distinct_article_ids": 13,
+      "titles": [
+        "Ph%e1%bb%a5%20l%e1%bb%a5c%201 %c4%91%c3%a3%20n%c3%a9n - DiSu 100 Nghi djnh s6 54/201 7/ND-CP quy djnh:",
+        "Ph%e1%bb%a5%20l%e1%bb%a5c%201 %c4%91%c3%a3%20n%c3%a9n - Dieu 55 Lu@t Drye.",
+        "Ph%e1%bb%a5%20l%e1%bb%a5c%201 %c4%91%c3%a3%20n%c3%a9n - ten Throng mai."
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/beta-ketothiolase-deficiency",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "beta-ketothiolase deficiency"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/chst3-related-skeletal-dysplasia",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "CHST3-related skeletal dysplasia"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/congenital-myasthenic-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "congenital myasthenic syndrome"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/dopa-responsive-dystonia",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 10,
+      "distinct_article_ids": 1,
+      "titles": [
+        "dopa-responsive dystonia"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/familial-encephalopathy-with-neuroserpin-inclusion-bodies",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "familial encephalopathy with neuroserpin inclusion bodies"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/fraser-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 9,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Fraser syndrome"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/mucopolysaccharidosis-type-ii",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 10,
+      "distinct_article_ids": 1,
+      "titles": [
+        "mucopolysaccharidosis type II"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/neonatal-onset-multisystem-inflammatory-disease",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "neonatal onset multisystem inflammatory disease"
+      ]
+    },
+    {
+      "url": "https://ghr.nlm.nih.gov/condition/ppm-x-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GHR",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "PPM-X syndrome"
+      ]
+    },
+    {
+      "url": "https://kcb.vn/du-thao/cong-van-so-6951-byt-kcb-ngay-30-11-2022-ve-viec-gop-y-du-thao-nghi-dinh-huong-dan-cap-chung-chi-hanh-nghe-doi-voi-nguoi.html?categoryId=101795266",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "source_name": "kcb_moh",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "CONG HOA xX HOI CHU NGHiA VIET NAM"
+      ]
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/ban-hanh-tai-lieu-chuyen-mon-huong-dan-chan-doan-va-dieu-tri-benh-do-vi-rut-nipah.html",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "source_name": "kcb_moh",
+      "chunks": 9,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HƯỚNG DẪN CHẨN ĐOÁN VÀ ĐIỀU TRỊ BỆNH DO VI RÚT NIPAH"
+      ]
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/bo-y-te-de-nghi-khong-can-cu-thong-so-thoi-gian-de-giam-dinh-thanh-toan-bhyt-ky-thuat-dien-quang.html",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "source_name": "kcb_moh",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Hướng dẫn quy trình kỹ thuật về điện quang can thiệp thuộc chương Điện quang – Tập 1"
+      ]
+    },
+    {
+      "url": "https://kcb.vn/tin-tuc/huong-dan-quy-trinh-ky-thuat-noi-khoa-chuyen-nganh-ho-hap-tap-2.1.html?categoryId=101819466",
+      "granularity": "article_or_page",
+      "source_id": "kcb_moh",
+      "source_name": "kcb_moh",
+      "chunks": 70,
+      "distinct_article_ids": 5,
+      "titles": [
+        "2. ĐẶT ỐNG CHỮ T SILICON THANH KHÍ QUẢN Ở TRẺ EM",
+        "3. Nicole B, Stephanie D, Enrico L et al (2007). An Official American Thoracic",
+        "7. NỘI SOI PHẾ QUẢN ỐNG CỨNG ĐÓNG RÒ XOANG LÊ"
+      ]
+    },
+    {
+      "url": "https://medlineplus.gov/abdominalpain.html",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "source_name": "MedlinePlus",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Abdominal Pain"
+      ]
+    },
+    {
+      "url": "https://medlineplus.gov/arrhythmia.html",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "source_name": "MedlinePlus",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Arrhythmia"
+      ]
+    },
+    {
+      "url": "https://medlineplus.gov/balanceproblems.html",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "source_name": "MedlinePlus",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Balance Problems"
+      ]
+    },
+    {
+      "url": "https://medlineplus.gov/spanish/anxiety.html",
+      "granularity": "article_or_page",
+      "source_id": "medlineplus",
+      "source_name": "MedlinePlus",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Ansiedad"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10109/cornelia-de-lange-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 14,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Cornelia de Lange syndrome"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10212/congenital-generalized-lipodystrophy-type-2",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Congenital generalized lipodystrophy type 2"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10517/axenfeld-rieger-syndrome-type-2",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Axenfeld-Rieger syndrome type 2"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10603/pituitary-hormone-deficiency-combined-3",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Pituitary hormone deficiency, combined 3"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10943/1q44-microdeletion-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "1q44 microdeletion syndrome"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/10973/adult-neuronal-ceroid-lipofuscinosis",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Adult neuronal ceroid lipofuscinosis"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/12632/multiple-mitochondrial-dysfunctions-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Multiple mitochondrial dysfunctions syndrome"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/12967/reticulohistiocytoma",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Reticulohistiocytoma"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/2844/gtp-cyclohydrolase-i-deficiency",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "GTP cyclohydrolase I deficiency"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/3268/lipoid-proteinosis-of-urbach-and-wiethe",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Lipoid proteinosis of Urbach and Wiethe"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/381/kosztolanyi-syndrome",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Kosztolanyi syndrome"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/4504/deafness-x-linked-2",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Deafness, X-linked 2"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/4532/renal-tubulopathy-diabetes-mellitus-and-cerebellar-ataxia-due-to-duplication-of-mitochondrial-dna",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Renal tubulopathy, diabetes mellitus, and cerebellar ataxia due to duplication of mitochondrial DNA"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/4614/pyomyositis",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Pyomyositis"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/5235/tracheobronchopathia-osteoplastica",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Tracheobronchopathia osteoplastica"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/8658/glomus-tympanicum-tumor",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Glomus tympanicum tumor"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/944/ataxia---hypogonadism---choroidal-dystrophy",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Ataxia - hypogonadism - choroidal dystrophy"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/9715/griscelli-syndrome-type-3",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Griscelli syndrome type 3"
+      ]
+    },
+    {
+      "url": "https://rarediseases.info.nih.gov/gard/9966/duane-syndrome-type-2",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / GARD",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Duane syndrome type 2"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10023",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 22,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM LÂM SÀNG VÀ MÔ BỆNH HỌC Ở BỆNH NHÂN UNG THƯ VÚ TRẺ TUỔI TẠI BỆNH VIỆN TRUNG ƯƠNG THÁI NGUYÊN"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10070",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 24,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NGHIÊN CỨU TÁC DỤNG ĐIỀU TRỊ ĐAU THẦN KINH TỌA CỦA PHƯƠNG PHÁP NẮN CHỈNH CỘT SỐNG KẾT HỢP ĐIỆN CHÂM VÀ HỒNG NGOẠI"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10227",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 29,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TƯƠNG QUAN GIỮA CÁC ĐẶC ĐIỂM HÌNH ẢNH CẮT LỚP VI TÍNH ĐA DÃY VÀ PHÂN TẦNG NGUY CƠ MÔ BỆNH HỌC CỦA U MÔ ĐỆM ĐƯỜNG TIÊU HOÁ TẠI DẠ DÀY"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10345",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 20,
+      "distinct_article_ids": 1,
+      "titles": [
+        "MỘT SỐ YẾU TỐ LIÊN QUAN VỚI BỆNH SÂU RĂNG Ở HỌC SINH 6 TUỔI TẠI HÀ NỘI"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10873",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "BÁO CÁO LÂM SÀNG: KHỐI U NÃO THẤT BÊN Ở BỆNH NHÂN XƠ CỨNG CỦ"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11188",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 28,
+      "distinct_article_ids": 1,
+      "titles": [
+        "SO SÁNH KẾT QUẢ CỦA PHƯƠNG PHÁP THỰC HIỆN MIỆNG NỐI TRONG VÀ NGOÀI KHOANG BỤNG TRONG PHẪU THUẬT NỘI SOI ĐIỀU TRỊ UNG THƯ ĐẠI TRÀNG"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11200",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 20,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NGHIÊN CỨU TỶ LỆ DI CĂN HẠCH CHẬU BÊN SAU PHẪU THUẬT ĐIỀU TRỊ UNG THƯ TRỰC TRÀNG THẤP"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11240",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐIỀU TRỊ NGOẠI KHOA HẸP ĐỘNG MẠCH CẢNH NGOÀI SỌ TẠI BỆNH VIỆN CHỢ RẪY: KINH NGHIỆM 10 NĂM"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11421",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM CẬN LÂM SÀNG Ở BỆNH NHÂN NAM MẮC GÚT MẠN TÍNH TẠI KHOA KHÁM BỆNH BỆNH VIỆN ĐA KHOA TỈNH HẢI DƯƠNG NĂM 2023"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11773",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NGHIÊN CỨU MỐI LIÊN QUAN GIỮA NỒNG ĐỘ PESINOGEN HUYẾT THANH VỚI TỔN THƯƠNG NIÊM MẠC DẠ DÀY TRÊN MÔ BỆNH HỌC"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12188",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 15,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KẾT QUẢ BƯỚC ĐẦU ĐIỀU TRỊ NỘI KHOA THAI NGOÀI TỬ CUNG CHƯA VỠ BẰNG METHOTREXATE ĐƠN LIỀU TẠI KHOA SẢN BỆNH VIỆN ĐA KHOA VĨNH LONG NĂM 2022 – 2023"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12421",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TĂNG ÁP LỰC ĐỘNG MẠCH PHỔI VÀ MỘT SỐ YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN XƠ CỨNG BÌ HỆ THỐNG"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13783",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 26,
+      "distinct_article_ids": 1,
+      "titles": [
+        "MỐI TƯƠNG QUAN GIỮA FENO VÀ MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG NGƯỜI BỆNH HEN PHẾ QUẢN ĐIỀU TRỊ TẠI BỆNH VIỆN E"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13933",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 16,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KẾT QUẢ ĐIỀU TRỊ VÀ CHẤT LƯỢNG CUỘC SỐNG NGƯỜI BỆNH HẸP ỐNG SỐNG THẮT LƯNG SAU PHẪU THUẬT GHÉP XƯƠNG LIÊN THÂN ĐỐT LỐI BÊN VÀ NẸP VÍT QUA DA LỐI SAU TẠI BỆNH VIỆN ĐẠI HỌC Y HÀ NỘI"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13954",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "CÁC YẾU TỐ LÂM SÀNG VÀ CẬN LÂM SÀNG ẢNH HƯỞNG ĐẾN KIỂM SOÁT HBA1C Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI THÁI BÌNH NĂM 2024"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14000",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 17,
+      "distinct_article_ids": 1,
+      "titles": [
+        "MÔ HÌNH BỆNH TẬT TRẺ EM TẠI MỘT SỐ BỆNH VIỆN HUYỆN MIỀN NÚI PHÍA BẮC"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14017",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NHIỄM GIUN TRUYỀN QUA ĐẤT Ở TRẺ EM ĐẾN KHÁM TẠI TRUNG TÂM Y TẾ XÃ THUẬN AN, TỈNH BÌNH DƯƠNG"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14334",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ẢNH HƯỞNG CỦA TUỔI LÊN CHIỀU RỘNG LỢI DÍNH"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15020",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KHẢO SÁT CHẤT LƯỢNG CUỘC SỐNG CỦA NGƯỜI BỆNH SUY TIM CÓ PHÂN SUẤT TỐNG MÁU GIẢM VÀ GIẢM NHẸ TẠI BỆNH VIỆN ĐẠI HỌC Y DƯỢC THÀNH PHỐ HỒ CHÍ MINH"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15021",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 27,
+      "distinct_article_ids": 1,
+      "titles": [
+        "HIỆU QUẢ HUẤN LUYỆN ÉP TIM NGOÀI LỒNG NGỰC CỦA SINH VIÊN Y KHOA NĂM NHẤT TRÊN MÔ HÌNH ACTAR 911 SQUADRON"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15089",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 13,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KHẢO SÁT CHẤT LƯỢNG CUỘC SỐNG VÀ CÁC YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN MẮC PEMPHIGUS VULGARIS"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15134",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ÁP DỤNG THANG STROKE REHABILITATION ASSESMENT OF MOVEMENT (STREAM) ĐÁNH GIÁ VẬN ĐỘNG TỰ CHỦ TRÊN NGƯỜI BỆNH ĐỘT QUỴ TẠI BỆNH VIỆN ĐA KHOA TỈNH HẢI DƯƠNG"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15228",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 11,
+      "distinct_article_ids": 1,
+      "titles": [
+        "GIÁ TRỊ CỦA BẢNG CÂU HỎI BERLIN VÀ STOP-BANG TRONG DỰ ĐOÁN"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15490",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 31,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐÁNH GIÁ MỨC ĐỘ ĐAU, SƯNG VÀ QUÁ TRÌNH LÀNH THƯƠNG MÔ MỀM VÙNG PHẪU THUẬT SAU PHẪU THUẬT NỘI NHA SỬ DỤNG KÍNH HIỂN VI PHẪU THUẬT"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15927",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 29,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KHẢO SÁT ĐẶC ĐIỂM LÂM SÀNG, HÌNH ẢNH CHỤP CẮT LỚP VI TÍNH VÀ MỐI LIÊN QUAN CỦA MỘT SỐ YẾU TỐ TIÊN LƯỢNG Ở BỆNH NHÂN VIÊM TỤY CẤP TẠI BỆNH VIỆN NGUYỄN TRI PHƯƠNG"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15937",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 23,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐÁNH GIÁ KẾT QUẢ LẤY HUYẾT KHỐI CƠ HỌC BẰNG STENT TIGERTRIEVER TẠI BỆNH VIỆN BẠCH MAI"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16234",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 22,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KẾT QUẢ ĐIỀU TRỊ PHẪU THUẬT U MÀNG NÃO THỂ KHÔNG ĐIỂN HÌNH TẦNG TRÊN LỀU TIỂU NÃO TẠI BỆNH VIỆN HỮU NGHỊ VIỆT ĐỨC GIAI ĐOẠN 2023-2025"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17040",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 18,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KẾT QUẢ PHẪU THUẬT NỘI SOI ĐIỀU TRỊ UNG THƯ BIỂU MÔ TUYẾN TRỰC TRÀNG GIỮA VÀ DƯỚI CÓ HÓA XẠ TRỊ DÀI NGÀY TRƯỚC MỔ"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17085",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 23,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NGHIÊN CỨU ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG BỆNH DO HUMAN HERPESVIRUS 6 Ở TRẺ EM TẠI BỆNH VIỆN NHI TRUNG ƯƠNG 2020–2025"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/187",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 22,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NHU CẦU SỬ DỤNG ỨNG DỤNG THIẾT BỊ DI ĐỘNG HỖ TRỢ QUẢN LÝ BỆNH TRÀO NGƯỢC DẠ DÀY THỰC QUẢN"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/479",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 22,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NGHIÊN CỨU ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG CỦA UNG THƯ BÀNG QUANG TẠI BỆNH VIỆN K"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/567",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 23,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM LÂM SÀNG VÀ ĐIỀU TRỊ NGỘ ĐỘC CẤP Ở TRẺ EM TẠI TRUNG TÂM CHỐNG ĐỘC BỆNH VIỆN BẠCH MAI"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/607",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 17,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM TRẦM CẢM TRÊN THANG ĐIỂM PHQ-9 Ở BỆNH NHÂN UNG THƯ ĐƯỜNG TIÊU HÓA TẠI BỆNH VIỆN K"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/691",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "THỰC TRẠNG TIÊU VIÊM CHÂN RĂNG HÀM SỮA Ở BỆNH NHÂN 5-8 TUỔI ĐẾN KHÁM TẠI VIỆN ĐÀO TẠO RĂNG HÀM MẶT VÀ BỆNH VIỆN RĂNG HÀM MẶT TRUNG ƯƠNG HÀ NỘI NĂM 2020-2021"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/7374",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 12,
+      "distinct_article_ids": 1,
+      "titles": [
+        "CASE REPORT OF MENINGOCOCCAL PNEUMONIA"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/823",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 13,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM BỆNH NHÂN CHẤN THƯƠNG CỘT SỐNG CỔ CAO TẠI BỆNH VIỆN TWQĐ 108"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/851",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 21,
+      "distinct_article_ids": 1,
+      "titles": [
+        "TÌNH TRẠNG DINH DƯỠNG VÀ MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN SUY DINH DƯỠNG THỂ NHẸ CÂN CỦA TRẺ TỪ 0-24 THÁNG TẠI XÃ VĨNH HÀO, HUYỆN VỤ BẢN TỈNH NAM ĐỊNH NĂM 2021"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9100",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 18,
+      "distinct_article_ids": 1,
+      "titles": [
+        "KẾT QUẢ PHẪU THUẬT U MÔ ĐỆM ĐƯỜNG TIÊU HÓA (GIST) THÂN ĐUÔI TỤY - NHÂN MỘT TRƯỜNG HỢP HIẾM GẶP VÀ ĐIỂM LẠI Y VĂN"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9192",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 18,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐÁNH GIÁ KẾT QUẢ CỦA PHẪU THUẬT RELEX SMILE ĐIỀU TRỊ CẬN THỊ NẶNG TẠI BỆNH VIỆN MẮT QUỐC TẾ DND"
+      ]
+    },
+    {
+      "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9227",
+      "granularity": "article",
+      "source_id": "vmj_ojs",
+      "source_name": "Vietnam Medical Journal",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "ĐẶC ĐIỂM VI KHUẨN HỌC VÀ TÍNH KHÁNG KHÁNG SINH CỦA VI KHUẨN TRÊN BỆNH NHÂN NHIỄM KHUẨN TIẾT NIỆU PHỨC TẠP ĐIỀU TRỊ TẠI BỆNH VIỆN ĐA KHOA TỈNH BẮC NINH NĂM 2023"
+      ]
+    },
+    {
+      "url": "https://viendinhduong.vn/storage/app/uploads/public/2025/03/27/7eQBh4xLt5C4cuUV-1743071309.pdf",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "source_name": "vien_dinh_duong",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Tỷ lệ trẻ uống bổ sung Vi chất dinh dưỡng 3 tháng qua theo khu vực (2014 - 2015)"
+      ]
+    },
+    {
+      "url": "https://viendinhduong.vn/storage/app/uploads/public/2025/03/27/8tqRT0fl74nvWtP8-1743071188.pdf",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "source_name": "vien_dinh_duong",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Tỷ lệ thiếu Vitamin A tiền lâm sàng (< 0,7mcmol/ L) ở trẻ em theo khu vực (2014 - 2015)"
+      ]
+    },
+    {
+      "url": "https://viendinhduong.vn/vi/article/tin-tuc/thong-bao-ve-lich-nghi-le-gio-to-hung-vuong-ngay-chien-thang-304-va-quoc-te-lao-dong-15-nam-2026-tai-cac-khoa-kham-cua-vien-dinh-duong-69e7567656a23ee357026b44",
+      "granularity": "article_or_page",
+      "source_id": "vien_dinh_duong",
+      "source_name": "vien_dinh_duong",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Gii thiu chung Chc nng nhim v"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/coping/day-to-day/faith-and-spirituality/spirituality-pdq",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 16,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Spirituality in Cancer Care (PDQ®)"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/treatment/drugs/daunorubicinhydrochloride",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "daunorubicin"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/treatment/drugs/lenalidomide",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "lenalidomide"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/espanol/tipos/leucemia/pro/tratamiento-llc-pdq",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 137,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Tratamiento de la leucemia linfocítica crónica (PDQ®)"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/types/lung/hp/child-pleuropulmonary-blastoma-treatment-pdq",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 31,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Childhood Pleuropulmonary Blastoma Treatment (PDQ®)"
+      ]
+    },
+    {
+      "url": "https://www.cancer.gov/types/neuroblastoma/hp/neuroblastoma-treatment-pdq",
+      "granularity": "article_or_page",
+      "source_id": "nci_pdq",
+      "source_name": "NCI PDQ",
+      "chunks": 329,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Neuroblastoma Treatment (PDQ®)"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/diabetes/diabetes-testing/screening-type-1-diabetes.html",
+      "granularity": "article_or_page",
+      "source_id": "cdc_health_topics",
+      "source_name": "CDC Health Topics",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Screening for Type 1 Diabetes"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/nutrition/features/healthy-eating-tips.html",
+      "granularity": "article_or_page",
+      "source_id": "cdc_health_topics",
+      "source_name": "CDC Health Topics",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Healthy Eating"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/overdose-prevention/manage-treat-pain/manage-pain-with-doctor.html",
+      "granularity": "article_or_page",
+      "source_id": "cdc_health_topics",
+      "source_name": "CDC Health Topics",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Working with Your Doctor to Manage Pain"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/tobacco/tobacco-features/surgeon-generals-report.html",
+      "granularity": "article_or_page",
+      "source_id": "cdc_health_topics",
+      "source_name": "CDC Health Topics",
+      "chunks": 10,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Quit Smoking"
+      ]
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/atrial-flutter/symptoms-causes/syc-20352586",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "source_name": "Mayo Clinic Diseases and Conditions",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Atrial flutter"
+      ]
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/barretts-esophagus/symptoms-causes/syc-20352841",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "source_name": "Mayo Clinic Diseases and Conditions",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Barrett's esophagus"
+      ]
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/cervical-spondylosis/symptoms-causes/syc-20370787",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "source_name": "Mayo Clinic Diseases and Conditions",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Cervical spondylosis"
+      ]
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/mitral-valve-prolapse/symptoms-causes/syc-20355446",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "source_name": "Mayo Clinic Diseases and Conditions",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Mitral valve prolapse"
+      ]
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/occupational-asthma/symptoms-causes/syc-20375772",
+      "granularity": "article_or_page",
+      "source_id": "mayo_diseases_conditions",
+      "source_name": "Mayo Clinic Diseases and Conditions",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Asthma, occupational, also known as Occupational asthma"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/bone-joint-and-muscle-disorders/hand-disorders/kienb%C3%B6ck-disease",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "source_name": "MSD Manual Consumer",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Kienböck Disease"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/bone-joint-and-muscle-disorders/systemic-rheumatic-diseases/eosinophilic-fasciitis",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "source_name": "MSD Manual Consumer",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Eosinophilic Fasciitis"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/headaches/short-lasting-unilateral-neuralgiform-headache-with-conjunctival-injection-and-tearing-sunct",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "source_name": "MSD Manual Consumer",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Short-Lasting Unilateral Neuralgiform Headache With Conjunctival Injection and Tearing (SUNCT)"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/home/digestive-disorders/symptoms-of-digestive-disorders/gas",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_consumer",
+      "source_name": "MSD Manual Consumer",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Gas"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/diseases-of-the-aorta-and-its-branches/overview-of-aortic-aneurysms",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "source_name": "MSD Manual Professional",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Overview of Aortic Aneurysms"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/critical-care-medicine/how-to-do-basic-airway-procedures/how-to-do-abdominal-thrusts-and-back-blows-in-the-conscious-adult-or-child-who-is-choking",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "source_name": "MSD Manual Professional",
+      "chunks": 8,
+      "distinct_article_ids": 1,
+      "titles": [
+        "How To Do Abdominal Thrusts and Back Blows in the Conscious Adult or Child Who Is Choking"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/critical-care-medicine/how-to-do-central-vascular-procedures",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "source_name": "MSD Manual Professional",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "How To Do Central Vascular Procedures"
+      ]
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/dental-disorders/lip-and-tongue-disorders/tongue-trauma",
+      "granularity": "article_or_page",
+      "source_id": "msd_manual_professional",
+      "source_name": "MSD Manual Professional",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Tongue Trauma"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/4404702/",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "source_name": "NCBI Bookshelf",
+      "chunks": 20,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Cardiac Cirrhosis"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/4521356/",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "source_name": "NCBI Bookshelf",
+      "chunks": 36,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Generalized Pustular Psoriasis"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/4536756/",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "source_name": "NCBI Bookshelf",
+      "chunks": 66,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Alzheimer Disease"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/5274796/",
+      "granularity": "article",
+      "source_id": "ncbi_bookshelf",
+      "source_name": "NCBI Bookshelf",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Screening for Depression and Suicide in Children"
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/hawthorn",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "source_name": "NCCIH Health Topics",
+      "chunks": 4,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Hawthorn"
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/pain/fibromyalgia.htm",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "source_name": "NCCIH Health Topics",
+      "chunks": 20,
+      "distinct_article_ids": 1,
+      "titles": [
+        "NCCIHâs fact sheet on fibromyalgia"
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/tips/high-cholesterol-and-dietary-supplements",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "source_name": "NCCIH Health Topics",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "8 Tips: High Cholesterol and Dietary Supplements"
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/tips/tips-start-talking-with-your-health-care-providers-about-complementary-health-approaches",
+      "granularity": "article_or_page",
+      "source_id": "nccih_health",
+      "source_name": "NCCIH Health Topics",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "4 Tips: Start Talking With Your Health Care Providers About Complementary Health Approaches"
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/bowel-incontinence/",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "source_name": "NHS Health A-Z",
+      "chunks": 10,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Bowel incontinence"
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/food-poisoning/",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "source_name": "NHS Health A-Z",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Food poisoning"
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/benzydamine/",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "source_name": "NHS Health A-Z",
+      "chunks": 7,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Benzydamine"
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/symptoms/night-sweats/",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "source_name": "NHS Health A-Z",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Night sweats"
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+      "granularity": "article_or_page",
+      "source_id": "nhs_health_a_z",
+      "source_name": "NHS Health A-Z",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Blood pressure test"
+      ]
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/blood.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / MPlusHealthTopics",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Blood"
+      ]
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/childrenspage.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / MPlusHealthTopics",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Children's Page"
+      ]
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/friedreichsataxia.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / MPlusHealthTopics",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Friedreich's Ataxia"
+      ]
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/handinjuriesanddisorders.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / MPlusHealthTopics",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Hand Injuries and Disorders"
+      ]
+    },
+    {
+      "url": "https://www.nlm.nih.gov/medlineplus/leukemia.html",
+      "granularity": "article_or_page",
+      "source_id": "hf_medquad",
+      "source_name": "MedQuAD / MPlusHealthTopics",
+      "chunks": 2,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Leukemia"
+      ]
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/child-maltreatment-counseling-2004",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "source_name": "USPSTF Recommendations",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "(January 2004)"
+      ]
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/depression-in-adults-screening-2009",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "source_name": "USPSTF Recommendations",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "(December 2009)"
+      ]
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/syphilis-infection-screening-2004",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "source_name": "USPSTF Recommendations",
+      "chunks": 1,
+      "distinct_article_ids": 1,
+      "titles": [
+        "(July 2004)"
+      ]
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/sites/default/files/file/supporting_documents/breast-cancer-screening-final-rec-bulletin.pdf",
+      "granularity": "article_or_page",
+      "source_id": "uspstf_recommendations",
+      "source_name": "USPSTF Recommendations",
+      "chunks": 9,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Task Force Issues Final Recommendation Statement on Screening for Breast Cancer"
+      ]
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
+      "granularity": "article_or_page",
+      "source_id": "who",
+      "source_name": "WHO",
+      "chunks": 13,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Ambient (outdoor) air pollution"
+      ]
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/bipolar-disorder",
+      "granularity": "article_or_page",
+      "source_id": "who",
+      "source_name": "WHO",
+      "chunks": 15,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Bipolar disorder"
+      ]
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability",
+      "granularity": "article_or_page",
+      "source_id": "who",
+      "source_name": "WHO",
+      "chunks": 19,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Blood safety and availability"
+      ]
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+      "granularity": "article_or_page",
+      "source_id": "who",
+      "source_name": "WHO",
+      "chunks": 13,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Chronic obstructive pulmonary disease (COPD)"
+      ]
+    },
+    {
+      "url": "https://www.who.int/vietnam/",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 3,
+      "distinct_article_ids": 1,
+      "titles": [
+        "WHO Viet Nam | World Health Organization"
+      ]
+    },
+    {
+      "url": "https://www.who.int/vietnam/health-topics/hand-foot-and-mouth-disease-(hfmd)",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Hand, foot and mouth disease"
+      ]
+    },
+    {
+      "url": "https://www.who.int/vietnam/news/commentaries/detail/world-health-day-2025--celebrating-progress-and-partnering-for-a-stronger-and-healthier-future",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 15,
+      "distinct_article_ids": 1,
+      "titles": [
+        "9 April 2025 World Health Day 2025: celebrating progress and partnering for a stronger and healthier future"
+      ]
+    },
+    {
+      "url": "https://www.who.int/westernpacific/publications/i/item/9789290619956",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 6,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Five keys for safer traditional food markets: risk mitigation in traditional food markets in the Asia-Pacific..."
+      ]
+    },
+    {
+      "url": "https://www.who.int/westernpacific/publications/i/item/evaluation-of-who-contribution-in-somalia-2020-2025--web-annexes",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 5,
+      "distinct_article_ids": 1,
+      "titles": [
+        "Evaluation of WHO contribution in Somalia 2020–2025: web annexes"
+      ]
+    },
+    {
+      "url": "https://www.who.int/westernpacific?form=FUNXPHYYEDK",
+      "granularity": "article_or_page",
+      "source_id": "who_vietnam",
+      "source_name": "who_vietnam",
+      "chunks": 229,
+      "distinct_article_ids": 2,
+      "titles": [
+        "SOP on RMP Assessment – Customisable for specific country NRAs. Page 1",
+        "WHO MODEL RMP ASSESSMENT GUIDELINE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+PHIẾU CHẤM RELEVANCE — 40 mục
+=============================
+
+Codebook: benchmark/rivf/RELEVANCE-CODEBOOK.md (giống hệt phiếu trước)
+
+Câu hỏi: CLAIM này có trả lời CÂU HỎI không?
+   R = relevant     — trả lời câu hỏi, hoặc là một phần cần thiết của câu trả lời
+   P = partial      — đúng chủ đề nhưng KHÔNG trả lời (mục tiêu nghiên cứu, cỡ mẫu,
+                      định nghĩa sách giáo khoa, mô tả quần thể…)
+   N = not_relevant — không liên quan
+
+Tuỳ chọn thứ hai: đoạn văn được trích có ĐỠ claim không —  Y / N  (bỏ trống nếu
+không muốn chấm; phần này không vào tỷ lệ headline).
+
+Điền vào dòng '=>' dạng:  R    /   P Y   /   N
+
+QUY TẮC SỐ 1: chấm CLAIM so với CÂU HỎI, không phải đoạn văn so với câu hỏi.
+Đoạn văn chỉ để bạn hiểu claim đang nói về cái gì. Nguyên văn từ phiếu trước,
+đặt lại ở đây để hai phiếu được chấm trong cùng một điều kiện.
+
+PHIẾU NÀY MÙ: không có nhãn của mô hình, không có phán quyết entailment, không có
+thông tin về thiết kế nào đã sinh ra các mục này. Đó là chủ ý.
+
+==============================================================================
+
+## relu_01
+CÂU HỎI: Tỷ lệ điều trị thành công của phác đồ 6 tháng cho lao phổi nhạy cảm thuốc ở người lớn vào khoảng bao nhiêu phần trăm?
+
+CLAIM: Người bệnh đã thực hiện được ít nhất 1 tháng điều trị ở giai đoạn củng cố và trước khi kết thúc phác đồ điều trị 1 tháng * Tiêu chuẩn loại trừ: - Người bệnh có rối loạn về tâm thần hoặc tiền sử điều trị tâm thần.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:c5a3326901f51017 chars:1068]
+=> P Y
+
+## relu_02
+CÂU HỎI: Giải thích cơ chế bệnh sinh của bệnh đa dây thần kinh ngoại biên ở người đái tháo đường, tại sao triệu chứng thường khởi phát đối xứng ở bàn chân rồi mới lan lên trên?
+
+CLAIM: Theo ước tính thì đái tháo đường sẽ là nguyên nhân gây tử vong hàng đầu tính đến năm 2030.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:d0ce7f8135f20cba chars:1144]
+=> P Y
+
+## relu_03
+CÂU HỎI: Mẹ em bị rung nhĩ, bác sĩ kê thuốc chống đông máu uống hàng ngày. Em lo thuốc này gây chảy máu, không biết khi dùng thì cần kiêng ăn gì và phải theo dõi những dấu hiệu nào ạ?
+
+CLAIM: Yếu tố tắc mạch được đánh giá làm gia tăng nguy cơ chảy máu ở bệnh nhân rung nhĩ đang điều trị chống đông lên gấp 4 lần so với nhóm không có tắc mạch (p>0,05).
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:1f02e3da06d96d24 chars:872]
+=> P Y
+
+## relu_04
+CÂU HỎI: Bệnh nhân viêm gan B mạn cần dùng thuốc kháng virus lâu dài thì nên chọn tenofovir hay entecavir? Hai thuốc này khác nhau thế nào về hiệu quả và tác dụng phụ khi dùng kéo dài?
+
+CLAIM: Việt Nam nằm trong vùng có tỉ lệ nhiễm HBV cao với tỉ lệ mang virus trong cộng đồng dao động 15-25% tùy theo nhóm đối tượng, tương đương khoảng 16 triệu người mắc các bệnh do virus viêm gan [2].
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:56c5d40bb8627fbe chars:1094]
+=> P Y
+
+## relu_05
+CÂU HỎI: Bác sĩ ơi, em bị tiểu đường thai kỳ, mọi người xung quanh bảo phải bỏ hẳn cơm trắng thì mới an toàn cho em bé. Có đúng là phải kiêng cơm hoàn toàn không hay chỉ cần ăn ít lại thôi ạ?
+
+CLAIM: Chỉ định mổ đẻ cho các thai phụ đái tháo đường thai kỳ chỉ đặt ra khi dự kiến cân nặng của con to >4000g.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:ce112ad84362d7c6 chars:1061]
+=> P Y
+
+## relu_06
+CÂU HỎI: Tại sao phác đồ điều trị lao bắt buộc phải phối hợp nhiều thuốc ngay từ đầu thay vì dùng đơn trị liệu?
+
+CLAIM: Hiện nay, có nhiều nhóm thuốc điều trị đái tháo đường típ 2 khác nhau nên việc lựa chọn kết hợp các thuốc theo phác đồ rất quan trọng, phụ thuộc vào tình trạng của từng bệnh nhân và các vấn đề liên quan khi phối hợp nhiều loại thuốc trong điều trị như tương tác thuốc, các tác dụng không mong muốn…, Tại Bệnh viện Đa khoa thị xã Buôn Hồ có số lượ
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:e92adf151f678310 chars:1110]
+=> N Y
+
+## relu_07
+CÂU HỎI: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+
+CLAIM: Xuất phát từ thực tế đó, chúng tôi tiến hành thực hiện đề tài “Nghiên cứu sự tuân thủ trong sử dụng thuốc điều trị tăng huyết áp trên bệnh nhân tăng huyết áp điều trị ngoại trú tại Khoa Khám bệnh Bệnh viện Đa khoa Thành phố Cần Thơ năm 2020” với mục tiêu: (1) xác định
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:e250ab641b1733a6 chars:1216]
+=> N Y
+
+## relu_08
+CÂU HỎI: Ở bệnh nhân gút mạn có hạt tophi, cần duy trì acid uric máu dưới ngưỡng bao nhiêu mg/dL để tophi tan dần?
+
+CLAIM: Phương pháp: Nghiên cứu mô tả cắt ngang trên 95 bệnh nhân Gút mạn tính điều trị nội trú tại Bệnh viện Đa khoa tỉnh Vĩnh Phúc từ tháng 7/2024 đến 7/2025.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:c97d190093164f0f chars:1068]
+=> P Y
+
+## relu_09
+CÂU HỎI: Bố em 68 tuổi bị Parkinson, tay run nhiều nhất là lúc ngồi yên. Ngoài uống thuốc thì tập thể dục hay đi bộ hằng ngày có giúp đỡ run và đỡ cứng người hơn không ạ?
+
+CLAIM: Lời nói (%) 26 (42,61) 29 (47,54) 6 (9,84) 0 (0) 0 (0) Nước bọt và chảy dãi (%) 36 (59,02) 4 (6,56) 20 (32,79) 1 (1,64) 0 (0) Nhai và nuốt (%) 38 (62,30) 22 (36,07) 1 (1,64) 0 (0) 0 (0) Run (%) 12 (19,67) 12 (19,67) 23 (37,70) 12 (19,67) 2 (3,28) Đông cứng (%) 58 (95,08) 1 (1,64) 2 (3,28) 0 (0) 0 (0)
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:9bde9da571441ccb chars:888]
+=> P Y
+
+## relu_10
+CÂU HỎI: Bệnh nhân trẻ đi khám vì hồi hộp trống ngực thành cơn, điện tim lúc nghỉ hoàn toàn bình thường. Cần làm những thăm dò gì để phân biệt cơn nhịp nhanh trên thất với ngoại tâm thu lành tính hay rối loạn lo âu?
+
+CLAIM: Nghiên cứu gồm 201 bệnh nhân có ngoại tâm thu thất hoặc nhanh thất đơn hình từ buồng tống, được triệt đốt bằng hệ thống lập bản đồ điện học ba chiều.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b7e54f2107b5fe19 chars:1140]
+=> P Y
+
+## relu_11
+CÂU HỎI: Khuyến cáo điều trị tăng huyết áp mới nhất tính đến năm 2025 khác gì so với bản trước đó?
+
+CLAIM: Mục tiêu nghiên cứu: Khảo sát tình hình sử dụng thuốc và đánh giá sự tuân thủ điều trị tăng huyết áp tại Trung tâm Y tế Tri Tôn, tỉnh An Giang năm 2025.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:2ff2513c47125656 chars:1166]
+=> P Y
+
+## relu_12
+CÂU HỎI: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+
+CLAIM: Đánh giá chia làm 2 mức: tuân thủ (từ 6-8 điểm) và kém tuân thủ (dưới 6 điểm) dựa trên kết quả qua 3 lần tái khám (sau 1 tháng, 3 tháng, 6 tháng so với lần bắt đầu nghiên cứu).
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:abe4d84da35916d7 chars:1217]
+=> N Y
+
+## relu_13
+CÂU HỎI: Mẹ tôi 65 tuổi vừa đi đo mật độ xương thì bác sĩ bảo bị loãng xương. Bà uống sữa với canxi mỗi ngày như vậy đã đủ để phòng gãy xương chưa hay còn phải uống thêm thuốc gì nữa ạ?
+
+CLAIM: Mục tiêu: khảo sát tỉ lệ loãng xương, nguy cơ gãy xương ở người cao tuổi có sử dụng thuốc ức chế bơm proton tại phòng khám Lão khoa và phòng khám Cơ Xương Khớp của Bệnh viện Đại học Y Dược thành phố Hồ Chí Minh.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:23a4914b8cbf8386 chars:1071]
+=> P Y
+
+## relu_14
+CÂU HỎI: Mẹ tôi 65 tuổi vừa đi đo mật độ xương thì bác sĩ bảo bị loãng xương. Bà uống sữa với canxi mỗi ngày như vậy đã đủ để phòng gãy xương chưa hay còn phải uống thêm thuốc gì nữa ạ?
+
+CLAIM: Trong đó: Z: giá trị Z tương ứng khoảng tin cậy 95% là 1,96; d: là độ chính xác tuyệt đối, chọn giá trị là 0,07; p: tỉ lệ người cao tuổi có sử dụng thuốc ức chế bơm proton bị loãng xương; Hiện tại, chưa có nghiên cứu tại Việt Nam nên chúng tôi lấy p = 0,5; Tính ra cỡ mẫu là: n = 196.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:d87050d741b03283 chars:1053]
+=> P Y
+
+## relu_15
+CÂU HỎI: Tại sao tăng triglyceride máu nặng lại gây viêm tuỵ cấp?
+
+CLAIM: Thay huyết tương là một phương pháp điều trị hiệu quả để giảm nhanh nồng độ triglyceride trong máu.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:a88f910d4b6e25d5 chars:1086]
+=> P Y
+
+## relu_16
+CÂU HỎI: Ở bệnh nhân COPD vẫn tiếp tục hút thuốc, trung bình mỗi năm FEV1 suy giảm khoảng bao nhiêu mL?
+
+CLAIM: Also talk with your doctor or other healthcare professional about when you need the COVID-19 vaccine and the RSV vaccine.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:0c3769ae4c672486 chars:980]
+=> P Y
+
+## relu_17
+CÂU HỎI: Nam 55 tuổi, tiểu máu đại thể không đau, không sốt. Cần khám và làm những thăm dò gì để tìm nguyên nhân?
+
+CLAIM: Đối tượng và phương pháp nghiên cứu: Nghiên cứu cắt ngang, tất cả người cao tuổi đến khám tại Phòng khám Bác sĩ gia đình Bệnh viện Lê Văn Thịnh năm 2022 mắc một bệnh hay đồng mắc Tăng huyết áp, Đái tháo đường týp 2, Bệnh tim thiếu máu cục bộ.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:ce69a27662e82604 chars:1128]
+=> N Y
+
+## relu_18
+CÂU HỎI: Thiếu máu do thiếu vitamin B12 nên bổ sung đường tiêm bắp hay đường uống, và căn cứ vào đâu để chọn?
+
+CLAIM: Đánh giá mối liên quan giữa thiếu vitamin B12 và/hoặc tăng homocysteine huyết thanh với liều và thời gian điều trị metformin trên BN ĐTĐ típ 2.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:106b01b6808e2d09 chars:1104]
+=> P Y
+
+## relu_19
+CÂU HỎI: PrEP uống hằng ngày so với PrEP theo tình huống khác nhau ra sao, và hiện nay khuyến cáo ưu tiên cách nào cho nhóm nào?
+
+CLAIM: Kết quả chỉ ra rằng, có 346 MSM (71,49%) sử dụng PrEP hàng ngày (Daily-PrEP) và 138 người (28,51%) sử dụng PrEP tình huống (ED- PrEP).
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:62bdc0ee05c53a61 chars:1091]
+=> P Y
+
+## relu_20
+CÂU HỎI: Tỷ lệ đáp ứng virus bền vững sau điều trị viêm gan C mạn bằng thuốc kháng virus tác động trực tiếp là khoảng bao nhiêu phần trăm?
+
+CLAIM: Chưa điều trị viêm gan C trước đó - Có văn bản đồng ý tham gia nghiên cứu 2.1.2.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:9adeb95281c279a9 chars:1098]
+=> P Y
+
+## relu_21
+CÂU HỎI: Trẻ 18 tháng tiêu chảy cấp mất nước nhẹ thì nên bù bằng ORS nồng độ thẩm thấu thấp hay nước cháo muối tự nấu ở nhà, và có nên bổ sung kẽm kèm theo không?
+
+CLAIM: Sau 24h và 48h điều trị, số trẻ tiêu chảy cấp có mất nước giảm từ 31,2% xuống 4,0% và 0,5%.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:9b7b0e625cd3d177 chars:1083]
+=> P Y
+
+## relu_22
+CÂU HỎI: Bệnh nhân suy tim mạn sau đợt nhập viện vì đợt cấp thì tỷ lệ tái nhập viện trong vòng 30 ngày khoảng bao nhiêu phần trăm?
+
+CLAIM: Ngược lại với những cải thiện đáng kể trong điều trị suy tim mạn, khi xuất hiện đợt cấp, bệnh nhân vẫn có tiên lượng xấu, với tỷ lệ tái nhập viện sau 90 ngày và tỷ lệ tử vong sau 1 năm lên tới 10 - 30% [2].
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:f20fb63d1adb7dbd chars:1100]
+=> P Y
+
+## relu_23
+CÂU HỎI: Thai 32 tuần, sản phụ thấy ra nước âm đạo nhiều lần trong ngày. Cần khám và làm gì để xác định là ối vỡ non hay chỉ là dịch tiết âm đạo, són tiểu?
+
+CLAIM: Trong suốt những thập kỷ qua, nhiều nghiên cứu lâm sàng đã cho thấy điều trị THA hiệu quả đã làm giảm nguy cơ mắc bệnh tim mạch và tử vong [8].
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:ad8fa1571c0b4a0e chars:1216]
+=> N Y
+
+## relu_24
+CÂU HỎI: Tỷ lệ tái phát nhiễm khuẩn tiết niệu ở phụ nữ trong vòng 6 tháng sau một đợt viêm bàng quang cấp là khoảng bao nhiêu phần trăm?
+
+CLAIM: Đối tượng và phương pháp nghiên cứu: 274 bệnh nhân ung thư nhập khoa Hồi sức cấp cứu – Bệnh viện K, được đặt OTBQ, từ tháng 03/2022 đến tháng 11/2022.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:d2198621e6bfa6c9 chars:1085]
+=> P Y
+
+## relu_25
+CÂU HỎI: Vì sao phenylketon niệu và suy giáp bẩm sinh gần như luôn nằm trong danh mục sàng lọc sơ sinh của mọi quốc gia - những tiêu chí nào quyết định một bệnh được đưa vào chương trình sàng lọc?
+
+CLAIM: Tỷ lệ sinh viên chủ động chuẩn bị bài trước mỗi buổi học theo đúng hướng dẫn học tập chiếm 70,3%; sinh viên tham gia thảo luận nhóm chiếm 74,9%; tỉ lệ sinh viên trả lời được các câu hỏi trong giờ thảo luận ca lâm sàng là 51,3%.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:139beea9d2bf830f chars:1122]
+=> N Y
+
+## relu_26
+CÂU HỎI: Nam 55 tuổi, tiểu máu đại thể không đau, không sốt. Cần khám và làm những thăm dò gì để tìm nguyên nhân?
+
+CLAIM: Bảng 1: Ba bệnh mạn tính không lây thường gặp ở người cao tuổi theo giới Bệnh mạn tính không lây Nữ Nam Tổng (n=4713) Tỉ lệ (%) p* THA 2252 1034 69,7 0,416 ĐTĐ týp 2 975 404 29,3 0,084 BTTMCB 1405 641 43,4 0,771 *Chi-square Tuổi trung bình là 69,2 ± 7,5 tuổi, người cao tuổi nhất: 103 tuổi.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:7971fe2742e55946 chars:1112]
+=> N Y
+
+## relu_27
+CÂU HỎI: Huyết áp 150/90 có phải uống thuốc suốt đời không?
+
+CLAIM: Một số nhà lâm sàng cho rằng liệu việc tư vấn thay đổi hành vi lối sống cho bệnh nhân tăng huyết áp tái khám lâu năm có cần thiết hay không, đặc biệt khi đây là một bệnh lý mạn tính phổ biến, được người dân biết đến nhiều.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:58b66272989285e8 chars:1080]
+=> P Y
+
+## relu_28
+CÂU HỎI: Tỷ lệ tử vong trong vòng 12 tháng sau gãy cổ xương đùi ở người trên 70 tuổi vào khoảng bao nhiêu phần trăm?
+
+CLAIM: GCXĐ di lệch tỉ lệ không liền xương khoảng 15-30% và khoảng 30% dẫn đến hoại tử chỏm vì vậy vấn đề thay khớp háng được đặt ra ở các bệnh nhân cao tuổi GCXĐ di lệch.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:49d2abb33fd2cf9a chars:1116]
+=> P Y
+
+## relu_29
+CÂU HỎI: Cơ chế bệnh sinh của tiền sản giật liên quan như thế nào đến việc nguyên bào nuôi xâm nhập không hoàn toàn vào các động mạch xoắn tử cung, và từ đó dẫn tới rối loạn chức năng nội mô toàn thân ra sao?
+
+CLAIM: Những trẻ rất non tháng có mẹ bị tiền sản giật có nguy cơ chậm tăng trưởng thể chất lúc 6 tháng tuổi hiệu chỉnh tăng 8,8 lần so với trẻ có mẹ không bị tiền sản giật.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:76d8a94af79dd5ef chars:1107]
+=> P Y
+
+## relu_30
+CÂU HỎI: Nam 60 tuổi hút thuốc lâu năm, chụp CT ngực tình cờ thấy nốt mờ phổi đơn độc khoảng 12mm. Cần làm thêm những gì để phân biệt tổn thương lành tính với ác tính?
+
+CLAIM: Giá trị SUVmax khối u nguyên phát 10,41±3,82 và không khác biệt với khối u tại các vị trí phổi khác nhau (p>0,05). SUVmax cao nhất ở tổn thương di căn gan và hạch ổ bụng, tương ứng 7,53±4,63 và 7,50±3,15; thấp nhất ở tổn thương di căn phổi và hạch rốn phổi, tương ứng 4,41±2,81 và 5,57±2,46.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:487ea0c91045b01d chars:1096]
+=> P Y
+
+## relu_31
+CÂU HỎI: Tại sao mảng xơ vữa gây hẹp không đáng kể lại có thể nứt vỡ gây nhồi máu cơ tim cấp, trong khi mảng vôi hoá hẹp khít nhiều khi chỉ biểu hiện đau thắt ngực ổn định?
+
+CLAIM: Tái tưới máu không hoàn toàn với nhánh LAD chưa được can thiệp làm tăng nguy cơ nhập viện vì đau ngực.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:eb3550240d4891ff chars:1025]
+=> P Y
+
+## relu_32
+CÂU HỎI: Một người tê bì và yếu dần hai chân trong vài ngày, đi lại khó khăn. Cần khám và chỉ định gì để phân biệt hội chứng Guillain-Barré với tổn thương chèn ép tủy sống?
+
+CLAIM: Do đó, việc thăm khám kỹ, phát hiện và đưa ra phương án điều trị sớm của chuyên gia da liễu sẽ giảm thiểu rất nhiều tác động tiêu cực của bệnh về lâu dài.2 Bên cạnh đó, tuy đã được chứng minh là một bệnh lý khớp riêng biệt với các bệnh lý viêm khớp khác như viêm khớp dạng thấp, viêm cột sống dính khớp, nhiều trường hợp các dấu hiệu lâm sàng và cận lâm sàng rất khó phân biệt
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:3135191301560e1e chars:1079]
+=> N Y
+
+## relu_33
+CÂU HỎI: Bác sĩ ơi, em bị tiểu đường thai kỳ, mọi người xung quanh bảo phải bỏ hẳn cơm trắng thì mới an toàn cho em bé. Có đúng là phải kiêng cơm hoàn toàn không hay chỉ cần ăn ít lại thôi ạ?
+
+CLAIM: Chỉ số Apgar Nội dung 2 điểm 1 điểm 0 điểm Nhịp tim >100 lần /phút < 100 lần /phút Không có Hô hấp khóc to Thở yếu, khóc yếu Không thở Trương lực cơ ++ + Không Phản xạ ++ + Không Màu da Hồng toàn thân Tím đầu chi, quanh môi Tím tái toàn thân hoặc trắng Bình thường, Apgar phút thứ nhất sau đẻ ≥ 7 điểm, trẻ không cần hồi sức.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:43c7b93d10e364b3 chars:1061]
+=> P Y
+
+## relu_34
+CÂU HỎI: Thai phụ có một lần mổ lấy thai ngang đoạn dưới, lần này thai đủ tháng ngôi đầu, nên khuyến cáo thử sinh ngả âm đạo hay mổ lấy thai chủ động lặp lại?
+
+CLAIM: Nghiên cứu của Nguyễn Văn Đạo (2019), tỷ lệ thai phụ có khoảng cách 2 lần sinh > 24 tháng chiếm 72% và ≤ 24 tháng chiếm 28% [1].
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:c34d35db9c5b4c26 chars:1092]
+=> P Y
+
+## relu_35
+CÂU HỎI: Mẹ em bị rung nhĩ, bác sĩ kê thuốc chống đông máu uống hàng ngày. Em lo thuốc này gây chảy máu, không biết khi dùng thì cần kiêng ăn gì và phải theo dõi những dấu hiệu nào ạ?
+
+CLAIM: So với thuốc đối kháng vitamin K, NOAC có giảm nguy cơ chảy máu nặng (nguy cơ tương đối [RR] 0,72; 95% CI 0,62-0,85), gây tử vong chảy máu (RR 0,53; 95% CI 0,43-0,64), và chảy máu nội sọ (0,43; 95% CI 0,37-0,50); xuất huyết tiêu hóa nặng không tăng (RR 0,94; 95% CI 0,75-1,99).
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:032e37a80b90533a chars:1068]
+=> P Y
+
+## relu_36
+CÂU HỎI: Cơ chế nào giải thích việc bệnh nhân đái tháo đường type 1 dễ vào nhiễm toan ceton hơn so với bệnh nhân type 2?
+
+CLAIM: Usher-Smith và CS (2011) đã chỉ ra các yếu tố nguy cơ gia tăng khả năng NTCT ở bệnh nhân lần đầu được chẩn đoán ĐTĐ type 1: tuổi < 2 tuổi, chẩn đoán nhầm, chậm trễ trong điều trị, dân tộc thiểu số và điều kiện kinh tế xã hội kém 6.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:9b98ee9caf153644 chars:1119]
+=> P Y
+
+## relu_37
+CÂU HỎI: Tại sao tình trạng đề kháng insulin ở bệnh nhân hội chứng buồng trứng đa nang lại gây rối loạn phóng noãn?
+
+CLAIM: Nồng độ cortisol máu trung bình ở nhóm có rối loạn chức năng cương dương cao hơn nhóm không có rối loạn chức năng cương dương (8,58 ± 10,38 và
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:de25bef98a9b5613 chars:1129]
+=> N Y
+
+## relu_38
+CÂU HỎI: Thai phụ có một lần mổ lấy thai ngang đoạn dưới, lần này thai đủ tháng ngôi đầu, nên khuyến cáo thử sinh ngả âm đạo hay mổ lấy thai chủ động lặp lại?
+
+CLAIM: Kết luận: Đa phần phương pháp mổ lấy thai sau khi có vết mổ cũ được lựa chọn hơn thử thách sanh ngã âm đạo.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:e39390415b9e1e62 chars:890]
+=> P Y
+
+## relu_39
+CÂU HỎI: Thai phụ có một lần mổ lấy thai ngang đoạn dưới, lần này thai đủ tháng ngôi đầu, nên khuyến cáo thử sinh ngả âm đạo hay mổ lấy thai chủ động lặp lại?
+
+CLAIM: Tuy nhiên, vẫn có trường hợp sinh đường âm đạo thành công sau lần mổ lấy thai trước.
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:e39390415b9e1e62 chars:890]
+=> P Y
+
+## relu_40
+CÂU HỎI: Tỷ lệ điều trị thành công của phác đồ 6 tháng cho lao phổi nhạy cảm thuốc ở người lớn vào khoảng bao nhiêu phần trăm?
+
+CLAIM: Tần suất lĩnh thuốc điều trị lao 1 tháng 1 lần
+
+ĐOẠN VĂN ĐƯỢC TRÍCH:
+[WITHHELD sha256:b173b36a84a73ab3 chars:1068]
+=> P Y
+

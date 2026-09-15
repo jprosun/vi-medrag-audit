@@ -1,0 +1,216 @@
+{
+  "what_this_is": "Which relevance item maps to which entailment item, query and question type. Not for the grader until grading is done.",
+  "items_file": "benchmark/rivf/relevance_items_v1.jsonl",
+  "items_sha256": "cf0b76d9bf5dfef7c7a72a182a980f3e2730cff3fa25c5744713a5d8089f96e9",
+  "seed": 20260906,
+  "per_type": 8,
+  "counts_by_type": {
+    "clinical_explainer": 8,
+    "differential_or_workup": 8,
+    "guideline_comparison": 8,
+    "patient_faq": 8,
+    "study_result_numeric": 8
+  },
+  "key": {
+    "rel_01": {
+      "entailment_item": "ent_0105",
+      "query_id": "rivf_041",
+      "question_type": "clinical_explainer"
+    },
+    "rel_02": {
+      "entailment_item": "ent_0209",
+      "query_id": "rivf_095",
+      "question_type": "study_result_numeric"
+    },
+    "rel_03": {
+      "entailment_item": "ent_0050",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric"
+    },
+    "rel_04": {
+      "entailment_item": "ent_0152",
+      "query_id": "rivf_061",
+      "question_type": "patient_faq"
+    },
+    "rel_05": {
+      "entailment_item": "ent_0042",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison"
+    },
+    "rel_06": {
+      "entailment_item": "ent_0145",
+      "query_id": "rivf_045",
+      "question_type": "guideline_comparison"
+    },
+    "rel_07": {
+      "entailment_item": "ent_0026",
+      "query_id": "rivf_025",
+      "question_type": "guideline_comparison"
+    },
+    "rel_08": {
+      "entailment_item": "ent_0222",
+      "query_id": "rivf_118",
+      "question_type": "differential_or_workup"
+    },
+    "rel_09": {
+      "entailment_item": "ent_0027",
+      "query_id": "rivf_076",
+      "question_type": "clinical_explainer"
+    },
+    "rel_10": {
+      "entailment_item": "ent_0218",
+      "query_id": "rivf_101",
+      "question_type": "guideline_comparison"
+    },
+    "rel_11": {
+      "entailment_item": "ent_0211",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup"
+    },
+    "rel_12": {
+      "entailment_item": "ent_0115",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup"
+    },
+    "rel_13": {
+      "entailment_item": "ent_0198",
+      "query_id": "rivf_025",
+      "question_type": "guideline_comparison"
+    },
+    "rel_14": {
+      "entailment_item": "ent_0159",
+      "query_id": "rivf_123",
+      "question_type": "study_result_numeric"
+    },
+    "rel_15": {
+      "entailment_item": "ent_0183",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq"
+    },
+    "rel_16": {
+      "entailment_item": "ent_0002",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq"
+    },
+    "rel_17": {
+      "entailment_item": "ent_0013",
+      "query_id": "rivf_019",
+      "question_type": "study_result_numeric"
+    },
+    "rel_18": {
+      "entailment_item": "ent_0205",
+      "query_id": "rivf_021",
+      "question_type": "clinical_explainer"
+    },
+    "rel_19": {
+      "entailment_item": "ent_0011",
+      "query_id": "rivf_097",
+      "question_type": "clinical_explainer"
+    },
+    "rel_20": {
+      "entailment_item": "ent_0201",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup"
+    },
+    "rel_21": {
+      "entailment_item": "ent_0080",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric"
+    },
+    "rel_22": {
+      "entailment_item": "ent_0035",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq"
+    },
+    "rel_23": {
+      "entailment_item": "ent_0132",
+      "query_id": "rivf_051",
+      "question_type": "clinical_explainer"
+    },
+    "rel_24": {
+      "entailment_item": "ent_0135",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison"
+    },
+    "rel_25": {
+      "entailment_item": "ent_0150",
+      "query_id": "rivf_114",
+      "question_type": "study_result_numeric"
+    },
+    "rel_26": {
+      "entailment_item": "ent_0202",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup"
+    },
+    "rel_27": {
+      "entailment_item": "ent_0055",
+      "query_id": "rivf_018",
+      "question_type": "patient_faq"
+    },
+    "rel_28": {
+      "entailment_item": "ent_0215",
+      "query_id": "rivf_061",
+      "question_type": "patient_faq"
+    },
+    "rel_29": {
+      "entailment_item": "ent_0212",
+      "query_id": "rivf_093",
+      "question_type": "patient_faq"
+    },
+    "rel_30": {
+      "entailment_item": "ent_0121",
+      "query_id": "rivf_049",
+      "question_type": "study_result_numeric"
+    },
+    "rel_31": {
+      "entailment_item": "ent_0033",
+      "query_id": "rivf_058",
+      "question_type": "guideline_comparison"
+    },
+    "rel_32": {
+      "entailment_item": "ent_0160",
+      "query_id": "rivf_125",
+      "question_type": "clinical_explainer"
+    },
+    "rel_33": {
+      "entailment_item": "ent_0098",
+      "query_id": "rivf_051",
+      "question_type": "clinical_explainer"
+    },
+    "rel_34": {
+      "entailment_item": "ent_0128",
+      "query_id": "rivf_055",
+      "question_type": "clinical_explainer"
+    },
+    "rel_35": {
+      "entailment_item": "ent_0103",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup"
+    },
+    "rel_36": {
+      "entailment_item": "ent_0124",
+      "query_id": "rivf_104",
+      "question_type": "study_result_numeric"
+    },
+    "rel_37": {
+      "entailment_item": "ent_0127",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup"
+    },
+    "rel_38": {
+      "entailment_item": "ent_0016",
+      "query_id": "rivf_110",
+      "question_type": "guideline_comparison"
+    },
+    "rel_39": {
+      "entailment_item": "ent_0039",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup"
+    },
+    "rel_40": {
+      "entailment_item": "ent_0032",
+      "query_id": "rivf_093",
+      "question_type": "patient_faq"
+    }
+  }
+}

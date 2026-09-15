@@ -1,0 +1,31 @@
+{
+  "phase": "census",
+  "at_utc": "2026-08-24T17:33:41Z",
+  "collection": "medqa_release_v4_all_bge_m3",
+  "source_id": "vmj_ojs",
+  "exact_total": 615713,
+  "exact_source_points": 152275,
+  "exact_non_source_points": 463438,
+  "vector_size": 1024,
+  "distance": "Cosine",
+  "status": "green",
+  "payload_indexes": [
+    "article_id",
+    "audience",
+    "canonical_title",
+    "chunk_index",
+    "chunk_role",
+    "doc_id",
+    "doc_type",
+    "institution",
+    "language",
+    "quality_status",
+    "section_title",
+    "section_type",
+    "source_id",
+    "source_name",
+    "specialty",
+    "title",
+    "trust_tier"
+  ]
+}

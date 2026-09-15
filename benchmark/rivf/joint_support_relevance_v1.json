@@ -1,0 +1,121 @@
+{
+  "label_versions": {
+    "matched": "shipped = the pinned re-run with its adjudications replaced by the Rematch verdicts; URL-first = matched-arm-rejudge.js. Same codebook, model, adjudicator prompt and batch size on both sides.",
+    "original": "the first judging passes: shipped entailment claude-opus-5, everything else claude-fable-5-1, and two different codebooks. Reported for the record; the paper must not mix these counts with matched rates."
+  },
+  "arms": {
+    "shipped_matched": {
+      "claims_joined": 185,
+      "unmatched_relevance_items": 0,
+      "multi_match_groups": 0,
+      "multi_match_groups_with_disagreeing_entailment": 0,
+      "cells": {
+        "not_supported|not_relevant": 1,
+        "supported|not_relevant": 40,
+        "supported|partial": 132,
+        "supported|relevant": 7,
+        "unintelligible|partial": 5
+      },
+      "supported_and_not_relevant": 40,
+      "supported_and_partial": 132,
+      "supported_and_relevant": 7,
+      "questions_with_any_claim": 55,
+      "questions_with_at_least_one_relevant": 5,
+      "questions_where_every_claim_is_not_relevant": 12,
+      "relevance_distribution": {
+        "partial": 137,
+        "not_relevant": 41,
+        "relevant": 7
+      }
+    },
+    "url_first_matched": {
+      "claims_joined": 364,
+      "unmatched_relevance_items": 0,
+      "multi_match_groups": 0,
+      "multi_match_groups_with_disagreeing_entailment": 0,
+      "cells": {
+        "not_supported|partial": 3,
+        "overstated|not_relevant": 1,
+        "supported|not_relevant": 78,
+        "supported|partial": 257,
+        "supported|relevant": 13,
+        "unintelligible|not_relevant": 4,
+        "unintelligible|partial": 8
+      },
+      "supported_and_not_relevant": 78,
+      "supported_and_partial": 257,
+      "supported_and_relevant": 13,
+      "questions_with_any_claim": 109,
+      "questions_with_at_least_one_relevant": 10,
+      "questions_where_every_claim_is_not_relevant": 26,
+      "relevance_distribution": {
+        "partial": 268,
+        "not_relevant": 83,
+        "relevant": 13
+      }
+    },
+    "shipped_original": {
+      "claims_joined": 185,
+      "unmatched_relevance_items": 0,
+      "multi_match_groups": 0,
+      "multi_match_groups_with_disagreeing_entailment": 0,
+      "cells": {
+        "not_supported|not_relevant": 1,
+        "supported|not_relevant": 49,
+        "supported|partial": 126,
+        "supported|relevant": 4,
+        "unintelligible|not_relevant": 2,
+        "unintelligible|partial": 3
+      },
+      "supported_and_not_relevant": 49,
+      "supported_and_partial": 126,
+      "supported_and_relevant": 4,
+      "questions_with_any_claim": 55,
+      "questions_with_at_least_one_relevant": 4,
+      "questions_where_every_claim_is_not_relevant": 15,
+      "relevance_distribution": {
+        "partial": 129,
+        "not_relevant": 52,
+        "relevant": 4
+      }
+    },
+    "url_first_original": {
+      "claims_joined": 364,
+      "unmatched_relevance_items": 0,
+      "multi_match_groups": 0,
+      "multi_match_groups_with_disagreeing_entailment": 0,
+      "cells": {
+        "not_supported|partial": 3,
+        "overstated|not_relevant": 1,
+        "supported|not_relevant": 95,
+        "supported|partial": 245,
+        "supported|relevant": 10,
+        "unintelligible|not_relevant": 4,
+        "unintelligible|partial": 6
+      },
+      "supported_and_not_relevant": 95,
+      "supported_and_partial": 245,
+      "supported_and_relevant": 10,
+      "questions_with_any_claim": 109,
+      "questions_with_at_least_one_relevant": 10,
+      "questions_where_every_claim_is_not_relevant": 29,
+      "relevance_distribution": {
+        "partial": 254,
+        "not_relevant": 100,
+        "relevant": 10
+      }
+    }
+  },
+  "the_error_this_file_prevents": {
+    "what_the_paper_printed": "95 supported-but-unrelated against 49",
+    "those_are_original_labels": {
+      "url_first": 95,
+      "shipped": 49
+    },
+    "matched_labels_give": {
+      "url_first": 78,
+      "shipped": 40
+    },
+    "why_95_is_impossible_under_matched_labels": "the URL-first arm has 83 not_relevant claims in total under the matched labels, so 95 of them cannot also be supported"
+  }
+}

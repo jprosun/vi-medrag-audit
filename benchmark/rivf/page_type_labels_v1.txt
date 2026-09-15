@@ -1,0 +1,311 @@
+PHIẾU GÁN NHÃN LOẠI TRANG — 40 mục
+==================================
+
+Đọc codebook trước: benchmark/rivf/PAGE-TYPE-CODEBOOK.md
+
+MỞ TỪNG URL. Tiêu đề bên dưới là tiêu đề máy chủ trả về lúc probe (2026-09), có thể
+đã khác bây giờ — nếu trang rõ ràng đã đổi, dùng M.
+
+Câu 1 — trang thuộc loại gì:
+   D = trang một tài liệu cụ thể      I = mục lục / danh sách nhiều tài liệu
+   H = trang chủ hoặc trang mục lớn   S = trang tìm kiếm / duyệt
+   E = báo lỗi nhưng trả 200 (soft 404)   M = đã đổi, không phán được
+   O = khác (ghi một dòng)
+
+Câu 2 — có đúng là tài liệu được trích không (chỉ có nghĩa khi Câu 1 = D):
+   Y = đúng tài liệu   N = tài liệu KHÁC
+   ? = KHÔNG BIẾT vì tiêu đề lưu trong corpus là rác (breadcrumb, mảnh tên file,
+       nhãn điều hướng, mất dấu) — đây là lỗi corpus, KHÔNG được chấm là N
+   - = Câu 1 không phải D
+
+Điền vào dòng '=>' theo dạng:  <Câu1> <Câu2>      ví dụ:  D Y   /   I -   /   E -
+
+==============================================================================
+
+## pt_01
+URL: https://www.cancer.gov/types/stomach/hp/stomach-prevention-pdq
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Stomach (Gastric) Cancer Prevention (PDQ®) - NCI
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Stomach (Gastric) Cancer Prevention (PDQ®)
+=> D Y
+
+## pt_02
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14017
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: NHIỄM GIUN TRUYỀN QUA ĐẤT Ở TRẺ EM ĐẾN KHÁM TẠI TRUNG TÂM Y TẾ XÃ THUẬN AN, TỈNH BÌNH DƯƠNG | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: NHIỄM GIUN TRUYỀN QUA ĐẤT Ở TRẺ EM ĐẾN KHÁM TẠI TRUNG TÂM Y TẾ XÃ THUẬN AN, TỈNH BÌNH DƯƠNG
+=> D Y 
+
+## pt_03
+URL: https://www.nccih.nih.gov/health/tips/things-to-know-about-menopausal-symptoms-and-complementary-health-practices
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: 4 Things To Know About Menopausal Symptoms and Complementary Health Practices | NCCIH
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: 4 Things To Know About Menopausal Symptoms and Complementary Health Practices
+=> D Y
+
+## pt_04
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/64
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 81 (2024) | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: BỆNH NHÂN UNG THƯ BIỂU MÔ TẾ BÀO GAI VÙNG KHẨU HẦU Trần Thị Hương Lý1*, Nguyễn Văn Luân2, Trần Ngọc Dung2, Võ Văn Kha1, Hứa Thị Ngọc Hà3 1. Bệnh viện Ung bướu thành phố Cần Thơ
+=> I -
+
+## pt_05
+URL: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/depression-in-children-and-adolescents-screening-2009
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Archived: Depression in Children and Adolescents: Screening | United States Preventive Services Taskforce
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: (March 2009)
+=> D ?
+
+## pt_06
+URL: https://jmpm.vn/index.php/jmpm/issue/view/14
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tập 48 Số 2 (2023): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 2 - 2023 | Tạp chí Y Dược học Quân sự
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: AT CHO RAY HOSPITAL
+=> I -
+
+## pt_07
+URL: https://jmpm.vn/index.php/jmpm/issue/view/15
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tập 48 Số 3 (2023): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 3 - 2023 | Tạp chí Y Dược học Quân sự
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: AMONG OLDER DEMENTIA PATIENTS
+=> I -
+
+## pt_08
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/24
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 37 (2021) | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: AN TOÀN, HỢP LÝ TẠI TRUNG TÂM Y TẾ THỊ XÃ VĨNH CHÂU NĂM 2020 Nguyễn Quốc Hùng1*, Phan Hữu Hên2, Nguyễn Thị Hạnh3, Trần Trúc Linh4 1. Trung tâm Y tế thị xã Vĩnh Châu
+=> I -
+
+## pt_09
+URL: https://ghr.nlm.nih.gov/condition/kuskokwim-syndrome
+CHUYỂN HƯỚNG TỚI: https://medlineplus.gov/genetics/condition/kuskokwim-syndrome/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Kuskokwim syndrome: MedlinePlus Genetics
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Kuskokwim syndrome
+=> D Y 
+
+## pt_10
+URL: https://ghr.nlm.nih.gov/condition/thiopurine-s-methyltransferase-deficiency
+CHUYỂN HƯỚNG TỚI: https://medlineplus.gov/genetics/condition/thiopurine-s-methyltransferase-deficiency/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Thiopurine S-methyltransferase deficiency: MedlinePlus Genetics
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: thiopurine S-methyltransferase deficiency
+=> D Y
+
+## pt_11
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13954
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: CÁC YẾU TỐ LÂM SÀNG VÀ CẬN LÂM SÀNG ẢNH HƯỞNG ĐẾN KIỂM SOÁT HBA1C Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI THÁI BÌNH NĂM 2024 | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: CÁC YẾU TỐ LÂM SÀNG VÀ CẬN LÂM SÀNG ẢNH HƯỞNG ĐẾN KIỂM SOÁT HBA1C Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI THÁI BÌNH NĂM 2024
+=> D Y
+
+## pt_12
+URL: https://kcb.vn/du-thao/cong-van-so-6951-byt-kcb-ngay-30-11-2022-ve-viec-gop-y-du-thao-nghi-dinh-huong-dan-cap-chung-chi-hanh-nghe-doi-voi-nguoi.html?categoryId=101795266
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Công văn số 6951/BYT-KCB ngày 30/11/2022 về việc góp ý dự thảo Nghị định Hướng dẫn cấp chứng chỉ ...
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: CONG HOA xX HOI CHU NGHiA VIET NAM
+=> D ?
+
+## pt_13
+URL: https://vjmap.vn/index.php/vjmap/issue/view/13
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tập 35 Số 2 (2021) | Tạp chí Y Dược cổ truyền Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Bùi Thị Hảo, Tống Mai Vân Học viện Y Dược học cổ truyền Việt Nam
+=> I -
+
+## pt_14
+URL: https://viendinhduong.vn/storage/app/uploads/public/2025/03/27/8tqRT0fl74nvWtP8-1743071188.pdf
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: (trống)
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Tỷ lệ thiếu Vitamin A tiền lâm sàng (< 0,7mcmol/ L) ở trẻ em theo khu vực (2014 - 2015)
+=> D Y 
+
+## pt_15
+URL: https://dav.gov.vn/info-document-302.html
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: (trống)
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Bao cao danh gia tắc dong 09 1 2025
+=> D ?
+
+## pt_16
+URL: https://ghr.nlm.nih.gov/condition/phosphoglycerate-dehydrogenase-deficiency
+CHUYỂN HƯỚNG TỚI: https://medlineplus.gov/genetics/condition/phosphoglycerate-dehydrogenase-deficiency/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Phosphoglycerate dehydrogenase deficiency: MedlinePlus Genetics
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: phosphoglycerate dehydrogenase deficiency
+=> D Y
+
+## pt_17
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11240
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: ĐIỀU TRỊ NGOẠI KHOA HẸP ĐỘNG MẠCH CẢNH NGOÀI SỌ TẠI BỆNH VIỆN CHỢ RẪY: KINH NGHIỆM 10 NĂM | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: ĐIỀU TRỊ NGOẠI KHOA HẸP ĐỘNG MẠCH CẢNH NGOÀI SỌ TẠI BỆNH VIỆN CHỢ RẪY: KINH NGHIỆM 10 NĂM
+=> D Y
+
+## pt_18
+URL: https://dav.gov.vn/cong-van-so-3920qld-vp-ve-viec-cung-cap-bao-gia-dich-vu-to-chuc-hoi-nghi-n4643.html
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Công văn số 3920/QLD-VP về việc cung cấp báo giá dịch vụ tổ chức hội nghị
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Pl1 noi%20dung%20yeu%20cau signed
+=> D ?
+
+## pt_19
+URL: https://www.ncbi.nlm.nih.gov/books/5017808/
+CHUYỂN HƯỚNG TỚI: https://www.ncbi.nlm.nih.gov/books/NBK559260/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Nail Psoriasis - StatPearls - NCBI Bookshelf
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Nail Psoriasis
+=> D Y
+
+## pt_20
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/67
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 83 (2025) | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: (PARMELIACEAE) ĐỊNH HƯỚNG ĐIỀU CHẾ KEM HỖ TRỢ ĐIỀU TRỊ MỤN TRỨNG CÁ Đoàn Hồng Thắm, Lê Thanh Hà, Quách Tố Quyên, Nguyễn Hoàng Anh Thư,
+=> I -
+
+## pt_21
+URL: https://huejmp.vn/index.php/journal/issue/view/23
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tập 15 Số 2 (2025) | Tạp chí Y Dược Huế
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: 1. INTRODUCTION Allergic rhinitis (AR) is a long-term inflammatory condition of the nose that occurs when the immune
+=> I -
+
+## pt_22
+URL: https://www.nccih.nih.gov/health/providers/digest/dietary-supplements-and-cognitive-function-dementia-and-alzheimers-disease
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Dietary Supplements and Cognitive Function, Dementia, and Alzheimer’s Disease | NCCIH
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Dietary Supplements and Cognitive Function, Dementia, and Alzheimerâs Disease
+=> D Y
+
+## pt_23
+URL: https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Non-Small Cell Lung Cancer Treatment (PDQ®) - NCI
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Non-Small Cell Lung Cancer Treatment (PDQ®)
+=> D Y
+
+## pt_24
+URL: https://www.cancer.gov/espanol/tipos/ano/pro/tratamiento-ano-pdq
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tratamiento del cáncer de ano (PDQ®)
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Tratamiento del cáncer de ano (PDQ®)
+=> D Y
+
+## pt_25
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15210
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: HIỆU QUẢ ĐIỀU TRỊ CỦA XẠ TRỊ ĐƠN THUẦN VÀ HÓA XẠ ĐỒNG THỜI TRÊN NGƯỜI BỆNH UNG THƯ VÒM MŨI HỌNG | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: HIỆU QUẢ ĐIỀU TRỊ CỦA XẠ TRỊ ĐƠN THUẦN VÀ HÓA XẠ ĐỒNG THỜI TRÊN NGƯỜI BỆNH UNG THƯ VÒM MŨI HỌNG
+=> D Y
+
+## pt_26
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/61
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 77 (2024): THE 4TH ANNUAL CONFERENCE ON GRADUATE AND UNDERGRADUATE STUDENT SCIENTIFIC RESEARCH | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: HỘI NGHỊ THƯỜNG NIÊN HỌC VIÊN – SINH VIÊN NGHIÊN CỨU KHOA HỌC LẦN THỨ IV NĂM 2
+=> I -
+
+## pt_27
+URL: https://ghr.nlm.nih.gov/condition/familial-encephalopathy-with-neuroserpin-inclusion-bodies
+CHUYỂN HƯỚNG TỚI: https://medlineplus.gov/genetics/condition/familial-encephalopathy-with-neuroserpin-inclusion-bodies/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Familial encephalopathy with neuroserpin inclusion bodies: MedlinePlus Genetics
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: familial encephalopathy with neuroserpin inclusion bodies
+=> D Y
+
+## pt_28
+URL: http://viendinhduong.vn/vi/documents/video-truyen-thong/phong-chong-ngo-doc-thuc-pham-do-doc-to-tu-nhien-67fc95c667bb59c596045503
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Phòng chống ngộ độc thực phẩm do độc tố tự nhiên
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Phòng chống ngộ độc thực phẩm do độc tố tự nhiên
+=> D Y
+
+## pt_29
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9757
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: NGHIÊN CỨU ĐỘ ỔN ĐỊNH ĐỒNG THỜI CỦA GLUCOSE HUYẾT TƯƠNG VÀ HBA1C TRONG MÁU TOÀN PHẦN Ở CÁC ĐIỀU KIỆN NHIỆT ĐỘ KHÁC NHAU | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: NGHIÊN CỨU ĐỘ ỔN ĐỊNH ĐỒNG THỜI CỦA GLUCOSE HUYẾT TƯƠNG VÀ HBA1C TRONG MÁU TOÀN PHẦN Ở CÁC ĐIỀU KIỆN NHIỆT ĐỘ KHÁC NHAU
+=> D Y
+
+## pt_30
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15596
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: NGHIÊN CỨU GIÁ TRỊ TIÊN LƯỢNG ĐIỀU TRỊ CỦA CHỈ SỐ NLR, PLR TRONG UNG THƯ BIỂU MÔ TẾ BÀO GAN TẠI BỆNH VIỆN QUÂN Y 103 | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: NGHIÊN CỨU GIÁ TRỊ TIÊN LƯỢNG ĐIỀU TRỊ CỦA CHỈ SỐ NLR, PLR TRONG UNG THƯ BIỂU MÔ TẾ BÀO GAN TẠI BỆNH VIỆN QUÂN Y 103
+=> D Y
+
+## pt_31
+URL: https://viendinhduong.vn/storage/app/uploads/public/2025/03/27/7eQBh4xLt5C4cuUV-1743071309.pdf
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: (trống)
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Tỷ lệ trẻ uống bổ sung Vi chất dinh dưỡng 3 tháng qua theo khu vực (2014 - 2015)
+=> D Y
+
+## pt_32
+URL: https://kcb.vn/du-thao/xin-y-kien-gop-y-du-thao-thong-tu-quy-dinh-ve-ho-so-benh-an-va-ban-tom-tat-ho-so-benh-an.html?categoryId=101795266
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Xin ý kiến góp ý dự thảo Thông tư quy định về hồ sơ bệnh án và bản tóm tắt hồ sơ bệnh án
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Văn bản > Dự thảo xin ý kiến góp ý> Công văn xin ý kiến góp ý Dự thảo Thông tư quy định về hồ sơ bệnh án và bản tóm tắt hồ sơ bệnh án
+=> D ?
+
+## pt_33
+URL: https://ghr.nlm.nih.gov/condition/fraser-syndrome
+CHUYỂN HƯỚNG TỚI: https://medlineplus.gov/genetics/condition/fraser-syndrome/
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Fraser syndrome: MedlinePlus Genetics
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Fraser syndrome
+=> D Y
+
+## pt_34
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17929
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: MỐI LIÊN QUAN GIỮA TỶ LỆ CREATININE/CYSTATIN C VỚI TỔN THƯƠNG THẬN Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: MỐI LIÊN QUAN GIỮA TỶ LỆ CREATININE/CYSTATIN C VỚI TỔN THƯƠNG THẬN Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG
+=> D Y
+
+## pt_35
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12188
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: KẾT QUẢ BƯỚC ĐẦU ĐIỀU TRỊ NỘI KHOA THAI NGOÀI TỬ CUNG CHƯA VỠ BẰNG METHOTREXATE ĐƠN LIỀU TẠI KHOA SẢN BỆNH VIỆN ĐA KHOA VĨNH LONG NĂM 2022 – 2023 | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: KẾT QUẢ BƯỚC ĐẦU ĐIỀU TRỊ NỘI KHOA THAI NGOÀI TỬ CUNG CHƯA VỠ BẰNG METHOTREXATE ĐƠN LIỀU TẠI KHOA SẢN BỆNH VIỆN ĐA KHOA VĨNH LONG NĂM 2022 – 2023
+=> d y
+
+## pt_36
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/66
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 84 (2025) | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: 1. Trường Đại học Khoa học tự nhiên, Đại học Quốc gia Hà Nội 2. Trung tâm nhiệt đới Việt –Nga
+=> I -
+
+## pt_37
+URL: https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10873
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: BÁO CÁO LÂM SÀNG: KHỐI U NÃO THẤT BÊN Ở BỆNH NHÂN XƠ CỨNG CỦ | Tạp chí Y học Việt Nam
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: BÁO CÁO LÂM SÀNG: KHỐI U NÃO THẤT BÊN Ở BỆNH NHÂN XƠ CỨNG CỦ
+=> D Y
+
+## pt_38
+URL: https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/22
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: No. 29 (2020) | Cantho Journal of Medicine and Pharmacy
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: CÁC YẾU TỐ LIÊN QUAN VÀ KẾT QUẢ CẢI THIỆN CHẤT LƯỢNG CUỘC SỐNG TRÊN BỆNH NHÂN CHẠY THẬN NHÂN TẠO ĐỊNH KỲ TẠI BỆNH VIỆN ĐA KHOA TƯ NHÂN CAO VĂN CHÍ NĂM 2019 Đào Anh Dũng
+=> I -
+
+## pt_39
+URL: https://www.cancer.gov/types/esophageal/patient/child-esophageal-treatment-pdq
+CHUYỂN HƯỚNG TỚI: https://www.cancer.gov/types/esophageal/childhood
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Esophageal Cancer in Children - NCI
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Childhood Esophageal Cancer Treatment (PDQ®)
+=> M -
+
+## pt_40
+URL: https://www.cancer.gov/espanol/tipos/rinon/paciente/tratamiento-rinon-pdq
+HTTP: 200
+TIÊU ĐỀ MÁY CHỦ TRẢ VỀ LÚC PROBE: Tratamiento del cáncer de células renales
+TIÊU ĐỀ CORPUS LƯU CHO BẢN GHI NÀY: Tratamiento del cáncer de células renales (PDQ®)
+=> D Y
+

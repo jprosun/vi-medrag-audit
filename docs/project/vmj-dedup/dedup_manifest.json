@@ -1,0 +1,51 @@
+{
+  "policy": {
+    "identity_key": "norm(canonical_title)",
+    "keeper_priority": "max(#chunks) -> max(mean quality_score) -> min(article_id)",
+    "min_overlap_to_be_a_copy": 0.3,
+    "passes": [
+      "A_article_identity",
+      "B_duplicate_text"
+    ]
+  },
+  "source": {
+    "dir": "D:\\CODE\\DATN\\LLM-MedQA-Assistant\\rag-data\\embeddings\\exports\\vmj_ojs\\multilingual",
+    "sha256": {
+      "chunk_texts_for_embed.jsonl": "cb7c880031934910c5ade0db084beabf94fae84e9f05b80879863908a494f3a4",
+      "chunk_metadata.jsonl": "df27adc71fd4047b0be6f1c0d28809a3414904355410ab8bec46aca74b909810"
+    }
+  },
+  "destination": {
+    "dir": "D:\\CODE\\DATN\\LLM-MedQA-Assistant\\rag-data\\embeddings\\exports\\vmj_ojs_canonical\\multilingual"
+  },
+  "counts": {
+    "input_chunks": 162681,
+    "articles_in": 7857,
+    "title_groups_multi": 1422,
+    "pass_a_dropped_articles": 1413,
+    "pass_a_dropped_chunks": 29640,
+    "pass_a_unique_texts_lost": 0,
+    "loss_window_artifact": 0,
+    "loss_content_gap": 0,
+    "guard_splits": 17,
+    "pass_b_dropped_chunks": 816,
+    "output_chunks": 132225,
+    "output_articles": 6444
+  },
+  "output_sha256": {
+    "chunk_texts_for_embed.jsonl": "97300ecdef1d411f257d0690d851e62ba12a5a6a98d8ea00520945fbfae755e3",
+    "chunk_metadata.jsonl": "13daeab12a4c4dd80552fdc0d67aa6e5c086c4d7a7c82c8679b203861868b30e",
+    "kaggle_embedding_input.jsonl": "3ad5142b2b1e9eaab4df4fc85a0cd079acc3c52551306da5563f1cb71d56566a"
+  },
+  "aux_sha256": {
+    "dropped_chunks.jsonl": "97f1936cd65aaa3300be38fdedfc3cf795f71a9b0a15bacba482792c18372a60",
+    "dropped_unique_texts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "verification": {
+    "ids_match_across_three_files": true,
+    "distinct_equals_total": true,
+    "count_reconciles": true,
+    "output_subset_of_input": true,
+    "input_untouched": true
+  }
+}

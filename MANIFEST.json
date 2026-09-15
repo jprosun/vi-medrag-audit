@@ -1,0 +1,1039 @@
+{
+  "what_this_is": "Paper-specific evaluation artifact; full application and corpus excluded.",
+  "source_repository_commit": "ee5ee01fef2c091bdce9843c15c2d2bd4d957bc8",
+  "source_worktree_changes": [],
+  "provenance_note": "Exact source hashes identify the exported bytes; the commit alone is not the snapshot when worktree changes are listed.",
+  "withheld": {
+    "keys": [
+      "cited_passage",
+      "text",
+      "text_preview"
+    ],
+    "fingerprint": "first 16 hex characters of SHA-256, with original character count",
+    "strings": 9378,
+    "emails_scrubbed": 134
+  },
+  "limits": "Offline rates/contrasts can be recomputed. Full-text attribution, live generation, extraction/ingestion experiments and private transcript provenance cannot be rerun here.",
+  "audit": {
+    "third_party_emails_remaining": 0,
+    "in_files": []
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "source_path": "benchmark/rivf/public/.gitattributes",
+      "sha256": "a9fcfd5fca89dcd711ccba807a6d4615b4da7ee02c9486217cef6302775e7032",
+      "source_sha256": "a9fcfd5fca89dcd711ccba807a6d4615b4da7ee02c9486217cef6302775e7032",
+      "bytes": 31,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": ".gitignore",
+      "source_path": "benchmark/rivf/public/.gitignore",
+      "sha256": "40d44435de56829d0b694296b1c8ac0339c7ac1e4279268136332d04da4363ce",
+      "source_sha256": "40d44435de56829d0b694296b1c8ac0339c7ac1e4279268136332d04da4363ce",
+      "bytes": 90,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "CITATION.cff",
+      "source_path": "benchmark/rivf/public/CITATION.cff",
+      "sha256": "e8e17c8c53e2fc3af319f139ac593b0ca263c0f7053cb0d97d2cdffb8658d4df",
+      "source_sha256": "e8e17c8c53e2fc3af319f139ac593b0ca263c0f7053cb0d97d2cdffb8658d4df",
+      "bytes": 383,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "EVALUATION.md",
+      "source_path": "benchmark/rivf/public/EVALUATION.md",
+      "sha256": "753c00ae86981fff1d36c73cd660fd6b6476811389e7030da05e533ca570b529",
+      "source_sha256": "753c00ae86981fff1d36c73cd660fd6b6476811389e7030da05e533ca570b529",
+      "bytes": 7385,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "README.md",
+      "source_path": "benchmark/rivf/RELEASE-README.md",
+      "sha256": "0573d45037dc57257de70da7105c4652dc07921e35a5e8d3971452c1248d3d5f",
+      "source_sha256": "0573d45037dc57257de70da7105c4652dc07921e35a5e8d3971452c1248d3d5f",
+      "bytes": 4084,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/datasets/probe_queries_v2.jsonl",
+      "source_path": "benchmark/datasets/probe_queries_v2.jsonl",
+      "sha256": "76e97cd55b13e1ef104a0f133fe15ac33b5d1c66bd59bbc09bae72690e75c85b",
+      "source_sha256": "c1b76a3a984f1a2aeb741fe400758400723b88577d943239ae17dac7df9da740",
+      "bytes": 68121,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/datasets/probe_queries_v2_README.md",
+      "source_path": "benchmark/datasets/probe_queries_v2_README.md",
+      "sha256": "de3b36a30fe3a6da8d6fb0a6a95e032e12146143f6330e2793bbe2134b423ab2",
+      "source_sha256": "de3b36a30fe3a6da8d6fb0a6a95e032e12146143f6330e2793bbe2134b423ab2",
+      "bytes": 8396,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/datasets/test_results/corpus_census_medqa_release_v4_all_bge_m3.json",
+      "source_path": "benchmark/datasets/test_results/corpus_census_medqa_release_v4_all_bge_m3.json",
+      "sha256": "da3ecc0943f3c76062eea03919b40f75e7209484844302846e6b4f5664dbd069",
+      "source_sha256": "27936adc1c40e729d4598c67905f0f5b5160133fa1defc75c5633a629be6c738",
+      "bytes": 15034,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "source_path": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "sha256": "48003e96565bac6947998c126b5834ef07c32776054fdf7fc28c44ef48ea8080",
+      "source_sha256": "502a8c040f44287b1e19fbb9c6dfa76ec91082233e95d4ead890d74ad37e644c",
+      "bytes": 7124417,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/datasets/test_results/pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+      "source_path": "benchmark/datasets/test_results/pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+      "sha256": "7cc990a17e05991160f025daa982561138266356e807b0e2e7f201a942004b5a",
+      "source_sha256": "d31fb6e7ab33baf3bd7eb80785eac68413c9e4d5559c63aa1ba86ce60eb075d3",
+      "bytes": 6792536,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_extract_prompt_v1.txt",
+      "source_path": "benchmark/g2/g2_extract_prompt_v1.txt",
+      "sha256": "954f720e5069e0852d9263b5beb587e120f65f5a77f3f75be81ce901d7dad8b8",
+      "source_sha256": "954f720e5069e0852d9263b5beb587e120f65f5a77f3f75be81ce901d7dad8b8",
+      "bytes": 4037,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/g2/g2_full_raw_v1.json",
+      "source_path": "benchmark/g2/g2_full_raw_v1.json",
+      "sha256": "631f4adaf150c75a77d6cb90a7a196849bcc5b9776f3a3f3e2b70e476913a330",
+      "source_sha256": "3c0c63557b025342a896839b948a322605b94b2ab76358c15cc116c12fadc018",
+      "bytes": 277972,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_full_raw_v2.json",
+      "source_path": "benchmark/g2/g2_full_raw_v2.json",
+      "sha256": "6b464a75c1d804e353c70e3324216842719f282b0e4c95eda8eeab3185943d56",
+      "source_sha256": "0402f0ce88c137c6862668651d098390ee426220deb2bcba364d6bd82b960438",
+      "bytes": 297351,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_full_raw_v3.json",
+      "source_path": "benchmark/g2/g2_full_raw_v3.json",
+      "sha256": "7087755633765080bab0f9b2ac8bdd37b8997b56be9135a5b9ffd2c538ed811d",
+      "source_sha256": "48d1c2575e86d5a7f9e2c2fe1037227b70eab95294e9997a947e9383e3b7253d",
+      "bytes": 289187,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_full_report_v1.json",
+      "source_path": "benchmark/g2/g2_full_report_v1.json",
+      "sha256": "ede463eba532959246c142e79d06b39704c33611a456dd7db2394a81a06b6b72",
+      "source_sha256": "7fdd3f3fd779b8e11c60a85c0573728ec6a95c2e825efd10a4d30d891daef1b2",
+      "bytes": 474043,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_full_report_v2.json",
+      "source_path": "benchmark/g2/g2_full_report_v2.json",
+      "sha256": "617b99b115653499665f6470abaaa2d49a533689b18e6260d72eef7a87791694",
+      "source_sha256": "b5e1ee924e1371c2f2134c3e7433cc2542881c0c8f24e70919fe0adbcfa280b0",
+      "bytes": 473176,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_full_report_v3_canonical.json",
+      "source_path": "benchmark/g2/g2_full_report_v3_canonical.json",
+      "sha256": "5ed169419815b5f88c28f695f5579fb160624e0bdc5d82011cb3bcfbca8f103f",
+      "source_sha256": "78cab440c3f4be93cd2f2107ca583ca0c991354529586cc54379e2427de54b3a",
+      "bytes": 472534,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_sample_v1.jsonl",
+      "source_path": "benchmark/g2/g2_sample_v1.jsonl",
+      "sha256": "8d1dd9361bc63ce619363d54e09b583460de465bce8fd9648ccc5bff1c504fcd",
+      "source_sha256": "dd7ef0d238f60a9c3db1a6656274542908bc058054bfcc3dc1434da4fdcf3d66",
+      "bytes": 137920,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_sample_v2_repaired.jsonl",
+      "source_path": "benchmark/g2/g2_sample_v2_repaired.jsonl",
+      "sha256": "9632e5ef9ea86db9b03379169f54f75b3408491a4f185be709d4c909736c5121",
+      "source_sha256": "ea28b2b0524af9a8f2e2bc516543777a1103115c51934ee283683fa73882f4d4",
+      "bytes": 149174,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_sample_v3_canonical.jsonl",
+      "source_path": "benchmark/g2/g2_sample_v3_canonical.jsonl",
+      "sha256": "ee16edb01ec377bacbc14213af351c25d6cd802049a4f58f479b34b0addc786f",
+      "source_sha256": "32de61051d5706d85fc6bee680a6b32e804eed34920da6ae584d0f7b28ffd823",
+      "bytes": 138822,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/g2/g2_score.py",
+      "source_path": "benchmark/g2/g2_score.py",
+      "sha256": "23a133de0f2e873163cc2b94f45f683fed139d2198a873465b71f9f6afa2a2fc",
+      "source_sha256": "23a133de0f2e873163cc2b94f45f683fed139d2198a873465b71f9f6afa2a2fc",
+      "bytes": 7951,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/g2/g2_verify.py",
+      "source_path": "benchmark/g2/g2_verify.py",
+      "sha256": "58669c7b76c33052f6f950c924240b4ed4c69b6092a4a850c51b5cf649bf67be",
+      "source_sha256": "58669c7b76c33052f6f950c924240b4ed4c69b6092a4a850c51b5cf649bf67be",
+      "bytes": 8899,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
+      "source_path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
+      "sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
+      "source_sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
+      "bytes": 4576,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
+      "source_path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
+      "sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
+      "source_sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
+      "bytes": 6265,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+      "source_path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+      "sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
+      "source_sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
+      "bytes": 3568,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/arm_comparison_rivf134.json",
+      "source_path": "benchmark/rivf/arm_comparison_rivf134.json",
+      "sha256": "a1405a1caaa2b0ee06b2b7fa3b685873939477d3fba849249e09d9dbfb2d0fe7",
+      "source_sha256": "1a8cc333e8072d67a2f1e2d639e3038e58e0b2a2c4be195546c6d3450f075a12",
+      "bytes": 11652,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/arm_contrast_matched_v1.json",
+      "source_path": "benchmark/rivf/arm_contrast_matched_v1.json",
+      "sha256": "f6d4e22b8cab7740729d4f14a0d4b6ff76195c59d355a36c9b260853f48ec0b7",
+      "source_sha256": "25961f744358263470ab13d1adbb7d570a3791247961da56737c4e43493636d8",
+      "bytes": 7168,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/arm_matched_rejudge_v1.json",
+      "source_path": "benchmark/rivf/arm_matched_rejudge_v1.json",
+      "sha256": "390595633e43df038a1e721bc74729c060a7dace5f684e0acce66f6024eb46a9",
+      "source_sha256": "84d042f79347532fffbb8410a24aaacb9453f27fedd2fab1d36c6d4ad67018fe",
+      "bytes": 559774,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/artifact_provenance.py",
+      "source_path": "benchmark/rivf/artifact_provenance.py",
+      "sha256": "c611bcddffc3e169179a7ee46202f5e9e631ef748b40db44ae8bff3934a64b99",
+      "source_sha256": "011037062a8959cab45c5d3e42e05c0eb888fc9fc5aa8a6ed03fa6b8d7bdcb89",
+      "bytes": 1085,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/attribution_facts.py",
+      "source_path": "benchmark/rivf/attribution_facts.py",
+      "sha256": "b4dbbff53cbce6e6ee2f7db6759d51d94af4f5bd0e73aafbab08273a692f875b",
+      "source_sha256": "81369fcc6642b8ebcca1dae8882b44763a7a469b691ba4db5e094187d78b8727",
+      "bytes": 22669,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/attribution_facts_rivf134.json",
+      "source_path": "benchmark/rivf/attribution_facts_rivf134.json",
+      "sha256": "bf7322c1667dc6fde887d657124d0ee9345e01bedc2ba4df0b36a83cadae8d35",
+      "source_sha256": "c95e49f27ae9c232a41d3a935f1f39faf2cec94deb0216b3a8067df2733ad0e7",
+      "bytes": 6686,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/background_checks.py",
+      "source_path": "benchmark/rivf/background_checks.py",
+      "sha256": "a7f5ac4ee407d2ce1820607979fd7b90ca7b960b3f48e22cb8c44b071af46d9b",
+      "source_sha256": "a7f5ac4ee407d2ce1820607979fd7b90ca7b960b3f48e22cb8c44b071af46d9b",
+      "bytes": 3428,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_arm_judgement_sets.py",
+      "source_path": "benchmark/rivf/build_arm_judgement_sets.py",
+      "sha256": "a9265629a47ed8679ee5d9671e1d297f0a248cffa0734e60c2c3d0bfab483ab4",
+      "source_sha256": "a9265629a47ed8679ee5d9671e1d297f0a248cffa0734e60c2c3d0bfab483ab4",
+      "bytes": 8806,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_entailment_human_set.py",
+      "source_path": "benchmark/rivf/build_entailment_human_set.py",
+      "sha256": "49352a7ce22d44e012d90c6a1154434a7e8299253273a329302ccc0d791a751b",
+      "source_sha256": "89e3c2b631264f0c91ba457fb8f1d24fe306b3e2483ea8ba007e13112f8ed3f3",
+      "bytes": 12820,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_entailment_set.py",
+      "source_path": "benchmark/rivf/build_entailment_set.py",
+      "sha256": "affa07cb4a9ca5e389da1416bd50367f6a59ec821bdf4cbf72e42aa40d8be02e",
+      "source_sha256": "affa07cb4a9ca5e389da1416bd50367f6a59ec821bdf4cbf72e42aa40d8be02e",
+      "bytes": 6367,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_page_type_set.py",
+      "source_path": "benchmark/rivf/build_page_type_set.py",
+      "sha256": "c3c768fcf7db74ac5af73ae2c859a7ef68df5ab9343f15fcafc0f29f6fcf024d",
+      "source_sha256": "c3c768fcf7db74ac5af73ae2c859a7ef68df5ab9343f15fcafc0f29f6fcf024d",
+      "bytes": 11083,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_relevance_model_set.py",
+      "source_path": "benchmark/rivf/build_relevance_model_set.py",
+      "sha256": "5308f3e07eceb454ccfa5d312d4379a2428ce1a5341e13dddc10cb08286c5302",
+      "source_sha256": "5308f3e07eceb454ccfa5d312d4379a2428ce1a5341e13dddc10cb08286c5302",
+      "bytes": 5021,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_relevance_set.py",
+      "source_path": "benchmark/rivf/build_relevance_set.py",
+      "sha256": "827b12a3b8b68af272d7b9591ae8c2331af58c50a42cb13b215d02188c6c1eef",
+      "source_sha256": "827b12a3b8b68af272d7b9591ae8c2331af58c50a42cb13b215d02188c6c1eef",
+      "bytes": 7581,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/build_urlfirst_relevance_human_set.py",
+      "source_path": "benchmark/rivf/build_urlfirst_relevance_human_set.py",
+      "sha256": "bfc7a5095a0611d9a6d32b569adc96ec823c4095417a672909f75bdd8ddaf01b",
+      "source_sha256": "bfc7a5095a0611d9a6d32b569adc96ec823c4095417a672909f75bdd8ddaf01b",
+      "bytes": 8183,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/compare_arms.py",
+      "source_path": "benchmark/rivf/compare_arms.py",
+      "sha256": "2da91fe63423cd79eaf250ea1a2e7df501fd90fd14de6d268381d288f76326fe",
+      "source_sha256": "03f7b8a4c08b417168b734bc9af3ed98067673424da90c0bcf26986b6f5ddd96",
+      "bytes": 14033,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/compare_arms_matched.py",
+      "source_path": "benchmark/rivf/compare_arms_matched.py",
+      "sha256": "9ace2a24a2672948784883e8633f6ceb281c42da660c77068b1490de08455f3b",
+      "source_sha256": "2f77e76468dcb4274a0d98818cde2abdbab30ffa20c45a7d7216b83a20f8cc7f",
+      "bytes": 20848,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/compare_judge_runs.py",
+      "source_path": "benchmark/rivf/compare_judge_runs.py",
+      "sha256": "da8f46509e3e104048fa06a77b01dfb2f739cf83a474fbdd3ecf157f633aeb69",
+      "source_sha256": "da8f46509e3e104048fa06a77b01dfb2f739cf83a474fbdd3ecf157f633aeb69",
+      "bytes": 17252,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/corpus_census.py",
+      "source_path": "benchmark/rivf/corpus_census.py",
+      "sha256": "32c19c7c779a0dcd0cfe5660ab31d518defb959c485ac4b4f4ae78b8e914da34",
+      "source_sha256": "32c19c7c779a0dcd0cfe5660ab31d518defb959c485ac4b4f4ae78b8e914da34",
+      "bytes": 11760,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/entailment_human_key_v1.json",
+      "source_path": "benchmark/rivf/entailment_human_key_v1.json",
+      "sha256": "94c2cf85ba8e1a6325bdc5f9b483087f794512ad6c31e726c79c583191b55a90",
+      "source_sha256": "173c8e68b556c7516cd4367b24052196f48a8a2cd3af45d3677c093b397b2244",
+      "bytes": 8761,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_human_labels_v1.txt",
+      "source_path": "benchmark/rivf/entailment_human_labels_v1.txt",
+      "sha256": "7ff76c346d33427f10d8c46d128f5e2489dfd6949abc4d376ade8645584d4e82",
+      "source_sha256": "c5eb758f1ce8c7c109658d39576a010e57d2cb812247e3b045335081a20cf86e",
+      "bytes": 18918,
+      "treatment": "source passage blocks/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_human_v1.json",
+      "source_path": "benchmark/rivf/entailment_human_v1.json",
+      "sha256": "545f8eb6e509c024033ce786e8cb03df41392217dc941349f7c312b5fa987995",
+      "source_sha256": "12300eae85b8adaee3b87494d22ec593136b2c2ea5d7b75a4f4a6a997004cd3f",
+      "bytes": 15021,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_items_urlfirst_v1.jsonl",
+      "source_path": "benchmark/rivf/entailment_items_urlfirst_v1.jsonl",
+      "sha256": "4a235228a8143f48a5ae195680c458c4f02dc0637378116e05391a85b53c3bbb",
+      "source_sha256": "50a9211e6141a7204d585594855b8cdf2a206e4e2bcfa54ded333d59b00fad89",
+      "bytes": 316555,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_items_v1.jsonl",
+      "source_path": "benchmark/rivf/entailment_items_v1.jsonl",
+      "sha256": "58fc4520715f146bc3a898f9157b6a846101cbf6b4442ce452d9204a3a39602d",
+      "source_sha256": "0be40289cba833476e295156bf1e3f052cb3f6386d63699ea2fd36ba34351f99",
+      "bytes": 178254,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_judgements_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/entailment_judgements_urlfirst_v1.json",
+      "sha256": "60f66e74e2f41407a67a4aa3c31b810e9ddd81aaf6431e631a12d8a05cad63bb",
+      "source_sha256": "2cbec494eb52e03b0052dbd0a23c1ab81b1fe5dc8e83b5d73b7d1fbd6b78555e",
+      "bytes": 212728,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_judgements_v1.json",
+      "source_path": "benchmark/rivf/entailment_judgements_v1.json",
+      "sha256": "0ae94d02de1597dc5c69aed57051a3097c6b748cd6755147fdb2b5100a0ee602",
+      "source_sha256": "59d567486382a96f0489653630d681a898466cd2efbbe67e6669a1cbcc0370df",
+      "bytes": 133127,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_key_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/entailment_key_urlfirst_v1.json",
+      "sha256": "08d20826f5e059d39b9b30f51176be54850f25d913d9559c8f0d500d562107db",
+      "source_sha256": "bcb5739a185c75e35702bb963139a9320efba9b1fa8fde3a0328767ad3c8617c",
+      "bytes": 91603,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_key_v1.json",
+      "source_path": "benchmark/rivf/entailment_key_v1.json",
+      "sha256": "de41622763f99f87ef61f9fed7bcffb6ba5613aefe8ae1f4d279f1c00d35220e",
+      "source_sha256": "cfc6b8bf8b6d3bdf334c17c6b79a333da3f4125f3af26a813617922ea1f6ebd1",
+      "bytes": 50585,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_report.py",
+      "source_path": "benchmark/rivf/entailment_report.py",
+      "sha256": "6fd873915338489c0ecf445f6aee1e89c7676ff33027df3848e7d6ed71a30c5a",
+      "source_sha256": "71d06aab12d5d33b2864daf1aab0fbadd94284b3f8ec1fb5ce85c267a7e8eb96",
+      "bytes": 11966,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/entailment_report_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/entailment_report_urlfirst_v1.json",
+      "sha256": "62def82e8f580958702f4b1742aaabb8bf858b292a0c33d0051b33d92dad47a1",
+      "source_sha256": "e353e2d1efea33dc4fa49ed829d4bbc093da1438e1b67dac4d0a442bf2fc2cc5",
+      "bytes": 140394,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/entailment_report_v1.json",
+      "source_path": "benchmark/rivf/entailment_report_v1.json",
+      "sha256": "11555918cd4495ce935f384b91269bdbc4e3535dbd4543f36b820a4add30e0ac",
+      "source_sha256": "9d417acdbf6e95d46e2c3219d7a24a23734ac8918039fc3824df78a5d001bc0d",
+      "bytes": 81403,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/joint_support_relevance.py",
+      "source_path": "benchmark/rivf/joint_support_relevance.py",
+      "sha256": "b55b63b7b5aae8b4e56b3cb7a9993f92b3bd94db608a48ae23cc2bdc862e3ced",
+      "source_sha256": "b97353f575c3f967be600b79987942596a1ec8e00252b95bf0fcfb162e5803f5",
+      "bytes": 10860,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/joint_support_relevance_v1.json",
+      "source_path": "benchmark/rivf/joint_support_relevance_v1.json",
+      "sha256": "92f2e5970ef9e32bde8d14002c67fb34a81c75a41374e5ee42f682afe9400cdd",
+      "source_sha256": "68288a137199eb4b3bf786069257f02ad048c09301b2105d927c3478be069657",
+      "bytes": 4201,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/judge_model_provenance_v1.json",
+      "source_path": "benchmark/rivf/judge_model_provenance_v1.json",
+      "sha256": "92e6d209873243f458b2485cd0ae29e9535817a7af7b092b79a7557028168fb2",
+      "source_sha256": "1f5b94ff33f220724b38a73717e4afad8cb22059bc4a825ebe82aee78cb02afa",
+      "bytes": 4955,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/judge_rerun_comparison_v1.json",
+      "source_path": "benchmark/rivf/judge_rerun_comparison_v1.json",
+      "sha256": "3423753e7e5145e638a841336582eb5216493404e15cd8e339c124d8b6f8293c",
+      "source_sha256": "8c09cdda6c97b4fe8d51e45611dec3ed8b7cb720a6f765bb16f8b548d3385cb1",
+      "bytes": 10223,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/judge_rerun_pinned_v1.json",
+      "source_path": "benchmark/rivf/judge_rerun_pinned_v1.json",
+      "sha256": "67bc00a36f0aa3f7627fe1fc6c55861863adc5f609b1c60ff24ee19a7ddaa89a",
+      "source_sha256": "138dae5107b5ef728dc2efe2b976cf5d25c495009e4612ffbe7e4c86219daf44",
+      "bytes": 295546,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
+      "source_path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
+      "sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
+      "source_sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
+      "bytes": 7131,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/entailment-judgement-shipped.js",
+      "source_path": "benchmark/rivf/judging/entailment-judgement-shipped.js",
+      "sha256": "df06724be4ecb5f19bf37a7a0b8bc97bf18135c5e506228b1389ea2b0e929c64",
+      "source_sha256": "df06724be4ecb5f19bf37a7a0b8bc97bf18135c5e506228b1389ea2b0e929c64",
+      "bytes": 8476,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/entailment-judgement-urlfirst.js",
+      "source_path": "benchmark/rivf/judging/entailment-judgement-urlfirst.js",
+      "sha256": "32250056296eb254c1713435a24d80e2e3c90a0d2115ac7a2864d8a0d930f542",
+      "source_sha256": "32250056296eb254c1713435a24d80e2e3c90a0d2115ac7a2864d8a0d930f542",
+      "bytes": 6817,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/entailment_prompt_v1.txt",
+      "source_path": "benchmark/rivf/judging/entailment_prompt_v1.txt",
+      "sha256": "eb7b43177233da7c2f6ebfb9cb8ebb9f1b54fa2e7611d70c4d97d6b6f4a0ff3a",
+      "source_sha256": "eb7b43177233da7c2f6ebfb9cb8ebb9f1b54fa2e7611d70c4d97d6b6f4a0ff3a",
+      "bytes": 3876,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/make_batches.py",
+      "source_path": "benchmark/rivf/judging/make_batches.py",
+      "sha256": "85cf5c546236cae71c03f3bc03001d78c70e72666a15d80566856d75cb4e8d32",
+      "source_sha256": "85cf5c546236cae71c03f3bc03001d78c70e72666a15d80566856d75cb4e8d32",
+      "bytes": 2715,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/make_batches_urlfirst.py",
+      "source_path": "benchmark/rivf/judging/make_batches_urlfirst.py",
+      "sha256": "6668418dbd6f5e51f2b32b103feb564862d5baebdb8337bde6a29f2e6687025f",
+      "source_sha256": "6668418dbd6f5e51f2b32b103feb564862d5baebdb8337bde6a29f2e6687025f",
+      "bytes": 4850,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/matched-arm-rejudge.js",
+      "source_path": "benchmark/rivf/judging/matched-arm-rejudge.js",
+      "sha256": "ac2f38919367033662d18303d9496af2df9a273af7e04d24deb5807d683cad8a",
+      "source_sha256": "ac2f38919367033662d18303d9496af2df9a273af7e04d24deb5807d683cad8a",
+      "bytes": 15709,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/pinned-judge-rerun.js",
+      "source_path": "benchmark/rivf/judging/pinned-judge-rerun.js",
+      "sha256": "88ba7455dfbf3c6b56752bd2dc529358c62b7516364155dd97c80da6f5c6e246",
+      "source_sha256": "88ba7455dfbf3c6b56752bd2dc529358c62b7516364155dd97c80da6f5c6e246",
+      "bytes": 6753,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/relevance-judgement-shipped.js",
+      "source_path": "benchmark/rivf/judging/relevance-judgement-shipped.js",
+      "sha256": "ba589ff29476da82265a959794b3c19b1999dd3a5d05a0266a770cc4d21c77ea",
+      "source_sha256": "ba589ff29476da82265a959794b3c19b1999dd3a5d05a0266a770cc4d21c77ea",
+      "bytes": 7091,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/relevance-judgement-urlfirst.js",
+      "source_path": "benchmark/rivf/judging/relevance-judgement-urlfirst.js",
+      "sha256": "227ed55c08b69b4d53530cf2b3cc8df1cd18ff46794222378c6727ff279c9448",
+      "source_sha256": "227ed55c08b69b4d53530cf2b3cc8df1cd18ff46794222378c6727ff279c9448",
+      "bytes": 6856,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/relevance_prompt_v1.txt",
+      "source_path": "benchmark/rivf/judging/relevance_prompt_v1.txt",
+      "sha256": "d621532e5daea31f64ec49f96ee27a06a31f14aca4cbb1e988ebfc75db88bfed",
+      "source_sha256": "d621532e5daea31f64ec49f96ee27a06a31f14aca4cbb1e988ebfc75db88bfed",
+      "bytes": 2755,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/page_type_key_v1.json",
+      "source_path": "benchmark/rivf/page_type_key_v1.json",
+      "sha256": "2cc358e225c7b5096b8b04e19e0c8dd222ff85fd96c774739e2b00858628a3ca",
+      "source_sha256": "832552b59f9c6b16b8e16724e8f7ad0cdd028420a5d3a1b4ba934945e3188486",
+      "bytes": 29120,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/page_type_labels_v1.txt",
+      "source_path": "benchmark/rivf/page_type_labels_v1.txt",
+      "sha256": "5769b860cae30d360eed8bab7b1a4d2fac7a3b58cba1cb7ab86c0a9fc907b392",
+      "source_sha256": "082baac3c54f0e27a0de1f3d01b29f2f0583f7e272167c80495003a55a6f2906",
+      "bytes": 17036,
+      "treatment": "source passage blocks/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/page_type_v1.json",
+      "source_path": "benchmark/rivf/page_type_v1.json",
+      "sha256": "0c430650796d0702907825a71390198b1dbeb1915e91ec9359dca09475b9f644",
+      "source_sha256": "96744a43616998c298c65f11cabd944160a58e86b0ed6b433b91026348387c26",
+      "bytes": 32477,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/probe_queries_v2_manifest.json",
+      "source_path": "benchmark/rivf/probe_queries_v2_manifest.json",
+      "sha256": "c9511f949fa8ca7b7f6d7b66a8533c3cbe9f1a9477411745c3b4980a355d4de3",
+      "source_sha256": "6c9fe320713bac1346057cc484a5eda7a0b7bc3f86318daff61dd6170b32ed53",
+      "bytes": 41899,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_human_key_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/relevance_human_key_urlfirst_v1.json",
+      "sha256": "3e8067bd2f76c2b5c7bcb9ddb2c2363fbff3d5c0b4c495f7844f7525e338298c",
+      "source_sha256": "de14bd69d64f044a60424e18a42f15c5d0ac9e5784805859f015c7a2708db744",
+      "bytes": 10265,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_human_labels_urlfirst_v1.txt",
+      "source_path": "benchmark/rivf/relevance_human_labels_urlfirst_v1.txt",
+      "sha256": "799f242e44046505d3b0ee758e6154c4489946c0727cb164df10ec9396bd63bc",
+      "source_sha256": "02431434e0da66a4b73d617550d5721a4f3b0df7cb35f2ec4d6df570577111c8",
+      "bytes": 22859,
+      "treatment": "source passage blocks/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_human_labels_v1.txt",
+      "source_path": "benchmark/rivf/relevance_human_labels_v1.txt",
+      "sha256": "846445bc17b966e9ba0c1c183a7f9187329c8466034a916839980ecb96f06e2f",
+      "source_sha256": "adce7ec3c4d6c08e671182e718d33c613041eac1badd62b80a85723e20fca9e2",
+      "bytes": 20045,
+      "treatment": "source passage blocks/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_human_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/relevance_human_urlfirst_v1.json",
+      "sha256": "3cf8cae9215e5f8656042c58cd97b65fde6e2a3362dbcdc67c0bf7a1970df2dd",
+      "source_sha256": "74720e5dcd923ac37657036ed45eacd8e21903f965cca9489f4a88e2712a9399",
+      "bytes": 29715,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_human_v1.json",
+      "source_path": "benchmark/rivf/relevance_human_v1.json",
+      "sha256": "6a63903fce4a656a718ea269be7b9bf7673719f76afd1021dd994e2c34707624",
+      "source_sha256": "d2a4646827ad070c22dccbee8299d207208a51fca8238376eb848f0c3b266efc",
+      "bytes": 16350,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_items_v1.jsonl",
+      "source_path": "benchmark/rivf/relevance_items_v1.jsonl",
+      "sha256": "8ba0a14e6cbebf1c3e2257f94fc44423a1f1dbf5f4d38c0135b81b64cdf9a3d3",
+      "source_sha256": "cf0b76d9bf5dfef7c7a72a182a980f3e2730cff3fa25c5744713a5d8089f96e9",
+      "bytes": 22155,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_key_v1.json",
+      "source_path": "benchmark/rivf/relevance_key_v1.json",
+      "sha256": "35dcb4668c881a3ac82559f411a72994f949f689cf69ec63d43b8a6166b63702",
+      "source_sha256": "d4c4b2dcd6712edb89888579df06c47a853ba4e29f567ba11439cfc5acbd48fd",
+      "bytes": 5880,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_items_urlfirst_v1.jsonl",
+      "source_path": "benchmark/rivf/relevance_model_items_urlfirst_v1.jsonl",
+      "sha256": "f2a468683641382f0783c01abbb4c7cb30c18c7a92d00db913ec356aa7ab7276",
+      "source_sha256": "7e590afb60817b605a599fc3bfae23d974e7d62c76f83b4d8e6f914fcd29da48",
+      "bytes": 211011,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_items_v1.jsonl",
+      "source_path": "benchmark/rivf/relevance_model_items_v1.jsonl",
+      "sha256": "e325301c32fc5c5e59f1acec49959b6c36807dd8cff255591a93111c9a8d2160",
+      "source_sha256": "01b4fc45d0bcc5fa860920a4476e564a8faec1654cd284706e35d7f53953f50b",
+      "bytes": 116913,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_judgements_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/relevance_model_judgements_urlfirst_v1.json",
+      "sha256": "ad9b0eebc7ba911d3ceccccb932b97fe435b5f0035add72b3428e31505c6d9b4",
+      "source_sha256": "46fdef13b7ee6046be1415f4d0ce2724595df58dd67a620146e3014f4689c590",
+      "bytes": 208725,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_judgements_v1.json",
+      "source_path": "benchmark/rivf/relevance_model_judgements_v1.json",
+      "sha256": "f812232f3aa18792e6ffd4742a56a2d1fdff1fd307cf1708a39506c52109de7b",
+      "source_sha256": "9c034bde7563139e7139a4d3ba676d6570bdf257f635e0e5e0dc6aa12d92e282",
+      "bytes": 125007,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_key_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/relevance_model_key_urlfirst_v1.json",
+      "sha256": "8dc40a0f80b22fe90d922444b70a7f32cc24fb4ed09b59cf40ed20c3ad545409",
+      "source_sha256": "7939a347a9d2417e9fb44d90ba2859db0b76d4a542271fc166eb547d1085c8b2",
+      "bytes": 79524,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_model_key_v1.json",
+      "source_path": "benchmark/rivf/relevance_model_key_v1.json",
+      "sha256": "610f406bebd694c1108bf7d10a694786cc1b02f5e99baf2318f103b90591ed53",
+      "source_sha256": "b179a392fd44c9e22acdbc6bb20f8be49bc8cfc4da7ffb28dd3c2f34e5b49b85",
+      "bytes": 33164,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_report.py",
+      "source_path": "benchmark/rivf/relevance_report.py",
+      "sha256": "e6984ca9e9a06d173a097ae840c8818accac3f53fb9e7a52ccdacfbbb3d8c443",
+      "source_sha256": "27021242b0845f95c3935a313dc7b155c776468d4d85eea5bc061b85ad65ac5b",
+      "bytes": 15214,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/relevance_report_urlfirst_v1.json",
+      "source_path": "benchmark/rivf/relevance_report_urlfirst_v1.json",
+      "sha256": "013473191c6fe2467cecff328a34da435aad2c6f89109446b01bc165c63e0af3",
+      "source_sha256": "93dcdc3ee165308a44434d1483e33cfae933510556068590f7b6792359117172",
+      "bytes": 140327,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/relevance_report_v1.json",
+      "source_path": "benchmark/rivf/relevance_report_v1.json",
+      "sha256": "e2b100d7e00128aa8f3812c4155d45304b6b10e6a251a27f2fbaddc531d84318",
+      "source_sha256": "b0f0d2a19c1cc58d1cbb2024f424f80a0bebde028dd61427f36c1e6b21d4d64d",
+      "bytes": 81894,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/run_configuration.py",
+      "source_path": "benchmark/rivf/run_configuration.py",
+      "sha256": "74bb3e365d160c502693f64492930f6747b861742ae1ebcb72fea30f55af36ab",
+      "source_sha256": "cd8372c0e22a5cc09457c074949cc9b49f5e7cf6bebf2af112009f1cf1d2a916",
+      "bytes": 9737,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/run_configuration_v1.json",
+      "source_path": "benchmark/rivf/run_configuration_v1.json",
+      "sha256": "74c883cf4a911f13c04531a8908dffad232bab2148ff7f05911dc01fd59ac851",
+      "source_sha256": "497d76ca1d74a231b48b68cb487a330803559419c20dd1b839dece477ea0ad4f",
+      "bytes": 5928,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/score_human_entailment.py",
+      "source_path": "benchmark/rivf/score_human_entailment.py",
+      "sha256": "bef713a56274d1a2bacc6e580e0647a15cebd5e55c59dcd795b623cdfda5da3d",
+      "source_sha256": "fca6ecb1e19e9543f86111ffb9c2627a72169e1805ced56db068dff7f965fc1a",
+      "bytes": 12977,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/score_human_relevance.py",
+      "source_path": "benchmark/rivf/score_human_relevance.py",
+      "sha256": "312356b3e4faccb483c78afcf03d09c4a5045a82b64193ce22ac204f30f32e82",
+      "source_sha256": "e90a75bb4ccc2da7801b79c3832bf1e1c4faf538c48ac4690b936067db10b953",
+      "bytes": 11281,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/score_page_type.py",
+      "source_path": "benchmark/rivf/score_page_type.py",
+      "sha256": "68663574ce969723e7f3afad411e3ce81c4c2d0dbb7b87de6bb3794aff8aee48",
+      "source_sha256": "1d0fdd38ae15432c6f0df544aa47b39e62da88a15192e49f94d0ed0757361b8f",
+      "bytes": 13665,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/score_urlfirst_relevance.py",
+      "source_path": "benchmark/rivf/score_urlfirst_relevance.py",
+      "sha256": "9a05e1bd181d16b355ec8d923bdc11cd0e2ee13d935d4134bd66534356f01ce6",
+      "source_sha256": "ca9a10370111752fbd255dac509244e3ffe550ba7e76010b7fad73301470a184",
+      "bytes": 9517,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/survey_ci.py",
+      "source_path": "benchmark/rivf/survey_ci.py",
+      "sha256": "e6542e2c14debfbb081c2fd9fc13ca6451dc79ccb63e12475bfd626ff4954328",
+      "source_sha256": "e6542e2c14debfbb081c2fd9fc13ca6451dc79ccb63e12475bfd626ff4954328",
+      "bytes": 11305,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/url_audit_probed_v1.jsonl",
+      "source_path": "benchmark/rivf/url_audit_probed_v1.jsonl",
+      "sha256": "c055793215ab4c81dc7ab83b07ed47b147d9b40baaabfa18e05dbb93967bce07",
+      "source_sha256": "70a8e95f8e692efff53f7a2d9c5c1cdc086567430bbaafb29858d3f754d5ee4f",
+      "bytes": 162483,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_audit_report_v1.json",
+      "source_path": "benchmark/rivf/url_audit_report_v1.json",
+      "sha256": "88691c131928664f3d52c639f63f124a0d771319721c156b3b1058c3efe3fe5e",
+      "source_sha256": "f26fed527a1994c9e77c95e4b03602651b9e374e575dade680806e3431c86fe5",
+      "bytes": 46239,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_audit_sample_v1.json",
+      "source_path": "benchmark/rivf/url_audit_sample_v1.json",
+      "sha256": "7586f6598dc1150e28f9531f346e87825ed3509025d14123450871a09701bb67",
+      "source_sha256": "fad01b6ab0c40d1c5eaf234000f15a9be4fb95317013e6dd8fb728bb8617df10",
+      "bytes": 175043,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_confirmatory_estimate.py",
+      "source_path": "benchmark/rivf/url_confirmatory_estimate.py",
+      "sha256": "2e7ddf30759ee85d62344156c5bc6da68502b316250c172e6858a692f232cb8e",
+      "source_sha256": "a9070fe08f26fe7046d8ab889b1448312ab19a0de07caf3d29c3f637132083eb",
+      "bytes": 16553,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/url_confirmatory_estimate_v1.json",
+      "source_path": "benchmark/rivf/url_confirmatory_estimate_v1.json",
+      "sha256": "90933e589b0d3251a548767fd40f7af6115f68ce2febeaa13c907b3d780e9657",
+      "source_sha256": "87e79f8e6b0ab28dc97db12de8ce73a813f451f6accda984b76de2ed1342916d",
+      "bytes": 7822,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_confirmatory_probed_v1.jsonl",
+      "source_path": "benchmark/rivf/url_confirmatory_probed_v1.jsonl",
+      "sha256": "de3d81a1ffbddd407abb4392bb84a3a93a165645a39fcdef395d46d5f77bc5e6",
+      "source_sha256": "7bf90503e1768c0f17145dd1cb9eebe58915eb21737f8a38442672807f7f4e70",
+      "bytes": 78506,
+      "treatment": "JSONL normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_confirmatory_sample.py",
+      "source_path": "benchmark/rivf/url_confirmatory_sample.py",
+      "sha256": "30c6c8e787fc3ef41af778d69ca25d6adf54a9d92126831ed7c67dc10b499f06",
+      "source_sha256": "30c6c8e787fc3ef41af778d69ca25d6adf54a9d92126831ed7c67dc10b499f06",
+      "bytes": 7952,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/url_confirmatory_sample_v1.json",
+      "source_path": "benchmark/rivf/url_confirmatory_sample_v1.json",
+      "sha256": "638d0dc678e9ec978edfa3ad5167b6e0f85d6ee4f59181fe7ccfe95be739fdb6",
+      "source_sha256": "4bbd9d4fa0f4f57918a6eb53c13f2bfd1d103103695e7ef4fe379f5b22beadc2",
+      "bytes": 96520,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/url_dereference_audit.py",
+      "source_path": "benchmark/rivf/url_dereference_audit.py",
+      "sha256": "3820dc423545c420530bd6d6e8fdd1eab7804b6735fe6c2824634bd4634ba79b",
+      "source_sha256": "e65f2f09d323f08e0aa471aefe58e105b7cfd2b1e8bc23080c3d74a417a83eb5",
+      "bytes": 34106,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/url_population.py",
+      "source_path": "benchmark/rivf/url_population.py",
+      "sha256": "ed6a82b209e5db8a9548a6148cd90c361a6cec4c6ebcf0591f1a3d3d520d9b22",
+      "source_sha256": "ed6a82b209e5db8a9548a6148cd90c361a6cec4c6ebcf0591f1a3d3d520d9b22",
+      "bytes": 6610,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/url_population_v4.json",
+      "source_path": "benchmark/rivf/url_population_v4.json",
+      "sha256": "58c3ddadfb2ed7ce1d739383b313c73c562fe40e7817cdcb78b77b0a250afb24",
+      "source_sha256": "06af0f7009ac43ed0c2f4c2047345a944c61e1a1684ad6b021fb84f5755c94f5",
+      "bytes": 6389840,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "docs/project/vmj-dedup/dedup_manifest.json",
+      "source_path": "docs/project/vmj-dedup/dedup_manifest.json",
+      "sha256": "d05a33a305819c8c4b3f721646852503fe7be2d209c824eebba9af28ec919c9c",
+      "source_sha256": "07aa3335106548c1ce80d80a14a67e169b9ac5644e210974f299c891d41037f2",
+      "bytes": 1877,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "docs/project/vmj-dedup/duplication_audit.json",
+      "source_path": "docs/project/vmj-dedup/duplication_audit.json",
+      "sha256": "d49d729476ee314c654937e6051c0d8780f867b47cea2c1a20fe3400ef0f6830",
+      "source_sha256": "1a20ff3d9b29652db4858e3aa89799b64e71035a8242f3aed24ce0cd87686f79",
+      "bytes": 20338,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "docs/project/vmj-dedup/replace-run2/replace_census_latest.json",
+      "source_path": "docs/project/vmj-dedup/replace-run2/replace_census_latest.json",
+      "sha256": "9d92928a0df00e4ce0916676d34e7863d636e00265843aa176af569335253fd9",
+      "source_sha256": "36e0f065ef5fc9538335e3b9f11c405d8220cfba5f95fbc09a2149254349ace8",
+      "bytes": 629,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "docs/project/vmj-dedup/replace-run2/replace_verify_latest.json",
+      "source_path": "docs/project/vmj-dedup/replace-run2/replace_verify_latest.json",
+      "sha256": "a59e2c47591f7b436076ae99d143c5f30cd931a80ff6d846af5e2fe18ada22e4",
+      "source_sha256": "c5ff96ad7ef744f72cf2a16b58da9acfa318bb457dcb95d1ec9099ba96f293e2",
+      "bytes": 2474,
+      "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "evaluate.py",
+      "source_path": "benchmark/rivf/public/evaluate.py",
+      "sha256": "90fa82cd3987a62967146dc434b44960f4d8a49ee5dcb75bc640a9a5ba83190f",
+      "source_sha256": "90fa82cd3987a62967146dc434b44960f4d8a49ee5dcb75bc640a9a5ba83190f",
+      "bytes": 3221,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/check_numbers.py",
+      "source_path": "paper/check_numbers.py",
+      "sha256": "08864382ced5e963459c3c57833ae6a4ccc7b90efd2e870d3cb8a8c9c9045b04",
+      "source_sha256": "0dd8d69c86d7028574bf4e27ca9043f0bef9f76eddac2104285920386f5d1e22",
+      "bytes": 37180,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/check_pdf.py",
+      "source_path": "paper/check_pdf.py",
+      "sha256": "a32567d9d41ca9de8875529c9d46250069235697cb6f6873f0a1cbacc2af696b",
+      "source_sha256": "a32567d9d41ca9de8875529c9d46250069235697cb6f6873f0a1cbacc2af696b",
+      "bytes": 8047,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/compile.sh",
+      "source_path": "paper/compile.sh",
+      "sha256": "5da9be4f98da1de8d87d74cff896e6bac7b2f57ab972b91cf91ed5658f106208",
+      "source_sha256": "5da9be4f98da1de8d87d74cff896e6bac7b2f57ab972b91cf91ed5658f106208",
+      "bytes": 1247,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/main.pdf",
+      "source_path": "paper/main.pdf",
+      "sha256": "63bd4affdb25ad19aa116652d57c2578e1a9b322c831cb631bda572eb4e762e5",
+      "source_sha256": "63bd4affdb25ad19aa116652d57c2578e1a9b322c831cb631bda572eb4e762e5",
+      "bytes": 149279,
+      "treatment": "binary unchanged"
+    },
+    {
+      "path": "paper/main.tex",
+      "source_path": "paper/main.tex",
+      "sha256": "38ef817d9e219995086d09b5bc28ea816d981dbafeec261e8b2d5125020e32af",
+      "source_sha256": "38ef817d9e219995086d09b5bc28ea816d981dbafeec261e8b2d5125020e32af",
+      "bytes": 42055,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/make_upload_copy.py",
+      "source_path": "paper/make_upload_copy.py",
+      "sha256": "479b5c0990d38a6f10c7226cade712f99b3694fc217dcfdd877baca817679f2b",
+      "source_sha256": "479b5c0990d38a6f10c7226cade712f99b3694fc217dcfdd877baca817679f2b",
+      "bytes": 3224,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "paper/refs.bib",
+      "source_path": "paper/refs.bib",
+      "sha256": "2e527b3e0a3aaa6412da40f1e8bf0a1cd632add9c6656583753fa67175e7dcbe",
+      "source_sha256": "b0e875ec2d11da4965285c0ff2b6ae51b82e4cafb7e1f4c9e64b68bdaedf3b41",
+      "bytes": 18713,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "services/rag-orchestrator/app/span_exposure.py",
+      "source_path": "services/rag-orchestrator/app/span_exposure.py",
+      "sha256": "44de219081f5f7a9cef320e2007d916f2e5c05a3221ae4496887e9c2258cf95b",
+      "source_sha256": "44de219081f5f7a9cef320e2007d916f2e5c05a3221ae4496887e9c2258cf95b",
+      "bytes": 12878,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "services/rag-orchestrator/app/span_gate.py",
+      "source_path": "services/rag-orchestrator/app/span_gate.py",
+      "sha256": "8f12fd335b600f1ee8bc76b5d429e76bb1851293addedb61f48e5ce92a2b589b",
+      "source_sha256": "517eb3553b7560e5041d37212198ddbc4ddef99367b46170c7f7234296b980ac",
+      "bytes": 25080,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "services/rag-orchestrator/app/span_norm.py",
+      "source_path": "services/rag-orchestrator/app/span_norm.py",
+      "sha256": "fae5e44bcfba4be2320d8e08b7ef2fa2381f866b7af4de280d1022ac768ee253",
+      "source_sha256": "fae5e44bcfba4be2320d8e08b7ef2fa2381f866b7af4de280d1022ac768ee253",
+      "bytes": 8377,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "tests/test_integrity.py",
+      "source_path": "benchmark/rivf/public/tests/test_integrity.py",
+      "sha256": "f41ad74aee9f846adcfb67a08265860666e7e52a5922765b4d2f12aa8d12d368",
+      "source_sha256": "f41ad74aee9f846adcfb67a08265860666e7e52a5922765b4d2f12aa8d12d368",
+      "bytes": 2481,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "tools/kaggle/dedup/analyze_duplication.py",
+      "source_path": "tools/kaggle/dedup/analyze_duplication.py",
+      "sha256": "316949d36bd106e0b7fad1fdcf5962069f370a0198f321264e60b72b2b14669d",
+      "source_sha256": "316949d36bd106e0b7fad1fdcf5962069f370a0198f321264e60b72b2b14669d",
+      "bytes": 7527,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "REDACTED",
+      "source_path": null,
+      "sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
+      "source_sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
+      "bytes": 352,
+      "treatment": "generated"
+    }
+  ]
+}

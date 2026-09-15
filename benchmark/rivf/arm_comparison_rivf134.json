@@ -1,0 +1,452 @@
+{
+  "what_this_is": "Paired comparison of two designs on the same 134 frozen questions: withhold uncitable claims after generation (shipped) vs exclude the uncitable stratum at retrieval (url-first). Same enforcement code; one env var; every response records its arm. Recomputed from payloads through the server's own definitions.",
+  "read_this_first": "Coverage is not usefulness. Whether the extra claims the url-first arm shows are relevant to the question, and supported by their passage, is judged separately; no number here says which arm helps a reader more.",
+  "provenance": {
+    "shipped_capture": {
+      "path": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "sha256": "502a8c040f44287b1e19fbb9c6dfa76ec91082233e95d4ead890d74ad37e644c",
+      "code": "13dc51f"
+    },
+    "url_first_capture": {
+      "path": "benchmark/datasets/test_results/pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+      "sha256": "d31fb6e7ab33baf3bd7eb80785eac68413c9e4d5559c63aa1ba86ce60eb075d3",
+      "code": "47536e9 image; services/ tree identical to 47536e9"
+    },
+    "questions_in_both": 134,
+    "only_in_shipped": [],
+    "only_in_url_first": [],
+    "excluded_source_id": "hf_vi_mtue29_medical",
+    "bootstrap": {
+      "clusters": "question",
+      "resamples": 5000,
+      "seed": 20260907
+    }
+  },
+  "all_questions": {
+    "shipped": {
+      "label": "shipped (withhold after generation), 13dc51f",
+      "questions": 134,
+      "claims_extracted": 351,
+      "claims_shown": 185,
+      "retention_shown_over_extracted": [
+        0.5271,
+        0.4305,
+        0.618
+      ],
+      "withheld_span": 19,
+      "withheld_citability": 147,
+      "uncitable_among_extracted": 156,
+      "answers_with_zero_claims": 79,
+      "answers_with_zero_claims_rate": [
+        0.5896,
+        0.5075,
+        0.6716
+      ],
+      "claims_shown_per_answer_mean": 1.381,
+      "figures_in_delivered_answers": 708,
+      "figures_inside_a_shown_span": 157,
+      "figure_attribution_rate": [
+        0.2218,
+        0.135,
+        0.3109
+      ],
+      "statements_removed_by_numeric_gate": 58,
+      "retrieved_chunks": 4024,
+      "retrieved_from_excluded_stratum": 2472,
+      "verifier_verdicts": {
+        "revise": 79,
+        "pass": 55
+      },
+      "latency_ms": {
+        "total_p50": 28968.8,
+        "total_p95": 42940.5,
+        "retrieval_p50": 3335.9,
+        "retrieval_p95": 16664.5
+      },
+      "arm_recorded_in_responses": [
+        "null"
+      ]
+    },
+    "url_first": {
+      "label": "url-first (exclude at retrieval), 47536e9 image",
+      "questions": 134,
+      "claims_extracted": 379,
+      "claims_shown": 364,
+      "retention_shown_over_extracted": [
+        0.9604,
+        0.9313,
+        0.9837
+      ],
+      "withheld_span": 15,
+      "withheld_citability": 0,
+      "uncitable_among_extracted": 1,
+      "answers_with_zero_claims": 25,
+      "answers_with_zero_claims_rate": [
+        0.1866,
+        0.1194,
+        0.2537
+      ],
+      "claims_shown_per_answer_mean": 2.716,
+      "figures_in_delivered_answers": 1341,
+      "figures_inside_a_shown_span": 352,
+      "figure_attribution_rate": [
+        0.2625,
+        0.1921,
+        0.3365
+      ],
+      "statements_removed_by_numeric_gate": 78,
+      "retrieved_chunks": 3947,
+      "retrieved_from_excluded_stratum": 0,
+      "verifier_verdicts": {
+        "pass": 88,
+        "revise": 45,
+        "block": 1
+      },
+      "latency_ms": {
+        "total_p50": 26470.2,
+        "total_p95": 35399.3,
+        "retrieval_p50": 2552.7,
+        "retrieval_p95": 7985.0
+      },
+      "arm_recorded_in_responses": [
+        "[\"hf_vi_mtue29_medical\"]"
+      ]
+    },
+    "paired_differences_url_first_minus_shipped": {
+      "claims_shown_per_answer": [
+        1.3358,
+        1.0597,
+        1.6194
+      ],
+      "zero_claim_answer": [
+        -0.403,
+        -0.4925,
+        -0.3209
+      ],
+      "figures_in_span_per_answer": [
+        1.4552,
+        0.5672,
+        2.3507
+      ],
+      "total_ms": [
+        -3126.0056,
+        -4030.8565,
+        -2175.6929
+      ]
+    },
+    "questions_where_url_first_shows_more": 56,
+    "questions_where_url_first_shows_fewer": 1,
+    "questions_tied": 77,
+    "scope": "all 134 (controls included, reported apart below)"
+  },
+  "answerable_only": {
+    "shipped": {
+      "label": "shipped (withhold after generation), 13dc51f",
+      "questions": 119,
+      "claims_extracted": 312,
+      "claims_shown": 160,
+      "retention_shown_over_extracted": [
+        0.5128,
+        0.409,
+        0.6128
+      ],
+      "withheld_span": 17,
+      "withheld_citability": 135,
+      "uncitable_among_extracted": 143,
+      "answers_with_zero_claims": 72,
+      "answers_with_zero_claims_rate": [
+        0.605,
+        0.521,
+        0.6891
+      ],
+      "claims_shown_per_answer_mean": 1.345,
+      "figures_in_delivered_answers": 610,
+      "figures_inside_a_shown_span": 130,
+      "figure_attribution_rate": [
+        0.2131,
+        0.1222,
+        0.3093
+      ],
+      "statements_removed_by_numeric_gate": 52,
+      "retrieved_chunks": 3588,
+      "retrieved_from_excluded_stratum": 2244,
+      "verifier_verdicts": {
+        "revise": 73,
+        "pass": 46
+      },
+      "latency_ms": {
+        "total_p50": 29047.7,
+        "total_p95": 42940.5,
+        "retrieval_p50": 3377.6,
+        "retrieval_p95": 17929.1
+      },
+      "arm_recorded_in_responses": [
+        "null"
+      ]
+    },
+    "url_first": {
+      "label": "url-first (exclude at retrieval), 47536e9 image",
+      "questions": 119,
+      "claims_extracted": 334,
+      "claims_shown": 323,
+      "retention_shown_over_extracted": [
+        0.9671,
+        0.9387,
+        0.9888
+      ],
+      "withheld_span": 11,
+      "withheld_citability": 0,
+      "uncitable_among_extracted": 1,
+      "answers_with_zero_claims": 23,
+      "answers_with_zero_claims_rate": [
+        0.1933,
+        0.1261,
+        0.2689
+      ],
+      "claims_shown_per_answer_mean": 2.714,
+      "figures_in_delivered_answers": 1158,
+      "figures_inside_a_shown_span": 312,
+      "figure_attribution_rate": [
+        0.2694,
+        0.1982,
+        0.3478
+      ],
+      "statements_removed_by_numeric_gate": 67,
+      "retrieved_chunks": 3481,
+      "retrieved_from_excluded_stratum": 0,
+      "verifier_verdicts": {
+        "pass": 80,
+        "revise": 39
+      },
+      "latency_ms": {
+        "total_p50": 26820.1,
+        "total_p95": 35399.3,
+        "retrieval_p50": 2480.4,
+        "retrieval_p95": 7985.0
+      },
+      "arm_recorded_in_responses": [
+        "[\"hf_vi_mtue29_medical\"]"
+      ]
+    },
+    "paired_differences_url_first_minus_shipped": {
+      "claims_shown_per_answer": [
+        1.3697,
+        1.0588,
+        1.6807
+      ],
+      "zero_claim_answer": [
+        -0.4118,
+        -0.5042,
+        -0.3193
+      ],
+      "figures_in_span_per_answer": [
+        1.5294,
+        0.5714,
+        2.4958
+      ],
+      "total_ms": [
+        -3137.9995,
+        -4043.5681,
+        -2237.9641
+      ]
+    },
+    "questions_where_url_first_shows_more": 51,
+    "questions_where_url_first_shows_fewer": 1,
+    "questions_tied": 67,
+    "scope": "119 answerable; 15 out-of-corpus controls excluded"
+  },
+  "controls_only": {
+    "shipped": {
+      "label": "shipped (withhold after generation), 13dc51f",
+      "questions": 15,
+      "claims_extracted": 39,
+      "claims_shown": 25,
+      "retention_shown_over_extracted": [
+        0.641,
+        0.3684,
+        0.8684
+      ],
+      "withheld_span": 2,
+      "withheld_citability": 12,
+      "uncitable_among_extracted": 13,
+      "answers_with_zero_claims": 7,
+      "answers_with_zero_claims_rate": [
+        0.4667,
+        0.2,
+        0.7333
+      ],
+      "claims_shown_per_answer_mean": 1.667,
+      "figures_in_delivered_answers": 98,
+      "figures_inside_a_shown_span": 27,
+      "figure_attribution_rate": [
+        0.2755,
+        0.0259,
+        0.5526
+      ],
+      "statements_removed_by_numeric_gate": 6,
+      "retrieved_chunks": 436,
+      "retrieved_from_excluded_stratum": 228,
+      "verifier_verdicts": {
+        "pass": 9,
+        "revise": 6
+      },
+      "latency_ms": {
+        "total_p50": 26365.3,
+        "total_p95": 50290.2,
+        "retrieval_p50": 3018.9,
+        "retrieval_p95": 16664.5
+      },
+      "arm_recorded_in_responses": [
+        "null"
+      ]
+    },
+    "url_first": {
+      "label": "url-first (exclude at retrieval), 47536e9 image",
+      "questions": 15,
+      "claims_extracted": 45,
+      "claims_shown": 41,
+      "retention_shown_over_extracted": [
+        0.9111,
+        0.8039,
+        1.0
+      ],
+      "withheld_span": 4,
+      "withheld_citability": 0,
+      "uncitable_among_extracted": 0,
+      "answers_with_zero_claims": 2,
+      "answers_with_zero_claims_rate": [
+        0.1333,
+        0.0,
+        0.3333
+      ],
+      "claims_shown_per_answer_mean": 2.733,
+      "figures_in_delivered_answers": 183,
+      "figures_inside_a_shown_span": 40,
+      "figure_attribution_rate": [
+        0.2186,
+        0.0074,
+        0.4726
+      ],
+      "statements_removed_by_numeric_gate": 11,
+      "retrieved_chunks": 466,
+      "retrieved_from_excluded_stratum": 0,
+      "verifier_verdicts": {
+        "pass": 8,
+        "revise": 6,
+        "block": 1
+      },
+      "latency_ms": {
+        "total_p50": 25461.0,
+        "total_p95": 39273.1,
+        "retrieval_p50": 3532.2,
+        "retrieval_p95": 8885.6
+      },
+      "arm_recorded_in_responses": [
+        "[\"hf_vi_mtue29_medical\"]"
+      ]
+    },
+    "paired_differences_url_first_minus_shipped": {
+      "claims_shown_per_answer": [
+        1.0667,
+        0.4,
+        1.8667
+      ],
+      "zero_claim_answer": [
+        -0.3333,
+        -0.6,
+        -0.1333
+      ],
+      "figures_in_span_per_answer": [
+        0.8667,
+        -0.9333,
+        3.6667
+      ],
+      "total_ms": [
+        -3030.854,
+        -6887.352,
+        373.6713
+      ]
+    },
+    "questions_where_url_first_shows_more": 5,
+    "questions_where_url_first_shows_fewer": 0,
+    "questions_tied": 10,
+    "scope": "15 out-of-corpus controls"
+  },
+  "by_question_type_answerable": {
+    "clinical_explainer": {
+      "questions": 24,
+      "shipped_retention": [
+        0.6829,
+        0.481,
+        0.8675
+      ],
+      "url_first_retention": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shipped_zero_claim": 8,
+      "url_first_zero_claim": 1
+    },
+    "differential_or_workup": {
+      "questions": 24,
+      "shipped_retention": [
+        0.5,
+        0.1667,
+        0.7826
+      ],
+      "url_first_retention": [
+        0.7273,
+        0.4375,
+        0.9167
+      ],
+      "shipped_zero_claim": 19,
+      "url_first_zero_claim": 17
+    },
+    "guideline_comparison": {
+      "questions": 24,
+      "shipped_retention": [
+        0.6867,
+        0.494,
+        0.8602
+      ],
+      "url_first_retention": [
+        0.9674,
+        0.8966,
+        1.0
+      ],
+      "shipped_zero_claim": 9,
+      "url_first_zero_claim": 1
+    },
+    "patient_faq": {
+      "questions": 23,
+      "shipped_retention": [
+        0.1224,
+        0.0,
+        0.3111
+      ],
+      "url_first_retention": [
+        0.9683,
+        0.9138,
+        1.0
+      ],
+      "shipped_zero_claim": 21,
+      "url_first_zero_claim": 4
+    },
+    "study_result_numeric": {
+      "questions": 24,
+      "shipped_retention": [
+        0.3857,
+        0.2083,
+        0.5833
+      ],
+      "url_first_retention": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shipped_zero_claim": 15,
+      "url_first_zero_claim": 0
+    }
+  }
+}

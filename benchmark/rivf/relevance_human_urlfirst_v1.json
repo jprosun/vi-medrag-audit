@@ -1,0 +1,1070 @@
+{
+  "what_this_is": "The author's blind relevance grading of 40 claims the URL-FIRST arm displayed, scored against the model labels on the same items. This is the calibration the paper had for the shipped arm and not for this one.",
+  "arm": "URL-first (uncitable records excluded at retrieval)",
+  "provenance": {
+    "sheet": "benchmark/rivf/relevance_human_labels_urlfirst_v1.txt",
+    "blank_sheet_sha256": "b5eba062ae47c96ffec6315c947b277dd3956b2b6295af68dc9042c711e9f4b7",
+    "filled_sheet_sha256": "02431434e0da66a4b73d617550d5721a4f3b0df7cb35f2ec4d6df570577111c8",
+    "codebook": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+    "graded_by": "the author, with model labels hidden on the sheet",
+    "design": {
+      "clinical_explainer": {
+        "population": 101,
+        "weight": 0.2775,
+        "sampled": 8
+      },
+      "differential_or_workup": {
+        "population": 16,
+        "weight": 0.044,
+        "sampled": 8
+      },
+      "guideline_comparison": {
+        "population": 96,
+        "weight": 0.2637,
+        "sampled": 8
+      },
+      "patient_faq": {
+        "population": 67,
+        "weight": 0.1841,
+        "sampled": 8
+      },
+      "study_result_numeric": {
+        "population": 84,
+        "weight": 0.2308,
+        "sampled": 8
+      }
+    },
+    "matched_labels": "benchmark/rivf/arm_matched_rejudge_v1.json",
+    "matched_labels_sha256": "84d042f79347532fffbb8410a24aaacb9453f27fedd2fab1d36c6d4ad67018fe",
+    "interval_method": "No population interval quoted: this is a small question-type-stratified calibration sample with zero human-relevant observations. Matched model labels include two relevant items, both human partial."
+  },
+  "agreement_label_version": "original",
+  "agreement": {
+    "items": 40,
+    "exact_three_way": 0.95,
+    "cohens_kappa": 0.8671,
+    "relevant_vs_other": 1.0,
+    "relevant_vs_other_kappa": null,
+    "human_distribution": {
+      "partial": 31,
+      "not_relevant": 9
+    },
+    "model_distribution_on_these_40": {
+      "partial": 29,
+      "not_relevant": 11
+    },
+    "confusion_human_by_model": {
+      "not_relevant|not_relevant": 9,
+      "partial|not_relevant": 2,
+      "partial|partial": 29
+    }
+  },
+  "matched_agreement": {
+    "items": 40,
+    "exact_three_way": 0.925,
+    "cohens_kappa": 0.8131,
+    "relevant_vs_other": 0.95,
+    "relevant_vs_other_kappa": 0.0,
+    "human_distribution": {
+      "partial": 31,
+      "not_relevant": 9
+    },
+    "model_distribution_on_these_40": {
+      "partial": 28,
+      "not_relevant": 10,
+      "relevant": 2
+    },
+    "confusion_human_by_model": {
+      "not_relevant|not_relevant": 9,
+      "partial|not_relevant": 1,
+      "partial|partial": 28,
+      "partial|relevant": 2
+    }
+  },
+  "matched_disagreements": [
+    {
+      "item_id": "relu_33",
+      "relevance_item": "rq_urlfirst_0093",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_38",
+      "relevance_item": "rq_urlfirst_0260",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_39",
+      "relevance_item": "rq_urlfirst_0344",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "relevant",
+      "model_entailment": "supported",
+      "agree": false
+    }
+  ],
+  "matched_per_item": [
+    {
+      "item_id": "relu_01",
+      "relevance_item": "rq_urlfirst_0350",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_02",
+      "relevance_item": "rq_urlfirst_0200",
+      "query_id": "rivf_076",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_03",
+      "relevance_item": "rq_urlfirst_0163",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_04",
+      "relevance_item": "rq_urlfirst_0400",
+      "query_id": "rivf_100",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_05",
+      "relevance_item": "rq_urlfirst_0389",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_06",
+      "relevance_item": "rq_urlfirst_0158",
+      "query_id": "rivf_011",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_07",
+      "relevance_item": "rq_urlfirst_0137",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_08",
+      "relevance_item": "rq_urlfirst_0379",
+      "query_id": "rivf_010",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_09",
+      "relevance_item": "rq_urlfirst_0100",
+      "query_id": "rivf_082",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_10",
+      "relevance_item": "rq_urlfirst_0121",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_11",
+      "relevance_item": "rq_urlfirst_0275",
+      "query_id": "rivf_057",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_12",
+      "relevance_item": "rq_urlfirst_0386",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_13",
+      "relevance_item": "rq_urlfirst_0135",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_14",
+      "relevance_item": "rq_urlfirst_0091",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_15",
+      "relevance_item": "rq_urlfirst_0342",
+      "query_id": "rivf_097",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_16",
+      "relevance_item": "rq_urlfirst_0294",
+      "query_id": "rivf_020",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_17",
+      "relevance_item": "rq_urlfirst_0354",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_18",
+      "relevance_item": "rq_urlfirst_0249",
+      "query_id": "rivf_026",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_19",
+      "relevance_item": "rq_urlfirst_0029",
+      "query_id": "rivf_120",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_20",
+      "relevance_item": "rq_urlfirst_0274",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_21",
+      "relevance_item": "rq_urlfirst_0173",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_22",
+      "relevance_item": "rq_urlfirst_0252",
+      "query_id": "rivf_114",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_23",
+      "relevance_item": "rq_urlfirst_0292",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_24",
+      "relevance_item": "rq_urlfirst_0293",
+      "query_id": "rivf_095",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_25",
+      "relevance_item": "rq_urlfirst_0197",
+      "query_id": "rivf_055",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_26",
+      "relevance_item": "rq_urlfirst_0086",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_27",
+      "relevance_item": "rq_urlfirst_0188",
+      "query_id": "rivf_112",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_28",
+      "relevance_item": "rq_urlfirst_0341",
+      "query_id": "rivf_009",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_29",
+      "relevance_item": "rq_urlfirst_0055",
+      "query_id": "rivf_066",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_30",
+      "relevance_item": "rq_urlfirst_0359",
+      "query_id": "rivf_128",
+      "question_type": "differential_or_workup",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_31",
+      "relevance_item": "rq_urlfirst_0320",
+      "query_id": "rivf_106",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_32",
+      "relevance_item": "rq_urlfirst_0363",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_33",
+      "relevance_item": "rq_urlfirst_0093",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_34",
+      "relevance_item": "rq_urlfirst_0374",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_35",
+      "relevance_item": "rq_urlfirst_0180",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_36",
+      "relevance_item": "rq_urlfirst_0114",
+      "query_id": "rivf_041",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_37",
+      "relevance_item": "rq_urlfirst_0081",
+      "query_id": "rivf_067",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_38",
+      "relevance_item": "rq_urlfirst_0260",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_39",
+      "relevance_item": "rq_urlfirst_0344",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_40",
+      "relevance_item": "rq_urlfirst_0088",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "not_supported",
+      "agree": true
+    }
+  ],
+  "human_relevant_rate": {
+    "naive_on_the_sheet": 0.0,
+    "post_stratified_to_the_364": 0.0,
+    "no_interval_quoted": "See interval_method. A descriptive calibration estimate, not population inference.",
+    "model_rate_on_the_364": [
+      0.0275,
+      0.0116,
+      0.0448
+    ]
+  },
+  "comparison_with_the_shipped_arm": "Calibration is sparse and arm-dependent. Report the label version explicitly; human agreement alone does not establish accuracy of the rare relevant class or equivalence between designs.",
+  "disagreements": [
+    {
+      "item": "relu_24",
+      "type": "study_result_numeric",
+      "human": "partial",
+      "model": "not_relevant"
+    },
+    {
+      "item": "relu_33",
+      "type": "patient_faq",
+      "human": "partial",
+      "model": "not_relevant"
+    }
+  ],
+  "by_question_type": {
+    "clinical_explainer": {
+      "items": 8,
+      "human_relevant": 0,
+      "human_relevant_rate": 0.0,
+      "model_relevant": 0,
+      "exact_agreement": 1.0,
+      "population_weight": 0.2775
+    },
+    "differential_or_workup": {
+      "items": 8,
+      "human_relevant": 0,
+      "human_relevant_rate": 0.0,
+      "model_relevant": 0,
+      "exact_agreement": 1.0,
+      "population_weight": 0.044
+    },
+    "guideline_comparison": {
+      "items": 8,
+      "human_relevant": 0,
+      "human_relevant_rate": 0.0,
+      "model_relevant": 0,
+      "exact_agreement": 1.0,
+      "population_weight": 0.2637
+    },
+    "patient_faq": {
+      "items": 8,
+      "human_relevant": 0,
+      "human_relevant_rate": 0.0,
+      "model_relevant": 0,
+      "exact_agreement": 0.875,
+      "population_weight": 0.1841
+    },
+    "study_result_numeric": {
+      "items": 8,
+      "human_relevant": 0,
+      "human_relevant_rate": 0.0,
+      "model_relevant": 0,
+      "exact_agreement": 0.875,
+      "population_weight": 0.2308
+    }
+  },
+  "per_item": [
+    {
+      "item_id": "relu_01",
+      "relevance_item": "rq_urlfirst_0350",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_02",
+      "relevance_item": "rq_urlfirst_0200",
+      "query_id": "rivf_076",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_03",
+      "relevance_item": "rq_urlfirst_0163",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_04",
+      "relevance_item": "rq_urlfirst_0400",
+      "query_id": "rivf_100",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_05",
+      "relevance_item": "rq_urlfirst_0389",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_06",
+      "relevance_item": "rq_urlfirst_0158",
+      "query_id": "rivf_011",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_07",
+      "relevance_item": "rq_urlfirst_0137",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_08",
+      "relevance_item": "rq_urlfirst_0379",
+      "query_id": "rivf_010",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_09",
+      "relevance_item": "rq_urlfirst_0100",
+      "query_id": "rivf_082",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_10",
+      "relevance_item": "rq_urlfirst_0121",
+      "query_id": "rivf_108",
+      "question_type": "differential_or_workup",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_11",
+      "relevance_item": "rq_urlfirst_0275",
+      "query_id": "rivf_057",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_12",
+      "relevance_item": "rq_urlfirst_0386",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_13",
+      "relevance_item": "rq_urlfirst_0135",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_14",
+      "relevance_item": "rq_urlfirst_0091",
+      "query_id": "rivf_008",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_15",
+      "relevance_item": "rq_urlfirst_0342",
+      "query_id": "rivf_097",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_16",
+      "relevance_item": "rq_urlfirst_0294",
+      "query_id": "rivf_020",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_17",
+      "relevance_item": "rq_urlfirst_0354",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_18",
+      "relevance_item": "rq_urlfirst_0249",
+      "query_id": "rivf_026",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_19",
+      "relevance_item": "rq_urlfirst_0029",
+      "query_id": "rivf_120",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_20",
+      "relevance_item": "rq_urlfirst_0274",
+      "query_id": "rivf_105",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_21",
+      "relevance_item": "rq_urlfirst_0173",
+      "query_id": "rivf_035",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_22",
+      "relevance_item": "rq_urlfirst_0252",
+      "query_id": "rivf_114",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_23",
+      "relevance_item": "rq_urlfirst_0292",
+      "query_id": "rivf_069",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_24",
+      "relevance_item": "rq_urlfirst_0293",
+      "query_id": "rivf_095",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_25",
+      "relevance_item": "rq_urlfirst_0197",
+      "query_id": "rivf_055",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_26",
+      "relevance_item": "rq_urlfirst_0086",
+      "query_id": "rivf_089",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_27",
+      "relevance_item": "rq_urlfirst_0188",
+      "query_id": "rivf_112",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_28",
+      "relevance_item": "rq_urlfirst_0341",
+      "query_id": "rivf_009",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_29",
+      "relevance_item": "rq_urlfirst_0055",
+      "query_id": "rivf_066",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_30",
+      "relevance_item": "rq_urlfirst_0359",
+      "query_id": "rivf_128",
+      "question_type": "differential_or_workup",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_31",
+      "relevance_item": "rq_urlfirst_0320",
+      "query_id": "rivf_106",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_32",
+      "relevance_item": "rq_urlfirst_0363",
+      "query_id": "rivf_079",
+      "question_type": "differential_or_workup",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_33",
+      "relevance_item": "rq_urlfirst_0093",
+      "query_id": "rivf_072",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": false
+    },
+    {
+      "item_id": "relu_34",
+      "relevance_item": "rq_urlfirst_0374",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_35",
+      "relevance_item": "rq_urlfirst_0180",
+      "query_id": "rivf_113",
+      "question_type": "patient_faq",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_36",
+      "relevance_item": "rq_urlfirst_0114",
+      "query_id": "rivf_041",
+      "question_type": "clinical_explainer",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_37",
+      "relevance_item": "rq_urlfirst_0081",
+      "query_id": "rivf_067",
+      "question_type": "clinical_explainer",
+      "human": "not_relevant",
+      "human_support": "Y",
+      "model": "not_relevant",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_38",
+      "relevance_item": "rq_urlfirst_0260",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_39",
+      "relevance_item": "rq_urlfirst_0344",
+      "query_id": "rivf_070",
+      "question_type": "guideline_comparison",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "supported",
+      "agree": true
+    },
+    {
+      "item_id": "relu_40",
+      "relevance_item": "rq_urlfirst_0088",
+      "query_id": "rivf_124",
+      "question_type": "study_result_numeric",
+      "human": "partial",
+      "human_support": "Y",
+      "model": "partial",
+      "model_entailment": "not_supported",
+      "agree": true
+    }
+  ]
+}

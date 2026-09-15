@@ -1,0 +1,229 @@
+{
+  "what_this_is": "The between-arm contrast with the instrument held fixed: both arms judged under the shipped codebook, the same pinned model, the same adjudicator prompt and the same batch size. The confounded contrast the paper first reported is printed beside it.",
+  "why_newcombe": "An interval for the DIFFERENCE, not two intervals that happen to overlap. Built from Wilson intervals so it behaves where responsiveness lives, near 0.02.",
+  "matched_output": "benchmark/rivf/arm_matched_rejudge_v1.json",
+  "model_alias_requested": "opus",
+  "model_id_witnessed": {
+    "model_id": "claude-opus-5",
+    "stated_where": "My system prompt states: \"You are powered by the model named Opus 5. The exact model ID is claude-opus-5.\""
+  },
+  "codebook_source": "judging/*_prompt_v1.txt, extracted byte-for-byte from the SHIPPED scripts",
+  "batch_size": 28,
+  "shipped_side_readjudicated": {
+    "entailment": 2,
+    "relevance": 5
+  },
+  "instruments": {
+    "entailment": {
+      "PRIMARY_matched_contrast_paired_question_bootstrap": {
+        "difference": 0.0115236115,
+        "ci95": [
+          -0.0163762774,
+          0.0386060997
+        ],
+        "resamples_used": 5000,
+        "clusters": 134,
+        "seed": 20260907,
+        "method": "percentile paired-question cluster bootstrap; clusters are the 134 questions, both arms resampled on the same draw, all claims of a question move together",
+        "conditional_on": "the observed labels and the one captured generation per arm; the question set is authored, not a probability sample, so this is not a statement about representativeness, judge error or generation variance"
+      },
+      "same_at_a_second_seed": {
+        "seed": 20260905,
+        "ci95": [
+          -0.0158667716,
+          0.0386280386
+        ]
+      },
+      "interval_widths": {
+        "paired_question_bootstrap": 0.054982,
+        "newcombe_independent": 0.0717
+      },
+      "why_not_newcombe": "Newcombe's hybrid score is for two INDEPENDENT binomial proportions. Both arms answer the same 134 questions (paired) and claims are nested in questions (clustered), so neither assumption holds. It is retained below to show what the wrong assumption costs.",
+      "matched_contrast": {
+        "difference": 0.0115,
+        "ci95": [
+          -0.0286,
+          0.0431
+        ],
+        "method": "Newcombe hybrid score (square-and-add) on Wilson intervals",
+        "arm_1": {
+          "hits": 179,
+          "n": 185,
+          "rate": 0.9676,
+          "wilson": [
+            0.9311,
+            0.9851
+          ]
+        },
+        "arm_2": {
+          "hits": 348,
+          "n": 364,
+          "rate": 0.956,
+          "wilson": [
+            0.9298,
+            0.9728
+          ]
+        }
+      },
+      "confounded_contrast_as_first_reported": {
+        "difference": 0.006,
+        "ci95": [
+          -0.0336,
+          0.0366
+        ],
+        "method": "Newcombe hybrid score (square-and-add) on Wilson intervals",
+        "arm_1": {
+          "hits": 179,
+          "n": 185,
+          "rate": 0.9676,
+          "wilson": [
+            0.9311,
+            0.9851
+          ]
+        },
+        "arm_2": {
+          "hits": 350,
+          "n": 364,
+          "rate": 0.9615,
+          "wilson": [
+            0.9365,
+            0.977
+          ]
+        }
+      },
+      "moved_by_matching": 0.0055,
+      "url_first_label_distribution_matched": {
+        "supported": 348,
+        "unintelligible": 12,
+        "not_supported": 3,
+        "overstated": 1
+      },
+      "url_first_label_distribution_as_first_judged": {
+        "supported": 350,
+        "unintelligible": 10,
+        "not_supported": 3,
+        "overstated": 1
+      },
+      "url_first_controls": {
+        "n": 37,
+        "labels": {
+          "not_supported": 37
+        },
+        "avoided_the_positive_label": 37
+      },
+      "url_first_internal_agreement": {
+        "items": 401,
+        "judged_pass_a": 401,
+        "judged_pass_b": 401,
+        "raw_agreement": 392,
+        "disagreements": 9,
+        "adjudicated": 9
+      }
+    },
+    "relevance": {
+      "PRIMARY_matched_contrast_paired_question_bootstrap": {
+        "difference": 0.0021235521,
+        "ci95": [
+          -0.019792567,
+          0.0265492011
+        ],
+        "resamples_used": 5000,
+        "clusters": 134,
+        "seed": 20260907,
+        "method": "percentile paired-question cluster bootstrap; clusters are the 134 questions, both arms resampled on the same draw, all claims of a question move together",
+        "conditional_on": "the observed labels and the one captured generation per arm; the question set is authored, not a probability sample, so this is not a statement about representativeness, judge error or generation variance"
+      },
+      "same_at_a_second_seed": {
+        "seed": 20260905,
+        "ci95": [
+          -0.0202427463,
+          0.026391097
+        ]
+      },
+      "interval_widths": {
+        "paired_question_bootstrap": 0.046342,
+        "newcombe_independent": 0.0722
+      },
+      "why_not_newcombe": "Newcombe's hybrid score is for two INDEPENDENT binomial proportions. Both arms answer the same 134 questions (paired) and claims are nested in questions (clustered), so neither assumption holds. It is retained below to show what the wrong assumption costs.",
+      "matched_contrast": {
+        "difference": 0.0021,
+        "ci95": [
+          -0.0291,
+          0.0431
+        ],
+        "method": "Newcombe hybrid score (square-and-add) on Wilson intervals",
+        "arm_1": {
+          "hits": 7,
+          "n": 185,
+          "rate": 0.0378,
+          "wilson": [
+            0.0184,
+            0.076
+          ]
+        },
+        "arm_2": {
+          "hits": 13,
+          "n": 364,
+          "rate": 0.0357,
+          "wilson": [
+            0.021,
+            0.0601
+          ]
+        }
+      },
+      "confounded_contrast_as_first_reported": {
+        "difference": -0.0059,
+        "ci95": [
+          -0.0318,
+          0.0291
+        ],
+        "method": "Newcombe hybrid score (square-and-add) on Wilson intervals",
+        "arm_1": {
+          "hits": 4,
+          "n": 185,
+          "rate": 0.0216,
+          "wilson": [
+            0.0084,
+            0.0543
+          ]
+        },
+        "arm_2": {
+          "hits": 10,
+          "n": 364,
+          "rate": 0.0275,
+          "wilson": [
+            0.015,
+            0.0498
+          ]
+        }
+      },
+      "moved_by_matching": 0.008,
+      "url_first_label_distribution_matched": {
+        "partial": 268,
+        "not_relevant": 83,
+        "relevant": 13
+      },
+      "url_first_label_distribution_as_first_judged": {
+        "partial": 254,
+        "not_relevant": 100,
+        "relevant": 10
+      },
+      "url_first_controls": {
+        "n": 37,
+        "labels": {
+          "not_relevant": 36,
+          "partial": 1
+        },
+        "avoided_the_positive_label": 37
+      },
+      "url_first_internal_agreement": {
+        "items": 401,
+        "judged_pass_a": 401,
+        "judged_pass_b": 401,
+        "raw_agreement": 395,
+        "disagreements": 6,
+        "adjudicated": 6
+      }
+    }
+  }
+}

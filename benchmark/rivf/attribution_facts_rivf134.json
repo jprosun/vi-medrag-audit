@@ -1,0 +1,141 @@
+{
+  "what_this_is": "Attribution facts recomputed from the committed 134-question capture alone, through the server's own span_exposure/span_norm definitions. Offline and deterministic.",
+  "provenance": {
+    "capture": {
+      "path": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "sha256": "502a8c040f44287b1e19fbb9c6dfa76ec91082233e95d4ead890d74ad37e644c",
+      "records": 134
+    },
+    "probe_set": {
+      "path": "benchmark/datasets/probe_queries_v2.jsonl",
+      "query_set_sha256": "7f6b97e512d31a77aab6f22b1eeb6d84700f66e08a4068a5bdab357d5c3fddc9",
+      "matches_frozen_hash": true,
+      "every_capture_question_is_in_the_probe_set": true
+    },
+    "code": {
+      "certified_commit": "13dc51f",
+      "certified_commit_full": "13dc51ff02bcc9d31c03f56186a2ccd94f0f126b",
+      "checked_at_commit": "c504823d3baee175abd2462f4826f68005be47b7",
+      "modules": {
+        "services/rag-orchestrator/app/span_gate.py": {
+          "working_tree_blob": "d2095f04dc9763558141930e6aececda0312f23f",
+          "certified_blob": "d2095f04dc9763558141930e6aececda0312f23f",
+          "file_sha256_on_disk": "517eb3553b7560e5041d37212198ddbc4ddef99367b46170c7f7234296b980ac",
+          "identical": true
+        },
+        "services/rag-orchestrator/app/span_norm.py": {
+          "working_tree_blob": "0fb0f8ec4d26d57a9a23817ec75bf83c93221c32",
+          "certified_blob": "0fb0f8ec4d26d57a9a23817ec75bf83c93221c32",
+          "file_sha256_on_disk": "fae5e44bcfba4be2320d8e08b7ef2fa2381f866b7af4de280d1022ac768ee253",
+          "identical": true
+        },
+        "services/rag-orchestrator/app/answer_verifier.py": {
+          "working_tree_blob": "e7c8b87242f02638b75a97bc67f76d0cfc4b4a2a",
+          "certified_blob": "e7c8b87242f02638b75a97bc67f76d0cfc4b4a2a",
+          "file_sha256_on_disk": "c0708277fbb0047081c8e53ee226587f14f696e7b9b7ee6fd391f4896a637d33",
+          "identical": true
+        },
+        "services/rag-orchestrator/app/main.py": {
+          "working_tree_blob": "44b689b750d942592edd6caebd841f57aa3535d4",
+          "certified_blob": "90f026dfb049a54796732daa30f2fbc2b13b3d20",
+          "file_sha256_on_disk": "a15a9d6bdd6869061bef368c697cdcbddbfce62bbf41188ef2c346106961d6a7",
+          "identical": false
+        },
+        "services/rag-orchestrator/app/schemas.py": {
+          "working_tree_blob": "4ff924e237ad7eef3bd21e16dfa8047bb04be852",
+          "certified_blob": "4ff924e237ad7eef3bd21e16dfa8047bb04be852",
+          "file_sha256_on_disk": "d5e33efa68e2918c034cefca6b0402ec01f7e9001056c46d1e639253bd066345",
+          "identical": true
+        },
+        "services/rag-orchestrator/app/span_exposure.py": {
+          "working_tree_blob": "79777cad3e9380f794bcfb80525d769039a6c6b5",
+          "certified_blob": "79777cad3e9380f794bcfb80525d769039a6c6b5",
+          "file_sha256_on_disk": "44de219081f5f7a9cef320e2007d916f2e5c05a3221ae4496887e9c2258cf95b",
+          "identical": true
+        }
+      },
+      "all_enforcement_code_identical_to_certified_commit": false,
+      "why_not_identical": {
+        "services/rag-orchestrator/app/main.py": {
+          "changed_lines": 7,
+          "additions": 7,
+          "deletions": 0,
+          "every_change_is_an_addition_mentioning_the_arm_flag": true,
+          "verdict": "inert for the certified path: pure insertions of URL-first arm plumbing (an import, two cache-key entries, one recorded field and its comment). No gate logic was added, removed or altered."
+        }
+      },
+      "tracked_app_files_changed_since_certified_commit": [
+        "services/rag-orchestrator/app/main.py",
+        "services/rag-orchestrator/app/pipeline_flags.py",
+        "services/rag-orchestrator/app/retriever.py",
+        "services/rag-orchestrator/app/run_export.py"
+      ]
+    }
+  },
+  "claims": {
+    "total": 351,
+    "shown": 185,
+    "withheld": 166,
+    "withheld_by_reason": {
+      "chunk_id_not_resolvable": 2,
+      "cited_record_not_citable": 147,
+      "span_not_found_in_cited_chunk": 17
+    },
+    "span_gate_failures": 19,
+    "uncitable_over_every_claim_no_gate_arm": 156,
+    "uncitable_by_stratum_of_the_cited_chunk": {
+      "hf_vi_mtue29_medical": 154,
+      "chunk_id_not_in_retrieved_set": 2
+    }
+  },
+  "containment_is_non_trivial_only_here": {
+    "definition": "A claim whose supporting span is textually distinct from the claim. Where span == claim, containment reduces to string identity and can only fail if the claim itself is absent from the cited chunk.",
+    "independent_span_claims": 29,
+    "shown_and_contained": 2,
+    "shown_and_not_contained": 0,
+    "withheld_by_reason": {
+      "chunk_id_not_resolvable": 1,
+      "cited_record_not_citable": 18,
+      "span_not_found_in_cited_chunk": 8
+    },
+    "failed_containment": 9,
+    "verified_then_withheld_for_citability": 18,
+    "reached_the_reader": 2,
+    "structural_share_of_shown_claims": 0.9892,
+    "uncitable_share_of_independent_span_claims": 0.7241,
+    "uncitable_share_of_all_claims": 0.4444
+  },
+  "figures_in_delivered_answers": {
+    "definition": "Claim figures per app.span_norm.claim_numbers_in, tested for membership in the union of the verified spans shown with the answer, per app.span_exposure.evaluate_response. The numeric gate's removal notice is stripped first: it lists the figures that were removed, so leaving it in counts them in the denominator.",
+    "claim_figures": 708,
+    "inside_a_verified_span": 157,
+    "rate_inside": 0.2218,
+    "rate_outside": 0.7782,
+    "with_the_removal_notice_left_in": {
+      "claim_figures": 757,
+      "inside_a_verified_span": 157
+    },
+    "numeric_gate_counters": {
+      "note": "Answer-level, not claim-level: the numeric gate removes statements from the text rather than withholding claims.",
+      "statements_removed": 58,
+      "fabricated_figures_pre_enforcement": 67,
+      "unattributed_figures_server_counter": 557
+    }
+  },
+  "delivered_answer_checks": {
+    "why": "The four gates run before verification (main.py), and a 'revise' verdict replaces the answer with the verifier's revision afterwards without re-running them. The absence of fabricated figures in what was delivered is therefore a measured fact, not a structural guarantee.",
+    "verifier_verdicts": {
+      "pass": 55,
+      "revise": 79
+    },
+    "answers_retaining_a_figure_absent_from_all_evidence": 0,
+    "which": [],
+    "answers_that_are_a_raw_verifier_json_object": [
+      {
+        "query_id": "rivf_075",
+        "chars": 683,
+        "prefix": "{\"status\": \"block\", \"issues\": [\"The retrieved evidence does not contain any information about CIN 2 regression rates, HP"
+      }
+    ]
+  }
+}
