@@ -1,0 +1,313 @@
+{
+  "answers_shipped": {
+    "all": {
+      "n": 134,
+      "relevant": 101,
+      "rate": 0.7537
+    },
+    "answerable": {
+      "n": 119,
+      "relevant": 92,
+      "rate": 0.7731
+    },
+    "controls": {
+      "n": 15,
+      "relevant": 9,
+      "rate": 0.6
+    },
+    "by_coverage_mode_answerable": {
+      "evidence_strong": {
+        "n": 19,
+        "relevant": 9,
+        "rate": 0.474
+      },
+      "open_knowledge": {
+        "n": 30,
+        "relevant": 27,
+        "rate": 0.9
+      },
+      "title_anchored": {
+        "n": 70,
+        "relevant": 56,
+        "rate": 0.8
+      }
+    },
+    "by_type_answerable": {
+      "clinical_explainer": {
+        "n": 24,
+        "relevant": 24,
+        "rate": 1.0,
+        "wilson": [
+          0.862,
+          1.0
+        ]
+      },
+      "differential_or_workup": {
+        "n": 24,
+        "relevant": 24,
+        "rate": 1.0,
+        "wilson": [
+          0.862,
+          1.0
+        ]
+      },
+      "guideline_comparison": {
+        "n": 24,
+        "relevant": 18,
+        "rate": 0.75,
+        "wilson": [
+          0.5465,
+          0.8819
+        ]
+      },
+      "patient_faq": {
+        "n": 23,
+        "relevant": 23,
+        "rate": 1.0,
+        "wilson": [
+          0.8569,
+          1.0
+        ]
+      },
+      "study_result_numeric": {
+        "n": 24,
+        "relevant": 3,
+        "rate": 0.125,
+        "wilson": [
+          0.0425,
+          0.3148
+        ]
+      }
+    },
+    "by_profile_answerable": {
+      "standard": {
+        "n": 58,
+        "relevant": 35
+      },
+      "deep": {
+        "n": 61,
+        "relevant": 57
+      }
+    },
+    "controls_abstention_label": {
+      "partial": 12,
+      "answerable": 3
+    },
+    "controls_relevant_by_abstention": {
+      "partial|relevant": 8,
+      "partial|partial": 4,
+      "answerable|relevant": 1,
+      "answerable|partial": 2
+    },
+    "answers_with_inline_citations": 133,
+    "nonempty_list_answers": 55,
+    "nonempty_list_no_responsive_claim": 53,
+    "nonempty_list_answer_relevant_no_responsive_claim": 42,
+    "answer_relevant_with_nonempty_list": 43,
+    "empty_list_answer_relevant": 58,
+    "empty_list_answers": 79
+  },
+  "answers_urlfirst": {
+    "all": {
+      "n": 134,
+      "relevant": 104,
+      "rate": 0.7761
+    },
+    "answerable": {
+      "n": 119,
+      "relevant": 97,
+      "rate": 0.8151
+    },
+    "controls": {
+      "n": 15,
+      "relevant": 7,
+      "rate": 0.4667
+    },
+    "by_coverage_mode_answerable": {
+      "evidence_strong": {
+        "n": 25,
+        "relevant": 14,
+        "rate": 0.56
+      },
+      "open_knowledge": {
+        "n": 24,
+        "relevant": 21,
+        "rate": 0.875
+      },
+      "title_anchored": {
+        "n": 70,
+        "relevant": 62,
+        "rate": 0.886
+      }
+    },
+    "by_type_answerable": {
+      "clinical_explainer": {
+        "n": 24,
+        "relevant": 24,
+        "rate": 1.0,
+        "wilson": [
+          0.862,
+          1.0
+        ]
+      },
+      "differential_or_workup": {
+        "n": 24,
+        "relevant": 24,
+        "rate": 1.0,
+        "wilson": [
+          0.862,
+          1.0
+        ]
+      },
+      "guideline_comparison": {
+        "n": 24,
+        "relevant": 21,
+        "rate": 0.875,
+        "wilson": [
+          0.6852,
+          0.9575
+        ]
+      },
+      "patient_faq": {
+        "n": 23,
+        "relevant": 23,
+        "rate": 1.0,
+        "wilson": [
+          0.8569,
+          1.0
+        ]
+      },
+      "study_result_numeric": {
+        "n": 24,
+        "relevant": 5,
+        "rate": 0.208,
+        "wilson": [
+          0.0909,
+          0.4093
+        ]
+      }
+    },
+    "by_profile_answerable": {
+      "standard": {
+        "n": 58,
+        "relevant": 37
+      },
+      "deep": {
+        "n": 61,
+        "relevant": 60
+      }
+    },
+    "controls_abstention_label": {
+      "partial": 11,
+      "answerable": 3,
+      "unanswerable": 1
+    },
+    "controls_relevant_by_abstention": {
+      "partial|partial": 5,
+      "partial|relevant": 6,
+      "answerable|partial": 3,
+      "unanswerable|relevant": 1
+    },
+    "answers_with_inline_citations": 133,
+    "nonempty_list_answers": 109,
+    "nonempty_list_no_responsive_claim": 105,
+    "nonempty_list_answer_relevant_no_responsive_claim": 77,
+    "answer_relevant_with_nonempty_list": 80,
+    "empty_list_answer_relevant": 24,
+    "empty_list_answers": 25
+  },
+  "claims_shipped": {
+    "extracted": 351,
+    "extracted_responsive": 13,
+    "patient_faq_extracted": 57,
+    "patient_faq_responsive": 10,
+    "returned": 185,
+    "returned_responsive_final": 2,
+    "returned_responsive_passA": 4,
+    "returned_responsive_passB": 2,
+    "returned_wilson_deff": [
+      0.0029,
+      0.0391,
+      1.03
+    ],
+    "extracted_wilson_deff": [
+      0.0151,
+      0.0878,
+      2.94
+    ],
+    "withheld_responsive": 11,
+    "withheld_responsive_questions": 5,
+    "withheld_responsive_per_question": {
+      "rivf_027": 1,
+      "rivf_038": 3,
+      "rivf_073": 5,
+      "rivf_084": 1,
+      "rivf_122": 1
+    },
+    "withheld_responsive_distinct_texts": 10,
+    "questions_with_any_responsive_claim": 7,
+    "questions_with_responsive_withheld_only": 5,
+    "questions_with_any_withheld_citability": 50,
+    "questions_with_returned": 55
+  },
+  "claims_urlfirst": {
+    "extracted": 379,
+    "extracted_responsive": 4,
+    "patient_faq_extracted": 71,
+    "patient_faq_responsive": 1,
+    "returned": 364,
+    "returned_responsive_final": 4,
+    "returned_responsive_passA": 10,
+    "returned_responsive_passB": 4,
+    "returned_wilson_deff": [
+      0.0043,
+      0.0279,
+      1.0
+    ],
+    "extracted_wilson_deff": [
+      0.0041,
+      0.0268,
+      1.0
+    ]
+  },
+  "trust_shipped": {
+    "retrieved": {
+      "3": 2481,
+      "2": 1469,
+      "1": 74
+    },
+    "returned_claims": {
+      "2": 184,
+      "1": 1
+    }
+  },
+  "trust_urlfirst": {
+    "retrieved": {
+      "2": 3781,
+      "1": 152,
+      "3": 14
+    },
+    "returned_claims": {
+      "2": 357,
+      "3": 3,
+      "1": 4
+    }
+  },
+  "verifier_shipped": {
+    "revise|model_pass_overridden_by_code": 66,
+    "pass|model_pass": 55,
+    "revise|truncated_or_recovered": 10,
+    "revise|model_revise": 3
+  },
+  "verifier_urlfirst": {
+    "pass|model_pass": 88,
+    "revise|truncated_or_recovered": 7,
+    "revise|model_pass_overridden_by_code": 38,
+    "block|model_block": 1
+  },
+  "rivf_075_answer_head": "{\"status\": \"block\", \"issues\": [\"The retrieved evidence does not contain any information about CIN 2 regression rates, HPV, or cervical intraepithelial neoplasia. The only retrieved document discusses ",
+  "small_int_unit_quantities_shipped": {
+    "count": 534,
+    "answers_with_any": 98
+  }
+}

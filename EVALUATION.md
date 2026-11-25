@@ -79,6 +79,8 @@ python benchmark/rivf/compare_arms.py --url-first benchmark/datasets/test_result
 python benchmark/rivf/score_urlfirst_relevance.py --check
 python benchmark/rivf/url_confirmatory_estimate.py --check
 python benchmark/rivf/run_configuration.py --check
+python benchmark/rivf/build_probe_set.py --verify
+python benchmark/rivf/verify_post_submission.py
 python -m unittest discover -s tests
 ~~~
 

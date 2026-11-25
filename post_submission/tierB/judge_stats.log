@@ -1,0 +1,45 @@
+- claims: agreement 0.954 (kappa 0.910) over 764 items incl. controls; 0.952 (kappa 0.902) on 724 real items; controls final labels {'not_relevant': 40}
+- answers: agreement 0.989 (kappa 0.975) over 284 items incl. controls; 0.993 (kappa 0.979) on 268 real items; controls final labels {'not_relevant': 16}
+
+| arm | status | drop reason | n | relevant | partial | not_relevant | responsiveness [95% CI] |
+|---|---|---|---|---|---|---|---|
+| shipped | returned | - | 185 | 2 | 126 | 57 | 0.011 [0.000, 0.028] |
+| shipped | withheld | cited_record_not_citable | 147 | 11 | 58 | 78 | 0.075 [0.013, 0.154] |
+| shipped | withheld | span_not_found_in_cited_chunk | 17 | 0 | 5 | 12 | 0.000 [0.000, 0.000] |
+| shipped | withheld | chunk_id_not_resolvable | 2 | 0 | 1 | 1 | 0.000 [0.000, 0.000] |
+| shipped | withheld | * | 166 | 11 | 64 | 91 | 0.066 [0.011, 0.138] |
+| urlfirst | returned | - | 364 | 4 | 260 | 100 | 0.011 [0.003, 0.023] |
+| urlfirst | withheld | span_not_found_in_cited_chunk | 14 | 0 | 4 | 10 | 0.000 [0.000, 0.000] |
+| urlfirst | withheld | chunk_id_not_resolvable | 1 | 0 | 0 | 1 | 0.000 [0.000, 0.000] |
+| urlfirst | withheld | * | 15 | 0 | 4 | 11 | 0.000 [0.000, 0.000] |
+
+Shipped arm, withheld-for-citability minus returned (same instrument): +0.0640 [-0.0020, 0.1458]
+On-topic (relevant or partial) withheld minus returned: -0.2225 [-0.4005, -0.0422]
+All 351 C0 claims (shipped), no gate: relevant 13/351 = 0.037 [0.009, 0.075]
+
+Claims by type (all C0 claims per arm): shipped/clinical_explainer: 0/94=0.000; shipped/differential_or_workup: 0/28=0.000; shipped/guideline_comparison: 1/90=0.011; shipped/patient_faq: 10/57=0.175; shipped/study_result_numeric: 2/82=0.024; urlfirst/clinical_explainer: 0/101=0.000; urlfirst/differential_or_workup: 0/22=0.000; urlfirst/guideline_comparison: 3/99=0.030; urlfirst/patient_faq: 1/71=0.014; urlfirst/study_result_numeric: 0/86=0.000
+
+Claims by profile (all C0 claims per arm): shipped/deep: 11/143=0.077; shipped/standard: 2/208=0.010; urlfirst/deep: 2/160=0.013; urlfirst/standard: 2/219=0.009
+
+Claims by urlless (all C0 claims per arm): shipped/citable: 2/195=0.010; shipped/urlless: 11/156=0.070; urlfirst/citable: 4/378=0.011; urlfirst/urlless: 0/1=0.000
+
+Shipped returned claims: original label -> prior-free label: 
+
+| arm | subset | n answers | relevant | partial | not_relevant | answer responsiveness [95% CI] |
+|---|---|---|---|---|---|---|
+| shipped | all 134 | 134 | 101 | 33 | 0 | 0.754 [0.679, 0.828] |
+| shipped | answerable 119 | 119 | 92 | 27 | 0 | 0.773 [0.698, 0.849] |
+| shipped | controls 15 | 15 | 9 | 6 | 0 | 0.600 [0.333, 0.867] |
+| shipped | with returned claims | 55 | 43 | 12 | 0 | 0.782 [0.673, 0.891] |
+| shipped | no returned claims | 79 | 58 | 21 | 0 | 0.734 [0.633, 0.823] |
+| urlfirst | all 134 | 134 | 104 | 30 | 0 | 0.776 [0.709, 0.843] |
+| urlfirst | answerable 119 | 119 | 97 | 22 | 0 | 0.815 [0.748, 0.882] |
+| urlfirst | controls 15 | 15 | 7 | 8 | 0 | 0.467 [0.200, 0.733] |
+| urlfirst | with returned claims | 109 | 80 | 29 | 0 | 0.734 [0.651, 0.807] |
+| urlfirst | no returned claims | 25 | 24 | 1 | 0 | 0.960 [0.880, 1.000] |
+
+Answer-level responsiveness, URL-first minus shipped: +0.0224 [-0.0224, 0.0672]
+Answers by type: shipped/clinical_explainer: 28/29=0.966; shipped/differential_or_workup: 25/25=1.000; shipped/guideline_comparison: 19/26=0.731; shipped/patient_faq: 25/26=0.962; shipped/study_result_numeric: 4/28=0.143; urlfirst/clinical_explainer: 27/29=0.931; urlfirst/differential_or_workup: 25/25=1.000; urlfirst/guideline_comparison: 21/26=0.808; urlfirst/patient_faq: 25/26=0.962; urlfirst/study_result_numeric: 6/28=0.214
+Answers by profile: shipped/deep: 62/67=0.925; shipped/standard: 39/67=0.582; urlfirst/deep: 62/67=0.925; urlfirst/standard: 42/67=0.627
+shipped: answer-level vs any-returned-claim-relevant cross-tab: answer_not&claim_not=32, answer_not&claim_relevant=1, answer_relevant&claim_not=100, answer_relevant&claim_relevant=1
+urlfirst: answer-level vs any-returned-claim-relevant cross-tab: answer_not&claim_not=29, answer_not&claim_relevant=1, answer_relevant&claim_not=101, answer_relevant&claim_relevant=3

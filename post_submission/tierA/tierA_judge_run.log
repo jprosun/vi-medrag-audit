@@ -1,0 +1,481 @@
+== questions: {"n": 134, "controls_marked_by": "probe_queries_v2.jsonl: source == 'rivf_grid_v2:out_of_corpus_control/<type>'", "n_controls": 15, "n_answerable": 119, "control_query_ids": ["rivf_051", "rivf_052", "rivf_053", "rivf_054", "rivf_055", "rivf_056", "rivf_057", "rivf_058", "rivf_059", "rivf_060", "rivf_061", "rivf_062", "rivf_063", "rivf_064", "rivf_065"], "n_per_type_all134": {"clinical_explainer": 29, "differential_or_workup": 25, "guideline_comparison": 26, "patient_faq": 26, "study_result_numeric": 28}, "n_per_type_controls": {"clinical_explainer": 5, "differential_or_workup": 1, "guideline_comparison": 2, "patient_faq": 3, "study_result_numeric": 4}, "n_per_type_answerable119": {"clinical_explainer": 24, "differential_or_workup": 24, "guideline_comparison": 24, "patient_faq": 23, "study_result_numeric": 24}}
+== sanity: {
+ "shipped": {
+  "retrieved_chunks": 4024,
+  "retrieved_from_urlless_stratum": 2472,
+  "share_urlless": 0.6143,
+  "claims_extracted": 351,
+  "claims_returned": 185,
+  "answers_with_zero_returned_claims": 79,
+  "uncitable_claims": 156,
+  "uncitable_urlless": 154,
+  "uncitable_chunk_unresolvable": 2,
+  "drop_reason_counts": {
+   "cited_record_not_citable": 147,
+   "span_not_found_in_cited_chunk": 17,
+   "chunk_id_not_resolvable": 2
+  },
+  "answer_mode_values": {
+   "standard": 134
+  },
+  "retrieval_profile_values": {
+   "standard": 67,
+   "deep": 67
+  }
+ },
+ "url_first": {
+  "retrieved_chunks": 3947,
+  "retrieved_from_urlless_stratum": 0,
+  "share_urlless": 0.0,
+  "claims_extracted": 379,
+  "claims_returned": 364,
+  "answers_with_zero_returned_claims": 25,
+  "uncitable_claims": 1,
+  "uncitable_urlless": 0,
+  "uncitable_chunk_unresolvable": 1,
+  "drop_reason_counts": {
+   "span_not_found_in_cited_chunk": 14,
+   "chunk_id_not_resolvable": 1
+  },
+  "answer_mode_values": {
+   "standard": 134
+  },
+  "retrieval_profile_values": {
+   "standard": 67,
+   "deep": 67
+  }
+ }
+}
+== TASK 1 agreement/kappa
+  shipped/entailment/original: ALL n=222 agree=220 raw=0.991 pe=0.6729 kappa=0.9725 | REAL n=185 agree=183 raw=0.9892 pe=0.9268 kappa=0.8524
+     A dist all: {'supported': 177, 'overstated': 0, 'not_supported': 38, 'unintelligible': 7}  B dist all: {'supported': 179, 'overstated': 0, 'not_supported': 38, 'unintelligible': 5}
+     A dist real: {'supported': 177, 'overstated': 0, 'not_supported': 1, 'unintelligible': 7}  B dist real: {'supported': 179, 'overstated': 0, 'not_supported': 1, 'unintelligible': 5}
+  shipped/relevance/original: ALL n=222 agree=217 raw=0.9775 pe=0.4963 kappa=0.9553 | REAL n=185 agree=180 raw=0.973 pe=0.5591 kappa=0.9387
+     A dist all: {'relevant': 4, 'partial': 127, 'not_relevant': 91}  B dist all: {'relevant': 4, 'partial': 128, 'not_relevant': 90}
+     A dist real: {'relevant': 4, 'partial': 127, 'not_relevant': 54}  B dist real: {'relevant': 4, 'partial': 128, 'not_relevant': 53}
+  url_first/entailment/original: ALL n=401 agree=397 raw=0.99 pe=0.7682 kappa=0.957 | REAL n=364 agree=360 raw=0.989 pe=0.9203 kappa=0.862
+     A dist all: {'supported': 349, 'overstated': 0, 'not_supported': 40, 'unintelligible': 12}  B dist all: {'supported': 349, 'overstated': 1, 'not_supported': 40, 'unintelligible': 11}
+     A dist real: {'supported': 349, 'overstated': 0, 'not_supported': 3, 'unintelligible': 12}  B dist real: {'supported': 349, 'overstated': 1, 'not_supported': 3, 'unintelligible': 11}
+  url_first/relevance/original: ALL n=401 agree=383 raw=0.9551 pe=0.5285 kappa=0.9048 | REAL n=364 agree=346 raw=0.9505 pe=0.5758 kappa=0.8834
+     A dist all: {'relevant': 10, 'partial': 260, 'not_relevant': 131}  B dist all: {'relevant': 9, 'partial': 260, 'not_relevant': 132}
+     A dist real: {'relevant': 10, 'partial': 259, 'not_relevant': 95}  B dist real: {'relevant': 9, 'partial': 259, 'not_relevant': 96}
+  url_first/entailment/matched: ALL n=401 agree=392 raw=0.9776 pe=0.7534 kappa=0.909 | REAL n=364 agree=355 raw=0.9753 pe=0.9029 kappa=0.7455
+     A dist all: {'supported': 344, 'overstated': 0, 'not_supported': 40, 'unintelligible': 17}  B dist all: {'supported': 347, 'overstated': 1, 'not_supported': 38, 'unintelligible': 15}
+     A dist real: {'supported': 344, 'overstated': 0, 'not_supported': 3, 'unintelligible': 17}  B dist real: {'supported': 347, 'overstated': 1, 'not_supported': 1, 'unintelligible': 15}
+  url_first/relevance/matched: ALL n=401 agree=395 raw=0.985 pe=0.5384 kappa=0.9676 | REAL n=364 agree=358 raw=0.9835 pe=0.5948 kappa=0.9593
+     A dist all: {'relevant': 12, 'partial': 271, 'not_relevant': 118}  B dist all: {'relevant': 15, 'partial': 267, 'not_relevant': 119}
+     A dist real: {'relevant': 12, 'partial': 270, 'not_relevant': 82}  B dist real: {'relevant': 15, 'partial': 266, 'not_relevant': 83}
+  shipped/entailment/pinned_rematch: ALL n=222 agree=220 raw=0.991 pe=0.6757 kappa=0.9722 | REAL n=185 agree=184 raw=0.9946 pe=0.9319 kappa=0.9207
+     A dist all: {'supported': 178, 'overstated': 0, 'not_supported': 37, 'unintelligible': 7}  B dist all: {'supported': 179, 'overstated': 0, 'not_supported': 38, 'unintelligible': 5}
+     A dist real: {'supported': 178, 'overstated': 0, 'not_supported': 1, 'unintelligible': 6}  B dist real: {'supported': 179, 'overstated': 0, 'not_supported': 1, 'unintelligible': 5}
+  shipped/relevance/pinned_rematch: ALL n=222 agree=217 raw=0.9775 pe=0.5015 kappa=0.9548 | REAL n=185 agree=180 raw=0.973 pe=0.5849 kappa=0.9349
+     A dist all: {'relevant': 7, 'partial': 138, 'not_relevant': 77}  B dist all: {'relevant': 7, 'partial': 133, 'not_relevant': 82}
+     A dist real: {'relevant': 7, 'partial': 137, 'not_relevant': 41}  B dist real: {'relevant': 7, 'partial': 132, 'not_relevant': 46}
+== TASK 2 final-label rates
+  shipped_original / entailment: all134 {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "supported": 179, "rate_supported": 0.9676, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0054, "unintelligible": 5, "rate_unintelligible": 0.027}
+      answerable119 {"n_claims": 160, "n_questions": 119, "n_questions_with_claims": 47, "supported": 155, "rate_supported": 0.9688, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0063, "unintelligible": 4, "rate_unintelligible": 0.025}
+      controls15 {"n_claims": 25, "n_questions": 15, "n_questions_with_claims": 8, "supported": 24, "rate_supported": 0.96, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 1, "rate_unintelligible": 0.04}
+      profile=standard {"n_claims": 107, "n_questions": 67, "n_questions_with_claims": 32, "supported": 102, "rate_supported": 0.9533, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 5, "rate_unintelligible": 0.0467}
+      profile=standard answerable {"n_claims": 92, "n_questions": 58, "n_questions_with_claims": 27, "supported": 88, "rate_supported": 0.9565, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 4, "rate_unintelligible": 0.0435}
+      profile=deep {"n_claims": 78, "n_questions": 67, "n_questions_with_claims": 23, "supported": 77, "rate_supported": 0.9872, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0128, "unintelligible": 0, "rate_unintelligible": 0.0}
+      profile=deep answerable {"n_claims": 68, "n_questions": 61, "n_questions_with_claims": 20, "supported": 67, "rate_supported": 0.9853, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0147, "unintelligible": 0, "rate_unintelligible": 0.0}
+      answer_mode literal {"standard": {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "supported": 179, "rate_supported": 0.9676, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0054, "unintelligible": 5, "rate_unintelligible": 0.027}}
+  shipped_original / relevance: all134 {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "relevant": 4, "rate_relevant": 0.0216, "partial": 129, "rate_partial": 0.6973, "not_relevant": 52, "rate_not_relevant": 0.2811}
+      answerable119 {"n_claims": 160, "n_questions": 119, "n_questions_with_claims": 47, "relevant": 4, "rate_relevant": 0.025, "partial": 120, "rate_partial": 0.75, "not_relevant": 36, "rate_not_relevant": 0.225}
+      controls15 {"n_claims": 25, "n_questions": 15, "n_questions_with_claims": 8, "relevant": 0, "rate_relevant": 0.0, "partial": 9, "rate_partial": 0.36, "not_relevant": 16, "rate_not_relevant": 0.64}
+      profile=standard {"n_claims": 107, "n_questions": 67, "n_questions_with_claims": 32, "relevant": 2, "rate_relevant": 0.0187, "partial": 74, "rate_partial": 0.6916, "not_relevant": 31, "rate_not_relevant": 0.2897}
+      profile=standard answerable {"n_claims": 92, "n_questions": 58, "n_questions_with_claims": 27, "relevant": 2, "rate_relevant": 0.0217, "partial": 68, "rate_partial": 0.7391, "not_relevant": 22, "rate_not_relevant": 0.2391}
+      profile=deep {"n_claims": 78, "n_questions": 67, "n_questions_with_claims": 23, "relevant": 2, "rate_relevant": 0.0256, "partial": 55, "rate_partial": 0.7051, "not_relevant": 21, "rate_not_relevant": 0.2692}
+      profile=deep answerable {"n_claims": 68, "n_questions": 61, "n_questions_with_claims": 20, "relevant": 2, "rate_relevant": 0.0294, "partial": 52, "rate_partial": 0.7647, "not_relevant": 14, "rate_not_relevant": 0.2059}
+      answer_mode literal {"standard": {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "relevant": 4, "rate_relevant": 0.0216, "partial": 129, "rate_partial": 0.6973, "not_relevant": 52, "rate_not_relevant": 0.2811}}
+  shipped_pinned_rematch(secondary) / entailment: all134 {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "supported": 179, "rate_supported": 0.9676, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0054, "unintelligible": 5, "rate_unintelligible": 0.027}
+      answerable119 {"n_claims": 160, "n_questions": 119, "n_questions_with_claims": 47, "supported": 155, "rate_supported": 0.9688, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0063, "unintelligible": 4, "rate_unintelligible": 0.025}
+      controls15 {"n_claims": 25, "n_questions": 15, "n_questions_with_claims": 8, "supported": 24, "rate_supported": 0.96, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 1, "rate_unintelligible": 0.04}
+      profile=standard {"n_claims": 107, "n_questions": 67, "n_questions_with_claims": 32, "supported": 102, "rate_supported": 0.9533, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 5, "rate_unintelligible": 0.0467}
+      profile=standard answerable {"n_claims": 92, "n_questions": 58, "n_questions_with_claims": 27, "supported": 88, "rate_supported": 0.9565, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 4, "rate_unintelligible": 0.0435}
+      profile=deep {"n_claims": 78, "n_questions": 67, "n_questions_with_claims": 23, "supported": 77, "rate_supported": 0.9872, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0128, "unintelligible": 0, "rate_unintelligible": 0.0}
+      profile=deep answerable {"n_claims": 68, "n_questions": 61, "n_questions_with_claims": 20, "supported": 67, "rate_supported": 0.9853, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0147, "unintelligible": 0, "rate_unintelligible": 0.0}
+      answer_mode literal {"standard": {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "supported": 179, "rate_supported": 0.9676, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0054, "unintelligible": 5, "rate_unintelligible": 0.027}}
+  shipped_pinned_rematch(secondary) / relevance: all134 {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "relevant": 7, "rate_relevant": 0.0378, "partial": 137, "rate_partial": 0.7405, "not_relevant": 41, "rate_not_relevant": 0.2216}
+      answerable119 {"n_claims": 160, "n_questions": 119, "n_questions_with_claims": 47, "relevant": 7, "rate_relevant": 0.0437, "partial": 125, "rate_partial": 0.7812, "not_relevant": 28, "rate_not_relevant": 0.175}
+      controls15 {"n_claims": 25, "n_questions": 15, "n_questions_with_claims": 8, "relevant": 0, "rate_relevant": 0.0, "partial": 12, "rate_partial": 0.48, "not_relevant": 13, "rate_not_relevant": 0.52}
+      profile=standard {"n_claims": 107, "n_questions": 67, "n_questions_with_claims": 32, "relevant": 4, "rate_relevant": 0.0374, "partial": 80, "rate_partial": 0.7477, "not_relevant": 23, "rate_not_relevant": 0.215}
+      profile=standard answerable {"n_claims": 92, "n_questions": 58, "n_questions_with_claims": 27, "relevant": 4, "rate_relevant": 0.0435, "partial": 74, "rate_partial": 0.8043, "not_relevant": 14, "rate_not_relevant": 0.1522}
+      profile=deep {"n_claims": 78, "n_questions": 67, "n_questions_with_claims": 23, "relevant": 3, "rate_relevant": 0.0385, "partial": 57, "rate_partial": 0.7308, "not_relevant": 18, "rate_not_relevant": 0.2308}
+      profile=deep answerable {"n_claims": 68, "n_questions": 61, "n_questions_with_claims": 20, "relevant": 3, "rate_relevant": 0.0441, "partial": 51, "rate_partial": 0.75, "not_relevant": 14, "rate_not_relevant": 0.2059}
+      answer_mode literal {"standard": {"n_claims": 185, "n_questions": 134, "n_questions_with_claims": 55, "relevant": 7, "rate_relevant": 0.0378, "partial": 137, "rate_partial": 0.7405, "not_relevant": 41, "rate_not_relevant": 0.2216}}
+  url_first_matched(primary for URL-first) / entailment: all134 {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "supported": 348, "rate_supported": 0.956, "overstated": 1, "rate_overstated": 0.0027, "not_supported": 3, "rate_not_supported": 0.0082, "unintelligible": 12, "rate_unintelligible": 0.033}
+      answerable119 {"n_claims": 323, "n_questions": 119, "n_questions_with_claims": 96, "supported": 308, "rate_supported": 0.9536, "overstated": 1, "rate_overstated": 0.0031, "not_supported": 3, "rate_not_supported": 0.0093, "unintelligible": 11, "rate_unintelligible": 0.0341}
+      controls15 {"n_claims": 41, "n_questions": 15, "n_questions_with_claims": 13, "supported": 40, "rate_supported": 0.9756, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 1, "rate_unintelligible": 0.0244}
+      profile=standard {"n_claims": 219, "n_questions": 67, "n_questions_with_claims": 65, "supported": 210, "rate_supported": 0.9589, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0046, "unintelligible": 8, "rate_unintelligible": 0.0365}
+      profile=standard answerable {"n_claims": 191, "n_questions": 58, "n_questions_with_claims": 56, "supported": 182, "rate_supported": 0.9529, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0052, "unintelligible": 8, "rate_unintelligible": 0.0419}
+      profile=deep {"n_claims": 145, "n_questions": 67, "n_questions_with_claims": 44, "supported": 138, "rate_supported": 0.9517, "overstated": 1, "rate_overstated": 0.0069, "not_supported": 2, "rate_not_supported": 0.0138, "unintelligible": 4, "rate_unintelligible": 0.0276}
+      profile=deep answerable {"n_claims": 132, "n_questions": 61, "n_questions_with_claims": 40, "supported": 126, "rate_supported": 0.9545, "overstated": 1, "rate_overstated": 0.0076, "not_supported": 2, "rate_not_supported": 0.0152, "unintelligible": 3, "rate_unintelligible": 0.0227}
+      answer_mode literal {"standard": {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "supported": 348, "rate_supported": 0.956, "overstated": 1, "rate_overstated": 0.0027, "not_supported": 3, "rate_not_supported": 0.0082, "unintelligible": 12, "rate_unintelligible": 0.033}}
+  url_first_matched(primary for URL-first) / relevance: all134 {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "relevant": 13, "rate_relevant": 0.0357, "partial": 268, "rate_partial": 0.7363, "not_relevant": 83, "rate_not_relevant": 0.228}
+      answerable119 {"n_claims": 323, "n_questions": 119, "n_questions_with_claims": 96, "relevant": 12, "rate_relevant": 0.0372, "partial": 252, "rate_partial": 0.7802, "not_relevant": 59, "rate_not_relevant": 0.1827}
+      controls15 {"n_claims": 41, "n_questions": 15, "n_questions_with_claims": 13, "relevant": 1, "rate_relevant": 0.0244, "partial": 16, "rate_partial": 0.3902, "not_relevant": 24, "rate_not_relevant": 0.5854}
+      profile=standard {"n_claims": 219, "n_questions": 67, "n_questions_with_claims": 65, "relevant": 9, "rate_relevant": 0.0411, "partial": 162, "rate_partial": 0.7397, "not_relevant": 48, "rate_not_relevant": 0.2192}
+      profile=standard answerable {"n_claims": 191, "n_questions": 58, "n_questions_with_claims": 56, "relevant": 8, "rate_relevant": 0.0419, "partial": 149, "rate_partial": 0.7801, "not_relevant": 34, "rate_not_relevant": 0.178}
+      profile=deep {"n_claims": 145, "n_questions": 67, "n_questions_with_claims": 44, "relevant": 4, "rate_relevant": 0.0276, "partial": 106, "rate_partial": 0.731, "not_relevant": 35, "rate_not_relevant": 0.2414}
+      profile=deep answerable {"n_claims": 132, "n_questions": 61, "n_questions_with_claims": 40, "relevant": 4, "rate_relevant": 0.0303, "partial": 103, "rate_partial": 0.7803, "not_relevant": 25, "rate_not_relevant": 0.1894}
+      answer_mode literal {"standard": {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "relevant": 13, "rate_relevant": 0.0357, "partial": 268, "rate_partial": 0.7363, "not_relevant": 83, "rate_not_relevant": 0.228}}
+  url_first_original(secondary) / entailment: all134 {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "supported": 350, "rate_supported": 0.9615, "overstated": 1, "rate_overstated": 0.0027, "not_supported": 3, "rate_not_supported": 0.0082, "unintelligible": 10, "rate_unintelligible": 0.0275}
+      answerable119 {"n_claims": 323, "n_questions": 119, "n_questions_with_claims": 96, "supported": 310, "rate_supported": 0.9598, "overstated": 1, "rate_overstated": 0.0031, "not_supported": 3, "rate_not_supported": 0.0093, "unintelligible": 9, "rate_unintelligible": 0.0279}
+      controls15 {"n_claims": 41, "n_questions": 15, "n_questions_with_claims": 13, "supported": 40, "rate_supported": 0.9756, "overstated": 0, "rate_overstated": 0.0, "not_supported": 0, "rate_not_supported": 0.0, "unintelligible": 1, "rate_unintelligible": 0.0244}
+      profile=standard {"n_claims": 219, "n_questions": 67, "n_questions_with_claims": 65, "supported": 210, "rate_supported": 0.9589, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0046, "unintelligible": 8, "rate_unintelligible": 0.0365}
+      profile=standard answerable {"n_claims": 191, "n_questions": 58, "n_questions_with_claims": 56, "supported": 182, "rate_supported": 0.9529, "overstated": 0, "rate_overstated": 0.0, "not_supported": 1, "rate_not_supported": 0.0052, "unintelligible": 8, "rate_unintelligible": 0.0419}
+      profile=deep {"n_claims": 145, "n_questions": 67, "n_questions_with_claims": 44, "supported": 140, "rate_supported": 0.9655, "overstated": 1, "rate_overstated": 0.0069, "not_supported": 2, "rate_not_supported": 0.0138, "unintelligible": 2, "rate_unintelligible": 0.0138}
+      profile=deep answerable {"n_claims": 132, "n_questions": 61, "n_questions_with_claims": 40, "supported": 128, "rate_supported": 0.9697, "overstated": 1, "rate_overstated": 0.0076, "not_supported": 2, "rate_not_supported": 0.0152, "unintelligible": 1, "rate_unintelligible": 0.0076}
+      answer_mode literal {"standard": {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "supported": 350, "rate_supported": 0.9615, "overstated": 1, "rate_overstated": 0.0027, "not_supported": 3, "rate_not_supported": 0.0082, "unintelligible": 10, "rate_unintelligible": 0.0275}}
+  url_first_original(secondary) / relevance: all134 {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "relevant": 10, "rate_relevant": 0.0275, "partial": 254, "rate_partial": 0.6978, "not_relevant": 100, "rate_not_relevant": 0.2747}
+      answerable119 {"n_claims": 323, "n_questions": 119, "n_questions_with_claims": 96, "relevant": 9, "rate_relevant": 0.0279, "partial": 240, "rate_partial": 0.743, "not_relevant": 74, "rate_not_relevant": 0.2291}
+      controls15 {"n_claims": 41, "n_questions": 15, "n_questions_with_claims": 13, "relevant": 1, "rate_relevant": 0.0244, "partial": 14, "rate_partial": 0.3415, "not_relevant": 26, "rate_not_relevant": 0.6341}
+      profile=standard {"n_claims": 219, "n_questions": 67, "n_questions_with_claims": 65, "relevant": 6, "rate_relevant": 0.0274, "partial": 156, "rate_partial": 0.7123, "not_relevant": 57, "rate_not_relevant": 0.2603}
+      profile=standard answerable {"n_claims": 191, "n_questions": 58, "n_questions_with_claims": 56, "relevant": 5, "rate_relevant": 0.0262, "partial": 143, "rate_partial": 0.7487, "not_relevant": 43, "rate_not_relevant": 0.2251}
+      profile=deep {"n_claims": 145, "n_questions": 67, "n_questions_with_claims": 44, "relevant": 4, "rate_relevant": 0.0276, "partial": 98, "rate_partial": 0.6759, "not_relevant": 43, "rate_not_relevant": 0.2966}
+      profile=deep answerable {"n_claims": 132, "n_questions": 61, "n_questions_with_claims": 40, "relevant": 4, "rate_relevant": 0.0303, "partial": 97, "rate_partial": 0.7348, "not_relevant": 31, "rate_not_relevant": 0.2348}
+      answer_mode literal {"standard": {"n_claims": 364, "n_questions": 134, "n_questions_with_claims": 109, "relevant": 10, "rate_relevant": 0.0275, "partial": 254, "rate_partial": 0.6978, "not_relevant": 100, "rate_not_relevant": 0.2747}}
+  answer-level: {"shipped_original": {"answers_with_claims": 55, "answers_with_a_relevant_claim": 4, "answers_with_only_not_relevant_claims": 15}, "shipped_pinned_rematch(secondary)": {"answers_with_claims": 55, "answers_with_a_relevant_claim": 5, "answers_with_only_not_relevant_claims": 12}, "url_first_matched(primary for URL-first)": {"answers_with_claims": 109, "answers_with_a_relevant_claim": 10, "answers_with_only_not_relevant_claims": 26}, "url_first_original(secondary)": {"answers_with_claims": 109, "answers_with_a_relevant_claim": 10, "answers_with_only_not_relevant_claims": 29}}
+  joint ent x rel: {"shipped_original": {"not_supported|not_relevant": 1, "supported|not_relevant": 49, "supported|partial": 126, "supported|relevant": 4, "unintelligible|not_relevant": 2, "unintelligible|partial": 3, "supported_and_not_relevant": 49}, "shipped_pinned_rematch(secondary)": {"not_supported|not_relevant": 1, "supported|not_relevant": 40, "supported|partial": 132, "supported|relevant": 7, "unintelligible|partial": 5, "supported_and_not_relevant": 40}, "url_first_matched(primary for URL-first)": {"not_supported|partial": 3, "overstated|not_relevant": 1, "supported|not_relevant": 78, "supported|partial": 257, "supported|relevant": 13, "unintelligible|not_relevant": 4, "unintelligible|partial": 8, "supported_and_not_relevant": 78}, "url_first_original(secondary)": {"not_supported|partial": 3, "overstated|not_relevant": 1, "supported|not_relevant": 95, "supported|partial": 245, "supported|relevant": 10, "unintelligible|not_relevant": 4, "unintelligible|partial": 6, "supported_and_not_relevant": 95}}
+== TASK 3 retention
+  shipped all_134 overall 185/351 = 0.5271 CI [0.4307, 0.6203]
+      type clinical_explainer       nq= 29  65/ 94 = 0.6915 CI [0.5, 0.8684]
+      type differential_or_workup   nq= 25  14/ 28 = 0.5 CI [0.1667, 0.7857]
+      type guideline_comparison     nq= 26  64/ 90 = 0.7111 CI [0.5227, 0.8721]
+      type patient_faq              nq= 26   9/ 57 = 0.1579 CI [0.0, 0.3333]
+      type study_result_numeric     nq= 28  33/ 82 = 0.4024 CI [0.2195, 0.5854]
+      max {'type': 'guideline_comparison', 'retention': 0.7111} min {'type': 'patient_faq', 'retention': 0.1579} ratio 4.503
+      profile standard nq= 67 107/208 = 0.5144 CI [0.3883, 0.6377]
+      profile deep     nq= 67  78/143 = 0.5455 CI [0.3969, 0.686]
+  shipped answerable_119 overall 160/312 = 0.5128 CI [0.4094, 0.6134]
+      type clinical_explainer       nq= 24  56/ 82 = 0.6829 CI [0.475, 0.8675]
+      type differential_or_workup   nq= 24  14/ 28 = 0.5 CI [0.1739, 0.7778]
+      type guideline_comparison     nq= 24  57/ 83 = 0.6867 CI [0.4868, 0.8539]
+      type patient_faq              nq= 23   6/ 49 = 0.1224 CI [0.0, 0.3125]
+      type study_result_numeric     nq= 24  27/ 70 = 0.3857 CI [0.1818, 0.5833]
+      max {'type': 'guideline_comparison', 'retention': 0.6867} min {'type': 'patient_faq', 'retention': 0.1224} ratio 5.61
+      profile standard nq= 58  92/184 = 0.5 CI [0.3646, 0.6296]
+      profile deep     nq= 61  68/128 = 0.5312 CI [0.3684, 0.6853]
+  url_first all_134 overall 364/379 = 0.9604 CI [0.931, 0.9839]
+      type clinical_explainer       nq= 29 101/101 = 1.0 CI [1.0, 1.0]
+      type differential_or_workup   nq= 25  16/ 22 = 0.7273 CI [0.4286, 0.9167]
+      type guideline_comparison     nq= 26  96/ 99 = 0.9697 CI [0.9043, 1.0]
+      type patient_faq              nq= 26  67/ 71 = 0.9437 CI [0.8727, 1.0]
+      type study_result_numeric     nq= 28  84/ 86 = 0.9767 CI [0.9333, 1.0]
+      max {'type': 'clinical_explainer', 'retention': 1.0} min {'type': 'differential_or_workup', 'retention': 0.7273} ratio 1.375
+      profile standard nq= 67 219/219 = 1.0 CI [1.0, 1.0]
+      profile deep     nq= 67 145/160 = 0.9062 CI [0.8397, 0.9605]
+  url_first answerable_119 overall 323/334 = 0.9671 CI [0.9396, 0.9886]
+      type clinical_explainer       nq= 24  85/ 85 = 1.0 CI [1.0, 1.0]
+      type differential_or_workup   nq= 24  16/ 22 = 0.7273 CI [0.4286, 0.92]
+      type guideline_comparison     nq= 24  89/ 92 = 0.9674 CI [0.8966, 1.0]
+      type patient_faq              nq= 23  61/ 63 = 0.9683 CI [0.9152, 1.0]
+      type study_result_numeric     nq= 24  72/ 72 = 1.0 CI [1.0, 1.0]
+      max {'type': 'clinical_explainer', 'retention': 1.0} min {'type': 'differential_or_workup', 'retention': 0.7273} ratio 1.375
+      profile standard nq= 58 191/191 = 1.0 CI [1.0, 1.0]
+      profile deep     nq= 61 132/143 = 0.9231 CI [0.8548, 0.9744]
+== TASK 4 zero-claim answers
+{
+ "all_134": {
+  "shipped": {
+   "point": 0.5896,
+   "ci95": [
+    0.5075,
+    0.6716
+   ],
+   "se_bootstrap": 0.04247,
+   "draws_used": 5000,
+   "clusters": 134,
+   "seed": 0,
+   "count": 79
+  },
+  "url_first": {
+   "point": 0.1866,
+   "ci95": [
+    0.1194,
+    0.2537
+   ],
+   "se_bootstrap": 0.03384,
+   "draws_used": 5000,
+   "clusters": 134,
+   "seed": 0,
+   "count": 25
+  },
+  "difference_url_first_minus_shipped": {
+   "point": -0.403,
+   "ci95": [
+    -0.4925,
+    -0.3134
+   ],
+   "se_bootstrap": 0.04378,
+   "draws_used": 5000,
+   "clusters": 134,
+   "seed": 0,
+   "count_difference": -54
+  },
+  "crosstab": {
+   "zero_in_both": 24,
+   "zero_shipped_only": 55,
+   "zero_url_first_only": 1,
+   "claims_in_both": 54
+  }
+ },
+ "answerable_119": {
+  "shipped": {
+   "point": 0.605,
+   "ci95": [
+    0.521,
+    0.6891
+   ],
+   "se_bootstrap": 0.04461,
+   "draws_used": 5000,
+   "clusters": 119,
+   "seed": 0,
+   "count": 72
+  },
+  "url_first": {
+   "point": 0.1933,
+   "ci95": [
+    0.1261,
+    0.2689
+   ],
+   "se_bootstrap": 0.03604,
+   "draws_used": 5000,
+   "clusters": 119,
+   "seed": 0,
+   "count": 23
+  },
+  "difference_url_first_minus_shipped": {
+   "point": -0.4118,
+   "ci95": [
+    -0.5042,
+    -0.3193
+   ],
+   "se_bootstrap": 0.04687,
+   "draws_used": 5000,
+   "clusters": 119,
+   "seed": 0,
+   "count_difference": -49
+  },
+  "crosstab": {
+   "zero_in_both": 22,
+   "zero_shipped_only": 50,
+   "zero_url_first_only": 1,
+   "claims_in_both": 46
+  }
+ }
+}
+== TASK 5 within-question
+  primary: shipped_original vs url_first_matched / entailment: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 179, 'rate': 0.9728} UF {'n_claims': 185, 'positives': 178, 'rate': 0.9622}
+      pooled diff {'point': -0.0107, 'ci95': [-0.0329, 0.0107], 'se_bootstrap': 0.01078, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': -0.0123, 'ci95': [-0.0355, 0.0077], 'se_bootstrap': 0.01078, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 1, 'shipped_higher': 3, 'tied': 50}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 170, 'rate': 0.9497}, 'label_counts': {'supported': 170, 'overstated': 1, 'unintelligible': 5, 'not_supported': 3}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_supported': 1}}
+      all-134 pooled diff {'point': -0.0115, 'ci95': [-0.0367, 0.0142], 'se_bootstrap': 0.01291, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+  primary: shipped_original vs url_first_matched / relevance: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 4, 'rate': 0.0217} UF {'n_claims': 185, 'positives': 7, 'rate': 0.0378}
+      pooled diff {'point': 0.0161, 'ci95': [-0.0004, 0.0503], 'se_bootstrap': 0.01616, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': 0.0139, 'ci95': [0.0, 0.0417], 'se_bootstrap': 0.01389, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 1, 'shipped_higher': 0, 'tied': 53}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 6, 'rate': 0.0335}, 'label_counts': {'partial': 138, 'not_relevant': 35, 'relevant': 6}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_relevant': 1}}
+      all-134 pooled diff {'point': 0.0141, 'ci95': [-0.0079, 0.0406], 'se_bootstrap': 0.01227, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+  secondary: shipped_pinned_rematch vs url_first_matched (artifact's matched contrast) / entailment: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 179, 'rate': 0.9728} UF {'n_claims': 185, 'positives': 178, 'rate': 0.9622}
+      pooled diff {'point': -0.0107, 'ci95': [-0.0332, 0.0108], 'se_bootstrap': 0.0109, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': -0.0139, 'ci95': [-0.037, 0.0077], 'se_bootstrap': 0.01157, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 1, 'shipped_higher': 3, 'tied': 50}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 170, 'rate': 0.9497}, 'label_counts': {'supported': 170, 'overstated': 1, 'unintelligible': 5, 'not_supported': 3}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_supported': 1}}
+      all-134 pooled diff {'point': -0.0115, 'ci95': [-0.0391, 0.0154], 'se_bootstrap': 0.01396, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+  secondary: shipped_pinned_rematch vs url_first_matched (artifact's matched contrast) / relevance: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 7, 'rate': 0.038} UF {'n_claims': 185, 'positives': 7, 'rate': 0.0378}
+      pooled diff {'point': -0.0002, 'ci95': [-0.0163, 0.0159], 'se_bootstrap': 0.0077, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': 0.0, 'ci95': [-0.0139, 0.0139], 'se_bootstrap': 0.0066, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 1, 'shipped_higher': 1, 'tied': 52}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 6, 'rate': 0.0335}, 'label_counts': {'partial': 138, 'not_relevant': 35, 'relevant': 6}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_relevant': 1}}
+      all-134 pooled diff {'point': -0.0021, 'ci95': [-0.0267, 0.0209], 'se_bootstrap': 0.01194, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+  secondary: shipped_original vs url_first_original (confounded) / entailment: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 179, 'rate': 0.9728} UF {'n_claims': 185, 'positives': 178, 'rate': 0.9622}
+      pooled diff {'point': -0.0107, 'ci95': [-0.0371, 0.0161], 'se_bootstrap': 0.01329, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': -0.0123, 'ci95': [-0.037, 0.0123], 'se_bootstrap': 0.01269, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 2, 'shipped_higher': 4, 'tied': 48}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 172, 'rate': 0.9609}, 'label_counts': {'supported': 172, 'overstated': 1, 'unintelligible': 3, 'not_supported': 3}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_supported': 1}}
+      all-134 pooled diff {'point': -0.006, 'ci95': [-0.0298, 0.0195], 'se_bootstrap': 0.01256, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+  secondary: shipped_original vs url_first_original (confounded) / relevance: sets {'claims_in_both_arms': 54, 'url_first_only': 55, 'shipped_only': 1, 'neither': 24}
+      both-set shipped {'n_claims': 184, 'positives': 4, 'rate': 0.0217} UF {'n_claims': 185, 'positives': 4, 'rate': 0.0216}
+      pooled diff {'point': -0.0001, 'ci95': [-0.0005, 0.0], 'se_bootstrap': 0.00014, 'draws_used': 5000, 'clusters': 54, 'seed': 0}
+      mean per-q diff {'point': 0.0, 'ci95': [0.0, 0.0], 'se_bootstrap': 0.0, 'draws_used': 5000, 'clusters': 54, 'seed': 0} signs {'uf_higher': 0, 'shipped_higher': 0, 'tied': 54}
+      UF-only {'url_first': {'n_claims': 179, 'positives': 6, 'rate': 0.0335}, 'label_counts': {'partial': 133, 'not_relevant': 40, 'relevant': 6}}  shipped-only {'shipped': {'n_claims': 1, 'positives': 0, 'rate': 0.0}, 'label_counts': {'not_relevant': 1}}
+      all-134 pooled diff {'point': 0.0059, 'ci95': [-0.0101, 0.0221], 'se_bootstrap': 0.00817, 'draws_used': 5000, 'clusters': 134, 'seed': 0}
+== TASK 6 MDD
+{
+ "multiplier": 2.8016,
+ "formula": "MDD = (z_{1-alpha/2} + z_{power}) x SE = (1.960 + 0.842) x SE = 2.80 x SE; relative = MDD / 0.036",
+ "primary: shipped_original vs url_first_matched": {
+  "entailment/all_134": {
+   "se": 0.01291,
+   "mdd_2.80se": 0.0361,
+   "mdd_exact_z": 0.0362,
+   "relative_to_0.036": null
+  },
+  "entailment/both_set": {
+   "se": 0.01078,
+   "mdd_2.80se": 0.0302,
+   "mdd_exact_z": 0.0302,
+   "relative_to_0.036": null
+  },
+  "relevance/all_134": {
+   "se": 0.01227,
+   "mdd_2.80se": 0.0344,
+   "mdd_exact_z": 0.0344,
+   "relative_to_0.036": 0.954
+  },
+  "relevance/both_set": {
+   "se": 0.01616,
+   "mdd_2.80se": 0.0452,
+   "mdd_exact_z": 0.0453,
+   "relative_to_0.036": 1.257
+  }
+ },
+ "secondary: shipped_pinned_rematch vs url_first_matched (artifact's matched contrast)": {
+  "entailment/all_134": {
+   "se": 0.01396,
+   "mdd_2.80se": 0.0391,
+   "mdd_exact_z": 0.0391,
+   "relative_to_0.036": null
+  },
+  "entailment/both_set": {
+   "se": 0.0109,
+   "mdd_2.80se": 0.0305,
+   "mdd_exact_z": 0.0305,
+   "relative_to_0.036": null
+  },
+  "relevance/all_134": {
+   "se": 0.01194,
+   "mdd_2.80se": 0.0334,
+   "mdd_exact_z": 0.0335,
+   "relative_to_0.036": 0.929
+  },
+  "relevance/both_set": {
+   "se": 0.0077,
+   "mdd_2.80se": 0.0216,
+   "mdd_exact_z": 0.0216,
+   "relative_to_0.036": 0.599
+  }
+ },
+ "secondary: shipped_original vs url_first_original (confounded)": {
+  "entailment/all_134": {
+   "se": 0.01256,
+   "mdd_2.80se": 0.0352,
+   "mdd_exact_z": 0.0352,
+   "relative_to_0.036": null
+  },
+  "entailment/both_set": {
+   "se": 0.01329,
+   "mdd_2.80se": 0.0372,
+   "mdd_exact_z": 0.0372,
+   "relative_to_0.036": null
+  },
+  "relevance/all_134": {
+   "se": 0.00817,
+   "mdd_2.80se": 0.0229,
+   "mdd_exact_z": 0.0229,
+   "relative_to_0.036": 0.635
+  },
+  "relevance/both_set": {
+   "se": 0.00014,
+   "mdd_2.80se": 0.0004,
+   "mdd_exact_z": 0.0004,
+   "relative_to_0.036": 0.011
+  }
+ }
+}
+== TASK 7 verifier {
+ "shipped": {
+  "verdicts": {
+   "revise": 79,
+   "pass": 55
+  },
+  "crosstab_verdict_x_has_returned_claims": {
+   "pass|has_claims": 38,
+   "pass|zero_claims": 17,
+   "revise|has_claims": 17,
+   "revise|zero_claims": 62
+  },
+  "verdicts_answerable_119": {
+   "revise": 73,
+   "pass": 46
+  },
+  "verdicts_controls_15": {
+   "pass": 9,
+   "revise": 6
+  }
+ },
+ "url_first": {
+  "verdicts": {
+   "pass": 88,
+   "revise": 45,
+   "block": 1
+  },
+  "crosstab_verdict_x_has_returned_claims": {
+   "block|has_claims": 1,
+   "pass|has_claims": 76,
+   "pass|zero_claims": 12,
+   "revise|has_claims": 32,
+   "revise|zero_claims": 13
+  },
+  "verdicts_answerable_119": {
+   "pass": 80,
+   "revise": 39
+  },
+  "verdicts_controls_15": {
+   "pass": 8,
+   "revise": 6,
+   "block": 1
+  },
+  "blocked_query_ids": {
+   "rivf_065": {
+    "claims_displayed": 3,
+    "claims_total": 5,
+    "type": "study_result_numeric",
+    "is_control": true
+   }
+  }
+ }
+}
+== TASK 8 {
+ "judge_configuration_md_sentence": "The shipped *relevance* codebook additionally told its judge that support was \"already established at 96.8 % of cases\" — a numeric prior from the other instrument, present in one arm only.",
+ "relevance_prompt_v1_txt_sentence": "A separate measurement already established that the cited passage SUPPORTS the claim in 96.8% of cases.",
+ "relevance_judgement_shipped_js_sentence": "A separate measurement already established that the cited passage SUPPORTS the claim in 96.8% of cases.",
+ "relevance_judgement_urlfirst_js_counterpart_sentence": "A separate measurement establishes whether the cited passage SUPPORTS the claim.",
+ "urlfirst_original_codebook_contains_96.8": false,
+ "byte_check": {
+  "prompt_file_sha256": "d621532e5daea31f64ec49f96ee27a06a31f14aca4cbb1e988ebfc75db88bfed",
+  "prompt_file_bytes": 2755,
+  "prompt_file_has_crlf": false,
+  "shipped_js_CODEBOOK_literal_sha256_raw": "29aae538f51962a5c3d4125762a6b1a6fcf60179c082f055ec511993ea768617",
+  "shipped_js_CODEBOOK_literal_sha256_stripped_outer_newlines": "1b123055907fac3ad3a0388418c96387f4c4e588a4be6ce05de950147e258f2f",
+  "prompt_file_sha256_stripped_outer_newlines": "1b123055907fac3ad3a0388418c96387f4c4e588a4be6ce05de950147e258f2f",
+  "prompt_txt_equals_js_literal_raw": false,
+  "prompt_txt_equals_js_literal_modulo_outer_newlines": true,
+  "prompt_txt_equals_js_literal_modulo_outer_newlines_and_crlf": true,
+  "hash_recorded_in_judge_rerun_comparison_v1.prompts_held_constant.relevance": "d621532e5daea31f64ec49f96ee27a06a31f14aca4cbb1e988ebfc75db88bfed"
+ },
+ "matched_rejudge_js_evidence": {
+  "cfg_prompt_line": "prompt: `${B}/judging/relevance_prompt_v1.txt`,",
+  "instruction_line": "`First read this file in full and follow it exactly as your codebook. It is the whole of",
+  "header_comment_lines": [
+   "//              that support was \"already established at 96.8% of cases\" -- a numeric prior",
+   "// arm: shipped codebook byte for byte (judging/*_prompt_v1.txt), model pinned, the original",
+   "+ 'shipped codebook byte for byte, model pinned, original adjudicator prompt, batch size 28 '"
+  ]
+ },
+ "arm_matched_rejudge_v1_json_codebook_source": "judging/*_prompt_v1.txt, extracted byte-for-byte from the SHIPPED scripts",
+ "arm_matched_rejudge_v1_json_what_this_is": "The URL-first arm re-judged under the exact instrument configuration of the shipped arm -- shipped codebook byte for byte, model pinned, original adjudicator prompt, batch size 28 -- so the between-arm contrast crosses only the arm. Plus the disagreements of the shipped pinned re-run, disagreements re-adjudicated under the same prompt.",
+ "delivery_difference": "In the shipped run the codebook text was inlined into each judge's prompt (template literal CODEBOOK); in the matched re-judge each judge was told to read judging/relevance_prompt_v1.txt and follow it. The codebook TEXT is byte-identical modulo the template literal's outer newlines (see byte_check); the surrounding task wording and the served model (claude-fable-5-1 for the shipped relevance run, claude-opus-5 for the matched re-judge) are not identical.",
+ "served_models_quoted_from_JUDGE_CONFIGURATION": [
+  "| Entailment, shipped arm | `claude-opus-5` |",
+  "| Relevance, shipped arm | `claude-fable-5-1` |",
+  "| Entailment, URL-first arm | `claude-fable-5-1` |",
+  "| Relevance, URL-first arm | `claude-fable-5-1` |",
+  "| The pinned re-run, both instruments | `claude-opus-5` (alias `opus` requested) |"
+ ]
+}
+== reproduce artifact matched contrast: {"entailment": {"sign_convention": "shipped(pinned_rematch) minus url_first(matched), as in the artifact", "ci95_artifact_convention_seed_20260907": [-0.0164, 0.0386], "artifact_file_value": [-0.0163762774, 0.0386060997]}, "relevance": {"sign_convention": "shipped(pinned_rematch) minus url_first(matched), as in the artifact", "ci95_artifact_convention_seed_20260907": [-0.0198, 0.0265], "artifact_file_value": [-0.019792567, 0.0265492011]}}
+WROTE post_submission/tierA\tierA_judge_results.json

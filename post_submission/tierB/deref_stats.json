@@ -1,0 +1,68 @@
+{
+  "shipped/returned": {
+    "n": 185,
+    "counts": {
+      "article_title_match": 167,
+      "issue_index": 17,
+      "reached_no_article_metadata": 1
+    },
+    "share_article_match": 0.9027,
+    "ci_article": [
+      0.8177,
+      0.9724
+    ],
+    "share_reachable_any": 0.9946
+  },
+  "shipped/withheld": {
+    "n": 166,
+    "counts": {
+      "no_url": 156,
+      "article_title_match": 3,
+      "issue_index": 7
+    }
+  },
+  "urlfirst/returned": {
+    "n": 364,
+    "counts": {
+      "article_title_match": 283,
+      "issue_index": 71,
+      "robots_refused": 6,
+      "reached_no_article_metadata": 4
+    },
+    "share_article_match": 0.7775,
+    "ci_article": [
+      0.6932,
+      0.8548
+    ],
+    "share_reachable_any": 0.9725
+  },
+  "urlfirst/withheld": {
+    "n": 15,
+    "counts": {
+      "article_title_match": 6,
+      "no_url": 1,
+      "issue_index": 8
+    }
+  },
+  "distinct_urls": {
+    "n": 115,
+    "counts": {
+      "robots_refused": 2,
+      "reached_no_article_metadata": 2,
+      "issue_index": 23,
+      "article_title_match": 88
+    }
+  },
+  "shipped/strict_retention": {
+    "article_match_returned": 167,
+    "c0": 351,
+    "retention_strict": 0.4758,
+    "retention_binary": 0.5271
+  },
+  "urlfirst/strict_retention": {
+    "article_match_returned": 283,
+    "c0": 379,
+    "retention_strict": 0.7467,
+    "retention_binary": 0.9604
+  }
+}

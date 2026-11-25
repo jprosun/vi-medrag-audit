@@ -36,30 +36,6 @@
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
-      "path": "CITATION.cff",
-      "source_path": "benchmark/rivf/public/CITATION.cff",
-      "sha256": "e8e17c8c53e2fc3af319f139ac593b0ca263c0f7053cb0d97d2cdffb8658d4df",
-      "source_sha256": "e8e17c8c53e2fc3af319f139ac593b0ca263c0f7053cb0d97d2cdffb8658d4df",
-      "bytes": 383,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
-      "path": "EVALUATION.md",
-      "source_path": "benchmark/rivf/public/EVALUATION.md",
-      "sha256": "753c00ae86981fff1d36c73cd660fd6b6476811389e7030da05e533ca570b529",
-      "source_sha256": "753c00ae86981fff1d36c73cd660fd6b6476811389e7030da05e533ca570b529",
-      "bytes": 7385,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
-      "path": "README.md",
-      "source_path": "benchmark/rivf/RELEASE-README.md",
-      "sha256": "0573d45037dc57257de70da7105c4652dc07921e35a5e8d3971452c1248d3d5f",
-      "source_sha256": "0573d45037dc57257de70da7105c4652dc07921e35a5e8d3971452c1248d3d5f",
-      "bytes": 4084,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
       "path": "benchmark/datasets/probe_queries_v2.jsonl",
       "source_path": "benchmark/datasets/probe_queries_v2.jsonl",
       "sha256": "76e97cd55b13e1ef104a0f133fe15ac33b5d1c66bd59bbc09bae72690e75c85b",
@@ -196,30 +172,6 @@
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
-      "path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
-      "source_path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
-      "sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
-      "source_sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
-      "bytes": 4576,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
-      "path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
-      "source_path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
-      "sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
-      "source_sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
-      "bytes": 6265,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
-      "path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
-      "source_path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
-      "sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
-      "source_sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
-      "bytes": 3568,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
       "path": "benchmark/rivf/arm_comparison_rivf134.json",
       "source_path": "benchmark/rivf/arm_comparison_rivf134.json",
       "sha256": "a1405a1caaa2b0ee06b2b7fa3b685873939477d3fba849249e09d9dbfb2d0fe7",
@@ -308,6 +260,14 @@
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
+      "path": "benchmark/rivf/build_probe_set.py",
+      "source_path": "benchmark/rivf/build_probe_set.py",
+      "sha256": "a6dd70db6e29dbdd1c457a1fa485c119218ada9cd5d32dba5a6f2e195f6529b8",
+      "source_sha256": "a6dd70db6e29dbdd1c457a1fa485c119218ada9cd5d32dba5a6f2e195f6529b8",
+      "bytes": 14833,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
       "path": "benchmark/rivf/build_relevance_model_set.py",
       "source_path": "benchmark/rivf/build_relevance_model_set.py",
       "sha256": "5308f3e07eceb454ccfa5d312d4379a2428ce1a5341e13dddc10cb08286c5302",
@@ -361,6 +321,14 @@
       "sha256": "32c19c7c779a0dcd0cfe5660ab31d518defb959c485ac4b4f4ae78b8e914da34",
       "source_sha256": "32c19c7c779a0dcd0cfe5660ab31d518defb959c485ac4b4f4ae78b8e914da34",
       "bytes": 11760,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
+      "source_path": "benchmark/rivf/ENTAILMENT-CODEBOOK.md",
+      "sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
+      "source_sha256": "1ed863456a2a12f798277c53ae756db81552fd1af028cf49a648866329f6fd17",
+      "bytes": 4576,
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
@@ -500,14 +468,6 @@
       "treatment": "JSON normalized; source passages/contact addresses withheld"
     },
     {
-      "path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
-      "source_path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
-      "sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
-      "source_sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
-      "bytes": 7131,
-      "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
       "path": "benchmark/rivf/judging/entailment-judgement-shipped.js",
       "source_path": "benchmark/rivf/judging/entailment-judgement-shipped.js",
       "sha256": "df06724be4ecb5f19bf37a7a0b8bc97bf18135c5e506228b1389ea2b0e929c64",
@@ -529,6 +489,14 @@
       "sha256": "eb7b43177233da7c2f6ebfb9cb8ebb9f1b54fa2e7611d70c4d97d6b6f4a0ff3a",
       "source_sha256": "eb7b43177233da7c2f6ebfb9cb8ebb9f1b54fa2e7611d70c4d97d6b6f4a0ff3a",
       "bytes": 3876,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
+      "path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
+      "source_path": "benchmark/rivf/judging/JUDGE-CONFIGURATION.md",
+      "sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
+      "source_sha256": "79b5b9d81db958fd3a7d5baa27ffe7baa590124e0692675efa596e68133d127c",
+      "bytes": 7131,
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
@@ -588,6 +556,22 @@
       "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
+      "path": "benchmark/rivf/judging/rivf-probe-grid.js",
+      "source_path": "benchmark/rivf/judging/rivf-probe-grid.js",
+      "sha256": "49475dfdf742fe2bf374d24f0f177f2e0c339acd1781cbc56b2006ae7bc3b124",
+      "source_sha256": "49475dfdf742fe2bf374d24f0f177f2e0c339acd1781cbc56b2006ae7bc3b124",
+      "bytes": 10222,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
+      "source_path": "benchmark/rivf/PAGE-TYPE-CODEBOOK.md",
+      "sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
+      "source_sha256": "72a273e7a1f297e67c3a3e4e28f082a3124351fe257a0fc44c2f2c90572d4fd5",
+      "bytes": 6265,
+      "treatment": "LF normalized; contact addresses withheld where present"
+    },
+    {
       "path": "benchmark/rivf/page_type_key_v1.json",
       "source_path": "benchmark/rivf/page_type_key_v1.json",
       "sha256": "2cc358e225c7b5096b8b04e19e0c8dd222ff85fd96c774739e2b00858628a3ca",
@@ -612,12 +596,28 @@
       "treatment": "JSON normalized; source passages/contact addresses withheld"
     },
     {
+      "path": "benchmark/rivf/probe_authoring_provenance_v1.json",
+      "source_path": "benchmark/rivf/probe_authoring_provenance_v1.json",
+      "sha256": "57e9d99bde576fe5144ab9b585863e8c8b67cf128ff41f42b11223c1c0dcdf18",
+      "source_sha256": "57e9d99bde576fe5144ab9b585863e8c8b67cf128ff41f42b11223c1c0dcdf18",
+      "bytes": 709,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
       "path": "benchmark/rivf/probe_queries_v2_manifest.json",
       "source_path": "benchmark/rivf/probe_queries_v2_manifest.json",
       "sha256": "c9511f949fa8ca7b7f6d7b66a8533c3cbe9f1a9477411745c3b4980a355d4de3",
       "source_sha256": "6c9fe320713bac1346057cc484a5eda7a0b7bc3f86318daff61dd6170b32ed53",
       "bytes": 41899,
       "treatment": "JSON normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+      "source_path": "benchmark/rivf/RELEVANCE-CODEBOOK.md",
+      "sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
+      "source_sha256": "6648599491c12714a0d3e9aec6f512856cf3cc970048b34723c1a7a5dcdd814c",
+      "bytes": 3568,
+      "treatment": "LF normalized; contact addresses withheld where present"
     },
     {
       "path": "benchmark/rivf/relevance_human_key_urlfirst_v1.json",
@@ -892,6 +892,22 @@
       "treatment": "JSON normalized; source passages/contact addresses withheld"
     },
     {
+      "path": "benchmark/rivf/verify_post_submission.py",
+      "source_path": "benchmark/rivf/verify_post_submission.py",
+      "sha256": "96b55a239764139a4b22447b1723dcd96c621eb05c852999eb189a098240149d",
+      "source_sha256": "96b55a239764139a4b22447b1723dcd96c621eb05c852999eb189a098240149d",
+      "bytes": 3156,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "CITATION.cff",
+      "source_path": "benchmark/rivf/public/CITATION.cff",
+      "sha256": "483412477232ef980306dae4357b05b704a721887bbaab9543e249673ffdc2e0",
+      "source_sha256": "483412477232ef980306dae4357b05b704a721887bbaab9543e249673ffdc2e0",
+      "bytes": 383,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
       "path": "docs/project/vmj-dedup/dedup_manifest.json",
       "source_path": "docs/project/vmj-dedup/dedup_manifest.json",
       "sha256": "d05a33a305819c8c4b3f721646852503fe7be2d209c824eebba9af28ec919c9c",
@@ -926,18 +942,26 @@
     {
       "path": "evaluate.py",
       "source_path": "benchmark/rivf/public/evaluate.py",
-      "sha256": "90fa82cd3987a62967146dc434b44960f4d8a49ee5dcb75bc640a9a5ba83190f",
-      "source_sha256": "90fa82cd3987a62967146dc434b44960f4d8a49ee5dcb75bc640a9a5ba83190f",
-      "bytes": 3221,
-      "treatment": "LF normalized; contact addresses withheld where present"
+      "sha256": "143be354b366794a6cdb4f4992b77ec87efae038674e94cdd873e42e2499bd4c",
+      "source_sha256": "143be354b366794a6cdb4f4992b77ec87efae038674e94cdd873e42e2499bd4c",
+      "bytes": 3387,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "EVALUATION.md",
+      "source_path": "benchmark/rivf/public/EVALUATION.md",
+      "sha256": "f96404f7d77a0dc9b2a1bd6a7b6fbd3af15099b3f1b8cb2f063f1eec32d68222",
+      "source_sha256": "f96404f7d77a0dc9b2a1bd6a7b6fbd3af15099b3f1b8cb2f063f1eec32d68222",
+      "bytes": 7483,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
     },
     {
       "path": "paper/check_numbers.py",
       "source_path": "paper/check_numbers.py",
-      "sha256": "08864382ced5e963459c3c57833ae6a4ccc7b90efd2e870d3cb8a8c9c9045b04",
-      "source_sha256": "0dd8d69c86d7028574bf4e27ca9043f0bef9f76eddac2104285920386f5d1e22",
-      "bytes": 37180,
-      "treatment": "LF normalized; contact addresses withheld where present"
+      "sha256": "eb32306d89a21ab726dd4afd45ddac583215fdc7b086d766c7e7f320e0e612f6",
+      "source_sha256": "eb32306d89a21ab726dd4afd45ddac583215fdc7b086d766c7e7f320e0e612f6",
+      "bytes": 38486,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
     },
     {
       "path": "paper/check_pdf.py",
@@ -958,18 +982,18 @@
     {
       "path": "paper/main.pdf",
       "source_path": "paper/main.pdf",
-      "sha256": "63bd4affdb25ad19aa116652d57c2578e1a9b322c831cb631bda572eb4e762e5",
-      "source_sha256": "63bd4affdb25ad19aa116652d57c2578e1a9b322c831cb631bda572eb4e762e5",
-      "bytes": 149279,
+      "sha256": "59b6c67f493c64e3045f0af99c03440fe594ff7a94e0a33bbc1afad3dfccd206",
+      "source_sha256": "59b6c67f493c64e3045f0af99c03440fe594ff7a94e0a33bbc1afad3dfccd206",
+      "bytes": 153989,
       "treatment": "binary unchanged"
     },
     {
       "path": "paper/main.tex",
       "source_path": "paper/main.tex",
-      "sha256": "38ef817d9e219995086d09b5bc28ea816d981dbafeec261e8b2d5125020e32af",
-      "source_sha256": "38ef817d9e219995086d09b5bc28ea816d981dbafeec261e8b2d5125020e32af",
-      "bytes": 42055,
-      "treatment": "LF normalized; contact addresses withheld where present"
+      "sha256": "14d976e58896d56b52b504d75a10bb8aee86fb8befe4c2dfe133ea9b6ba8e93f",
+      "source_sha256": "14d976e58896d56b52b504d75a10bb8aee86fb8befe4c2dfe133ea9b6ba8e93f",
+      "bytes": 43995,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
     },
     {
       "path": "paper/make_upload_copy.py",
@@ -982,10 +1006,842 @@
     {
       "path": "paper/refs.bib",
       "source_path": "paper/refs.bib",
-      "sha256": "2e527b3e0a3aaa6412da40f1e8bf0a1cd632add9c6656583753fa67175e7dcbe",
-      "source_sha256": "b0e875ec2d11da4965285c0ff2b6ae51b82e4cafb7e1f4c9e64b68bdaedf3b41",
-      "bytes": 18713,
-      "treatment": "LF normalized; contact addresses withheld where present"
+      "sha256": "c57f92c666f8ec1939b6ec42c694c71384d8778b29059e21d0f946b04b75b741",
+      "source_sha256": "c57f92c666f8ec1939b6ec42c694c71384d8778b29059e21d0f946b04b75b741",
+      "bytes": 21184,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/new_refs.bib",
+      "source_path": "post_submission/tierA/new_refs.bib",
+      "sha256": "580d4adf5cdf8a97985cd2c353437039b17598c3ec9ee37c52a83a51ca174c39",
+      "source_sha256": "580d4adf5cdf8a97985cd2c353437039b17598c3ec9ee37c52a83a51ca174c39",
+      "bytes": 8627,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_analysis.py",
+      "source_path": "post_submission/tierA/tierA_analysis.py",
+      "sha256": "5761b66b133fc9a661a1ac5a0af37c6d362a58c52d2e62afe50d3544ab7ad44d",
+      "source_sha256": "5761b66b133fc9a661a1ac5a0af37c6d362a58c52d2e62afe50d3544ab7ad44d",
+      "bytes": 47756,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_judge_compute.py",
+      "source_path": "post_submission/tierA/tierA_judge_compute.py",
+      "sha256": "cffa8078f3e6fb13d71461735a7edfb041fb14edd11448b1d0d809d2bfc8dc7e",
+      "source_sha256": "cffa8078f3e6fb13d71461735a7edfb041fb14edd11448b1d0d809d2bfc8dc7e",
+      "bytes": 35733,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_judge_results.json",
+      "source_path": "post_submission/tierA/tierA_judge_results.json",
+      "sha256": "4d3c907b1a33fd56f3c66574559a46e642d6d4d30f50810bddca2b2107a8e2c1",
+      "source_sha256": "4d3c907b1a33fd56f3c66574559a46e642d6d4d30f50810bddca2b2107a8e2c1",
+      "bytes": 94991,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_judge_run.log",
+      "source_path": "post_submission/tierA/tierA_judge_run.log",
+      "sha256": "8b8dde1e484d1f4d276ece5a95678e5f7a97992e37b13695109d77546914f90c",
+      "source_sha256": "8b8dde1e484d1f4d276ece5a95678e5f7a97992e37b13695109d77546914f90c",
+      "bytes": 41160,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_judge_summary.md",
+      "source_path": "post_submission/tierA/tierA_judge_summary.md",
+      "sha256": "695cd37f9103c9eb06557ba744484869ea8ad7134e64fdc7c463d250dc7c0014",
+      "source_sha256": "695cd37f9103c9eb06557ba744484869ea8ad7134e64fdc7c463d250dc7c0014",
+      "bytes": 22705,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_refs_results.json",
+      "source_path": "post_submission/tierA/tierA_refs_results.json",
+      "sha256": "f9a4531571ced029100435e52122969a759ca5e465a55d49930aae6733d0f930",
+      "source_sha256": "f9a4531571ced029100435e52122969a759ca5e465a55d49930aae6733d0f930",
+      "bytes": 18286,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_refs_summary.md",
+      "source_path": "post_submission/tierA/tierA_refs_summary.md",
+      "sha256": "fc09c25a67eade45c9401d50eee8037f7ec3e073eb52bc2fc056f816c1899ebb",
+      "source_sha256": "fc09c25a67eade45c9401d50eee8037f7ec3e073eb52bc2fc056f816c1899ebb",
+      "bytes": 12090,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_retrieval_results.json",
+      "source_path": "post_submission/tierA/tierA_retrieval_results.json",
+      "sha256": "ee538ae800cbf8fa375bec7aa58a6f483b7c7bb26a10a803c1443daee2720bfa",
+      "source_sha256": "ee538ae800cbf8fa375bec7aa58a6f483b7c7bb26a10a803c1443daee2720bfa",
+      "bytes": 36256,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_retrieval_run.log",
+      "source_path": "post_submission/tierA/tierA_retrieval_run.log",
+      "sha256": "ccd0feac58f9d135b1f767ca9a84ea7c04c16c26fddf4587c1f4be801a74cbb2",
+      "source_sha256": "ccd0feac58f9d135b1f767ca9a84ea7c04c16c26fddf4587c1f4be801a74cbb2",
+      "bytes": 20374,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierA/tierA_retrieval_summary.md",
+      "source_path": "post_submission/tierA/tierA_retrieval_summary.md",
+      "sha256": "cc64db1d20eb11064c4a8b9d84a9f6a4a4698ac136836e425a5c2700b509acc1",
+      "source_sha256": "cc64db1d20eb11064c4a8b9d84a9f6a4a4698ac136836e425a5c2700b509acc1",
+      "bytes": 20058,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_00.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_00.jsonl",
+      "sha256": "14c85361fa92cfe851479545edcf06f4f340c34329a4395e6a608f08a5e89952",
+      "source_sha256": "14c85361fa92cfe851479545edcf06f4f340c34329a4395e6a608f08a5e89952",
+      "bytes": 66361,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_01.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_01.jsonl",
+      "sha256": "7a3d19f0b20992a0c2a8a2047e058ca6eebff3577f401fbef630e5c8b4ae8372",
+      "source_sha256": "7a3d19f0b20992a0c2a8a2047e058ca6eebff3577f401fbef630e5c8b4ae8372",
+      "bytes": 72222,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_02.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_02.jsonl",
+      "sha256": "c431a77997664fd09ba1ad953769df49868c4ba3466886ac2aad0ea9af1b531c",
+      "source_sha256": "c431a77997664fd09ba1ad953769df49868c4ba3466886ac2aad0ea9af1b531c",
+      "bytes": 67313,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_03.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_03.jsonl",
+      "sha256": "7ea67c1b4f3fc084d2311cda47f6b6147273517a223a1affff17f3e2f0f2c1b1",
+      "source_sha256": "7ea67c1b4f3fc084d2311cda47f6b6147273517a223a1affff17f3e2f0f2c1b1",
+      "bytes": 71949,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_04.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_04.jsonl",
+      "sha256": "836c86bfc52d22557342ea0bb164c36ee9d32e6103c19f2fa5c5e64717767445",
+      "source_sha256": "836c86bfc52d22557342ea0bb164c36ee9d32e6103c19f2fa5c5e64717767445",
+      "bytes": 69057,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_05.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_05.jsonl",
+      "sha256": "1e2a71ca55311fffb1715238e15731aa66ba1a9353f8161aefc1d421c63ce674",
+      "source_sha256": "1e2a71ca55311fffb1715238e15731aa66ba1a9353f8161aefc1d421c63ce674",
+      "bytes": 74031,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_06.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_06.jsonl",
+      "sha256": "0f43de6c948b524b603d5030dc460d7331fddfc43f6a660c3e2d949342de447b",
+      "source_sha256": "0f43de6c948b524b603d5030dc460d7331fddfc43f6a660c3e2d949342de447b",
+      "bytes": 72447,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_07.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_07.jsonl",
+      "sha256": "8ca07b888fb63869c035ef3e868e3aceeb14b5496f03fd00bd9e8d0088d7f74a",
+      "source_sha256": "8ca07b888fb63869c035ef3e868e3aceeb14b5496f03fd00bd9e8d0088d7f74a",
+      "bytes": 68692,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_08.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_08.jsonl",
+      "sha256": "de324872de1742366925c87562dfb8ad7b8bda883843c57d5e53efd962f52721",
+      "source_sha256": "de324872de1742366925c87562dfb8ad7b8bda883843c57d5e53efd962f52721",
+      "bytes": 74718,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_09.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_09.jsonl",
+      "sha256": "8b1913b6a54b60c40de2d9f7c718e42dd532885212e2f30e093a22ee3d6d08af",
+      "source_sha256": "8b1913b6a54b60c40de2d9f7c718e42dd532885212e2f30e093a22ee3d6d08af",
+      "bytes": 68931,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_10.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_10.jsonl",
+      "sha256": "156801dc951c5e5f9826c88fdacca407f4fd91bba4b98afd897fe22c96502b17",
+      "source_sha256": "156801dc951c5e5f9826c88fdacca407f4fd91bba4b98afd897fe22c96502b17",
+      "bytes": 70392,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_11.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_11.jsonl",
+      "sha256": "f71815dbcfef3112204f6be3e4e6bb1f2d649f1a989d1b0636048e7de1eeb54b",
+      "source_sha256": "f71815dbcfef3112204f6be3e4e6bb1f2d649f1a989d1b0636048e7de1eeb54b",
+      "bytes": 74524,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_12.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_12.jsonl",
+      "sha256": "5e6178c8626d46e587fc407521612115917ff04c04e0351bf497260eb7470f14",
+      "source_sha256": "5e6178c8626d46e587fc407521612115917ff04c04e0351bf497260eb7470f14",
+      "bytes": 72689,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_13.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_13.jsonl",
+      "sha256": "032e0880734b6cab8371efba6bf761eaaabb0e7bc788d6877eadcdcc8fa22775",
+      "source_sha256": "032e0880734b6cab8371efba6bf761eaaabb0e7bc788d6877eadcdcc8fa22775",
+      "bytes": 60895,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_14.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_14.jsonl",
+      "sha256": "ce18b74703087d2898e199b1dbb6c882e11b73cb81f136b978257eba24bb1f07",
+      "source_sha256": "ce18b74703087d2898e199b1dbb6c882e11b73cb81f136b978257eba24bb1f07",
+      "bytes": 60322,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_15.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_15.jsonl",
+      "sha256": "e8f2b319c244d3829587bbdbef7181e69d09057e4acbd3fcc8061447b8f6821a",
+      "source_sha256": "e8f2b319c244d3829587bbdbef7181e69d09057e4acbd3fcc8061447b8f6821a",
+      "bytes": 59139,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_16.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_16.jsonl",
+      "sha256": "252f9a59d55780bdb3e05ff5d65ef71ae324ebd59308e48bdb8ea45d24aa9aa9",
+      "source_sha256": "252f9a59d55780bdb3e05ff5d65ef71ae324ebd59308e48bdb8ea45d24aa9aa9",
+      "bytes": 70261,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_17.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_17.jsonl",
+      "sha256": "3bf1c8cbc915f1c18466452073101c394a6f39f5b83caf6c296d0e11e5799a8e",
+      "source_sha256": "3bf1c8cbc915f1c18466452073101c394a6f39f5b83caf6c296d0e11e5799a8e",
+      "bytes": 73662,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_18.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_18.jsonl",
+      "sha256": "25e4465044be137d1c150d57884f489cb163777385dd52ad46674ae296669840",
+      "source_sha256": "25e4465044be137d1c150d57884f489cb163777385dd52ad46674ae296669840",
+      "bytes": 64302,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_19.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_19.jsonl",
+      "sha256": "bc0de1f10b26fe423a582d600e5771e90e4c323f87cff689d037d9fd09331b27",
+      "source_sha256": "bc0de1f10b26fe423a582d600e5771e90e4c323f87cff689d037d9fd09331b27",
+      "bytes": 53119,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_20.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_20.jsonl",
+      "sha256": "4171e4af1126c2db8ecf1ac5c7d9b47b696e7d97df1bf445f03e2b479d3e8bd1",
+      "source_sha256": "4171e4af1126c2db8ecf1ac5c7d9b47b696e7d97df1bf445f03e2b479d3e8bd1",
+      "bytes": 65098,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_21.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_21.jsonl",
+      "sha256": "0470c0b005094a07d61366344df49acbfc7a759386ed8039ee657e3ab1762ce2",
+      "source_sha256": "0470c0b005094a07d61366344df49acbfc7a759386ed8039ee657e3ab1762ce2",
+      "bytes": 63973,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_22.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_22.jsonl",
+      "sha256": "15f065c640970fa1d7a0c47835d2aefabe842c599f9bd7e110f341284918288a",
+      "source_sha256": "15f065c640970fa1d7a0c47835d2aefabe842c599f9bd7e110f341284918288a",
+      "bytes": 73577,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_23.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_23.jsonl",
+      "sha256": "37ddf404faa0fb5aced226403664e1d362bc40160c1fe7ebcdf57b294fb105ee",
+      "source_sha256": "37ddf404faa0fb5aced226403664e1d362bc40160c1fe7ebcdf57b294fb105ee",
+      "bytes": 67781,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_24.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_24.jsonl",
+      "sha256": "9c701ccd4ff7b085ca0e080abf8c186f7d7a576c5ed91d3522b3ee3860de5a90",
+      "source_sha256": "9c701ccd4ff7b085ca0e080abf8c186f7d7a576c5ed91d3522b3ee3860de5a90",
+      "bytes": 69912,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_25.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_25.jsonl",
+      "sha256": "7631cd79965a3436f57cc1daf23eef1f718ea150fc0040a2e8f21263a7ae6401",
+      "source_sha256": "7631cd79965a3436f57cc1daf23eef1f718ea150fc0040a2e8f21263a7ae6401",
+      "bytes": 69709,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_26.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_26.jsonl",
+      "sha256": "bfbabdfd391d1d94d0273f327d19a86ebafe9cc936527454c8e804003942b141",
+      "source_sha256": "bfbabdfd391d1d94d0273f327d19a86ebafe9cc936527454c8e804003942b141",
+      "bytes": 75105,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_27.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_27.jsonl",
+      "sha256": "aaf97b42c8699e7bb16af1a2d0ce76acae51e6a950819348cc69bac423651e06",
+      "source_sha256": "aaf97b42c8699e7bb16af1a2d0ce76acae51e6a950819348cc69bac423651e06",
+      "bytes": 72886,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_28.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_28.jsonl",
+      "sha256": "20b8d7fe44754c04fbb92c2496a8cc838e28cfc75b790e8cf156d45fff0ae036",
+      "source_sha256": "20b8d7fe44754c04fbb92c2496a8cc838e28cfc75b790e8cf156d45fff0ae036",
+      "bytes": 67899,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_29.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_29.jsonl",
+      "sha256": "6fd745d28892308d21c082b55f774fb884226fb95eab2790135c0920ca50557e",
+      "source_sha256": "6fd745d28892308d21c082b55f774fb884226fb95eab2790135c0920ca50557e",
+      "bytes": 64800,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_30.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_30.jsonl",
+      "sha256": "e2dc6eeaa9d327801229cfdfe097a2b45b9fddc7df2a5f42510abfb809afc378",
+      "source_sha256": "e2dc6eeaa9d327801229cfdfe097a2b45b9fddc7df2a5f42510abfb809afc378",
+      "bytes": 70470,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_31.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_31.jsonl",
+      "sha256": "6369e36810196a91d5887ec643b915b9eb670b82bee84476a6221881970c7a9e",
+      "source_sha256": "6369e36810196a91d5887ec643b915b9eb670b82bee84476a6221881970c7a9e",
+      "bytes": 68648,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_32.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_32.jsonl",
+      "sha256": "ef82f8a17bac849b934bc8f433413a15ea5a9fb0443f7525cb25ec1552ad44d9",
+      "source_sha256": "ef82f8a17bac849b934bc8f433413a15ea5a9fb0443f7525cb25ec1552ad44d9",
+      "bytes": 64975,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_33.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_33.jsonl",
+      "sha256": "ee3fa6602736c757818fc65bcccb63d072c35eb6e23c7db555982012cb087e4e",
+      "source_sha256": "ee3fa6602736c757818fc65bcccb63d072c35eb6e23c7db555982012cb087e4e",
+      "bytes": 61001,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_34.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_34.jsonl",
+      "sha256": "bb9732758046c6bcdc89d348dfb47c90c522df32b15f753aeba878a897aa4b2a",
+      "source_sha256": "bb9732758046c6bcdc89d348dfb47c90c522df32b15f753aeba878a897aa4b2a",
+      "bytes": 61924,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/answers_35.jsonl",
+      "source_path": "post_submission/tierB/batches/answers_35.jsonl",
+      "sha256": "f8441bad4abe2d53ded795c52a6d08aadc6d722ad85176c17798350bc67ca89d",
+      "source_sha256": "f8441bad4abe2d53ded795c52a6d08aadc6d722ad85176c17798350bc67ca89d",
+      "bytes": 35309,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_00.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_00.jsonl",
+      "sha256": "7d3fb25057a28457ad2b07dce458bb43ecebde468f5b9b14160593320a309aa0",
+      "source_sha256": "7d3fb25057a28457ad2b07dce458bb43ecebde468f5b9b14160593320a309aa0",
+      "bytes": 17398,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_01.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_01.jsonl",
+      "sha256": "4cc0599ca575bb2b136f9f49a8bd456670338a51cd63465ba8c3e063f703ddeb",
+      "source_sha256": "4cc0599ca575bb2b136f9f49a8bd456670338a51cd63465ba8c3e063f703ddeb",
+      "bytes": 16520,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_02.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_02.jsonl",
+      "sha256": "52537fae6e662edee533be5208df18c15b8018e6a8b0824023660de1e710d0b9",
+      "source_sha256": "52537fae6e662edee533be5208df18c15b8018e6a8b0824023660de1e710d0b9",
+      "bytes": 16536,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_03.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_03.jsonl",
+      "sha256": "5c83bb46199ee4bb256cdd0b92bdafcdaf546e30aeca6019be91509d98ad6e73",
+      "source_sha256": "5c83bb46199ee4bb256cdd0b92bdafcdaf546e30aeca6019be91509d98ad6e73",
+      "bytes": 17643,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_04.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_04.jsonl",
+      "sha256": "f826366581005cf9f5bbb922df38bbabd1ce3b0ebe6304c6b7ece0ef433ff06f",
+      "source_sha256": "f826366581005cf9f5bbb922df38bbabd1ce3b0ebe6304c6b7ece0ef433ff06f",
+      "bytes": 17049,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_05.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_05.jsonl",
+      "sha256": "4cdb88beb4c30f848bc169298381e122a706c6901c4112d9113ea3f0d811e1e0",
+      "source_sha256": "4cdb88beb4c30f848bc169298381e122a706c6901c4112d9113ea3f0d811e1e0",
+      "bytes": 18329,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_06.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_06.jsonl",
+      "sha256": "f8cb8c6905d6a9dc719d659274a7466ccfee9ff42dd275064c3346fdd55e95f2",
+      "source_sha256": "f8cb8c6905d6a9dc719d659274a7466ccfee9ff42dd275064c3346fdd55e95f2",
+      "bytes": 17462,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_07.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_07.jsonl",
+      "sha256": "dcb9f68aeeb15b41031f8911fb92db54c6033946bc6c970efa6945c5bfcc143d",
+      "source_sha256": "dcb9f68aeeb15b41031f8911fb92db54c6033946bc6c970efa6945c5bfcc143d",
+      "bytes": 18070,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_08.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_08.jsonl",
+      "sha256": "542d670ee14671b07240f8053ac82f71e17e51336069e34da03ae30811c1704e",
+      "source_sha256": "542d670ee14671b07240f8053ac82f71e17e51336069e34da03ae30811c1704e",
+      "bytes": 17338,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_09.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_09.jsonl",
+      "sha256": "43efc171eea8b1a6dc03a08260abd72a840184e101373114de203eff2cd87ef2",
+      "source_sha256": "43efc171eea8b1a6dc03a08260abd72a840184e101373114de203eff2cd87ef2",
+      "bytes": 18242,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_10.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_10.jsonl",
+      "sha256": "da6e180abdeeb4be2d4f17f77d8d2340d659fa652b3ba7a85a1caf13d3e2ca0c",
+      "source_sha256": "da6e180abdeeb4be2d4f17f77d8d2340d659fa652b3ba7a85a1caf13d3e2ca0c",
+      "bytes": 17372,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_11.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_11.jsonl",
+      "sha256": "479953140395696820ea706421604ac2b60d9ad562b6153f4335ad0f5fa16b4e",
+      "source_sha256": "479953140395696820ea706421604ac2b60d9ad562b6153f4335ad0f5fa16b4e",
+      "bytes": 17812,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_12.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_12.jsonl",
+      "sha256": "c18d61e3ad78ff5eef375896fb7b274655dd2a08a13fc03ad274bf57ac16dc82",
+      "source_sha256": "c18d61e3ad78ff5eef375896fb7b274655dd2a08a13fc03ad274bf57ac16dc82",
+      "bytes": 16643,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_13.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_13.jsonl",
+      "sha256": "4a8ee3ed710765bf3034e58b7dee86ba5c880f4b48689e84973556183114187b",
+      "source_sha256": "4a8ee3ed710765bf3034e58b7dee86ba5c880f4b48689e84973556183114187b",
+      "bytes": 18996,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_14.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_14.jsonl",
+      "sha256": "d877bd318bb98972d4ec2e90a60675a63478f1f86f8cec61adb2f1d263d7a436",
+      "source_sha256": "d877bd318bb98972d4ec2e90a60675a63478f1f86f8cec61adb2f1d263d7a436",
+      "bytes": 17713,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_15.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_15.jsonl",
+      "sha256": "b544a3a82545b39af0fb33c3564ec224cbe9719cc79ee7647223d04c73bced82",
+      "source_sha256": "b544a3a82545b39af0fb33c3564ec224cbe9719cc79ee7647223d04c73bced82",
+      "bytes": 18598,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_16.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_16.jsonl",
+      "sha256": "27b4e4ceb00558871849fcba6cb5afb793fce406cc45109e1ef2cd9bedbe1014",
+      "source_sha256": "27b4e4ceb00558871849fcba6cb5afb793fce406cc45109e1ef2cd9bedbe1014",
+      "bytes": 18195,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_17.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_17.jsonl",
+      "sha256": "eac35b27e600fed8e883207c44122e8dc62af61ecedf9bac0b730ab5686a6518",
+      "source_sha256": "eac35b27e600fed8e883207c44122e8dc62af61ecedf9bac0b730ab5686a6518",
+      "bytes": 18363,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_18.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_18.jsonl",
+      "sha256": "92409e173871083aedea46e2a2a06099a6cc2994ec98b742e55bc62f0a050a77",
+      "source_sha256": "92409e173871083aedea46e2a2a06099a6cc2994ec98b742e55bc62f0a050a77",
+      "bytes": 18003,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/claims_19.jsonl",
+      "source_path": "post_submission/tierB/batches/claims_19.jsonl",
+      "sha256": "f932e7619ae59066045603fa82809f2741a1e74bc4d4379b8105b661f7756442",
+      "source_sha256": "f932e7619ae59066045603fa82809f2741a1e74bc4d4379b8105b661f7756442",
+      "bytes": 5126,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches/index.json",
+      "source_path": "post_submission/tierB/batches/index.json",
+      "sha256": "ebce96ba3f8f3f16d1b2af44bbc735c745fda5e4ca56c84f6437c3a53b2061f8",
+      "source_sha256": "ebce96ba3f8f3f16d1b2af44bbc735c745fda5e4ca56c84f6437c3a53b2061f8",
+      "bytes": 3044,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches_siblings/siblings_00.jsonl",
+      "source_path": "post_submission/tierB/batches_siblings/siblings_00.jsonl",
+      "sha256": "f6301ef3abcdbdf825b6d935f78485346f4189bc858cfe7e68b3c02787b1bbe8",
+      "source_sha256": "f6301ef3abcdbdf825b6d935f78485346f4189bc858cfe7e68b3c02787b1bbe8",
+      "bytes": 62458,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches_siblings/siblings_01.jsonl",
+      "source_path": "post_submission/tierB/batches_siblings/siblings_01.jsonl",
+      "sha256": "208a461cabb0e0e9f23d97f670f96983e0d1d0d463be7b8c0a2f2110aa9f7bf8",
+      "source_sha256": "208a461cabb0e0e9f23d97f670f96983e0d1d0d463be7b8c0a2f2110aa9f7bf8",
+      "bytes": 71026,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches_siblings/siblings_02.jsonl",
+      "source_path": "post_submission/tierB/batches_siblings/siblings_02.jsonl",
+      "sha256": "b6a226219d3e449ec58e020b36aeb8c8580113bd7a9c160e77ccc8a221dca5a0",
+      "source_sha256": "b6a226219d3e449ec58e020b36aeb8c8580113bd7a9c160e77ccc8a221dca5a0",
+      "bytes": 68171,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches_siblings/siblings_03.jsonl",
+      "source_path": "post_submission/tierB/batches_siblings/siblings_03.jsonl",
+      "sha256": "fa503a93c6e1e9a4bd3933186cb31042f2837ea9af932db38d39297bcb5f3ecf",
+      "source_sha256": "fa503a93c6e1e9a4bd3933186cb31042f2837ea9af932db38d39297bcb5f3ecf",
+      "bytes": 64036,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/batches_siblings/siblings_04.jsonl",
+      "source_path": "post_submission/tierB/batches_siblings/siblings_04.jsonl",
+      "sha256": "7d40ccf3da25ace2774f211a7342866cf0cc3ef8cf3187ceef50c865db993018",
+      "source_sha256": "7d40ccf3da25ace2774f211a7342866cf0cc3ef8cf3187ceef50c865db993018",
+      "bytes": 68703,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/crossmodel_labels.json",
+      "source_path": "post_submission/tierB/crossmodel_labels.json",
+      "sha256": "28211d3530321cc1d6488934118e90e0d686f399b711a64da44e724cfd12b4d8",
+      "source_sha256": "28211d3530321cc1d6488934118e90e0d686f399b711a64da44e724cfd12b4d8",
+      "bytes": 119571,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/crossmodel_stats.json",
+      "source_path": "post_submission/tierB/crossmodel_stats.json",
+      "sha256": "32977eb67631e7ecf403bf4ce3204205c3533e4f558302119502e3964b766f3b",
+      "source_sha256": "32977eb67631e7ecf403bf4ce3204205c3533e4f558302119502e3964b766f3b",
+      "bytes": 1164,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/crossmodel_stats.py",
+      "source_path": "post_submission/tierB/crossmodel_stats.py",
+      "sha256": "0e0d1037c7c610ac1586ec83079269f0c176dfef8a5e1a1278b9ccc1382d935b",
+      "source_sha256": "0e0d1037c7c610ac1586ec83079269f0c176dfef8a5e1a1278b9ccc1382d935b",
+      "bytes": 4035,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/crossmodel_workflow.js",
+      "source_path": "post_submission/tierB/crossmodel_workflow.js",
+      "sha256": "af4aa251e2c2d43da6f3de53efb14a41d6237bdb019737f23aec4a693f68b7e0",
+      "source_sha256": "af4aa251e2c2d43da6f3de53efb14a41d6237bdb019737f23aec4a693f68b7e0",
+      "bytes": 6736,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref.log",
+      "source_path": "post_submission/tierB/deref.log",
+      "sha256": "b72c84f2c907433b544c62eb0cc3e70eabf723ca722840190be56c674cf15446",
+      "source_sha256": "b72c84f2c907433b544c62eb0cc3e70eabf723ca722840190be56c674cf15446",
+      "bytes": 11372,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref.py",
+      "source_path": "post_submission/tierB/deref.py",
+      "sha256": "f89a038e418a8286b09591cd5aca6e290a5ceb46add7fc35c87309968b30d033",
+      "source_sha256": "f89a038e418a8286b09591cd5aca6e290a5ceb46add7fc35c87309968b30d033",
+      "bytes": 3226,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref_pass2.py",
+      "source_path": "post_submission/tierB/deref_pass2.py",
+      "sha256": "bbe2f262eca50e7f31655ee736f821b2eb733be7ccf38874b17abd5b3b5d0c69",
+      "source_sha256": "bbe2f262eca50e7f31655ee736f821b2eb733be7ccf38874b17abd5b3b5d0c69",
+      "bytes": 2232,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref_results.json",
+      "source_path": "post_submission/tierB/deref_results.json",
+      "sha256": "8f4729aa9575f2a92ed32220c7b1cd278d0c4c2b8fdb7ba6557bd727b2e37c5e",
+      "source_sha256": "8f4729aa9575f2a92ed32220c7b1cd278d0c4c2b8fdb7ba6557bd727b2e37c5e",
+      "bytes": 114402,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref_results_pass1.json",
+      "source_path": "post_submission/tierB/deref_results_pass1.json",
+      "sha256": "25c865145827c171b5cb894db845f3f46c1729abbbcfe78ffca996d4f093f1a5",
+      "source_sha256": "25c865145827c171b5cb894db845f3f46c1729abbbcfe78ffca996d4f093f1a5",
+      "bytes": 93041,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref_stats.json",
+      "source_path": "post_submission/tierB/deref_stats.json",
+      "sha256": "311e4ff5c20bed0a11e761428e420c152b8278fc9f12b2f4c5b889b8a755eaa2",
+      "source_sha256": "311e4ff5c20bed0a11e761428e420c152b8278fc9f12b2f4c5b889b8a755eaa2",
+      "bytes": 1372,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/deref_stats.py",
+      "source_path": "post_submission/tierB/deref_stats.py",
+      "sha256": "56399e1c2f4839c5c1eb6da9d6ed2176a07706bcc98765754df80e4d0ba99cb2",
+      "source_sha256": "56399e1c2f4839c5c1eb6da9d6ed2176a07706bcc98765754df80e4d0ba99cb2",
+      "bytes": 3774,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/judge_provenance.json",
+      "source_path": "post_submission/tierB/judge_provenance.json",
+      "sha256": "7d6913ed6cd39154b60481bf02224f77b8234b625849ceef5fa69d64deb333dd",
+      "source_sha256": "7d6913ed6cd39154b60481bf02224f77b8234b625849ceef5fa69d64deb333dd",
+      "bytes": 97147,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/judge_result.json",
+      "source_path": "post_submission/tierB/judge_result.json",
+      "sha256": "151a2e871d27cfcd742dcfdf656586d44d83678fbb28e2285f8aaa3334906b9d",
+      "source_sha256": "151a2e871d27cfcd742dcfdf656586d44d83678fbb28e2285f8aaa3334906b9d",
+      "bytes": 674656,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/judge_stats.json",
+      "source_path": "post_submission/tierB/judge_stats.json",
+      "sha256": "2f3b0330bcf2f5e5cea28cb6f1ecff53f5213a8f493dd6fe8e47d9862b5552ff",
+      "source_sha256": "2f3b0330bcf2f5e5cea28cb6f1ecff53f5213a8f493dd6fe8e47d9862b5552ff",
+      "bytes": 9731,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/judge_stats.log",
+      "source_path": "post_submission/tierB/judge_stats.log",
+      "sha256": "2968aa2d6dc91e64a20b51767f24078ac978fd0a1bba17ae7549d9798ef1a19e",
+      "source_sha256": "2968aa2d6dc91e64a20b51767f24078ac978fd0a1bba17ae7549d9798ef1a19e",
+      "bytes": 4143,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/judge_stats.py",
+      "source_path": "post_submission/tierB/judge_stats.py",
+      "sha256": "587f70a3c924b0a750419a3addab94043e06edc00bccb304ecde70f421146dbf",
+      "source_sha256": "587f70a3c924b0a750419a3addab94043e06edc00bccb304ecde70f421146dbf",
+      "bytes": 12963,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/key_answers.json",
+      "source_path": "post_submission/tierB/key_answers.json",
+      "sha256": "c47bcca6ade8343a25f3178b71a351c4adb6b29bc64e107bd5f5c86f464bf9b5",
+      "source_sha256": "c47bcca6ade8343a25f3178b71a351c4adb6b29bc64e107bd5f5c86f464bf9b5",
+      "bytes": 36316,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/key_claims.json",
+      "source_path": "post_submission/tierB/key_claims.json",
+      "sha256": "e87369e1cd9d1d5eba18a5eed1b396a51aa544dcbfb7e623c5adefda4a6d2c38",
+      "source_sha256": "e87369e1cd9d1d5eba18a5eed1b396a51aa544dcbfb7e623c5adefda4a6d2c38",
+      "bytes": 474699,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/key_siblings.json",
+      "source_path": "post_submission/tierB/key_siblings.json",
+      "sha256": "b79d9445c48f3630eb0542225ac5859fb38ac206f0889beef49a41ed2e194582",
+      "source_sha256": "b79d9445c48f3630eb0542225ac5859fb38ac206f0889beef49a41ed2e194582",
+      "bytes": 7382,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/orig_vs_priorfree.json",
+      "source_path": "post_submission/tierB/orig_vs_priorfree.json",
+      "sha256": "d0300046e2caf980bef91defb3c67bbc9e485f3bb71426ccfff1e78352e97fb4",
+      "source_sha256": "d0300046e2caf980bef91defb3c67bbc9e485f3bb71426ccfff1e78352e97fb4",
+      "bytes": 180,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/stratify_v4.json",
+      "source_path": "post_submission/tierB/stratify_v4.json",
+      "sha256": "645fd963dcd63408b0aa8c35152a6cdee4067cb8ce3fc9b019aadd2a9c0893f3",
+      "source_sha256": "645fd963dcd63408b0aa8c35152a6cdee4067cb8ce3fc9b019aadd2a9c0893f3",
+      "bytes": 6714,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/stratify_v4.py",
+      "source_path": "post_submission/tierB/stratify_v4.py",
+      "sha256": "b5f5db60d8b403759b943d3f6899977b9c8ca1b93a44cdd53bbd8843b8baeb3f",
+      "source_sha256": "b5f5db60d8b403759b943d3f6899977b9c8ca1b93a44cdd53bbd8843b8baeb3f",
+      "bytes": 10492,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierB/tier_b_judging_workflow.js",
+      "source_path": "post_submission/tierB/tier_b_judging_workflow.js",
+      "sha256": "bf354ab1b5c253259e5a417e56251a67a09b06aab697bdebcafad170182452a6",
+      "source_sha256": "bf354ab1b5c253259e5a417e56251a67a09b06aab697bdebcafad170182452a6",
+      "bytes": 9981,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/claims_on_recovered_pages.json",
+      "source_path": "post_submission/tierC/claims_on_recovered_pages.json",
+      "sha256": "5482236c879d6da01afcee7af106da9087d6d3cc0d360d1117840b86931eed7c",
+      "source_sha256": "5482236c879d6da01afcee7af106da9087d6d3cc0d360d1117840b86931eed7c",
+      "bytes": 143893,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/recover.log",
+      "source_path": "post_submission/tierC/recover.log",
+      "sha256": "b9b7e2085db3ffff1478f97a1eaf189664009a4c9019127c86ebe84cc21f416b",
+      "source_sha256": "b9b7e2085db3ffff1478f97a1eaf189664009a4c9019127c86ebe84cc21f416b",
+      "bytes": 9574,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/recover.out",
+      "source_path": "post_submission/tierC/recover.out",
+      "sha256": "edd4784e8703423623acdf50fb0b741e00db713fb92089d7bf8159057dac3ffa",
+      "source_sha256": "edd4784e8703423623acdf50fb0b741e00db713fb92089d7bf8159057dac3ffa",
+      "bytes": 544,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/recover_urls.py",
+      "source_path": "post_submission/tierC/recover_urls.py",
+      "sha256": "6f6dc4427c8b6c3052622f1f5876ef468224431ce535cfdd0ed0c169970a775b",
+      "source_sha256": "6f6dc4427c8b6c3052622f1f5876ef468224431ce535cfdd0ed0c169970a775b",
+      "bytes": 7147,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/url_recovery.json",
+      "source_path": "post_submission/tierC/url_recovery.json",
+      "sha256": "efeffb7f8967fce46d66322b7b55fc7ab1f471fe97482885b433de7e1d62fe42",
+      "source_sha256": "efeffb7f8967fce46d66322b7b55fc7ab1f471fe97482885b433de7e1d62fe42",
+      "bytes": 100197,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "post_submission/tierC/verify_claims_on_pages.py",
+      "source_path": "post_submission/tierC/verify_claims_on_pages.py",
+      "sha256": "12992f85231119e85681e91b6116614a540760ba125106aa6387267d803bed16",
+      "source_sha256": "12992f85231119e85681e91b6116614a540760ba125106aa6387267d803bed16",
+      "bytes": 6798,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "README.md",
+      "source_path": "benchmark/rivf/RELEASE-README.md",
+      "sha256": "b0b4fc4d226e342a03129ce295cca83f74c19d20a061d6c7df64b1a9a658d1d5",
+      "source_sha256": "b0b4fc4d226e342a03129ce295cca83f74c19d20a061d6c7df64b1a9a658d1d5",
+      "bytes": 4734,
+      "treatment": "LF normalized; source passages/contact addresses withheld"
+    },
+    {
+      "path": "REDACTED",
+      "source_path": null,
+      "sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
+      "source_sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
+      "bytes": 352,
+      "treatment": "generated"
     },
     {
       "path": "services/rag-orchestrator/app/span_exposure.py",
@@ -1026,14 +1882,7 @@
       "source_sha256": "316949d36bd106e0b7fad1fdcf5962069f370a0198f321264e60b72b2b14669d",
       "bytes": 7527,
       "treatment": "LF normalized; contact addresses withheld where present"
-    },
-    {
-      "path": "REDACTED",
-      "source_path": null,
-      "sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
-      "source_sha256": "0eacbef847278a4cb043747affdb8a5476fce28e85a36d02e3eb0dec8108f1c5",
-      "bytes": 352,
-      "treatment": "generated"
     }
-  ]
+  ],
+  "version": "1.1.0-camera-ready"
 }

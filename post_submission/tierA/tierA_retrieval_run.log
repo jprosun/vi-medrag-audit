@@ -1,0 +1,217 @@
+[probe] questions=134 controls=15
+[probe] group sizes: {'clinical_explainer': 24, 'differential_or_workup': 24, 'guideline_comparison': 24, 'patient_faq': 23, 'study_result_numeric': 24, 'out_of_corpus_control': 15}
+[probe] controls by qtype: {'clinical_explainer': 5, 'differential_or_workup': 1, 'guideline_comparison': 2, 'patient_faq': 3, 'study_result_numeric': 4}
+[shipped] records=134 non-200/empty payload=0
+[urlfirst] records=134 non-200/empty payload=0
+
+=== 1. SANITY (shipped arm) ===
+total retrieved chunks = 4024
+chunks from URL-less stratum (hf_vi_mtue29_medical) = 2472
+share = 2472/4024 = 0.6143
+chunks with empty source_url = 2472; of which NOT in URL-less stratum = 0
+chunks per answer: min=22 max=57
+answer_mode counts: {'standard': 134}
+pipeline.retrieval_profile counts: {'standard': 67, 'deep': 67}; (profile, top_k, extractor_used): {('standard', 12, False): 67, ('deep', 20, True): 67}
+[urlfirst] total retrieved chunks = 3947; URL-less stratum = 0; empty source_url = 0; chunks per answer min=20 max=54
+
+=== 2. URL-less stratum share of retrieved chunks, shipped arm, cluster bootstrap CI ===
+formula: share_G = sum_{q in G} urlless_q / sum_{q in G} n_q ; CI = percentile bootstrap over questions in G
+overall (134 q): {'n_questions': 134, 'num': 2472, 'den': 4024, 'point': 0.6143, 'ci95': [0.5688, 0.6598], 'resamples': 5000, 'seed': 0}
+answerable (119 q): {'n_questions': 119, 'num': 2244, 'den': 3588, 'point': 0.6254, 'ci95': [0.5765, 0.6733], 'resamples': 5000, 'seed': 0}
+  group=clinical_explainer       {'n_questions': 24, 'num': 425, 'den': 584, 'point': 0.7277, 'ci95': [0.6087, 0.8294], 'resamples': 5000, 'seed': 0}
+  group=study_result_numeric     {'n_questions': 24, 'num': 305, 'den': 707, 'point': 0.4314, 'ci95': [0.3314, 0.5424], 'resamples': 5000, 'seed': 0}
+  group=guideline_comparison     {'n_questions': 24, 'num': 390, 'den': 790, 'point': 0.4937, 'ci95': [0.4233, 0.5709], 'resamples': 5000, 'seed': 0}
+  group=patient_faq              {'n_questions': 23, 'num': 574, 'den': 648, 'point': 0.8858, 'ci95': [0.8167, 0.9507], 'resamples': 5000, 'seed': 0}
+  group=differential_or_workup   {'n_questions': 24, 'num': 550, 'den': 859, 'point': 0.6403, 'ci95': [0.5624, 0.7133], 'resamples': 5000, 'seed': 0}
+  group=out_of_corpus_control    {'n_questions': 15, 'num': 228, 'den': 436, 'point': 0.5229, 'ci95': [0.4087, 0.6441], 'resamples': 5000, 'seed': 0}
+  qtype(incl. controls)=clinical_explainer       {'n_questions': 29, 'num': 502, 'den': 729, 'point': 0.6886, 'ci95': [0.5871, 0.7818], 'resamples': 5000, 'seed': 0}
+  qtype(incl. controls)=study_result_numeric     {'n_questions': 28, 'num': 358, 'den': 816, 'point': 0.4387, 'ci95': [0.3394, 0.5437], 'resamples': 5000, 'seed': 0}
+  qtype(incl. controls)=guideline_comparison     {'n_questions': 26, 'num': 410, 'den': 848, 'point': 0.4835, 'ci95': [0.4165, 0.5557], 'resamples': 5000, 'seed': 0}
+  qtype(incl. controls)=patient_faq              {'n_questions': 26, 'num': 635, 'den': 729, 'point': 0.8711, 'ci95': [0.8034, 0.9357], 'resamples': 5000, 'seed': 0}
+  qtype(incl. controls)=differential_or_workup   {'n_questions': 25, 'num': 567, 'den': 902, 'point': 0.6286, 'ci95': [0.549, 0.7016], 'resamples': 5000, 'seed': 0}
+  metadata.answer_mode=standard   {'n_questions': 134, 'num': 2472, 'den': 4024, 'point': 0.6143, 'ci95': [0.5688, 0.6598], 'resamples': 5000, 'seed': 0}
+  pipeline.retrieval_profile=deep       {'n_questions': 67, 'num': 1404, 'den': 2222, 'point': 0.6319, 'ci95': [0.5746, 0.6886], 'resamples': 5000, 'seed': 0, 'mean_chunks_per_answer': 33.1642}
+  pipeline.retrieval_profile=standard   {'n_questions': 67, 'num': 1068, 'den': 1802, 'point': 0.5927, 'ci95': [0.5228, 0.6687], 'resamples': 5000, 'seed': 0, 'mean_chunks_per_answer': 26.8955}
+    deep|differential_or_workup                   {'n_questions': 24, 'urlless': 550, 'total': 859, 'share': 0.6403}
+    deep|guideline_comparison                     {'n_questions': 17, 'urlless': 273, 'total': 610, 'share': 0.4475}
+    deep|out_of_corpus_control                    {'n_questions': 6, 'urlless': 95, 'total': 181, 'share': 0.5249}
+    deep|patient_faq                              {'n_questions': 19, 'urlless': 479, 'total': 543, 'share': 0.8821}
+    deep|study_result_numeric                     {'n_questions': 1, 'urlless': 7, 'total': 29, 'share': 0.2414}
+    standard|clinical_explainer                   {'n_questions': 24, 'urlless': 425, 'total': 584, 'share': 0.7277}
+    standard|guideline_comparison                 {'n_questions': 7, 'urlless': 117, 'total': 180, 'share': 0.65}
+    standard|out_of_corpus_control                {'n_questions': 9, 'urlless': 133, 'total': 255, 'share': 0.5216}
+    standard|patient_faq                          {'n_questions': 4, 'urlless': 95, 'total': 105, 'share': 0.9048}
+    standard|study_result_numeric                 {'n_questions': 23, 'urlless': 298, 'total': 678, 'share': 0.4395}
+[urlfirst] retrieved chunks by retrieval_profile: {'deep': {'n_questions': 67, 'retrieved': 2150}, 'standard': {'n_questions': 67, 'retrieved': 1797}}
+[urlfirst] retrieved chunks by source_id (total 3947):
+    vmj_ojs                        2487 0.6301
+    cantho_med_journal              773 0.1958
+    mil_med_pharm_journal           244 0.0618
+    dav_gov                         122 0.0309
+    hue_jmp_ojs                     117 0.0296
+    vien_dinh_duong                  93 0.0236
+    trad_med_pharm_journal           55 0.0139
+    kcb_moh                          19 0.0048
+    mayo_diseases_conditions         11 0.0028
+    hf_medquad                        6 0.0015
+    nci_pdq                           6 0.0015
+    ncbi_bookshelf                    5 0.0013
+    nhs_health_a_z                    3 0.0008
+    who                               3 0.0008
+    uspstf_recommendations            2 0.0005
+    msd_manual_professional           1 0.0003
+
+=== 3. LANGUAGE-MATCHED LIFT ===
+census: total chunks=595663; sum of per-stratum language counts=595663 (equal -> language field complete)
+census language totals: {'vi': 471225, 'en': 109239, 'mixed': 906, 'es': 14293}
+corpus share of URL-less stratum, all chunks  = 256415/595663 = 0.4305
+corpus share of URL-less stratum among language=='vi' chunks = 256415/471225 = 0.5441
+corpus share of language=='en' chunks = 109239/595663 = 0.1834
+corpus share of English-majority strata (14 strata: ['nci_pdq', 'hf_medquad', 'who_vietnam', 'ncbi_bookshelf', 'msd_manual_professional', 'msd_manual_consumer', 'nhs_health_a_z', 'vien_dinh_duong', 'mayo_diseases_conditions', 'nccih_health', 'uspstf_recommendations', 'who', 'medlineplus', 'cdc_health_topics']) = 111782/595663 = 0.1877
+retrieved language counts (shipped): {'vi': 3918, 'en': 106}
+retrieved share of URL-less stratum among language=='vi' retrieved chunks = 2472/3918 = 0.6309
+retrieved share language=='en' = 106/4024 = 0.0263; retrieved share of English-majority strata = 36/4024 = 0.0089
+candidate definitions of 'English reference material' (paper says 16.7% index -> 0.3% retrieved):
+   A_language_en_all_strata                                index  109239 (0.1834)  retrieved  106 (0.0263)
+   B_english_majority_strata_all_chunks                    index  111782 (0.1877)  retrieved   36 (0.0089)
+   C_english_majority_strata_excluding_vien_dinh_duong     index  109237 (0.1834)  retrieved   11 (0.0027)
+   D_language_en_within_reference_and_other_strata         index   98538 (0.1654)  retrieved  105 (0.0261)
+   E_reference_and_other_strata_all_chunks                 index  127345 (0.2138)  retrieved  110 (0.0273)
+   F_language_en_within_english_majority_strata            index   96475 (0.1620)  retrieved   36 (0.0089)
+raw lift = (2472/4024) / (256415/595663) = 1.4271
+language-matched lift = (2472/3918) / (256415/471225) = 1.1595
+vi-only retrieved share bootstrap: {'n_questions': 134, 'num': 2472, 'den': 3918, 'point': 0.6309, 'ci95': [0.5848, 0.6774], 'resamples': 5000, 'seed': 0}
+raw lift CI95 (bootstrap over questions, corpus denominator fixed) = [1.3213, 1.5326]
+language-matched lift CI95 = [1.0748, 1.2448]
+
+=== 4. RETRIEVED SHARE BY STRATUM vs INDEX SHARE (shipped arm) ===
+retrieved source_ids not in census: []
+stratum                       index    idx%   retr    ret%    lift     url_gran
+hf_vi_mtue29_medical         256415  43.05%   2472  61.43%   1.427         none
+vmj_ojs                      132225  22.20%    997  24.78%   1.116      article
+cantho_med_journal            45804   7.69%    298   7.41%   0.963        issue
+nci_pdq                       35763   6.00%      0   0.00%   0.000      article
+hf_medquad                    34400   5.78%      2   0.05%   0.009      article
+mil_med_pharm_journal         19810   3.33%     88   2.19%   0.658        issue
+who_vietnam                   19617   3.29%      0   0.00%   0.000      article
+hue_jmp_ojs                    9132   1.53%     39   0.97%   0.632        issue
+kcb_moh                        8043   1.35%     13   0.32%   0.239      article
+dav_gov                        7520   1.26%     61   1.52%   1.201      article
+trad_med_pharm_journal         4932   0.83%     20   0.50%   0.600        issue
+ncbi_bookshelf                 3449   0.58%      0   0.00%   0.000      article
+msd_manual_professional        3366   0.57%      0   0.00%   0.000      article
+msd_manual_consumer            3061   0.51%      0   0.00%   0.000      article
+nhs_health_a_z                 2958   0.50%      2   0.05%   0.100      article
+vien_dinh_duong                2545   0.43%     25   0.62%   1.454      article
+mayo_diseases_conditions       2376   0.40%      7   0.17%   0.436      article
+nccih_health                   2028   0.34%      0   0.00%   0.000      article
+uspstf_recommendations          776   0.13%      0   0.00%   0.000      article
+who                             766   0.13%      0   0.00%   0.000      article
+medlineplus                     636   0.11%      0   0.00%   0.000      article
+cdc_health_topics                41   0.01%      0   0.00%   0.000      article
+retrieved source_id x language (shipped):
+    hf_vi_mtue29_medical       vi      2472
+    vmj_ojs                    vi       996
+    cantho_med_journal         vi       298
+    mil_med_pharm_journal      vi        88
+    dav_gov                    en        58
+    hue_jmp_ojs                vi        39
+    vien_dinh_duong            en        25
+    trad_med_pharm_journal     vi        20
+    kcb_moh                    en        11
+    mayo_diseases_conditions   en         7
+    dav_gov                    vi         3
+    kcb_moh                    vi         2
+    hf_medquad                 en         2
+    nhs_health_a_z             en         2
+    vmj_ojs                    en         1
+
+=== 5. CLAIM-LEVEL (claim_attributions + dropped_claims) ===
+[shipped] total claims = 351 (returned 185 + dropped 166)
+[shipped] claims with empty source_url = 156; empty chunk_id = 2; empty URL AND empty chunk_id = 2; empty URL with a chunk_id = 154
+[shipped] uncitable (empty URL or empty chunk_id) = 156
+[shipped] URL-less claims whose chunk_id resolves to a retrieved chunk in the URL-less stratum = 154; other stratum = 0; not found among retrieved chunks = 0
+[shipped] drop_reason counts: {'cited_record_not_citable': 147, 'span_not_found_in_cited_chunk': 17, 'chunk_id_not_resolvable': 2}
+[shipped] answers with zero returned claims = 79
+  [shipped] retrieval_profile=deep      questions=67 claims=143 returned=78 urlless=53 empty_chunk_id=2 urlless_share=0.3706
+  [shipped] retrieval_profile=standard  questions=67 claims=208 returned=107 urlless=101 empty_chunk_id=0 urlless_share=0.4856
+  [shipped] clinical_explainer       claims=  82 urlless=  26 share=0.3171 CI=[0.1333, 0.519] uncitable=26
+  [shipped] study_result_numeric     claims=  70 urlless=  43 share=0.6143 CI=[0.4085, 0.7917] uncitable=43
+  [shipped] guideline_comparison     claims=  83 urlless=  21 share=0.253 CI=[0.093, 0.4444] uncitable=21
+  [shipped] patient_faq              claims=  49 urlless=  43 share=0.8776 CI=[0.6923, 1.0] uncitable=43
+  [shipped] differential_or_workup   claims=  28 urlless=   9 share=0.3214 CI=[0.0, 0.6429] uncitable=10
+  [shipped] out_of_corpus_control    claims=  39 urlless=  12 share=0.3077 CI=[0.0732, 0.6] uncitable=13
+[urlfirst] total claims = 379 (returned 364 + dropped 15)
+[urlfirst] claims with empty source_url = 1; empty chunk_id = 1; empty URL AND empty chunk_id = 1; empty URL with a chunk_id = 0
+[urlfirst] uncitable (empty URL or empty chunk_id) = 1
+[urlfirst] URL-less claims whose chunk_id resolves to a retrieved chunk in the URL-less stratum = 0; other stratum = 0; not found among retrieved chunks = 0
+[urlfirst] drop_reason counts: {'span_not_found_in_cited_chunk': 14, 'chunk_id_not_resolvable': 1}
+[urlfirst] answers with zero returned claims = 25
+  [urlfirst] retrieval_profile=deep      questions=67 claims=160 returned=145 urlless=0 empty_chunk_id=1 urlless_share=0.0000
+  [urlfirst] retrieval_profile=standard  questions=67 claims=219 returned=219 urlless=0 empty_chunk_id=0 urlless_share=0.0000
+  [urlfirst] clinical_explainer       claims=  85 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=0
+  [urlfirst] study_result_numeric     claims=  72 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=0
+  [urlfirst] guideline_comparison     claims=  92 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=0
+  [urlfirst] patient_faq              claims=  63 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=0
+  [urlfirst] differential_or_workup   claims=  22 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=1
+  [urlfirst] out_of_corpus_control    claims=  45 urlless=   0 share=0.0 CI=[0.0, 0.0] uncitable=0
+
+=== 6. DUPLICATION ===
+chunks whose text field carries no sha256 = 0
+URL-less retrieved chunks = 2472; distinct sha256 = 2371; mean copies per distinct = 2472/2371 = 1.0426; distinct chunk ids = 2400
+URL-less sha256 seen >1 times across the sweep = 95; max copies of one sha = 3
+answers in which the same URL-less sha256 appears more than once = 4 (of 134); within-answer duplicate URL-less chunk occurrences (sum of copies-1) = 11
+answers in which the same sha256 (any stratum) appears more than once = 5
+all retrieved chunks: 4024; distinct sha256 = 3841; mean copies = 1.0476
+    hf_vi_mtue29_medical       retrieved= 2472 distinct= 2371 mean_copies=1.043
+    vmj_ojs                    retrieved=  997 distinct=  970 mean_copies=1.028
+    cantho_med_journal         retrieved=  298 distinct=  292 mean_copies=1.021
+    mil_med_pharm_journal      retrieved=   88 distinct=   83 mean_copies=1.060
+    dav_gov                    retrieved=   61 distinct=   35 mean_copies=1.743
+    hue_jmp_ojs                retrieved=   39 distinct=   39 mean_copies=1.000
+    vien_dinh_duong            retrieved=   25 distinct=   23 mean_copies=1.087
+    trad_med_pharm_journal     retrieved=   20 distinct=   14 mean_copies=1.429
+    kcb_moh                    retrieved=   13 distinct=    5 mean_copies=2.600
+    mayo_diseases_conditions   retrieved=    7 distinct=    5 mean_copies=1.400
+    hf_medquad                 retrieved=    2 distinct=    2 mean_copies=1.000
+    nhs_health_a_z             retrieved=    2 distinct=    2 mean_copies=1.000
+URL-less claims = 154; distinct after whitespace normalisation = 148; distinct after NFC+casefold+whitespace = 148; claim strings occurring >1 = 4; max repeats = 3
+all claims = 351; distinct after whitespace normalisation = 341
+
+=== 7. RQ1 BOUNDS ===
+census: article-level 259570 + issue-level 79678 + none 256415 = 595663 (N=595663)
+stored any-URL share = 339248/595663 = 0.5695
+stored article-level share = 259570/595663 = 0.4358
+stored issue-level share = 79678/595663 = 0.1338
+hosts with every measurable probe failing: ['nihseniorhealth.gov', 'rarediseases.info.nih.gov', 'www.niddk.nih.gov'] -> population_chunks sum = 16045
+hosts refused by robots.txt (no measurable probe): ['cdn.who.int', 'www.emro.who.int', 'www.mayoclinic.org', 'www.ninds.nih.gov', 'www.who.int'] -> population_chunks sum = 24209
+hosts with partial failure: [('www.cdc.gov', 7, 8)]
+failed-host chunks by stratum (url_population): {'hf_medquad': 16045}; by granularity: {'article_or_page': 16045}
+robots-host chunks by stratum (url_population): {'who_vietnam': 19605, 'mayo_diseases_conditions': 2376, 'hf_medquad': 1462, 'who': 766}; by granularity: {'article_or_page': 24209}
+    nihseniorhealth.gov              {'population_chunks': 1869, 'strata': {'hf_medquad': 1869}, 'granularity': {'article_or_page': 1869}, 'probes': 8, 'reached_2xx': 0, 'status_codes': {}}
+    rarediseases.info.nih.gov        {'population_chunks': 11300, 'strata': {'hf_medquad': 11300}, 'granularity': {'article_or_page': 11300}, 'probes': 19, 'reached_2xx': 0, 'status_codes': {'404': 19}}
+    www.niddk.nih.gov                {'population_chunks': 2876, 'strata': {'hf_medquad': 2876}, 'granularity': {'article_or_page': 2876}, 'probes': 8, 'reached_2xx': 0, 'status_codes': {'404': 8}}
+    cdn.who.int                      {'population_chunks': 20, 'strata': {'who_vietnam': 20}, 'granularity': {'article_or_page': 20}, 'probes': 2, 'reached_2xx': 0, 'status_codes': {}}
+    www.emro.who.int                 {'population_chunks': 105, 'strata': {'who_vietnam': 105}, 'granularity': {'article_or_page': 105}, 'probes': 4, 'reached_2xx': 0, 'status_codes': {}}
+    www.mayoclinic.org               {'population_chunks': 2376, 'strata': {'mayo_diseases_conditions': 2376}, 'granularity': {'article_or_page': 2376}, 'probes': 8, 'reached_2xx': 0, 'status_codes': {}}
+    www.ninds.nih.gov                {'population_chunks': 1462, 'strata': {'hf_medquad': 1462}, 'granularity': {'article_or_page': 1462}, 'probes': 8, 'reached_2xx': 0, 'status_codes': {}}
+    www.who.int                      {'population_chunks': 20246, 'strata': {'who_vietnam': 19480, 'who': 766}, 'granularity': {'article_or_page': 20246}, 'probes': 10, 'reached_2xx': 0, 'status_codes': {}}
+article-level share after removing failed hosts = (259570-16045)/595663 = 0.4088
+article-level share after removing failed + robots hosts = (259570-16045-24209)/595663 = 0.3682
+any-URL share after removing failed hosts = (339248-16045)/595663 = 0.5426; after failed + robots = (339248-16045-24209)/595663 = 0.5020
+retrieved chunks carrying any URL = 1552/4024 = 0.3857 CI95 [0.3402, 0.4312]
+retrieved chunks carrying an issue-pattern URL = 445/4024 = 0.1106
+retrieved chunks carrying a non-issue (article-level) URL = 1107/4024 = 0.2751 CI95 [0.2399, 0.3103]
+retrieved chunks whose URL host is a failed host = 2; robots host = 7; partial host = 0
+article-level retrieved share after removing failed + robots hosts = 1098/4024 = 0.2729
+retrieved URL hosts (top 12): [('tapchiyhocvietnam.vn', 997), ('tapchi.ctump.edu.vn', 298), ('jmpm.vn', 88), ('dav.gov.vn', 61), ('huejmp.vn', 39), ('viendinhduong.vn', 25), ('vjmap.vn', 20), ('kcb.vn', 13), ('www.mayoclinic.org', 7), ('rarediseases.info.nih.gov', 2), ('www.nhs.uk', 2)]
+[urlfirst] retrieved chunks with any URL = 3947/3947 = 1.0000; issue-pattern = 1189 (0.3012); article-level = 2758 (0.6988)
+reachability (chunk-weighted) as recorded in url_audit_report_v1.json:
+  frozen primary sample (n=289): Hajek point 0.955, HT 1.0047, marginal projection [0.7789, 0.9688], Bonferroni joint [0.6935, 0.9744], hosts 21, pop covered 313138.0
+  all probes incl. adaptive top-up (n=367): Hajek point 0.9486, HT 0.9365, marginal projection [0.8106, 0.961], Bonferroni joint [0.7236, 0.9687], hosts 25, pop covered 315039.0
+  confirmatory PPS sample (url_confirmatory_estimate_v1.json, n=174): design-based 0.9321 CI [0.9312, 0.9331]; per-host envelope point 0.973 envelope [0.6521, 0.9864]; robots-blocked chunks 12980
+  robots.txt unmeasurable: {'distinct_urls': 1361, 'chunks': 24209, 'note': 'Excluded from every denominator; not counted as reachable or as broken.'}
+  issue census: 143 URLs, 79678 chunks, answered 143, landed on index 142
+bound ladder: {'L0_stored_any_url': 0.5695, 'L1_stored_article_level': 0.4358, 'L2_article_level_minus_failed_hosts': 0.4088, 'L3_article_level_minus_failed_and_robots_hosts': 0.3682, 'L2_applied_point_reachability_adaptive': 0.4134, 'L2_applied_point_reachability_frozen': 0.4162, 'L2_applied_bonferroni_low_adaptive': 0.3153, 'L2_applied_bonferroni_high_adaptive': 0.4221, 'L2_applied_confirmatory_point': 0.4062}
+
+wrote post_submission/tierA/tierA_retrieval_results.json

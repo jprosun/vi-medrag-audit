@@ -1,0 +1,32 @@
+{
+ "sitemap_urls": 97142,
+ "claim_titles": {
+  "distinct": 52,
+  "slug_matched": 51,
+  "verified": 50
+ },
+ "claims": {
+  "withheld/cited_record_not_citable": {
+   "total": 147,
+   "recovered": 141
+  },
+  "withheld/span_not_found_in_cited_chunk": {
+   "total": 7,
+   "recovered": 7
+  }
+ },
+ "retrieved_chunk_titles": {
+  "distinct": 1527,
+  "total_chunks": 2472,
+  "match_by_title": {
+   "exact_slug": 894,
+   "fuzzy_slug": 581,
+   "none": 52
+  },
+  "match_by_chunk_weight": {
+   "exact_slug": 1511,
+   "fuzzy_slug": 881,
+   "none": 80
+  }
+ }
+}

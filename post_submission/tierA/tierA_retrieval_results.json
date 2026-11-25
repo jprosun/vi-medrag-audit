@@ -1,0 +1,1441 @@
+{
+  "inputs": {
+    "shipped": "benchmark/datasets/test_results/pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+    "urlfirst": "benchmark/datasets/test_results/pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+    "probe": "benchmark/datasets/probe_queries_v2.jsonl",
+    "census": "benchmark/datasets/test_results/corpus_census_medqa_release_v4_all_bge_m3.json",
+    "url_audit_report": "benchmark/rivf/url_audit_report_v1.json",
+    "url_population": "benchmark/rivf/url_population_v4.json",
+    "url_confirmatory": "benchmark/rivf/url_confirmatory_estimate_v1.json"
+  },
+  "conventions": {
+    "urlless_stratum": "hf_vi_mtue29_medical",
+    "issue_url_regex": "/issue/(view|archive)/",
+    "article_url_regex": "/article/(view|download)/|/pmc/|/books/|doi\\.org/",
+    "bootstrap": "percentile cluster bootstrap over questions, 5000 resamples, numpy default_rng(seed=0) fresh per group, ratio of sums within each resample, CI = 2.5/97.5 percentiles"
+  },
+  "probe": {
+    "n": 134,
+    "group_sizes": {
+      "clinical_explainer": 24,
+      "differential_or_workup": 24,
+      "guideline_comparison": 24,
+      "patient_faq": 23,
+      "study_result_numeric": 24,
+      "out_of_corpus_control": 15
+    },
+    "controls_by_qtype": {
+      "clinical_explainer": 5,
+      "differential_or_workup": 1,
+      "guideline_comparison": 2,
+      "patient_faq": 3,
+      "study_result_numeric": 4
+    }
+  },
+  "1_sanity": {
+    "shipped": {
+      "total_retrieved_chunks": 4024,
+      "urlless_stratum_chunks": 2472,
+      "share": 0.6143,
+      "chunks_with_empty_source_url": 2472,
+      "empty_source_url_outside_urlless_stratum": 0,
+      "chunks_per_answer_min": 22,
+      "chunks_per_answer_max": 57,
+      "answer_mode_counts": {
+        "standard": 134
+      },
+      "retrieval_profile_counts": {
+        "standard": 67,
+        "deep": 67
+      },
+      "profile_topk_extractor_counts": {
+        "('standard', 12, False)": 67,
+        "('deep', 20, True)": 67
+      },
+      "note": "metadata.answer_mode is 'standard' for all 134 records; the 67/67 standard/deep split the paper describes is metadata.pipeline.retrieval_profile"
+    },
+    "urlfirst": {
+      "total_retrieved_chunks": 3947,
+      "urlless_stratum_chunks": 0,
+      "chunks_with_empty_source_url": 0,
+      "chunks_per_answer_min": 20,
+      "chunks_per_answer_max": 54,
+      "answer_mode_counts": {
+        "standard": 134
+      }
+    }
+  },
+  "2_share_by_type_and_mode": {
+    "overall_134": {
+      "n_questions": 134,
+      "num": 2472,
+      "den": 4024,
+      "point": 0.6143,
+      "ci95": [
+        0.5688,
+        0.6598
+      ],
+      "resamples": 5000,
+      "seed": 0
+    },
+    "answerable_119": {
+      "n_questions": 119,
+      "num": 2244,
+      "den": 3588,
+      "point": 0.6254,
+      "ci95": [
+        0.5765,
+        0.6733
+      ],
+      "resamples": 5000,
+      "seed": 0
+    },
+    "by_group_controls_separate": {
+      "clinical_explainer": {
+        "n_questions": 24,
+        "num": 425,
+        "den": 584,
+        "point": 0.7277,
+        "ci95": [
+          0.6087,
+          0.8294
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "study_result_numeric": {
+        "n_questions": 24,
+        "num": 305,
+        "den": 707,
+        "point": 0.4314,
+        "ci95": [
+          0.3314,
+          0.5424
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "guideline_comparison": {
+        "n_questions": 24,
+        "num": 390,
+        "den": 790,
+        "point": 0.4937,
+        "ci95": [
+          0.4233,
+          0.5709
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "patient_faq": {
+        "n_questions": 23,
+        "num": 574,
+        "den": 648,
+        "point": 0.8858,
+        "ci95": [
+          0.8167,
+          0.9507
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "differential_or_workup": {
+        "n_questions": 24,
+        "num": 550,
+        "den": 859,
+        "point": 0.6403,
+        "ci95": [
+          0.5624,
+          0.7133
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "out_of_corpus_control": {
+        "n_questions": 15,
+        "num": 228,
+        "den": 436,
+        "point": 0.5229,
+        "ci95": [
+          0.4087,
+          0.6441
+        ],
+        "resamples": 5000,
+        "seed": 0
+      }
+    },
+    "by_qtype_including_controls": {
+      "clinical_explainer": {
+        "n_questions": 29,
+        "num": 502,
+        "den": 729,
+        "point": 0.6886,
+        "ci95": [
+          0.5871,
+          0.7818
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "study_result_numeric": {
+        "n_questions": 28,
+        "num": 358,
+        "den": 816,
+        "point": 0.4387,
+        "ci95": [
+          0.3394,
+          0.5437
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "guideline_comparison": {
+        "n_questions": 26,
+        "num": 410,
+        "den": 848,
+        "point": 0.4835,
+        "ci95": [
+          0.4165,
+          0.5557
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "patient_faq": {
+        "n_questions": 26,
+        "num": 635,
+        "den": 729,
+        "point": 0.8711,
+        "ci95": [
+          0.8034,
+          0.9357
+        ],
+        "resamples": 5000,
+        "seed": 0
+      },
+      "differential_or_workup": {
+        "n_questions": 25,
+        "num": 567,
+        "den": 902,
+        "point": 0.6286,
+        "ci95": [
+          0.549,
+          0.7016
+        ],
+        "resamples": 5000,
+        "seed": 0
+      }
+    },
+    "by_answer_mode_field": {
+      "standard": {
+        "n_questions": 134,
+        "num": 2472,
+        "den": 4024,
+        "point": 0.6143,
+        "ci95": [
+          0.5688,
+          0.6598
+        ],
+        "resamples": 5000,
+        "seed": 0
+      }
+    },
+    "by_retrieval_profile": {
+      "deep": {
+        "n_questions": 67,
+        "num": 1404,
+        "den": 2222,
+        "point": 0.6319,
+        "ci95": [
+          0.5746,
+          0.6886
+        ],
+        "resamples": 5000,
+        "seed": 0,
+        "mean_chunks_per_answer": 33.1642
+      },
+      "standard": {
+        "n_questions": 67,
+        "num": 1068,
+        "den": 1802,
+        "point": 0.5927,
+        "ci95": [
+          0.5228,
+          0.6687
+        ],
+        "resamples": 5000,
+        "seed": 0,
+        "mean_chunks_per_answer": 26.8955
+      }
+    },
+    "profile_x_group_counts": {
+      "deep|differential_or_workup": {
+        "n_questions": 24,
+        "urlless": 550,
+        "total": 859,
+        "share": 0.6403
+      },
+      "deep|guideline_comparison": {
+        "n_questions": 17,
+        "urlless": 273,
+        "total": 610,
+        "share": 0.4475
+      },
+      "deep|out_of_corpus_control": {
+        "n_questions": 6,
+        "urlless": 95,
+        "total": 181,
+        "share": 0.5249
+      },
+      "deep|patient_faq": {
+        "n_questions": 19,
+        "urlless": 479,
+        "total": 543,
+        "share": 0.8821
+      },
+      "deep|study_result_numeric": {
+        "n_questions": 1,
+        "urlless": 7,
+        "total": 29,
+        "share": 0.2414
+      },
+      "standard|clinical_explainer": {
+        "n_questions": 24,
+        "urlless": 425,
+        "total": 584,
+        "share": 0.7277
+      },
+      "standard|guideline_comparison": {
+        "n_questions": 7,
+        "urlless": 117,
+        "total": 180,
+        "share": 0.65
+      },
+      "standard|out_of_corpus_control": {
+        "n_questions": 9,
+        "urlless": 133,
+        "total": 255,
+        "share": 0.5216
+      },
+      "standard|patient_faq": {
+        "n_questions": 4,
+        "urlless": 95,
+        "total": 105,
+        "share": 0.9048
+      },
+      "standard|study_result_numeric": {
+        "n_questions": 23,
+        "urlless": 298,
+        "total": 678,
+        "share": 0.4395
+      }
+    },
+    "urlfirst_by_retrieval_profile": {
+      "deep": {
+        "n_questions": 67,
+        "retrieved": 2150
+      },
+      "standard": {
+        "n_questions": 67,
+        "retrieved": 1797
+      }
+    },
+    "urlfirst_retrieved_by_source_id": {
+      "vmj_ojs": {
+        "chunks": 2487,
+        "share": 0.6301
+      },
+      "cantho_med_journal": {
+        "chunks": 773,
+        "share": 0.1958
+      },
+      "mil_med_pharm_journal": {
+        "chunks": 244,
+        "share": 0.0618
+      },
+      "dav_gov": {
+        "chunks": 122,
+        "share": 0.0309
+      },
+      "hue_jmp_ojs": {
+        "chunks": 117,
+        "share": 0.0296
+      },
+      "vien_dinh_duong": {
+        "chunks": 93,
+        "share": 0.0236
+      },
+      "trad_med_pharm_journal": {
+        "chunks": 55,
+        "share": 0.0139
+      },
+      "kcb_moh": {
+        "chunks": 19,
+        "share": 0.0048
+      },
+      "mayo_diseases_conditions": {
+        "chunks": 11,
+        "share": 0.0028
+      },
+      "hf_medquad": {
+        "chunks": 6,
+        "share": 0.0015
+      },
+      "nci_pdq": {
+        "chunks": 6,
+        "share": 0.0015
+      },
+      "ncbi_bookshelf": {
+        "chunks": 5,
+        "share": 0.0013
+      },
+      "nhs_health_a_z": {
+        "chunks": 3,
+        "share": 0.0008
+      },
+      "who": {
+        "chunks": 3,
+        "share": 0.0008
+      },
+      "uspstf_recommendations": {
+        "chunks": 2,
+        "share": 0.0005
+      },
+      "msd_manual_professional": {
+        "chunks": 1,
+        "share": 0.0003
+      }
+    }
+  },
+  "3_language_matched_lift": {
+    "census_total_chunks": 595663,
+    "census_language_totals": {
+      "vi": 471225,
+      "en": 109239,
+      "mixed": 906,
+      "es": 14293
+    },
+    "census_language_field_complete": true,
+    "corpus_share_urlless_all": 0.4305,
+    "corpus_vi_chunks": 471225,
+    "corpus_vi_urlless_chunks": 256415,
+    "corpus_share_urlless_among_vi": 0.5441,
+    "corpus_share_language_en": 0.1834,
+    "corpus_en_chunks": 109239,
+    "english_majority_strata": [
+      "nci_pdq",
+      "hf_medquad",
+      "who_vietnam",
+      "ncbi_bookshelf",
+      "msd_manual_professional",
+      "msd_manual_consumer",
+      "nhs_health_a_z",
+      "vien_dinh_duong",
+      "mayo_diseases_conditions",
+      "nccih_health",
+      "uspstf_recommendations",
+      "who",
+      "medlineplus",
+      "cdc_health_topics"
+    ],
+    "english_majority_strata_chunks": 111782,
+    "corpus_share_english_majority_strata": 0.1877,
+    "retrieved_language_counts": {
+      "vi": 3918,
+      "en": 106
+    },
+    "retrieved_vi_chunks": 3918,
+    "retrieved_vi_urlless_chunks": 2472,
+    "retrieved_share_urlless_among_vi": 0.6309,
+    "retrieved_share_urlless_among_vi_ci95": [
+      0.5848,
+      0.6774
+    ],
+    "retrieved_share_language_en": 0.0263,
+    "retrieved_share_english_majority_strata": 0.0089,
+    "raw_lift": 1.4271,
+    "raw_lift_ci95": [
+      1.3213,
+      1.5326
+    ],
+    "language_matched_lift": 1.1595,
+    "language_matched_lift_ci95": [
+      1.0748,
+      1.2448
+    ],
+    "english_reference_candidates": {
+      "A_language_en_all_strata": {
+        "index": 109239,
+        "index_share": 0.1834,
+        "retrieved": 106,
+        "retrieved_share": 0.0263
+      },
+      "B_english_majority_strata_all_chunks": {
+        "index": 111782,
+        "index_share": 0.1877,
+        "retrieved": 36,
+        "retrieved_share": 0.0089
+      },
+      "C_english_majority_strata_excluding_vien_dinh_duong": {
+        "index": 109237,
+        "index_share": 0.1834,
+        "retrieved": 11,
+        "retrieved_share": 0.0027
+      },
+      "D_language_en_within_reference_and_other_strata": {
+        "index": 98538,
+        "index_share": 0.1654,
+        "retrieved": 105,
+        "retrieved_share": 0.0261
+      },
+      "E_reference_and_other_strata_all_chunks": {
+        "index": 127345,
+        "index_share": 0.2138,
+        "retrieved": 110,
+        "retrieved_share": 0.0273
+      },
+      "F_language_en_within_english_majority_strata": {
+        "index": 96475,
+        "index_share": 0.162,
+        "retrieved": 36,
+        "retrieved_share": 0.0089
+      }
+    },
+    "english_reference_note": "the paper's 16.7% / 0.3% has no derivation in the artifact; none of the candidate definitions above reproduces 16.7% exactly",
+    "formula": "raw_lift = (retrieved urlless / retrieved all) / (index urlless / index all); language_matched_lift = (retrieved urlless & vi / retrieved vi) / (index urlless & vi / index vi)"
+  },
+  "4_stratum_table": {
+    "total_retrieved_shipped": 4024,
+    "total_retrieved_urlfirst": 3947,
+    "rows": [
+      {
+        "stratum": "hf_vi_mtue29_medical",
+        "index_chunks": 256415,
+        "index_share": 0.4305,
+        "retrieved_chunks": 2472,
+        "retrieved_share": 0.6143,
+        "lift": 1.4271,
+        "url_granularity": "none",
+        "languages": {
+          "vi": 256415
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      },
+      {
+        "stratum": "vmj_ojs",
+        "index_chunks": 132225,
+        "index_share": 0.222,
+        "retrieved_chunks": 997,
+        "retrieved_share": 0.2478,
+        "lift": 1.1162,
+        "url_granularity": "article",
+        "languages": {
+          "vi": 129039,
+          "en": 3186
+        },
+        "urlfirst_retrieved_chunks": 2487,
+        "urlfirst_retrieved_share": 0.6301
+      },
+      {
+        "stratum": "cantho_med_journal",
+        "index_chunks": 45804,
+        "index_share": 0.0769,
+        "retrieved_chunks": 298,
+        "retrieved_share": 0.0741,
+        "lift": 0.9631,
+        "url_granularity": "issue",
+        "languages": {
+          "vi": 42235,
+          "en": 3553,
+          "mixed": 16
+        },
+        "urlfirst_retrieved_chunks": 773,
+        "urlfirst_retrieved_share": 0.1958
+      },
+      {
+        "stratum": "nci_pdq",
+        "index_chunks": 35763,
+        "index_share": 0.06,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 22016,
+          "es": 13747
+        },
+        "urlfirst_retrieved_chunks": 6,
+        "urlfirst_retrieved_share": 0.0015
+      },
+      {
+        "stratum": "hf_medquad",
+        "index_chunks": 34400,
+        "index_share": 0.0578,
+        "retrieved_chunks": 2,
+        "retrieved_share": 0.0005,
+        "lift": 0.0086,
+        "url_granularity": "article",
+        "languages": {
+          "en": 34400
+        },
+        "urlfirst_retrieved_chunks": 6,
+        "urlfirst_retrieved_share": 0.0015
+      },
+      {
+        "stratum": "mil_med_pharm_journal",
+        "index_chunks": 19810,
+        "index_share": 0.0333,
+        "retrieved_chunks": 88,
+        "retrieved_share": 0.0219,
+        "lift": 0.6576,
+        "url_granularity": "issue",
+        "languages": {
+          "vi": 16951,
+          "en": 2114,
+          "mixed": 745
+        },
+        "urlfirst_retrieved_chunks": 244,
+        "urlfirst_retrieved_share": 0.0618
+      },
+      {
+        "stratum": "who_vietnam",
+        "index_chunks": 19617,
+        "index_share": 0.0329,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 19508,
+          "mixed": 73,
+          "vi": 36
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      },
+      {
+        "stratum": "hue_jmp_ojs",
+        "index_chunks": 9132,
+        "index_share": 0.0153,
+        "retrieved_chunks": 39,
+        "retrieved_share": 0.0097,
+        "lift": 0.6322,
+        "url_granularity": "issue",
+        "languages": {
+          "vi": 7439,
+          "en": 1693
+        },
+        "urlfirst_retrieved_chunks": 117,
+        "urlfirst_retrieved_share": 0.0296
+      },
+      {
+        "stratum": "kcb_moh",
+        "index_chunks": 8043,
+        "index_share": 0.0135,
+        "retrieved_chunks": 13,
+        "retrieved_share": 0.0032,
+        "lift": 0.2393,
+        "url_granularity": "article",
+        "languages": {
+          "vi": 8040,
+          "en": 3
+        },
+        "urlfirst_retrieved_chunks": 19,
+        "urlfirst_retrieved_share": 0.0048
+      },
+      {
+        "stratum": "dav_gov",
+        "index_chunks": 7520,
+        "index_share": 0.0126,
+        "retrieved_chunks": 61,
+        "retrieved_share": 0.0152,
+        "lift": 1.2008,
+        "url_granularity": "article",
+        "languages": {
+          "vi": 5460,
+          "en": 2060
+        },
+        "urlfirst_retrieved_chunks": 122,
+        "urlfirst_retrieved_share": 0.0309
+      },
+      {
+        "stratum": "trad_med_pharm_journal",
+        "index_chunks": 4932,
+        "index_share": 0.0083,
+        "retrieved_chunks": 20,
+        "retrieved_share": 0.005,
+        "lift": 0.6003,
+        "url_granularity": "issue",
+        "languages": {
+          "vi": 4705,
+          "en": 155,
+          "mixed": 72
+        },
+        "urlfirst_retrieved_chunks": 55,
+        "urlfirst_retrieved_share": 0.0139
+      },
+      {
+        "stratum": "ncbi_bookshelf",
+        "index_chunks": 3449,
+        "index_share": 0.0058,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 3449
+        },
+        "urlfirst_retrieved_chunks": 5,
+        "urlfirst_retrieved_share": 0.0013
+      },
+      {
+        "stratum": "msd_manual_professional",
+        "index_chunks": 3366,
+        "index_share": 0.0057,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 3366
+        },
+        "urlfirst_retrieved_chunks": 1,
+        "urlfirst_retrieved_share": 0.0003
+      },
+      {
+        "stratum": "msd_manual_consumer",
+        "index_chunks": 3061,
+        "index_share": 0.0051,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 3061
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      },
+      {
+        "stratum": "nhs_health_a_z",
+        "index_chunks": 2958,
+        "index_share": 0.005,
+        "retrieved_chunks": 2,
+        "retrieved_share": 0.0005,
+        "lift": 0.1001,
+        "url_granularity": "article",
+        "languages": {
+          "en": 2958
+        },
+        "urlfirst_retrieved_chunks": 3,
+        "urlfirst_retrieved_share": 0.0008
+      },
+      {
+        "stratum": "vien_dinh_duong",
+        "index_chunks": 2545,
+        "index_share": 0.0043,
+        "retrieved_chunks": 25,
+        "retrieved_share": 0.0062,
+        "lift": 1.4541,
+        "url_granularity": "article",
+        "languages": {
+          "en": 1640,
+          "vi": 905
+        },
+        "urlfirst_retrieved_chunks": 93,
+        "urlfirst_retrieved_share": 0.0236
+      },
+      {
+        "stratum": "mayo_diseases_conditions",
+        "index_chunks": 2376,
+        "index_share": 0.004,
+        "retrieved_chunks": 7,
+        "retrieved_share": 0.0017,
+        "lift": 0.4361,
+        "url_granularity": "article",
+        "languages": {
+          "en": 2376
+        },
+        "urlfirst_retrieved_chunks": 11,
+        "urlfirst_retrieved_share": 0.0028
+      },
+      {
+        "stratum": "nccih_health",
+        "index_chunks": 2028,
+        "index_share": 0.0034,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 1766,
+          "es": 262
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      },
+      {
+        "stratum": "uspstf_recommendations",
+        "index_chunks": 776,
+        "index_share": 0.0013,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 776
+        },
+        "urlfirst_retrieved_chunks": 2,
+        "urlfirst_retrieved_share": 0.0005
+      },
+      {
+        "stratum": "who",
+        "index_chunks": 766,
+        "index_share": 0.0013,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 766
+        },
+        "urlfirst_retrieved_chunks": 3,
+        "urlfirst_retrieved_share": 0.0008
+      },
+      {
+        "stratum": "medlineplus",
+        "index_chunks": 636,
+        "index_share": 0.0011,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 352,
+          "es": 284
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      },
+      {
+        "stratum": "cdc_health_topics",
+        "index_chunks": 41,
+        "index_share": 0.0001,
+        "retrieved_chunks": 0,
+        "retrieved_share": 0.0,
+        "lift": 0.0,
+        "url_granularity": "article",
+        "languages": {
+          "en": 41
+        },
+        "urlfirst_retrieved_chunks": 0,
+        "urlfirst_retrieved_share": 0.0
+      }
+    ],
+    "retrieved_source_x_language": {
+      "hf_vi_mtue29_medical|vi": 2472,
+      "vmj_ojs|vi": 996,
+      "cantho_med_journal|vi": 298,
+      "mil_med_pharm_journal|vi": 88,
+      "dav_gov|en": 58,
+      "hue_jmp_ojs|vi": 39,
+      "vien_dinh_duong|en": 25,
+      "trad_med_pharm_journal|vi": 20,
+      "kcb_moh|en": 11,
+      "mayo_diseases_conditions|en": 7,
+      "dav_gov|vi": 3,
+      "kcb_moh|vi": 2,
+      "hf_medquad|en": 2,
+      "nhs_health_a_z|en": 2,
+      "vmj_ojs|en": 1
+    }
+  },
+  "5_claims": {
+    "shipped": {
+      "total_claims": 351,
+      "returned": 185,
+      "dropped": 166,
+      "by_retrieval_profile": {
+        "deep": {
+          "questions": 67,
+          "claims": 143,
+          "returned": 78,
+          "empty_chunk_id": 2,
+          "urlless": 53,
+          "urlless_share": 0.3706
+        },
+        "standard": {
+          "questions": 67,
+          "claims": 208,
+          "returned": 107,
+          "urlless": 101,
+          "urlless_share": 0.4856
+        }
+      },
+      "empty_source_url": 156,
+      "empty_chunk_id": 2,
+      "empty_url_and_empty_chunk_id": 2,
+      "urlless_record_cited": 154,
+      "uncitable_any": 156,
+      "urlless_share_of_all_claims": 0.4387,
+      "uncitable_share_of_all_claims": 0.4444,
+      "urlless_resolve_to_urlless_stratum": 154,
+      "urlless_resolve_to_other_stratum": 0,
+      "urlless_chunk_id_not_in_retrieved": 0,
+      "drop_reason_counts": {
+        "cited_record_not_citable": 147,
+        "span_not_found_in_cited_chunk": 17,
+        "chunk_id_not_resolvable": 2
+      },
+      "answers_with_zero_returned_claims": 79,
+      "by_group": {
+        "clinical_explainer": {
+          "claims": 82,
+          "urlless": 26,
+          "uncitable": 26,
+          "urlless_share": 0.3171,
+          "urlless_share_ci95": [
+            0.1333,
+            0.519
+          ],
+          "uncitable_share": 0.3171
+        },
+        "study_result_numeric": {
+          "claims": 70,
+          "urlless": 43,
+          "uncitable": 43,
+          "urlless_share": 0.6143,
+          "urlless_share_ci95": [
+            0.4085,
+            0.7917
+          ],
+          "uncitable_share": 0.6143
+        },
+        "guideline_comparison": {
+          "claims": 83,
+          "urlless": 21,
+          "uncitable": 21,
+          "urlless_share": 0.253,
+          "urlless_share_ci95": [
+            0.093,
+            0.4444
+          ],
+          "uncitable_share": 0.253
+        },
+        "patient_faq": {
+          "claims": 49,
+          "urlless": 43,
+          "uncitable": 43,
+          "urlless_share": 0.8776,
+          "urlless_share_ci95": [
+            0.6923,
+            1.0
+          ],
+          "uncitable_share": 0.8776
+        },
+        "differential_or_workup": {
+          "claims": 28,
+          "urlless": 9,
+          "uncitable": 10,
+          "urlless_share": 0.3214,
+          "urlless_share_ci95": [
+            0.0,
+            0.6429
+          ],
+          "uncitable_share": 0.3571
+        },
+        "out_of_corpus_control": {
+          "claims": 39,
+          "urlless": 12,
+          "uncitable": 13,
+          "urlless_share": 0.3077,
+          "urlless_share_ci95": [
+            0.0732,
+            0.6
+          ],
+          "uncitable_share": 0.3333
+        }
+      }
+    },
+    "urlfirst": {
+      "total_claims": 379,
+      "returned": 364,
+      "dropped": 15,
+      "by_retrieval_profile": {
+        "deep": {
+          "questions": 67,
+          "claims": 160,
+          "returned": 145,
+          "empty_chunk_id": 1,
+          "urlless_share": 0.0
+        },
+        "standard": {
+          "questions": 67,
+          "claims": 219,
+          "returned": 219,
+          "urlless_share": 0.0
+        }
+      },
+      "empty_source_url": 1,
+      "empty_chunk_id": 1,
+      "empty_url_and_empty_chunk_id": 1,
+      "urlless_record_cited": 0,
+      "uncitable_any": 1,
+      "urlless_share_of_all_claims": 0.0,
+      "uncitable_share_of_all_claims": 0.0026,
+      "urlless_resolve_to_urlless_stratum": 0,
+      "urlless_resolve_to_other_stratum": 0,
+      "urlless_chunk_id_not_in_retrieved": 0,
+      "drop_reason_counts": {
+        "span_not_found_in_cited_chunk": 14,
+        "chunk_id_not_resolvable": 1
+      },
+      "answers_with_zero_returned_claims": 25,
+      "by_group": {
+        "clinical_explainer": {
+          "claims": 85,
+          "urlless": 0,
+          "uncitable": 0,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0
+        },
+        "study_result_numeric": {
+          "claims": 72,
+          "urlless": 0,
+          "uncitable": 0,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0
+        },
+        "guideline_comparison": {
+          "claims": 92,
+          "urlless": 0,
+          "uncitable": 0,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0
+        },
+        "patient_faq": {
+          "claims": 63,
+          "urlless": 0,
+          "uncitable": 0,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0
+        },
+        "differential_or_workup": {
+          "claims": 22,
+          "urlless": 0,
+          "uncitable": 1,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0455
+        },
+        "out_of_corpus_control": {
+          "claims": 45,
+          "urlless": 0,
+          "uncitable": 0,
+          "urlless_share": 0.0,
+          "urlless_share_ci95": [
+            0.0,
+            0.0
+          ],
+          "uncitable_share": 0.0
+        }
+      }
+    }
+  },
+  "6_duplication": {
+    "chunks_without_sha": 0,
+    "urlless_retrieved_chunks": 2472,
+    "urlless_distinct_sha256": 2371,
+    "urlless_mean_copies_per_distinct": 1.0426,
+    "urlless_distinct_chunk_ids": 2400,
+    "urlless_sha_seen_more_than_once": 95,
+    "urlless_max_copies_one_sha": 3,
+    "answers_with_repeated_urlless_sha_within_answer": 4,
+    "within_answer_duplicate_urlless_occurrences": 11,
+    "answers_with_repeated_sha_any_stratum_within_answer": 5,
+    "all_retrieved_chunks": 4024,
+    "all_distinct_sha256": 3841,
+    "all_mean_copies": 1.0476,
+    "by_stratum": {
+      "hf_vi_mtue29_medical": {
+        "retrieved": 2472,
+        "distinct_sha256": 2371,
+        "mean_copies": 1.0426
+      },
+      "vmj_ojs": {
+        "retrieved": 997,
+        "distinct_sha256": 970,
+        "mean_copies": 1.0278
+      },
+      "cantho_med_journal": {
+        "retrieved": 298,
+        "distinct_sha256": 292,
+        "mean_copies": 1.0205
+      },
+      "mil_med_pharm_journal": {
+        "retrieved": 88,
+        "distinct_sha256": 83,
+        "mean_copies": 1.0602
+      },
+      "dav_gov": {
+        "retrieved": 61,
+        "distinct_sha256": 35,
+        "mean_copies": 1.7429
+      },
+      "hue_jmp_ojs": {
+        "retrieved": 39,
+        "distinct_sha256": 39,
+        "mean_copies": 1.0
+      },
+      "vien_dinh_duong": {
+        "retrieved": 25,
+        "distinct_sha256": 23,
+        "mean_copies": 1.087
+      },
+      "trad_med_pharm_journal": {
+        "retrieved": 20,
+        "distinct_sha256": 14,
+        "mean_copies": 1.4286
+      },
+      "kcb_moh": {
+        "retrieved": 13,
+        "distinct_sha256": 5,
+        "mean_copies": 2.6
+      },
+      "mayo_diseases_conditions": {
+        "retrieved": 7,
+        "distinct_sha256": 5,
+        "mean_copies": 1.4
+      },
+      "hf_medquad": {
+        "retrieved": 2,
+        "distinct_sha256": 2,
+        "mean_copies": 1.0
+      },
+      "nhs_health_a_z": {
+        "retrieved": 2,
+        "distinct_sha256": 2,
+        "mean_copies": 1.0
+      }
+    },
+    "urlless_claims": 154,
+    "urlless_claims_distinct_ws": 148,
+    "urlless_claims_distinct_nfc_casefold_ws": 148,
+    "urlless_claim_strings_repeated": 4,
+    "urlless_claim_max_repeats": 3,
+    "all_claims": 351,
+    "all_claims_distinct_ws": 341
+  },
+  "7_rq1_bounds": {
+    "census_article_level": 259570,
+    "census_issue_level": 79678,
+    "census_none": 256415,
+    "N": 595663,
+    "stored_any_url_share": 0.5695,
+    "stored_article_level_share": 0.4358,
+    "stored_issue_level_share": 0.1338,
+    "failed_hosts": [
+      "nihseniorhealth.gov",
+      "rarediseases.info.nih.gov",
+      "www.niddk.nih.gov"
+    ],
+    "failed_hosts_chunks": 16045,
+    "failed_hosts_by_stratum": {
+      "hf_medquad": 16045
+    },
+    "failed_hosts_by_granularity": {
+      "article_or_page": 16045
+    },
+    "robots_hosts": [
+      "cdn.who.int",
+      "www.emro.who.int",
+      "www.mayoclinic.org",
+      "www.ninds.nih.gov",
+      "www.who.int"
+    ],
+    "robots_hosts_chunks": 24209,
+    "robots_hosts_by_stratum": {
+      "who_vietnam": 19605,
+      "mayo_diseases_conditions": 2376,
+      "hf_medquad": 1462,
+      "who": 766
+    },
+    "robots_hosts_by_granularity": {
+      "article_or_page": 24209
+    },
+    "partial_failure_hosts": [
+      {
+        "host": "www.cdc.gov",
+        "reached": 7,
+        "measurable": 8
+      }
+    ],
+    "per_host_detail": {
+      "nihseniorhealth.gov": {
+        "population_chunks": 1869,
+        "strata": {
+          "hf_medquad": 1869
+        },
+        "granularity": {
+          "article_or_page": 1869
+        },
+        "probes": 8,
+        "reached_2xx": 0,
+        "status_codes": {}
+      },
+      "rarediseases.info.nih.gov": {
+        "population_chunks": 11300,
+        "strata": {
+          "hf_medquad": 11300
+        },
+        "granularity": {
+          "article_or_page": 11300
+        },
+        "probes": 19,
+        "reached_2xx": 0,
+        "status_codes": {
+          "404": 19
+        }
+      },
+      "www.niddk.nih.gov": {
+        "population_chunks": 2876,
+        "strata": {
+          "hf_medquad": 2876
+        },
+        "granularity": {
+          "article_or_page": 2876
+        },
+        "probes": 8,
+        "reached_2xx": 0,
+        "status_codes": {
+          "404": 8
+        }
+      },
+      "cdn.who.int": {
+        "population_chunks": 20,
+        "strata": {
+          "who_vietnam": 20
+        },
+        "granularity": {
+          "article_or_page": 20
+        },
+        "probes": 2,
+        "reached_2xx": 0,
+        "status_codes": {}
+      },
+      "www.emro.who.int": {
+        "population_chunks": 105,
+        "strata": {
+          "who_vietnam": 105
+        },
+        "granularity": {
+          "article_or_page": 105
+        },
+        "probes": 4,
+        "reached_2xx": 0,
+        "status_codes": {}
+      },
+      "www.mayoclinic.org": {
+        "population_chunks": 2376,
+        "strata": {
+          "mayo_diseases_conditions": 2376
+        },
+        "granularity": {
+          "article_or_page": 2376
+        },
+        "probes": 8,
+        "reached_2xx": 0,
+        "status_codes": {}
+      },
+      "www.ninds.nih.gov": {
+        "population_chunks": 1462,
+        "strata": {
+          "hf_medquad": 1462
+        },
+        "granularity": {
+          "article_or_page": 1462
+        },
+        "probes": 8,
+        "reached_2xx": 0,
+        "status_codes": {}
+      },
+      "www.who.int": {
+        "population_chunks": 20246,
+        "strata": {
+          "who_vietnam": 19480,
+          "who": 766
+        },
+        "granularity": {
+          "article_or_page": 20246
+        },
+        "probes": 10,
+        "reached_2xx": 0,
+        "status_codes": {}
+      }
+    },
+    "article_share_minus_failed": 0.4088,
+    "article_share_minus_failed_and_robots": 0.3682,
+    "any_url_share_minus_failed": 0.5426,
+    "any_url_share_minus_failed_and_robots": 0.502,
+    "retrieval_level_shipped": {
+      "any_url": 1552,
+      "any_url_share": 0.3857,
+      "any_url_ci95": [
+        0.3402,
+        0.4312
+      ],
+      "issue_pattern_url": 445,
+      "issue_share": 0.1106,
+      "article_level_url": 1107,
+      "article_share": 0.2751,
+      "article_ci95": [
+        0.2399,
+        0.3103
+      ],
+      "url_on_failed_host": 2,
+      "url_on_robots_host": 7,
+      "url_on_partial_host": 0,
+      "article_share_minus_failed_and_robots": 0.2729,
+      "top_hosts": [
+        [
+          "tapchiyhocvietnam.vn",
+          997
+        ],
+        [
+          "tapchi.ctump.edu.vn",
+          298
+        ],
+        [
+          "jmpm.vn",
+          88
+        ],
+        [
+          "dav.gov.vn",
+          61
+        ],
+        [
+          "huejmp.vn",
+          39
+        ],
+        [
+          "viendinhduong.vn",
+          25
+        ],
+        [
+          "vjmap.vn",
+          20
+        ],
+        [
+          "kcb.vn",
+          13
+        ],
+        [
+          "www.mayoclinic.org",
+          7
+        ],
+        [
+          "rarediseases.info.nih.gov",
+          2
+        ],
+        [
+          "www.nhs.uk",
+          2
+        ]
+      ]
+    },
+    "retrieval_level_urlfirst": {
+      "any_url": 3947,
+      "any_url_share": 1.0,
+      "issue_pattern_url": 1189,
+      "issue_share": 0.3012,
+      "article_level_url": 2758,
+      "article_share": 0.6988
+    },
+    "reachability_recorded_in_artifact": {
+      "frozen_primary": {
+        "n": 289,
+        "hajek_point": 0.955,
+        "ht_point": 1.0047,
+        "marginal_projection": [
+          0.7789,
+          0.9688
+        ],
+        "bonferroni_joint": [
+          0.6935,
+          0.9744
+        ],
+        "hosts": 21
+      },
+      "all_probes_adaptive": {
+        "n": 367,
+        "hajek_point": 0.9486,
+        "ht_point": 0.9365,
+        "marginal_projection": [
+          0.8106,
+          0.961
+        ],
+        "bonferroni_joint": [
+          0.7236,
+          0.9687
+        ],
+        "hosts": 25
+      },
+      "confirmatory_pps": {
+        "n": 174,
+        "design_based_point": 0.9321,
+        "design_based_ci95": [
+          0.9312,
+          0.9331
+        ],
+        "envelope_point": 0.973,
+        "envelope": [
+          0.6521,
+          0.9864
+        ],
+        "robots_blocked_chunks": 12980
+      },
+      "robots_unmeasurable": {
+        "distinct_urls": 1361,
+        "chunks": 24209,
+        "note": "Excluded from every denominator; not counted as reachable or as broken."
+      },
+      "issue_census": {
+        "distinct_issue_urls": 143,
+        "chunks_behind_them": 79678,
+        "answered_2xx": 143,
+        "landed_on_an_issue_index": 142
+      }
+    },
+    "bound_ladder": {
+      "L0_stored_any_url": 0.5695,
+      "L1_stored_article_level": 0.4358,
+      "L2_article_level_minus_failed_hosts": 0.4088,
+      "L3_article_level_minus_failed_and_robots_hosts": 0.3682,
+      "L2_applied_point_reachability_adaptive": 0.4134,
+      "L2_applied_point_reachability_frozen": 0.4162,
+      "L2_applied_bonferroni_low_adaptive": 0.3153,
+      "L2_applied_bonferroni_high_adaptive": 0.4221,
+      "L2_applied_confirmatory_point": 0.4062
+    }
+  }
+}

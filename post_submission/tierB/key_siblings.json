@@ -1,0 +1,322 @@
+[
+  {
+    "item_id": "tbS_000",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_120",
+    "paired_question_id": "rivf_121",
+    "specialty": "truyen_nhiem"
+  },
+  {
+    "item_id": "tbS_001",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_003",
+    "paired_question_id": "rivf_002",
+    "specialty": "co_xuong_khop"
+  },
+  {
+    "item_id": "tbS_002",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_099",
+    "paired_question_id": "rivf_097",
+    "specialty": "tieu_hoa"
+  },
+  {
+    "item_id": "tbS_003",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_013",
+    "paired_question_id": "rivf_018",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_004",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_001",
+    "paired_question_id": "rivf_009",
+    "specialty": "co_xuong_khop"
+  },
+  {
+    "item_id": "tbS_005",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_012",
+    "paired_question_id": "rivf_020",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_006",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_025",
+    "paired_question_id": "rivf_027",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_007",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_106",
+    "paired_question_id": "rivf_108",
+    "specialty": "tim_mach"
+  },
+  {
+    "item_id": "tbS_008",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_091",
+    "paired_question_id": "rivf_090",
+    "specialty": "than_tiet_nieu"
+  },
+  {
+    "item_id": "tbS_009",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_017",
+    "paired_question_id": "rivf_011",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_010",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_068",
+    "paired_question_id": "rivf_066",
+    "specialty": "san_phu_khoa"
+  },
+  {
+    "item_id": "tbS_011",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_018",
+    "paired_question_id": "rivf_015",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_012",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_072",
+    "paired_question_id": "rivf_068",
+    "specialty": "san_phu_khoa"
+  },
+  {
+    "item_id": "tbS_013",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_116",
+    "paired_question_id": "rivf_123",
+    "specialty": "truyen_nhiem"
+  },
+  {
+    "item_id": "tbS_014",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_131",
+    "paired_question_id": "rivf_130",
+    "specialty": "ung_buou"
+  },
+  {
+    "item_id": "tbS_015",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_044",
+    "paired_question_id": "rivf_050",
+    "specialty": "noi_tiet"
+  },
+  {
+    "item_id": "tbS_016",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_074",
+    "paired_question_id": "rivf_068",
+    "specialty": "san_phu_khoa"
+  },
+  {
+    "item_id": "tbS_017",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_024",
+    "paired_question_id": "rivf_028",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_018",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_128",
+    "paired_question_id": "rivf_133",
+    "specialty": "ung_buou"
+  },
+  {
+    "item_id": "tbS_019",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_075",
+    "paired_question_id": "rivf_067",
+    "specialty": "san_phu_khoa"
+  },
+  {
+    "item_id": "tbS_020",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_020",
+    "paired_question_id": "rivf_015",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_021",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_037",
+    "paired_question_id": "rivf_040",
+    "specialty": "nhi"
+  },
+  {
+    "item_id": "tbS_022",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_021",
+    "paired_question_id": "rivf_022",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_023",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_049",
+    "paired_question_id": "rivf_047",
+    "specialty": "noi_tiet"
+  },
+  {
+    "item_id": "tbS_024",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_096",
+    "paired_question_id": "rivf_105",
+    "specialty": "tieu_hoa"
+  },
+  {
+    "item_id": "tbS_025",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_127",
+    "paired_question_id": "rivf_130",
+    "specialty": "ung_buou"
+  },
+  {
+    "item_id": "tbS_026",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_030",
+    "paired_question_id": "rivf_022",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_027",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_085",
+    "paired_question_id": "rivf_079",
+    "specialty": "than_kinh"
+  },
+  {
+    "item_id": "tbS_028",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_020",
+    "paired_question_id": "rivf_016",
+    "specialty": "ho_hap"
+  },
+  {
+    "item_id": "tbS_029",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_033",
+    "paired_question_id": "rivf_035",
+    "specialty": "nhi"
+  },
+  {
+    "item_id": "tbS_030",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_022",
+    "paired_question_id": "rivf_021",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_031",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_103",
+    "paired_question_id": "rivf_097",
+    "specialty": "tieu_hoa"
+  },
+  {
+    "item_id": "tbS_032",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_086",
+    "paired_question_id": "rivf_092",
+    "specialty": "than_tiet_nieu"
+  },
+  {
+    "item_id": "tbS_033",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_034",
+    "paired_question_id": "rivf_038",
+    "specialty": "nhi"
+  },
+  {
+    "item_id": "tbS_034",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_029",
+    "paired_question_id": "rivf_030",
+    "specialty": "huyet_hoc_mien_dich"
+  },
+  {
+    "item_id": "tbS_035",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_078",
+    "paired_question_id": "rivf_076",
+    "specialty": "than_kinh"
+  },
+  {
+    "item_id": "tbS_036",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_111",
+    "paired_question_id": "rivf_114",
+    "specialty": "tim_mach"
+  },
+  {
+    "item_id": "tbS_037",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_131",
+    "paired_question_id": "rivf_127",
+    "specialty": "ung_buou"
+  },
+  {
+    "item_id": "tbS_038",
+    "kind": "sibling_control",
+    "arm": "urlfirst",
+    "query_id": "rivf_040",
+    "paired_question_id": "rivf_036",
+    "specialty": "nhi"
+  },
+  {
+    "item_id": "tbS_039",
+    "kind": "sibling_control",
+    "arm": "shipped",
+    "query_id": "rivf_017",
+    "paired_question_id": "rivf_018",
+    "specialty": "ho_hap"
+  }
+]

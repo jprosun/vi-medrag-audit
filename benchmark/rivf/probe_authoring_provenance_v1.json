@@ -1,0 +1,21 @@
+{
+  "what_this_is": "Served model IDs for the 13 blind question-authoring agents and 3 independent auditors that produced benchmark/datasets/probe_queries_v2.jsonl, recovered from message.model in workflow transcripts.",
+  "run_id": "wf_24989b5a-8b4",
+  "workflow_script": "benchmark/rivf/judging/rivf-probe-grid.js",
+  "window_utc": [
+    "2026-09-04T03:54:17.121Z",
+    "2026-09-04T04:05:57.791Z"
+  ],
+  "authoring_agents": 13,
+  "auditor_agents": 3,
+  "models_seen_authoring": {
+    "claude-opus-5": 26
+  },
+  "models_seen_auditors": {
+    "claude-opus-5": 6
+  },
+  "authoring_model_id": "claude-opus-5",
+  "auditor_model_id": "claude-opus-5",
+  "questions_authored_raw": 135,
+  "audit_findings_raw": 64
+}

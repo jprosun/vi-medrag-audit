@@ -6,6 +6,8 @@
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \sisetup{group-separator={,},group-minimum-digits=4,detect-all}
@@ -50,6 +52,18 @@
 % unrelated -- 69.7 % are PARTIAL, on the topic and not an answer. "Rarely responsive" is
 % what was measured; "irrelevant" would have been a stronger claim than the data, in a paper
 % whose subject is exactly that mistake.
+% v3 (2026-10-11): retitled after the post-submission answer-level judging showed the narrative
+% answers responsive (0.754 / 0.776) while the returned attribution claims are not (0.011).
+% "Rarely Responsive" described only the attribution list; the old title is in main.tex.
+% v4 (2026-10-12): addresses the v3 re-review (CHANGELOG_v4.md). Answer-level results are labelled
+% exploratory; a third judge (claude-sonnet-5-5) and 40 same-specialty sibling controls were added.
+% Consider retitling "Citations" -> "Attribution Lists" (re-review F12); NOT changed here.
+% v5 (2026-10-29): CAMERA-READY for RIVF 2026 (accepted; due 2026-11-25, hard limit 6 pages).
+% Title reverted to the one accepted on EDAS; the v3/v4 title led with the exploratory
+% answer-level result, which three reviewers and the v4 re-review asked to de-emphasise. If you
+% prefer the v4 title, change it on EDAS as well. Pipeline figure added (TikZ), abstract cut to
+% four numbers, three statements corrected against the released artifact, scope caveats added.
+% See CHANGELOG_v5.md.
 \title{Retrievable, Citable, Rarely Responsive:\\Auditing Attribution Coverage in a Vietnamese Medical RAG System}
 
 % ONE AUTHOR, deliberately. The design, the code, the audit, both codebooks, both
@@ -85,20 +99,20 @@ sonnd2803@gmail.com}}
 % objection to 0.03 is that a model produced it.
 % ---------------------------------------------------------------- ABSTRACT (<=170 words)
 \begin{abstract}
-Retrieval-augmented generation is adopted for medical question answering on a promise of
-traceability, yet whether a citation opens is rarely checked, and whether the cited text
-answers the question less often still. We audit a deployed Vietnamese corpus and its serving
-path. Of \num{595663} indexed chunks, \SI{43.1}{\percent} carry no source URL and
-\SI{13.4}{\percent} only an issue-level one---and those \num{79678} chunks share just
-\num{143} distinct destinations, \num{142} of which resolve to an index that does not identify
-the cited article. The uncitable stratum supplies \SI{61.4}{\percent} of what retrieval
-returns. Withholding uncitable claims after generation retains \num{0.527} of them and leaves
-79 of 134 precommitted questions with none, varying \num{5.6}-fold by question type.
-Excluding the stratum at retrieval instead eliminates citability-based withholding by
-construction: retention \num{0.960} and 25 answers with no attribution claim. We found no
-evidence that either design changed the per-claim rates---under both, about \num{0.96} of
-returned claims are supported by their cited passage and \numrange{0.02}{0.04} answer the
-question, depending on the judge---and no equivalence margin was pre-specified. Support and responsiveness are not substitutes.
+Retrieval-augmented generation (RAG) is adopted for medical question answering on a promise of
+traceability, yet whether a retrieval corpus's records can be cited at all, and what enforcing
+citability costs at serving time, is rarely checked. We audit the corpus and serving path of
+one Vietnamese medical RAG research prototype. In its index, \SI{43}{\percent} of chunks
+carry no source URL, because one re-packaged dataset kept its text and dropped its links, and
+a further \SI{13}{\percent} carry a URL that opens an issue index, not the article. On the
+serving path, withholding uncitable claims after generation keeps \num{0.53} of extracted
+claims; excluding the URL-less records at retrieval avoids that withholding by construction
+(\num{0.96}, one run per design). Under both designs almost every returned attribution entry
+is supported by its passage, yet only a few per hundred answer the question. Our message:
+traceability of the attribution list can be enforced by code; where the citability check sits
+decides what is withheld; and high support coexists with very low claim-level responsiveness.
+Responsiveness is measured on returned attribution entries under a verbatim-copy extractor,
+not as an end-to-end answer-quality rate, and the design comparison is two single runs.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -108,266 +122,273 @@ retrieval-augmented generation, attribution, citation verification, medical ques
 % ---------------------------------------------------------------- I. INTRODUCTION (<=450 words)
 \section{Introduction}Retrieval-augmented generation is deployed for medical question answering on a promise: the
 answer is grounded in retrieved documents, and a reader who doubts it can check. In the
-Vietnamese-language system we operate, that promise failed quietly. Over 134 questions,
-\num{156} of the \num{351} claims the system proposed were uncitable---\num{154} citing a
-record that carries no source URL and two naming no record at all---counted over every claim
-the extractor produced, before any gate. In the 154 URL-less cases, the cited records exist
-but lack source links: their corpus was re-packaged for embedding training with its text
-kept and its URLs dropped. No answer-quality metric we had could see this.
-
-The failure separates two things easily conflated. A citation emitted by a language model is
-a promise; whether it can be opened is a property, and only code holds a property. Our own
-earlier verifier checked only that a citation index fell within the range of retrieved
-chunks---a test any well-formed citation to a URL-less record passes.
+Vietnamese-language system we operate, \num{156} of the \num{351} claims proposed over 134
+questions were uncitable before any gate: \num{154} cite a record whose corpus was re-packaged
+for embedding training with its text kept and its URLs dropped, and two name no record. No
+answer-quality metric we had could see this.
 
 Mechanisms that make citations verifiable by construction are established and we claim
-novelty for none of them (Section~\ref{sec:related}); what their evaluations share is a
-setting, English corpora assembled so that they can be cited. Healthcare deployment outside
-English meets the opposite condition---a corpus assembled to be retrieved, for a purpose that
-was not citation---and what an enforcement instrument meets there is unreported.
+novelty for none of them (Section~\ref{sec:related}); they are evaluated on corpora assembled
+to be cited, and attribution has been measured across languages \cite{muller2023xorattriqa}
+but not, to our knowledge, on a medical corpus assembled from re-packaged data.
 
 We therefore treat the mechanism as an instrument, not a contribution, and ask three
-questions. \textbf{RQ1:} how much of a deployed Vietnamese medical corpus can support a
-citation a reader can actually open---a locator stored, answering, and resolving to the cited
-article rather than to an index? \textbf{RQ2:} what do span containment and stored-URL
+questions. \textbf{RQ1:} how much of a Vietnamese medical retrieval corpus can support a
+citation a reader can open---stored, answering, and resolving to the cited article rather
+than to an index? \textbf{RQ2:} what do span containment and stored-URL
 citability cost at serving time, and how does that cost depend on where filtering is applied?
-\textbf{RQ3:} does what survives enforcement
-answer the question that was asked?
+\textbf{RQ3:} does what survives enforcement---the attribution list, and the answer it
+accompanies---answer the question that was asked?
 
-Our contribution is empirical: retrieval \emph{amplifies} provenance loss, and where the
-citability check sits decides the cost. Around it we separate three routinely conflated
-quantities---whether a source can be traced, whether the passage supports the claim, and
-whether the claim answers the question---end to end on a deployed system.
-(i) An exhaustive census of all \num{595663} indexed chunks in which the untraceable stratum
-supplies a larger share of retrieved chunks than of the index, plus a dereference audit
-showing a stored locator is a weak proxy for an openable one: \num{142} of the \num{143}
-issue-level destinations resolve to an index rather than to the cited article.
+That answer quality and citation quality diverge is documented
+\cite{liu2023verifiability,malaviya2024expertqa,wang2025medcite}. Our contribution is a
+single-system case study, and we claim novelty only for a provenance census of a medical
+retrieval corpus and for how a citability check interacts with provenance loss on a serving
+path. We measure, through the system's API, four quantities prior work already separates
+\cite{malaviya2024expertqa}: whether a source can be traced, whether the passage supports the
+claim, whether the claim answers the question, and whether the answer does.
+(i) An exhaustive census of all \num{595663} indexed chunks, and a dereference audit: a
+non-empty URL field is a weak proxy for an openable citation, while the article/issue shape of
+the stored URL predicts the destination (\num{142} of \num{143} issue-level URLs land on an index).
 (ii) A price for each check, from four nested gate configurations replayed over one captured
-sweep of 134 questions hashed and published before any of them ran, so they share identical
-generations; the gap they leave is that \SI{77.8}{\percent} of the figures in delivered
-answers are pinned to nothing. (iii) The same questions run live under a second design that
-excludes the URL-less stratum at retrieval instead. (iv) Two judgement instruments, each
-frozen before use and each with a control arm. Evaluation code, questions, labels, judging
-prompts and redacted run records are released at
+sweep of 134 questions, hashed and committed privately the day before the first run and
+published with this paper, so they share identical generations. (iii) The same questions run
+once under a second design that excludes the URL-less stratum at retrieval; we call the two
+designs \emph{arms}, the \emph{shipped} arm withholding after generation (it was never
+released to users) and the \emph{URL-first} arm excluding at retrieval. (iv) Two claim-level
+judgement instruments with codebooks frozen
+before use and control arms; after submission, adapted versions judged withheld claims and the
+narrative answers, which we report as exploratory. Evaluation code, questions, labels, judging
+prompts, redacted run records and the post-submission analyses are released at
 \url{https://github.com/jprosun/vi-medrag-audit}.
-Source passages are withheld; text-dependent verification requires the original corpus.
+% Packaged under post_submission/ (tierA, tierB, tierC) and benchmark/rivf/build_probe_set.py.
+Source passages and serving code are withheld; text-dependent checks need the original corpus.
 % ---------------------------------------------------------------- II. RELATED WORK (350--500 words; do NOT cut first)
 \section{Related Work}\label{sec:related}
 \textbf{A citation is a promise, not a property.} Generative search engines produce citations
 that often fail to support the sentence they are attached to \cite{liu2023verifiability};
 hence benchmarks for citation quality \cite{gao2023alce} and automatic attribution scoring
-\cite{yue2023attrscore}. An audit of deep-research agents finds link validity above
-\SI{94}{\percent} alongside factual accuracy between \SI{39}{\percent} and \SI{77}{\percent}
-\cite{onweller2026citednotverified}: a citation that resolves is not one that supports. Nor is a
-supported claim a responsive one: answer coverage has been scored by decomposing the query
-into sub-questions \cite{xie2025subquestion}, where we judge each claim against the whole
-question instead.
+\cite{yue2023attrscore}; deep-research agents resolve above \SI{94}{\percent} of links while
+being factually accurate on \SIrange{39}{77}{\percent} \cite{onweller2026citednotverified}, so
+a citation that resolves is not one that supports, and a correct citation need not be what the
+model used \cite{wallat2025correctness}. Nor is a supported claim a responsive one:
+answer coverage has been scored by decomposing the query into sub-questions
+\cite{xie2025subquestion}; we judge each returned claim singly against the whole question.
 
 \textbf{Verifiable by construction.} Requiring each statement to carry a verbatim quote is
-established. GopherCite abstains unless it can produce one \cite{menick2022gophercite}; later
-work prompts models to quote pre-training data \cite{weller2024according}, aligns them to
-\cite{zhang2024quotetuning}, locates spans post hoc
-\cite{yeginbergen2026fullcite}, and verifies each claim before release
-\cite{qian2025vericite}. In medicine, claim-selective certification reports zero
-unsupported-critical-claim risk under a weak-label certificate protocol
-\cite{kan2026claimselective}, and a buffer holding
-streamed tokens until a guard clears them has been proposed \cite{sentguard2026}. Ours are the
-simplest published forms of these, used as an instrument rather than proposed as a method.
+established: GopherCite answers with a supporting quote and abstains when unconfident
+\cite{menick2022gophercite}; later work prompts or aligns models to quote
+\cite{weller2024according,zhang2024quotetuning}, locates spans post hoc
+\cite{yeginbergen2026fullcite}, verifies each claim before release \cite{qian2025vericite},
+certifies medical claims selectively \cite{kan2026claimselective}, and buffers streamed tokens
+until a guard clears them \cite{sentguard2026}. That enforcement withholds content is known
+too: conformal methods trade coverage for factuality \cite{mohri2024conformal}, and citation
+correctness trades against coverage on English benchmarks \cite{saxena2025coverage}. Ours are
+the simplest forms of these, used as an instrument; what they meet on a serving path over a
+corpus never assembled to be cited is unreported.
 
-\textbf{What a guarantee costs.} That enforcing correctness withholds content is known in the
-abstract: conformal methods trade coverage for a factuality guarantee \cite{mohri2024conformal},
-and citation correctness trades against coverage across paradigms \cite{saxena2025coverage}.
-Both are established offline, on English benchmarks, against corpora assembled to be cited.
-What such an instrument meets on a serving path over a corpus never assembled that way is
-unreported.
+\textbf{Medical citation audits.} ExpertQA had experts rate each claim separately for
+attribution, informativeness to the question and source reliability
+\cite{malaviya2024expertqa}; search engines that copy from cited pages pair high citation
+precision with low utility ($r=-0.96$) \cite{liu2023verifiability}. In medicine, adding
+retrieval raised one model's answer accuracy while lowering its citation recall and precision
+\cite{wang2025medcite}; an automated audit found \SIrange{50}{90}{\percent} of responses not
+fully supported and, without web access, valid URLs only \SIrange{40}{70}{\percent} of the
+time \cite{wu2025sourcecheckup}; sentence-level checks support only \SIrange{27}{41}{\percent}
+of PubMed-grounded citation pairs \cite{ma2026vericite}; expert review finds
+\SI{22}{\percent} of top-16 retrieved passages relevant \cite{kim2025rethinkingmedrag}. These
+evaluate inline citations under other criteria: context for Section~\ref{sec:cost}, not
+comparison points.
 
-\textbf{Medical and Vietnamese resources.} Medical RAG is benchmarked for answer quality
-\cite{xiong2024mirage}, and Vietnamese medical NLP has produced question-answering datasets
-\cite{tran2024vimedaqa}, benchmarks \cite{vm14k2025} and graph-grounded systems for healthcare
-regulation \cite{vihermes2026}. To our knowledge none audits a Vietnamese medical retrieval
-corpus for whether its records can be cited at all. How a corpus loses that property is itself
-documented: an audit of over 1{,}800 text datasets found licences omitted for more than
-\SI{70}{\percent} and mis-stated for more than \SI{50}{\percent} on popular platforms
-\cite{longpre2024provenance}. We measure what that loss costs at serving time.
+\textbf{Vietnamese resources.} Medical RAG is benchmarked for answer quality
+\cite{xiong2024mirage}; Vietnamese medical NLP has question-answering datasets
+\cite{tran2024vimedaqa}, benchmarks \cite{vm14k2025} and graph-grounded regulatory QA
+\cite{vihermes2026}, none auditing whether a retrieval corpus's records can be cited.
+Metadata loss on hosting platforms is documented: an audit of over 1{,}800 text datasets
+found licences omitted for more than \SI{70}{\percent} \cite{longpre2024provenance}.
 
 % ---------------------------------------------------------------- III. SYSTEM AND ENFORCEMENT AS INSTRUMENT (budget 850 words, 1 figure)
 % ~820 words, and it carries four of the paper's mandatory scope sentences -- containment
 % is not support, 1.00 is a build assertion, "citation" means the attribution list, the
 % narrative answer is hybrid. A reviewer who opens the code looks for exactly those.
-\section{System and Enforcement as Instrument}\subsection{Definitions}
+\section{System and Enforcement as Instrument}\label{sec:system}\subsection{Definitions}
 The system answers Vietnamese medical questions over a Qdrant index of \num{595663} chunks
 embedded with \texttt{bge-m3}, combining dense retrieval with an article-level lexical
-index. Its evidence extractor emits, per proposed claim, a triple: the \emph{claim}, a
+index. Each answer path emits, per proposed claim, a triple: the \emph{claim}, a
 \emph{supporting span}, and the \emph{chunk} the span is drawn from. Every check below is
 defined on that triple.
 
-The configuration is mixed and chosen per question by a router: of the 134, \num{67} ran a
-\emph{standard} profile with the LLM extractor unused and \num{67} a \emph{deep} profile with
-it engaged, identically per question in both arms, so this is not a between-arm confound. The
-no-extractor half produced the \emph{majority} of claims, \num{208} of \num{351}. Its recorded
-top-$k$, \num{12} against \num{20}, sets a base pool rather than a delivered count---the served
-pool is that base times a mode multiplier---so the answers carry \numrange{22}{57} retrieved
-chunks each, \num{4024} in all.
+A router picks a retrieval \emph{profile} per question, identically in both arms: \num{67}
+questions ran the \emph{standard} profile, which pools fewer chunks (top-$k$ \num{12}) and
+forms claims with a rule-based selector that copies query-focused sentences from the
+top-ranked chunks verbatim as both claim and span, and \num{67} the \emph{deep} profile
+(top-$k$ \num{20}), whose LLM extractor may paraphrase. The standard profile produced
+\num{208} of the \num{351} claims. The selector's source is not released. Profile is set
+almost by question type, so the two are confounded. A mode multiplier scales the base pool,
+so answers carry \numrange{22}{57} retrieved chunks, \num{4024} in all.
 
-A span is \emph{located} when it occurs as an exact substring of the chunk it names, after a
-normalisation the released code documents in full: NFC, header removal, lowercasing,
-unification of Vietnamese digit-group and decimal separators (so $96{,}18$ and $96.18$
-compare equal), dash and quote variants, whitespace. Diacritics are deliberately \emph{not}
-folded---two Vietnamese words can differ by tone alone---and spans under 12 characters are
-rejected, since a very short span matches almost anything.
-
-A record is \emph{citable} when it carries a non-empty source URL. We report the URL at three
-granularities---article, issue, none---because a citation landing on a journal issue rather
-than on the article is a weaker guarantee than the binary suggests (Table~\ref{tab:census}).
+A span is \emph{located} when it occurs as an exact substring of the chunk it names after a
+normalisation documented in the released code (NFC, header removal, lowercasing, Vietnamese
+number separators, dash, quote and whitespace variants; diacritics are not folded, since
+Vietnamese words can differ by tone alone; spans under 12 characters are rejected).
+A record is \emph{citable} when it carries a non-empty source URL; we also report whether that
+URL is article- or issue-level (Table~\ref{tab:census}). A claim is \emph{returned} when it
+passes every gate and appears in the machine-readable attribution list sent with the answer;
+a located claim need not be returned.
 
 A \emph{claim figure} is a percentage, a decimal, or an integer of at least three digits,
 citation markers removed and bare four-digit values in 1900--2099 excluded as years unless
 digit-grouped. A figure is \emph{evidence-absent} when it appears in no located span \emph{and} nowhere in
 the retrieved evidence---lexical absence, not a finding that the value is wrong---and
-\emph{unattributed} when it appears in that evidence but inside no located span. Reporting
-the two as one hides the one that dominates.
+\emph{unattributed} when it appears in that evidence but inside no located span.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  box/.style={draw,rounded corners=1pt,align=center,minimum height=0.48cm,inner sep=2pt,text width=#1},
+  gate/.style={box=#1,fill=black!7},
+  arr/.style={-{Latex[length=1.2mm]},semithick},
+  tag/.style={font=\tiny\itshape,align=center,inner sep=1pt},
+  node distance=0.2cm and 0.22cm]
+\node[box=1.0cm] (ing) {Ingest};
+\node[box=1.0cm,right=of ing] (ret) {Retrieve};
+\node[box=2.4cm,right=of ret] (ext) {Extract claim,\\span, chunk};
+\node[gate=0.95cm,below=0.72cm of ing] (sg) {Span\\gate};
+\node[gate=1.15cm,right=of sg] (cg) {Citability\\gate};
+\node[gate=1.05cm,right=of cg] (ng) {Numeric\\gate};
+\node[gate=1.3cm,right=of ng] (vf) {Verifier,\\fail-closed};
+\node[gate=1.35cm,right=of vf] (bc) {Buffer, then\\commit};
+\draw[arr] (ing)--(ret); \draw[arr] (ret)--(ext);
+\draw[arr] (ext.south) -- ++(0,-0.56) -| (sg.north);
+\draw[arr] (sg)--(cg); \draw[arr] (cg)--(ng); \draw[arr] (ng)--(vf); \draw[arr] (vf)--(bc);
+\node[tag,below=0.03cm of ret] {URL-first arm:\\exclude URL-less records};
+\node[tag,below=0.03cm of cg] {shipped arm:\\withhold here (C3)};
+\end{tikzpicture}
+\caption{Serving path as instrument. Each claim carries a span and its chunk; three code
+gates withhold and record a \texttt{drop\_reason}; the fail-closed verifier sees the gate
+findings; tokens are held until it returns. Arms differ only in where citability is enforced
+(C3, Table~\ref{tab:conditions}).}
+\label{fig:pipeline}
+\end{figure}
 
 \subsection{Gates}
-Four checks run in code, in this order, before the answer is verified. Every withheld claim
-records a \texttt{drop\_reason}, which is what makes the offline replay of
-Table~\ref{tab:conditions} possible.
+Figure~\ref{fig:pipeline} shows the path. Four checks run in code, in this order, before the
+answer is verified. Every withheld claim records a \texttt{drop\_reason}, a code naming the
+gate that withheld it, which is what makes the offline replay of Table~\ref{tab:conditions}
+possible.
 
-\textbf{Span gate.} Each claim's span is tested for containment in the chunk it cites. A claim that fails is withheld, with the reason recorded and returned: no span, an unresolvable chunk identifier, or a span not found in the cited chunk.
+\textbf{Span gate.} A claim with no span, an unresolvable chunk identifier, or a span not
+contained in its chunk is withheld.
 
 \textbf{Citability gate.} A claim whose span was located but whose record carries no source
-URL is withheld. The chunk still reaches the generator as context; it may no longer carry a
-citation. Located-ness and returned-ness are counted separately, so enforcing citability does
-not deflate the span measurement.
+URL is withheld; the chunk still reaches the generator as context, and located-ness and
+returned-ness are counted separately.
 
 \textbf{Numeric gate.} Statements carrying an evidence-absent figure are removed and a visible note
-says what went and why; unattributed figures are counted and left. Enforcement is mechanical
-because instruction was measured not to work: a prompt already forbidding invented figures was
-violated, and strengthening its wording did not reduce the count.
+says what went and why; unattributed figures are counted and left.
 
 \textbf{Verifier, fail-closed.} The mechanical findings go \emph{inside} the verifier's
-prompt rather than being merged into its output afterwards, and it may not return
-\texttt{pass} while any of them stands. Every path that could return without a clearance fails
-closed---no client, an exception, an unusable status, or a \texttt{pass} over a standing
-finding, which is downgraded to \texttt{revise}.
+prompt, it may not return \texttt{pass} while any of them stands, and every path that could
+return without a clearance (no client, an exception, an unusable status, a \texttt{pass} over
+a standing finding) fails closed to \texttt{revise}.
 
-Failing closed has a measured cost: a truncated reply carries no status, which is correctly
-not read as approval and refused 8 of 30 pilot answers. Such a reply now recovers its verdict
-from the prefix before failing closed, and a \texttt{pass} so recovered is downgraded.
-
-\textbf{Buffer-then-commit.} Tokens are held until verification returns: a block verdict can
-replace the payload but cannot un-send what a reader has seen. With the guard off, a control
-arm leaked \num{2326}--\num{3166} token events before the verdict, and on 2 of 8 queries the
-streamed text differed from the final answer.
+\textbf{Buffer-then-commit.} Tokens are held until verification returns.
 
 \subsection{What the guarantee is and is not}
-Span containment proves that the cited string \emph{exists} in the cited chunk. It does not prove that the string \emph{supports} the claim; entailment is a separate measurement, reported in Section~\ref{sec:cost}. Consequently the rate of returned claims whose span verifies is 1.00 \emph{by
-construction}---the response is built from the claims that passed---and we state it once as
-a design invariant, not a result. It is also nearly vacuous: \num{183} of the \num{185}
-returned claims have a span identical to the claim, the extractor selecting a chunk sentence
-as both, so containment reduces to string identity on all but two.
-Section~\ref{sec:cost} reports the quantities that can fail.
+Span containment proves that the cited string \emph{exists} in the cited chunk, not that it
+\emph{supports} the claim, which Section~\ref{sec:cost} measures. The rate of returned claims
+whose span verifies is therefore 1.00 \emph{by construction}, a design invariant rather than a
+result, and nearly vacuous: \num{183} of the \num{185} returned claims have a span identical
+to the claim.
 
-Two scope statements follow. ``Citation'' means an entry of the machine-readable attribution
-list returned with each answer, not a context chunk shown as background; since the interface
-does not yet render attribution cards, we say a claim is \emph{returned} rather than
-displayed, and every count below is over API responses. And the narrative answer runs under a
-hybrid policy permitting uncited background knowledge: enforcement covers figures, citations
-and the evidence layer, not every sentence of prose.
+Three scope statements follow. ``Citation'' means an entry of the returned attribution list;
+the interface does not yet render attribution cards, so every count below is over API
+responses, and we say \emph{returned} rather than displayed. The answers also carry inline
+\texttt{[n]} references to context chunks (133 of 134); those are not evaluated here. The
+narrative answer runs under a hybrid policy permitting uncited background knowledge, and
+enforcement covers figures as defined above: one- and two-digit integers are outside it, and
+\num{534} of them with units (doses, ages, durations) occur in 98 answers.
 % ---------------------------------------------------------------- IV. CORPUS ATTRIBUTABILITY AUDIT (<=450 words, Tables I--II)
 \section{Corpus Attributability Audit}\label{sec:audit}
-RQ1 asks how much of this corpus can support a citation a reader can open. We answer it by
-counting, not sampling: one payload-only scroll of the live collection, all
-\num{595663} points, refusing to report if the scrolled total disagrees with the
-collection count (Table~\ref{tab:census}).
+We answer RQ1 by counting, not sampling: one payload-only scroll of all \num{595663} points of
+the live collection, checked against the collection count (Table~\ref{tab:census}).
 
 \textbf{Two fifths of the index cannot be cited at all.} \num{256415} chunks,
-\SI{43.05}{\percent}, carry no source URL. They are a single stratum: a Hugging Face
-re-packaging of a pharmacy chain's patient-education pages, ingested with its text and
-without its links. The chunks are topically relevant and are still retrieved as context;
-what they cannot do is carry a citation. We name the mechanism rather than the dataset
-because it generalises: a public corpus re-packaged for embedding training preserves what a
-retriever scores and discards what a reader would follow. Recovering the URLs is future
-work.
+\SI{43.05}{\percent}, carry no source URL. They are a single stratum, a re-packaging of the
+Long Ch\^au pharmacy chain's patient-education pages published on Hugging Face as
+\path{mtue29/vietnamese-medical-dataset}, which we ingested with its text and without its
+links; its Apache-2.0 tag is the re-packager's, and the source site's terms were not checked. The chunks are still
+retrieved as context but cannot carry a citation: one ingestion decision of ours, analogous
+to the licence-metadata loss documented by \cite{longpre2024provenance}; we make no claim
+that the share generalises. The loss is recoverable: matching the 52 titles behind the 154 URL-less claims to
+the source site's public sitemap (\texttt{robots.txt} honoured) recovered 50 pages whose
+heading matches the title, and for 133 of the 147 claims later withheld for citability the
+span occurs verbatim on the recovered page.
 
-\textbf{The untraceable stratum wins retrieval.} Its share of what is retrieved exceeds its share of the index: over the 134 reported
-questions it supplied \num{2472} of \num{4024} retrieved chunks, \SI{61.4}{\percent},
-against \SI{43.1}{\percent} of the corpus, while English reference material fell from
-\SI{16.7}{\percent} of the index to \SI{0.3}{\percent} of what was retrieved. Every
-retrieved chunk lacking a source URL came from it, and it supplied \num{154} of the
-\num{156} uncitable claims. The other two cite \emph{nothing}: their chunk identifier is the
-empty string, so they name neither a record nor a URL, and the span gate withheld them for
-that. This is what joins the two halves of this paper: the corpus is not merely part-untraceable, the untraceable part is what the retriever prefers, so the audit's shares understate what enforcement meets at serving time.
+\textbf{The untraceable stratum is over-represented among retrieved chunks, not among
+claims.} Over the 134 questions it supplied \num{2472} of \num{4024} retrieved chunks,
+\SI{61.4}{\percent} [\num{0.569}, \num{0.660}], against \SI{43.0}{\percent} of the index, a
+lift of \num{1.43};
+the fourteen English-language strata fell from \SI{18.8}{\percent} of the index to
+\SI{0.9}{\percent} of what was retrieved. Among Vietnamese-language chunks the stratum is
+\SI{54.4}{\percent} of the index and \SI{63.1}{\percent} of what was retrieved, a lift of
+\num{1.16} [\num{1.07}, \num{1.24}]. The share follows the question type---\num{0.886} for
+patient-FAQ questions against \num{0.431} for study-result questions; type is confounded with
+profile, so the data cannot separate grid from retriever. Every retrieved chunk lacking a source URL came from it, and it
+supplied \num{154} of the \num{156} uncitable claims; the other two cite \emph{nothing}, an
+empty chunk identifier withheld by the span gate. At the claim level, however, its share is
+\num{154} of \num{351}, \SI{43.9}{\percent}, essentially its index share: the
+over-representation describes the retrieved pool, not what the extractor selected from it.
+The system's own metadata puts
+this stratum in its lowest trust tier; the highest (WHO, Ministry of Health, NCI) supplied
+\SI{1.8}{\percent} of retrieved chunks.
 
-\textbf{A binary citability test hides a second loss.} The gate asks only whether a source
-URL is non-empty. Classifying the stored URL at three granularities shows that a further
-\num{79678} chunks, \SI{13.4}{\percent}, carry an \emph{issue}-level URL rather than one
-naming the cited article, from exactly four of the five Vietnamese journal strata; the
-largest journal is entirely article-level. A reader following such a citation lands on a
-table of contents and must find the sentence themselves.
+\textbf{A non-empty URL is not one a reader can open.} A further \num{79678} chunks,
+\SI{13.4}{\percent}, from four of the five Vietnamese journal strata carry only an
+\emph{issue}-level URL. Their \num{143} distinct URLs are a census: \num{142} answer and land
+on an issue index, a table of contents standing for about \num{557} chunks each. The same
+pattern classifies stored and final URLs, so the
+stored URL's shape predicts the destination; only the binary non-empty test is weak.
+Dereferencing honoured \texttt{robots.txt}, which refused five hosts covering \num{24209}
+chunks; we probed \num{367} URLs, \num{289} frozen before any request (the census included)
+and \num{78} added adaptively. Failures clustered by host: three NIH hosts failed on all
+\num{35} probes (27 HTTP 404, 8 unreachable), hosts holding \num{2880} URLs behind
+\num{16045} chunks in one English stratum. Chunk-weighted reachability is \num{0.955} on the
+frozen sample (Bonferroni joint interval across hosts \numrange{0.69}{0.97}) and \num{0.949}
+(\numrange{0.72}{0.97}) with the adaptive probes; a confirmatory probability-proportional
+sample of never-probed URLs gives \num{0.93} (per-host envelope \numrange{0.65}{0.99}), an
+author's blind labelling of \num{40} reached pages agreed with the destination test on
+\num{39}, and no corpus-level composite is reported because its unbiased weighted estimator
+exceeds one. As point figures under host-level exclusion, the stored
+not-issue share is \num{0.436}, \num{0.409} without the three failing hosts and \num{0.368}
+without the five refused ones; at serving time only \SI{27.5}{\percent} of retrieved chunks
+carried a non-issue URL. For what is \emph{returned}, on 2026-10-11 we dereferenced the
+\num{115} distinct URLs cited in either arm, fetching \num{113} (two robots-refused), and
+matched each page's \texttt{citation\_title} to the cited record, since the journal
+platform's page titles are generic. Of returned claims,
+\num{0.903} [\num{0.818}, \num{0.972}] shipped and \num{0.777} [\num{0.693}, \num{0.855}]
+URL-first open on the cited article; the rest land on an issue index (17 and 71), a page
+without article metadata (1 and 4) or a refused host (0 and 6); none fetched was dead.
+Counting only article matches, retention is \num{0.476} and \num{0.747}, not \num{0.527}
+and \num{0.960}: the URL-first arm refills partly from issue-level strata.
 
-\textbf{A stored locator is not one a reader can open.}
-Every figure above describes the stored \emph{field}, so we dereferenced the URLs themselves,
-honouring \texttt{robots.txt}---which refused five hosts covering \num{24209} chunks.
 
-One result needs no sampling. The \num{143} distinct issue-level URLs are a \emph{census}:
-\num{142} answer and land on an issue index, which does not uniquely identify the cited
-article. They stand behind \num{79678} chunks, about \num{557} each, so Table~\ref{tab:census}'s
-\SI{13.4}{\percent} issue stratum is not a long tail of weak citations but a handful of tables
-of contents doing duty for an eighth of the corpus.
-
-In total we probed \num{367} URLs: \num{289} frozen before any request, including the census,
-and \num{78} added adaptively, hence exploratory. Failures clustered by host:
-\texttt{rarediseases.info.nih.gov} answered 404 on
-\num{19} of \num{19} probes and two smaller NIH hosts on all \num{16} of theirs---every URL
-sampled on three hosts holding \num{2880} URLs behind \num{16045} chunks. Chunk-weighted reachability is \num{0.95},
-with a joint interval across hosts of \numrange{0.72}{0.97}.
-
-We report no corpus-level composite: it would rest on a weighted estimator this sample cannot
-stabilise, which computed unbiasedly returns a rate above one. The destination test itself
-held up---an author labelled \num{40} reached pages blind and it agreed on \num{39}, with no
-page turning out to be a homepage, a search page or a soft \num{404}---but a confirmatory
-probability-proportional sample of never-probed URLs puts chunk-weighted reachability at
-\num{0.93} on that domain, with no matching interval this design supports, so the census,
-not a composite, is what this
-audit supports.
-
-\textbf{Attributability is capped upstream of any gate.} The PDF extractor interleaved
-journal columns, so a span can be locatable yet unquotable---damage documented at benchmark
-level, reading order worst of all \cite{ocrhinders2025}. Span-verified extraction of a sample
-size or primary numeric finding stood at 0.573 on 150 articles and 0.933 after repair, sample
-and prompt held. Duplication compounded it \cite{lee2022dedup}: \SI{37.4}{\percent} of the
-journal stratum were exact duplicates, one identity per galley file, and deduplication
-replaced \num{152275} points with \num{132225}.
-
-\textbf{The corpus has no usable time axis.} \num{636} chunks, \SI{0.1}{\percent}, carry a
-publication date, all from one English patient-information stratum and \emph{none} from a
-Vietnamese one. This metadata cannot establish evidence recency; the probe set therefore
-treats recency questions as abstention controls, not a demonstrated absence of temporal
-information in the full text.
-
-\textbf{Where citation is possible, extraction is reliable.} On a stratified sample of 150 tier-A
-articles, span-verified extraction of a study's sample size, primary numeric finding,
-population, design and outcome succeeds at \numrange{0.938}{0.959} across the 145 Vietnamese
-journal articles. The five English reference articles yield \emph{no}
-verified field under the same Vietnamese-oriented prompt---a property of the extractor---so
-we report the strata apart rather than the pooled \numrange{0.907}{0.927}. These values are
-\textbf{model-extracted and span-verified}; the human precision check specified for this
-audit was never performed.
 
 \begin{table}[t]
-\caption{Corpus census. Exhaustive: all \num{595663} indexed chunks, not a sample. The URL columns give the share whose record carries an article-level URL, an issue-level URL only, or none. Dates are in the text, not here. This is the stored field; what those locators return when followed is measured separately, later in this section.}
+\caption{Corpus census of all \num{595663} indexed chunks: share whose stored URL does not match an issue-index pattern (an upper bound on article-level) or is issue-level; the rest have none. Dereference results are in the text.}
 \label{tab:census}
 \centering\small
 \begin{tabular}{@{}lrrcc@{}}
 \toprule
 Stratum & Chunks & Share & \multicolumn{2}{c}{Source URL} \\
 \cmidrule(lr){4-5}
- & & & article & issue \\
+ & & & not issue & issue \\
 \midrule
 Vietnam Medical Journal & \num{132225} & \SI{22.2}{\percent} & \SI{100}{\percent} & --- \\
 Four other VN journals  & \num{79678}  & \SI{13.4}{\percent} & --- & \SI{100}{\percent} \\
 Reference and other     & \num{127345} & \SI{21.4}{\percent} & \SI{100}{\percent} & --- \\
-Patient education (HF)  & \num{256415} & \SI{43.1}{\percent} & --- & --- \\
+Patient education (HF)  & \num{256415} & \SI{43.0}{\percent} & --- & --- \\
 \midrule
 Total                   & \num{595663} & \SI{100}{\percent} & \SI{43.6}{\percent} & \SI{13.4}{\percent} \\
 \bottomrule
@@ -376,165 +397,174 @@ Total                   & \num{595663} & \SI{100}{\percent} & \SI{43.6}{\percent
 
 % ---------------------------------------------------------------- V. ATTRIBUTION GAP AND COST OF ENFORCEMENT (<=700 words, Tables III--IV)
 \section{Attribution Gap and the Cost of Enforcement}\label{sec:cost}
-All results below are on 134 questions written to a specialty $\times$ question-type grid,
-hashed and committed \emph{before} any condition ran, and published with this paper. The
-four gate configurations are replayed offline from one captured sweep, so they share
-identical generations and no cross-configuration sampling noise exists. They are
-configurations of one serving path, not four systems: Section~\ref{sec:where} compares two
-designs that were each run end to end.
+All results below are on 134 questions written to a specialty $\times$ question-type grid by
+13 blind \texttt{claude-opus-5} agents (no corpus, web or tool access; 15 out-of-corpus
+controls), edited after three same-model auditors (18 edits, one drop of 64 findings),
+then hashed and committed privately the day before the first run and published with this
+paper. The patient-FAQ questions are therefore simulated consumer phrasing. The four gate
+configurations, C0 (no gate) to C3 (span, numeric and citability gates together), are
+replayed offline from one captured sweep, so they share identical generations; they are
+configurations of one serving path, while Section~\ref{sec:where} compares the two arms, each
+run end to end once.
 
-\subsection{What enforcement changes for the reader}
-Without any check, the system emits claims a reader cannot follow and figures that are not
-in the evidence. Of 351 extracted claims, \num{156} are uncitable---\num{154} citing a
+\subsection{What enforcement changes in the returned attribution list}
+Of 351 extracted claims, \num{156} are uncitable---\num{154} citing a
 record with no source URL, two citing no record at all; \num{67} figures appear in no
 retrieved evidence at all, in a quarter of answers
 (\num{0.254}, 95\,\% CI [\num{0.187}, \num{0.328}]). Enforcement withholds every citation to a
 URL-less record by construction and removes the 58 statements that carried an
-evidence-absent figure; no delivered answer retains one.
+evidence-absent figure; no delivered answer retains one of that class.
 
 The gap it does \emph{not} close is larger than the one it does. Of \num{708} figures in the
-delivered answers, \num{157}---\SI{22.2}{\percent}---appear among a verified span's numbers,
-membership by numeric token and so no evidence of the quantity or unit meant. The
-remaining \num{551}, \SI{77.8}{\percent}, are present in the retrieved evidence but pinned
-to nothing.
-A system can satisfy ``every returned claim is span-verified'' and still deliver most of
-its quantities unattributed, which no single ``numbers grounded'' flag can show.
+delivered answers, \num{157} (\SI{22.2}{\percent}) appear among a located span's numbers, by
+numeric token only; the remaining \num{551}, \SI{77.8}{\percent}, are in the retrieved
+evidence but pinned to nothing. A system can satisfy ``every returned claim is
+span-verified'' and still deliver most of its quantities unattributed.
 
 \subsection{Does the citation support the claim?}
-Containment is not support, so we measured support. Two independent \emph{model} judges
-labelled all \num{185} returned claims against the passage each cites---blind to each other
-and to the system's verdicts, under a codebook frozen beforehand, with \num{37} controls
-pairing a real claim with another question's passage; a third pass adjudicated
-disagreements. Agreement was \SI{99.1}{\percent} ($\kappa = \num{0.973}$) and all \num{37}
-controls were rejected.
+Containment is not support, so we measured support. Two blind passes of one served model,
+\texttt{claude-opus-5}, labelled all \num{185} returned claims against the passage each
+cites---each pass without sight of the other or of the system's verdicts, under a codebook
+frozen beforehand, with \num{37} controls pairing a real claim with another question's
+passage; a third pass adjudicated disagreements. The passes agreed on \SI{99.1}{\percent}
+($\kappa = \num{0.973}$) of all \num{222} items, a within-model repeatability figure that the
+\num{37} easy-negative controls (all rejected) inflate; on the \num{185} real claims it is
+\SI{98.9}{\percent} ($\kappa = \num{0.85}$). There was no second, independent judge.
 
 \num{179} of \num{185} claims are supported: \num{0.968} [\num{0.941}, \num{0.989}]---a
 bound on this design, not a success. \num{183} of the \num{185} claims are verbatim
 sentences of the passage, because the extractor copies rather than authors, so support is
 near-automatic and the \emph{overstated} label never fired for want of anything
-paraphrased to fire on. The failure mode this paper predicted---an over-strong claim wearing
-a real quotation---does not arise at the claim layer here, and neither judge found one. All six failures are ingestion defects, not attribution errors: bare table headers,
-sentences beheaded mid-clause, and two that are an author's name, institution and
-email shown as medical statements, each with a citation every mechanical check passed.
+paraphrased to fire on. All six failures are ingestion defects, not attribution errors: bare
+table headers, sentences beheaded mid-clause, and an author's name, institution and email
+shown as medical statements.
 
-The author graded \num{30} of these claims blind, stratified by the model's own label: a
-census of all six failures plus \num{24} of the \num{179} the model passed. Among all six
-model-flagged claims the author overturned three, having read passages the model had called
-too corrupted to judge. No false-positive \emph{supported} label was observed among the
-\num{24} sampled model-supported claims, although the exact lower bound on that label's
-precision is \num{0.858}. Weighting the census exactly and the sample by a conservative
-binomial interval gives a human rate of \num{0.984} [\num{0.846}, \num{0.984}], whose point
-estimate is the largest value this two-stratum design can express.
+The author graded \num{30} of these claims blind, stratified by the model's label: all six
+failures, of which the author overturned three, and \num{24} of the \num{179} passed, none
+overturned (exact lower bound on that label's precision \num{0.858}). Weighting the census
+exactly and the sample conservatively gives a human rate of \num{0.984} [\num{0.846},
+\num{0.984}], the largest value this two-stratum design can express.
 
 \subsection{Does the returned claim answer the question?}
 \label{sec:relevance}
-Support is not usefulness. The same instrument, under a second codebook also frozen
-beforehand, labelled every returned claim against the \emph{question} it was returned
-for---with \num{37} controls pairing a real claim with a question from another specialty.
-Two blind passes agreed \SI{97.8}{\percent} ($\kappa = \num{0.955}$) and \num{37} of
-\num{37} controls were rejected.
+Support is not usefulness. Two blind passes of a second served model,
+\texttt{claude-fable-5-1}, under a second codebook also frozen beforehand, labelled every
+returned claim against the \emph{question} it was returned for---with \num{37} controls
+pairing a real claim with a question from another specialty. The passes agreed on
+\SI{97.8}{\percent} ($\kappa = \num{0.955}$) of \num{222} items and \SI{97.3}{\percent}
+($\kappa = \num{0.94}$) of the real claims, again repeatability; \num{37} of \num{37}
+controls were rejected. This shipped-arm codebook also told the judge that support was
+``already established at \SI{96.8}{\percent}'' of cases, a numeric prior carried over from
+the entailment instrument and present in this arm's codebook only; the matched re-judging of
+Section~\ref{sec:where} reused that codebook byte for byte, so under the matched labels the
+prior is shared by both arms rather than removed.
 
-\num{4} of the \num{185} returned claims answer their question: \num{0.022} [\num{0.005},
-\num{0.045}]---a figure less stable than those decimals suggest, as below. \num{129} are \emph{partial}---on the topic but not an answer, typically a study's objective
+\num{4} of the \num{185} returned claims answer their question: \num{0.022} [\num{0.008},
+\num{0.054}] (Wilson)---less stable than those decimals suggest, as below. \num{129} are
+\emph{partial}---on the topic but not an answer, typically a study's objective
 or a textbook definition---and \num{52} are unrelated, \num{49} of them supported by the
-passage they cite. At the answer level under the matched
-labels, \num{5} of \num{55} answers with any claim carry one that answers and \num{12} only
-unrelated ones; the URL-first arm gives \num{10} of \num{109} and \num{26}---\num{0.09} in
-both.
-The author then graded a stratified subsample of \num{40} blind:
-agreement \SI{85}{\percent} against these labels and \SI{82.5}{\percent} against the matched
-re-judging ($\kappa = \num{0.72}$, \num{0.68}), \SI{97.5}{\percent} on the \emph{relevant}
-boundary under either, and a post-stratified descriptive \num{0.028}---two positive cases,
-so calibration rather than population inference and no interval. Four of the six disagreements
-are the author \emph{stricter} about what counts as on-topic and two the reverse; on entailment
-the author was more lenient, so no single assumed bias corrects both.
+passage they cite. The author graded \num{40} blind (agreement \SI{85}{\percent},
+$\kappa = \num{0.72}$; post-stratified \num{0.028} from two positives, so calibration, not
+inference). Re-judging with the served model ID fixed (\texttt{claude-opus-5} for both
+instruments) kept support at \num{0.968} (same model: repeatability) and moved responsiveness
+to \num{0.038}, a judge shift \num{2.8} times the original between-design difference
+(URL-first: \num{0.027}), which is why Section~\ref{sec:where} compares designs under one
+instrument. This is a claim-layer observation: the unit is one returned attribution entry,
+judged singly against the question, under an extractor that copies passage sentences
+verbatim; it is not an end-to-end answer-quality rate.
 
-Re-judging the same items under the same codebook, each run's served model recovered from its
-transcript, separates two things. Entailment was judged by the same model twice, so its
-unchanged \num{0.968} (agreement \SI{98.9}{\percent}, $\kappa = \num{0.83}$ on the real claims)
-is repeatability, not judge-independence. Relevance crossed models and moved, \num{0.022} to
-\num{0.038}: \num{11} real claims go from unrelated to \emph{partial} and \num{3} from
-\emph{partial} to answering, \num{36} of \num{37} controls hold and all \num{37} still refuse
-\emph{relevant}, and the adjudicator prompt differed too, accounting for at most \num{5} of the
-\num{15}. That shift is \num{2.8} times the between-design difference, which is why
-Section~\ref{sec:where} re-runs that comparison under one instrument. Author, first and re-run
-judge give \num{0.028}, \num{0.022} and \num{0.038}.
+\textbf{The answers answer; the attribution list does not (exploratory).} After submission
+we judged every narrative answer and every extracted claim in both arms, withheld ones
+included, with an adapted instrument: passage hidden, support prior removed, the answer as
+unit for answers, and disputes adjudicated by pass B (\texttt{claude-opus-5-5}). On claims
+pass A (\texttt{claude-fable-5-1}) and pass B agreed at $\kappa = \num{0.90}$; on answers
+$\kappa = \num{0.98}$, with 218 of 268 pairs pass-B on both passes, so a third pass by
+\texttt{claude-sonnet-5-5} was added ($\kappa = \num{0.93}$ against the final labels). No control was labelled responsive by either model: \num{56} cross-specialty
+pairings and \num{40} same-specialty siblings pairing a question with another's
+answer. No human graded answers, and the label ignores correctness.
 
-A claim layer can therefore be almost perfectly attributed and almost never responsive.
-Support and responsiveness are not substitutes, and an attribution mechanism evaluated on
-the first alone is evaluated on the easier one.
+On the 119 answerable questions \num{0.773} of shipped and \num{0.815} of URL-first answers
+answer the question (\num{0.782} and \num{0.765} under the third judge), against
+\numrange{0.011}{0.022} and \numrange{0.011}{0.027} of returned claims across passes (final 2
+of 185 [\num{0.003}, \num{0.039}] and 4 of 364 [\num{0.004}, \num{0.028}], Wilson); the drop
+from the original instrument's 4 to 2 follows the judge model (pass A 4, pass B 2). Per
+answer, 2 shipped answers carry a responsive returned claim, and 42 of the 55 with a non-empty
+list answer without one (URL-first 77 of 109). The gap is partly built in---one verbatim
+sentence rarely answers an explanatory question, and \numrange{0.69}{0.72} of returned claims
+are on topic---and it is not uniform: study-result questions are answered 3 of 24 times, the
+other types 18 to 24 of 24; the profile and coverage-mode splits (deep 57 of 61 against
+standard 35 of 58; system-reported strong evidence 9 of 19 against background knowledge 27
+of 30) are confounded with that type effect. The 15 out-of-corpus controls, meant to test
+abstention, were answered responsively 9 times (URL-first 7) and labelled unanswerable once,
+in URL-first.
+
+Responsive claims were few: 13 of 351 extracted (deep profile 11 of 143, standard 2 of 208),
+and citability withheld 11, from 5 of the 7 questions that had any (10 distinct sentences):
+patient-education sentences cited for patient questions, whose support was not judged.
+Withheld minus returned, the responsive rate differs by \num{0.064} [\num{-0.002},
+\num{0.146}] and the on-topic rate by \num{-0.22} [\num{-0.40}, \num{-0.04}], and the withheld
+claims come from the lowest trust tier. With the recovered links (Section~\ref{sec:audit}), 10 of the 11 and
+133 of the 147 withheld claims would have been citable, and C3 retention would be \num{0.906}
+rather than \num{0.527}. Excluding the stratum at retrieval moves the loss upstream, where
+retention cannot see it: URL-first extracted 4 responsive claims of 379 (patient-FAQ 1 of
+71), against 13 of 351 (10 of 57), one run per design. Under verbatim-copy extraction, support and responsiveness
+are not substitutes, and an attribution mechanism evaluated on the first alone is evaluated on
+the easier one.
 
 \subsection{What it costs}
 Table~\ref{tab:conditions} prices each check. The span gate is nearly free---\num{19}
 failures in \num{351} claims---and citability withholds \num{147} of the \num{166}: retention,
 shown claims over extracted, falls from \num{0.946} to \num{0.527}, and the number of answers
-carrying no returned claim rises from 29 to 79 of 134. Answers, not claims, are the unit a reader feels.
+carrying no returned claim rises from 29 to 79 of 134.
 
-The tax is not a constant. Over the 119 answerable questions, retention by question type
-runs from \num{0.122} for patient-FAQ questions to \num{0.687} for guideline-comparison
-questions---a factor of \num{5.6} on one system, one corpus, one set of checks. The types
-differ in the evidence they need, not only in wording, so this separates kinds of question
-rather than an effect of phrasing, which would need a paired-paraphrase design. What
-it establishes is that a single retention figure describes no particular user.
-
-The 15 out-of-corpus controls are reported apart, and not because they are claim-free: the
-shipped configuration returned \num{25} claims on them.
-
-\subsection{An interaction between two constraints}
-Containment is a non-trivial test only on the \num{29} extracted claims whose span differs
-from the claim: \num{9} failed containment, \num{18} verified and were then withheld for
-citability, \num{2} were returned. The two
-constraints are not independent---\SI{72.4}{\percent} of independent-span claims cite a
-URL-less record against \SI{44.4}{\percent} overall. A pipeline composing attribution
-constraints should report the population each one can still fail on, not only its rate.
+The tax is not a constant. Over the 119 answerable questions (23--24 per type), retention by
+question type runs from \num{0.122} [\num{0.000}, \num{0.313}] for patient-FAQ questions to
+\num{0.687} [\num{0.487}, \num{0.854}] for guideline-comparison questions---a factor of
+\num{5.6} on one system, one corpus, one set of checks, with disjoint intervals. Profile and
+type are confounded (Section~\ref{sec:system}), and separating question kind from phrasing
+would need a paired-paraphrase design; what it establishes is that a single retention figure
+describes no particular user.
 
 \subsection{Where the check sits}
 \label{sec:where}
-The tax above is paid by withholding after generation. The alternative is to exclude the
-URL-less stratum at retrieval, so a citable record takes the seat instead of the seat going
-empty. We ran that design live on the same 134 questions: same enforcement code, one
-environment variable, the arm recorded in every response.
+The alternative to withholding after generation is to exclude the URL-less stratum at
+retrieval, so a citable record takes the seat. We ran it live on the same 134 questions with
+the same enforcement code and one environment variable, but on a later build
+(\texttt{47536e9}) and another day; the shipped sweep also spans one server restart.
 
-Moving the constraint upstream eliminates citability-based withholding \emph{by
-construction}---a claim cannot cite a record the retriever was never allowed to return. Across
-the two runs we observed, returned claims rose from 185 to \num{364} and retention from
-\num{0.527} to \num{0.960}, answers with no claim fell from 79 to 25, and the \num{5.6}-fold
-spread across question types collapsed; extracted claims \emph{rose} too, 351 to 379, so
-retrieval refilled rather than returning less---two runs of one system, not a replicated
-effect. Retrieval p50 falls \num{0.8}\,s with the \num{256415}-chunk stratum out of the search
-and end-to-end p50 \num{2.5}\,s, but the other \num{1.7}\,s is generation and verification
-against an external API on a different day, so we claim none of it.
+This eliminates citability-based withholding \emph{by construction}. Across the two runs,
+returned claims rose from 185 to \num{364}, retention from \num{0.527} to \num{0.960}
+[\num{0.931}, \num{0.984}], answers with no claim fell from 79 to 25 (paired difference
+\num{-0.40} [\num{-0.49}, \num{-0.31}]), and the spread across types fell to \num{1.4}-fold;
+extracted claims rose too, 351 to 379, so retrieval refilled. Only the first follows by
+construction; the rest are one run per design, not a replicated effect.
 
-We found no evidence that either design changed per-claim support or responsiveness. The first
-comparison crossed two judge models and two codebooks, so we re-judged the URL-first arm under
-the shipped arm's codebook byte for byte, served model, adjudicator prompt and batch size.
-Matched, support is \num{0.968} against \num{0.956} and responsiveness \num{0.038} against
-\num{0.036}. As intervals on the \emph{difference}, by the paired-question
-cluster bootstrap of Table~\ref{tab:conditions}: \num{0.012} [\num{-0.016}, \num{0.039}] and \num{0.002}
-[\num{-0.020}, \num{0.027}]. Matching moved responsiveness by \num{0.008} and reversed its
-sign, so the earlier pair was partly reporting the instrument; in these two runs the judge
-shift of Section~\ref{sec:relevance} moves both arms alike and mostly cancels. No equivalence
-margin was pre-specified, so these bound the observed difference rather than establish equivalence.
-The author graded \num{40} of this arm's claims blind: agreement \SI{95}{\percent}
-($\kappa = \num{0.87}$) against the original labels and \SI{92.5}{\percent}
-($\kappa = \num{0.81}$) against matched labels. Both matched-model \emph{relevant} items were
-graded \emph{partial} by the author; no human-relevant item was observed, leaving sparse
-calibration at this boundary. The arm returns twice as many claims, including
-\num{78} supported-but-unrelated ones against \num{40}. On the 15 designated out-of-corpus controls
-it returns \num{41} claims against \num{25}, so refilling from citable strata also produces
-confident, citable evidence for questions that have none.
+We found no evidence that either design changed per-claim support or responsiveness. The
+URL-first arm's original labels came from \texttt{claude-fable-5-1} on both instruments under
+a shorter codebook, so the unmatched support contrast crossed models. Re-judged under the
+shipped arm's codebook, served model (\texttt{claude-opus-5}), adjudicator prompt and batch
+size, support is \num{0.968} against \num{0.956} and responsiveness \num{0.038} against \num{0.036}
+(shipped minus URL-first, paired-question cluster bootstrap: \num{0.012} [\num{-0.016},
+\num{0.039}] and \num{0.002} [\num{-0.020}, \num{0.027}]); matching reversed the sign of the
+responsiveness difference, so the unmatched pair partly reported the instrument. No
+equivalence margin was pre-specified, and the smallest responsiveness difference detectable at
+\SI{80}{\percent} power is \num{0.034}, about the base rate. The author graded \num{40} of this
+arm's claims blind (agreement \SI{92.5}{\percent}, $\kappa = \num{0.81}$). The arm returns
+twice as many claims, including \num{78} supported-but-unrelated ones against \num{40}, the
+same \SI{21}{\percent} in both arms, and \num{41} claims on the 15 out-of-corpus controls
+against \num{25}.
 
-Three operational facts close the section. The fail-closed verifier blocked no answer in 134
-questions (55 pass, 79 revise). Median stage latencies under withholding are \num{3.3}\,s
-retrieval, \num{19.7}\,s generation and \num{0.7}\,s verification, the gates not instrumented
-separately, so we claim nothing about their share. And the gates run \emph{before}
-verification while a \texttt{revise} verdict replaces the answer after them without re-running
-them, so the absence of evidence-absent figures in delivered text is measured over all 134
-answers rather than structural.
+The verifier's verdicts are mostly code: of the
+shipped arm's 79 \texttt{revise}, 66 override a model \texttt{pass} over a standing finding,
+10 recover a truncated reply and 3 are the model's own (URL-first: 38, 7, none, plus one
+block that still returned 3 claims), so the verdict mostly records that a gate fired. One
+shipped answer delivered a raw block verdict as its text.
+The gates run \emph{before} verification and are not re-run on the delivered text, so the
+absence of evidence-absent figures in it is measured over all 134 answers, not structural.
 
 \begin{table}[t]
 \caption{Four nested gate configurations replayed on identical generations: 134
-precommitted questions, 351 extracted claims, code \texttt{13dc51f}. CIs are percentile
+questions committed in advance, 351 extracted claims, code \texttt{13dc51f}. CIs are percentile
 cluster bootstrap over questions, 5{,}000 resamples.}
 \label{tab:conditions}
 \centering\small
@@ -548,50 +578,48 @@ C2 \enspace + numeric      & 332 & 0.946$^{\dagger}$ \hfill ---  & 29 \\
 C3 \enspace + citability   & 185 & 0.527 \hfill [0.433, 0.621] & 79 \\
 \bottomrule
 \multicolumn{4}{@{}p{0.96\columnwidth}}{\footnotesize Withheld: 19 by span throughout, 147
-more by citability at C3. Uncitable claims: 156, 147, 147, 0.
-Gates execute span, citability, numeric, then the verifier; the table instead adds numeric
-before citability to separate their effects on statements and claims.
-$^{\dagger}$C2 cannot move claim retention: the numeric gate removes a \emph{statement}, never
-a claim. Evidence-absent figures go to zero: 58 statements removed, figures absent from
-all evidence 67, 67, 0, 0. On the 119 answerable questions C3 retention is 0.513, 72 empty;
-the 15 controls are not claim-free, C3 returning 25 claims.} \\
+more by citability at C3; uncitable claims 156, 147, 147, 0. Numeric precedes citability
+here to separate their effects. $^{\dagger}$The numeric gate removes a
+\emph{statement}, never a claim: 58 statements removed, evidence-absent figures 67, 67, 0, 0.
+On the 119 answerable questions C3 retention is 0.513, 72 empty; the 15 controls are not
+claim-free, C3 returning 25 claims.} \\
 \end{tabular}
 \end{table}
 
 
 % ---------------------------------------------------------------- VII. LIMITATIONS AND CONCLUSION (<=250 words)
-\section{Limitations and Conclusion}\textbf{Both judged rates are model judgements at the claim layer.} Support
-(\num{0.968}) and responsiveness (\num{0.022}) come from model judges under frozen codebooks
-with control arms, calibrated against the author's own blind grading of \num{30}, \num{40}
-and \num{40} items across both arms---\num{110} judgements over \num{101} distinct
-claims---providing sparse, arm-dependent calibration. There is no independent human rater,
-and no clinician has read these answers. No judge run pinned a checkpoint; each served judge
-model ID is recovered from its run
-transcript and released---\texttt{claude-opus-5} for the matched re-judging---but an ID is not
-a checkpoint and the interface accepts a family alias. Generator/verifier model IDs and
-decoding parameters were not recorded in the captures. The narrative answer around the claims is
-unenforced by policy and unjudged here.
+\section{Limitations and Conclusion}\textbf{Every judged rate is a model judgement.} Support
+(\num{0.968}) and claim responsiveness (\num{0.022}) come from model judges under frozen
+codebooks with control arms, calibrated against the author's blind grading of \num{110} items
+over \num{101} distinct claims across both arms: sparse, arm-dependent calibration. The
+answer-level and withheld-claim rates come from instruments adapted after the data were seen,
+are blind to correctness, and have no human calibration. The only human rater is the author,
+who also built the system and wrote both codebooks; no independent rater or clinician has
+read these answers. Served judge model IDs are recovered from transcripts and released, but an
+ID is not a checkpoint; generator and verifier IDs and decoding parameters were not recorded.
 
-\textbf{Scope.} One corpus, one generator, one embedding model, one language. The
-attributability figures are model-extracted and span-verified; that human precision check was
-never performed. The probe questions are ours, committed and hashed the day before the
-first run but never registered and with no registered analysis plan, and not from an external
-benchmark. The gates run before verification and a revision replaces the answer
-after them, so delivered text is re-checked only by our offline audit; one answer of 134
-shipped a raw verifier JSON object. The ingestion repair leaves a residual: one of 32
-re-sampled chunks still interleaves, and the extractor flags 116 of 150 articles as scrambled; this flag is
-unvalidated and supports no quality claim.
+\textbf{Scope.} One corpus, one generator, one embedding model, one language, and
+model-authored questions committed privately the day before the first run; nothing was
+registered. The per-type split, the URL-first arm, the adaptive URL probes, the matched
+re-judging, the answer-level and withheld-claim judging, the URL recovery and the dereference
+of returned URLs were added after the first results. The generator ran once per design, on
+different builds. No oracle check tested whether a retrieved chunk could answer each question,
+the support of withheld claims was not judged, the attributability figures have no human
+precision check, and delivered text is re-checked only by our offline audit.
 
-\textbf{Conclusion.} Traceability can be enforced by code rather than promised by a model,
-and where the check sits decides what it must withhold at all: excluding uncitable records at
-retrieval eliminates citability-based withholding \emph{by construction}, and across the two
-runs we observed, retention rose from \num{0.527} to \num{0.960}, and returned claims from
-\num{185} to \num{364}. We did not detect a difference in per-claim support or responsiveness:
-under both, about \num{0.96} of returned claims are supported and \numrange{0.02}{0.04}
-answer the question, with no equivalence margin pre-specified. High support coexists with low
-responsiveness; \num{183} of \num{185} shipped claims are verbatim passage sentences.
-Because extraction was not varied, these observations do not isolate retrieval, extraction,
-and corpus answerability. Both rates belong in such reports, with explicit measurement scope.
+\textbf{Conclusion.} On this system, traceability of the attribution list can be enforced by
+code rather than promised by a model, and where the check sits decides what it must withhold:
+excluding uncitable records at retrieval eliminates citability-based withholding \emph{by
+construction} (retention \num{0.527} to \num{0.960}, \num{0.476} to \num{0.747} counting only
+citations that open on the article) but moves the loss of responsive content upstream, where
+retention cannot see it; restoring links at ingestion would have kept 133 of the 147 withheld
+claims citable. Under both designs about \num{0.96} of returned claims are supported by their
+passage---near-automatically, since 183 of 185 are verbatim copies---and \numrange{0.01}{0.04}
+answer the question. That is a claim-layer observation on returned attribution entries under
+a verbatim-copy extractor on one corpus, not an end-to-end answer-quality rate; in exploratory
+judging most answers to answerable questions do answer. We did not detect a design difference
+in support or responsiveness, but the comparison is two single runs and underpowered.
+Support, claim responsiveness and answer responsiveness belong in such reports separately.
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}

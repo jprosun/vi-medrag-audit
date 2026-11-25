@@ -25,6 +25,8 @@ CHECKS = [
  ("Confirmatory URL estimate", ["benchmark/rivf/url_confirmatory_estimate.py", "--check"]),
  ("Recorded run configuration", ["benchmark/rivf/run_configuration.py", "--check"]),
  ("Judge sensitivity", ["benchmark/rivf/compare_judge_runs.py", "--check"]),
+ ("Probe set integrity", ["benchmark/rivf/build_probe_set.py", "--verify"]),
+ ("Post-submission analyses (tierA/B/C)", ["benchmark/rivf/verify_post_submission.py"]),
  ("Submission PDF", ["paper/check_pdf.py"]),
 ]
 def verify_manifest():

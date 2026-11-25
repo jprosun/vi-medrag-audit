@@ -1,0 +1,365 @@
+{
+  "generated": "2026-10-11",
+  "task": "Tier A: references + dataset card",
+  "references": {
+    "a_sourcecheckup": {
+      "bibkey": "wu2025sourcecheckup",
+      "status": "verified",
+      "doi": "10.1038/s41467-025-58551-6",
+      "journal": "Nature Communications",
+      "volume": "16",
+      "issue": "1",
+      "article_number": "3615",
+      "published": "2025-04-16",
+      "pmid": "40240349",
+      "pmcid": "PMC12003634",
+      "n_authors": 10,
+      "authors": [
+        "Kevin Wu",
+        "Eric Wu",
+        "Kevin Wei",
+        "Angela Zhang",
+        "Allison Casasola",
+        "Teresa Nguyen",
+        "Sith Riantawan",
+        "Patricia Shi",
+        "Daniel Ho",
+        "James Zou"
+      ],
+      "sources_checked": [
+        "Crossref query.bibliographic",
+        "Europe PMC search + fullTextXML PMC12003634"
+      ],
+      "nature_page_note": "www.nature.com/articles/s41467-025-58551-6 returned a 303 to idp.nature.com; not read. Full text read from Europe PMC instead.",
+      "quotes": {
+        "abstract_support": "Our findings reveal that between 50% and 90% of LLM responses are not fully supported, and sometimes contradicted, by the sources they cite. Even for GPT-4o with Web Search, approximately 30% of individual statements are unsupported, and nearly half of its responses are not fully supported.",
+        "abstract_scale": "We evaluate seven popular LLMs on a dataset of 800 questions and 58,000 pairs of statements and sources on data that represent common medical queries.",
+        "intro_url_validity": "find that models without access to the Web only produce valid URLs between 40% to 70% of the time. Retrieval-augmented generation (RAG)-enabled GPT-4o and Gemini Ultra 1.0, which have search engine access, do not suffer from URL hallucination, but still fail to produce references that support all the statements in the response nearly half of the time.",
+        "results_url_validity": "GPT-4o (API), the currently best-performing LLM, only produced valid URLs around 70% of the time.",
+        "results_response_support": "We found that GPT-4o (RAG) is the highest-performing model in terms of providing citations ... However, we still found that its response-level support is only 55%. ... only 34.5% of Gemini Ultra 1.0 with RAG's responses are fully supported by the retrieved references.",
+        "metric_definition": "Source URL Validity measures the proportion of generated URLs that return a valid webpage. Statement-level Support measures the percentage of statements that are supported by at least one source in the same response. Response-level Support measures the percentage of responses that have all their statements supported.",
+        "hallucinated_urls": "We also found low rates of previously existing, but now defunct, pages, suggesting that the invalid links outputted by the LLMs were indeed hallucinated.",
+        "expert_agreement": "finding 89% agreement with a consensus of three US-licensed medical experts"
+      }
+    },
+    "b_expertqa": {
+      "bibkey": "malaviya2024expertqa",
+      "status": "verified",
+      "anthology_id": "2024.naacl-long.167",
+      "doi": "10.18653/v1/2024.naacl-long.167",
+      "pages": "3025--3045",
+      "venue": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+      "address_month": "Mexico City, Mexico; June 2024",
+      "arxiv": "2309.07852",
+      "n_authors": 6,
+      "authors": [
+        "Chaitanya Malaviya",
+        "Subin Lee",
+        "Sihao Chen",
+        "Elizabeth Sieber",
+        "Mark Yatskar",
+        "Dan Roth"
+      ],
+      "sources_checked": [
+        "ACL Anthology .bib export",
+        "Crossref query.bibliographic",
+        "arXiv PDF 2309.07852 text (pdftotext)"
+      ],
+      "annotation_properties_table3": {
+        "Answer Usefulness (answer level)": "Is the answer useful in responding to the question? {Useful, Partially useful, Not useful at all}",
+        "Attribution (claim+evidence)": "Is the claim supported by its accompanying evidence? {Complete, Partial or Incomplete, Missing, N/A (if link broken)}",
+        "Informativeness (claim)": "Is the claim relevant to answering the question? {Very relevant, A bit relevant, Not too important, Uninformative}",
+        "Factuality (claim)": "Is every word of the claim factually correct? {Definitely correct, Probably correct, Unsure, Likely incorrect, Definitely incorrect}",
+        "Source Reliability (evidence)": "Is the accompanying evidence (if any) for the claim found on a website you would consider reliable? {Reliable, ...}",
+        "Cite-worthiness (claim)": "Is the claim necessary to be cited? {Yes, No}"
+      },
+      "quotes": {
+        "intro_properties": "Each claim-evidence pair in an answer is judged by experts for various properties such as the claim's informativeness, factuality, citeworthiness, whether the claim is supported by the evidence, and reliability of the evidence source.",
+        "scale": "we collect expert-curated questions from 484 participants across 32 fields of study, and then ask the same experts to evaluate generated responses to their own questions.",
+        "dataset_size": "The total number of examples validated in EXPERTQA is 2177.",
+        "medicine_findings": "High-stakes domains such as medicine and law suffer from a large percentage of incomplete attributions (35% and 31% incomplete attributions respectively) and many attributions come from unreliable sources (51% attributions are not rated reliable by experts).",
+        "medicine_reliability": "51% of medical claims have attributions from sources that are not Reliable"
+      }
+    },
+    "c_vericite_ma": {
+      "bibkey": "ma2026vericite",
+      "status": "verified",
+      "anthology_id": "2026.bionlp-1.62",
+      "doi": "10.18653/v1/2026.bionlp-1.62",
+      "pages": "753--759",
+      "venue": "BioNLP 2026 (San Diego, California; July 2026; ACL)",
+      "isbn": "979-8-89176-434-7",
+      "n_authors": 3,
+      "authors": [
+        "Yixian Ma",
+        "Bohao Chu",
+        "Norbert Fuhr"
+      ],
+      "title": "VERICITE: Evaluating Sentence-Level Citation Faithfulness in Retrieval-Augmented Medical Question Answering",
+      "sources_checked": [
+        "ACL Anthology page HTML + .bib export"
+      ],
+      "quotes": {
+        "abstract_headline": "Only 27-41% of citation pairs are supported at the sentence level at retrieval depths of 3 and 5, with support rates declining further at larger k.",
+        "abstract_setup": "Our system retrieves PubMed abstracts via the NCBI E-Utilities API, prompts LLMs to generate answers with inline citations, and verifies each citation at the sentence level using a DeBERTa-v3-large NLI model. We evaluate four LLMs on 500 BioASQ questions at retrieval depths of 3 and 5",
+        "abstract_oracle": "Under the oracle condition, answer quality improves, but citation faithfulness does not substantially improve, suggesting that generation-side citation behavior contributes substantially to unfaithful citations."
+      },
+      "encoding_note": "The Anthology page prints '27?41%'; the '?' is a mangled en dash.",
+      "distinct_from_qian2025vericite": {
+        "qian_title": "VeriCite: Towards Reliable Citations in Retrieval-Augmented Generation via Rigorous Verification",
+        "qian_authors_first_six": [
+          "Haosheng Qian",
+          "Yixing Fan",
+          "Jiafeng Guo",
+          "Ruqing Zhang",
+          "Qi Chen",
+          "Dawei Yin"
+        ],
+        "qian_venue": "SIGIR-AP 2025, pp. 47--54, DOI 10.1145/3767695.3769505, arXiv:2510.11394",
+        "verdict": "Different authors, title, venue, year and task (verification-before-release method vs. evaluation framework). No overlap."
+      }
+    },
+    "d_xorattriqa": {
+      "bibkey": "muller2023xorattriqa",
+      "status": "verified",
+      "anthology_id": "2023.emnlp-main.10",
+      "doi": "10.18653/v1/2023.emnlp-main.10",
+      "pages": "144--157",
+      "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (Singapore, December 2023)",
+      "arxiv": "2305.14332",
+      "n_authors": 9,
+      "authors": [
+        "Benjamin Muller",
+        "John Wieting",
+        "Jonathan H. Clark",
+        "Tom Kwiatkowski",
+        "Sebastian Ruder",
+        "Livio Baldini Soares",
+        "Roee Aharoni",
+        "Jonathan Herzig",
+        "Xinyi Wang"
+      ],
+      "title": "Evaluating and Modeling Attribution for Cross-Lingual Question Answering",
+      "languages": [
+        "Bengali",
+        "Finnish",
+        "Japanese",
+        "Russian",
+        "Telugu"
+      ],
+      "sources_checked": [
+        "ACL Anthology .bib export",
+        "Crossref query.bibliographic",
+        "arXiv PDF 2305.14332 text (pdftotext)"
+      ],
+      "quotes": {
+        "languages": "We collect data in 5 languages: Bengali, Finnish, Japanese, Russian, and Telugu.",
+        "size": "XOR-AttriQA includes approximately 10,000 annotated examples to foster research in the modeling and evaluation of attribution in cross-lingual settings.",
+        "abstract_finding_acl_anthology": "To our surprise, we find that a substantial portion of the answers is not attributable to any retrieved passages (up to 50% of answers exactly matching a gold reference) despite the system being able to attend directly to the retrieved text.",
+        "abstract_finding_arxiv_v2_pdf": "we find that a substantial portion of the answers is not attributable to any retrieved passages (up to 47% of answers exactly matching a gold reference) despite the system being able to attend directly to the retrieved text.",
+        "sec41_arxiv_v2_pdf": "For instance, in Japanese, up to 47% of answers exactly matching the gold reference are not attributable."
+      },
+      "note": "Version split: the ACL Anthology abstract (read from aclanthology.org/2023.emnlp-main.10 HTML, the version cited) says 50%; the arXiv v2 PDF says 47%. Cite 50% with this DOI or write 'up to half'; never 47% against the Anthology DOI."
+    },
+    "e_kim2025": {
+      "bibkey": "kim2025rethinkingmedrag",
+      "status": "verified (preprint)",
+      "arxiv": "2511.06738",
+      "version": "v1",
+      "submitted": "2025-11-10",
+      "comment": "34 pages, 6 figures",
+      "journal_ref": null,
+      "doi": null,
+      "n_authors": 27,
+      "title": "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights",
+      "first_author": "Hyunjae Kim",
+      "last_author": "Qingyu Chen",
+      "sources_checked": [
+        "arXiv export API id_list=2511.06738",
+        "arXiv abstract page"
+      ],
+      "quotes": {
+        "relevance_22pct": "Contrary to expectation, standard RAG often degraded performance: only 22% of top-16 passages were relevant, evidence selection remained weak (precision 41-43%, recall 27-49%), and factuality and completeness dropped by up to 6% and 5%, respectively, compared with non-RAG variants.",
+        "scale": "Eighteen medical experts contributed a total of 80,502 annotations, assessing 800 model outputs generated by GPT-4o and Llama-3.1-8B across 200 real-world patient and USMLE-style queries."
+      },
+      "note": "The review's '22% of retrieved passages relevant' is confirmed, with the qualifier 'top-16'."
+    },
+    "f_liu2023": {
+      "bibkey": "liu2023verifiability (existing)",
+      "status": "re-verified; no entry change needed",
+      "doi": "10.18653/v1/2023.findings-emnlp.467",
+      "pages": "7001--7025",
+      "arxiv": "2304.09848",
+      "sources_checked": [
+        "Crossref works/DOI",
+        "ACL Anthology .bib export",
+        "Anthology PDF text (pdftotext)"
+      ],
+      "quotes": {
+        "intro_correlation": "Furthermore, citation precision is inversely correlated with perceived utility (r = -0.96); the responses that seem more helpful are often those with inaccurate citations (§4.3).",
+        "intro_hypothesis": "We hypothesize that citation precision is inversely correlated with perceived utility because generative search engines often copy or closely paraphrase from their cited webpages (§4.4).",
+        "sec43": "We find that citation precision is inversely correlated with perceived utility in existing generative search engines (r = -0.96).",
+        "sec44_copying": "Furthermore, systems with higher similarity between their generated statements and cited webpages also have higher average citation precision (r = 0.80 between each of BLEU and BERTScore with average citation precision), indicating that their improved precision may largely be a byproduct of their increased tendency to copy or paraphrase from cited webpages.",
+        "conclusion": "Analysis suggests that this inverse correlation occurs in existing systems because of their propensity to copy or closely paraphrase from cited webpages, which inflates citation precision at the cost of lower perceived utility.",
+        "headline": "on average, a mere 51.5% of generated sentences are fully supported by citations and only 74.5% of citations support their associated sentence."
+      },
+      "note": "The inverse correlation is citation PRECISION vs perceived utility (r = -0.96). The paper gives no coefficient for recall vs utility and none for fluency; do not write 'precision/recall ... inversely correlated with utility'."
+    },
+    "g_longpre2024": {
+      "bibkey": "longpre2024provenance (existing)",
+      "status": "re-verified; no entry change needed",
+      "doi": "10.1038/s42256-024-00878-8",
+      "journal": "Nature Machine Intelligence",
+      "volume": "6",
+      "issue": "8",
+      "pages": "975--987",
+      "published": "2024-08-30",
+      "n_authors": 17,
+      "arxiv": "2310.16787",
+      "sources_checked": [
+        "Crossref works/DOI (abstract included)",
+        "arXiv export API"
+      ],
+      "quotes": {
+        "journal_abstract": "we convene a multi-disciplinary effort between legal and machine learning experts to systematically audit and trace more than 1,800 text datasets. ... We observe frequent miscategorization of licences on popular dataset hosting sites, with licence omission rates of more than 70% and error rates of more than 50%.",
+        "arxiv_abstract": "We also observe frequent miscategorization of licenses on widely used dataset hosting sites, with license omission of 70%+ and error rates of 50%+."
+      },
+      "manuscript_sentence": "an audit of over 1{,}800 text datasets found licences omitted for more than 70% and mis-stated for more than 50% on popular platforms",
+      "note": "Figures confirmed. 'mis-stated' paraphrases the source's 'error rates'; 'licence omission rates above 70% and error rates above 50%' tracks the source wording exactly."
+    }
+  },
+  "hf_dataset_card": {
+    "api_reachable": true,
+    "api_url": "https://huggingface.co/api/datasets/mtue29/vietnamese-medical-dataset",
+    "id": "mtue29/vietnamese-medical-dataset",
+    "author": "mtue29",
+    "sha": "5dedcb22d80295e6e645d10eff5cdc42e66a9487",
+    "createdAt": "2025-09-25T04:11:23.000Z",
+    "lastModified": "2025-09-25T04:35:40.000Z",
+    "private": false,
+    "gated": false,
+    "downloads": 35,
+    "likes": 4,
+    "licence_cardData": "apache-2.0",
+    "licence_readme_frontmatter": "license: apache-2.0",
+    "declared_source_readme": "- Source: [Long Châu Pharmacy](https://nhathuoclongchau.com.vn/)",
+    "citation_author_readme": "Tue Phan Vo Minh",
+    "size_categories": [
+      "100K<n<1M"
+    ],
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "vietnamese-medical-dataset.json"
+    ],
+    "data_file": "vietnamese-medical-dataset.json",
+    "data_file_bytes": 1043065539,
+    "num_examples_train": 463422,
+    "shard_lengths": [
+      230839,
+      232583
+    ],
+    "dataset_size_bytes": 1006163292,
+    "download_size_bytes": 1043065539,
+    "row_fields": [
+      "anchor",
+      "meta",
+      "negative",
+      "positive"
+    ],
+    "meta_fields": [
+      "article_id",
+      "category",
+      "title"
+    ],
+    "has_url_field": false,
+    "has_title_field": true,
+    "has_article_id_field": true,
+    "first_rows_n": 89,
+    "first_rows_truncated_flag": true,
+    "first_rows_distinct_article_id": 45,
+    "first_rows_distinct_title": 10,
+    "first_rows_distinct_anchor": 44,
+    "first_rows_article_id_range": [
+      0,
+      44
+    ],
+    "first_rows_article_ids_per_title_example": {
+      "Nhau bám mặt trước là trai hay gái? Thông tin cần ": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "Bệnh vảy nến nên ăn gì? Chế độ ăn kiêng cho người ": [
+        6,
+        7,
+        8
+      ],
+      "Hồng xiêm có tác dụng gì khi chứa nhiều thành phần": [
+        9,
+        10,
+        11
+      ]
+    },
+    "first_rows_categories": [
+      [
+        "phong_benh_song_khoe/kien_thuc_y_khoa",
+        60
+      ],
+      [
+        "me_va_be/cham-soc-be",
+        15
+      ],
+      [
+        "khoe_dep/duong-da",
+        14
+      ]
+    ]
+  },
+  "artifact_crosscheck": {
+    "census_hf_stratum": {
+      "chunks": 256415,
+      "share_of_collection": 0.4305,
+      "distinct_article_ids": 109816,
+      "source_url": {
+        "any": 0.0,
+        "article_or_page": 0,
+        "issue_level_only": 0,
+        "none": 256415
+      },
+      "points_count_declared": 595663,
+      "points_scrolled": 595663
+    },
+    "capture_shipped": {
+      "file": "pilot_span_exposure_rivf134_2026-09-05_091659_raw.jsonl",
+      "records": 134,
+      "chunks": 4024,
+      "hf_chunks": 2472,
+      "hf_share": 0.6143,
+      "hf_nonempty_fields": {
+        "title": 2472,
+        "canonical_title": 2472,
+        "section_title": 2472,
+        "heading_path": 2472,
+        "tags": 2472,
+        "article_id": 2472,
+        "doc_id": 2472
+      },
+      "hf_source_url_nonempty": 0,
+      "hf_tag_hf_article_id": 2472
+    },
+    "capture_urlfirst": {
+      "file": "pilot_span_exposure_urlfirst_2026-09-07_035612_raw.jsonl",
+      "records": 134,
+      "chunks": 3947,
+      "hf_chunks": 0,
+      "hf_share": 0.0,
+      "hf_nonempty_fields": {},
+      "hf_source_url_nonempty": 0,
+      "hf_tag_hf_article_id": 0
+    }
+  }
+}

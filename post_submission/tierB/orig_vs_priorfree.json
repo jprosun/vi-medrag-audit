@@ -1,0 +1,8 @@
+{
+  "partial->partial": 119,
+  "not_relevant->not_relevant": 47,
+  "partial->not_relevant": 10,
+  "not_relevant->partial": 5,
+  "relevant->relevant": 2,
+  "relevant->partial": 2
+}

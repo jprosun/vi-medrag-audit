@@ -1,0 +1,119 @@
+% Tier A reference additions for EDAS 1571353709, verified 2026-10-11.
+% Every field below was read from Crossref (api.crossref.org/works/<DOI>), the ACL Anthology
+% .bib export, the arXiv export API, or Europe PMC (PMC12003634) -- not from memory. Author
+% lists are COMPLETE here; refs.bib truncates past six names to "and others" for page fit, so
+% apply that convention when merging. Verification notes are comments, NOT for print.
+
+% ---- (a) SourceCheckup -- verification record, NOT for print:
+%   Crossref 10.1038/s41467-025-58551-6: "An automated framework for assessing how well LLMs
+%   cite relevant medical references", Nature Communications vol. 16 no. 1, article-number
+%   3615, published 2025-04-16, 10 authors as listed. Europe PMC: PMID 40240349, PMCID
+%   PMC12003634, open access. Headline (abstract): "between 50% and 90% of LLM responses are
+%   not fully supported, and sometimes contradicted, by the sources they cite"; "Even for
+%   GPT-4o with Web Search, approximately 30% of individual statements are unsupported, and
+%   nearly half of its responses are not fully supported". URL validity (Introduction):
+%   "models without access to the Web only produce valid URLs between 40% to 70% of the time";
+%   RAG-enabled GPT-4o and Gemini Ultra 1.0 "do not suffer from URL hallucination". Seven LLMs,
+%   800 questions, 58,000 statement-source pairs.
+@article{wu2025sourcecheckup,
+  author  = {Kevin Wu and Eric Wu and Kevin Wei and Angela Zhang and Allison Casasola and Teresa Nguyen and Sith Riantawan and Patricia Shi and Daniel Ho and James Zou},
+  title   = {An automated framework for assessing how well {LLMs} cite relevant medical references},
+  journal = {Nature Commun.},
+  volume  = {16},
+  number  = {1},
+  pages   = {3615},
+  year    = {2025},
+  doi     = {10.1038/s41467-025-58551-6}
+}
+
+% ---- (b) ExpertQA -- verification record, NOT for print:
+%   ACL Anthology 2024.naacl-long.167 (.bib export) and Crossref 10.18653/v1/2024.naacl-long.167
+%   agree: six authors in this order, NAACL 2024 Long Papers, pp. 3025--3045, Mexico City,
+%   June 2024. arXiv:2309.07852. Table 3 ("Properties of claims and evidences annotated")
+%   read from the PDF: Attribution = "Is the claim supported by its accompanying evidence?"
+%   {Complete, Partial or Incomplete, Missing, N/A (if link broken)}; Informativeness = "Is
+%   the claim relevant to answering the question?" {Very relevant, A bit relevant, Not too
+%   important, Uninformative}; Source Reliability = "Is the accompanying evidence (if any) for
+%   the claim found on a website you would consider reliable?"; plus Factuality,
+%   Cite-worthiness (claim level) and Answer Usefulness (answer level). 2177 questions,
+%   484 participants, 32 fields.
+@inproceedings{malaviya2024expertqa,
+  author    = {Chaitanya Malaviya and Subin Lee and Sihao Chen and Elizabeth Sieber and Mark Yatskar and Dan Roth},
+  title     = {{ExpertQA}: Expert-Curated Questions and Attributed Answers},
+  booktitle = {Proc. Conf. Nations Amer. Chapter Assoc. Comput. Linguistics},
+  year      = {2024},
+  pages     = {3025--3045},
+  note      = {doi:10.18653/v1/2024.naacl-long.167}
+}
+
+% ---- (c) VERICITE (Ma, Chu, Fuhr) -- verification record, NOT for print:
+%   ACL Anthology 2026.bionlp-1.62 (.bib export): three authors in this order, "BioNLP 2026",
+%   San Diego, July 2026, pp. 753--759, DOI 10.18653/v1/2026.bionlp-1.62, ISBN
+%   979-8-89176-434-7. Abstract: "Only 27-41% of citation pairs are supported at the sentence
+%   level at retrieval depths of 3 and 5, with support rates declining further at larger k"
+%   (four LLMs, 500 BioASQ questions, DeBERTa-v3-large NLI). The Anthology page renders the
+%   dash as "27?41%" -- an encoding artefact, not a typo to copy. Workshop ordinal not
+%   verified, so the booktitle carries none.
+%   DISTINCT from qian2025vericite (Qian, Fan, Guo, Zhang, Chen, Yin et al., SIGIR-AP 2025,
+%   DOI 10.1145/3767695.3769505, arXiv:2510.11394, "VeriCite: Towards Reliable Citations in
+%   Retrieval-Augmented Generation via Rigorous Verification"): different authors, title,
+%   venue and year. Cite both only with the author names attached.
+@inproceedings{ma2026vericite,
+  author    = {Yixian Ma and Bohao Chu and Norbert Fuhr},
+  title     = {{VERICITE}: Evaluating Sentence-Level Citation Faithfulness in Retrieval-Augmented Medical Question Answering},
+  booktitle = {Proc. Workshop Biomed. Natural Lang. Process. (BioNLP)},
+  year      = {2026},
+  pages     = {753--759},
+  note      = {doi:10.18653/v1/2026.bionlp-1.62}
+}
+
+% ---- (d) XOR-AttriQA -- verification record, NOT for print:
+%   ACL Anthology 2023.emnlp-main.10 (.bib export) and Crossref 10.18653/v1/2023.emnlp-main.10
+%   agree: nine authors in this order, EMNLP 2023 main, Singapore, December 2023,
+%   pp. 144--157. arXiv:2305.14332. From the PDF (Section 1 and Section 3): "We collect data
+%   in 5 languages: Bengali, Finnish, Japanese, Russian, and Telugu."; "XOR-AttriQA includes
+%   approximately 10,000 annotated examples". VERSION SPLIT on the headline figure: the ACL
+%   Anthology abstract (the version this entry cites) says "up to 50% of answers exactly
+%   matching a gold reference" are not attributable; the arXiv v2 PDF says "up to 47%" in
+%   its abstract and "in Japanese, up to 47%" in Section 4.1. Cite 50% with the Anthology
+%   version, or write "up to half" -- never 47% against this DOI. Evaluated system is CORA;
+%   passages may be in a different language (mainly English) from the query.
+@inproceedings{muller2023xorattriqa,
+  author    = {Benjamin Muller and John Wieting and Jonathan H. Clark and Tom Kwiatkowski and Sebastian Ruder and Livio Baldini Soares and Roee Aharoni and Jonathan Herzig and Xinyi Wang},
+  title     = {Evaluating and Modeling Attribution for Cross-Lingual Question Answering},
+  booktitle = {Proc. Conf. Empirical Methods Natural Lang. Process.},
+  year      = {2023},
+  pages     = {144--157},
+  note      = {doi:10.18653/v1/2023.emnlp-main.10}
+}
+
+% ---- (e) Kim et al. 2025 -- verification record, NOT for print:
+%   arXiv export API, id 2511.06738v1, submitted 2025-11-10, comment "34 pages, 6 figures",
+%   no journal-ref and no DOI on the record as of 2026-10-11. 27 authors as listed. Abstract:
+%   "only 22% of top-16 passages were relevant, evidence selection remained weak (precision
+%   41-43%, recall 27-49%)"; 18 medical experts, 80,502 annotations, 800 outputs (GPT-4o,
+%   Llama-3.1-8B), 200 queries. The "22%" is over TOP-16 retrieved passages -- say so.
+@article{kim2025rethinkingmedrag,
+  author  = {Hyunjae Kim and Jiwoong Sohn and Aidan Gilson and Nicholas Cochran-Caggiano and Serina Applebaum and Heeju Jin and Seihee Park and Yujin Park and Jiyeong Park and Seoyoung Choi and Brittany Alexandra Herrera Contreras and Thomas Huang and Jaehoon Yun and Ethan F. Wei and Roy Jiang and Leah Colucci and Eric Lai and Amisha Dave and Tuo Guo and Maxwell B. Singer and Yonghoe Koo and Ron A. Adelman and James Zou and Andrew Taylor and Arman Cohan and Hua Xu and Qingyu Chen},
+  title   = {Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights},
+  journal = {arXiv preprint arXiv:2511.06738},
+  year    = {2025}
+}
+
+% ---- (f) liu2023verifiability: NO NEW ENTRY. Existing entry re-verified 2026-10-11 against
+%   Crossref 10.18653/v1/2023.findings-emnlp.467 and the Anthology .bib: three authors,
+%   Findings of EMNLP 2023, pp. 7001--7025. Sentences to cite (read from the PDF):
+%   Intro: "Furthermore, citation precision is inversely correlated with perceived utility
+%   (r = -0.96); the responses that seem more helpful are often those with inaccurate
+%   citations (S4.3)." / "We hypothesize that citation precision is inversely correlated with
+%   perceived utility because generative search engines often copy or closely paraphrase
+%   from their cited webpages (S4.4)." S4.4: "(r = 0.80 between each of BLEU and BERTScore
+%   with average citation precision)". The correlation is PRECISION vs utility; the paper
+%   reports no recall-utility or fluency-utility coefficient.
+
+% ---- (g) longpre2024provenance: NO NEW ENTRY. Existing entry re-verified 2026-10-11 against
+%   Crossref 10.1038/s42256-024-00878-8: Nature Mach. Intell. vol. 6 no. 8, pp. 975--987,
+%   published 2024-08-30, 17 authors. Abstract (journal): "systematically audit and trace more
+%   than 1,800 text datasets" and "licence omission rates of more than 70% and error rates of
+%   more than 50%". arXiv:2310.16787 wording: "license omission of 70%+ and error rates of
+%   50%+". The manuscript's "mis-stated" paraphrases "error rates".

@@ -1,0 +1,2225 @@
+[
+  {
+    "url": "http://viendinhduong.vn/vi/lookup/de-tai-nghien-cuu-khoa-hoc/thuc-trang-va-mot-so-yeu-to-lien-quan-den-suy-dinh-duong-thap-coi-cua-tre-6-24-thang-tuoi-tai-xa-o-lam-huyen-tri-ton-tinh-an-giang-nam-2016-68035d64359ef722321fcfb8",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "Thực trạng và một số yếu tố liên quan đến suy dinh dưỡng thấp còi của trẻ 6-24 tháng tuổi tại xã Ô Lâm, huyện Tri Tôn, tỉnh An Giang năm 2016"
+    ],
+    "status": "robots_refused"
+  },
+  {
+    "url": "https://dav.gov.vn/info-document-309.html",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "Bang tổng hop tiep thu giai trinh y kien cua cac don vị tt sua 02 03 36 dang tại - kèm theo Thông tư này (khi"
+    ],
+    "http_status": 200,
+    "final_url": "https://dav.gov.vn/info-document-309.html",
+    "page_title": "",
+    "title_similarity": 0.0,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://dav.gov.vn/info-document-326.html",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 2,
+    "claim_titles": [
+      "NGUYÊN LIỆU LÀM THUỐC ĐÃ ĐƯỢC CẤP GIẤY ĐĂNG KÝ LƯU HÀNH (Kèm theo Thông tư số /2025/TT-BYT ngày tháng năm 2025 của Bộ Y tế) - lô sản xuất giữa thuốc thành phẩm trước và sau khi có thay đổi; số liệu phân tích lô cho 02 lô sản xuất đầy đủ kế tiếp phải sẵn có để nộp khi có yêu cầu."
+    ],
+    "http_status": 200,
+    "final_url": "https://dav.gov.vn/info-document-326.html",
+    "page_title": "",
+    "title_similarity": 0.0,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://huejmp.vn/index.php/journal/issue/view/22",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "Kết quả bước đầu nghiên cứu nồng độ vitamin B12 và homocysteine huyết thanh trên bệnh nhân đái tháo đường típ 2 được điều trị với phác đồ có metformin"
+    ],
+    "http_status": 200,
+    "final_url": "https://huejmp.vn/index.php/journal/issue/view/22",
+    "page_title": "Tập 15 Số 1 (2025)\n\t\t\t\t\t\t\t| Tạp chí Y Dược Huế",
+    "title_similarity": 0.097,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/18",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "HIỆU QUẢ GIẢM ĐAU ĐA MÔ THỨC SAU PHẪU THUẬT NỘI SOI TRONG VÀ SAU PHÚC MẠC LẤY THẬN GHÉP Ở NGƯỜI HIẾN SỐNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/18",
+    "page_title": "Tập 48 Số 6 (2023): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 6 - 2023\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.086,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/19",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "MỐI LIÊN QUAN CỦA SỨC CĂNG NHĨ TRÁI, TƯƠNG HỢP NHĨ TRÁI - THẤT TRÁI VỚI RỐI LOẠN CHỨC NĂNG TÂM TRƯƠNG THẤT TRÁI VÀ NỒNG ĐỘ NT-PROBNP Ở BỆNH NHÂN NHỒI MÁU CƠ TIM CẤP ĐƯỢC CAN THIỆP ĐỘNG MẠCH VÀNH QUA DA"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/19",
+    "page_title": "Tập 48 Số 7 (2023): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 7 - 2023\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.158,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/37",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 0,
+    "claim_titles": [
+      "ĐÁNH GIÁ TÁC DỤNG CẢI THIỆN TRÍ NHỚ CỦA CAO CHIẾT HẠT CÀ PHÊ XANH VIỆT NAM TRÊN CHUỘT NHẮT TRẮNG GÂY SUY GIẢM TRÍ NHỚ BẰNG SCOPOLAMIN"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/37",
+    "page_title": "Tập 50 Số 1 (2025): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 1 - 2025\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.225,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/40",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "98\u0003 BÁO CÁO CA BỆNH: ĐỒNG MẮC BẠCH CẦU TỦY MẠN CHUYỂN BẠCH CẦU CẤP DÒNG TỦY VÀ U LYMPHO KHÔNG HODGKIN TẾ BÀO T"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/40",
+    "page_title": "Tập 50 Số 3 (2025): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 3 - 2025\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.213,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/42",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "GIÁ TRỊ CHẨN ĐOÁN UNG THƯ PHỔI KHÔNG TẾ BÀO NHỎ CỦA DẤU ẤN METHYL HÓA SHOX2 TRONG MÁU NGOẠI VI"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/42",
+    "page_title": "Tập 50 Số 5 (2025): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 5 - 2025\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.195,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://jmpm.vn/index.php/jmpm/issue/view/9",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "TRONG CHẨN ĐOÁN GIAI ĐOẠN UNG THƯ DẠ DÀY"
+    ],
+    "http_status": 200,
+    "final_url": "https://jmpm.vn/index.php/jmpm/issue/view/9",
+    "page_title": "Tập 47 Số 8 (2022): TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ SỐ 8 - 2022\n\t\t\t\t\t\t\t| Tạp chí Y Dược học Quân sự",
+    "title_similarity": 0.167,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/10",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 1,
+    "n_returned": 0,
+    "claim_titles": [
+      "NGHIÊN CỨU TÌNH HÌNH, KIẾN THỨC, THÁI ĐỘ, THỰC HÀNH VỀ PHÒNG NGỪA LÂY NHIỄM VI RÚT VIÊM GAN B Ở PHỤ NỮ MANG THAI TẠI BỆNH VIỆN VŨNG TÀU NĂM 2021-2022 Trần Thị Bảo Anh1,2*"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/10",
+    "page_title": "No. 52 (2022)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.157,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/11",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 0,
+    "claim_titles": [
+      "máu Bệnh viện Quân Y 105, Luận văn thạc sĩ dược học, Đại học Dược Hà Nội, Hà Nội. thuốc tại bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh cơ sở 2 trong tháng 06/2015\", bệnh nhân viêm khớp tại Khoa Nội Tim mạch Bệnh viện đa khoa Trung ương Cần Thơ năm"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/11",
+    "page_title": "No. 54 (2022)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.054,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/24",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 6,
+    "claim_titles": [
+      "phòng khám sản bệnh viên Trường Đại học Y Dược Cần Thơ, Luận văn văn Tốt nghiệp Bác sỹ Y học Dự phòng, Trường Đại học Y Dược, trang 63-64. phụ 3 tháng cuối thai kỳ tại huyện Hóc Môn, thành phố Hồ Chí Minh năm 2017, Luận văn thạc sỹ Y tế công cộng, tr34-42."
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/24",
+    "page_title": "No. 37 (2021)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.034,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/29",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 5,
+    "n_returned": 3,
+    "claim_titles": [
+      "NGHIÊN CỨU TÌNH HÌNH TỔN THƯƠNG ĐỘNG MẠCH CẢNH NGOÀI SỌ VÀ MỘT SỐ YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN HỘI CHỨNG ĐỘNG MẠCH VÀNH CẤP"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/29",
+    "page_title": "No. 43 (2021)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.173,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/33",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "MỘT SỐ YẾU TỐ LIÊN QUAN VÀ ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ BẰNG PHỐI HỢP THÊM INSULIN NỀN Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TÝP 2 THẤT BẠI VỚI ĐIỀU TRỊ BẰNG THUỐC VIÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/33",
+    "page_title": "No. 30 (2020)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.137,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/36",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 4,
+    "claim_titles": [
+      "đổi khí hậu đến bệnh tật của con người do những tác nhân gây bệnh mới hay những bệnh lây truyền từ động vật sang người mà trước đây chỉ là đơn lẻ."
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/36",
+    "page_title": "No. 27 (2020)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.092,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/4",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "ESBL và hiệu quả của kháng sinh liệu pháp tại khoa Tiết niệu Bệnh viện Nhân dân Gia Định”, Luận văn Thạc sĩ Y học, Đại học Y Dược TP.Hồ Chí Minh. Việt Nam”. VUNA. phổ rộng tại bệnh viện Bình Dân”, Tạp chí Y học TP. Hồ Chí Minh, 16(1), tr.285-301."
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/4",
+    "page_title": "No. 48 (2022)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.021,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/47",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "NGHIÊN CỨU KỸ THUẬT CỐ ĐỊNH MẢNH GHÉP KẾT MẠC RỜI TỰ THÂN BẰNG MÁU TỰ THÂN KẾT HỢP ĐỐT LƯỠNG CỰC TRONG ĐIỀU TRỊ MỘNG THỊT NGUYÊN PHÁT"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/47",
+    "page_title": "No. 65 (2023)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.197,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/51",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "VAI TRÒ CỦA ĐỘ THANH THẢI LACTATE TRONG TIÊN LƯỢNG TỬ VONG Ở BỆNH NHÂN SỐC NHIỄM KHUẨN Đoàn Đức Nhân1*, Danh Minh Sung2, Võ Minh Phương1 Nguyễn Việt Thu Trang1, Danh Thái Châu"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/51",
+    "page_title": "No. 69 (2023)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.226,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/52",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 7,
+    "n_returned": 7,
+    "claim_titles": [
+      "HIỆU QUẢ THAY HUYẾT TƯƠNG Ở BỆNH NHÂN VIÊM TỤY CẤP DO TĂNG TRIGLYCERIDE MÁU TẠI KHOA ICU BỆNH VIỆN ĐA KHOA TRUNG TÂM AN GIANG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/52",
+    "page_title": "No. 70 (2024)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.206,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/65",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "NGHIÊN CỨU TÌNH HÌNH, MỘT SỐ YẾU TỐ LIÊN QUAN VÀ KẾT QUẢ ĐIỀU TRỊ HUYẾT KHỐI TĨNH MẠCH SÂU CHI DƯỚI BẰNG RIVAROXABAN Ở BỆNH NHÂN NHỒI MÁU NÃO"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/65",
+    "page_title": "No. 82 (2024)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.2,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/67",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KHẢO SÁT TÌNH HÌNH TỰ SỬ DỤNG THUỐC GIẢM ĐAU"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/67",
+    "page_title": "No. 83 (2025)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.191,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/75",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "NGHIÊN CỨU TÌNH HÌNH UNG THƯ DẠ DÀY, MỐI LIÊN QUAN KẾT QUẢ ĐIỀU TRỊ TIỆT TRỪ HELICOBACTER PYLORI Ở BỆNH NHÂN VIÊM LOÉT DẠ DÀY TÁ TRÀNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/75",
+    "page_title": "No. 90 (2025): The 10th ANNIVERSARY OF THE CAN THO JOURNAL OF MEDICINE AND PHARMACY (2015–2025)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.221,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/76",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KIẾN THỨC VÀ THÁI ĐỘ VỀ VIÊM GAN SIÊU VI B VÀ VẮC XIN CỦA SINH VIÊN NGÀNH KỸ THUẬT XÉT NGHIỆM Y HỌC TẠI TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/76",
+    "page_title": "No. 91 (2025)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.208,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/78",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "TÌNH HÌNH SỬ DỤNG THUỐC VÀ SỰ TUÂN THỦ CỦA BỆNH NHÂN TRONG ĐIỀU TRỊ TĂNG HUYẾT ÁP TẠI TRUNG TÂM Y TẾ TRI TÔN, TỈNH AN GIANG NĂM 2025 Nguyễn Văn An1*, Nguyễn Thị Thùy Trang1, Đỗ Trí Ngoan1, Nguyễn Minh Thức"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchi.ctump.edu.vn/index.php/ctump/issue/view/78",
+    "page_title": "No. 93 (2025)\n\t\t\t\t\t\t\t| Cantho Journal of Medicine and Pharmacy",
+    "title_similarity": 0.064,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10359",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "THỰC TRẠNG TUÂN THỦ SỬ DỤNG THUỐC ĐIỀU TRỊ CỦNG CỐ CỦA NGƯỜI BỆNH LAO PHỔI TẠI BỆNH VIỆN PHỔI NAM ĐỊNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10359",
+    "page_title": "COMPLIANCE IN THE USE OF REINFORCED TREATMENT MEDICINES OF PULMONARY TUBERCULOSIS PATIENTS AT NAM DINH LUNG HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.298,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10361",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ĐẶC ĐIỂM DỊCH TỄ VÀ HÀNH VI NGUY CƠ CỦA BỆNH NHÂN NAM QUAN HỆ TÌNH DỤC ĐỒNG GIỚI NHIỄM HIV/AIDS CÓ NHIỄM TRÙNG CƠ HỘI TẠI BỆNH VIỆN BỆNH NHIỆT ĐỚI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10361",
+    "page_title": "CHARACTERISTICS OF EPIDEMIOLOGY AND RISK BEHAVIORS OF MEN WHO HAVE SEX WITH MEN (MSM) WITH HIV/AIDS ACQUIRED OPPORTUNISTIC INFECTIONS AT THE HOSPITAL FOR TROPICAL DISEASES\n\t\t\t\t\t\t\t| Vietnam Medical Jou",
+    "title_similarity": 0.242,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10861",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG CỦA BỆNH NHÂN HỘI CHỨNG BUỒNG TRỨNG ĐA NANG ĐIỀU TRỊ TẠI BỆNH VIỆN ĐẠI HỌC Y DƯỢC THÁI BÌNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10861",
+    "page_title": "CLINICAL AND PARA-CLINICAL CHARACTERISTICS OF PATIENTS WITH POLYCYSTIC OVARIAN SYNDROME TREATED AT THAI BINH MEDICAL UNIVERSITY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.208,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10891",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 1,
+    "n_returned": 1,
+    "claim_titles": [
+      "RỐI LOẠN THỰC THỂ VỀ RỐI LOẠN KHỚP THÁI DƯƠNG HÀM VÀ KHỚP CẮN CỦA HỌC SINH LỚP 10 TRƯỜNG LIÊN CẤP HERMANN GMEINER HÀ NỘI NĂM 2024"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10891",
+    "page_title": "PHYSICAL DISORDERS OF TEMPOROMANDIBULAR JOINTS AND OCCLUSIONS OF 10TH GRADE STUDENTS AT HERMANN GMEINER HANOI INTER-SCHOOL IN 2024\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.276,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10972",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "NGHIÊN CỨU SỰ TUÂN THỦ ĐIỀU TRỊ, TCD4, TẢI LƯỢNG VIRUS HIV TRƯỚC VÀ SAU CAN THIỆP TRUYỀN THÔNG GIÁO DỤC SỨC KHOẺ Ở BỆNH NHÂN HIV/AIDS ĐANG ĐƯỢC QUẢN LÝ ĐIỀU TRỊ TẠI TRUNG TÂM Y TẾ THÀNH PHỐ THỦ DẦU MỘT NĂM 2023-2024"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10972",
+    "page_title": "STUDY ON TREATMENT ADHERENCE, CD4 COUNT, AND HIV VIRAL LOAD BEFORE AND AFTER HEALTH EDUCATION COMMUNICATION INTERVENTION IN HIV/AIDS PATIENTS UNDERGOING TREATMENT MANAGEMENT AT THU DAU MOT CITY MEDICA",
+    "title_similarity": 0.018,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10996",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "PHÂN TẦNG NGUY CƠ TIM MẠCH DO RỐI LOẠN LIPID MÁU Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI BỆNH VIỆN ĐA KHOA TỈNH BẮC GIANG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/10996",
+    "page_title": "STRATIFICATION OF CARDIOVASCULAR RISK DUE TO DYSLIPIDEMIA IN THE PATIENT WITH DIABETES TYPE 2 AT GENERAL HOSPITAL OF BAC GIANG PROVINCE\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.295,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11058",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG VÀ MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN CHỈ SỐ HOẠT ĐỘNG BỆNH Ở BỆNH NHÂN VIÊM KHỚP VẢY NẾN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11058",
+    "page_title": "CLINICAL AND SUBCLINICAL CHARACTERISTICS AND SOME FACTORS RELATED TO DISEASE ACTIVITY INDEX IN PATIENTS WITH PSORIATIC ARTHRITIS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.219,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11104",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 12,
+    "n_returned": 12,
+    "claim_titles": [
+      "TỈ LỆ LOÃNG XƯƠNG, NGUY CƠ GÃY XƯƠNG Ở NGƯỜI CAO TUỔI CÓ SỬ DỤNG THUỐC ỨC CHẾ BƠM PROTON"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11104",
+    "page_title": "RATE OF OSTEOPOROSIS, RISK OF FRACTURES IN ELDERLY PEOPLE USING PROTON PUMP INHIBITORS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.163,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11202",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "THỰC TRẠNG NHIỄM KHUẨN TIẾT NIỆU LIÊN QUAN ỐNG THÔNG BÀNG QUANG TẠI KHOA HỒI SỨC CẤP CỨU – BỆNH VIỆN K"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11202",
+    "page_title": "CURRENT SITUATION OF CATHETER – ASSOCIATED URINARY TRACT INFECTION IN THE EMERGENCY AND INTENSIVE CARE DEPARTMENT – VIETNAM NATIONAL CANCER HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.216,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/1126",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "KẾT QUẢ ĐIỀU TRỊ BỆNH TIÊU CHẢY CẤP Ở TRẺ TỪ 2 THÁNG ĐẾN 5 TUỔI TẠI BỆNH VIỆN TRUNG ƯƠNG THÁI NGUYÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/1126",
+    "page_title": "RESULTS OF TREATMENT OF ACUTE DIARRHEA IN CHILDREN FROM 2 MONTHS TO 5 YEARS OLD AT THAI NGUYEN NATIONAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.28,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/1139",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ĐIỀU TRỊ TIÊU HUYẾT KHỐI TĨNH MẠCH Ở BỆNH NHÂN NHỒI MÁU NÃO CẤP KHÔNG XÁC ĐỊNH CHÍNH XÁC THỜI ĐIỂM KHỞI PHÁT DỰA VÀO MISMATCH DWI – FLAIR TRÊN MRI SỌ NÃO"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/1139",
+    "page_title": "THROMBOLYSIS FOR STROKE WITH UNKNOWN TIME OF ONSET WHO HAD MRI FINDINGS OF MISMATCH DWI – FLAIR\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.358,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11423",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "TỶ LỆ VÀ ĐẶC ĐIỂM SUY GIÁP Ở BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TÍP 2 CÓ BỆNH THẬN MẠN TẠI BỆNH VIỆN NỘI TIẾT TRUNG ƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11423",
+    "page_title": "PREVALENCE AND CHARACTERISTICS OF HYPOTHYROIDISM IN PATIENTS WITH TYPE 2 DIABETES AND CHRONIC KIDNEY DISEASE AT THE NATIONAL ENDOCRINOLOGY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.164,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11427",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 12,
+    "n_returned": 12,
+    "claim_titles": [
+      "KHẢO SÁT TÌNH HÌNH SỬ DỤNG THUỐC ĐIỀU TRỊ ĐÁI THÁO ĐƯỜNG TÍP 2 VÀ TƯƠNG TÁC THUỐC TẠI KHOA KHÁM BỆNH – BỆNH VIỆN ĐA KHOA THỊ XÃ BUÔN HỒ NĂM 2023"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11427",
+    "page_title": "ASSESSMENT OF PRESCRIPTION OF TYPE 2 DIABETES AND DRUG INTERACTION IN THE OUTPATIENT DEPARTMENT OF BUON HO GENERAL HOSPITAL IN 2023\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.256,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11705",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "KHẢO SÁT TỶ LỆ MỔ LẤY THAI LẠI Ở THAI PHỤ ĐỦ THÁNG CÓ VẾT MỔ LẤY THAI CŨ TẠI BỆNH VIỆN SẢN NHI TỈNH HẬU GIANG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11705",
+    "page_title": "SURVEY ON THE RATE OF REPEAT CESAREAN SECTION IN FULL-TERM PREGNANCY WOMAN WITH PREVIOUS C-SECTION AT HAU GIANG OBSTETRICS AND PEDIATRICS HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.229,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11843",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 2,
+    "claim_titles": [
+      "GIÁ TRỊ CỦA PHƯƠNG PHÁP ĐO ĐỘ BÃO HÒA OXY QUA DA TRONG CHẨN ĐOÁN TIM BẨM SINH Ở TRẺ SƠ SINH TẠI THÁI NGUYÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11843",
+    "page_title": "VALUE OF PULSE OXIMETRY IN THE DIAGNOSIS OF CONGENITAL HEART DISEASE IN NEWBORNS IN THAI NGUYEN\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.283,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11886",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KHẢO SÁT ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG TRÊN BỆNH NHÂN VIỆT NAM MẮC LUPUS TẠI THÀNH PHỐ HỒ CHÍ MINH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11886",
+    "page_title": "CLINICAL AND LABORATORY CHARACTERISTICS OF VIETNAMESE LUPUS PATIENTS IN HO CHI MINH CITY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.313,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11894",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "MỐI LIÊN QUAN GIỮA NỒNG ĐỘ VITAMIN D HUYẾT THANH, MẬT ĐỘ XƯƠNG VÀ MỘT SỐ YẾU TỐ NGUY CƠ LOÃNG XƯƠNG SAU MÃN KINH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/11894",
+    "page_title": "THE RELATIONSHIP BETWEEN SERUM VITAMIN D LEVELS, BONE DENSITY AND RISK FACTORS OF POSTMENOPAUSAL OSTEOPOROSIS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.263,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12138",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "SO SÁNH GIÁ TRỊ TIÊN LƯỢNG TỬ VONG 30 NGÀY THEO TIÊU CHUẨN PHỤ VIÊM PHỔI NẶNG ATS/IDSA, THANG ĐIỂM CURB-65 VÀ PSI Ở BỆNH NHÂN VIÊM PHỔI MẮC PHẢI CỘNG ĐỒNG TẠI BỆNH VIỆN PHẠM NGỌC THẠCH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12138",
+    "page_title": "COMPARISON OF PROGNOSTIC VALUE OF 30-DAY MORTALITY ACCORDING TO ATS/IDSA SEVERE PNEUMONIA SUB-CRITERIA, CURB-65, AND PSI IN PATIENTS WITH COMMUNITY-ACQUIRED PNEUMONIA AT PHAM NGOC THACH HOSPITAL\n\t\t\t\t\t",
+    "title_similarity": 0.306,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12194",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 0,
+    "claim_titles": [
+      "HIỆU QUẢ LÂM SÀNG CỦA LACTOBACILLUS REUTERI TRONG HỖ TRỢ ĐIỀU TRỊ VIÊM NHA CHU KHÔNG PHẪU THUẬT"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12194",
+    "page_title": "THE CLINICAL EFFECTS OF LACTOBACILLUS REUTERI IN SUPPORTING NON-SURGICAL PERIODONTAL TREATMENT\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.404,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12273",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "KHẢO SÁT GIÁ TRỊ CỦA CHỈ SỐ TRIGLYCERIDE - GLUCOSE (TYG) TRONG CHẨN ĐOÁN ĐÁI THÁO ĐƯỜNG THAI KỲ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12273",
+    "page_title": "SURVEYING THE VALUE OF THE TRIGLYCERIDE- GLUCOSE INDEX IN THE DIAGNOSIS OF GESTINAL DIABETES\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.34,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12411",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "MỘT SỐ YẾU TỐ LIÊN QUAN TỚI CHẬM TĂNG TRƯỞNG THỂ CHẤT CỦA TRẺ SINH RẤT NON THÁNG TỚI 6 THÁNG TUỔI HIỆU CHỈNH TẠI BỆNH VIỆN PHỤ SẢN TRUNG ƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12411",
+    "page_title": "FACTORS RELATED TO THE PHYSICAL GROWTH OF VERY PRETERM INFANTS UP TO 6 MONTHS OF CORRECTED AGE AT THE NATIONAL HOSPITAL OF OBSTETRICS AND GYNECOLOGY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.115,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12565",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "MỘT SỐ CHỈ SỐ ĐÔNG CẦM MÁU VÀ MỐI LIÊN QUAN VỚI TÌNH TRẠNG DI CĂN TỦY XƯƠNG Ở BỆNH NHÂN UNG THƯ DẠ DÀY VÀ UNG THƯ THỰC QUẢN NGUYÊN PHÁT KHÔNG ĐỒNG MẮC BỆNH LÝ HUYẾT HỌC ÁC TÍNH TẠI VIỆN HUYẾT HỌC – TRUYỀN MÁU TRUNG ƯƠNG GIAI ĐOẠN 2020 – 2022"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12565",
+    "page_title": "HEMOSTASIS INDICES AND THE CORRELATION WITH BONE MARROW METASTASIS IN PRIMARY STOMACH CANCER AND ESOPHAGEAL CANCER PATIENTS WITHOUT MALIGNANT HEMATOLOGICAL DISEASES AT THE NATIONAL INSTITUTE OF HEMATO",
+    "title_similarity": 0.044,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12669",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "TƯƠNG LAI SẢN KHOA SAU ĐIỀU TRỊ THAI BÁM SẸO MỔ LẤY THAI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12669",
+    "page_title": "REPRODUCTIVE OUTCOMES FOLLOWING CONSERVATIVE TREATMENT FOR CESAREAN SCAR PREGNANCY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.235,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12900",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "RỐI LOẠN NHỊP TIM Ở PHỤ NỮ CÓ THAI BẰNG HOLTER ĐIỆN TÂM ĐỒ 24 GIỜ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/12900",
+    "page_title": "EVALUATION OF MATERNAL CARDIAC ARRHYTHMIAS BY 24-HOUR HOLTER MORNITORING\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.311,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13006",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "HOẠT ĐỘNG SỐNG HẰNG NGÀY VÀ CÁC YẾU TỐ LIÊN QUAN Ở BỆNH NHÂN BỆNH PARKINSON MỚI CHẨN ĐOÁN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13006",
+    "page_title": "ACTIVITIES OF DAILY LIVING AND RELATED FACTORS IN PATIENTS WITH NEWLY DIAGNOSED PARKINSON’S DISEASE\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.292,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13545",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 1,
+    "n_returned": 1,
+    "claim_titles": [
+      "SO SÁNH SUVMAX CỦA KHỐI U NGUYÊN PHÁT VỚI TỔN THƯƠNG DI CĂN TRÊN PET/CT Ở BỆNH NHÂN UNG THƯ PHỔI KHÔNG TẾ BÀO NHỎ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13545",
+    "page_title": "COMPARISON OF SUVmax BEETWEN PRIMARY TUMOR AND METASTASIS LESIONS IN NON SMALL CELL LUNG CANCER\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.302,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13826",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ẢNH HƯỞNG CỦA ĐÁP ỨNG ĐIỀU TRỊ THIẾU MÁU CÓ THIẾU VITAMIN B12 VỚI NGUY CƠ TỬ VONG Ở BỆNH NHÂN SUY THẬN GIAI ĐOẠN CUỐI: NGHIÊN CỨU CAN THIỆP THEO DÕI DỌC"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13826",
+    "page_title": "IMPACT OF ANEMIA TREATMENT RESPONSE WITH VITAMIN B12 DEFICIENCY ON MORTALITY RISK IN END-STAGE RENAL DISEASE PATIENTS: A LONGITUDINAL INTERVENTIONAL STUDY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.287,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13837",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 5,
+    "n_returned": 3,
+    "claim_titles": [
+      "GIÁ TRỊ TIÊN LƯỢNG CỦA CHỈ SỐ SỐC THEO TUỔI TRONG PHÂN TẦNG NGUY CƠ TỬ VONG TRÊN BỆNH NHÂN THUYÊN TẮC PHỔI CẤP HUYẾT ĐỘNG ỔN ĐỊNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13837",
+    "page_title": "PREDICTIVE VALUE OF AGE SHOCK INDEX IN MORTALITY RISK STRATIFICATION IN HEMODYNAMICALLY STABLE PATIENTS WITH ACUTE PULMONARY EMBOLISM\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.147,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13925",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ THUỐC ỨC CHẾ CDK4/6 KẾT HỢP NỘI TIẾT TRONG ĐIỀU TRỊ BƯỚC MỘT UNG THƯ VÚ TÁI PHÁT, DI CĂN, THỤ THỂ NỘI TIẾT DƯƠNG TÍNH, HER2 ÂM TÍNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/13925",
+    "page_title": "EVALUATION THE RESULTS OF TREATMENT CDK4/6 INHIBITORS COMBINED WITH ENDOCRINE THERAPY IN FIRSTLINE TREATMENT OF RECURRENT METASTATIC HORMONE RECEPTOR POSITIVE, HER2-NEGATIVE BREAST CANCER\n\t\t\t\t\t\t\t| Vie",
+    "title_similarity": 0.264,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14131",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "THỰC HÀNH CHĂM SÓC DINH DƯỠNG CỦA PHỤ NỮ MANG THAI ĐẾN KHÁM THAI TẠI KHOA SẢN - BỆNH VIỆN ĐẠI HỌC Y HÀ NỘI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14131",
+    "page_title": "NUTRITIONAL CARE PRACTICES OF PREGNANT WOMEN COME FOR PREGNANCY CHECK-UP AT THE DEPARTMENT OF OBSTETRICS AND OBSTETRICS - HANOI MEDICAL UNIVERSITY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.199,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14303",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 2,
+    "claim_titles": [
+      "KẾT QUẢ ĐIỀU TRỊ BỆNH NHÂN CHẢY MÁU NÃO ĐANG DÙNG THUỐC CHỐNG ĐÔNG ĐƯỜNG UỐNG TẠI TRUNG TÂM ĐỘT QUỴ BỆNH VIỆN BẠCH MAI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14303",
+    "page_title": "OUTCOMES OF PATIENTS WITH INTRACRANIAL HEMORRHAGE USING ORAL ANTICOAGULANTS AT THE STROKE CENTER OF BACH MAI HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.232,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14431",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "KẾT QUẢ ĐÁP ỨNG VI RÚT BỀN VỮNG CỦA NGƯỜI BỆNH VIÊM GAN VI RÚT C MẠN TÍNH ĐIỀU TRỊ BẰNG PHÁC ĐỒ DAAS TẠI 02 BỆNH VIỆN BỆNH NHIỆT ĐỚI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14431",
+    "page_title": "SUSTAINED VIROLOGIC RESPONSE OF PATIENTS WITH CHRONIC HEPATITIS C BEFORE TREATED WITH DAAs AT 2 TROPICAL HOSPITALS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.311,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14480",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "KẾT QUẢ ĐIỀU TRỊ THOÁI HÓA KHỚP GỐI NGUYÊN PHÁT ĐỘ 2 VÀ ĐỘ 3 BẰNG LIỆU PHÁP HUYẾT TƯƠNG GIÀU TIỂU CẦU (PRP) TẠI BỆNH VIỆN ĐẠI HỌC VÕ TRƯỜNG TOẢN NĂM 2025"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14480",
+    "page_title": "TREATMENT OUTCOMES OF PRIMARY KNEE OSTEOARTHRITIS GRADE 2 AND 3 USING PLATELET-RICH PLASMA (PRP) THERAPY AT VO TRUONG TOAN UNIVERSITY HOSPITAL IN 2025\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.279,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14490",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "KHẢO SÁT MỐI LIÊN QUAN GIỮA NỒNG ĐỘ NATRI MÁU VÀ CÁC BIẾN CỐ NGẮN HẠN Ở BỆNH NHÂN ĐỢT MẤT BÙ CẤP SUY TIM MẠN CÓ PHÂN SUẤT TỐNG MÁU GIẢM"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14490",
+    "page_title": "INVESTIGATION OF THE ASSOCIATION BETWEEN SERUM SODIUM LEVELS AND SHORT-TERM ADVERSE EVENTS IN PATIENTS WITH ACUTE DECOMPENSATED CHRONIC HEART FAILURE WITH REDUCED EJECTION FRACTION\n\t\t\t\t\t\t\t| Vietnam Me",
+    "title_similarity": 0.124,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14491",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "KHẢO SÁT TÌNH HÌNH TĂNG LIỀU THUỐC CHẸN THỤ THỂ BETA Ở BỆNH NHÂN NGOẠI TRÚ CÓ SUY TIM PHÂN SUẤT TỐNG MÁU GIẢM TẠI BỆNH VIỆN TIM MẠCH AN GIANG NĂM 2024"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14491",
+    "page_title": "SURVEY ON UP-TITRATION OF BETA-BLOCKERS IN OUTPATIENTS WITH HEART FAILURE WITH REDUCED EJECTION FRACTION AT AN GIANG CARDIOVASCULAR HOSPITAL IN 2024\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.304,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14639",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "RỐI LOẠN NHỊP THẤT TỪ BUỒNG TỐNG THẤT: HIỆU QUẢ VÀ AN TOÀN KHI TRIỆT ĐỐT QUA CATHETER SỬ DỤNG HỆ THỐNG LẬP BẢN ĐỒ GIẢI PHẪU ĐIỆN HỌC 3 CHIỀU TRONG BUỒNG TIM"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14639",
+    "page_title": "NON-OUTFLOW TRACT VENTRICULAR ARRHYTHMIAS: EFFICACY OF CATHETER ABLATION UTILIZING THE ELECTROANATOMIC MAPPING SYSTEM\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.224,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14647",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "BÁO CÁO MỘT TRƯỜNG HỢP BỆNH HIẾM: TỔN THƯƠNG BIỂU MÔ CỔ TỬ CUNG DẠNG CHẾ TIẾT NHẦY"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14647",
+    "page_title": "CASE REPORT: STRATIFIED MUCIN-PRODUCING INTRAEPITHELIAL LESION (SMILE) OF THE UTERINE CERVIX\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.216,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14896",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 4,
+    "n_returned": 3,
+    "claim_titles": [
+      "THỰC TRẠNG MẮC VÀ MỘT SỐ YẾU TỐ LIÊN QUAN BỆNH TĂNG HUYẾT ÁP Ở NGƯỜI CAO TUỔI TẠI HÀ NỘI NĂM 2022"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14896",
+    "page_title": "CURRENT SITUATION OF HYPERTENSION AND SOME FACTORS RELATED TO HYPERTENSION IN THE ELDERLY IN HANOI IN 2022\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.194,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14898",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "KẾT QUẢ THAY KHỚP HÁNG BÁN PHẦN KHÔNG XI MĂNG ĐIỀU TRỊ GÃY CỔ XƯƠNG ĐÙI Ở NGƯỜI CAO TUỔI TẠI BỆNH VIỆN CHẤN THƯƠNG CHỈNH HÌNH NGHỆ AN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14898",
+    "page_title": "RESULTS OF NON-CEMENTED PARTIAL HIP REPLACEMENT TREATMENT OF FEMORAL NECK FRACTURES IN THE ELDERLY AT NGHE AN ORTHOPAEDIC TRAUMA HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.15,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14899",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "NGHIÊN CỨU ĐẶC ĐIỂM LÂM SÀNG BỆNH VIÊM PHỔI DO VI KHUẨN Ở TRẺ EM DƯỚI 5 TUỔI TẠI BỆNH VIỆN NHI HẢI DƯƠNG NĂM 2024"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/14899",
+    "page_title": "STUDY ON CLINICAL CHARACTERISTICS OF BACTERIAL PNEUMONIA IN CHILDREN UNDER 5 YEARS OLD AT HAI DUONG CHILDREN'S HOSPITAL IN 2024\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.25,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15143",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 7,
+    "n_returned": 7,
+    "claim_titles": [
+      "LỰA CHỌN KHÁNG SINH BAN ĐẦU ĐIỀU TRỊ VIÊM PHỔI CỘNG ĐỒNG Ở TRẺ EM TẠI KHOA KHÁM VÀ ĐIỀU TRỊ 24 GIỜ BỆNH VIỆN NHI TRUNG ƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15143",
+    "page_title": "INITIAL ANTIBIOTIC SELECTION FOR THE TREATMENT OF COMMUNITY-ACQUIRED PNEUMONIA IN CHILDREN AT THE 24-HOUR OUTPATIENT CLINICS OF THE VIETNAM NATIONAL CHILDREN'S HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journa",
+    "title_similarity": 0.229,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15151",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "ĐẶC ĐIỂM LÂM SÀNG VÀ ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ BĂNG HUYẾT SAU SINH TẠI BỆNH VIỆN ĐA KHOA TRUNG ƯƠNG CẦN THƠ NĂM 2024 - 2025"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15151",
+    "page_title": "CLINICAL CHARACTERISTICS AND EVALUATION OF POSTPARTUM HEMORRHAGE TREATMENT OUTCOMES AT CAN THO CENTRAL GENERAL HOSPITAL IN 2024-2025\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.238,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15282",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "PHÂN TÍCH THÀNH PHẦN SỎI THẬN THEO MỘT SỐ BỆNH LÝ CHUYỂN HOÁ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15282",
+    "page_title": "ANALYSIS OF RENAL STONE COMPOSITION ACCORDING TO CERTAIN METABOLIC DISEASES\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.176,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15288",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "THAY ĐỔI MỘT SỐ CHỈ SỐ SINH HÓA, HUYẾT HỌC VÀ NỒNG ĐỘ HBV-DNA Ở BỆNH NHÂN VIÊM GAN B MẠN, XƠ GAN VÀ UNG THƯ BIỂU MÔ TẾ BÀO GAN CÓ HBsAg (+)"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15288",
+    "page_title": "ALTERATIONS IN BIOCHEMICAL, HEMATOLOGICAL PARAMETERS AND HBV-DNA LEVELS IN PATIENTS WITH HBV-ASSOCIATED CHRONIC HEPATITIS, CIRRHOSIS, AND HEPATOCELLULAR CARCINOMA\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.215,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15763",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ĐẶC ĐIỂM LÂM SÀNG VÀ HÌNH ẢNH HỌC Ở BỆNH NHÂN NGỘ ĐỘC CẤP HÓA CHẤT BẢO VỆ THỰC VẬT MỚI NỔI CÓ TỔN THƯƠNG THẦN KINH TRUNG ƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15763",
+    "page_title": "CLINICAL AND NEUROIMAGING CHARACTERISTICS IN PATIENTS WITH ACUTE POISONING FROM EMERGING PESTICIDES WITH CENTRAL NERVOUS SYSTEM INJURY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.17,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15767",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 1,
+    "claim_titles": [
+      "ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG VÀ KẾT QUẢ ĐIỀU TRỊ VIÊM RUỘT HOẠI TỬ Ở TRẺ SƠ SINH NON THÁNG TẠI BỆNH VIỆN NHI ĐỒNG 1"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15767",
+    "page_title": "CLINICAL FEATURES AND TREATMENT OUTCOMES OF NECROTIZING ENTEROCOLITIS IN PRETERM INFANTS AT CHILDREN'S HOSPITAL 1\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.244,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15930",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "NGHIÊN CỨU ĐẶC ĐIỂM GIẢI PHẪU CUỐNG CUNG CỘT SỐNG NGỰC TRÊN HÌNH ẢNH CẮT LỚP VI TÍNH TẠI BỆNH VIỆN HỮU NGHỊ VIỆT ĐỨC"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15930",
+    "page_title": "ANATOMICAL CHARACTERISTICS OF THORACIC PEDICLES ON COMPUTED TOMOGRAPHY IMAGES AT VIET DUC UNIVERSITY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.217,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15936",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "MỐI LIÊN QUAN GIỮA LÂM SÀNG, CẬN LÂM SÀNG, KẾT QUẢ ĐIỀU TRỊ VỚI TÌNH TRẠNG GIẢM ALBUMIN MÁU Ở TRẺ SỐT XUẤT HUYẾT DENGUE NẶNG TẠI BỆNH VIỆN NHI ĐỒNG CẦN THƠ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/15936",
+    "page_title": "THE RELATIONSHIP BETWEEN CLINICAL, PARACLINICAL, TREATMENT RESULTS AND HYPOALBUMINA IN CHILDREN WITH SEVERE DENGUE HEMORRHAGEAL FEVER AT CAN THO CHILDREN'S HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.254,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16039",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 11,
+    "n_returned": 11,
+    "claim_titles": [
+      "PHÂN LOẠI ĐỘNG KINH Ở TRẺ EM TẠI BỆNH VIỆN NHI ĐỒNG 2"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16039",
+    "page_title": "CLASSIFICATION OF EPILEPSY IN CHILDREN AT CHILDREN’S HOSPITAL 2, HO CHI MINH CITY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.229,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16054",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "ĐÁNH GIÁ SỰ AN TOÀN CỦA CHẾ ĐỘ THÔNG KHÍ HỖ TRỢ LÊN NGƯỜI BỆNH ĐƯỢC GÂY MÊ TOÀN THÂN QUA MẶT NẠ THANH QUẢN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16054",
+    "page_title": "EVALUATION OF THE SAFETY OF SUPPORTED VENTILATION IN PATIENTS UNDERGOING GENERAL ANESTHESIA WITH A LARYNGEAL MASK AIRWAY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.152,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16106",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "KẾT QUẢ ĐIỀU TRỊ VÀ YẾU TỐ NGUY CƠ MẮC NHIỀU ĐỢT CẤP CỦA BỆNH NHÂN ĐỢT CẤP COPD TẠI BỆNH VIỆN HỮU NGHỊ VIỆT TIỆP HẢI PHÒNG NĂM 2023"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16106",
+    "page_title": "TREATMENT RESULTS AND RISK FACTORS FOR MULTIPLE ACUTE EXAMINATIONS OF PATIENTS WITH COPD EXAMINATIONS AT VIET TIEP FRIENDSHIP HOSPITAL, HAI PHONG IN 2023\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.274,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16274",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "VIÊM NÃO TỰ MIỄN DO KHÁNG THỂ KHÁNG THỤ THỂ NMDA TÁI PHÁT NHIỀU LẦN Ở TRẺ EM: MỘT BÁO CÁO CA BỆNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16274",
+    "page_title": "MULTIPLE RELAPSES OF ANTI-NMDA RECEPTOR AUTOIMMUNE ENCEPHALITIS IN A CHILD: A CASE REPORT\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.25,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16372",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "CẢI THIỆN CHỨC NĂNG VẬN ĐỘNG VÀ CHẤT LƯỢNG CUỘC SỐNG Ở BỆNH NHÂN THOÁI HÓA KHỚP GỐI GIAI ĐOẠN II-III SAU ĐIỀU TRỊ BẰNG HUYẾT TƯƠNG GIÀU TIỂU CẦU TỰ THÂN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/16372",
+    "page_title": "IMPROVEMENT OF MOTOR FUNCTION AND QUALITY OF LIFE IN PATIENTS WITH STAGE II-III KNEE OSTEOARTHRITIS AFTER TREATMENT WITH AUTOLOGOUS PLATELET-RICH PLASMA\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.213,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17035",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "ĐẶC ĐIỂM LÂM SÀNG VÀ CẬN LÂM SÀNG CỦA THAI PHỤ DỌA SINH NON CÓ CỔ TỬ CUNG NGẮN TẠI BỆNH VIỆN PHỤ SẢN HÀ NỘI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17035",
+    "page_title": "CLINICAL AND PARA-CLINICAL CHARACTERISTICS OF PREGNANT WOMEN AT RISK OF PRETERM BIRTH WITH SHORT CERVIX AT HANOI OBSTETRICS AND GYNECOLOGY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.187,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17090",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "MỘT SỐ YẾU TỐ LIÊN QUAN BIẾN CHỨNG SUY THƯỢNG THẬN DO GLUCOCORTICOIDS TRÊN BỆNH NHÂN GOUT TẠI BỆNH VIỆN ĐA KHOA HẢI DƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17090",
+    "page_title": "SOME RELATED FACTORS WITH THE COMPLICATIONS OF ADRENALINEAL INFUSION CAUSED BY GLUCOCORTICOIDS IN GOUT PATIENTS AT HAI DUONG GENERAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.343,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17178",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "NGHIÊN CỨU BƯỚC ĐẦU VỀ STNFR1 HUYẾT TƯƠNG Ở BỆNH NHÂN BỆNH THẬN MẠN CÓ ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI BỆNH VIỆN THẬN HÀ NỘI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17178",
+    "page_title": "PRELIMINARY STUDY ON PLASMA sTNFR1 LEVELS IN TYPE 2 DIABETES MELLITUS PATIENTS WITH CHRONIC KIDNEY DISEASE AT HANOI NEPHROLOGY HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.245,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17757",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "THỰC TRẠNG TUÂN THỦ ĐIỀU TRỊ Ở BỆNH NHÂN GÚT MẠN TÍNH TẠI BỆNH VIỆN ĐA KHOA VĨNH PHÚC"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17757",
+    "page_title": "TREATMENT ADHERENCE IN PATIENTS WITH CHRONIC GOUT AT VINH PHUC GENERAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.234,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17794",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "TÍNH KHẢ THI VÀ AN TOÀN CỦA TIẾP CẬN ĐỘNG MẠCH VÀNH QUA ĐOẠN XA ĐỘNG MẠCH QUAY"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17794",
+    "page_title": "EFFICACY AND SAFETY OF THE DISTAL TRANSRADIAL APPROACH IN PERCUTANEOUS CORONARY INTERVENTION\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.237,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17893",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "ĐÁNH GIÁ KẾT QUẢ ĐIỀU TRỊ SỎI NIỆU QUẢN BẰNG PHƯƠNG PHÁP NỘI SOI TÁN SỎI NGƯỢC DÒNG SỬ DỤNG LASER TẠI BỆNH VIỆN ĐA KHOA TỈNH HẬU GIANG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17893",
+    "page_title": "EVALUATION OF URETERAL STONE TREATMENT OUTCOMES USING RETROGRADE LASER LITHOTRIPSY VIA ENDOSCOPY AT HAU GIANG GENERAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.282,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17927",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "NGHIÊN CỨU ĐẶC ĐIỂM LÂM SÀNG VÀ TÌNH TRẠNG RỐI LOẠN ĐIỆN GIẢI TRONG TIÊU CHẢY Ở TRẺ TỪ 2 THÁNG ĐẾN 5 TUỔI TẠI TRUNG TÂM NHI KHOA- BỆNH VIỆN TRUNG ƯƠNG HUẾ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17927",
+    "page_title": "STUDY OF CLINICAL CHARACTERISTICS AND ELECTROLYTE DISORDERS IN DIARRHEA IN CHILDREN AGED 2 MONTHS TO 5 YEARS AT THE PEDIATRIC CENTER - HUE CENTRAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.224,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17973",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "XÂM LẤN TỐI THIỂU TRONG ĐIỀU TRỊ SUY CẦU NỐI CHẠY THẬN, HIỆU QUẢ CỦA TÁI THÔNG KHÔNG PHẪU THUẬT Ở NGƯỜI CAO TUỔI TẠI BỆNH VIỆN THỐNG NHẤT"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/17973",
+    "page_title": "MINIMALLY INVASIVE MANAGEMENT OF DYSFUNCTIONAL HEMODIALYSIS ARTERIOVENOUS ACCESS: EFFECTIVENESS OF NON-SURGICALREVASCULARIZATION IN OLDER ADULTS AT THONG NHAT HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.16,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/236",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "GIÁ TRỊ TIÊN ĐOÁN CÁC THANG ĐIỂM CHILD-PUGH, FIB-4 VÀ SAAG TRONG DỰ ĐOÁN GIÃN TĨNH MẠCH THỰC QUẢN Ở BỆNH NHÂN XƠ GAN CỔ CHƯỚNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/236",
+    "page_title": "PROGNOSTIC VALUE OF CHILD–PUGH SCORE, FIB-4 AND SAAG TO PREDICT ESOPHAGEAL VARICES IN ASCITES CIRRHOSIS PATIENTS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.338,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/278",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "ĐÁNH GIÁ HIỆU QUẢ ĐIỀU TRỊ GIẢM ĐAU BỆNH NHÂN UNG THƯ DI CĂN XƯƠNG BẰNG XẠ TRỊ TẠI BỆNH VIỆN 198-BỘ CÔNG AN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/278",
+    "page_title": "EFFECTS OF PALLIATIVE TREATMENT BY RADIATION IN CANCER PATIENTS WITH BONE METASTASES AT 198 HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.234,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/280",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KẾT QUẢ MỘT SỐ CAN THIỆP Y TẾ CÔNG CỘNG VÀ RÀO CẢN ẢNH HƯỞNG TỚI CÔNG TÁC SÀNG LỌC, CHẨN ĐOÁN VÀ ĐIỀU TRỊ LAO TIỀM ẨN TẠI HAI TỈNH QUẢNG NAM, ĐÀ NẴNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/280",
+    "page_title": "RESULTS OF PUBLIC HEALTH INTERVENTIONS AND BARRIERS AFFECTING LATIENT TUBERCULOSIS INFECTION SCREENING, DIAGNOSIS AND TREATMENT AT TWO PROVINCES OF QUANG NAM, DANANG\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.234,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/325",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN KHỞI PHÁT, MỨC ĐỘ NẶNG VÀ KẾT QUẢ ĐIỀU TRỊ NHIỄM TOAN CETON DO ĐÁI THÁO ĐƯỜNG TYPE 1 Ở TRẺ EM VÀ VỊ THÀNH NIÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/325",
+    "page_title": "FACTORS ASSOCIATED WITH PRESENCE AND SEVERITY AND OUTCOME OF DIABETIC KETOACIDOSIS IN CHILDREN AND ADOLESCENTS WITH TYPE 1 DIABETES\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.205,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/350",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "TUÂN THỦ ĐIỀU TRỊ KHÔNG DÙNG THUỐC CỦA NGƯỜI BỆNH TĂNG HUYẾT ÁP TẠI KHOA TIM MẠCH PHÒNG KHÁM ĐA KHOA HOÀN MỸ SÀI GÒN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/350",
+    "page_title": "COMPLIANCE WITH LIFESTYLE RECOMMENDATIONS FOR HYPERTENSION IN OUT-PATIENTS AT HOAN MY SAI GON CLINIC\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.267,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/492",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "THỰC TRẠNG TIẾP THU KIẾN THỨC MODULE HỆ CƠ QUAN CỦA SINH VIÊN NĂM THỨ HAI CHƯƠNG TRÌNH ĐỔI MỚI NGÀNH Y TẠI TRƯỜNG ĐẠI HỌC Y DƯỢC THÁI NGUYÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/492",
+    "page_title": "THE REALITY ACQUIRE KNOWLEDGE ORGAN SYSTEM MODULES OF THE 2ND STUDENTS STUDY UNDER MEDICAL INDUSTRY INNOVATION PROGRAM AT THAI NGUYEN UNIVERSITY OF MEDICINE AND PHARMACY\n\t\t\t\t\t\t\t| Vietnam Medical Journ",
+    "title_similarity": 0.282,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/528",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "THỰC TRẠNG KIẾN THỨC VỀ TIÊM CHỦNG CỦA CÁC BÀ MẸ CÓ CON DƯỚI 1 TUỔI TẠI PHƯỜNG TỨ MINH, HẢI DƯƠNG, THÁNG 12 NĂM 2018"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/528",
+    "page_title": "THE CURRENT SITUATION OF KNOWLEDGE ABOUT IMMUNIZATION OF MOTHERS WITH CHILDREN UNDER 1 YEAR OLD IN TU MINH WARD, HAI DƯƠNG PROVINCE IN DECEMBER 2018\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.295,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/613",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 2,
+    "claim_titles": [
+      "TÁC DỤNG KHÔNG MONG MUỐN CỦA PHÁC ĐỒ PEMETREXED – CARBOPLATIN ĐIỀU TRỊ UNG THƯ PHỔI KHÔNG TẾ BÀO NHỎ SAU KHÁNG THỨ PHÁT VỚI THUỐC ỨC CHẾ EGFR TYROSINE KINASE"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/613",
+    "page_title": "SIDE-EFFECTS OF PEMETREXED–CARBOPLATIN REGIMEN FOR ADVANCED STAGE NON-SMALL CELL LUNG CANCER AFTER EGFR TKIs ACCQUIRED RESISTANCE\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.318,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/652",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 2,
+    "claim_titles": [
+      "CÁC YẾU TỐ NGUY CƠ CỦA HUYẾT KHỐI TĨNH MẠCH SAU PHẪU THUẬT TIỆT NIỆU: MỘT NGHIÊN CỨU BỆNH CHỨNG TỪ DỮ LIỆU BẢO HIỂM QUỐC GIA"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/652",
+    "page_title": "RISK FACTORS OF VENOUS THROMBOEMBOLISM AFTER UROLOGICAL SURGERY: A DISEASE STUDY FROM NATIONAL INSURANCE DATA\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.133,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/653",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KẾT QUẢ ĐIỀU TRỊ VIÊM PHỔI NẶNG Ở TRẺ TỪ 2 THÁNG ĐẾN 5 TUỔI TẠI BỆNH VIỆN BỆNH NHIỆT ĐỚI THÀNH PHỐ HỒ CHÍ MINH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/653",
+    "page_title": "TREATMENT RESULTS OF SEVERE PNEUMONIA IN CHILDREN AGED 2 MONTHS TO 5 YEARS AT THE HO CHI MINH CITY TROPICAL DISEASES HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.139,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/675",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "KẾT QUẢ SẢN KHOA Ở THAI PHỤ ĐÁI THÁO ĐƯỜNG THAI KỲ ĐẺ ĐỦ THÁNG TẠI BỆNH VIỆN PHỤ SẢN TRUNG ƯƠNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/675",
+    "page_title": "MATERNAL AND FETAL OUTCOME IN GESTATIONAL DIABETES MELLITUS (GDM) WITH FULL-TERM PREGNANCY IN NATIONAL HOSPITAL OF OBSTETRICS & GYNECOLOGY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.198,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/700",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "CÁC YẾU TỐ LIÊN QUAN ĐẾN TÁI PHÁT MUỘN SAU ĐỘT QUỴ THIẾU MÁU NÃO CẤP TẠI TIỀN GIANG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/700",
+    "page_title": "FACTORS ASSOCIATED WITH LATE RECURRENCE AFTER ACUTE ISCHEMIC STROKE IN TIEN GIANG\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.181,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/7153",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 1,
+    "claim_titles": [
+      "CHẤT LƯỢNG GIẤC NGỦ VÀ CÁC YẾU TỐ LIÊN QUAN Ở PHỤ NỮ MẮC UNG THƯ ĐIỀU TRỊ Ở MỘT SỐ BỆNH VIỆN TRÊN ĐỊA BÀN THÀNH PHỐ HÀ NỘI"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/7153",
+    "page_title": "QUALITY OF SLEEP AND RELATED FACTORS IN WOMEN WITH CANCER TREATED IN SOME HOSPITALS IN HANOI CITY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.222,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/744",
+    "arms": [
+      "shipped"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "KHẢO SÁT SỰ THAY ĐỔI CHỈ SỐ XƠ HOÁ GAN APRI SAU ĐẠT ĐÁP ỨNG VI RÚT BỀN VỮNG Ở BỆNH NHÂN VIÊM GAN VI RÚT C MẠN ĐƯỢC ĐIỀU TRỊ BẰNG THUỐC KHÁNG VI RÚT TRỰC TIẾP"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/744",
+    "page_title": "CHANGE OF APRI AFTER SUSTAINED VIROLOGICAL RESPONSE IN CHRONIC HEPATITIS C PATIENTS TREATED WITH DIRECT-ACTING ANTIVIRAL AGENTS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.286,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8712",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "HIỆU QUẢ TRÊN NHẬN THỨC CỦA CAN THIỆP ĐA YẾU TỐ KHÔNG DÙNG THUỐC Ở NGƯỜI CAO TUỔI MẮC SA SÚT TRÍ TUỆ"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8712",
+    "page_title": "COGNITIVE EFFECTIVENESS OF NON-PHARMACOLOGICAL INTERVENTIONS FOR DEMENTIA AMONG ELDERLY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.256,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8884",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "ĐÁNH GIÁ HIỆU QUẢ ĐIỀU TRỊ PHÁC ĐỒ REGORAFENID TRÊN BỆNH NHÂN UNG THƯ ĐẠI TRỰC TRÀNG GIAI ĐOẠN MUỘN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8884",
+    "page_title": "EVALUATION OF THE AFFICACY OF REGORAFENIB REGIMEN IN AVANCED COLORECTAL CANCER PATIENTS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.238,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8939",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "NỒNG ĐỘ TESTOSTERON VÀ TÌNH TRẠNG RỐI LOẠN CƯƠNG DƯƠNG Ở BỆNH NHÂN CÓ HỘI CHỨNG CUSHING DO DÙNG GLUCOCORTICOID TẠI BỆNH VIỆN TRUNG ƯƠNG THÁI NGUYÊN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/8939",
+    "page_title": "TESTOSTERON SERUM AND ERECTITLE DYSFUNTION IN PATIENT WITH CUSHING SYNDROME DUE TO GLUCOCORTICOID AT THAI NGUYEN NATIONAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.425,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9015",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 6,
+    "n_returned": 6,
+    "claim_titles": [
+      "NGHIÊN CỨU MỐI LIÊN QUAN GIỮA CHẾ ĐỘ DINH DƯỠNG VỚI HIỆU QUẢ ĐIỀU TRỊ CỦA BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 TẠI BỆNH VIỆN 199"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9015",
+    "page_title": "THE RELATIONSHIP BETWEEN DIETARY NUTRITION AND TREATMENT EFFECTIVENESS OF TYPE 2 DIABETES PATIENTS AT HOSPITAL 199\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.268,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/953",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "NGHIÊN CỨU ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG VÀ TÌNH HÌNH ĐIỀU TRỊ CỦA BỆNH NHÂN VIÊM KHỚP DẠNG THẤP TẠI BỆNH VIỆN HỮU NGHỊ ĐA KHOA NGHỆ AN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/953",
+    "page_title": "CLINICAL, SUBCLINICAL FEATURES AND TREAMENT SITUATION OF RHEUMATOID ARTHRITIS PATIENTS AT NGHE AN FRIENDSHIP GENERAL HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.204,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9603",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "MỘT SỐ ĐẶC ĐIỂM LÂM SÀNG, CẬN LÂM SÀNG VÀ MỐI LIÊN QUAN VỚI TUỔI Ở NGƯỜI BỆNH SỐT XUẤT HUYẾT DENGUE"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9603",
+    "page_title": "STUDY ON SOME CLINICAL AND SUB-CLINICAL CHARACTERISTICS AND RELATIONSHIP WITH AGE IN PATIENTS WITH DENGUE FEVER\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.155,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9643",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 2,
+    "n_returned": 0,
+    "claim_titles": [
+      "GIÁ TRỊ CỦA CHỌC HÚT KIM NHỎ DƯỚI HƯỚNG DẪN SIÊU ÂM (FNAUS) NHÂN ĐẶC ĐƠN ĐỘC TUYẾN GIÁP TỪ 10 ĐẾN 25 MM ĐỐI CHIẾU VỚI MÔ BỆNH HỌC TẠI BỆNH VIỆN K TÂN TRIỀU"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9643",
+    "page_title": "THE VALUE OF ULTRASOUND-GUIDED FINE NEEDLE ASPIRATION (FNAUS) OF THYROID SOLITARY CONDENSATION FROM 10 TO 25 MM COMPARED WITH HISTOPATHOLOGY AT K TAN TRIEU HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.319,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9654",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "HIỆU QUẢ ĐIỀU TRỊ DỰ PHÒNG TRƯỚC PHƠI NHIỄM VỚI HIV (PREP) TRÊN NHÓM NAM QUAN HỆ TÌNH DỤC ĐỒNG GIỚI TẠI CẦN THƠ, NĂM 2022-2023"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9654",
+    "page_title": "EVALUATING THE EFFECTIVENESS OF PRE EXPOSURE PROPHYLAXIS (PrEP) ON MEN WHO HAVE SEX WITH MEN IN CAN THO 2022-2023\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.349,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9727",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 8,
+    "n_returned": 8,
+    "claim_titles": [
+      "NGHIÊN CỨU TÌNH HÌNH, MỘT SỐ YẾU TỐ LIÊN QUAN ĐẾN TUÂN THỦ ĐIỀU TRỊ TRÊN BỆNH NHÂN ĐÁI THÁO ĐƯỜNG TYPE 2 ĐIỀU TRỊ NGOẠI TRÚ TẠI HUYỆN BÀU BÀNG BÌNH DƯƠNG NĂM 2023"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9727",
+    "page_title": "CASE STUDY, SOME FACTORS RELATED TO TREATMENT COMPLIANCE IN TYPE 2 DIABETES PATIENTS RECEIVING OUTPATIENT TREATMENT IN BAU BANG BINH DUONG DISTRICT IN 2023\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.319,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9729",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 10,
+    "n_returned": 10,
+    "claim_titles": [
+      "HIỆU QUẢ ĐIỀU TRỊ TĂNG HUYẾT ÁP, ĐÁI THÁO ĐƯỜNG VÀ BỆNH TIM THIẾU MÁU CỤC BỘ Ở NGƯỜI CAO TUỔI TẠI PHÒNG KHÁM Y HỌC GIA ĐÌNH BỆNH VIỆN LÊ VĂN THỊNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9729",
+    "page_title": "RESULTS OF HYPERTENSION, DIABETES AND ISCHEMIC HEART DISEASE TREATMENTS IN THE ELDERLY AT THE FAMILY MEDICINE CLINIC - LE VAN THINH HOSPITAL\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.124,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9749",
+    "arms": [
+      "shipped",
+      "urlfirst"
+    ],
+    "n_claims": 16,
+    "n_returned": 16,
+    "claim_titles": [
+      "SỬ DỤNG THUỐC ỨC CHẾ SGLT2 Ở NGƯỜI SUY TIM NHẬP VIỆN"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9749",
+    "page_title": "UTILIZATION OF SGLT2 INHIBITORS IN HOSPITALIZED HEART FAILURE PATIENTS\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.233,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9820",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 4,
+    "n_returned": 4,
+    "claim_titles": [
+      "ẢNH HƯỞNG CỦA TÁI TƯỚI MÁU HOÀN TOÀN LÊN ĐAU NGỰC TÁI PHÁT Ở BỆNH NHÂN NHỒI MÁU CƠ TIM CẤP ST CHÊNH LÊN VỚI TỔN THƯƠNG NHIỀU NHÁNH MẠCH VÀNH"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9820",
+    "page_title": "THE IMPACT OF COMPLETE REVASCULARIZATION ON RECURRENCE OF CHEST PAIN IN PATIENTS WITH ST-SEGMENT ELEVATION MYOCARDIAL INFARCTION AND MULTIVESSEL DISEASE\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.177,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9829",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 1,
+    "n_returned": 1,
+    "claim_titles": [
+      "BỆNH CƠ TIM THÂM NHIỄM AMYLOIDOSIS CHUỖI NHẸ: NHÂN MỘT TRƯỜNG HỢP LÂM SÀNG"
+    ],
+    "http_status": 200,
+    "final_url": "https://tapchiyhocvietnam.vn/index.php/vmj/article/view/9829",
+    "page_title": "AMYLOIDOSIS WITH LIGHT CHAIN DEPOSITION CARDIOMYOPATHY: A CLINICAL CASE STUDY\n\t\t\t\t\t\t\t| Vietnam Medical Journal",
+    "title_similarity": 0.243,
+    "redirected": false,
+    "final_is_issue_pattern": false,
+    "stored_is_issue_pattern": false,
+    "class": "reached_title_mismatch"
+  },
+  {
+    "url": "https://vjmap.vn/index.php/vjmap/issue/view/16",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "Khảo sát biến cố chảy máu trên bệnh nhân rung nhĩ được điều trị thuốc chống đông tại Bệnh viện Bạch Mai"
+    ],
+    "http_status": 200,
+    "final_url": "https://vjmap.vn/index.php/vjmap/issue/view/16",
+    "page_title": "Tập 1 Số Dacbiet (2021)\n\t\t\t\t\t\t\t| Tạp chí Y Dược cổ truyền Việt Nam",
+    "title_similarity": 0.329,
+    "redirected": false,
+    "final_is_issue_pattern": true,
+    "stored_is_issue_pattern": true,
+    "class": "issue_index"
+  },
+  {
+    "url": "https://www.mayoclinic.org/diseases-conditions/copd/symptoms-causes/syc-20353679",
+    "arms": [
+      "urlfirst"
+    ],
+    "n_claims": 3,
+    "n_returned": 3,
+    "claim_titles": [
+      "COPD"
+    ],
+    "status": "robots_refused"
+  }
+]

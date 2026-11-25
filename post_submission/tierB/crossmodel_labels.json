@@ -1,0 +1,2230 @@
+{
+  "sonnet_passC": {
+    "tbA_0054": {
+      "item_id": "tbA_0054",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers why PKU and congenital hypothyroidism are universal in newborn screening and lists the inclusion criteria (severity, silent onset, test, treatment, cost-effectiveness)."
+    },
+    "tbA_0016": {
+      "item_id": "tbA_0016",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers that lung cancer risk falls gradually after quitting, though not to never-smoker level, applied to the father's 30 years of smoking and 2 years abstinent."
+    },
+    "tbA_0117": {
+      "item_id": "tbA_0117",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up to distinguish purulent, viral and TB meningitis: CSF cell/biochemistry patterns, Gram/AFB, PCR, blood culture, imaging, chest X-ray."
+    },
+    "tbA_0142": {
+      "item_id": "tbA_0142",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic (hip fracture, >70y) but abstains: states no 12-month mortality figure is available and gives no percentage."
+    },
+    "tbA_0029": {
+      "item_id": "tbA_0029",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Abstains on the % of pediatric ITP recovering within 6 months; mostly discusses drug-induced thrombocytopenia and only says most ITP cases tend to resolve."
+    },
+    "tbA_ctrl_013": {
+      "item_id": "tbA_ctrl_013",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why TB therapy needs multi-drug combination; the answer discusses rheumatoid arthritis after methotrexate failure (csDMARD vs biologic), a different disease."
+    },
+    "tbA_0109": {
+      "item_id": "tbA_0109",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: ACEi/ARB preferred over CCB for HTN+T2DM+albuminuria, and add CCB or thiazide if BP uncontrolled, avoiding ACEi+ARB; caveats evidence limits."
+    },
+    "tbA_0092": {
+      "item_id": "tbA_0092",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Despite disclaimers, body states dialysis typically 2-3 times/week and that fluid restriction and low-salt diet are advised, answering both parts of the question."
+    },
+    "tbA_0224": {
+      "item_id": "tbA_0224",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly addresses PD vs HD in ESRD with residual kidney function: PD better preserves RKF, 'PD first' approach, plus contraindications and individualization factors."
+    },
+    "tbA_0043": {
+      "item_id": "tbA_0043",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Answers what to assess (US risk stratification, TIRADS, solid component) and when to FNA (TIRADS 4-5); lacks TSH/history work-up detail but still answers the core ask."
+    },
+    "tbA_0003": {
+      "item_id": "tbA_0003",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Covers when to suspect inflammatory back pain in the young (rest-worse, morning stiffness, <40y, >3mo) and the work-up (HLA-B27, CRP/ESR, X-ray, MRI SI joints)."
+    },
+    "tbA_0192": {
+      "item_id": "tbA_0192",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Directly answers: antibiotics do not treat influenza and won't speed recovery; only for bacterial superinfection. Long pediatric CAP section is extra but the question is addressed."
+    },
+    "tbA_0181": {
+      "item_id": "tbA_0181",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Addresses both asks: long-term levothyroxine not directly hepatotoxic/nephrotoxic at replacement dose, and whether lifelong depends on cause (Hashimoto/post-ablation vs transient)."
+    },
+    "tbA_0121": {
+      "item_id": "tbA_0121",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Covers home care for dengue: Oresol fluids/feeding, monitoring, and warning signs for urgent hospital; assumes pediatric setting and signs come from background knowledge, but answers all three parts."
+    },
+    "tbA_0209": {
+      "item_id": "tbA_0209",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains DPN pathogenesis (polyol, AGEs, ischemia, oxidative stress) and why symptoms start symmetrically in the feet via length-dependent axonopathy."
+    },
+    "tbA_0183": {
+      "item_id": "tbA_0183",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic (ATD relapse in hyperthyroidism) but gives no percentage; states the evidence lacks data and only lists relapse predictors, so the asked figure is not answered."
+    },
+    "tbA_0111": {
+      "item_id": "tbA_0111",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Directly addresses whether BP 150/90 means lifelong medication: chronic, not all need drugs at start, depends on overall risk. Diabetes evidence is filler, but the core question is answered."
+    },
+    "tbA_0078": {
+      "item_id": "tbA_0078",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives the work-up to separate GBS from cord compression: neuro exam, urgent MRI, LP after MRI, EMG/NCV, labs. Retrieved docs are off-topic but the answer addresses the question."
+    },
+    "tbA_0250": {
+      "item_id": "tbA_0250",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains rapid viral load fall on ARV and rebound after stopping: latent reservoir, fast replication kinetics, resistance risk. Directly answers the why."
+    },
+    "tbA_0155": {
+      "item_id": "tbA_0155",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains low C3/C4 in active SLE as classical pathway complement consumption by immune complexes (C1q, C4, C3). Direct mechanistic answer."
+    },
+    "tbA_0116": {
+      "item_id": "tbA_0116",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains fast viral decline on ARV and rebound within weeks of stopping via latent CD4 reservoir and rapid replication. Directly answers the question."
+    },
+    "tbA_0055": {
+      "item_id": "tbA_0055",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Corrects the premise that CAD is excluded, but still gives the next organ systems (GI, lung, chest wall, psychiatric) after CAD work-up. Addresses what to examine next."
+    },
+    "tbA_0230": {
+      "item_id": "tbA_0230",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains how severe hypertriglyceridemia causes acute pancreatitis: blood viscosity, ischemia, free fatty acid toxicity, inflammation, ≥1000 mg/dL threshold. Direct answer."
+    },
+    "tbA_ctrl_014": {
+      "item_id": "tbA_ctrl_014",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks hyperthyroid relapse rate after antithyroid drugs; answer covers dialysis frequency and diet for end-stage kidney failure. Different disease and topic."
+    },
+    "tbA_0156": {
+      "item_id": "tbA_0156",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists CBC, iron studies (ferritin, TIBC), Hb electrophoresis and globin gene testing to separate iron deficiency from thalassemia carriers, exactly what was asked."
+    },
+    "tbA_0252": {
+      "item_id": "tbA_0252",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives differentials (dengue, sepsis, malaria, Leptospira, viral hepatitis, etc.) and the confirmatory tests (NS1/IgM, blood culture, smear, serology) for the febrile myalgia/low platelet case."
+    },
+    "tbA_0065": {
+      "item_id": "tbA_0065",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains shallow trophoblast invasion of spiral arteries, placental hypoxia, sFlt-1/sEng release and systemic endothelial dysfunction; directly answers the mechanism asked."
+    },
+    "tbA_ctrl_005": {
+      "item_id": "tbA_ctrl_005",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is Alzheimer vs vascular dementia work-up in a 72-year-old; answer is about diet/breastfeeding for infant diarrhea. Unrelated subject."
+    },
+    "tbA_0115": {
+      "item_id": "tbA_0115",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains type A vs type B hyperlactatemia in septic shock (inflammatory glycolysis, catecholamines, reduced hepatic clearance, thiamine) and why lactate is not just hypoxia."
+    },
+    "tbA_0005": {
+      "item_id": "tbA_0005",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Notes no direct guideline comparison but still gives situational choice: corticoid for acute inflamed effusion, hyaluronic acid for chronic mechanical pain, with contraindication logic. Addresses 'which in what situation'."
+    },
+    "tbA_ctrl_000": {
+      "item_id": "tbA_ctrl_000",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to distinguish pneumonia from pulmonary TB; answer discusses nifedipine vs atosiban for threatened preterm labor. Different disease and topic."
+    },
+    "tbA_0207": {
+      "item_id": "tbA_0207",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks the % of vaginal births with PPH; answer says it cannot give this incidence and offers only 61.1% vaginal share among 36 PPH cases, a different statistic."
+    },
+    "tbA_ctrl_009": {
+      "item_id": "tbA_ctrl_009",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks 6-month regimen success rate for drug-sensitive pulmonary TB; answer is about palpitations/SVT work-up. Different disease entirely."
+    },
+    "tbA_0089": {
+      "item_id": "tbA_0089",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly chooses retrograde ureteroscopic lithotripsy over ESWL for ~8mm lower ureteral stone and gives reasoning, with caveat on lack of head-to-head data."
+    },
+    "tbA_0060": {
+      "item_id": "tbA_0060",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly states hypertension is not limited to over-60s and a 40-year-old needs regular BP checks, with rationale (silent disease, risk factors, early detection)."
+    },
+    "tbA_0079": {
+      "item_id": "tbA_0079",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Addresses NOAC vs warfarin in AF with prior stroke: both reasonable, lists differences (INR monitoring, interactions, ICH risk, cost). Does not pick one firmly but covers the differences asked."
+    },
+    "tbA_0194": {
+      "item_id": "tbA_0194",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers that the premise is wrong and a 40-year-old should have periodic BP measurement, explaining why; notes retrieved sources are off-topic but answer is on the question."
+    },
+    "tbA_0211": {
+      "item_id": "tbA_0211",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Covers history, cognitive testing, MRI and lab work-up to differentiate Alzheimer from vascular dementia in a 72-year-old; matches both parts of the question."
+    },
+    "tbA_0120": {
+      "item_id": "tbA_0120",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Compares beta-lactam plus macrolide vs respiratory fluoroquinolone monotherapy in hospitalized severe CAP and gives selection criteria (severity, resistance, allergy, local epidemiology). Text truncated at end."
+    },
+    "tbA_ctrl_006": {
+      "item_id": "tbA_ctrl_006",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks H. pylori prevalence in Vietnamese adults; answer is about work-up and FNA of a 2 cm thyroid nodule. Unrelated subject."
+    },
+    "tbA_0081": {
+      "item_id": "tbA_0081",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether exercise/walking helps tremor and rigidity in Parkinson: helps rigidity/function, effect on resting tremor less clear, not a substitute for drugs."
+    },
+    "tbA_0244": {
+      "item_id": "tbA_0244",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives aspirin+ticagrelor as default after MI/PCI and lists cases favouring clopidogrel (high bleeding risk, anticoagulant, intolerance), matching both parts of the question."
+    },
+    "tbA_0070": {
+      "item_id": "tbA_0070",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says retrieval lacks nifedipine vs atosiban comparison and that no preference can be stated; only vague note nifedipine often first-line. On topic but mostly abstains."
+    },
+    "tbA_0090": {
+      "item_id": "tbA_0090",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "States PD generally favoured for preserving residual renal function vs HD, with mechanism (haemodynamic stability), though hedged and padded with HD-only material."
+    },
+    "tbA_0080": {
+      "item_id": "tbA_0080",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Compares levetiracetam and carbamazepine for new focal epilepsy; says modern guidelines lean to levetiracetam, lists when each is preferred, despite hedging about evidence."
+    },
+    "tbA_0210": {
+      "item_id": "tbA_0210",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains penumbra formation (CBF thresholds, collateral flow, core vs penumbra) and why it defines the reperfusion time window, including DWI-FLAIR mismatch."
+    },
+    "tbA_0159": {
+      "item_id": "tbA_0159",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Compares IM vs oral B12 for B12-deficiency anaemia and gives criteria for choosing (cause/malabsorption, severity, adherence), directly answering both parts."
+    },
+    "tbA_0218": {
+      "item_id": "tbA_0218",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic but abstains: says documents have no 2-year recurrence risk after a first unprovoked seizure in adults, and gives no percentage."
+    },
+    "tbA_0002": {
+      "item_id": "tbA_0002",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly lists work-up (joint aspiration with crystals/culture/cell count, blood tests, imaging) to distinguish acute gout from septic arthritis in the described patient."
+    },
+    "tbA_0053": {
+      "item_id": "tbA_0053",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks why Japan screens gastric cancer by endoscopy (epidemiology, cost-effectiveness); answer only gives generic cancer-screening points and says it cannot answer."
+    },
+    "tbA_0052": {
+      "item_id": "tbA_0052",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why basal insulin is not first-line in new T2DM (insulin resistance, metformin/lifestyle first, add insulin on failure). Directly addresses the asked reasoning."
+    },
+    "tbA_0123": {
+      "item_id": "tbA_0123",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for a success rate percentage for 6-month DS-TB regimen; answer gives no figure, only says 'very high', and discusses MDR-TB regimens and background."
+    },
+    "tbA_0006": {
+      "item_id": "tbA_0006",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: no, gout patients need not avoid beef and seafood for life; moderation by purine content, cooking, individualization. Cited docs are off-topic but answer fits the question."
+    },
+    "tbA_0186": {
+      "item_id": "tbA_0186",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why basal insulin is not first-line in new T2DM: pills/metformin first, insulin added at stage 2 on failure, plus hypoglycemia, weight gain, burden. Directly on question."
+    },
+    "tbA_0235": {
+      "item_id": "tbA_0235",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Addresses breastfeeding with HBV-positive mother and vaccinated newborn: risk low with prophylaxis, caution with cracked nipples, need for HBIG. Hedges on evidence but answers."
+    },
+    "tbA_0199": {
+      "item_id": "tbA_0199",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains incomplete trophoblast invasion of spiral arteries causing placental hypoperfusion, then release of factors causing systemic endothelial dysfunction and organ damage."
+    },
+    "tbA_0219": {
+      "item_id": "tbA_0219",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly lists non-glycemic mechanisms of SGLT2i in CKD (TGF, hypoxia, inflammation/fibrosis, RAAS, albuminuria), which is what was asked."
+    },
+    "tbA_0196": {
+      "item_id": "tbA_0196",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Topic is PCSK9 MACE reduction, but it gives no absolute 3-year figure; it abstains, names FOURIER/ODYSSEY and only a vague ~15% relative reduction."
+    },
+    "tbA_0014": {
+      "item_id": "tbA_0014",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Says it cannot answer from the corpus; only explains MART/SMART rationale and defers to GINA. No explicit recommendation between ICS-formoterol and SABA alone."
+    },
+    "tbA_0106": {
+      "item_id": "tbA_0106",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains SGLT2i mechanisms in HFrEF on myocardium and hemodynamics (preload, ketone energetics, remodeling, endothelium), answering the question asked."
+    },
+    "tbA_0146": {
+      "item_id": "tbA_0146",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up to separate pneumonia from TB: clinical features, CT, AFB smear, Xpert, culture, IGRA, response to antibiotics, isolation."
+    },
+    "tbA_0262": {
+      "item_id": "tbA_0262",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: AI preferred over tamoxifen in postmenopausal early HR+ breast cancer, with rationale, side effects and individualization."
+    },
+    "tbA_0091": {
+      "item_id": "tbA_0091",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Despite disclaiming corpus evidence, it answers: kidney stones do not require avoiding milk entirely; dietary calcium is protective; depends on stone type."
+    },
+    "tbA_0076": {
+      "item_id": "tbA_0076",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains penumbra (collateral flow, core vs at-risk tissue, shrinking over time) and why it sets the reperfusion window, incl. DWI-FLAIR mismatch."
+    },
+    "tbA_ctrl_007": {
+      "item_id": "tbA_ctrl_007",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about incidental 2 cm thyroid nodule work-up and FNA criteria; answer discusses ticagrelor vs clopidogrel DAPT after MI. Entirely different subject."
+    },
+    "tbA_0164": {
+      "item_id": "tbA_0164",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains free unconjugated bilirubin crossing BBB, mitochondrial toxicity, and preterm risk factors (immature BBB, low albumin, immature UGT, asphyxia, sepsis), answering both parts."
+    },
+    "tbA_0220": {
+      "item_id": "tbA_0220",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains nephrotic hypercoagulability (AT-III/protein C/S loss, hepatic synthesis, platelets, volume depletion) and a dedicated section on renal vein thrombosis."
+    },
+    "tbA_0105": {
+      "item_id": "tbA_0105",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains vulnerable thin-cap plaque rupture with mild stenosis, positive remodeling, vs stable calcified plaque causing fixed stenosis and stable angina; addresses both halves."
+    },
+    "tbA_0087": {
+      "item_id": "tbA_0087",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives clinical context and urine indices (UNa, FENa, osmolality, sediment casts) distinguishing prerenal AKI from ATN, as asked; extra retrieved-evidence section is tangential."
+    },
+    "tbA_ctrl_008": {
+      "item_id": "tbA_ctrl_008",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks H. pylori prevalence in Vietnamese adults; answer is about stunting prevalence/diet in children under 5. Different disease and population."
+    },
+    "tbA_0258": {
+      "item_id": "tbA_0258",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains oncogene addiction and acquired EGFR-TKI resistance mechanisms (T790M, MET amplification, histologic transformation, bypass pathways), directly answering the mechanism question."
+    },
+    "tbA_0017": {
+      "item_id": "tbA_0017",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether daily inhaled steroids cause growth impairment in a 7-year-old asthmatic: usually not at standard dose, with mechanism, spacer use, and monitoring."
+    },
+    "tbA_0147": {
+      "item_id": "tbA_0147",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists the extra work-up (history, comorbidities, neck circumference/BMI, symptoms) and states polysomnography is essentially required to confirm and grade OSA, as asked."
+    },
+    "tbA_0062": {
+      "item_id": "tbA_0062",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Stays on PCSK9 and MACE but says the corpus has no absolute risk reduction figure and gives none; it abstains and offers only background on ARR."
+    },
+    "tbA_0100": {
+      "item_id": "tbA_0100",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Describes both NSBB and EVL and their contraindications, but states there is no direct comparison and gives no preference; most content is prognostic scores."
+    },
+    "tbA_0254": {
+      "item_id": "tbA_0254",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says no direct comparison exists and mostly reports pediatric and MDRO data. Names selection criteria and calls both options acceptable in adults, but gives no choice for severe CAP."
+    },
+    "tbA_0130": {
+      "item_id": "tbA_0130",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers that hair regrows after chemotherapy, with typical timing, texture and color changes, and when to see the oncologist."
+    },
+    "tbA_0214": {
+      "item_id": "tbA_0214",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Compares levetiracetam and carbamazepine for new focal epilepsy and leans toward LEV, with the individualizing factors. Retrieved papers are tangential but the answer addresses the question."
+    },
+    "tbA_0168": {
+      "item_id": "tbA_0168",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers directly: low-osmolarity ORS is preferred over homemade rice-salt water, with reasons, and zinc is recommended alongside, plus warning signs."
+    },
+    "tbA_0030": {
+      "item_id": "tbA_0030",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains how free unconjugated bilirubin crosses the blood-brain barrier and injures the CNS, and lists preterm risk factors (albumin, barrier, hepatic immaturity), as asked."
+    },
+    "tbA_0166": {
+      "item_id": "tbA_0166",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks what exam/tests distinguish bronchiolitis from pneumonia in an 8-month-old; answer gives clinical exam, SpO2, X-ray, labs and a comparison table."
+    },
+    "tbA_0031": {
+      "item_id": "tbA_0031",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Asks for the mechanism of plasma leakage in dengue; answer explains cytokine-driven endothelial junction disruption and the haemodynamic consequences. Paediatric angle only implicit."
+    },
+    "tbA_0010": {
+      "item_id": "tbA_0010",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks why TB regimens need multiple drugs from the start; answer explains resistant mutants, bacterial subpopulations and the multiplied-probability principle."
+    },
+    "tbA_0188": {
+      "item_id": "tbA_0188",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks why PKU and congenital hypothyroidism are always screened and what criteria decide inclusion; answer covers Wilson-Jungner criteria and applies them to both diseases."
+    },
+    "tbA_0112": {
+      "item_id": "tbA_0112",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Asks about diet and bleeding signs on anticoagulant for AF; despite disclaimers, it gives consistent vitamin K intake, herb cautions and a list of bleeding warning signs."
+    },
+    "tbA_0227": {
+      "item_id": "tbA_0227",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for the 5-year graft survival figure in living-donor kidney transplant; answer states the evidence has no such data (only donor analgesia) and gives no figure."
+    },
+    "tbA_0099": {
+      "item_id": "tbA_0099",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks tenofovir vs entecavir for long-term HBV treatment, efficacy and adverse effects; answer compares mechanism, efficacy, renal/bone effects and selection criteria."
+    },
+    "tbA_0083": {
+      "item_id": "tbA_0083",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks for the 90-day stroke risk after a TIA; answer gives 'over 10% within three months' directly."
+    },
+    "tbA_0139": {
+      "item_id": "tbA_0139",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Gives decision logic: corticoid for acute inflamed/effusion flares, HA for chronic mechanical pain and longer effect, in grade 2-3 OA; hedges that sources lack direct comparison."
+    },
+    "tbA_0228": {
+      "item_id": "tbA_0228",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic (UTI) but abstains: states the source has no 6-month recurrence rate in women after acute cystitis; only offers CAUTI incidence in cancer ICU patients."
+    },
+    "tbA_0050": {
+      "item_id": "tbA_0050",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Despite saying corpus lacks it, gives a background Arctic-indigenous vs tropical TB comparison (incidence, extrapulmonary, MDR, HIV co-infection, course); retrieved HIV/MSM part is off-topic."
+    },
+    "tbA_0126": {
+      "item_id": "tbA_0126",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists mechanical and functional causes of vomiting/distension in palliative cancer and how to tell malignant bowel obstruction apart (history, clinical features, CT, drug/electrolyte review)."
+    },
+    "tbA_0266": {
+      "item_id": "tbA_0266",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for % of gastric cancer found at advanced stage in Vietnam; answer says no figure available, gives only small-study N1-N3 data and PET/CT details, not the requested percentage."
+    },
+    "tbA_0134": {
+      "item_id": "tbA_0134",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains pannus formation, cytokines/RANKL osteoclast activation, MMP cartilage destruction and the central role of proliferative synovium in RA bone erosion."
+    },
+    "tbA_0082": {
+      "item_id": "tbA_0082",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly addresses long-term harm of frequent analgesic use in ~10 migraines/month: medication overuse headache, hepatic/renal/GI risk, advice to see neurology."
+    },
+    "tbA_ctrl_010": {
+      "item_id": "tbA_ctrl_010",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about vaccinating a child with 37.8C fever from URTI; answer is about thalassemia inheritance risk in carrier couples, entirely different subject."
+    },
+    "tbA_0248": {
+      "item_id": "tbA_0248",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly states ~22% reduction in major CV events per 1 mmol/L LDL-C lowered with statins, which is exactly the figure asked."
+    },
+    "tbA_0074": {
+      "item_id": "tbA_0074",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On-topic (CIN 2 regression) but abstains: says no data available and gives no percentage for under-25s over ~2 years."
+    },
+    "tbA_0157": {
+      "item_id": "tbA_0157",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives history items (drugs, autoimmune, viral, pregnancy) and tests (smear, coagulation, immune, serology, marrow, hCG) for isolated thrombocytopenia with purpura."
+    },
+    "tbA_ctrl_002": {
+      "item_id": "tbA_ctrl_002",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is daily vs on-demand PrEP (HIV prevention); answer compares levetiracetam vs carbamazepine in focal epilepsy. Unrelated."
+    },
+    "tbA_0201": {
+      "item_id": "tbA_0201",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains how to distinguish ectopic pregnancy from threatened miscarriage (TVUS, serial beta-hCG, findings) and the work-up needed; slight truncation at end."
+    },
+    "tbA_0208": {
+      "item_id": "tbA_0208",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Same topic as asked but gives no regression percentage; only says evidence absent and qualitatively that regression is higher in young women."
+    },
+    "tbA_0195": {
+      "item_id": "tbA_0195",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for nationwide annual PCI count; answer says no national figure and only gives a single-centre 290-patient series."
+    },
+    "tbA_0200": {
+      "item_id": "tbA_0200",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains mechanism: hyperinsulinemia drives theca androgen excess, lowers SHBG, disrupts follicle maturation and LH/FSH, causing anovulation in PCOS."
+    },
+    "tbA_0167": {
+      "item_id": "tbA_0167",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Neonate 5d with poor feeding, lethargy, hypothermia: answer gives differential, initial assessment and a full lab/imaging work-up list, as asked."
+    },
+    "tbA_0216": {
+      "item_id": "tbA_0216",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks whether long-term frequent analgesic use for migraine is harmful; answer covers medication overuse headache and per-drug hepatic/GI/renal risks."
+    },
+    "tbA_0034": {
+      "item_id": "tbA_0034",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers ORS low-osmolarity vs home rice-water for 18-month-old with mild dehydration, and recommends zinc supplementation."
+    },
+    "tbA_0048": {
+      "item_id": "tbA_0048",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks what percent weight loss gives remission chance; answer states no figure is given and discusses mechanism/caveats without ever giving the percentage."
+    },
+    "tbA_0234": {
+      "item_id": "tbA_0234",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asks NSBB vs band ligation; answer mostly covers risk-stratification/prognostic scores, says no comparison evidence, only a generic 'both acceptable' remark."
+    },
+    "tbA_0088": {
+      "item_id": "tbA_0088",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Painless gross hematuria in 55M: answer gives stepwise history, exam, urine/blood tests, ultrasound, CT urography, cystoscopy as requested."
+    },
+    "tbA_0151": {
+      "item_id": "tbA_0151",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks if daily inhaled preventer in a 7-year-old asthmatic affects growth/height; answer directly addresses ICS and growth with practical advice."
+    },
+    "tbA_0058": {
+      "item_id": "tbA_0058",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Asks which antibiotic class for seasonal flu; answer directly states antibiotics are not indicated for viral flu, only for bacterial superinfection, and gives proper treatment."
+    },
+    "tbA_0267": {
+      "item_id": "tbA_0267",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says no direct 5-year survival data for adjuvant chemo in stage II high-risk CRC; gives background, risk factors, MSI, only a vague 'modest, <5%' remark. Mostly abstains."
+    },
+    "tbA_0249": {
+      "item_id": "tbA_0249",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains septic shock lactate mechanisms (hypoperfusion, cellular metabolic dysfunction, reduced clearance, coagulopathy) and why it is not purely hypoxia. Directly answers both parts."
+    },
+    "tbA_0253": {
+      "item_id": "tbA_0253",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Compares daily vs event-driven PrEP (adherence, efficacy, use) and states WHO prioritises daily PrEP for MSM/high-risk groups. Addresses both parts, though thinly on groups."
+    },
+    "tbA_0179": {
+      "item_id": "tbA_0179",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "States no direct evidence comparing weekly oral vs yearly IV bisphosphonate; gives general pros/cons and a case-by-case approach but no actual recommendation. On topic, does not answer."
+    },
+    "tbA_0237": {
+      "item_id": "tbA_0237",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Admits retrieved evidence is about thoracic pedicle anatomy and gives no H. pylori prevalence figure in Vietnamese adults; only says 'high'. On topic but no estimate given."
+    },
+    "tbA_0049": {
+      "item_id": "tbA_0049",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Explicitly gives no recurrence percentage after completing antithyroid drug course; only treatment duration 18-24 months and generic background. Topic-adjacent, does not answer."
+    },
+    "tbA_0026": {
+      "item_id": "tbA_0026",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: not certain, 25% chance the child is affected when both parents carry the recessive gene, with explanation of the inheritance scenarios."
+    },
+    "tbA_0104": {
+      "item_id": "tbA_0104",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives the SVR rate after DAA treatment for chronic hepatitis C (184/184, 100% in the study), directly answering the requested percentage."
+    },
+    "tbA_0075": {
+      "item_id": "tbA_0075",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains DPN pathogenesis (polyol, AGEs, vasa nervorum) and why onset is symmetric distal then ascending (length-dependent dying-back), exactly what was asked."
+    },
+    "tbA_0113": {
+      "item_id": "tbA_0113",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Gives a specific 30-day (1-month) HF readmission rate (21.2%) after acute decompensation; from one study but directly answers the figure asked."
+    },
+    "tbA_0150": {
+      "item_id": "tbA_0150",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Directly answers: risk falls over time after quitting but does not return to never-smoker level; notes no quantitative data. Some SHOX2 tangent, but the core question is answered."
+    },
+    "tbA_0035": {
+      "item_id": "tbA_0035",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Answers the choice asked: postpone vaccination while child is febrile/ill, resume after recovery; admits no temperature threshold but gives a clear recommendation."
+    },
+    "tbA_0240": {
+      "item_id": "tbA_0240",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Lays out SGLT2i mechanisms in HFrEF (osmotic diuresis/preload, metabolism, anti-fibrosis, NHE1) answering the cardiac and hemodynamic mechanism asked, despite noting no corpus citation."
+    },
+    "tbA_0046": {
+      "item_id": "tbA_0046",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Answers both parts: yes, stress-dose increase during fever/illness (2-3x, sick day rules), and lists when to go to hospital (vomiting, hypotension, drowsiness), though flagged as background."
+    },
+    "tbA_0184": {
+      "item_id": "tbA_0184",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Main stance is abstention (no Arctic TB data); only generic uncited background on Arctic vs tropical TB, and it says the question cannot be answered, so it does not truly answer."
+    },
+    "tbA_0187": {
+      "item_id": "tbA_0187",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Says evidence lacks Japan's national endoscopic screening policy and cost-effectiveness; only gives Vietnamese gastric cancer epidemiology, so on topic but does not answer why Japan differs."
+    },
+    "tbA_0028": {
+      "item_id": "tbA_0028",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for 5-year survival percentage in pediatric ALL; answer gives no figure, only pathophysiology background and says to consult statistics sources."
+    },
+    "tbA_0264": {
+      "item_id": "tbA_0264",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether hair regrows after chemo for breast cancer: yes, temporary, regrowth over months with timeline and caveats."
+    },
+    "tbA_0141": {
+      "item_id": "tbA_0141",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers that milk plus calcium is usually insufficient after osteoporosis diagnosis and that specific anti-resorptive/anabolic drugs are typically needed per specialist."
+    },
+    "tbA_0202": {
+      "item_id": "tbA_0202",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up to distinguish PPROM from vaginal discharge or urinary leakage at 32 weeks: history, speculum exam, nitrazine, ferning, PAMG-1, ultrasound."
+    },
+    "tbA_0110": {
+      "item_id": "tbA_0110",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly compares ticagrelor vs clopidogrel with aspirin after MI/stent and lists when each is preferred (bleeding risk, intolerance, cost, CYP2C19)."
+    },
+    "tbA_ctrl_012": {
+      "item_id": "tbA_ctrl_012",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is jaundice work-up (obstructive vs hepatocellular); answer is about single vs multi-fraction radiotherapy for bone metastasis pain. Entirely different topic."
+    },
+    "tbA_0128": {
+      "item_id": "tbA_0128",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers tamoxifen vs aromatase inhibitor in postmenopausal HR+ early breast cancer: AI preferred, with rationale, tamoxifen-favoring situations and side effects."
+    },
+    "tbA_0160": {
+      "item_id": "tbA_0160",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether child is certain to be affected when both parents carry thalassemia: no, 25% affected, 50% carrier, 25% normal, with caveats."
+    },
+    "tbA_0145": {
+      "item_id": "tbA_0145",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why COPD causes air trapping and dynamic hyperinflation on exertion (lost elastic recoil, expiratory flow limitation, flattened diaphragm) and links it to dyspnea."
+    },
+    "tbA_0178": {
+      "item_id": "tbA_0178",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Names SGLT2i (with GLP-1 RA as alternative) after metformin in T2DM with CKD and explains why versus sulfonylurea, insulin, DPP-4, alpha-glucosidase inhibitors."
+    },
+    "tbA_0205": {
+      "item_id": "tbA_0205",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly says gestational diabetes does not require giving up rice entirely; advises portion control and 3 meals plus 2-3 snacks, with reasons (ketones, hypoglycemia)."
+    },
+    "tbA_0197": {
+      "item_id": "tbA_0197",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Retrieved source is off-topic and it hedges, but it does give the asked figure (about 70-85% 5-year heart transplant survival) plus determinants. Mixed abstention."
+    },
+    "tbA_0138": {
+      "item_id": "tbA_0138",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Admits no corpus evidence but compares add-on csDMARD vs bDMARD after MTX failure and gives criteria favoring each. No firm pick, but it addresses the choice asked."
+    },
+    "tbA_0086": {
+      "item_id": "tbA_0086",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains the nephrotic syndrome hypercoagulable mechanisms (loss of antithrombin III, protein C/S, hepatic procoagulant synthesis, stasis) and why renal vein thrombosis is typical."
+    },
+    "tbA_0239": {
+      "item_id": "tbA_0239",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains the paradox: vulnerable lipid-rich thin-cap plaques with positive remodeling rupture despite mild stenosis, while calcified tight lesions are stable and cause stable angina."
+    },
+    "tbA_0044": {
+      "item_id": "tbA_0044",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Prioritizes SGLT2i after metformin in T2DM with CKD, with a mechanism and a comparison table against sulfonylurea, insulin, DPP-4, GLP-1 RA and TZD. Text is cut off at the end."
+    },
+    "tbA_0256": {
+      "item_id": "tbA_0256",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Hỏi % E. coli sinh ESBL trong NKTN cộng đồng; answer nói tài liệu không có số cụ thể, chỉ nêu khoảng rất rộng (<10% đến >50%) và dữ liệu NK bệnh viện không liên quan."
+    },
+    "tbA_0040": {
+      "item_id": "tbA_0040",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Giải thích trực tiếp cơ chế: thiếu insulin tuyệt đối (type 1) so với tương đối (type 2), phân giải mỡ và sinh ceton không bị ức chế, nên dễ NTCT hơn."
+    },
+    "tbA_0246": {
+      "item_id": "tbA_0246",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Trả lời cả hai ý: kiêng ăn (vitamin K với warfarin, NOAC, bưởi) và các dấu hiệu chảy máu cần theo dõi ở bệnh nhân rung nhĩ dùng thuốc chống đông."
+    },
+    "tbA_0247": {
+      "item_id": "tbA_0247",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Nêu trực tiếp tỷ lệ tái nhập viện suy tim trong 30 ngày là 21,2% (kèm tử vong 14,1%), đúng thứ được hỏi."
+    },
+    "tbA_0143": {
+      "item_id": "tbA_0143",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Trả lời trực tiếp ngưỡng acid uric máu <6 mg/dL (360 µmol/L) để tophi tan dần ở gút mạn có tophi."
+    },
+    "tbA_0098": {
+      "item_id": "tbA_0098",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Nêu cần khai thác gì (tiền sử, triệu chứng, khám) và xét nghiệm, hình ảnh (bilirubin, men gan, siêu âm, MRCP, ERCP) để phân biệt tắc mật ngoài gan với tổn thương tế bào gan."
+    },
+    "tbA_0019": {
+      "item_id": "tbA_0019",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Hỏi tốc độ giảm FEV1 mL/năm ở COPD còn hút thuốc; answer chỉ nói tài liệu không có số này, chỉ nêu tỷ lệ hút thuốc, không trả lời con số."
+    },
+    "tbA_0185": {
+      "item_id": "tbA_0185",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Giải thích ức chế ATP synthase, không kháng chéo, và lý do thay nhóm thuốc tiêm (độc tính, all-oral); dù đa phần từ kiến thức nền, vẫn trả lời trực tiếp câu hỏi."
+    },
+    "tbA_0013": {
+      "item_id": "tbA_0013",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers both parts: further work-up for OSA triad (ESS, anthropometrics, cardiometabolic) and whether PSG is necessary (gold standard, HSAT as alternative)."
+    },
+    "tbA_0093": {
+      "item_id": "tbA_0093",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for 5-year graft survival in living-donor kidney transplant; answer gives no figure, discusses graft survival concepts and mistakenly bone marrow documents. Abstains."
+    },
+    "tbA_0165": {
+      "item_id": "tbA_0165",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains dengue plasma leakage mechanism: ADE, cytokine storm, endothelial junction/glycocalyx dysfunction, transient self-limited leak, in children."
+    },
+    "tbA_0071": {
+      "item_id": "tbA_0071",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers GDM question: no need to eliminate white rice entirely; control portions, split meals, balanced diet, with reasons."
+    },
+    "tbA_0191": {
+      "item_id": "tbA_0191",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Says it cannot answer whether HbA1c diagnostic threshold changed; offers only GDM OGTT thresholds and generic referral to guidelines. On topic but does not answer."
+    },
+    "tbA_0257": {
+      "item_id": "tbA_0257",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks for 6-month regimen success rate in DS-TB; answer states data absent and cites adherence study only. Abstains without giving a figure."
+    },
+    "tbA_0119": {
+      "item_id": "tbA_0119",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly compares daily vs event-driven (2-1-1) PrEP and states which is preferred and for which groups (MSM vs women etc.), despite lacking cited sources."
+    },
+    "tbA_0260": {
+      "item_id": "tbA_0260",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists causes of vomiting/distension in terminal cancer (MBO, adhesions, opioids, constipation, ascites, electrolytes) and how to distinguish MBO via history, symptoms, CT, therapeutic trial."
+    },
+    "tbA_0032": {
+      "item_id": "tbA_0032",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers how to examine and work up an 8-month infant to separate bronchiolitis from pneumonia: auscultation, SpO2, chest X-ray, CRP/PCT, viral tests, severity signs."
+    },
+    "tbA_0136": {
+      "item_id": "tbA_0136",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists the tests to tell acute gout from septic arthritis: synovial fluid crystals, culture, Gram stain, cell count, blood tests, imaging."
+    },
+    "tbA_0238": {
+      "item_id": "tbA_0238",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Gives SVR12 percentages after DAA therapy for chronic HCV (93.1%, 98.4%, 97.1%), though from one cohort and framed by regimen rather than one overall figure."
+    },
+    "tbA_0265": {
+      "item_id": "tbA_0265",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers both parts: months of rectal bleeding at 32 is not necessarily cancer but cannot exclude it, and colonoscopy is advised without delay."
+    },
+    "tbA_0103": {
+      "item_id": "tbA_0103",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for H. pylori prevalence in Vietnamese adults; the answer says no data were retrieved and only says prevalence is 'high' with no figure, plus general background."
+    },
+    "tbA_0125": {
+      "item_id": "tbA_0125",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why HCC on cirrhosis can be diagnosed by typical CT/MRI plus AFP without biopsy: arterial enhancement with washout, biopsy risks, Ministry of Health criteria."
+    },
+    "tbA_0011": {
+      "item_id": "tbA_0011",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains expiratory flow limitation, shortened expiratory time on exertion, dynamic hyperinflation, diaphragm disadvantage and work of breathing, and how this causes dyspnea."
+    },
+    "tbA_0241": {
+      "item_id": "tbA_0241",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives the work-up for episodic palpitations with normal ECG: Holter, event recorder, stress test, echo, EP study, and how findings separate SVT, ectopy and anxiety."
+    },
+    "tbA_0066": {
+      "item_id": "tbA_0066",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains how insulin resistance leads to hyperinsulinemia, hyperandrogenism, high LH and impaired follicle development causing anovulation in PCOS."
+    },
+    "tbA_0261": {
+      "item_id": "tbA_0261",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up for a 12 mm solitary nodule in a 60M smoker: CT features, comparison with old films, PET/CT FDG, biopsy for benign vs malignant."
+    },
+    "tbA_0073": {
+      "item_id": "tbA_0073",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for a PPH percentage after vaginal birth; answer states no figure is available and gives only background on causes and monitoring."
+    },
+    "tbA_0135": {
+      "item_id": "tbA_0135",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains pain sources in knee OA (subchondral bone, synovitis, capsule, ligaments, marrow edema) despite aneural cartilage; text cut off at end but answers."
+    },
+    "tbA_0229": {
+      "item_id": "tbA_0229",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains HE pathogenesis in decompensated cirrhosis: ammonia, astrocyte glutamine swelling, portosystemic shunts bypassing the liver; cited source is off-topic but answer addresses the question."
+    },
+    "tbA_0152": {
+      "item_id": "tbA_0152",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for 30-day mortality percentage in hospitalised CAP; answer says the figure is not given and only describes AUCs of CURB-65, PSI, ATS/IDSA."
+    },
+    "tbA_0095": {
+      "item_id": "tbA_0095",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly covers HE mechanism in decompensated cirrhosis, the role of ammonia and portosystemic shunts, even though retrieved evidence was thin."
+    },
+    "tbA_0176": {
+      "item_id": "tbA_0176",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists tests to separate T1DM from T2DM in a 24M with weight loss: anti-GAD/IA-2/IAA/ZnT8, C-peptide with glucose, blood gas/ketones, HbA1c."
+    },
+    "tbA_0015": {
+      "item_id": "tbA_0015",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says the comparison of isoniazid vs short rifampicin LTBI regimens is not in the corpus; only generic TB drug info and qualitative background, no real efficacy/duration/hepatotoxicity comparison or choice."
+    },
+    "tbA_0162": {
+      "item_id": "tbA_0162",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for pediatric ALL 5-year survival percentage; answer gives no figure, only 'very high' and states the number is not available. On topic but does not answer."
+    },
+    "tbA_0213": {
+      "item_id": "tbA_0213",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Declines to recommend NOAC vs warfarin for AF after stroke; gives only INR-monitoring difference and apixaban cost-effectiveness, nothing on recurrence prevention or bleeding differences."
+    },
+    "tbA_0154": {
+      "item_id": "tbA_0154",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains DIC paradox: diffuse coagulation activation causes microthrombi, then consumption of platelets/factors and secondary fibrinolysis cause bleeding."
+    },
+    "tbA_0174": {
+      "item_id": "tbA_0174",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains why T1DM is more prone to DKA: absolute insulin deficiency removes anti-lipolytic control and drives ketogenesis, versus residual insulin in T2DM."
+    },
+    "tbA_0009": {
+      "item_id": "tbA_0009",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Question asks for a uric acid target in mg/dL for tophi to dissolve; answer says no figure is available and only discusses tophi formation and infection complications."
+    },
+    "tbA_0012": {
+      "item_id": "tbA_0012",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Lists work-up to separate pneumonia from pulmonary TB: sputum AFB, culture, GeneXpert, IGRA/Mantoux, chest CT, repeated sputum samples; leads with an off-target ultrasound study."
+    },
+    "tbA_0069": {
+      "item_id": "tbA_0069",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Answers TOLAC vs repeat cesarean for one prior low-transverse scar: individualize, favorable TOLAC candidate, with risk factors and practice data; no firm single recommendation."
+    },
+    "tbA_0215": {
+      "item_id": "tbA_0215",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Answers whether exercise/walking helps Parkinson tremor and rigidity: adjunctive, helps stiffness from inactivity, not a direct tremor treatment. Admits sources lack direct evidence."
+    },
+    "tbA_0161": {
+      "item_id": "tbA_0161",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly addresses timing (away from meals, 1h before or 2h after) and tea/milk interaction (tannin, calcium) with advice to separate by 1-2 hours."
+    },
+    "tbA_0061": {
+      "item_id": "tbA_0061",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked national annual PCI count; answer says no national figure exists in sources and only cites single-centre numbers. On topic but gives no answer."
+    },
+    "tbA_0231": {
+      "item_id": "tbA_0231",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly gives Crohn vs UC differentiation (distribution, endoscopy, histology, imaging, serology) and a stepwise work-up, as asked, despite the mismatched NEC source."
+    },
+    "tbA_0193": {
+      "item_id": "tbA_0193",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked when the lowered CRC screening age took effect; answer says sources do not cover it, only mentions generic 50 to 45 shift with no date. Does not answer."
+    },
+    "tbA_0206": {
+      "item_id": "tbA_0206",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Directly says pregnancy is possible while exclusively breastfeeding without menses and explains LAM conditions; much of the evidence section drifts to cesarean scar pregnancy."
+    },
+    "tbA_0158": {
+      "item_id": "tbA_0158",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers that unprovoked DVT generally favours extended anticoagulation if bleeding risk acceptable, and lists recurrence risk, bleeding risk and patient preference as deciding factors."
+    },
+    "tbA_0190": {
+      "item_id": "tbA_0190",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asked how the 2025 hypertension guideline differs from the prior one; answer says it cannot compare versions and gives generic trends plus local prescribing data, not the specific changes."
+    },
+    "tbA_0131": {
+      "item_id": "tbA_0131",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers both parts: months of rectal bleeding at 32 cannot exclude colon cancer, and colonoscopy is recommended."
+    },
+    "tbA_0149": {
+      "item_id": "tbA_0149",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Compares prolonged isoniazid (6-9H) with short rifampicin regimens (3HP, 3-4RH) on efficacy, duration/completion and hepatotoxicity as asked."
+    },
+    "tbA_0189": {
+      "item_id": "tbA_0189",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Corrects the false premise (normal rest ECG does not exclude CAD) and states what to investigate next: stress testing, CT coronary, angiography, then non-cardiac causes."
+    },
+    "tbA_0171": {
+      "item_id": "tbA_0171",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether a child with 3 days of diarrhea must avoid milk and fishy foods: no, continue feeding, give ORS, with warning signs."
+    },
+    "tbA_0038": {
+      "item_id": "tbA_0038",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for Vietnam under-5 stunting prevalence; answer explicitly gives no figure and only offers stunting nutrition advice and definitions."
+    },
+    "tbA_0225": {
+      "item_id": "tbA_0225",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether kidney stone patients must avoid milk: no need, dietary calcium protective, depends on stone type."
+    },
+    "tbA_0180": {
+      "item_id": "tbA_0180",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers both parts: yes increase hydrocortisone when febrile or ill (stress dose), and lists when to go to hospital (vomiting, hypotension, drowsiness)."
+    },
+    "tbA_0033": {
+      "item_id": "tbA_0033",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives urgent assessment and a sepsis work-up for a 5-day-old with poor feeding, lethargy and temperature 36: CBC, CRP, blood culture, glucose, LP, urine."
+    },
+    "tbA_0107": {
+      "item_id": "tbA_0107",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists Holter, loop/event recorder, exercise test, anxiety assessment to distinguish SVT, benign ectopy and anxiety in a young patient with normal resting ECG, as asked."
+    },
+    "tbA_0024": {
+      "item_id": "tbA_0024",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Addresses stopping at 3-6 months vs extended anticoagulation in unprovoked DVT: individualized, weighing recurrence vs bleeding risk, with the decision factors. Hedges on evidence but answers."
+    },
+    "tbA_0068": {
+      "item_id": "tbA_0068",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up to tell PROM from discharge or urinary leakage at 32 weeks: history, speculum exam, nitrazine, ferning, ultrasound AFI, IGFBP-1/PAMG-1."
+    },
+    "tbA_0243": {
+      "item_id": "tbA_0243",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "States ACEi (ARB if intolerant) first-line over CCB with albuminuria, and add CCB or thiazide if BP is uncontrolled, never ACEi+ARB. Directly answers both parts."
+    },
+    "tbA_0036": {
+      "item_id": "tbA_0036",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers whether a 9-month-old with 38.5C fever and fussiness after 5-in-1 needs a visit now: home monitoring is fine, with explicit red flags for urgent care."
+    },
+    "tbA_0057": {
+      "item_id": "tbA_0057",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Says retrieved docs lack it but still states HbA1c threshold 6.5% was unchanged in recent ADA updates, which answers the question. Much text is on GDM/TyG; abstention framing lowers confidence."
+    },
+    "tbA_0140": {
+      "item_id": "tbA_0140",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers that gout patients need not avoid beef and seafood for life; explains purine moderation, acute vs stable phase, and controlling intake instead."
+    },
+    "tbA_ctrl_003": {
+      "item_id": "tbA_ctrl_003",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the percentage of gastric cancer detected at advanced stage in Vietnam; the answer is about rheumatoid arthritis bone erosion and cartilage destruction, a different disease."
+    },
+    "tbA_0233": {
+      "item_id": "tbA_0233",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "On topic (TDF vs entecavir) but states no head-to-head data and cannot recommend a choice; only hedged background on renal/bone vs resistance differences, no real answer to which to choose."
+    },
+    "tbA_0051": {
+      "item_id": "tbA_0051",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains bedaquiline's ATP synthase mechanism and why it replaces injectables (nephro/ototoxicity, all-oral regimen), which is exactly what was asked."
+    },
+    "tbA_0037": {
+      "item_id": "tbA_0037",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: no need to avoid milk (keep breastfeeding), and 'đồ tanh' avoidance has no solid basis if cooked and hygienic; addresses both parts of the question."
+    },
+    "tbA_0259": {
+      "item_id": "tbA_0259",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why typical CT/MRI hypervascular enhancement plus AFP suffices for HCC in cirrhosis and why biopsy is not mandatory (risks, specificity)."
+    },
+    "tbA_0204": {
+      "item_id": "tbA_0204",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Discusses nifedipine and atosiban but explicitly says no evidence to prefer either; gives only generic mechanism and considerations, no clear preferred recommendation as asked."
+    },
+    "tbA_0169": {
+      "item_id": "tbA_0169",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers directly: fever with acute illness is a temporary contraindication, postpone and give catch-up dose after recovery, with note on overall clinical assessment."
+    },
+    "tbA_0144": {
+      "item_id": "tbA_0144",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Core answer explains resistance mutation probabilities and differing bacterial populations justifying multidrug TB therapy; odd diabetes citation is peripheral to the direct answer."
+    },
+    "tbA_0122": {
+      "item_id": "tbA_0122",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic (ESBL E. coli in community UTI) but gives no percentage and says retrieved documents lack the figure; abstains on the requested number."
+    },
+    "tbA_0008": {
+      "item_id": "tbA_0008",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On topic (mortality after femoral neck fracture, age >70) but explicitly gives no 12-month mortality percentage; only qualitative 'đáng kể' plus complication background."
+    },
+    "tbA_0148": {
+      "item_id": "tbA_0148",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: ICS-formoterol as-needed is favored over SABA-alone for mild adult asthma, with rationale (SYGMA, ICS coverage). Caveats about missing citation do not remove the direct answer."
+    },
+    "tbA_0251": {
+      "item_id": "tbA_0251",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives the requested work-up: LP with CSF cell/protein/glucose/Gram/PCR/GeneXpert, blood tests, CT/MRI, and a table differentiating purulent, viral and TB meningitis."
+    },
+    "tbA_0137": {
+      "item_id": "tbA_0137",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists features indicating inflammatory (axSpA) vs mechanical back pain and the work-up: exam tests, ESR/CRP, HLA-B27, sacroiliac X-ray and MRI. Matches both parts of the question."
+    },
+    "tbA_0077": {
+      "item_id": "tbA_0077",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Covers history to obtain from family, cognitive scales, MRI findings, blood tests and CSF/PET biomarkers to distinguish Alzheimer from vascular dementia, as asked."
+    },
+    "tbA_0163": {
+      "item_id": "tbA_0163",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Right topic (pediatric ITP spontaneous recovery) but refuses to give any percentage; only says 'phần lớn' recover, so the requested figure is not answered."
+    },
+    "tbA_0242": {
+      "item_id": "tbA_0242",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly addresses distinguishing FH from secondary dyslipidemia with stepwise logic and specific tests (TSH, glucose, liver/kidney, urinalysis, lipid panel, family history, genetics, Lp(a))."
+    },
+    "tbA_0153": {
+      "item_id": "tbA_0153",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "On COPD/FEV1 decline but states no mL/year figure can be given; offers only mechanism and general background, so the quantitative question is unanswered."
+    },
+    "tbA_0236": {
+      "item_id": "tbA_0236",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers NSAID long-term use causing gastric ulcer (COX/prostaglandin mechanism) and whether PPI gastroprotection is needed, with risk-based criteria."
+    },
+    "tbA_0129": {
+      "item_id": "tbA_0129",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "On topic (single vs multiple fraction RT for bone mets) but states no comparative data and gives no recommendation; only generic pros/cons and 'both have a role'."
+    },
+    "tbA_0097": {
+      "item_id": "tbA_0097",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains Crohn vs UC differentiation (skip lesions, transmural, granuloma) and lists work-up: colonoscopy+biopsy, labs, calprotectin, ASCA/p-ANCA, MR enterography, TB exclusion."
+    },
+    "tbA_0004": {
+      "item_id": "tbA_0004",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Addresses MTX-IR choice: triple csDMARD vs bDMARD+MTX, with prognostic factors guiding which to choose; evidence caveat does not remove the direct answer."
+    },
+    "tbA_0021": {
+      "item_id": "tbA_0021",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains low C3/C4 in active SLE as complement consumption via immune-complex classical pathway activation."
+    },
+    "tbA_0085": {
+      "item_id": "tbA_0085",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists glucose-independent renoprotective mechanisms of SGLT2i: tubuloglomerular feedback/hyperfiltration, hypoxia, inflammation/fibrosis, oxidative stress."
+    },
+    "tbA_0039": {
+      "item_id": "tbA_0039",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Confirms threshold varies with age but explicitly gives no breaths/min figures, which was the core ask; rest is physiology background and referral."
+    },
+    "tbA_0226": {
+      "item_id": "tbA_0226",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Gives typical hemodialysis frequency (3 sessions/week, 3-4h) and confirms sodium and fluid restriction at home, though framed as general knowledge with individualisation caveat."
+    },
+    "tbA_0221": {
+      "item_id": "tbA_0221",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly differentiates prerenal AKI from ATN: clinical history, UNa, FENa, urine osmolality, sediment casts, fluid response. Evidence caveat does not change that it answers."
+    },
+    "tbA_0212": {
+      "item_id": "tbA_0212",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives exam differentiators (reflexes, sensory level, sphincter) and work-up (MRI, CSF albuminocytologic dissociation, EMG/NCV) for GBS vs cord compression, as asked."
+    },
+    "tbA_0217": {
+      "item_id": "tbA_0217",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for the ~90-day stroke risk after TIA; answer states no figure is available and gives 1-year recurrence after ischemic stroke and HRs instead."
+    },
+    "tbA_0094": {
+      "item_id": "tbA_0094",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Abstains: says source lacks the 6-month UTI recurrence rate in women after acute cystitis; only describes catheter-related UTI in cancer patients. On topic, no figure given."
+    },
+    "tbA_0245": {
+      "item_id": "tbA_0245",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Addresses lifelong medication for BP 150/90: hypertension is chronic, drugs usually long-term, but the doctor decides. Much is lifestyle/adherence detail, yet the core question is answered."
+    },
+    "tbA_0025": {
+      "item_id": "tbA_0025",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Compares IM vs oral B12 and gives selection criteria: severity, neurologic signs, malabsorption/intrinsic factor, adherence, with loading then oral maintenance."
+    },
+    "tbA_0203": {
+      "item_id": "tbA_0203",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Headline is a hospital's 96% repeat-CS practice rate, not a recommendation; says it cannot answer definitively for TOLAC vs ERCS. Only a brief general note that TOLAC is reasonable."
+    },
+    "tbA_0067": {
+      "item_id": "tbA_0067",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly differentiates ectopic from threatened miscarriage and lists work-up: transvaginal US, serial beta-hCG, CBC, pelvic exam, culdocentesis, with interpretation."
+    },
+    "tbA_0232": {
+      "item_id": "tbA_0232",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists history to elicit, LFT/ALP/GGT/bilirubin, ultrasound and MRCP to separate extrahepatic obstruction from hepatocellular injury; directly answers the work-up question."
+    },
+    "tbA_0114": {
+      "item_id": "tbA_0114",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks for the % reduction in major CV events per 1 mmol/L LDL-C lowered; answer says the figure is unavailable and gives only LDL background and qualitative 'lower is better'."
+    },
+    "tbA_0096": {
+      "item_id": "tbA_0096",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why severe hypertriglyceridemia causes acute pancreatitis: lipase hydrolysis to free fatty acids, endothelial injury, hyperviscosity, ischemia, inflammation."
+    },
+    "tbA_0064": {
+      "item_id": "tbA_0064",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Disclaims the sources but still states the European GH start age (about 4-8 months) from background knowledge; direct, if hedged, answer to the age-in-months question."
+    },
+    "tbA_0124": {
+      "item_id": "tbA_0124",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains acquired resistance to EGFR TKIs: T790M, EGFR amplification, MET/HER2 bypass, downstream mutations, histologic transformation; matches the mechanism question."
+    },
+    "tbA_0047": {
+      "item_id": "tbA_0047",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers both parts: levothyroxine at standard dose not hepatotoxic or nephrotoxic, and lifelong treatment depends on cause (Hashimoto, post-surgery) versus transient hypothyroidism."
+    },
+    "tbA_0022": {
+      "item_id": "tbA_0022",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives tests separating iron deficiency from thalassemia carrier: CBC indices, ferritin/iron/TIBC, Hb electrophoresis, globin gene testing; directly answers."
+    },
+    "tbA_0108": {
+      "item_id": "tbA_0108",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Covers distinguishing familial hypercholesterolemia from secondary dyslipidemia and extra tests: TSH, glucose, liver, kidney, lipid panel, Lp(a), family history, exam, genetics. Source section is cut off."
+    },
+    "tbA_0000": {
+      "item_id": "tbA_0000",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains RA bone erosion and cartilage destruction (pannus, MMP, cytokines, RANKL/osteoclasts) and the role of proliferating synovium."
+    },
+    "tbA_0001": {
+      "item_id": "tbA_0001",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains why knee OA hurts despite aneural cartilage and names the pain sources (subchondral bone, synovium, ligaments, muscle). Ends truncated but answers fully."
+    },
+    "tbA_0027": {
+      "item_id": "tbA_0027",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers both parts: take iron on an empty stomach (or with a light meal) and separate it from tea and milk by 1-2 h, though it admits the corpus lacks support."
+    },
+    "tbA_0170": {
+      "item_id": "tbA_0170",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers the 9-month-old's post-vaccine 38.5C fever: monitor at home for now, with specific red flags (>=39C, convulsions, inconsolable crying, breathing trouble) for going in."
+    },
+    "tbA_0182": {
+      "item_id": "tbA_0182",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks what percent of weight loss is needed for remission. The answer gives no figure and says so, offering only 2-week diet-study background. On topic but abstains."
+    },
+    "tbA_0102": {
+      "item_id": "tbA_0102",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Says the corpus lacks sources but still answers: NSAIDs cause ulcers via COX-1/prostaglandin inhibition, paracetamol much less, and a PPI is considered for high-risk patients."
+    },
+    "tbA_0223": {
+      "item_id": "tbA_0223",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly compares the options for an 8 mm lower ureteral stone, favoring retrograde ureteroscopy, with caveats on lower-ureter clearance (66.7%) and individualization."
+    },
+    "tbA_ctrl_004": {
+      "item_id": "tbA_ctrl_004",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about hemodialysis frequency and fluid/salt restriction in end-stage renal failure; the answer is about bedaquilin in MDR-TB, a completely different subject."
+    },
+    "tbA_0072": {
+      "item_id": "tbA_0072",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly answers: yes, pregnancy is possible with full breastfeeding and no menses, because first ovulation can precede the first period."
+    },
+    "tbA_0175": {
+      "item_id": "tbA_0175",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Body explains corticoid bone mechanisms (osteoblast inhibition, RANKL, calcium, sex hormones, myopathy/falls); PPI evidence is peripheral but the mechanism asked is answered."
+    },
+    "tbA_ctrl_015": {
+      "item_id": "tbA_ctrl_015",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks Alzheimer vs vascular dementia work-up; answer compares tenofovir and entecavir in chronic hepatitis B. Entirely different topic."
+    },
+    "tbA_ctrl_011": {
+      "item_id": "tbA_ctrl_011",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks 90-day stroke risk after TIA; answer discusses advanced-stage gastric cancer in Vietnam and PET/CT. Unrelated subject."
+    },
+    "tbA_0084": {
+      "item_id": "tbA_0084",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked for 2-year recurrence % after first unprovoked seizure; answer says corpus lacks it, gives no figure, only generic risk-factor background."
+    },
+    "tbA_0042": {
+      "item_id": "tbA_0042",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly lists tests to distinguish T1 vs T2 DM: C-peptide, GAD/IA-2/IAA/ZnT8 autoantibodies, ketones, HbA1c, with interpretation."
+    },
+    "tbA_0222": {
+      "item_id": "tbA_0222",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives full work-up for painless gross hematuria in 55M: history, DRE, urinalysis, cytology, ultrasound, CT urography, cystoscopy."
+    },
+    "tbA_0020": {
+      "item_id": "tbA_0020",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Explains DIC paradox: widespread coagulation causes microthrombi while consumption of platelets/factors and secondary fibrinolysis cause bleeding."
+    },
+    "tbA_0007": {
+      "item_id": "tbA_0007",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers directly that milk plus calcium is not enough at 65 with osteoporosis; needs doctor-prescribed anti-resorptive/anabolic drugs, with lifestyle advice."
+    },
+    "tbA_0133": {
+      "item_id": "tbA_0133",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says evidence on adjuvant chemo and 5-year survival in stage II is absent; only qualitative 'modest few percent' benefit, no figure; much text on unrelated regorafenib."
+    },
+    "tbA_ctrl_001": {
+      "item_id": "tbA_ctrl_001",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Question asks % of gastric cancers found at advanced stage in Vietnam; answer addresses Japan national screening policy/cost-effectiveness, never stage at diagnosis."
+    },
+    "tbA_0255": {
+      "item_id": "tbA_0255",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Covers home diet/fluids, monitoring (temperature, urine, bleeding) and warning signs for urgent hospital visit in dengue, as asked."
+    },
+    "tbA_0041": {
+      "item_id": "tbA_0041",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Directly explains mechanisms of long-term corticoid bone loss (osteoblast inhibition, RANKL, calcium, gonadal axis, myopathy/falls) as asked, despite the PPI source mismatch."
+    },
+    "tbA_0063": {
+      "item_id": "tbA_0063",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked 5-year heart transplant survival %; answer gives no figure, only says evidence lacks it plus background on determinants and causes of late death."
+    },
+    "tbA_0127": {
+      "item_id": "tbA_0127",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives work-up for 12mm solitary pulmonary nodule: CT morphology, prior comparison, PET/CT FDG, biopsy, and limits; directly addresses benign vs malignant differentiation."
+    },
+    "tbA_0059": {
+      "item_id": "tbA_0059",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked when lowered CRC screening age took effect; answer says not in sources, only vaguely mentions 50 to 45 without any application date."
+    },
+    "tbA_0018": {
+      "item_id": "tbA_0018",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked 30-day mortality % for hospitalized CAP; answer states no figure is available and only describes prognostic score performance (AUC etc.)."
+    },
+    "tbA_0132": {
+      "item_id": "tbA_0132",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asked % of gastric cancer detected at advanced stage in Vietnam; answer gives no number, only qualitative late-detection reasons and lung cancer data."
+    },
+    "tbA_0023": {
+      "item_id": "tbA_0023",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Lists additional history/exam items and tests (smear, coagulation, ANA, dengue, marrow, HIV/HBV/HCV, pregnancy, H. pylori) for isolated thrombocytopenia in a 25-year-old woman, as asked."
+    },
+    "tbA_0263": {
+      "item_id": "tbA_0263",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Asked which of single vs multi-fraction RT is recommended; answer declines to recommend, only notes general efficacy and factors for choosing; no clear recommendation given."
+    },
+    "tbA_0173": {
+      "item_id": "tbA_0173",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Says threshold varies with age but gives no breaths/min figures, which the question asked for; the rest is pneumonia sign frequency and background."
+    },
+    "tbA_0045": {
+      "item_id": "tbA_0045",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Compares weekly oral vs yearly IV bisphosphonate with pros/cons and criteria for choosing (adherence, esophageal disease, renal function). Admits no direct evidence but still addresses the choice."
+    },
+    "tbA_0172": {
+      "item_id": "tbA_0172",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks national under-5 stunting prevalence; answer gives only a 2016 An Giang Khmer 6-24 month figure (27.2%) and states the national figure is not provided."
+    },
+    "tbA_0198": {
+      "item_id": "tbA_0198",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Pure abstention; gives no age for starting growth hormone in Prader-Willi in Europe. On topic but unanswered."
+    },
+    "tbA_0177": {
+      "item_id": "tbA_0177",
+      "label": "relevant",
+      "confidence": "medium",
+      "rationale": "Covers both parts: further work-up (US features, TIRADS, neck nodes, TSH, history) and when to do FNA (suspicious/TIRADS 4-5, aim at solid part), though exact thresholds are not given."
+    },
+    "tbA_0056": {
+      "item_id": "tbA_0056",
+      "label": "partial",
+      "confidence": "high",
+      "rationale": "Asks how the latest 2025 hypertension guideline differs from the previous one; answer says it cannot answer, gives only generic hypertension drug and complication background."
+    },
+    "tbA_0101": {
+      "item_id": "tbA_0101",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Answers whether breastfeeding transmits HBV to a vaccinated 2-week-old: breastfeeding is possible, risk depends on HBIG, maternal viral load, nipple damage; gives next steps."
+    },
+    "tbA_0118": {
+      "item_id": "tbA_0118",
+      "label": "relevant",
+      "confidence": "high",
+      "rationale": "Gives differential (dengue first, sepsis, influenza, EBV/CMV, acute HIV, malaria, leptospirosis, ITP) and the tests to tell them apart (NS1/IgM, smear, cultures, serology, coagulation); text is cut off at the end."
+    },
+    "tbS_021": {
+      "item_id": "tbS_021",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks respiratory-rate threshold for tachypnea by age in children; answer is about fever/fussiness after a 9-month-old's vaccination. No age-specific rate threshold given."
+    },
+    "tbS_018": {
+      "item_id": "tbS_018",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks % of gastric cancers found at advanced stage in Vietnam; answer covers a 12mm solitary pulmonary nodule and PET/CT SUVmax in lung cancer."
+    },
+    "tbS_019": {
+      "item_id": "tbS_019",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks why insulin resistance in PCOS causes anovulation; answer is a JSON block about CIN 2 regression rates/HPV with no evidence. Entirely different subject."
+    },
+    "tbS_028": {
+      "item_id": "tbS_028",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q compares isoniazid vs rifampicin-based latent TB regimens; answer discusses annual FEV1 decline in COPD smokers. Different disease and question."
+    },
+    "tbS_036": {
+      "item_id": "tbS_036",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks 30-day readmission % after acute heart failure admission; answer compares ticagrelor vs clopidogrel DAPT after MI/PCI. No readmission figure."
+    },
+    "tbS_006": {
+      "item_id": "tbS_006",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks whether child of two thalassemia carriers is certain to be affected; answer is about duration of anticoagulation in unprovoked lower-limb DVT."
+    },
+    "tbS_029": {
+      "item_id": "tbS_029",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks ORS vs home rice-salt water and zinc for toddler diarrhea; answer differentiates bronchiolitis from pneumonia in an 8-month-old. Different illness."
+    },
+    "tbS_023": {
+      "item_id": "tbS_023",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks about stress-dose hydrocortisone and when to go to hospital in adrenal insufficiency; answer addresses weight loss % for T2DM remission in obesity."
+    },
+    "tbS_020": {
+      "item_id": "tbS_020",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about mild asthma ICS-formoterol vs SABA; answer is about FEV1 decline in COPD smokers. Different disease and subject."
+    },
+    "tbS_013": {
+      "item_id": "tbS_013",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks ESBL E. coli percentage in community UTI; answer explains lactate mechanisms in septic shock. Unrelated."
+    },
+    "tbS_026": {
+      "item_id": "tbS_026",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is about low C3/C4 in active SLE; answer is about spontaneous recovery of childhood ITP and drug-induced thrombocytopenia."
+    },
+    "tbS_025": {
+      "item_id": "tbS_025",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question compares single vs multiple fraction RT for painful bone metastases; answer covers malignant bowel obstruction causes in palliative care."
+    },
+    "tbS_037": {
+      "item_id": "tbS_037",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks causes and differentiating malignant bowel obstruction in palliative vomiting/distension; answer is about hair regrowth after chemotherapy."
+    },
+    "tbS_034": {
+      "item_id": "tbS_034",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks % spontaneous recovery of pediatric ITP in 6 months; answer discusses 5-year survival of childhood ALL and an AML/CML case report."
+    },
+    "tbS_014": {
+      "item_id": "tbS_014",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is single vs multiple fraction radiotherapy for bone metastasis pain; answer is about hair regrowth after chemo in breast cancer."
+    },
+    "tbS_015": {
+      "item_id": "tbS_015",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks relapse rate of hyperthyroidism after antithyroid drugs; answer covers work-up of an incidental 2 cm thyroid nodule and FNA."
+    },
+    "tbS_008": {
+      "item_id": "tbS_008",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks ESWL vs ureteroscopy for 8mm distal ureteral stone; answer is about peritoneal vs hemodialysis and residual kidney function."
+    },
+    "tbS_004": {
+      "item_id": "tbS_004",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks 12-month mortality after hip fracture in >70s; answer explains rheumatoid arthritis pannus and bone erosion."
+    },
+    "tbS_007": {
+      "item_id": "tbS_007",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks work-up for palpitations (SVT vs ectopy vs anxiety); answer is about vulnerable vs calcified coronary plaque and MI."
+    },
+    "tbS_031": {
+      "item_id": "tbS_031",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why severe hypertriglyceridemia causes acute pancreatitis; answer is about NSAID/analgesic gastric ulcer risk and PPIs."
+    },
+    "tbS_027": {
+      "item_id": "tbS_027",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks GBS vs cord compression work-up; answer addresses adult seizure recurrence risk after first seizure."
+    },
+    "tbS_039": {
+      "item_id": "tbS_039",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks if daily inhaled preventer affects growth in an asthmatic 7-year-old; answer is about lung cancer risk after smoking cessation."
+    },
+    "tbS_000": {
+      "item_id": "tbS_000",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks severe CAP empirical therapy (beta-lactam+macrolide vs fluoroquinolone); answer compares daily vs on-demand HIV PrEP."
+    },
+    "tbS_033": {
+      "item_id": "tbS_033",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about diet restriction (milk, seafood) in child diarrhea; answer covers work-up of a 5-day-old neonate with lethargy and hypothermia."
+    },
+    "tbS_002": {
+      "item_id": "tbS_002",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why severe hypertriglyceridemia causes acute pancreatitis; answer is about obstructive jaundice vs hepatocellular injury in a 55-year-old man. Different disease."
+    },
+    "tbS_017": {
+      "item_id": "tbS_017",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks timing of iron tablets and tea/milk avoidance; answer covers workup of isolated thrombocytopenia in a 25-year-old woman. Nothing on iron absorption."
+    },
+    "tbS_001": {
+      "item_id": "tbS_001",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the source of pain in knee osteoarthritis; answer covers gout vs septic arthritis diagnostics. Shares only the knee joint, not the topic."
+    },
+    "tbS_011": {
+      "item_id": "tbS_011",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question: ICS-formoterol as-needed vs salbutamol alone in adult mild asthma. Answer covers daily ICS and growth in children. Same disease and drug class, but a different question and population."
+    },
+    "tbS_003": {
+      "item_id": "tbS_003",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether daily preventive inhaler in a 7-year-old asthmatic affects growth; answer differentiates pneumonia from pulmonary TB in a 45-year-old man. Different subject."
+    },
+    "tbS_016": {
+      "item_id": "tbS_016",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks how to tell ectopic pregnancy from threatened miscarriage and what workup is needed; answer addresses postpartum hemorrhage incidence. Different obstetric topic."
+    },
+    "tbS_009": {
+      "item_id": "tbS_009",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why TB treatment needs multi-drug combination; answer is about lung cancer risk after smoking cessation. Different disease and subject."
+    },
+    "tbS_022": {
+      "item_id": "tbS_022",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why C3/C4 fall in active SLE; answer explains DIC with both thrombosis and bleeding. No complement or lupus content."
+    },
+    "tbS_032": {
+      "item_id": "tbS_032",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks if kidney stone patients must avoid milk; answer explains SGLT2 inhibitor renal-protective mechanisms in CKD. Different subject entirely."
+    },
+    "tbS_035": {
+      "item_id": "tbS_035",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is diabetic peripheral polyneuropathy pathogenesis and distal-to-proximal spread; answer is Alzheimer vs vascular dementia work-up in a 72-year-old man."
+    },
+    "tbS_024": {
+      "item_id": "tbS_024",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks DAA sustained virologic response rate in chronic hepatitis C; answer covers hepatic encephalopathy ammonia/portosystemic shunt in cirrhosis. No SVR figure."
+    },
+    "tbS_005": {
+      "item_id": "tbS_005",
+      "label": "partial",
+      "confidence": "medium",
+      "rationale": "Question asks annual FEV1 decline in COPD smokers; answer is COPD air trapping and dynamic hyperinflation. Same disease, but gives no FEV1 decline figure."
+    },
+    "tbS_012": {
+      "item_id": "tbS_012",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question is ectopic pregnancy vs threatened miscarriage work-up; answer is dietary advice (white rice) for gestational diabetes. Different condition and question."
+    },
+    "tbS_038": {
+      "item_id": "tbS_038",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether to postpone vaccination with mild fever and URI; answer discusses age-specific tachypnea thresholds in pediatric pneumonia. Nothing on vaccination timing."
+    },
+    "tbS_030": {
+      "item_id": "tbS_030",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks DIC pathophysiology (microthrombi plus bleeding); answer explains low C3/C4 in active SLE via complement consumption. Different disease and mechanism."
+    },
+    "tbS_010": {
+      "item_id": "tbS_010",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks preeclampsia pathogenesis (trophoblast invasion, endothelial dysfunction); answer differentiates ectopic pregnancy from threatened miscarriage. Different obstetric problem."
+    }
+  },
+  "opus_siblings": {
+    "tbS_021": {
+      "item_id": "tbS_021",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks RR thresholds for fast breathing by age; answer is about post-vaccination fever in a 9-month-old, mentions 'thở nhanh' only as a warning sign, no thresholds."
+    },
+    "tbS_018": {
+      "item_id": "tbS_018",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks % of gastric cancer found at advanced stage in Vietnam; answer covers solitary pulmonary nodule work-up and PET/CT SUVmax in lung cancer."
+    },
+    "tbS_019": {
+      "item_id": "tbS_019",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks why insulin resistance in PCOS disrupts ovulation; answer is a JSON block about CIN 2 regression and body water, nothing on PCOS."
+    },
+    "tbS_028": {
+      "item_id": "tbS_028",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q compares isoniazid vs rifampicin regimens for latent TB; answer discusses FEV1 decline in smokers with COPD."
+    },
+    "tbS_036": {
+      "item_id": "tbS_036",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks 30-day readmission rate after heart failure hospitalization; answer compares ticagrelor vs clopidogrel DAPT after MI/PCI."
+    },
+    "tbS_006": {
+      "item_id": "tbS_006",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks inheritance risk when both parents carry thalassemia genes; answer is about anticoagulation duration for unprovoked DVT."
+    },
+    "tbS_029": {
+      "item_id": "tbS_029",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks ORS vs homemade rice-salt solution and zinc for toddler diarrhea; answer distinguishes bronchiolitis from pneumonia in an 8-month-old."
+    },
+    "tbS_023": {
+      "item_id": "tbS_023",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks hydrocortisone sick-day dosing and when to go to hospital in adrenal insufficiency; answer covers weight loss for T2D remission."
+    },
+    "tbS_008": {
+      "item_id": "tbS_008",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks ESWL vs ureteroscopy for 8mm distal ureteral stone; answer discusses peritoneal dialysis vs hemodialysis in ESRD."
+    },
+    "tbS_004": {
+      "item_id": "tbS_004",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks 12-month mortality after hip fracture in >70s; answer explains rheumatoid arthritis bone erosion/pannus mechanism."
+    },
+    "tbS_007": {
+      "item_id": "tbS_007",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks work-up for palpitations (SVT vs ectopy vs anxiety); answer explains vulnerable vs calcified coronary plaque and MI."
+    },
+    "tbS_031": {
+      "item_id": "tbS_031",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why severe hypertriglyceridemia causes pancreatitis; answer is about NSAID/analgesic gastric ulcer and PPI use."
+    },
+    "tbS_027": {
+      "item_id": "tbS_027",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks exam/tests to separate Guillain-Barre from spinal cord compression; answer is about seizure recurrence after first seizure."
+    },
+    "tbS_039": {
+      "item_id": "tbS_039",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks whether daily inhaled controller in asthmatic child affects growth; answer is about lung cancer risk after quitting smoking."
+    },
+    "tbS_000": {
+      "item_id": "tbS_000",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks beta-lactam+macrolide vs fluoroquinolone for severe CAP; answer compares daily vs event-driven HIV PrEP."
+    },
+    "tbS_033": {
+      "item_id": "tbS_033",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks diet (milk, seafood avoidance) for child with 3-day diarrhea; answer covers work-up of lethargic hypothermic 5-day neonate."
+    },
+    "tbS_020": {
+      "item_id": "tbS_020",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about as-needed ICS-formoterol vs salbutamol in mild adult asthma. The answer covers FEV1 decline in COPD smokers and never mentions asthma reliever therapy."
+    },
+    "tbS_013": {
+      "item_id": "tbS_013",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks what % of E. coli in community UTI produce ESBL. The answer explains lactate mechanisms in septic shock, with no ESBL or UTI content."
+    },
+    "tbS_026": {
+      "item_id": "tbS_026",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks why C3/C4 fall in active SLE. The answer is about ITP recovery in children and drug-induced thrombocytopenia, with no lupus or complement."
+    },
+    "tbS_025": {
+      "item_id": "tbS_025",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks single- vs multi-fraction palliative RT for painful bone metastases. The answer covers vomiting and bowel obstruction in palliative care, with no radiotherapy."
+    },
+    "tbS_037": {
+      "item_id": "tbS_037",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks about causes of vomiting/distension and telling malignant bowel obstruction apart. The answer is about hair regrowth after chemotherapy."
+    },
+    "tbS_034": {
+      "item_id": "tbS_034",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks what % of childhood ITP remits spontaneously within 6 months. The answer covers 5-year survival in pediatric ALL and an AML/NHL case, a different disease."
+    },
+    "tbS_014": {
+      "item_id": "tbS_014",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks single- vs multi-fraction RT for bone metastasis pain. The answer is about hair regrowth after breast cancer chemotherapy, with no radiotherapy content."
+    },
+    "tbS_015": {
+      "item_id": "tbS_015",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Question asks the hyperthyroidism relapse rate after a full antithyroid drug course. The answer covers work-up/FNA of a 2 cm thyroid nodule and gives no relapse rate."
+    },
+    "tbS_032": {
+      "item_id": "tbS_032",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks whether kidney-stone patients must avoid milk; answer explains SGLT2 inhibitor renoprotective mechanisms in CKD/heart failure. Nothing on stones or milk."
+    },
+    "tbS_035": {
+      "item_id": "tbS_035",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks pathogenesis of diabetic polyneuropathy and length-dependent foot onset; answer covers differentiating Alzheimer vs vascular dementia work-up."
+    },
+    "tbS_024": {
+      "item_id": "tbS_024",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks SVR percentage after DAA therapy for chronic HCV; answer explains hepatic encephalopathy, ammonia and portosystemic shunts. No SVR figure."
+    },
+    "tbS_005": {
+      "item_id": "tbS_005",
+      "label": "partial",
+      "confidence": "low",
+      "rationale": "Q asks annual FEV1 decline (mL) in COPD patients who keep smoking; answer is about COPD but covers air trapping/dynamic hyperinflation and dyspnea, no FEV1 figure."
+    },
+    "tbS_012": {
+      "item_id": "tbS_012",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks how to distinguish ectopic pregnancy from threatened miscarriage and which tests; answer is about white rice in gestational diabetes diet."
+    },
+    "tbS_038": {
+      "item_id": "tbS_038",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks whether to delay vaccination in a child with 37.8C fever from URI; answer discusses age-based tachypnea thresholds in childhood pneumonia."
+    },
+    "tbS_030": {
+      "item_id": "tbS_030",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks why DIC causes both microthrombi and bleeding; answer explains low C3/C4 from complement consumption in active SLE."
+    },
+    "tbS_010": {
+      "item_id": "tbS_010",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Q asks preeclampsia pathogenesis via incomplete trophoblast invasion of spiral arteries and endothelial dysfunction; answer covers ectopic vs threatened miscarriage."
+    },
+    "tbS_002": {
+      "item_id": "tbS_002",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks why severe hypertriglyceridemia causes acute pancreatitis; answer is a work-up of cholestatic jaundice vs hepatocellular injury. Pancreatitis mechanism never addressed."
+    },
+    "tbS_017": {
+      "item_id": "tbS_017",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks best time to take iron and whether to avoid tea/milk; answer covers diagnostic work-up of isolated thrombocytopenia and dengue platelet data."
+    },
+    "tbS_001": {
+      "item_id": "tbS_001",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks pain source in knee osteoarthritis given aneural cartilage; answer is gout vs septic arthritis work-up. Same joint, different disease; OA pain unaddressed."
+    },
+    "tbS_011": {
+      "item_id": "tbS_011",
+      "label": "not_relevant",
+      "confidence": "medium",
+      "rationale": "Asks as-needed ICS-formoterol vs salbutamol in adult mild asthma; answer is on daily ICS and growth in children. Different population and question; reliever choice absent."
+    },
+    "tbS_003": {
+      "item_id": "tbS_003",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks whether daily preventer inhaler stunts growth in a 7-year-old; answer is on distinguishing TB from pneumonia in a 45-year-old man."
+    },
+    "tbS_016": {
+      "item_id": "tbS_016",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks how to tell ectopic pregnancy from threatened miscarriage and the work-up; answer is about postpartum hemorrhage rates and prevention."
+    },
+    "tbS_009": {
+      "item_id": "tbS_009",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks why TB treatment needs multidrug therapy from the start; answer is on lung cancer risk after quitting smoking. TB regimen rationale is absent."
+    },
+    "tbS_022": {
+      "item_id": "tbS_022",
+      "label": "not_relevant",
+      "confidence": "high",
+      "rationale": "Asks why C3/C4 fall in active SLE; answer explains why DIC causes both thrombosis and bleeding. Complement consumption in lupus is not addressed."
+    }
+  },
+  "refs": {
+    "bibtex": "% ---- added 2026-10-12: answer quality vs citation quality, correctness vs faithfulness ----\n% wang2025medcite -- verification record, NOT for print:\n%   verified 2026-10-12 from the official BibTeX at aclanthology.org/2025.findings-acl.967 and\n%   Crossref for doi 10.18653/v1/2025.findings-acl.967: title verbatim, all eight authors in\n%   this order (Wang, Tan, Jin, Xiong, Hu, A. Zhang, Lu, M. Zhang), Findings of ACL 2025,\n%   Vienna, pp. 18891--18913. The finding was read from the PDF (Sec. 4.2, Table 2). It is a\n%   single-model result (Llama-3-8B-Instruct, BioASQ-Y/N). Do not generalise it across LLMs.\n@inproceedings{wang2025medcite,\n  author    = {Xiao Wang and Mengjue Tan and Qiao Jin and Guangzhi Xiong and Yu Hu and Aidong Zhang and others},\n  title     = {{MedCite}: Can Language Models Generate Verifiable Text for Medicine?},\n  booktitle = {Findings Assoc. Comput. Linguistics: ACL 2025},\n  year      = {2025},\n  pages     = {18891--18913},\n  note      = {doi:10.18653/v1/2025.findings-acl.967}\n}\n% wallat2025correctness -- verification record, NOT for print:\n%   verified 2026-10-12. arXiv:2412.18004 (only v1, 23 Dec 2024) is titled \"Correctness is not\n%   Faithfulness in RAG Attributions\". The PUBLISHED version is RETITLED. Crossref gives doi\n%   10.1145/3731120.3744592 with the title \"Correctness is not Faithfulness in Retrieval\n%   Augmented Generation Attributions\", Proc. 2025 Int. ACM SIGIR Conf. on Innovative Concepts\n%   and Theories in Information Retrieval (ICTIR '25), Padua, pp. 22--32, ACM, and the same four\n%   authors (DBLP conf/ictir/WallatHRA25). The figures 12/57/55% come from the arXiv v1 text\n%   (Sec. 5, Fig. 3). The ACM camera-ready could not be read (bot wall), so confirm the numbers\n%   there before printing them.\n@inproceedings{wallat2025correctness,\n  author    = {Jonas Wallat and Maria Heuss and Maarten de Rijke and Avishek Anand},\n  title     = {Correctness is not Faithfulness in Retrieval Augmented Generation Attributions},\n  booktitle = {Proc. Int. ACM SIGIR Conf. Innovative Concepts Theories Inf. Retrieval (ICTIR)},\n  year      = {2025},\n  pages     = {22--32},\n  note      = {doi:10.1145/3731120.3744592; arXiv:2412.18004}\n}\n% buchmann2024attribute -- verification record, NOT for print:\n%   verified 2026-10-12 from the official BibTeX at aclanthology.org/2024.emnlp-main.463 and\n%   Crossref for doi 10.18653/v1/2024.emnlp-main.463: title, three authors in this order,\n%   EMNLP 2024, Miami, pp. 8113--8140. arXiv:2407.07799. The finding was read from Sec. 5.3 and\n%   Table 4 of the PDF. The setting is long-document QA with no retrieval, and the evidence-quality\n%   gate is selective prediction over attributability scores (TRUE / MiniCheck).\n@inproceedings{buchmann2024attribute,\n  author    = {Jan Buchmann and Xiao Liu and Iryna Gurevych},\n  title     = {Attribute or Abstain: Large Language Models as Long Document Assistants},\n  booktitle = {Proc. Conf. Empirical Methods Natural Lang. Process.},\n  year      = {2024},\n  pages     = {8113--8140},\n  note      = {doi:10.18653/v1/2024.emnlp-main.463}\n}\n% gao2023alce: NO NEW ENTRY. It is already in refs_v4.bib under the key gao2023alce. Its fields\n%   were re-checked 2026-10-12 against aclanthology.org/2023.emnlp-main.398.bib and Crossref\n%   (pp. 6465--6488). Only the finding below is new; cite it with the existing key.",
+    "findings": [
+      {
+        "key": "wang2025medcite",
+        "verified": true,
+        "source_checked": "ACL Anthology official BibTeX (2025.findings-acl.967) + Crossref /works/10.18653/v1/2025.findings-acl.967 + full PDF text (Sec. 4.2, Table 2; Sec. 6.3, Table 7)",
+        "finding_to_cite": "Title: 'MedCite: Can Language Models Generate Verifiable Text for Medicine?' The eight authors are Xiao Wang, Mengjue Tan, Qiao Jin, Guangzhi Xiong, Yu Hu, Aidong Zhang, Zhiyong Lu and Minjia Zhang. Findings of ACL 2025, pp. 18891-18913. The setup is Llama-3-8B-Instruct on BioASQ-Y/N, with MedCPT top-3 citations against PubMed (Table 2). Non-RAG generation reaches 71.36 EM, with citation recall 59.05 and precision 52.93. Adding RAG raises accuracy to 82.85 EM, but citation recall falls to 49.01 and precision to 42.77. The authors explain that the citation metrics check whether a statement is supported, not whether it is correct, so citations can still support a hallucinated statement that is irrelevant to the question. They conclude that text and citation quality must be assessed together, and they make answer correctness a prerequisite for citation evaluation. A secondary finding (Table 7): medicine-specialised NLI attribution judges agree poorly with physicians, with Cohen's kappa 0.18-0.26 on the recall judge and at most 0.22 on the precision judge.",
+        "positioning_sentence": "In medical QA, adding retrieval raised answer accuracy from 71.4 to 82.9 EM while citation recall fell from 59.1 to 49.0, because a supported citation need not attach to a correct statement \\cite{wang2025medcite}."
+      },
+      {
+        "key": "wallat2025correctness",
+        "verified": true,
+        "source_checked": "arXiv API + abs page for 2412.18004 (v1 only) + full arXiv PDF text (Sec. 5, Fig. 3); Crossref /works/10.1145/3731120.3744592 for the published ICTIR 2025 version (also indexed as DBLP conf/ictir/WallatHRA25 via Semantic Scholar)",
+        "finding_to_cite": "The work is published at ICTIR 2025 (ACM SIGIR), pp. 22-32, doi 10.1145/3731120.3744592, under a retitled name: 'Correctness is not Faithfulness in Retrieval Augmented Generation Attributions'. The arXiv title is '...in RAG Attributions'. Authors: Jonas Wallat, Maria Heuss, Maarten de Rijke, Avishek Anand. The paper separates two properties. Citation correctness asks whether the cited document supports the statement. Citation faithfulness asks whether the model actually relied on that document. They name the failure mode 'post-rationalization': the model forms an answer from parametric memory, then looks for a supporting document. Setup: Command-R+ on NaturalQuestions, BM25 + ColBERTv2, top-5 documents. They appended a previously cited short statement to other documents. The model then cited the forged document in three conditions: 12% (116/936) for random documents, 57% for relevant-but-uncited documents, and 55% for documents cited for another reason. The abstract summarises this as attributed answers lacking faithfulness in up to 57% of citations. All figures are from arXiv v1. The ACM camera-ready could not be read.",
+        "positioning_sentence": "A citation can be correct without being faithful: a retrieval-tuned model cited documents into which a previously cited statement had been inserted in up to 57% of cases, which indicates post-rationalisation rather than a record of what was used \\cite{wallat2025correctness}."
+      },
+      {
+        "key": "gao2023alce",
+        "verified": true,
+        "source_checked": "ACL Anthology official BibTeX (2023.emnlp-main.398) + Crossref /works/10.18653/v1/2023.emnlp-main.398 + full PDF text (Sec. 5.1, Table 4, Appendix Table for ASQA/ELI5); entry already exists in refs_v4.bib under this key",
+        "finding_to_cite": "ALCE (Gao, Yen, Yu, Chen; EMNLP 2023, pp. 6465-6488) reports three cases where correctness and citation quality move apart. (1) CLOSEDBOOK+POSTCITE 'delivers strong correctness but poor citation quality'. Answering without retrieval beats VANILLA on correctness on ELI5 and QAMPARI and trails it by only about 2 points on ASQA (38.3 vs 40.4 EM recall). Its post-hoc citation recall on ASQA is 26.7 vs 73.6, which is 47 points lower. On ELI5, claim recall is 18.6 vs 12.0, yet citation recall is 15.5 vs 51.1. The authors attribute this to closed-book text being correct but not similar to any retrieved passage, so citations are hard to match afterwards. (2) Summarising or snippeting passages improves correctness, but on ASQA and ELI5 this 'comes at a cost of citation quality due to the lossy compression'. On ASQA, SUMM moves EM recall from 40.4 to 43.3 while citation recall falls from 73.6 to 68.9 and precision from 72.5 to 61.8. (3) GPT-4 brings consistent but limited correctness gains, 'often at a cost of citation quality'.",
+        "positioning_sentence": "On ASQA, answering closed-book and citing post hoc keeps correctness within two points of retrieval-grounded generation while citation recall falls from 73.6 to 26.7, and compressing retrieved passages raises correctness at a cost in citation quality \\cite{gao2023alce}."
+      },
+      {
+        "key": "buchmann2024attribute",
+        "verified": true,
+        "source_checked": "ACL Anthology official BibTeX (2024.emnlp-main.463) + Crossref /works/10.18653/v1/2024.emnlp-main.463 + arXiv API 2407.07799 (comment: 'Accepted at EMNLP 2024') + full PDF text (Sec. 1 RQ3, Sec. 5.3, Table 4)",
+        "finding_to_cite": "Paper: 'Attribute or Abstain: Large Language Models as Long Document Assistants', Jan Buchmann, Xiao Liu, Iryna Gurevych, EMNLP 2024, pp. 8113-8140. The study tests evidence quality as an abstention gate. Attributability scored by TRUE or MiniCheck orders responses for selective prediction, and response-quality/coverage AUC is compared against a random ordering. Evidence quality predicts response quality on single-fact datasets: Natural Questions, Evidence Inference, ContractNLI, and to some extent WiCE. On multi-fact QASPER and GovReport the gain over random is small. The reason given is that models answer correctly but fail to point to all the necessary evidence. The abstract states that evidence quality can predict response quality on simple responses, 'but not so for complex responses'. They also note that earlier work was inconclusive: reranking by evidence quality improved responses in Bohnet et al. (2022) but not in Gao et al. (2023).",
+        "positioning_sentence": "Used as an abstention signal, evidence quality predicts response quality on single-fact tasks but not on multi-fact ones, where models answer correctly yet fail to cite all the evidence, so a support-keyed gate can withhold correct answers \\cite{buchmann2024attribute}."
+      }
+    ],
+    "notes": "Combined sentence, in the paper's voice: \"The divergence between answer quality and citation quality is documented \\cite{liu2023verifiability,malaviya2024expertqa,gao2023alce,wang2025medcite}, a correct citation need not be the one the model used \\cite{wallat2025correctness}, and evidence quality is a poor abstention signal for multi-fact answers \\cite{buchmann2024attribute}; our contribution is the provenance census and the gate's interaction with provenance loss.\"\n\nBefore integrating:\n(1) ALCE is already in D:\\CODE\\ML_DL\\paper review\\revision\\refs_v4.bib as gao2023alce, and main.tex line 158 cites it as a citation-quality benchmark. Do not add a duplicate entry. Reuse the key for the new finding. Its SUMM/SNIPPET result ('lossy compression' raises correctness and lowers citation quality) is the closest published analogue to provenance loss.\n(2) The Wallat key is wallat2025correctness, not the suggested wallat2024correctness. The archival version is ICTIR 2025 and was RETITLED: 'Retrieval Augmented Generation' replaces 'RAG'. The BibTeX uses the published title and keeps the arXiv id in the note. The 12/57/55% figures come from arXiv v1. dl.acm.org sits behind a Cloudflare challenge, so the camera-ready text was not read. Check those numbers there if possible, or cite only the qualitative claim. Its evidence covers one model (Command-R+) on general-domain NaturalQuestions.\n(3) The MedCite divergence is one table (Table 2): one model, Llama-3-8B-Instruct, on BioASQ-Y/N. Cite it as that, not as a general law. Its Table 7 also shows that medical NLI judges agree poorly with physicians (kappa at most 0.26). This may be useful if the paper uses an NLI-based support check.\n(4) Runner-up for (c), verified and not included: Adlakha et al., TACL 12:681-699 (2024), doi 10.1162/tacl_a_00667. Instruction-following models match fine-tuned models on correctness but 'struggle to accurately judge the relevance of the provided knowledge and often hallucinate'. It measures faithfulness to provided knowledge rather than citations, so it is weaker for this sentence.\n(5) The BibTeX follows refs_v4.bib house style: abbreviated IEEE booktitles, DOI in note, verification-record comments, full given names (IEEEtran reduces them to initials). MedCite (8 authors) is cut to six plus 'and others'; the other entries have four or fewer authors. No TeX toolchain is on the Bash PATH, so the entries were not compiled. They use only standard @inproceedings fields.\nSources: aclanthology.org/2025.findings-acl.967, aclanthology.org/2023.emnlp-main.398, aclanthology.org/2024.emnlp-main.463, export.arxiv.org/api/query?id_list=2412.18004 and 2407.07799, api.crossref.org/works/10.1145/3731120.3744592, api.crossref.org/works/10.1162/tacl_a_00667. PDFs were saved under the session scratchpad (dl_medcite, dl_wallat, dl_alce, dl_lab)."
+  },
+  "models": {
+    "sonnet_passC": "claude-sonnet-5-5",
+    "opus_siblings": "claude-opus-5-5"
+  },
+  "run_id": "wf_daf4997b-4c2",
+  "date": "2026-10-12"
+}

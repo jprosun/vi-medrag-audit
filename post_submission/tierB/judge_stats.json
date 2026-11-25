@@ -1,0 +1,510 @@
+{
+  "agreement_claims": {
+    "n_all": 764,
+    "agree_all": 0.9542,
+    "kappa_all": 0.9097,
+    "n_real": 724,
+    "agree_real": 0.9517,
+    "kappa_real": 0.902,
+    "controls_final": {
+      "not_relevant": 40
+    },
+    "unlabelled": []
+  },
+  "agreement_answers": {
+    "n_all": 284,
+    "agree_all": 0.9894,
+    "kappa_all": 0.9754,
+    "n_real": 268,
+    "agree_real": 0.9925,
+    "kappa_real": 0.9795,
+    "controls_final": {
+      "not_relevant": 16
+    },
+    "unlabelled": []
+  },
+  "claims/shipped/returned/all": {
+    "n": 185,
+    "counts": {
+      "partial": 126,
+      "not_relevant": 57,
+      "relevant": 2
+    },
+    "responsiveness": 0.0108,
+    "ci": [
+      0.0,
+      0.0278
+    ]
+  },
+  "claims/shipped/withheld/cited_record_not_citable": {
+    "n": 147,
+    "counts": {
+      "partial": 58,
+      "not_relevant": 78,
+      "relevant": 11
+    },
+    "responsiveness": 0.0748,
+    "ci": [
+      0.0132,
+      0.1544
+    ]
+  },
+  "claims/shipped/withheld/span_not_found_in_cited_chunk": {
+    "n": 17,
+    "counts": {
+      "not_relevant": 12,
+      "partial": 5
+    },
+    "responsiveness": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "claims/shipped/withheld/chunk_id_not_resolvable": {
+    "n": 2,
+    "counts": {
+      "not_relevant": 1,
+      "partial": 1
+    },
+    "responsiveness": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "claims/shipped/withheld/*": {
+    "n": 166,
+    "counts": {
+      "partial": 64,
+      "not_relevant": 91,
+      "relevant": 11
+    },
+    "responsiveness": 0.0663,
+    "ci": [
+      0.0114,
+      0.1383
+    ]
+  },
+  "claims/urlfirst/returned/all": {
+    "n": 364,
+    "counts": {
+      "partial": 260,
+      "not_relevant": 100,
+      "relevant": 4
+    },
+    "responsiveness": 0.011,
+    "ci": [
+      0.0027,
+      0.0227
+    ]
+  },
+  "claims/urlfirst/withheld/span_not_found_in_cited_chunk": {
+    "n": 14,
+    "counts": {
+      "not_relevant": 10,
+      "partial": 4
+    },
+    "responsiveness": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "claims/urlfirst/withheld/chunk_id_not_resolvable": {
+    "n": 1,
+    "counts": {
+      "not_relevant": 1
+    },
+    "responsiveness": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "claims/urlfirst/withheld/*": {
+    "n": 15,
+    "counts": {
+      "not_relevant": 11,
+      "partial": 4
+    },
+    "responsiveness": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "claims/shipped/withheld_minus_returned": {
+    "diff": 0.064,
+    "ci": [
+      -0.002,
+      0.1458
+    ]
+  },
+  "claims/shipped/withheld_minus_returned_ontopic": {
+    "diff": -0.2225,
+    "ci": [
+      -0.4005,
+      -0.0422
+    ]
+  },
+  "claims/shipped/C0_all": {
+    "n": 351,
+    "counts": {
+      "partial": 190,
+      "not_relevant": 148,
+      "relevant": 13
+    },
+    "responsiveness": 0.037,
+    "ci": [
+      0.0086,
+      0.075
+    ]
+  },
+  "claims_by_type_allC0": {
+    "shipped/clinical_explainer": {
+      "n": 94,
+      "relevant": 0,
+      "partial": 54,
+      "not_relevant": 40,
+      "responsiveness": 0.0
+    },
+    "shipped/differential_or_workup": {
+      "n": 28,
+      "relevant": 0,
+      "partial": 10,
+      "not_relevant": 18,
+      "responsiveness": 0.0
+    },
+    "shipped/guideline_comparison": {
+      "n": 90,
+      "relevant": 1,
+      "partial": 65,
+      "not_relevant": 24,
+      "responsiveness": 0.0111
+    },
+    "shipped/patient_faq": {
+      "n": 57,
+      "relevant": 10,
+      "partial": 17,
+      "not_relevant": 30,
+      "responsiveness": 0.1754
+    },
+    "shipped/study_result_numeric": {
+      "n": 82,
+      "relevant": 2,
+      "partial": 44,
+      "not_relevant": 36,
+      "responsiveness": 0.0244
+    },
+    "urlfirst/clinical_explainer": {
+      "n": 101,
+      "relevant": 0,
+      "partial": 65,
+      "not_relevant": 36,
+      "responsiveness": 0.0
+    },
+    "urlfirst/differential_or_workup": {
+      "n": 22,
+      "relevant": 0,
+      "partial": 7,
+      "not_relevant": 15,
+      "responsiveness": 0.0
+    },
+    "urlfirst/guideline_comparison": {
+      "n": 99,
+      "relevant": 3,
+      "partial": 86,
+      "not_relevant": 10,
+      "responsiveness": 0.0303
+    },
+    "urlfirst/patient_faq": {
+      "n": 71,
+      "relevant": 1,
+      "partial": 48,
+      "not_relevant": 22,
+      "responsiveness": 0.0141
+    },
+    "urlfirst/study_result_numeric": {
+      "n": 86,
+      "relevant": 0,
+      "partial": 58,
+      "not_relevant": 28,
+      "responsiveness": 0.0
+    }
+  },
+  "claims_by_profile_allC0": {
+    "shipped/deep": {
+      "n": 143,
+      "relevant": 11,
+      "partial": 82,
+      "not_relevant": 50,
+      "responsiveness": 0.0769
+    },
+    "shipped/standard": {
+      "n": 208,
+      "relevant": 2,
+      "partial": 108,
+      "not_relevant": 98,
+      "responsiveness": 0.0096
+    },
+    "urlfirst/deep": {
+      "n": 160,
+      "relevant": 2,
+      "partial": 105,
+      "not_relevant": 53,
+      "responsiveness": 0.0125
+    },
+    "urlfirst/standard": {
+      "n": 219,
+      "relevant": 2,
+      "partial": 159,
+      "not_relevant": 58,
+      "responsiveness": 0.0091
+    }
+  },
+  "claims_by_urlless_allC0": {
+    "shipped/citable": {
+      "n": 195,
+      "relevant": 2,
+      "partial": 129,
+      "not_relevant": 64,
+      "responsiveness": 0.0103
+    },
+    "shipped/urlless": {
+      "n": 156,
+      "relevant": 11,
+      "partial": 61,
+      "not_relevant": 84,
+      "responsiveness": 0.0705
+    },
+    "urlfirst/citable": {
+      "n": 378,
+      "relevant": 4,
+      "partial": 264,
+      "not_relevant": 110,
+      "responsiveness": 0.0106
+    },
+    "urlfirst/urlless": {
+      "n": 1,
+      "relevant": 0,
+      "partial": 0,
+      "not_relevant": 1,
+      "responsiveness": 0.0
+    }
+  },
+  "shipped_returned_vs_original_labels": {},
+  "answers/shipped/all 134": {
+    "n": 134,
+    "counts": {
+      "relevant": 101,
+      "partial": 33
+    },
+    "responsiveness": 0.7537,
+    "ci": [
+      0.6791,
+      0.8284
+    ]
+  },
+  "answers/shipped/answerable 119": {
+    "n": 119,
+    "counts": {
+      "relevant": 92,
+      "partial": 27
+    },
+    "responsiveness": 0.7731,
+    "ci": [
+      0.6975,
+      0.8487
+    ]
+  },
+  "answers/shipped/controls 15": {
+    "n": 15,
+    "counts": {
+      "relevant": 9,
+      "partial": 6
+    },
+    "responsiveness": 0.6,
+    "ci": [
+      0.3333,
+      0.8667
+    ]
+  },
+  "answers/shipped/with returned claims": {
+    "n": 55,
+    "counts": {
+      "relevant": 43,
+      "partial": 12
+    },
+    "responsiveness": 0.7818,
+    "ci": [
+      0.6727,
+      0.8909
+    ]
+  },
+  "answers/shipped/no returned claims": {
+    "n": 79,
+    "counts": {
+      "relevant": 58,
+      "partial": 21
+    },
+    "responsiveness": 0.7342,
+    "ci": [
+      0.6329,
+      0.8228
+    ]
+  },
+  "answers/urlfirst/all 134": {
+    "n": 134,
+    "counts": {
+      "relevant": 104,
+      "partial": 30
+    },
+    "responsiveness": 0.7761,
+    "ci": [
+      0.709,
+      0.8433
+    ]
+  },
+  "answers/urlfirst/answerable 119": {
+    "n": 119,
+    "counts": {
+      "relevant": 97,
+      "partial": 22
+    },
+    "responsiveness": 0.8151,
+    "ci": [
+      0.7479,
+      0.8824
+    ]
+  },
+  "answers/urlfirst/controls 15": {
+    "n": 15,
+    "counts": {
+      "partial": 8,
+      "relevant": 7
+    },
+    "responsiveness": 0.4667,
+    "ci": [
+      0.2,
+      0.7333
+    ]
+  },
+  "answers/urlfirst/with returned claims": {
+    "n": 109,
+    "counts": {
+      "relevant": 80,
+      "partial": 29
+    },
+    "responsiveness": 0.7339,
+    "ci": [
+      0.6514,
+      0.8073
+    ]
+  },
+  "answers/urlfirst/no returned claims": {
+    "n": 25,
+    "counts": {
+      "relevant": 24,
+      "partial": 1
+    },
+    "responsiveness": 0.96,
+    "ci": [
+      0.88,
+      1.0
+    ]
+  },
+  "answers/urlfirst_minus_shipped": {
+    "diff": 0.0224,
+    "ci": [
+      -0.0224,
+      0.0672
+    ]
+  },
+  "answers_by_type": {
+    "shipped/clinical_explainer": {
+      "n": 29,
+      "relevant": 28,
+      "responsiveness": 0.9655
+    },
+    "shipped/differential_or_workup": {
+      "n": 25,
+      "relevant": 25,
+      "responsiveness": 1.0
+    },
+    "shipped/guideline_comparison": {
+      "n": 26,
+      "relevant": 19,
+      "responsiveness": 0.7308
+    },
+    "shipped/patient_faq": {
+      "n": 26,
+      "relevant": 25,
+      "responsiveness": 0.9615
+    },
+    "shipped/study_result_numeric": {
+      "n": 28,
+      "relevant": 4,
+      "responsiveness": 0.1429
+    },
+    "urlfirst/clinical_explainer": {
+      "n": 29,
+      "relevant": 27,
+      "responsiveness": 0.931
+    },
+    "urlfirst/differential_or_workup": {
+      "n": 25,
+      "relevant": 25,
+      "responsiveness": 1.0
+    },
+    "urlfirst/guideline_comparison": {
+      "n": 26,
+      "relevant": 21,
+      "responsiveness": 0.8077
+    },
+    "urlfirst/patient_faq": {
+      "n": 26,
+      "relevant": 25,
+      "responsiveness": 0.9615
+    },
+    "urlfirst/study_result_numeric": {
+      "n": 28,
+      "relevant": 6,
+      "responsiveness": 0.2143
+    }
+  },
+  "answers_by_profile": {
+    "shipped/deep": {
+      "n": 67,
+      "relevant": 62,
+      "responsiveness": 0.9254
+    },
+    "shipped/standard": {
+      "n": 67,
+      "relevant": 39,
+      "responsiveness": 0.5821
+    },
+    "urlfirst/deep": {
+      "n": 67,
+      "relevant": 62,
+      "responsiveness": 0.9254
+    },
+    "urlfirst/standard": {
+      "n": 67,
+      "relevant": 42,
+      "responsiveness": 0.6269
+    }
+  },
+  "answers_vs_claims/shipped": {
+    "answer_relevant&claim_not": 100,
+    "answer_not&claim_not": 32,
+    "answer_not&claim_relevant": 1,
+    "answer_relevant&claim_relevant": 1
+  },
+  "answers_vs_claims/urlfirst": {
+    "answer_relevant&claim_not": 101,
+    "answer_not&claim_not": 29,
+    "answer_relevant&claim_relevant": 3,
+    "answer_not&claim_relevant": 1
+  }
+}
